@@ -1,0 +1,197 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- if section.settings.masonry == true -%}
+	{% assign loc-container-class = 'tt-masonry' %}
+	{% assign loc-image-shape-class = 'tt-promobox__size-auto' %}
+{%- else -%}
+	{% assign loc-container-class = '' %}
+	{% assign loc-image-shape-class = 'tt-promobox__size-square' %}
+{%- endif -%}
+
+{% assign loc-image-size = '1920x' %}
+{% assign loc-image-thumb-size = '640x' %}
+
+{%- if section.settings.images-per-row == '3' -%}
+	{% assign loc-grid = 'col-sm-6 col-lg-4' %}
+{% else %}
+	{% assign loc-grid = 'col-sm-6 col-lg-3' %}
+{%- endif -%}
+
+
+{% if settings.layout-show_breadcrumbs %}
+	<div class="tt-page__breadcrumbs">
+		{% include 'breadcrumbs' %}
+	</div>
+{% endif %}
+<div class="tt-page__name text-left">
+	<h1>{{ page.title }}</h1>
+</div>
+
+<div class="tt-gallery">
+	<div class="row ttg-grid-padding--none {{ loc-container-class }}">
+
+		{% if section.blocks.size > 0 %}
+			{%- for block in section.blocks -%}
+
+				{% assign this-settings = block.settings %}
+
+				{% assign res-styles_caption = null %}
+				{% assign res-styles_text = null %}
+				{% assign res-styles_hover_bg = null %}
+
+				{% if this-settings.color_caption_c != blank and this-settings.color_caption_c != 'rgba(0,0,0,0)' %}
+					{% capture res-styles_caption %} style="color: {{ this-settings.color_caption_c }};"{% endcapture %}
+				{% endif %}
+				{% if this-settings.color_text_c != blank and this-settings.color_text_c != 'rgba(0,0,0,0)' %}
+					{% capture res-styles_text %} style="color: {{ this-settings.color_text_c }};"{% endcapture %}
+				{% endif %}
+				{% if this-settings.color_h_bg != blank and this-settings.color_h_bg != 'rgba(0,0,0,0)' %}
+					{% capture res-styles_hover_bg %} style="background-color: {{ this-settings.color_h_bg }};"{% endcapture %}
+				{% endif %}
+
+				{%- if block.settings.image-hover-animation != blank -%}
+					{%- if block.settings.image-hover-animation == 'scale' -%}
+						{%- assign loc-image-translate = 'ttg-image-scale' -%}
+					{%- else -%}
+						{%- assign loc-image-translate = 'ttg-image-translate--' | append: block.settings.image-hover-animation -%}
+					{%- endif -%}
+				{%- else -%}
+					{%- assign loc-image-translate = '' -%}
+				{%- endif -%}
+
+				<div class="{{ loc-grid  }}">
+					<div data-photo="{{ block.settings.image | img_url: loc-image-size }}"
+					     data-title="{{ block.settings.caption }}"
+					     data-tags="{{ block.settings.text }}"
+					     class="tt-promobox
+							  {{ loc-image-shape-class }}
+							   ttg-text-animation-parent
+							   {{ loc-image-translate }}
+							   ttg-animation-disable--sm
+							   tt-promobox__hover-disable--sm">
+						<div class="tt-promobox__content">
+							<img alt="{{ block.settings.caption }}"
+								 src="{{ block.settings.image | img_url: loc-image-thumb-size }}"
+								 srcset="{{ block.settings.image | img_url: loc-image-thumb-size }}"/>
+							<div class="tt-promobox__hover">
+								<div class="tt-promobox__hover-bg"{{ res-styles_hover_bg }}></div>
+								<div class="tt-promobox__text tt-promobox__point-lg--center tt-promobox__point-lg--center tt-promobox__align-lg--center">
+									<div class="ttg-text-animation--emersion"><span{{ res-styles_caption }}>{{ block.settings.caption }}</span></div>
+									<p class="ttg-text-animation--emersion"><span{{ res-styles_text }}>{{ block.settings.text }}</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			{%- endfor -%}
+		{% else %}
+			Nothing found.
+		{% endif %}
+
+	</div>
+
+	<div class="tt-gallery__slider">
+		<!-- Add Arrows -->
+		<span class="swiper-btn-next icon-right-open-big"></span>
+		<span class="swiper-btn-prev icon-left-open-big"></span>
+		<!--sliders-->
+		<div class="swiper-container gallery-top"></div>
+		<div class="swiper-container gallery-thumbs"></div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "Gallery",
+"max_blocks": 50,
+"settings": [
+{
+"label": "Enable Masonry?",
+"id": "masonry",
+"type": "checkbox",
+"default": false
+},
+{
+"label": "Images per row",
+"id": "images-per-row",
+"type": "select",
+"default": "4",
+"options": [
+{
+"value": "4",
+"label": "Four"
+},
+{
+"value": "3",
+"label": "Three"
+}
+]
+}
+],
+"blocks": [
+{
+"type": "gallery-image",
+"name": "Image",
+"settings": [
+{
+"label": "URL",
+"id": "url",
+"type": "url"
+},
+{
+"label": "Image",
+"id": "image",
+"type": "image_picker"
+},
+{
+"label": "Image hover animation",
+"id": "image-hover-animation",
+"type": "select",
+"default": "right",
+"options": [
+{ "value": "right", "label": "left > right" },
+{ "value": "left", "label": "right > left" },
+{ "value": "top", "label": "bottom > top" },
+{ "value": "bottom", "label": "top > bottom" },
+{ "value": "scale", "label": "zoom in" },
+{ "value": "", "label": "none" }
+]
+},
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "Duis Aute Irure Dolor"
+},
+{
+"label": "Text",
+"id": "text",
+"type": "text",
+"default": "Watches, Trackers"
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_caption_c",
+"label": "Caption"
+},
+{
+"type": "color",
+"id": "color_text_c",
+"label": "Text"
+},
+{
+"type": "color",
+"id": "color_h_bg",
+"label": "Hover background"
+}
+]
+}
+]
+}
+{% endschema %}

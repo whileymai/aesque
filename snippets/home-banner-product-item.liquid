@@ -1,0 +1,71 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- assign this-item = home-banner-product-item -%}
+
+{% assign this-settings = this-item.settings %}
+
+{% assign res-styles_title = null %}
+{% assign res-styles_price = null %}
+
+{% if this-settings.color_title_c != blank and this-settings.color_title_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_title %} style="color: {{ this-settings.color_title_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_price_c != blank and this-settings.color_price_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_price %} style="color: {{ this-settings.color_price_c }};"{% endcapture %}
+{% endif %}
+
+{%- comment -%} ### "set-" variables can be overwritten ### {%- endcomment -%}
+{%- assign res-boxsize = set-boxsize | default: 'tt-promobox__size-square' -%}
+{%- assign res-image_size = set-image_size | default: '640x' -%}
+
+
+{%- assign res-url = this-item.settings.url | default: '#' -%}
+{%- assign res-image = this-item.settings.image -%}
+{%- assign res-product = this-item.settings.product -%}
+
+
+{%- comment -%} ### res-image-translate ### {%- endcomment -%}
+{%- if this-item.settings.image-hover-animation != blank -%}
+	{%- if this-item.settings.image-hover-animation == 'scale' -%}
+		{%- assign res-image-translate = 'ttg-image-scale' -%}
+	{%- else -%}
+		{%- assign res-image-translate = 'ttg-image-translate--' | append: this-item.settings.image-hover-animation -%}
+	{%- endif -%}
+{%- else -%}
+	{%- assign res-image-translate = '' -%}
+{%- endif -%}
+
+
+{% if res-product != blank %}
+	{% assign this_product = all_products[res-product] %}
+	<a href="{{ this_product.url }}" class="tt-promobox {{ res-boxsize }}
+                   ttg-text-animation-parent
+                   {{ res-image-translate }}
+                   ttg-animation-disable--sm
+                   tt-promobox__hover-disable
+                   tt-promobox__hover-disable--sm">
+		<div class="tt-promobox__content">
+			<img src="{{ res-image | img_url: res-image_size }}"
+				 srcset="{{ res-image | img_url: res-image_size }} 1x, {{ res-image | img_url: res-image_size, scale: 2 }} 2x"
+				 alt="{{ res-list }}">
+			<div class="tt-promobox__text tt-promobox__text--sz-01"
+				 data-resp-xs="sm"
+				 data-resp-md="sm">
+				<p{{ res-styles_title }}>{{ this_product.title }}</p>
+				<div>
+					<span class="tt-price"{{ res-styles_price }}>{{ this_product.price | money }}</span>
+				</div>
+			</div>
+			<div class="tt-promobox__text tt-promobox__point-lg--right tt-promobox__point-lg--bottom"
+				 data-resp-xs="sm"
+				 data-resp-md="sm">
+				<div class="tt-btn tt-btn--big tt-btn--hover-effect colorize-btn{{ this-settings.color_btn_style }}">
+					<i class="icon-shop24"></i>
+				</div>
+			</div>
+		</div>
+	</a>
+{% else %}
+	<p>Select product</p>
+{% endif %}
+

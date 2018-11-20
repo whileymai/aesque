@@ -1,0 +1,2194 @@
+{
+  "current": {
+    "layout_rtl": false,
+    "layout_smooth_scroll": false,
+    "layout_preloader": false,
+    "layout-show_breadcrumbs": true,
+    "layout-container_default": "boxed",
+    "layout-container_default_reverse": "our-story | contacts",
+    "layout-container_collection": "sidebar_left",
+    "layout-container_blog": "boxed",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "layout_optimize_css": false,
+    "font_name": "\"freight-sans-pro\",sans-serif;",
+    "font_url": "",
+    "font2_name": "\"freight-sans-pro\",sans-serif;",
+    "font2_url": "",
+    "font3_name": "\"freight-sans-pro\",sans-serif;",
+    "font3_url": "Assistant:300,400",
+    "enable_fonts_url": false,
+    "fonts_url": "https:\/\/fonts.googleapis.com\/css?family=Muli:300,400,600,700,800%7CMontserrat:300,400,500,600,700%7COpen+Sans",
+    "color_theme": "#ffffff",
+    "color_theme2": "#ffffff",
+    "color_theme3": "#2d2d2d",
+    "color_theme4": "#2d2d2d",
+    "color_theme5": "#808080",
+    "color_theme6": "#f5f5f5",
+    "color_theme7": "#2d2d2d",
+    "color_theme8": "rgba(0,0,0,0)",
+    "color_theme9": "#2d2d2d",
+    "color_theme10": "#2d2d2d",
+    "color_theme11": "#2d2d2d",
+    "color_theme12": "#fc2a2e",
+    "color_theme13": "#53d3eb",
+    "color_theme14": "#fec01a",
+    "color_theme_transparent": "#fffffa",
+    "color_theme_body": "",
+    "color_theme_c": "#2d2d2d",
+    "color_theme_paragraph_c": "#2d2d2d",
+    "color_theme_head_c": "#2d2d2d",
+    "color_theme_link_c": "#2d2d2d",
+    "color_theme_link_act_c": "#2d2d2d",
+    "color_theme_icon_c": "",
+    "color_theme_icon_act_c": "#2d2d2d",
+    "color_theme_success": "",
+    "color_theme_error": "",
+    "collection-show_sort_by": true,
+    "collection-show_info": true,
+    "collection-show_length": true,
+    "collection-show_view": true,
+    "collection_pagination_type": "classic",
+    "pagination_limit": "12",
+    "collection_view": "grid",
+    "collection_row_length": "4",
+    "collection_row_length_mobile": "2",
+    "collection_pd_type": "afterimage",
+    "collection_empty_image": "",
+    "collection_empty_image_width": 80,
+    "collection_empty_btn_link": "",
+    "prd-show_lbl_new": true,
+    "prd-show_lbl_hot": true,
+    "prd-show_lbl_sale": true,
+    "prd-show_lbl_sale_percent": true,
+    "prd-show_lbl_instock": false,
+    "prd-show_lbl_sold_out": false,
+    "prd-show_review": false,
+    "prd-hide-empty-review": true,
+    "prd-show_btn_addtocart": false,
+    "prd-show_btn_whishlist": false,
+    "prd-show_btn_quickview": false,
+    "prd-show_options": true,
+    "prd-show_options_disabled_state": false,
+    "prd-check_btns_state": true,
+    "prd-btns_action": "toggle",
+    "prd-btns_design": "1",
+    "prd-show_btn_addtocart-popup": true,
+    "prd-show_collections": false,
+    "prd-show_price": true,
+    "prd-show_description": false,
+    "prd-show_countdown": false,
+    "qv-status": true,
+    "qv-show_sku": false,
+    "qv-show_availability": false,
+    "qv-show_name": true,
+    "qv-show_collections": false,
+    "qv-show_price": true,
+    "qv-show_countdown": false,
+    "qv-show_description": false,
+    "qv-show_quantity": false,
+    "qv-show_buttons": true,
+    "qv-show_cart_btn": true,
+    "qv-show_wishlist_btn": false,
+    "qv-check_buttons_status": true,
+    "qv-show_options": true,
+    "qv-show_vendor": false,
+    "qv-show_type": false,
+    "qv-show_barcode": false,
+    "qv-show_viewfull": true,
+    "qv-show_tags": false,
+    "qv-show_notes": false,
+    "qv-enable_gallery_zoom": true,
+    "qv-show_gallery_arrows": true,
+    "mailchimp_form_action": "https:\/\/a-esque.us6.list-manage.com\/subscribe\/post?u=d936399c61&amp;id=f25f18da25",
+    "newsletter_show_popup": false,
+    "newsletter_show_once": "true",
+    "newsletter_delay": "10",
+    "newsletter_cookies_life": "3",
+    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<span>Subscribe<\/span>\n<\/div><div class=\"tt-newsletter-popup__text-02\"><p>BECOME AN A-ESQUE COLLECTOR<\/p><\/div><p>By signing up, you accept the terms & Privacy Policy.<\/p>",
+    "newsletter-show_socials": false,
+    "newsletter-show_facebook": false,
+    "newsletter-show_google": false,
+    "newsletter-show_twitter": false,
+    "newsletter-show_instagram": false,
+    "newsletter-show_youtube": false,
+    "newsletter-show_pinterest": false,
+    "newsletter-show_skype": false,
+    "newsletter-show_behance": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/aesqueofficial\/",
+    "social_google_link": "",
+    "social_twitter_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/aesqueofficial\/",
+    "social_youtube_link": "",
+    "social_pinterest_link": "",
+    "social_weibo_link": "https:\/\/www.weibo.com\/AESQUE",
+    "social_behance_link": "",
+    "show_multiple_currencies": false,
+    "currency_format": "money_format",
+    "supported_currencies": "AUD NZD",
+    "default_currency": "AUD",
+    "show_multiple_languages": false,
+    "languages": "",
+    "default_language": "English",
+    "wishlist-status": false,
+    "wishlist-empty_image": "",
+    "wishlist-empty_image_width": 180,
+    "open_date": "2017-10-31 00:00:00",
+    "comming_image": "shopify:\/\/shop_images\/about-us-1.jpg",
+    "comming_image_pos": "right",
+    "page_404_media_type": "custom_image",
+    "page404_image": "",
+    "cart_notes_enable": true,
+    "visa": "#visa",
+    "discover": "#discover",
+    "mastercard": "#mastercard",
+    "amex": "#amex",
+    "paypal": "#paypal",
+    "stripe": "#stripe",
+    "animation": 0.5,
+    "color_header_bg": "#fdfdfd",
+    "color_header_bg2": "#fdfdfd",
+    "color_header_bd": "rgba(0,0,0,0)",
+    "color_header_btn_menu_c": "#2d2d2d",
+    "color_header_btn_search_c": "#2d2d2d",
+    "color_header_btn_search_close_c": "#e0e0e0",
+    "color_header_btn_user_c": "#2d2d2d",
+    "color_header_btn_wishlist_c": "#2d2d2d",
+    "color_header_btn_cart_c": "#2d2d2d",
+    "color_header_btn_settings_c": "#2d2d2d",
+    "color_header_btn_info_c": "#2d2d2d",
+    "color_header_btns_act_m_c": "",
+    "color_header_counter_bg": "#fffffa",
+    "color_header_counter_c": "#2d2d2d",
+    "color_header_search_c": "#2d2d2d",
+    "color_header_tape_bg": "#f5f5f5",
+    "color_header_tape_text_c": "#2d2d2d",
+    "color_header_tape_icon_c": "",
+    "color_header_social_type": "1",
+    "color_header_stk_btn_search_c": "",
+    "color_header_stk_btn_search_close_c": "",
+    "color_header_stk_btn_user_c": "",
+    "color_header_stk_btn_wishlist_c": "",
+    "color_header_stk_btn_cart_c": "",
+    "color_header_stk_btn_settings_c": "",
+    "color_header_stk_counter_bg": "",
+    "color_header_stk_search_c": "",
+    "color_header_transparent": false,
+    "color_header_d_transparent": 20,
+    "color_header_m_transparent": 30,
+    "color_menu_c": "#2d2d2d",
+    "color_menu_h_c": "#808080",
+    "color_menu_act_c": "#2d2d2d",
+    "color_menu_mm_bg": "#fdfdfd",
+    "color_menu_mm_c": "#2d2d2d",
+    "color_menu_mm_h_c": "#808080",
+    "color_menu_title_c": "#2d2d2d",
+    "color_menu_title_h_c": "#2d2d2d",
+    "color_menu_dd_bg": "#f5f5f5",
+    "color_menu_m_bg": "#f5f5f5",
+    "color_menu_m_bd": "",
+    "color_menu_m_c": "#2d2d2d",
+    "color_menu_act_m_bg": "",
+    "color_menu_act_m_c": "#2d2d2d",
+    "color_menu_act_m_c2": "#2d2d2d",
+    "color_menu_curtain_m_bg": "",
+    "color_menu_curtain_m_transparent": 50,
+    "color_input_bg": "#fafafa",
+    "color_input_bd": "#f5f5f5",
+    "color_input_c": "#2d2d2d",
+    "color_input_f_bg": "#f5f5f5",
+    "color_input_f_bd": "#f5f5f5",
+    "color_btn_bg": "#fffffa",
+    "color_btn_bd": "#2d2d2d",
+    "color_btn_c": "#2d2d2d",
+    "color_btn_h_bg": "#2d2d2d",
+    "color_btn_h_bd": "#2d2d2d",
+    "color_btn_h_c": "#ffffff",
+    "color_btn_act_bg": "",
+    "color_btn_act_bd": "",
+    "color_btn_act_c": "#2d2d2d",
+    "color_btn2_bg": "#2d2d2d",
+    "color_btn2_bd": "#2d2d2d",
+    "color_btn2_c": "#ffffff",
+    "color_btn2_h_bg": "#808080",
+    "color_btn2_h_bd": "#808080",
+    "color_btn2_h_c": "#ffffff",
+    "color_btn2_act_bg": "",
+    "color_btn2_act_bd": "",
+    "color_btn2_act_c": "#2d2d2d",
+    "color_btn3_bg": "#2d2d2d",
+    "color_btn3_bd": "",
+    "color_btn3_c": "",
+    "color_btn3_h_bg": "",
+    "color_btn3_h_bd": "#2d2d2d",
+    "color_btn3_h_c": "#808080",
+    "color_btn3_act_bg": "",
+    "color_btn3_act_bd": "",
+    "color_btn3_act_c": "#2d2d2d",
+    "color_btn4_bg": "#fffffa",
+    "color_btn4_bd": "#fffffa",
+    "color_btn4_c": "#2d2d2d",
+    "color_btn4_h_bg": "#808080",
+    "color_btn4_h_bd": "#808080",
+    "color_btn4_h_c": "#f5f5f5",
+    "color_btn4_act_bg": "",
+    "color_btn4_act_bd": "",
+    "color_btn4_act_c": "#2d2d2d",
+    "color_btn5_bg": "#fffffa",
+    "color_btn5_bd": "",
+    "color_btn5_c": "#2d2d2d",
+    "color_btn5_h_bg": "#808080",
+    "color_btn5_h_bd": "#8a8f93",
+    "color_btn5_h_c": "#f5f5f5",
+    "color_btn5_act_bg": "",
+    "color_btn5_act_bd": "",
+    "color_btn5_act_c": "#2d2d2d",
+    "color_btn6_bg": "#2d2d2d",
+    "color_btn6_bd": "#2d2d2d",
+    "color_btn6_c": "#ffffff",
+    "color_btn6_h_bg": "#8a8f93",
+    "color_btn6_h_bd": "#808080",
+    "color_btn6_h_c": "#ffffff",
+    "color_btn6_act_bg": "",
+    "color_btn6_act_bd": "",
+    "color_btn6_act_c": "#2d2d2d",
+    "color_btn7_bg": "",
+    "color_btn7_bd": "",
+    "color_btn7_c": "#2d2d2d",
+    "color_btn7_h_bg": "rgba(0,0,0,0)",
+    "color_btn7_h_bd": "",
+    "color_btn7_h_c": "#2d2d2d",
+    "color_btn7_act_bg": "",
+    "color_btn7_act_bd": "",
+    "color_btn7_act_c": "",
+    "color_btn8_bg": "",
+    "color_btn8_bd": "",
+    "color_btn8_c": "#2d2d2d",
+    "color_btn8_h_bg": "rgba(0,0,0,0)",
+    "color_btn8_h_bd": "",
+    "color_btn8_h_c": "#2d2d2d",
+    "color_btn8_act_bg": "",
+    "color_btn8_act_bd": "",
+    "color_btn8_act_c": "",
+    "color_btn9_bg": "",
+    "color_btn9_bd": "",
+    "color_btn9_c": "#2d2d2d",
+    "color_btn9_h_bg": "rgba(0,0,0,0)",
+    "color_btn9_h_bd": "",
+    "color_btn9_h_c": "#2d2d2d",
+    "color_btn9_act_bg": "",
+    "color_btn9_act_bd": "",
+    "color_btn9_act_c": "#2d2d2d",
+    "color_label_c": "#bbbbbb",
+    "color_label_h": "#808080",
+    "color_label_sale": "",
+    "color_label_sale_percent": "",
+    "color_label_new": "",
+    "color_label_hot": "",
+    "color_label_in_stock": "#00aa5b",
+    "color_label_out_stock": "#ed1f1f",
+    "color_social_bg": "",
+    "color_social_bd": "",
+    "color_social_icon_c": "",
+    "color_social_h_bg": "",
+    "color_social_h_bd": "",
+    "color_social_icon_h_c": "",
+    "color_social2_bg": "",
+    "color_social2_bd": "",
+    "color_social2_icon_c": "#2d2d2d",
+    "color_social2_h_bg": "",
+    "color_social2_h_bd": "",
+    "color_social2_icon_h_c": "#808080",
+    "color_social3_bg": "",
+    "color_social3_bd": "#808080",
+    "color_social3_icon_c": "#808080",
+    "color_social3_h_bg": "#808080",
+    "color_social3_h_bd": "",
+    "color_social3_icon_h_c": "",
+    "color_social4_bg": "",
+    "color_social4_bd": "",
+    "color_social4_icon_c": "",
+    "color_social4_h_bg": "",
+    "color_social4_h_bd": "",
+    "color_social4_icon_h_c": "",
+    "color_newsletter_bg": "",
+    "color_newsletter_bd": "",
+    "color_newsletter_c": "",
+    "color_newsletter_f_bg": "",
+    "color_newsletter_f_bd": "",
+    "color_newsletter_btn_bg": "",
+    "color_newsletter_btn_bd": "",
+    "color_newsletter_btn_c": "",
+    "color_newsletter_btn_h_bg": "",
+    "color_newsletter_btn_h_bd": "",
+    "color_newsletter_btn_h_c": "",
+    "color_newsletter2_bg": "",
+    "color_newsletter2_bd": "",
+    "color_newsletter2_c": "",
+    "color_newsletter2_f_bg": "",
+    "color_newsletter2_f_bd": "",
+    "color_newsletter2_btn_bg": "",
+    "color_newsletter2_btn_bd": "",
+    "color_newsletter2_btn_c": "",
+    "color_newsletter2_btn_h_bg": "",
+    "color_newsletter2_btn_h_bd": "",
+    "color_newsletter2_btn_h_c": "",
+    "color_newsletter3_bg": "",
+    "color_newsletter3_bd": "",
+    "color_newsletter3_c": "",
+    "color_newsletter3_f_bg": "",
+    "color_newsletter3_f_bd": "",
+    "color_newsletter3_btn_bg": "",
+    "color_newsletter3_btn_bd": "",
+    "color_newsletter3_btn_c": "",
+    "color_newsletter3_btn_h_bg": "",
+    "color_newsletter3_btn_h_bd": "",
+    "color_newsletter3_btn_h_c": "",
+    "color_popup_news_social_type": "3",
+    "color_popup_news_newsletter_type": "2",
+    "color_price_c": "#bbbbbb",
+    "color_price_sale_c": "",
+    "color_promobox_c": "",
+    "color_promobox_hover_c": "#2d2d2d",
+    "color_promobox_hover_c2": "#2d2d2d",
+    "color_promobox_hover_c3": "#2d2d2d",
+    "color_password_newsletter_type": "1",
+    "color_sidebar_social_type": "2",
+    "color_sidebar_newsletter_type": "2",
+    "color_footer_bg": "#fafafa",
+    "color_footer_tape_bg": "#f5f5f5",
+    "color_footer_menu_title_c": "#2d2d2d",
+    "color_footer_menu_c": "#2d2d2d",
+    "color_footer_h_c": "#808080",
+    "color_footer_info_c": "#2d2d2d",
+    "color_footer_info_link_c": "#2d2d2d",
+    "color_footer_newsletter_c": "#2d2d2d",
+    "color_footer_newsletter_c2": "#2d2d2d",
+    "color_footer_copyright_c": "#2d2d2d",
+    "color_footer_copyright_link_c": "#808080",
+    "color_footer_copyright_link_h_c": "#808080",
+    "color_footer_payment_icon_c": "#2d2d2d",
+    "color_footer_payment_icon_h_c": "#808080",
+    "color_footer_btn_up_bg": "#fffffa",
+    "color_footer_btn_up_bd": "#fffffa",
+    "color_footer_btn_up_icon_c": "#2d2d2d",
+    "color_footer_social_type": "2",
+    "color_footer_newsletter_type": "1",
+    "dev_enable_custom_css": true,
+    "dev_enable_custom_js": false,
+    "color_theme_custom": "",
+    "color_theme_custom2": "",
+    "color_theme_custom3": "",
+    "color_theme_custom4": "",
+    "color_theme_custom5": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Raleway",
+    "checkout_body_font": "Raleway",
+    "checkout_accent_color": "#808080",
+    "checkout_button_color": "#2d2d2d",
+    "checkout_error_color": "#ff6d6d",
+    "social_skype_link": "",
+    "qv-show_desc": true,
+    "qv-show_gallery_btn_zoom": false,
+    "layout_container": "fullwidth",
+    "layout_sidebar": "disable",
+    "layout_sidebar_blog": "left",
+    "type_base_size": "16px",
+    "color_primary": "#000",
+    "color_body_text": "#000",
+    "color_body_text_mogo": "#111111",
+    "color_body_background": "#ffffff",
+    "social_sharing_blog": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "prd-lbl-new": true,
+    "prd-lbl-hot": true,
+    "prd-lbl-sale": true,
+    "prd-lbl-sale-percent": true,
+    "prd-lbl-instock": false,
+    "prd-lbl-sold-out": true,
+    "prd-show-review": true,
+    "prd-show-addtocart": true,
+    "prd-show-whishlist": true,
+    "prd-show-quickview": true,
+    "prd-show-options": true,
+    "prd-show-addtocart-popup": true,
+    "prd-show-collections": false,
+    "prd-show-price": true,
+    "prd-show-desc": true,
+    "prd-show-countdown": true,
+    "qv-show-sku": true,
+    "qv-show-avail": true,
+    "qv-show-countdown": true,
+    "qv-show-description": true,
+    "qv-show-buttons": true,
+    "qv-show-options": true,
+    "qv-show-vendor": true,
+    "qv-show-type": true,
+    "qv-show-barcode": true,
+    "qv-show-viewfull": true,
+    "qv-show-tags": true,
+    "prd-lbl-sale-num": false,
+    "prd-lbl-sale-num-remove": false,
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1524987573933": {
+            "type": "top_line",
+            "settings": {
+              "top-line-icon": "",
+              "top-line-text": "on all orders",
+              "top-line-icon-phone": "",
+              "top-line-text-phone": "",
+              "top-line-icon-hours": "",
+              "top-line-text-hours": "",
+              "top-line-social": false,
+              "show_facebook": false,
+              "show_google": false,
+              "show_twitter": false,
+              "show_instagram": false,
+              "show_youtube": false,
+              "show_pinterest": false,
+              "show_skype": false,
+              "show_behance": false
+            }
+          }
+        },
+        "block_order": [
+          "1524987573933"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
+          "logo_max_width": 150,
+          "logo_animate": false,
+          "main_linklist": "main-menu",
+          "type": "5",
+          "sticky": false,
+          "sticky_effect": "1",
+          "account_icon": false,
+          "login_form": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1525860036945": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
+              "logo_max_width": 130
+            }
+          },
+          "1525859882368": {
+            "type": "subscribe",
+            "settings": {
+              "caption_enable": false,
+              "caption": "STAY IN TOUCH",
+              "text_top": ""
+            }
+          },
+          "1503914532278": {
+            "type": "menu_02",
+            "settings": {
+              "caption_enable": false,
+              "caption": "SERVICE",
+              "type": "footer-3"
+            }
+          },
+          "1526003957982": {
+            "type": "social",
+            "settings": {
+              "caption_enable": true,
+              "caption": "Follow Us",
+              "show_facebook": true,
+              "show_google": true,
+              "show_twitter": true,
+              "show_instagram": true,
+              "show_youtube": true,
+              "show_pinterest": true,
+              "show_skype": false,
+              "show_behance": true
+            }
+          },
+          "1525150772431": {
+            "type": "tape",
+            "settings": {
+              "pay_visa": true,
+              "pay_discover": false,
+              "pay_mastercard": true,
+              "pay_amex": true,
+              "pay_paypal": true,
+              "pay_stripe": false
+            }
+          }
+        },
+        "block_order": [
+          "1525860036945",
+          "1525859882368",
+          "1503914532278",
+          "1526003957982",
+          "1525150772431"
+        ],
+        "settings": {
+          "type": "1",
+          "show_copyright": true,
+          "show_theme": true,
+          "show_totop_desktop": true,
+          "btn_top_limit": "1000"
+        }
+      },
+      "1504161678752": {
+        "type": "revolution-slider",
+        "disabled": true,
+        "blocks": {
+          "1525169089338": {
+            "type": "revslide_video",
+            "settings": {
+              "type": "mp4",
+              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/AEsque_Fashion_Films_Set1_CC_4_Converted.mov?17716627736587664134",
+              "video_link_url": ""
+            }
+          },
+          "1526962875038": {
+            "type": "revslide_video",
+            "settings": {
+              "type": "mp4",
+              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/121012_Making_DVD_Converted.mov?6466980097752237472",
+              "video_link_url": ""
+            }
+          },
+          "1526440244024": {
+            "type": "revslide_video",
+            "settings": {
+              "type": "mp4",
+              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/AEsque_Fashion_Films_Set2_CC_ProResHQ_9_Converted.mov?8164776417022403560",
+              "video_link_url": ""
+            }
+          },
+          "1526602663882": {
+            "type": "advanced_options",
+            "settings": {
+              "enable_bullets": false,
+              "enable_arrows": false,
+              "nav_dir": "horizontal",
+              "bullets_pos_hor": "right",
+              "bullets_pos_vert": "bottom",
+              "bullets_offset_hor": "200",
+              "bullets_offset_vert": "92",
+              "arrow_l_pos_hor": "right",
+              "arrow_l_pos_vert": "bottom",
+              "arrow_l_offset_hor": "130",
+              "arrow_l_offset_vert": "70",
+              "arrow_r_pos_hor": "right",
+              "arrow_r_pos_vert": "bottom",
+              "arrow_r_offset_hor": "76",
+              "arrow_r_offset_vert": "70"
+            }
+          }
+        },
+        "block_order": [
+          "1525169089338",
+          "1526962875038",
+          "1526440244024",
+          "1526602663882"
+        ],
+        "settings": {
+          "layout": "custom",
+          "custom_breakpoints": "1832",
+          "custom_heights": "768",
+          "timeout": "60",
+          "nav_style": "off"
+        }
+      },
+      "collection-head": {
+        "type": "collection-head",
+        "settings": {
+          "show_title_default": true
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "blocks": {
+          "1525858981235": {
+            "type": "tag",
+            "settings": {
+              "caption": "Style",
+              "list": "Backpack, Belt Bag, Clutch, Crossbody Bag, Top Handle, Shoulder Bag, Tote, Bag Strap, Wallet, Pouch, Bag Charm",
+              "only_single_item": false
+            }
+          },
+          "1511777927767": {
+            "type": "color",
+            "settings": {
+              "caption": "Leather Colour",
+              "only_single_item": false
+            }
+          },
+          "1511777960336": {
+            "type": "color_item",
+            "settings": {
+              "name": "Navy",
+              "picker_bg": "#ffffff",
+              "picker_bd": "#e0e0e0",
+              "picker_arrow": "#2d2d2d",
+              "image": ""
+            }
+          },
+          "1511777932583": {
+            "type": "color_item",
+            "settings": {
+              "name": "Black",
+              "picker_bg": "#ffffff",
+              "picker_bd": "#e0e0e0",
+              "picker_arrow": "#2d2d2d",
+              "image": ""
+            }
+          },
+          "1528100017051": {
+            "type": "color_item",
+            "settings": {
+              "name": "Colour Mix",
+              "picker_bg": "",
+              "picker_bd": "",
+              "picker_arrow": "",
+              "image": ""
+            }
+          },
+          "1525839769675": {
+            "type": "color_item",
+            "settings": {
+              "name": "Noir Navy",
+              "picker_bg": "#ffffff",
+              "picker_bd": "#e0e0e0",
+              "picker_arrow": "#2d2d2d",
+              "image": ""
+            }
+          },
+          "1525839835842": {
+            "type": "color_item",
+            "settings": {
+              "name": "Metallic",
+              "picker_bg": "#ffffff",
+              "picker_bd": "#e0e0e0",
+              "picker_arrow": "#2d2d2d",
+              "image": ""
+            }
+          },
+          "1526278388966": {
+            "type": "color_item",
+            "settings": {
+              "name": "Neutral",
+              "picker_bg": "#ffffff",
+              "picker_bd": "#e0e0e0",
+              "picker_arrow": "#2d2d2d",
+              "image": ""
+            }
+          },
+          "1526277322351": {
+            "type": "tag",
+            "settings": {
+              "caption": "Size",
+              "list": "Small, Medium, Large",
+              "only_single_item": false
+            }
+          }
+        },
+        "block_order": [
+          "1525858981235",
+          "1511777927767",
+          "1511777960336",
+          "1511777932583",
+          "1528100017051",
+          "1525839769675",
+          "1525839835842",
+          "1526278388966",
+          "1526277322351"
+        ],
+        "settings": {
+        }
+      },
+      "page-gallery": {
+        "type": "page-gallery",
+        "blocks": {
+          "1511790936092": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "shopify:\/\/products\/apple-iwatch",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Apple iWatch",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791191865": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Meizu Tracker",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791215684": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Power banks",
+              "text": "Watches, Trackers, Power",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791230211": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Headphone",
+              "text": "Watches, Trackers, Audio",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791243059": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791257773": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791269946": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791282322": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791295412": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1511791306454": {
+            "type": "gallery-image",
+            "settings": {
+              "url": "#",
+              "image": "",
+              "image-hover-animation": "right",
+              "caption": "Duis Aute Irure Dolor",
+              "text": "Watches, Trackers",
+              "color_caption_c": "",
+              "color_text_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1511790936092",
+          "1511791191865",
+          "1511791215684",
+          "1511791230211",
+          "1511791243059",
+          "1511791257773",
+          "1511791269946",
+          "1511791282322",
+          "1511791295412",
+          "1511791306454"
+        ],
+        "settings": {
+          "masonry": true,
+          "images-per-row": "3"
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "settings": {
+          "posts_per_page": "6",
+          "layout": "masonry",
+          "show_bread": true,
+          "show_title": false,
+          "tags": "bottom",
+          "image_effect": "none",
+          "comments": true,
+          "zero_comments": false,
+          "author": true
+        }
+      },
+      "blog-sidebar": {
+        "type": "blog-sidebar",
+        "blocks": {
+          "1511791830053": {
+            "type": "categories",
+            "settings": {
+              "caption": "Categories"
+            }
+          },
+          "1511791874085": {
+            "type": "rposts",
+            "settings": {
+              "caption": "Recent Posts",
+              "more": "More"
+            }
+          },
+          "1511791953733": {
+            "type": "html",
+            "settings": {
+              "caption": "About",
+              "html": "<a href=\"#\" class=\"ttg-image-scale\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2235\/6053\/files\/about_02.png?1839104080197079804\" alt=\"Image name\"><\/a><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. <a href=\"#\" class=\"tt-layer-nav__more\">More<\/a><\/p>"
+            }
+          },
+          "1511791934181": {
+            "type": "tags",
+            "settings": {
+              "caption": "Tags"
+            }
+          },
+          "1511791893149": {
+            "type": "newsletter",
+            "settings": {
+              "caption": "Newsletter Signup",
+              "text": "<p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a <strong>15% discount<\/strong> on the next order after you sign up.<\/p>"
+            }
+          },
+          "1511791883213": {
+            "type": "social",
+            "settings": {
+              "show_facebook": true,
+              "show_google": true,
+              "show_twitter": true,
+              "show_instagram": true,
+              "show_youtube": true,
+              "show_pinterest": true,
+              "show_skype": true,
+              "show_behance": true
+            }
+          }
+        },
+        "block_order": [
+          "1511791830053",
+          "1511791874085",
+          "1511791953733",
+          "1511791934181",
+          "1511791893149",
+          "1511791883213"
+        ],
+        "settings": {
+          "blog-handlers": "news, blog, howto"
+        }
+      },
+      "product": {
+        "type": "product",
+        "settings": {
+          "layout": "layout1",
+          "show_sku": false,
+          "show_availability": false,
+          "show_name": true,
+          "show_collections": false,
+          "show_review_badge": false,
+          "show_price": true,
+          "show_lbl_sale_percent_countdown": true,
+          "show_description": true,
+          "show_quantity": false,
+          "show_buttons": true,
+          "show_cart_btn": true,
+          "show_wishlist_btn": false,
+          "show_options": true,
+          "show_vendor": false,
+          "show_afterpay": true,
+          "show_type": false,
+          "show_barcode": false,
+          "show_tags": false,
+          "show_notes": true,
+          "show_share_buttons": false,
+          "check_buttons_status": true,
+          "enable_gallery_zoom": true,
+          "show_gallery_arrows": true,
+          "show_gallery_btn_fullscreen": false,
+          "enable_sticky": false,
+          "options_select_type": "atomizer",
+          "show_tabs": false,
+          "show_description_tab": false,
+          "show_tag_tab": false,
+          "show_review_tab": false,
+          "show_custom_text_tab": false,
+          "show_custom_html_tab": false,
+          "show_custom_product_tabs": false,
+          "custom_text_tab_caption": "Title",
+          "custom_text_tab_content": "<p>TBC<\/p>",
+          "custom_html_tab_caption": "HTML",
+          "custom_html_tab_content": "Tab's HTML<br> content<br><br> goes here!",
+          "show_related_products": false,
+          "related_products_caption": "You may also like",
+          "related_products_limit": "8"
+        }
+      },
+      "page-contacts": {
+        "type": "page-contacts",
+        "settings": {
+          "content": "settings",
+          "title": "Store Directory",
+          "text": "<p><\/p>\n<p><\/p>",
+          "map": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJI_m-JchC1moR6L34pn4gR9M&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
+          "address": "<p>MELBOURNE<\/p>\n<p>109 Collins Street, Melbourne, VIC 3000<\/p>\n<p>Phone: +61 3 9639 7070<\/p>\n<p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm, Sun 11am-5pm<\/p>\n<p>E-mail:&nbsp;<a href=\"mailto:109@a-esque.com\">109@a-esque.com<\/a><\/p>",
+          "map2": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJuTKpx4JC1moR3WI-xOTxSOs&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
+          "address2": "<p>SOUTH YARRA<\/p>\n<p>555b Chapel Street,&nbsp;South Yarra, VIC, 3141<\/p>\n<p>Hours: by appointment only<\/p>\n<p>E-mail:&nbsp;<a href=\"mailto:555@a-esque.com\" title=\"mailto:555@a-esque.com\">555@a-esque.com<\/a><\/p>",
+          "map3": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJPfCchrVC1moRil-pWyYJyJ8&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
+          "address4": "<p>DAVID JONES - SYDNEY<\/p>\n<p>86 -108 Castlereagh Street, Sydney, NSW 2000<\/p>\n<p><\/p>",
+          "map4": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJhYAK3j-uEmsRADFnvNDzMrc&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
+          "address3": "<p>DAVID JONES - MELBOURNE<\/p>\n<p>310 Bourke St, Melbourne VIC 3000<\/p>",
+          "form_title": "Get in Touch",
+          "form_text": "Your email address will not be published. Required fields are marked",
+          "form_show_phone": true
+        }
+      },
+      "page-faq": {
+        "type": "page-faq",
+        "blocks": {
+          "1511862399762": {
+            "type": "faq-caption",
+            "settings": {
+              "faq-caption": "Section #1"
+            }
+          },
+          "1511862306665": {
+            "type": "faq-qa",
+            "settings": {
+              "faq-question": "What is an FAQ Page?",
+              "faq-answer": "<p>An FAQ page is a webpage dedicated to listing and succinctly answering&nbsp;<em>frequently asked questions<\/em>&nbsp;from website visitors.<\/p>\n<p>FAQ pages have been around since&nbsp;before the modern commercial Web.<\/p>\n<p>They originated on Usenet groups both as a navigational tool and as stand-alone curated content. Ecommerce websites adopted the format, especially since online buyers could not physically examine products or talk to a sales rep.<\/p>\n<p>Unfortunately, FAQ pages have also been used for miscellaneous catch-all content pages or as band-aids for bad user experience.<\/p>"
+            }
+          },
+          "1511862334267": {
+            "type": "faq-qa",
+            "settings": {
+              "faq-question": "Should I Have an FAQ Page?",
+              "faq-answer": "<p>Ideally, your website would answer all customer questions as they crop up. The best user experience anticipates and solves problems before the user has to solve the issue themselves.<\/p>\n<p>That said,&nbsp;FAQ pages are a known-page for users. It can be a nice reassurance for customers &mdash; there if they need it, but hopefully they don&rsquo;t have to actually use it.<\/p>"
+            }
+          },
+          "1511862356459": {
+            "type": "faq-qa",
+            "settings": {
+              "faq-question": "So what makes a good FAQ page?",
+              "faq-answer": "<p>Like most marketing questions &ndash; it depends. You have to break the problems down into components and solve each issue for&nbsp;<em>your website<\/em>.<\/p>"
+            }
+          },
+          "1511862417970": {
+            "type": "faq-caption",
+            "settings": {
+              "faq-caption": "Section #2"
+            }
+          },
+          "1511862427658": {
+            "type": "faq-qa",
+            "settings": {
+              "faq-question": "How do I place an order?",
+              "faq-answer": "<p>If you have chosen a favorite sporting goods, then click 'Add to cart', and it will automatically be placed in your shopping cart. You can then continue to select products in our online store, adding to your shopping cart as sporting goods, as needed.If you have already completed the selection of sporting goods, then proceed directly to checkout.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1511862399762",
+          "1511862306665",
+          "1511862334267",
+          "1511862356459",
+          "1511862417970",
+          "1511862427658"
+        ],
+        "settings": {
+        }
+      },
+      "list-collections": {
+        "type": "list-collections",
+        "blocks": {
+          "1513084354153": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173718481": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173735169": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173754598": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173769936": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173900379": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173925191": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173938128": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1513173954140": {
+            "type": "setting",
+            "settings": {
+              "for_collection": "",
+              "image": "",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1513084354153",
+          "1513173718481",
+          "1513173735169",
+          "1513173754598",
+          "1513173769936",
+          "1513173900379",
+          "1513173925191",
+          "1513173938128",
+          "1513173954140"
+        ],
+        "settings": {
+        }
+      },
+      "blog-article": {
+        "type": "blog-article",
+        "settings": {
+          "content_layout": "boxed",
+          "layout": "standart",
+          "show_featured_image": true,
+          "show_author": true,
+          "show_social_links": true,
+          "show_addthis": false
+        }
+      },
+      "home-buy-with": {
+        "type": "home-buy-with",
+        "settings": {
+          "enable_buy_with": false,
+          "featured-text": "Buy With",
+          "prd-top-left": "basket-midi-navy-leather-shoulder-bag",
+          "prd-top-right": "",
+          "prd-bottom-left": "",
+          "prd-bottom-right": ""
+        }
+      },
+      "1526517781866": {
+        "type": "home-instagram",
+        "settings": {
+          "insta-tag": "OUR WORLD @AESQUEOFFICIAL",
+          "insta-tag-url": "",
+          "insta-caption": "",
+          "insta-userid": "399582955",
+          "insta-clientid": "",
+          "insta-token": "399582955.1677ed0.4f70afad8dbc43a69c2c13b54c23664d"
+        }
+      },
+      "page-contacts2": {
+        "type": "page-contacts2",
+        "settings": {
+          "content": "settings",
+          "title": "Contact Us",
+          "text": ""
+        }
+      },
+      "1527482696843": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1527482723786": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/all-handbags",
+              "text1": "THE HEART AND <br> SOUL OF A-ESQUE",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#2d2d2d"
+            }
+          },
+          "1535526506293": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_8.jpg",
+              "image-hover-animation": "",
+              "url": "https:\/\/a-esque.com\/collections\/carry-all-handler",
+              "text1": "BAG OF THE MOMENT",
+              "text1-position": "v-center left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1527482723786",
+          "1535526506293"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1527482961240": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1527482980401": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_5.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/basket",
+              "text1": "BEST BASKET",
+              "text1-position": "v-center right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center right",
+              "color_title_c": "#2d2d2d",
+              "color_title_h_c": "#2d2d2d",
+              "color_info_h_c": "#2d2d2d",
+              "color_quantity_h_c": "#2d2d2d",
+              "color_h_bg": "rgba(0,0,0,0)"
+            }
+          },
+          "1527483088219": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_11.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/face-applique",
+              "text1": "Our Faces",
+              "text1-position": "v-center left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center left",
+              "color_title_c": "#2d2d2d",
+              "color_title_h_c": "#2d2d2d",
+              "color_info_h_c": "#2d2d2d",
+              "color_quantity_h_c": "#2d2d2d",
+              "color_h_bg": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "1527482980401",
+          "1527483088219"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1527483237404": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1527483398540": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180608_HOME_PAGE_FA_15_e92febf7-34d4-45c0-99ae-5d02cafa5f1e.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/petal-pure",
+              "text1": "NEW WORK",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#2d2d2d"
+            }
+          },
+          "1527483251607": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_3.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/de-lip-strap-long-navy",
+              "text1": "DE LIP KISS",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#2d2d2d"
+            }
+          }
+        },
+        "block_order": [
+          "1527483398540",
+          "1527483251607"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1528451077082": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1528451101413": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_4.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/tote-bag",
+              "text1": "TOTES TO GO",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#2d2d2d"
+            }
+          },
+          "1528451194759": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_5.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/basket",
+              "text1": "BEST BASKET",
+              "text1-position": "v-center right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center right",
+              "color_title_c": "#2d2d2d",
+              "color_title_h_c": "#2d2d2d",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#2d2d2d"
+            }
+          }
+        },
+        "block_order": [
+          "1528451101413",
+          "1528451194759"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1528451333519": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1528451425939": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_9.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/bag-strap-1",
+              "text1": "A STRAPPING BRIGADE",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#2d2d2d"
+            }
+          },
+          "1535526655223": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14.jpg",
+              "image-hover-animation": "",
+              "url": "https:\/\/a-esque.com\/collections\/wallet",
+              "text1": "INSIDE MATTERS",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1528451425939",
+          "1535526655223"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1528781242787": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1528781262835": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180629_Resort_01.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/resort-18-collection",
+              "text1": "SUN TIME",
+              "text1-position": "v-center right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#2d2d2d"
+            }
+          },
+          "1528781385324": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_7.jpg",
+              "image-hover-animation": "",
+              "url": "https:\/\/a-esque.com\/collections\/portfolio-satchel",
+              "text1": "AT EASE",
+              "text1-position": "v-center left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#2d2d2d"
+            }
+          }
+        },
+        "block_order": [
+          "1528781262835",
+          "1528781385324"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1528867899857": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1528867928083": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/wallet",
+              "text1": "INSIDE MATTERS",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1528867994595": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_12.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/for-him",
+              "text1": "'HIM' THINGS",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1528867928083",
+          "1528867994595"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1529624487823": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1529624507349": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14_1e7895ae-9444-42ec-99df-6665e1a80cdd.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/petal-pack-metallic-mix-leather-crossbody-belt-bag",
+              "text1": "",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1529624592500": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_15.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/carry-all-handler-midi-tan-shoulder-bag",
+              "text1": "DYNAMIC DUO",
+              "text1-position": "v-center left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1529624507349",
+          "1529624592500"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1531272150905": {
+        "type": "home-products",
+        "disabled": true,
+        "settings": {
+          "collection": "resort-18-collection",
+          "products_per_row": "4",
+          "products_per_row_mobile": "1",
+          "limit": "4",
+          "sec-prd-type": "afterimage",
+          "sec-grid-paddings": "off",
+          "sec-width": "boxed",
+          "sec-margin": "none",
+          "sec-margin-custom": "10px"
+        }
+      },
+      "1532477260206": {
+        "type": "home-products-slider",
+        "disabled": true,
+        "settings": {
+          "collection": "all-handbags",
+          "header_title_1": "Featured Products",
+          "limit": "16",
+          "arrows": true,
+          "sec-prd-type": "afterimage"
+        }
+      },
+      "1535500016318": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1537531301567": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_THEO.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "our story",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1535680111401": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_STORE.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/pages\/store-directory",
+              "text1": "STORES",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#fffefe",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1537570299256": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_AMANDABW.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "creative direction",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1537531301567",
+          "1535680111401",
+          "1537570299256"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535667203117": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1535667221444": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Mini_0000_black.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/crossbody-bag-1",
+              "text1": "crossbody",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1537527207827": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-09-22_at_10.46.31_am.png",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/foldover",
+              "text1": "clutching",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1537527299829": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_home_bag_s_festical_face.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/face-applique",
+              "text1": "our faces",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1535667221444",
+          "1537527207827",
+          "1537527299829"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535667541393": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1535667570570": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/colour-board-test-play-3.0.gif",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1535667570570"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535676167959": {
+        "type": "home-banners",
+        "disabled": true,
+        "blocks": {
+          "1535676226988": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0002_home_bag_festival_face_2.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/home-bag",
+              "text1": "home bag",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1535676280423": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_basket_midi_2.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/basket",
+              "text1": "basket midi",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1535676183703": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page__0013_box_miniature.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/box-miniature",
+              "text1": "Box miniature",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1535676226988",
+          "1535676280423",
+          "1535676183703"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535679088113": {
+        "type": "home-banners",
+        "blocks": {
+          "1535679103666": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Folder_Serpentine_-_Khaki_-_Square_1.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/new-work",
+              "text1": "NEW WORK",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#f7f1f1",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679201382": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Carry_all_handler_Birdblue_-_Square_2.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/metallics",
+              "text1": "METALLIC PIECES",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679248430": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Building_Tel_Aviv_-_Square_3.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/colour-burst",
+              "text1": "Colourplay",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1535679103666",
+          "1535679201382",
+          "1535679248430"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535679348539": {
+        "type": "home-banners",
+        "blocks": {
+          "1535679389602": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Family_-_Square_4.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/petal-family",
+              "text1": "Petal Pattern family",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679423693": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Applique_home_bag_-_Square_5.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/grizabella",
+              "text1": "Grizabella bag",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679361471": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/pages\/store-directory",
+              "text1": "Store",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1535679389602",
+          "1535679423693",
+          "1535679361471"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      },
+      "1535679823899": {
+        "type": "home-banners",
+        "blocks": {
+          "1535679837485": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Grande_-_Square_7.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/products\/petal-grande-noir-navy-leather",
+              "text1": "bag of the moment",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679872557": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Homepage_-_Square_8.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1535679910066": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mantion_bag_-_Square_9.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/applique",
+              "text1": "New applique capsule",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1535679837485",
+          "1535679872557",
+          "1535679910066"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
+        }
+      }
+    },
+    "content_for_index": [
+      "1504161678752",
+      "1532477260206",
+      "1527482696843",
+      "1528451333519",
+      "1528867899857",
+      "1527483237404",
+      "1535679088113",
+      "1535679348539",
+      "1535679823899",
+      "1535667203117",
+      "1535500016318",
+      "1535667541393",
+      "1535676167959",
+      "1529624487823",
+      "1528451077082",
+      "1528781242787",
+      "1527482961240",
+      "1531272150905",
+      "1526517781866"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "content_for_index": [
+
+      ]
+    }
+  }
+}

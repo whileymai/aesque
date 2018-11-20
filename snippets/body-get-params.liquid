@@ -1,0 +1,45 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if settings.show_multiple_currencies %}
+    data-currency-multiple="true"
+{% endif %}
+{% if settings.layout_rtl %}
+    dir="rtl"
+{% endif %}
+
+{% if customer %}
+    data-prdbut-domain="{{ shop.permanent_domain }}"
+	data-prdbut-main-domain="{{ shop.domain }}"
+    data-prdbut-customer-id="{{ customer.id }}"
+{% endif %}
+
+{%- if settings.prd-check_btns_state -%}
+    {%- comment -%} ### Wishlist ### {%- endcomment -%}
+    {% if customer %}
+        {% for whishlist in customer.metafields.atowishlist %}
+            {% assign this-id = whishlist[0] | plus: 0 %}
+
+            {% if res-wishlist_list_id %}
+                {% assign res-wishlist_list_id = res-wishlist_list_id | append: ', ' %}
+            {% endif %}
+
+            {% assign res-wishlist_list_id = res-wishlist_list_id | append: this-id %}
+        {% endfor %}
+
+        data-prdbut-wishlist-id="{{ res-wishlist_list_id }}"
+    {% endif %}
+
+    {%- comment -%} ### Cart ### {%- endcomment -%}
+    {% for item in cart.items %}
+        {% assign this-id = item.id %}
+
+        {% if res-cart_list_id %}
+            {% assign res-cart_list_id = res-cart_list_id | append: ', ' %}
+        {% endif %}
+
+        {% assign res-cart_list_id = res-cart_list_id | append: this-id %}
+    {% endfor %}
+
+    data-prdbut-cart-id="{{ res-cart_list_id }}"
+
+{%- endif -%}

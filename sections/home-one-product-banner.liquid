@@ -1,0 +1,168 @@
+{%- comment -%}
+{%- endcomment -%}
+{% comment %} ### MARGIN ### {% endcomment %}
+{% assign loc_margin_class = '' %}
+{% if section.settings.brands-sec-margin == 'demo2'%}
+	{% assign loc_margin_class = 'tt-home__post-img-01' %}
+{% endif %}
+{% if section.settings.brands-sec-margin == 'custom'%}
+	{% capture res-style_custom_margin %} style="margin: {{ section.settings.brands-sec-margin-custom }};"{% endcapture %}
+{% endif %}
+
+
+{% comment %} ### WIDTH ### {% endcomment %}
+{% if section.settings.brands-sec-width == 'boxed' %}
+	{% assign loc_container_class = 'container' | append: loc_margin_class %}
+{% endif %}
+{% if section.settings.brands-sec-width == 'fullwidth' %}
+	{% assign loc_container_class = 'container-fluid ttg-cont-padding--none' | append: loc_margin_class %}
+{% endif %}
+
+
+{% comment %} ### COLORS ### {% endcomment %}
+{% assign this-settings = section.settings %}
+
+{% assign res-styles_text_01 = null %}
+{% assign res-styles_text_02 = null %}
+
+{% if this-settings.color_text_01_c != blank and this-settings.color_text_01_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_text_01 %} style="color: {{ this-settings.color_text_01_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_text_02_c != blank and this-settings.color_text_02_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_text_02 %} style="color: {{ this-settings.color_text_02_c }};"{% endcapture %}
+{% endif %}
+
+<div data-section-id="{{ section.id }}" data-section-type="one-prd-banner" class="{{ loc_container_class }}" {{ res-style_custom_margin }}>
+	<div class="tt-post-img tt-post-img--layers tt-post-img--curtain ttg-image-scale">
+		<img src="{{ section.settings.prod-banner-image | img_url: '1920x' }}" alt="{{ section.settings.prod-banner-image-alt }}">
+		<div class="tt-post-img__text">
+			<div class="tt-post-img__title tt-post-img__title--long"{{ res-styles_text_01 }}>{{ section.settings.prod-banner-text }}</div>
+			<div class="tt-post-img__info ttg-f--16 ttg-fw--bold"{{ res-styles_text_02 }}>{{ section.settings.prod-banner-text2 }}</div>
+			<a href="{{ section.settings.prod-banner-url-button }}" class="btn colorize-btn{{ this-settings.color_btn_style }}">{{ section.settings.prod-banner-text-button }}</a>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+"name": "One Product Banner",
+"settings": [
+{
+"type": "image_picker",
+"id": "prod-banner-image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "prod-banner-image-alt",
+"label": "Image Alt text",
+"default": "BuyNow Product!"
+},
+{
+"type": "text",
+"id": "prod-banner-text",
+"label": "Text #1",
+"default": "Lorem Ipsum Dolor Sit Amet Conse Ctetur Aadipisicing"
+},
+{
+"type": "text",
+"id": "prod-banner-text2",
+"label": "Text #2",
+"default": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"
+},
+{
+"type": "text",
+"id": "prod-banner-text-button",
+"label": "Button text",
+"default": "Shop Now!"
+},
+{
+"type": "url",
+"id": "prod-banner-url-button",
+"label": "Button link"
+},
+{
+"type": "header",
+"content": "Layout options"
+},
+{
+"label": "Width",
+"id": "brands-sec-width",
+"type": "select",
+"default": "boxed",
+"options": [
+{
+"value": "boxed",
+"label": "Boxed"
+},
+{
+"value": "fullwidth",
+"label": "Full Width"
+}
+]
+},
+{
+"label": "Margin",
+"id": "brands-sec-margin",
+"type": "select",
+"default": "none",
+"options": [
+{
+"value": "none",
+"label": "None"
+},
+{
+"value": "demo2",
+"label": "Demo7"
+},
+{
+"value": "custom",
+"label": "Custom"
+}
+]
+},
+{
+"label": "Custom Margin",
+"id": "brands-sec-margin-custom",
+"type": "text",
+"default": "10px"
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_text_01_c",
+"label": "Text #1"
+},
+{
+"type": "color",
+"id": "color_text_02_c",
+"label": "Text #2"
+},
+{
+"type": "select",
+"id": "color_btn_style",
+"label": "Button style",
+"default": "1",
+"options": [
+{ "value": "1", "label": "Type #1" },
+{ "value": "2", "label": "Type #2" },
+{ "value": "3", "label": "Type #3" },
+{ "value": "4", "label": "Type #4" },
+{ "value": "5", "label": "Type #5" },
+{ "value": "6", "label": "Type #6" },
+{ "value": "7", "label": "Type #7" },
+{ "value": "8", "label": "Type #8" }
+]
+}
+],
+"presets": [
+{
+"name": "One Product Banner",
+"category": "3) Products"
+}
+]
+}
+{% endschema %}

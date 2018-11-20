@@ -1,0 +1,64 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- assign loc-pages_boxed = '' | split: '|' -%}
+{%- assign loc-pages_fullwidth = '' | split: '|' -%}
+{%- assign res-template = template | remove: 'page.' | remove: '.liquid' -%}
+{%- assign res-template_first_word = res-template | split: '.' -%}
+{%- assign res-template_first_word = res-template_first_word[0] -%}
+{%- assign res-sidebar = null -%}
+{%- if set-container -%}
+	{%- assign loc-container = set-container -%}
+{%- elsif loc-pages_fullwidth contains res-template -%}
+	{%- assign loc-container = 'fullwidth' -%}
+{%- elsif loc-pages_boxed contains res-template -%}
+	{%- assign loc-container = 'boxed' -%}
+{%- elsif res-template_first_word == 'collection' -%}
+	{%- assign loc-container = settings.layout-container_collection -%}
+{%- elsif res-template_first_word == 'blog' -%}
+	{%- assign loc-container = settings.layout-container_blog -%}
+{%- else -%}
+	{%- assign loc-container = settings.layout-container_default -%}
+	{%- assign loc-container_reverse = settings.layout-container_default_reverse | split: '|' -%}
+	{%- if loc-container_reverse contains res-template -%}
+		{%- if loc-container == 'fullwidth' -%}
+			{%- assign loc-container = 'boxed' -%}
+		{%- elsif loc-container == 'boxed' -%}
+			{%- assign loc-container = 'fullwidth' -%}
+		{%- endif -%}
+	{%- endif -%}
+{%- endif -%}
+{%- if loc-container == 'sidebar_left' -%}
+	{%- assign res-layout_class = ' tt-layout__sidebar-left' -%}
+{%- elsif loc-container == 'sidebar_right' -%}
+	{%- assign res-layout_class = ' tt-layout__sidebar-right' -%}
+{%- elsif loc-container == 'fullwidth' -%}
+	{%- assign res-layout_class = ' tt-layout__fullwidth' -%}
+{%- elsif loc-container == 'boxed' -%}
+	{%- assign res-layout_class = '' -%}
+{%- endif -%}
+{%- if res-template_first_word == 'collection' or res-template_first_word == 'blog' -%}
+	{%- capture res-sidebar -%}
+		<aside class="tt-layout__sidebar tt-sticky-block" role="complementary">
+			<div class="tt-layout__sidebar-sticky tt-sticky-block__inner">
+				<div class="tt-sidebar">
+					<div class="tt-sidebar__btn">
+						<div class="tt-sidebar__btn-open">
+							<i class="fa fa-circle-o"></i><span>{{ 'layout.sidebar.filter' | t }}</span>
+						</div>
+						<div class="tt-sidebar__btn-close">
+							<i class="fa fa-cancel"></i><span>{{ 'layout.sidebar.close' | t }}</span>
+						</div>
+					</div>
+					<div class="tt-sidebar__content">
+						{%- if res-template_first_word == 'collection' -%}
+							{%- section 'collection-sidebar' -%}
+							{%- elsif res-template_first_word == 'blog' -%}
+							{%- section 'blog-sidebar' -%}
+						{%- endif -%}
+					</div>
+				</div>
+				<div class="tt-sidebar__bg"></div>
+			</div>
+		</aside>
+	{%- endcapture -%}
+{%- endif -%}

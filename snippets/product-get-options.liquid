@@ -1,0 +1,89 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign set-prd-build-page = set-prd-build-page | default: false %}
+{% assign loc-options_design_color_enable = true %}
+{% assign loc-options_type_select = loc-options_type_select | replace: " ", "" | split: ',' %}
+
+<div class="prdbut__options {% if set-prd-build-page %}prdbut__options--page{% else %}prdbut__options--list{% endif %}{% if settings.prd-show_options_disabled_state == false %} prdbut__options--disabled-state-off{% endif %}">
+    {% for option in product.options_with_values %}
+        {% assign this-option_design = null %}
+        {% assign res-option_design = null %}
+        {% assign this-option_name = option.name | handle | down | trim %}
+
+        {% for swatch in shop.metafields.ato-swatch-type %}
+            {% assign this-name = swatch[0] %}
+            {% if this-name == this-option_name and swatch[1] %}
+                {% assign this-option_design = swatch[1] %}
+            {% endif %}
+        {% endfor %}
+
+        {% if set-prd-build-page %}
+            {% if this-option_design == 'text2' or this-option_design == 'text3' or this-option_design == 'text4' %}
+                {% assign this-option_design = 'text4' %}
+            {% endif %}
+        {% endif %}
+
+        {% if loc-options_design_color_enable %}
+            {% if this-option_design == null or set-prd-build-page %}
+                {% if this-option_name == 'color' or this-option_name == 'colour' %}
+                    {% assign this-option_design = 'color' %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+        {% if this-option_design != blank %}
+            {% case this-option_design %}
+                {% when 'color' %}
+                {% assign res-option_design = ' prdbut__option--design-color' %}
+                {% when 'image' %}
+                {% assign res-option_design = ' prdbut__option--design-image' %}
+                {% when 'text2' %}
+                {% assign res-option_design = ' prdbut__option--design-text' %}
+                {% when 'text3' %}
+                {% assign res-option_design = ' prdbut__option--design-bg' %}
+                {% when 'text4' %}
+                {% assign res-option_design = ' prdbut__option--design-bg-n-bd' %}
+            {% endcase %}
+        {% else %}
+            {% assign res-option_design = ' prdbut__option--design-text' %}
+        {% endif %}
+
+        {% if set-prd-build-page %}
+            <div class="prdbut__title">
+                <span class="ttg__required">{{ option.name }}</span>
+            </div>
+        {% endif %}
+
+        {% if loc-options_type_select contains this-option_name %}
+            <div class="prdbut__option prdbut__option--select prdbut__option--{{ this-option_name }}"
+                 data-prdbut-group="option{{ forloop.index }}">
+                <label class="tt-select">
+                    <select class="form-control">
+                        {% for value in option.values %}
+                            <option data-prdbut-value="{{ value | handle | down | trim }}" {% if log-options-selected contains value %} selected{% endif %}>{{ value }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
+            </div>
+        {% else %}
+            <div class="prdbut__option prdbut__option--{{ this-option_name }}{{ res-option_design }}"
+                 data-prdbut-group="option{{ forloop.index }}">
+                {% for value in option.values %}
+                    {% if log-options-selected contains value %}
+                        {% assign this-value_class = ' active' %}
+                        {% unless loc-prd-selected %}
+                        {% assign this-value_class = this-value_class | append: ' default' %}
+                        {% endunless %}
+                    {% else %}
+                        {% assign this-value_class = ' disabled' %}
+                    {% endif %}
+                    <span class="prdbut__val prdbut__val--{{ value | handle | down | trim }}{{ this-value_class }}"
+                          data-prdbut-value="{{ value | handle | down | trim }}"
+                          title="{{ value }}">
+                    <span>{{ value }}</span>
+                </span>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

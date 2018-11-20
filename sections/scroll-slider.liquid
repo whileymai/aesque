@@ -1,0 +1,266 @@
+{% include 'helper-section-layout2' %}
+
+<div class="ttgwm {{ res-container_class }}" data-section-id="{{ section.id }}" data-section-type="scroll-slider" {{ res-container_inline_style }}>
+    <div class="ttgwm-mt--0__nav">
+        <ul{% if section.settings.bullets_enable == blank %} class="ttg-hidden"{% endif %}>
+            {% assign slides_count = 0 %}
+            {% for block in section.blocks %}
+                {% if block.type == 'slide' %}
+                    <li><a href="#"></a></li>
+                    {% assign slides_count = slides_count | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% if section.settings.arrows_enable and slides_count > 1 %}
+            <div class="tt-slider-scroll__nav_arrows">
+                <span><i class="icon-left-open-2"></i></span>
+                <span><i class="icon-right-open-2"></i></span>
+            </div>
+        {% endif %}
+    </div>
+
+    {% assign index = 0 %}
+    {% for block in section.blocks %}
+    {% assign slide_set = block.settings %}
+  
+  <div class="ttgwm" {{ res-item_inline_style }}>
+           <img src="{{ slide_set.image | img_url: '2048x' }}" alt="Image name">
+ 
+            {% if slide_set.info_state %}
+                {% assign res-styles_text_01 = null %}
+                {% assign res-styles_text_02 = null %}
+                {% assign res-styles_text_03 = null %}
+
+                {% if slide_set.color_text_01_c != blank and slide_set.color_text_01_c != 'rgba(0,0,0,0)' %}
+                    {% capture res-styles_text_01 %} style="color: {{ slide_set.color_text_01_c }};"{% endcapture %}
+                {% endif %}
+                {% if slide_set.color_text_02_c != blank and slide_set.color_text_02_c != 'rgba(0,0,0,0)' %}
+                    {% capture res-styles_text_02 %} style="color: {{ slide_set.color_text_02_c }};"{% endcapture %}
+                {% endif %}
+                {% if slide_set.color_text_03_c != blank and slide_set.color_text_03_c != 'rgba(0,0,0,0)' %}
+                    {% capture res-styles_text_03 %} style="color: {{ slide_set.color_text_03_c }};"{% endcapture %}
+                {% endif %}
+
+                <div class="tt-slider-scroll__text">
+                    {% if slide_set.custom_content_info_state %}
+                        {{ slide_set.custom_content_info }}
+                    {% elsif slide_set.product_id != blank %}
+                        {% assign this_product = all_products[slide_set.product_id] %}
+                        {% assign this_product_price = this_product.price | money | remove: "</span>" | split: ">" %}
+
+                        <div{{ res-styles_text_01 }}>{{ this_product.title }}</div>
+                        <span class="money"{{ res-styles_text_02 }}>{{ this_product_price[1] }}</span>
+                        <p{{ res-styles_text_03 }}>{{ this_product.description | remove: "<p>" | remove: "</p>" | truncate: 60}}</p>
+                        {% if slide_set.button_icon.size > 0 %}
+                            <a href="{{ this_product.url }}" class="btn colorize-btn{{ slide_set.color_btn_style }}">
+                                <i class="{{ slide_set.button_text }}">{{ slide_set.button_text }}</i>
+                            </a>
+                        {% endif %}
+                    {% else %}
+                        {% if slide_set.text_01.size > 0 %}<div{{ res-styles_text_01 }}>{{ slide_set.text_01 }}</div>{% endif %}
+                        {% if slide_set.text_02.size > 0 %}<span{{ res-styles_text_02 }}>{{ slide_set.text_02 }}</span>{% endif %}
+                        {% if slide_set.text_03.size > 0 %}<p{{ res-styles_text_03 }}>{{ slide_set.text_03 }}</p>{% endif %}
+                        {% if slide_set.button_icon.size > 0 %}
+                  			<a href="{{ slide_set.url }}" class="btn colorize-btn{{ slide_set.color_btn_style }}">{{ slide_set.button_text }}</a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+
+  		</div>
+
+        {% assign index = index | plus: 1 %}
+    {% endfor %}
+</div>
+
+
+{% schema %}
+{
+"name": "Collection Slider",
+"settings": [
+{
+"label": "Width",
+"id": "width",
+"type": "select",
+"default": "boxed",
+"options": [
+{ "value": "boxed", "label": "Boxed" },
+{ "value": "fullwidth", "label": "Full Width" }
+]
+},
+{
+"label": "Margin",
+"id": "margin",
+"type": "select",
+"default": "none",
+"options": [
+{ "value": "none", "label": "None" },
+{ "value": "demo2", "label": "100px auto 90px (demo2)" },
+{ "value": "custom", "label": "Custom" }
+]
+},
+{
+"label": "Custom margin",
+"id": "margin-custom",
+"type": "text",
+"default": "10px auto",
+"info": "This is pure CSS value. [More info](https:\/\/www.w3schools.com\/cssref\/pr_margin.asp)"
+},
+{
+"label": "Padding (grid inner)",
+"id": "padding",
+"type": "select",
+"default": "none",
+"options": [
+{ "value": "none", "label": "None" },
+{ "value": "demo2", "label": "0 12px 0 12px (demo2)" },
+{ "value": "custom", "label": "Custom" }
+]
+},
+{
+"label": "Custom padding",
+"id": "padding-custom",
+"type": "text",
+"default": "12px",
+"info": "This is pure CSS value. [More info](https:\/\/www.w3schools.com\/cssref\/pr_padding.asp)"
+},
+{
+"type": "checkbox",
+"id": "bullets_enable",
+"label": "Show bullets?",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "arrows_enable",
+"label": "Show arrows?",
+"default": true
+}
+],
+"blocks": [
+{
+"type": "slide",
+"name": "Slide",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "header",
+"content": "Info"
+},
+{
+"type": "checkbox",
+"id": "info_state",
+"label": "Show info?",
+"default": true
+},
+{
+"label": "URL",
+"id": "url",
+"type": "url"
+},
+{
+"type": "product",
+"id": "product_id",
+"label": "Product"
+},
+{
+"label": "Button Icon (icon code)",
+"id": "button_icon",
+"type": "text",
+"default": "icon-shop24",
+"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+},
+{
+"label": "Button Text (text)",
+"id": "button_text",
+"type": "text",
+"info": "Empty field delete text",
+"default": "Text line 1"
+},
+{
+"label": "Line 1 (text)",
+"id": "text_01",
+"type": "text",
+"info": "Empty field delete text",
+"default": "Text line 1"
+},
+{
+"label": "Line 2 (text)",
+"id": "text_02",
+"type": "text",
+"info": "Empty field delete text",
+"default": "Text line 2"
+},
+{
+"label": "Line 3 (small text)",
+"id": "text_03",
+"type": "textarea",
+"info": "Empty field delete text.</br> = new string",
+"default": "Text line 3"
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_text_01_c",
+"label": "Text line 1"
+},
+{
+"type": "color",
+"id": "color_text_02_c",
+"label": "Text line 2"
+},
+{
+"type": "color",
+"id": "color_text_03_c",
+"label": "Text line 3"
+},
+{
+"type": "select",
+"id": "color_btn_style",
+"label": "Button style",
+"default": "7",
+"options": [
+{ "value": "1", "label": "Type #1" },
+{ "value": "2", "label": "Type #2" },
+{ "value": "3", "label": "Type #3" },
+{ "value": "4", "label": "Type #4" },
+{ "value": "5", "label": "Type #5" },
+{ "value": "6", "label": "Type #6" },
+{ "value": "7", "label": "Type #7" },
+{ "value": "8", "label": "Type #8" }
+]
+},
+{
+"type": "header",
+"content": "Custom HTML"
+},
+{
+"type": "checkbox",
+"id": "custom_content_info_state",
+"label": "Use custom HTML?",
+"default": false
+},
+{
+"label": "Content info",
+"id": "custom_content_info",
+"type": "html",
+"default": "<div class=\"tt-sr__design-white\">Text line 1</div><span class=\"tt-sr__design-white\">Text line 2</span><p class=\"tt-sr__design-white\">Text line 3</p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"></i></a>"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Collection Slider",
+"category": "1) Slider"
+}
+]
+}
+{% endschema %}

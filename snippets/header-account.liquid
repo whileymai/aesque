@@ -1,0 +1,62 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if section.settings.account_icon == true %}
+<div>
+    <a href="#" class="tt-header__btn tt-header__btn-user"><i class="icon-user"></i></a>
+    <div class="tt-header__user">
+        <ul class="tt-list-toggle">
+            {%- if shop.customer_accounts_enabled and customer -%}
+                <li><a href="/account">{{ "customer.account.title" | t }}</a></li>{%- endif -%}
+                <li><a href="/checkout">{{ "customer.account.checkout" | t }}</a></li>
+            {%- if shop.customer_accounts_enabled -%}
+                {%- if customer -%}
+                    <li><a href="/account/logout">{{ "customer.login.logout" | t }}</a></li>
+                {%- else -%}
+                    <li><a href="/account/login">{{ "customer.login.sign_in" | t }}</a></li>
+                    {%- if shop.customer_accounts_optional -%}
+                        <li><a href="/account/register">{{ "customer.register.title" | t }}</a></li>
+
+                        {%- if section.settings.login_form -%}
+                            {%- capture res-login-form -%}
+                            <div class="tt-header__login">
+                                <h6>{{ 'layout.customer.login.title' | t }}</h6>
+                                {%- form 'customer_login' -%}
+                                <input type="email"
+                                       name="customer[email]"
+                                       id="CustomerEmail"
+                                       class="form-control{%- if form.errors contains 'email' -%} input-error{%- endif -%}"
+                                       placeholder="{{ 'layout.customer.login.email_placeholder' | t }}"
+                                       spellcheck="false"
+                                       autocomplete="off"
+                                       autofocus
+                                       required="required">
+                                {%- if form.password_needed -%}
+                                    <input type="password"
+                                           name="customer[password]"
+                                           id="CustomerPassword"
+                                           class="form-control{%- if form.errors contains 'password' -%} input-error{%- endif -%}"
+                                           placeholder="{{ 'layout.customer.login.password_placeholder' | t }}"
+                                           required="required">
+                                {%- endif -%}
+                                <button type="submit" class="btn">{{ 'layout.customer.login.sign_in' | t }}</button>
+                                {%- if form.password_needed -%}
+                                    <div>
+                                        <a href="/account/login#recover"
+                                           class="colorize-theme-c"
+                                           data-toggle-block="#RecoverPasswordForm"
+                                           data-focus="#RecoverEmail"
+                                           data-action="open">{{ 'layout.customer.login.forgot_password' | t }}</a>
+                                    </div>
+                                {%- endif -%}
+                                {%- endform -%}
+                            </div>
+                            {%- endcapture -%}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endif -%}
+        </ul>
+        {{ res-login-form }}
+    </div>
+</div>
+{% endif %}

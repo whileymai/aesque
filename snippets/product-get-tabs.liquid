@@ -1,0 +1,124 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="tt-product-page__tabs tt-tabs tt-layout__section--pdg" data-tt-type="horizontal">
+	<div class="tt-tabs__head">
+		<div class="tt-tabs__slider">
+			{% assign loc-active-tab = 'data-active="true"' %}
+			{% if loc-show_description_tab %}
+				<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ 'products.product.tab_description' | t }}</span></div>
+				{% assign loc-active-tab = '' %}
+			{% endif %}
+			{% if loc-show_custom_text_tab %}
+				<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ loc-custom_text_tab_caption }}</span></div>
+				{% assign loc-active-tab = '' %}
+			{% endif %}
+			{% if loc-show_custom_html_tab %}
+				<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ loc-custom_html_tab_caption }}</span></div>
+				{% assign loc-active-tab = '' %}
+			{% endif %}
+			{% if loc-show_custom_product_tabs %}
+				{% if loc-ato.tabt1 and loc-ato.tabt1 != 'empty' %}
+					<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ loc-ato.tabt1 }}</span></div>
+					{% assign loc-active-tab = '' %}
+				{% endif %}
+				{% if loc-ato.tabt2 and loc-ato.tabt2 != 'empty' %}
+					<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ loc-ato.tabt2 }}</span></div>
+					{% assign loc-active-tab = '' %}
+				{% endif %}
+				{% if loc-ato.tabt3 and loc-ato.tabt3 != 'empty' %}
+					<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ loc-ato.tabt3 }}</span></div>
+					{% assign loc-active-tab = '' %}
+				{% endif %}
+			{% endif %}
+			{% if loc-show_tag_tab %}
+				<div class="tt-tabs__btn" {{ loc-active-tab }}><span>{{ 'products.product.tab_tags' | t }}</span></div>
+				{% assign loc-active-tab = '' %}
+			{% endif %}
+			{% if loc-show_review_tab %}
+				<div class="tt-tabs__btn" data-tab="review-shopify" {{ loc-active-tab }}><span>{{ 'products.product.tab_reviews' | t }}</span></div>
+				{% assign loc-active-tab = '' %}
+			{% endif %}
+		</div>
+		<div class="tt-tabs__btn-prev"></div>
+		<div class="tt-tabs__btn-next"></div>
+		<div class="tt-tabs__border"></div>
+	</div>
+	<div class="tt-tabs__body tt-tabs-product rte">
+		{% if loc-show_description_tab %}
+		<div>
+			<span>{{ 'products.product.tab_description' | t }} <i class="icon-down-open"></i></span>
+			<div class="tt-tabs__content">
+				{{ loc-description }}
+			</div>
+		</div>
+		{% endif %}
+              {% comment %}
+
+		{% if loc-show_custom_text_tab %}
+			<div>
+				<span>{{ loc-custom_text_tab_caption }} <i class="icon-down-open"></i></span>
+				<div class="tt-tabs__content">
+					{{ loc-custom_text_tab_content }}
+				</div>
+			</div>
+		{% endif %}
+              {% endcomment %}
+
+		{% if loc-show_custom_html_tab %}
+			<div>
+				<span>{{ loc-custom_html_tab_caption }} <i class="icon-down-open"></i></span>
+				<div class="tt-tabs__content">
+					{{ loc-custom_html_tab_content }}
+				</div>
+			</div>
+		{% endif %}
+		{% if loc-show_custom_product_tabs %}
+			{% if loc-ato.tabt1 and loc-ato.tabt1 != 'empty' %}
+				<div>
+					<span>{{ loc-ato.tabt1 }} <i class="icon-down-open"></i></span>
+					<div class="tt-tabs__content">
+						{{ loc-ato.tabc1 }}
+					</div>
+				</div>
+			{% endif %}
+			{% if loc-ato.tabt2 and loc-ato.tabt2 != 'empty' %}
+				<div>
+					<span>{{ loc-ato.tabt2 }} <i class="icon-down-open"></i></span>
+					<div class="tt-tabs__content">
+						{{ loc-ato.tabc2 }}
+					</div>
+				</div>
+			{% endif %}
+			{% if loc-ato.tabt3 and loc-ato.tabt3 != 'empty' %}
+				<div>
+					<span>{{ loc-ato.tabt3 }} <i class="icon-down-open"></i></span>
+					<div class="tt-tabs__content">
+						{{ loc-ato.tabc3 }}
+					</div>
+				</div>
+			{% endif %}
+		{% endif %}
+		{% if loc-show_tag_tab %}
+			<div>
+				<span>{{ 'products.product.tab_tags' | t }} <i class="icon-down-open"></i></span>
+				<div class="tt-tabs__content">
+					<div class="tt-tabs-product__tags">
+						{% for tag in loc-tags %}
+							<a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% if loc-show_review_tab %}
+			<div>
+				<span>{{ 'products.product.tab_reviews' | t }} <i class="icon-down-open"></i></span>
+				<div class="tt-tabs__content">
+					<div class="tt-tabs-product__review tt-review-shopify">
+						<div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</div>

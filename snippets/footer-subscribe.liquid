@@ -1,0 +1,23 @@
+{%- comment -%}
+{%- endcomment -%}
+{% case section.settings.type %}
+  {% when '1' %}
+	{% assign subscribe_capt_enable = true %}
+  {% when '2' %}
+	{% assign subscribe_capt_enable = true %}
+  {% when '4' %}
+	{% assign subscribe_capt_enable = true %}
+  {% when '5' %}
+	{% assign subscribe_capt_enable = true %}
+{% endcase %}
+
+{% if footer_block.caption_enable %}
+	{% if subscribe_capt_enable %}
+		<span class="tt-footer__title">{{ footer_block.caption }}</span>
+	{% endif %}
+{% endif %}
+<div class="tt-footer__newsletter">
+	{% if footer_block.text_top.size > 0 %}{{ footer_block.text_top }}{% endif %}
+	{% assign set-style = settings.color_footer_newsletter_type %}
+	{% include 'subscribe' %}
+</div>

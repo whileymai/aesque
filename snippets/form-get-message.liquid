@@ -1,0 +1,31 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign default-message-text = 'customer.recover_password.success' | t %}
+{% assign loc-message-text = set-message-text | default: default-message-text %}
+
+{%- if form.errors -%}
+    {% assign res-error-fields = null %}
+    <div class="tt-form__message tt-form__message--errors">
+        {%- for field in form.errors -%}
+            {% if forloop.first != true %}
+                {% assign res-error-fields = res-error-fields | append: '|' %}
+            {% endif %}
+            {% assign res-error-fields = res-error-fields | append: field %}
+            <p>
+                {%- if field == 'form' -%}
+                    {{ form.errors.messages[field] }}
+                {%- else -%}
+                    {{ form.errors.translated_fields[field] }} - {{ form.errors.messages[field] }}
+                {%- endif -%}
+            </p>
+        {%- endfor -%}
+    </div>
+{%- endif -%}
+
+{% assign res-error-fields = res-error-fields | split: '|' %}
+
+{% if form.posted_successfully? %}
+    <div class="tt-form__message tt-form__message--success">
+        <p id="ResetSuccess">{{ loc-message-text }}</p>
+    </div>
+{% endif %}

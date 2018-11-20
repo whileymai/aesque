@@ -1,0 +1,128 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if settings.layout-show_breadcrumbs %}
+  <div class="tt-page__breadcrumbs">
+    {% include 'breadcrumbs' %}
+  </div>
+{% endif %}
+
+{% form 'customer_login' %}
+  <div id="CustomerLoginForm">
+    <div class="tt-page__name tt-page__name--row text-center">
+      <h1>{{ 'customer.login.title' | t }}</h1>
+      <span>/</span>
+      <a href="/account/register">{{ 'customer.register.title' | t }}</a>
+    </div>
+    <div class="tt-login tt-layout__section--pdg">
+      <div class="tt-form">
+        {% include 'form-get-message' %}
+        <div class="tt-form__form">
+            <label>
+              <div class="row ">
+                <div class="col-md-3"><span class="ttg__required">{{ 'customer.login.email' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="email"
+                         name="customer[email]"
+                         id="CustomerEmail"
+                         class="form-control colorize-theme6-bg{% if form.errors contains 'email' %} input-error{% endif %}"
+                         placeholder="{{ 'customer.login.email_placeholder' | t }}"
+                         spellcheck="false"
+                         autocomplete="off"
+                         autofocus
+                         required="required">
+                </div>
+              </div>
+            </label>
+            {% if form.password_needed %}
+              <label>
+                <div class="row">
+                  <div class="col-md-3"><span class="ttg__required">{{ 'customer.login.password' | t }}:</span></div>
+                  <div class="col-md-9">
+                    <input type="password"
+                           name="customer[password]"
+                           id="CustomerPassword"
+                           class="form-control colorize-theme6-bg{% if form.errors contains 'password' %} input-error{% endif %}"
+                           placeholder="{{ 'customer.login.password_placeholder' | t }}"
+                           required="required">
+                  </div>
+                </div>
+              </label>
+            {% endif %}
+            <div class="row ttg-mt--40">
+              <div class="col-md-9 offset-md-3">
+                <button type="submit" class="btn">{{ 'customer.login.sign_in' | t }}</button>
+                <div class="tt-form__back">
+                  <span>or</span>
+                  <a href="/">{{ 'customer.login.cancel' | t }}</a>
+                </div>
+                {% if form.password_needed %}
+                  <div class="ttg-mt--30">
+                    <a href="#" id="RecoverPassword" data-toggle-block="#RecoverPasswordForm" data-focus="#RecoverEmail" data-url-exist="login#recover">{{ 'customer.login.forgot_password' | t }}</a>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endform %}
+
+{% form 'recover_customer_password' %}
+  <div id="RecoverPasswordForm"{%- if form.errors or form.posted_successfully? -%}{% else %} class="ttg-hidden"{% endif %}>
+    <div class="tt-page__name ttg-mt--0 text-center">
+      <h2>{{ 'customer.recover_password.title' | t }}</h2>
+    </div>
+    <div class="tt-login">
+      <div class="tt-login__title">
+        <p>{{ 'customer.recover_password.subtext' | t }}</p>
+      </div>
+      <div class="tt-form">
+          {% include 'form-get-message' %}
+          <div class="tt-form__form">
+            <label>
+              <div class="row">
+                <div class="col-md-3"><span class="ttg__required">{{ 'customer.recover_password.email' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="email"
+                         name="email"
+                         id="RecoverEmail"
+                         class="form-control colorize-theme6-bg"
+                         placeholder="{{ 'customer.recover_password.email_placeholder' | t }}"
+                         spellcheck="false"
+                         autocomplete="off"
+                         required="required">
+                </div>
+              </div>
+            </label>
+            <div class="row ttg-mt--40">
+              <div class="col-md-9 offset-md-3">
+                <button type="submit" class="btn">{{ 'customer.recover_password.submit' | t }}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endform %}
+
+
+{% if shop.checkout.guest_login %}
+  <div class="tt-page__name text-center">
+    <h2>{{ 'customer.login.guest_title' | t }}</h2>
+  </div>
+
+  {% form 'guest_login' %}
+  <div class="tt-login">
+    <div class="tt-form">
+      {% include 'form-get-message' %}
+      <div class="tt-form__form text-center">
+        <button type="submit" class="btn">{{ 'customer.login.guest_continue' | t }}</button>
+      </div>
+    </div>
+  </div>
+  {% endform %}
+{% endif %}
+
+
+

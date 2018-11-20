@@ -1,0 +1,80 @@
+{%- comment -%}
+{%- endcomment -%}
+<!-- header-magemenu.liquid -->
+{%- assign loc-inline-styles = '' -%}
+<nav class="TonyM TonyM--header"
+	 data-tm-dir="row"
+	 data-tm-mob="true"
+	 data-tm-anm="emersion">
+	<ul class="TonyM__panel">
+		{%- for link in linklists[section.settings.main_linklist].links -%}
+			{%- assign child_list_handle = link.title | handleize -%}
+
+			{%- comment -%} ### read menu metafields ### {%- endcomment -%}
+			{%- assign tt_menu_template = 'default' -%}
+			{%- assign loc-ato-label= '' -%}
+			{%- assign loc-current-style = '' -%}
+
+			{%- for menu in shop.metafields.ato-menu -%}
+				{%- assign tt_menu_fields = menu[1] | split: '|||' -%}
+				{%- assign tt_menu_name = tt_menu_fields[0] | handleize -%}
+				{%- if child_list_handle == tt_menu_name -%}
+					{%- assign tt_menu_template = 'custom' -%}
+					{%- assign tt_menu_custom_values = tt_menu_fields -%}
+
+					{%- comment -%} ### Menu Color ### {%- endcomment -%}
+					{%- if tt_menu_custom_values[27] != '' -%}
+						{%- capture loc-current-style -%} style="color: {{ tt_menu_custom_values[27] }};" {%- endcapture -%}
+					{%- endif -%}
+
+					{%- comment -%} ### Menu Label ### {%- endcomment -%}
+					{%- if tt_menu_custom_values[20] == 'new' -%}
+						{%- assign loc-ato-label = '<span class="TonyM__label TonyM__label--new">NEW</span>' -%}
+					{%- endif -%}
+					{%- if tt_menu_custom_values[20] == 'sale' -%}
+						{%- assign loc-ato-label = '<span class="TonyM__label TonyM__label--sale">SALE</span>' -%}
+					{%- endif -%}
+					{%- if tt_menu_custom_values[20] == 'hot' -%}
+						{%- assign loc-ato-label = '<span class="TonyM__label TonyM__label--hot">HOT</span>' -%}
+					{%- endif -%}
+				{%- endif -%}
+			{%- endfor -%}
+
+
+
+
+			{%- comment -%} ### Select dropdown type ### {%- endcomment -%}
+			{%- if menus[child_list_handle].links != blank -%}
+				{%- comment -%} 1 level (first) ######################################################## {%- endcomment -%}
+				<li>
+					<a href="{{ link.url }}" {{ loc-current-style }} >
+						{%- if loc-ato-label != '' -%}
+							<span>
+								{{ link.title }}
+								{{ loc-ato-label }}
+							</span>
+						{%- else -%}
+							{{ link.title }}
+						{%- endif -%}
+					</a>
+					{%- include 'header-megamenu-metatag' -%}
+				</li>
+			{%- else -%}
+				<li>
+					<a href="{{ link.url }}" {% if link.active %}class="TonyM__link--active" {% endif %} {{ loc-current-style }}>
+						{%- if loc-ato-label != '' -%}
+							<span>
+								{{ link.title }}
+								{{ loc-ato-label }}
+							</span>
+						{%- else -%}
+							{{ link.title }}
+						{%- endif -%}
+					</a>
+				</li>
+			{%- endif -%}
+		{%- endfor -%}
+	</ul>
+</nav>
+{{ loc-inline-styles }}
+<!-- ### header-magemenu.liquid -->

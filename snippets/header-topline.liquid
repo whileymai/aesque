@@ -1,0 +1,32 @@
+{%- comment -%}
+{%- endcomment -%}
+
+{%- if template contains 'product'or template == 'cart' or template =="collection" -%}
+<div class="tt-header__tape">
+  {%- if section.blocks[0].settings.top-line-text != blank -%}
+    <div class="col-lg-12 tt-header__tape-text text-center">
+      {%- if section.blocks[0].settings.top-line-icon != blank -%}<i class="{{ section.blocks[0].settings.top-line-icon }}"></i>{%- endif -%}
+      {{ 'layout.header.address' | t }} {{ section.blocks[0].settings.top-line-text }}
+    </div>
+  {%- endif -%}
+  {%- if section.blocks[0].settings.top-line-text-phone != blank -%}
+    <div class="col-lg-12 tt-header__tape-text text-center">
+      {%- if section.blocks[0].settings.top-line-icon-phone != blank -%}<i class="{{ section.blocks[0].settings.top-line-icon-phone }}"></i>{%- endif -%}
+      {{ 'layout.header.phone' | t }} {{ section.blocks[0].settings.top-line-text-phone }}
+    </div>
+  {%- endif -%}
+  {%- if section.blocks[0].settings.top-line-text-hours != blank -%}
+    <div class="col-lg-12 tt-header__tape-text text-center">
+      {%- if section.blocks[0].settings.top-line-icon-hours != blank -%}<i class="{{ section.blocks[0].settings.top-line-icon-hours }}"></i>{%- endif -%}
+      {{ 'layout.header.hours' | t }} {{ section.blocks[0].settings.top-line-text-hours }}
+    </div>
+  {%- endif -%}
+  {%- if section.blocks[0].settings.top-line-social -%}
+    <div class="col-lg-12 tt-header__tape-social text-center">
+      {%- assign set-settings = section.blocks[0].settings -%}
+      {%- assign set-style = settings.color_header_social_type -%}
+      {%- include 'social-links' -%}
+    </div>
+  {%- endif -%}
+</div>
+{%- endif -%}

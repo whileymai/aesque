@@ -1,0 +1,80 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign set-layout = set-layout | default: 'layout1' %}
+{% if set-layout == 'layout1' %}
+	{% assign set-image_size = set-image_size | default: '1070x' %}
+	{% capture this-images %}
+		{% assign this-id-index = '[' %}
+		{% for image in product.images %}
+			{% if forloop.first and image.id != loc-image.id %}
+				<img src="{{ loc-image.src | product_img_url: set-image_size, scale: 2 }}"
+					 data-zoom-image="{{ loc-image.src | product_img_url: '1920x' }}"
+					 data-full="{{ loc-image.src | product_img_url: '1920x' }}"
+					 alt="{{ loc-image.alt }}">
+
+				{% capture this-prop-value %}"{{ loc-image.id }}"{% endcapture %}
+				{% assign this-id-index = this-id-index | append: this-prop-value %}
+				{% unless forloop.last %}
+					{% assign this-id-index = this-id-index | append: ',' %}
+				{% endunless %}
+			{% endif %}
+
+			<img src="{{ image.src | product_img_url: set-image_size, scale: 2 }}"
+				 data-zoom-image="{{ image.src | product_img_url: '1920x' }}"
+				 data-full="{{ image.src | product_img_url: '1920x' }}"
+				 alt="{{ image.alt }}">
+
+			{% capture this-prop-value %}"{{ image.id }}"{% endcapture %}
+			{% assign this-id-index = this-id-index | append: this-prop-value %}
+			{% unless forloop.last %}
+				{% assign this-id-index = this-id-index | append: ',' %}
+			{% endunless %}
+		{% endfor %}
+		{{ loc-ato.video }}
+		{% if loc-ato.video != blank and loc-ato.video != 'empty' %}
+			<a href="{{ loc-ato.video }}"></a>
+			{% capture this-prop-value %}"{{ loc-ato.video }}"{% endcapture %}
+			{% assign this-id-index = this-id-index | append: ',' | append: this-prop-value %}
+		{% endif %}
+		{% assign this-id-index = this-id-index | append: ']' %}
+	{% endcapture %}
+	<div class="tt-product-head__image-main"
+		 data-index-id='{{ this-id-index }}'
+		 data-arrows="{{ loc-show_gallery_arrows }}"
+		 data-zoom="{{ loc-enable_gallery_zoom }}"
+		 data-fullscreen="{{ loc-show_gallery_btn_fullscreen }}">
+		{{ this-images }}
+	</div>
+	{% if product.images.size > 1 %}
+		<div class="tt-product-head__image-preview">
+			{% for image in product.images %}
+				<img data-prdbut-image-id="{{ image.id }}"
+					 src="{{ image.src | product_img_url: '128x' }}"
+					 srcset="{{ image.src | product_img_url: '128x' }} 1x, {{ image.src | product_img_url: '128x', scale: 2 }} 2x"
+					{% if image.id == loc-image.id %}class="current"{% endif %}
+					 alt="{{ image.alt }}">
+			{% endfor %}
+			{% if loc-ato.video != blank and loc-ato.video != 'empty' %}
+				<span data-prdbut-image-id="{{ loc-ato.video }}" class="tt-product-head__btn-video"><i class="icon-video"></i></span>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endif %}
+
+{% if set-layout == 'layout2' %}
+	<div class="tt-product-head__image-sheet">
+		{% for image in product.images %}
+			<img src="{{ image.src | product_img_url: '623x', scale: 2 }}"
+				 srcset="{{ image.src | product_img_url: '623x', scale: 2 }} 1x, {{ image.src | product_img_url: '623', scale: 2 }} 2x"
+				 data-large="{{ image.src | product_img_url: '623x', scale: 3 }}"
+				 alt="{{ image.alt }}">
+		{% endfor %}
+		{% if loc-ato.video != blank  and loc-ato.video != 'empty' %}
+			{% assign res-video_id_with_tail = loc-ato.video | strip | split: 'v=' | last %}
+			{% assign res-video_id = res-video_id_with_tail | split: '&' | first %}
+			<div class="tt-product-head__video">
+				<iframe src="https://www.youtube.com/embed/{{ res-video_id }}" frameborder="0" allowfullscreen></iframe>
+			</div>
+		{% endif %}
+	</div>
+{% endif %}

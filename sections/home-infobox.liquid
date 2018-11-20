@@ -1,0 +1,255 @@
+{%- comment -%}
+{%- endcomment -%}
+
+{%- if section.blocks.size > 0 -%}
+
+	{%- assign this-settings = section.settings -%}
+
+	{%- comment -%} ### Colors ### {%- endcomment -%}
+	{%- assign res-styles_icon = null -%}
+	{%- assign res-styles_text1 = null -%}
+	{%- assign res-styles_text2 = null -%}
+	{%- assign res-styles_background = null -%}
+	{%- assign res-styles_border = null -%}
+	{%- assign res-styles_border-bottom = null -%}
+	{%- assign res-styles_border-top = null -%}
+	{%- assign res-styles_container = null -%}
+	{%- if this-settings.color_icon != blank and this-settings.color_icon != 'rgba(0,0,0,0)' -%}
+		{% capture res-styles_icon %} style="color: {{ this-settings.color_icon }};"{% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.color_text1 != blank and this-settings.color_text1 != 'rgba(0,0,0,0)' -%}
+		{% capture res-styles_text1 %} style="color: {{ this-settings.color_text1 }};"{% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.color_text2 != blank and this-settings.color_text2 != 'rgba(0,0,0,0)' -%}
+		{% capture res-styles_text2 %} style="color: {{ this-settings.color_text2 }};"{% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.color_background != blank and this-settings.color_background != 'rgba(0,0,0,0)' -%}
+		{% capture res-styles_background %} background-color: {{ this-settings.color_background }}; {% endcapture %}
+		{% capture res-styles_background_container %} style="background-color: {{ this-settings.color_background }};" {% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.color_border != blank and this-settings.color_border != 'rgba(0,0,0,0)' -%}
+		{% capture res-styles_border %} border-color: {{ this-settings.color_border }}; {% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.border_top == true -%}
+		{% capture res-styles_border-top %} border-top-width: 1px; border-top-style: solid; {% endcapture %}
+	{%- endif -%}
+	{%- if this-settings.border_bottom == true -%}
+		{% capture res-styles_border-bottom %} border-bottom-width: 1px; border-bottom-style: solid; {% endcapture %}
+	{%- endif -%}
+	{% capture res-styles_container %} style="{{ res-styles_background }}{{ res-styles_border }}{{ res-styles_border-top }}{{ res-styles_border-bottom  }}" {% endcapture %}
+
+
+	{%- comment -%} ### Appearance ### {%- endcomment -%}
+	{%- if section.settings.text-banner-appearance == 'fullwidth' -%}
+		{%- assign loc-appearance-class = '' -%}
+	{%- elsif section.settings.text-banner-appearance == 'boxed' -%}
+		{%- assign loc-appearance-class = 'container' -%}
+	{%- elsif section.settings.text-banner-appearance == 'demo5' -%}
+		{%- assign loc-appearance-class = 'container tt-home__shipping-info-03' -%}
+	{%- endif -%}
+
+
+	{%- comment -%} ### TYPE ### {%- endcomment -%}
+	{%- assign loc-container-class = 'tt-shp-info tt-shp-info__design-01' -%}
+	{%- assign loc-row-class = 'row ttg-grid-padding--none ttg-grid-border tt-layout__section--pdg-off' -%}
+	{%- assign loc-a-class = 'tt-shp-info__section' -%}
+	{%- if section.settings.text-banner-type == 'type2' -%}
+		{%- assign loc-container-class = 'tt-shp-info tt-shp-info__design-02 tt-shp-info__align--left' -%}
+		{%- assign loc-row-class = 'row ttg-grid-padding--none ttg-grid-border ttg-grid-border-c--white tt-layout__section--pdg-off' -%}
+		{%- assign loc-a-class = 'tt-shp-info__section tt-shp-info__align--left' -%}
+	{%- elsif section.settings.text-banner-type == 'type3' -%}
+		{%- assign loc-container-class = 'tt-shp-info tt-shp-info__design-03 tt-shp-info__align--left' -%}
+		{%- assign loc-row-class = 'row' -%}
+		{%- assign loc-a-class = 'tt-shp-info__section tt-shp-info__align--left' -%}
+	{%- endif -%}
+
+
+	{%- comment -%} ### GRID ### {%- endcomment -%}
+	{%- assign colwidth = 12 | divided_by:section.blocks.size  -%}
+	{%- assign res-styles_text2 = '<p' | append: res-styles_text2 | append: '>' -%}
+
+	<div class="{{ loc-container-class }} {{ loc-appearance-class }}" data-section-id="{{ section.id }}" data-section-type="home-infobox" {{ res-styles_background_container }}>
+		<div class="{{ loc-row-class }}">
+			{%- for block in section.blocks limit: section.blocks.size -%}
+				<div class="col-lg-{{ colwidth }}" {{ block.shopify_attributes }} {{ res-styles_container }}>
+					<a href="{{ block.settings.text-banner-url }}" class="{{ loc-a-class }}">
+						{%- if block.settings.text-banner-icon != blank -%}
+							<i class="{{ block.settings.text-banner-icon }}" {{ res-styles_icon }}></i>
+						{%- endif -%}
+
+						{%- assign res-text = block.settings.text-banner-text2 | replace: '<p>', res-styles_text2 -%}
+
+						{%- if section.settings.text-banner-type == 'type1' -%}
+							<div class="tt-shp-info__strong"{{ res-styles_text1 }}>{{ block.settings.text-banner-text1 }}</div>
+							{{ res-text }}
+						{%- else -%}
+							<div>
+								<div class="tt-shp-info__strong" {{ res-styles_text1 }}>{{ block.settings.text-banner-text1 }}</div>
+								{{ res-text }}
+							</div>
+						{%- endif -%}
+					</a>
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+{%- endif -%}
+{%- if section.blocks.size == 0 -%}
+	{%- include 'no-blocks' -%}
+{%- endif -%}
+{% schema %}
+{
+"name": "InfoBox",
+"max_blocks": 4,
+"settings": [
+{
+"label": "Box Type",
+"id": "text-banner-type",
+"type": "select",
+"default": "type1",
+"options": [
+{
+"value": "type1",
+"label": "Type #1"
+},
+{
+"value": "type2",
+"label": "Type #2"
+},
+{
+"value": "type3",
+"label": "Type #3"
+}
+]
+},
+{
+"label": "Appearance",
+"id": "text-banner-appearance",
+"type": "select",
+"default": "fullwidth",
+"options": [
+{
+"value": "fullwidth",
+"label": "Full Width"
+},
+{
+"value": "boxed",
+"label": "Boxed"
+},
+{
+"value": "demo5",
+"label": "Demo5"
+}
+]
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_icon",
+"label": "Icon"
+},
+{
+"type": "color",
+"id": "color_text1",
+"label": "Caption"
+},
+{
+"type": "color",
+"id": "color_text2",
+"label": "Text"
+},
+{
+"type": "color",
+"id": "color_background",
+"label": "Background"
+},
+{
+"type": "color",
+"id": "color_border",
+"label": "Border"
+},
+{
+"type": "header",
+"content": "Borders"
+},
+{
+"type": "checkbox",
+"id": "border_bottom",
+"label": "Show bottom border"
+},
+{
+"type": "checkbox",
+"id": "border_top",
+"label": "Show top border"
+}
+],
+"blocks": [
+{
+"type": "text-banner",
+"name": "Banner",
+"settings": [
+{
+"label": "Icon code",
+"id": "text-banner-icon",
+"type": "text",
+"default": "icon-phone",
+"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+},
+{
+"label": "URL",
+"id": "text-banner-url",
+"type": "url",
+"info": "Optional"
+},
+{
+"label": "Text (line 1)",
+"id": "text-banner-text1",
+"type": "text",
+"default": "+61 411 210 518"
+},
+{
+"label": "Text (line 2)",
+"id": "text-banner-text2",
+"type": "richtext",
+"default": "<p>Text</p>"
+}
+]
+}
+],
+"presets": [
+{
+"name": "InfoBox",
+"category": "4) Other",
+"blocks": [
+{
+"type": "text-banner",
+"settings": {
+"text-banner-icon": "icon-phone",
+"text-banner-text1": "+61 411 210 518",
+"text-banner-text2": "<p>Text</p>"
+}
+},
+{
+"type": "text-banner",
+"settings": {
+"text-banner-icon": "icon-box",
+"text-banner-text1": "Free Shipping",
+"text-banner-text2": "<p>A free shipping is available for orders <strong>more than $700.</strong></p>"
+}
+},
+{
+"type": "text-banner",
+"settings": {
+"text-banner-icon": "icon-left",
+"text-banner-text1": "Returns and Exchanges",
+"text-banner-text2": "<p>Any goods, that was bought in our online store, can be returned during <strong>30 days</strong> since purchase date.</p>"
+}
+}
+]
+}
+]
+}
+{% endschema %}

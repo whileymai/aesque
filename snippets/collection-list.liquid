@@ -1,0 +1,186 @@
+{%- comment -%}
+GET PARAMS
+set-view
+set-image_size
+{%- endcomment -%}
+
+{%- comment -%} ### General ### {%- endcomment -%}
+{%- include 'product-vars' -%}
+
+{%- assign set-image_size = set-image_size | default: '500x500' -%}
+{%- assign set-view = set-view | default: 'overlay' -%}
+
+{%- assign loc-check_buttons_status = settings.prd-check_btns_state -%}
+
+{%- assign loc-show_description = settings.prd-show_description -%}
+{%- assign loc-show_collections = settings.prd-show_collections -%}
+{%- assign loc-show_options = settings.prd-show_options -%}
+{%- assign loc-show_countdown = settings.prd-show_countdown -%}
+{%- assign loc-show_price = settings.prd-show_price -%}
+{%- assign loc-show_review = settings.prd-show_review -%}
+{%- assign loc-show_addtocart = settings.prd-show_btn_addtocart -%}
+{%- assign loc-show_whishlist = settings.prd-show_btn_whishlist -%}
+{%- assign loc-show_quickview = settings.prd-show_btn_quickview -%}
+{%- assign loc-show_lbl_sale = settings.prd-show_lbl_sale -%}
+{%- assign loc-show_lbl_sale_percent = settings.prd-show_lbl_sale_percent -%}
+{%- assign loc-show_lbl_new = settings.prd-show_lbl_new -%}
+{%- assign loc-show_lbl_hot = settings.prd-show_lbl_hot -%}
+{%- assign loc-show_lbl_instock = settings.prd-show_lbl_instock -%}
+{%- assign loc-show_lbl_sold_out = settings.prd-show_lbl_sold_out -%}
+
+{%- comment -%} ### Price ### {%- endcomment -%}
+{%- include 'product-res-price' -%}
+
+{%- comment -%} ### Build variants ### {%- endcomment -%}
+{%- include 'product-res-variants-obj' -%}
+
+{%- comment -%} ### Check status ### {%- endcomment -%}
+{%- include 'product-res-check-btns-status' -%}
+
+{%- comment -%} ### View ### {%- endcomment -%}
+{%- capture res-view_class -%}
+	{%- case set-view -%}
+		{%- when 'overlay' -%} tt-product__view-overlay ttg-text-animation-parent prdbut__product
+{%- when 'sheet' -%} tt-product__view-sheet prdbut__product
+{%- when 'short' -%} tt-product__view-sheet
+{%- endcase -%}
+{%- endcapture -%}
+
+{% assign res-image_hover = null %}
+{% if set-view == 'sheet' %}
+    {% if product.images[1] != blank %}
+        {% assign res-image_hover = product.images[1] %}
+    {% endif %}
+{% endif %}
+
+
+<div class="tt-product {{ res-view_class }}" {% include 'product-get-attributes' %}>
+    <div class="tt-product__image prdbut__image"{% if res-image_hover %} data-image-hover="{{ res-image_hover.src | img_url: set-image_size }}"{% endif %}>
+        <a href="{{ loc-url | within: collection }}">
+            <img src="{{ loc-image | img_url: set-image_size }}"
+                 srcset="{{ loc-image | img_url: set-image_size }} 1x, {{ loc-image | img_url: set-image_size, scale: 2 }} 2x"
+                 alt="{{ loc-title }}">
+        </a>
+        <div class="tt-product__labels">
+            {%- if loc-ato.newlabel == 1 and loc-show_lbl_new -%}
+                <span class="tt-label__new">{{ 'products.product.label_new' | t }}</span>
+            {%- endif -%}
+
+            {%- if loc-ato.hotlabel == 1 and loc-show_lbl_hot -%}
+                <span class="tt-label__hot">{{ 'products.product.label_hot' | t }}</span>
+            {%- endif -%}
+
+            {%- if res-sale_percent -%}
+                {%- if loc-show_lbl_sale -%}
+                    <span class="tt-label__sale" data-prdbut-visible="price_sale">{{ 'products.product.on_sale' | t }}</span>
+                {%- endif -%}
+
+                {%- if loc-show_lbl_sale_percent -%}
+                    <span class="tt-label__discount" data-prdbut-replace="sale_percent">{{ 'products.product.label_percent' | t : percent : res-sale_percent }}</span>
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- if loc-show_lbl_instock -%}
+                <div><span class="tt-label__in-stock{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}" data-prdbut-visible="available">{{ 'products.product.label_instock' | t }}</span></div>
+            {%- endif -%}
+
+            {%- if loc-show_lbl_sold_out -%}
+                <div><span class="tt-label__out-stock{%- if loc-available -%} prdbut__visible--disabled{%- endif -%}" data-prdbut-visible="!available">{{ 'products.product.sold_out' | t }}</span></div>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="tt-product__hover"><!-- tt-product__clr-clk-transp -->
+        <div class="tt-product__content">
+            {%- if loc-show_collections -%}
+                <p>
+					<span class="ttg-text-animation--emersion">
+				  {%- for collection in product.collections -%}
+                      <a href="{{ collection.url }}">{{ collection.title }}</a>
+                  {%- endfor -%}
+				</span>
+                </p>
+            {%- endif -%}
+
+            <h3>
+				<span class="ttg-text-animation--emersion">
+					<a href="{{ loc-url | within: collection }}">{{ loc-title }}</a>
+				</span>
+            </h3>
+
+            <form action="/cart/add.js" method="post">
+                {%- if set-view != 'short' -%}
+                    {%- if loc-show_description -%}
+                        <div class="ttg-text-animation--emersion">
+                            <div class="tt-product__description">
+                                {{ loc-description | strip_html | truncatewords: 35 }}
+                            </div>
+                        </div>
+                    {%- endif -%}
+
+                    {%- if loc-has_options and loc-show_options -%}
+                        <div class="ttg-text-animation--emersion">
+                            <div class="tt-product__option">
+                                {%- include 'product-get-options' -%}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- if loc-show_price -%}
+                    <div class="ttg-text-animation--emersion">
+                        <div class="tt-product__price">
+                            <span class="tt-price{{ res-price_sale_class }}" data-prdbut-replace="price">{{ res-price }}</span>
+                        </div>
+                    </div>
+                {%- endif -%}
+
+                {%- if loc-show_review -%}
+                    <div class="ttg-text-animation--emersion">
+                        <span class="shopify-product-reviews-badge" data-id="{{ loc-prd-id }}"></span>
+                    </div>
+                {%- endif -%}
+
+                {%- if set-view != 'short' -%}
+                    {%- if loc-show_addtocart or loc-show_whishlist or loc-show_quickview -%}
+                        <div class="ttg-text-animation--emersion">
+                            <div class="tt-product__buttons{% if settings.prd-btns_design == '2' %} tt-product__buttons--design-2{% endif %}">
+                                {%- if loc-show_addtocart and loc-available -%}
+                                    {% if settings.prd-btns_design == '1' %}
+                                        <a href="{{ loc-url }}" target="_blank" class="tt-btn colorize-btn5 tt-product__buttons_cart{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
+                                            <i class="icon-shop24"></i>
+                                        </a>
+                                    {% elsif settings.prd-btns_design == '2' %}
+                                        <div>
+                                            <a href="{{ loc-url }}" target="_blank" class="tt-product__buttons_cart tt-btn tt-btn--cart colorize-btn9 prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
+                                                <i class="icon-shop24"></i>
+                                                <span class="tt-product__buttons_cart_added">{{ 'products.product.add_to_cart_added' | t }}</span>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {%- endif -%}
+
+                                {%- if loc-show_whishlist and settings.wishlist-status -%}
+                                    <a href="{% if customer %}#{% else %}/account/login{% endif %}"{% unless customer %} target="_blank"{% endunless %} class="tt-btn colorize-btn4 tt-product__buttons_like{% if customer %} prdbut__wsl-toggle prdbut__btn--process{{ res-whishlist_active }}{% endif %}">
+                                        <i class="icon-heart-empty-2"></i>
+                                    </a>
+                                {%- endif -%}
+
+                                {%- if loc-show_quickview and settings.qv-status -%}
+                                    <a href="#" class="tt-btn colorize-btn4 tt-product__buttons_qv prdbut__qv prdbut__btn--process">
+                                        <i class="icon-eye"></i>
+                                    </a>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                </form>
+
+                {%- if loc-show_countdown and loc-ato.countdown and loc-ato.countdown != 'empty' -%}
+                    <div class="ttg-text-animation--emersion{%- if res-sale_percent == blank or loc-available != true -%} prdbut__visible--disabled{%- endif -%}" data-prdbut-visible="sale_countdown">
+                        <div{% if res-sale_percent and loc-available and loc-ato.countdown and loc-ato.countdown != 'empty' %} class="tt-product__countdown tt-countdown" data-date="{{ loc-ato.countdown }}" data-reduction="true"{% endif %} data-prdbut-replace="countdown"></div>
+                    </div>
+                {%- endif -%}
+            {%- endif -%}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- capture loc-language-list -%}
+    {%- for link in linklists[settings.languages].links -%}
+		{%- if settings.default_language == link.title -%}
+			{%- assign loc-active-title = link.title -%}
+			{%- assign loc-active-url = link.url -%}
+			<li class="active"><a href="{{ link.url }}">{{ link.title }}</a></li>
+		{%- else -%}
+			<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+		{%- endif -%}
+	{%- endfor -%}
+{%- endcapture -%}
+
+<li {% if linklists[settings.languages].links.size > 0 %} class="tt-list-toggle__open"{% endif %}><a href="{{ loc-active-url }}">{{ 'layout.header.language' | t }} {{ loc-active-title }}</a>
+	{% if linklists[settings.languages].links.size > 0 %}
+		<ul>
+			{{ loc-language-list }}
+		</ul>
+	{%- endif -%}
+</li>

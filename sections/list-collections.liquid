@@ -1,0 +1,149 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="container-fluid ttg-cont-padding--none" data-section-id="{{ section.id }}" data-section-type="list-collections">
+  <div class="row ttg-grid-padding--none">
+    {% assign res-collections_styles = null %}
+
+    {% for collection in collections %}
+      {% assign this-image = null %}
+      {% assign res-styles_title = null %}
+      {% assign res-styles_hover_title = null %}
+      {% assign res-styles_hover_info = null %}
+      {% assign res-styles_hover_quantity = null %}
+      {% assign res-styles_hover_bg = null %}
+
+      {% unless collection.handle == 'frontpage' %}
+        {% for block in section.blocks %}
+          {% assign this-settings = block.settings %}
+          {% if this-settings.for_collection == collection.handle %}
+            {% if this-settings.color_title_c != blank and this-settings.color_title_c != 'rgba(0,0,0,0)' %}
+              {% capture res-styles_title %} style="color: {{ this-settings.color_title_c }};"{% endcapture %}
+            {% endif %}
+            {% if this-settings.color_title_h_c != blank and this-settings.color_title_h_c != 'rgba(0,0,0,0)' %}
+              {% capture res-styles_hover_title %} style="color: {{ this-settings.color_title_h_c }};"{% endcapture %}
+            {% endif %}
+            {% if this-settings.color_info_h_c != blank and this-settings.color_info_h_c != 'rgba(0,0,0,0)' %}
+              {% capture res-styles_hover_info %} style="color: {{ this-settings.color_info_h_c }};"{% endcapture %}
+            {% endif %}
+            {% if this-settings.color_quantity_h_c != blank and this-settings.color_quantity_h_c != 'rgba(0,0,0,0)' %}
+              {% capture res-styles_hover_quantity %} style="color: {{ this-settings.color_quantity_h_c }};"{% endcapture %}
+            {% endif %}
+            {% if this-settings.color_h_bg != blank and this-settings.color_h_bg != 'rgba(0,0,0,0)' %}
+              {% capture res-styles_hover_bg %} style="background-color: {{ this-settings.color_h_bg }};"{% endcapture %}
+            {% endif %}
+
+            {% assign this-image = this-settings.image %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign this-image_animation = 'ttg-image-translate--top|ttg-image-translate--left|ttg-image-translate--bottom|ttg-image-translate--right|ttg-image-scale' | split:'|' %}
+        {% assign res-image_animation_max = this-image_animation.size | minus: 1 %}
+        {% if this-animation_index == blank or this-animation_index >= res-image_animation_max %}
+          {% assign this-animation_index = 0 %}
+        {% else %}
+          {% assign this-animation_index = this-animation_index | plus: 1 %}
+        {% endif %}
+
+        <div class="col-md-4 col-lg-4 col-xl-3">
+          <a href="{{ collection.url }}"
+             title="{{ 'collections.general.link_title' | t: title: title }}"
+             class="tt-promobox
+                       tt-promobox__size-square
+                       ttg-text-animation-parent
+                       ttg-animation-disable--md
+                       tt-promobox__hover-disable--md
+                       {{ this-image_animation[this-animation_index] }}
+                       tt-promobox__collection-{{ collection.handle }}"
+             data-ttg-event="link-dbclick">
+            <div class="tt-promobox__content">
+              {% if this-image != blank %}
+                {{ this-image | img_url: '600x600' | img_tag: collection.title }}
+              {% elsif collection.image != blank %}
+                {{ collection | img_url: '600x600' | img_tag: collection.title }}
+              {% elsif collection.products.first != blank %}
+                {{ collection.products.first | img_url: '600x600' | img_tag: collection.title }}
+              {% else %}
+                {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+              {% endif %}
+              <div class="tt-promobox__text"
+                   data-resp-md="md"
+                   data-resp-sm="md"
+                   data-resp-xs="sm">
+                <div{{ res-styles_title }}>{{ collection.title }}</div>
+              </div>
+              <div class="tt-promobox__hover
+                        tt-promobox__hover--fade">
+                <div class="tt-promobox__hover-bg"{{ res-styles_hover_bg }}></div>
+                <div class="tt-promobox__text tt-promobox__point-lg--center">
+                  <div class="ttg-text-animation--emersion">
+                    <span{{ res-styles_hover_title }}>{{ collection.title }}</span>
+                  </div>
+                  <p class="ttg-text-animation--emersion">
+                    <span{{ res-styles_hover_info }}><span{{ res-styles_hover_quantity }}>{{ collection.products_count }}</span> {{ 'list_collections.product.count' | t }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+{% schema %}
+{
+"name": "List Collections",
+"blocks": [
+{
+"type":"setting",
+"name":"Setting collection",
+"settings": [
+{
+"type": "collection",
+"id": "for_collection",
+"label": "For a collection"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_title_c",
+"label": "Text title"
+},
+{
+"type": "color",
+"id": "color_title_h_c",
+"label": "Hover text title"
+},
+{
+"type": "color",
+"id": "color_info_h_c",
+"label": "Hover text info"
+},
+{
+"type": "color",
+"id": "color_quantity_h_c",
+"label": "Hover text quantity"
+},
+{
+"type": "color",
+"id": "color_h_bg",
+"label": "Hover background"
+}
+]
+}
+]
+}
+{% endschema %}

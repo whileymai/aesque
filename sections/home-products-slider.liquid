@@ -1,0 +1,101 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- assign set-image_size = '480x480' -%}
+
+{% comment %} ### CONTENT ### {% endcomment %}
+{%- assign collection = collections[section.settings.collection] -%}
+{%- assign collection_title = collection.title -%}
+{% if section.settings.limit != blank %}
+	{% assign loc-limit = section.settings.limit %}
+{% else %}
+	{% assign loc-limit = 999 %}
+{% endif %}
+
+<div data-section-id="{{ section.id }}" data-section-type="home-products-col" class="container tt-page__section ttg-mb--40" >
+	<div class="tt-page__section-head tt-page__section-head--center tt-page__section-head--arrows tt-layout__section--pdg">
+		<div class="tt-page__title"><a href="{{ collection.url }}">{{section.settings.header_title_1}}</a></div>
+		{% if section.settings.arrows %}
+			<div class="tt-page__arrows tt-page__arrows--in-head">
+				<span class="tt-page__arrows-prev"><i class="icon-left-open-big"></i></span>
+				<span class="tt-page__arrows-next"><i class="icon-right-open-big"></i></span>
+			</div>
+		{% endif %}
+	</div>
+	<div class="tt-carousel-box tt-carousel-box--section">
+		<div class="tt-product-view">
+			<div class="tt-carousel-box__slider">
+				{% for product in collection.products limit: loc-limit %}
+					<div class="col-sm-6 col-md-{{ loc-colwidth }} col-xl-{{ loc-colwidth }} col-xxl-{{ loc-colwidth }}">
+						{%- if section.settings.sec-prd-type == 'afterimage' -%}
+							{%- assign set-view = 'sheet' -%}
+						{%- endif -%}
+						{%- include 'product-list' with set-view -%}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% schema %}
+{
+"name": "Products slider",
+"settings": [
+{
+"label": "Product's collection",
+"id": "collection",
+"type": "collection",
+"info": "Show ALL products, unless you select needed collection."
+},
+{
+"type": "text",
+"id": "header_title_1",
+"label": "Block Title",
+"default": "Featured Products",
+"info": "Put a header title here"
+},
+{
+"type": "text",
+"id": "limit",
+"label": "Product limit",
+"default": "8",
+"info": "Put number to limit out put for first NUMBER items. Empty - disable limit"
+},
+{
+"label": "Show arrows",
+"id": "arrows",
+"type": "checkbox",
+"default": true
+},
+{
+"type": "header",
+"content": "Layout options"
+},
+{
+"label": "Product Type",
+"id": "sec-prd-type",
+"type": "select",
+"default": "desconhover",
+"options": [
+{
+"value": "desconhover",
+"label": "Info on Hover"
+},
+{
+"value": "afterimage",
+"label": "Info under product image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Products slider",
+"category": "3) Products",
+"settings": {
+}
+}
+]
+}
+{% endschema %}

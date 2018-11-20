@@ -1,0 +1,88 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign set-prd-build-page = set-prd-build-page | default: false %}
+{% assign res-variants_data = null %}
+{% assign res-variant_selected = null %}
+{% if loc-has_options %}
+    {% capture res-variants_data %}
+    data-prdbut-variants='{
+    "default_variant_id": "{{ loc-prd.id }}",
+    "variants": [
+    {%- for variant in loc-variants -%}
+        {% assign this-price = variant.price %}
+        {% assign this-compare_at_price = variant.compare_at_price %}
+        {% if this-compare_at_price != blank and this-price < this-compare_at_price %}
+            {% assign this-price_is_sale = true %}
+        {% else %}
+            {% assign this-price_is_sale = false %}
+        {% endif %}
+        {
+        {%- if variant.option1 -%} "option1":"{{ variant.option1 | handle | down | trim  }}", {%- endif -%}
+        {%- if variant.option2 -%} "option2":"{{ variant.option2 | handle | down | trim }}", {%- endif -%}
+        {%- if variant.option3 -%} "option3":"{{ variant.option3 | handle | down | trim }}", {%- endif -%}
+        "_": {
+        "id":"{{ variant.id }}",
+        {%- if variant.image -%}
+            "image":"{{ variant.image | img_url: '480x480' }}",
+            "image_id":"{{ variant.image.id }}",
+        {%- endif -%}
+        "_visible": {
+            "available": {{ variant.available }},
+            "sale_countdown": {% if variant.available and this-price_is_sale %}true{% else %}false{% endif %},
+            "price_sale": {{ this-price_is_sale }}
+        },
+        "_replace": {
+            {%- if this-price_is_sale -%}
+                {% assign this-percent = this-price | times: 100 | divided_by: this-compare_at_price %}
+                {% assign this-sale_percent = 100 | minus: this-percent %}
+                {% if set-prd-build-page %}
+                    "sale_percent":"<div>{{ 'products.product.countdown_percent' | t : percent : this-sale_percent }}</div>",
+                    "countdown":"<div class=\"tt-product-head__countdown tt-countdown\" data-date=\"{{ loc-ato.countdown }} +00:00\"></div>",
+                {% else %}
+                    "sale_percent":"<span class=\"tt-label__discount\">{{ 'products.product.label_percent' | t : percent : this-sale_percent }}</span>",
+                    "countdown":"<div class=\"tt-product__countdown tt-countdown\" data-date=\"{{ loc-ato.countdown }} +00:00\" data-reduction=\"true\"></div>",
+                {% endif %}
+                "price":"<span class=\"tt-price tt-price--sale\"><span>{{ this-price | money }}</span> <span>{{ this-compare_at_price | money }}</span></span>",
+            {%- else -%}
+                "price":"<span class=\"tt-price\"><span>{{ this-price | money }}</span></span>",
+            {%- endif -%}
+            {% if set-prd-build-page %}
+                {% assign this-quantity = variant.inventory_quantity %}
+                {% if variant.inventory_management != 'shopify' or variant.inventory_policy == 'continue' %}
+                    {% assign this-quantity = 'infinite' %}
+                {% endif %}
+                "counter":"<div class=\"tt-counter__settings\" data-max=\"{{ this-quantity }}\"></div>",
+                {% if loc-show_availability %}
+                    {% capture this-availability %}
+                        {% if variant.available %}
+                            <span class=\"colorize-success-c\">{{ 'products.product.instock' | t }}</span>
+                        {% else %}
+                            <span class=\"colorize-error-c\">{{ 'products.product.outofstock' | t }}</span>
+                        {% endif %}
+                    {% endcapture %}
+                    "availability":"{{ this-availability }}",
+                {% endif %}
+                {% if loc-show_sku %}
+                    "sku":"<span class=\"prdbut__sku\">{{ variant.sku }}</span>",
+                {% endif %}
+                {% if loc-show_barcode %}
+                    "barcode":"<span>{{ variant.barcode }}</span>"
+                {% else %}
+                    "end":"end"
+                {% endif %}
+            {% else %}
+                "end":"end"
+            {% endif %}
+
+        }
+        }
+        }
+        {%- if forloop.last != true -%}
+            ,
+        {%- endif -%}
+    {%- endfor -%}
+    ]
+    }'
+    {% endcapture %}
+    {% assign res-variants_data = res-variants_data | strip_newlines | strip %}
+{% endif %}

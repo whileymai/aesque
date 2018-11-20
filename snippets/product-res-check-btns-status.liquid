@@ -1,0 +1,25 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-check_buttons_status %}
+    {% comment %} ### Wishlist ### {% endcomment %}
+    {% if customer %}
+        {% assign res-whishlist_active = null %}
+        {% for whishlist in customer.metafields.atowishlist %}
+            {% assign this-id = whishlist[0] | plus: 0 %}
+
+            {% if this-id == loc-id %}
+                {% assign res-whishlist_active = ' prdbut__btn--active tt-btn__state--active' %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign res-cart_active = null %}
+    {% comment %} ### Cart ### {% endcomment %}
+    {% for item in cart.items %}
+        {% assign this-id = item.id %}
+
+        {% if this-id == loc-id %}
+            {% assign res-cart_active = ' prdbut__btn--active tt-btn__state--active' %}
+        {% endif %}
+    {% endfor %}
+{% endif %}

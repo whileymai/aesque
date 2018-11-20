@@ -1,0 +1,22 @@
+{%- comment -%}
+{%- endcomment -%}
+<div style="height: {{ section.settings.layout-spacer | default: 0 }}px;" data-section-id="{{ section.id }}" data-section-type="layout-spacer"></div>
+{% schema %}
+{
+"name": "Spacer",
+"settings": [
+{
+"label": "Height",
+"id": "layout-spacer",
+"type": "text",
+"default": "40"
+}
+],
+"presets": [
+{
+"name": "Spacer",
+"category": "5) Layout helpers"
+}
+]
+}
+{% endschema %}

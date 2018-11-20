@@ -1,0 +1,25 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-rcomments == 'false' %}
+
+	{%- if block.settings.caption -%}
+		<div class="tt-layer-nav__title">{{ block.settings.caption }}</div>
+	{%- endif -%}
+
+	<div class="tt-layer-nav__recent">
+		<div>
+			<div class="tt-layer-nav__recent-info"><span>Robert</span> on</div>
+			<p class="tt-layer-nav__recent-title">Sed ut perspiciatis unde omnis iste natus error sit voluptatemю.</p>
+		</div>
+		<div>
+			<div class="tt-layer-nav__recent-info"><span>Robert</span> on</div>
+			<p class="tt-layer-nav__recent-title">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+		</div>
+		<div>
+			<div class="tt-layer-nav__recent-info"><span>Robert</span> on</div>
+			<p class="tt-layer-nav__recent-title">Voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</p>
+		</div>
+	</div>
+
+	{% assign loc-rcomments = 'true' %}
+{% endif %}

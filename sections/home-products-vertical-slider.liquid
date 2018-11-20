@@ -1,0 +1,63 @@
+{%- comment -%}
+(c) Tonytemplates Ltd,
+https://www.tonytemplates.com/
+support@tonytemplates.com
+{%- endcomment -%}
+{%- assign set-image_size = '480x480' -%}
+
+<div data-section-id="{{ section.id }}" data-section-type="home-products-col" class="container">
+	<div class="tt-home__carousel-product">
+		<div class="row">
+			{% if section.settings.collection1 != blank %}
+				{%- assign collection = collections[section.settings.collection1] -%}
+				{% include 'home-product-slider-vertical' %}
+			{% endif %}
+			{% if section.settings.collection2 != blank %}
+				{%- assign collection = collections[section.settings.collection2] -%}
+				{% include 'home-product-slider-vertical' %}
+			{% endif %}
+			{% if section.settings.collection3 != blank %}
+				{%- assign collection = collections[section.settings.collection3] -%}
+				{% include 'home-product-slider-vertical' %}
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+
+{% schema %}
+{
+"name": "Products vertical slider",
+"settings": [
+{
+"label": "Product's collection #1",
+"id": "collection1",
+"type": "collection"
+},
+{
+"label": "Product's collection #2",
+"id": "collection2",
+"type": "collection"
+},
+{
+"label": "Product's collection #3",
+"id": "collection3",
+"type": "collection"
+},
+{
+"label": "Show arrows",
+"id": "arrows",
+"type": "checkbox",
+"default": true
+}
+],
+"presets": [
+{
+"name": "Products vertical slider",
+"category": "3) Products",
+"settings": {
+}
+}
+]
+}
+{% endschema %}

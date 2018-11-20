@@ -1,0 +1,14 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign menu_quantity = menu_quantity | plus: 1 %}
+
+{% if footer_block.caption_enable %}<span class="tt-footer__title">{{ footer_block.caption }}</span>{% endif %}
+{% if linklists[footer_block.type].links.size > 0 %}
+	<div class="tt-footer__list-menu">
+		<ul>
+			{% for link in linklists[footer_block.type].links %}
+				<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}

@@ -1,0 +1,26 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="tt-footer tt-footer__05{% if section.settings.footer_reverse %} tt-footer__reverse{% endif %}">
+  <div class="tt-footer__content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          {{ logo }}
+        </div>
+        <div class="col-xs-12">
+          {{ subscribe }}
+        </div>
+        <div class="col-xs-12">
+          {{ social }}
+        </div>
+        {% unless tape %}
+          <div class="col-xs-12">
+            {{ copyright }}
+          </div>
+        {% endunless %}
+      </div>
+    </div>
+  </div>
+  {{ tape }}
+  {{ btn_to_top }}
+</div>

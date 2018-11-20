@@ -1,0 +1,75 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="container ttg-mt--40 ttg-mb--40" data-section-id="{{ section.id }}" data-section-type="home-instagram">
+	<div class="tt-page__section">
+		<div class="tt-page__section-head tt-page__section-head--center tt-page__section-head--arrows tt-layout__section--pdg">
+			<div class="tt-page__title"><a href="{{ section.settings.insta-tag-url }}" class="colorize-theme-c">{{ section.settings.insta-tag }}</a> {{ section.settings.insta-caption }}</div>
+		</div>
+		<div id="instafeed"></div>
+	</div>
+</div>
+<script>
+	window.themeinstagram = {
+		clientid: {{ section.settings.insta-clientid | json }},
+		userid: {{ section.settings.insta-userid | json }},
+		token: {{ section.settings.insta-token | json }}
+	}
+</script>
+
+
+{% schema %}
+{
+"name": "Instagram",
+"settings": [
+{
+"type": "header",
+"content": "Block caption"
+},
+{
+"id": "insta-tag",
+"label": "Caption link text",
+"type": "text",
+"default": "@AESQUE"
+},
+{
+"id": "insta-tag-url",
+"label": "Caption link URL",
+"type": "url"
+},
+{
+"id": "insta-caption",
+"label": "Caption",
+"type": "text",
+"default": "Follow us on instagram"
+},
+{
+"type": "header",
+"content": "Instagram"
+},
+{
+"id": "insta-userid",
+"label": "Instagram user ID",
+"type": "text",
+"default": "5666153596"
+},
+{
+"id": "insta-clientid",
+"label": "Instagram client ID",
+"type": "text",
+"default": "606758bfc4da4b72a422f7d15da8136b"
+},
+{
+"id": "insta-token",
+"label": "Instagram access token",
+"type": "text",
+"default": "5666153596.1677ed0.df044d21f65c40819af900da18707a24"
+}
+],
+"presets": [
+{
+"name": "Instagram",
+"category": "4) Other"
+}
+]
+}
+{% endschema %}

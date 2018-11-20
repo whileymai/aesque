@@ -1,0 +1,10 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-social == 'false' %}
+	<div class="tt-layer-nav__social">
+		{% assign set-settings = block.settings %}
+		{% assign set-style = settings.color_sidebar_social_type %}
+		{% include 'social-links' %}
+	</div>
+	{% assign loc-social = 'true' %}
+{% endif %}

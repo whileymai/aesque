@@ -1,0 +1,108 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if settings.layout-show_breadcrumbs %}
+	<div class="tt-page__breadcrumbs">
+		{% include 'breadcrumbs' %}
+	</div>
+{% endif %}
+
+<div class="tt-page__name text-center">
+	<h1>{{ 'wishlist.general.title' | t }}</h1>
+</div>
+
+{% capture res-empty %}
+<div class="tt-empty">
+	{% if settings.wishlist-empty_image != blank %}
+		{% assign image_size = settings.wishlist-empty_image_width | append: 'x' %}
+		<i class="tt-empty__icon"><img src="{{ settings.wishlist-empty_image | img_url: image_size }}"
+									   alt="{{ 'wishlist.general.empty' | t }}"></i>
+	{% else %}
+		<div class="tt-empty__svgicon">
+			{% include 'icon-mogo-hart-grey' %}
+		</div>
+	{% endif %}
+	<div class="tt-page__name text-center">
+		<p>{{ 'wishlist.general.empty' | t }}</p>
+	</div>
+</div>
+{% endcapture %}
+
+{% if customer %}
+	<script charset="utf-8">
+		(function () {
+			var Mogo = window.Mogo || {};
+
+			Mogo.wishlistParams = {
+				ato_wishlist: []
+			};
+
+			{% assign loc-ato = customer.metafields.atowishlist %}
+			{% for whishlist in loc-ato %}
+			Mogo.wishlistParams.ato_wishlist.push({
+				"product_variant_id": "{{ whishlist[0] }}",
+				"product_handle": "{{ whishlist[1] }}"
+			});
+			{% endfor %}
+
+			window.Mogo = Mogo;
+		})();
+	</script>
+
+	<div class="tt-wishlist tt-layout__section--pdg{% if loc-ato.size > 0 %} ttg-loading{% endif %}">
+		{% if loc-ato.size > 0 %}
+			<div class="tt-wishlist__products">
+				<div class="tt-wishlist__product prdbut__product tt-wishlist__product-example">
+					<div class="row">
+						<div class="col-xl-5 col-lg-5 col-md-12">
+							<div class="tt-wishlist__product_image">
+								<a href="#"><img alt="image"></a>
+							</div>
+							<div class="tt-wishlist__product_info">
+								<a href="#"><p></p></a>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+							<div class="tt-wishlist__product_price">
+								<div class="tt-price"></div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+							<div class="tt-wishlist__product_status">
+								<span class="in-stock colorize-success-c">{{ 'products.product.instock' | t }}</span>
+								<span class="out-stock colorize-error-c">{{ 'products.product.outofstock' | t }}</span>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+							<div class="tt-wishlist__product_to-cart">
+								<a href="#" class="tt-wishlist__btn_tocart tt-btn tt-btn--cart colorize-btn6{{ res-btn_card_action }} prdbut__btn--process"
+								   data-select-variant-text="{{ 'wishlist.general.select_variant' | t }}">
+									<i class="icon-shop24"></i>
+									<span>{{ 'products.product.add_to_cart' | t }}</span>
+								</a>
+							</div>
+							<div class="tt-wishlist__product_del"><a href="#" class="prdbut__wsl-del"><i class="icon-trash"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tt-wishlist__footer">
+				<button class="btn btn-type--icon colorize-btn2 prdbut__wsl-clear prdbut__btn--process"><i
+						class="icon-trash"></i>{{ 'wishlist.general.btn_clear' | t }}</button>
+			</div>
+			<div class="tt-wishlist__empty ttg-hidden">{{ res-empty }}</div>
+		{% else %}
+			<div class="tt-wishlist__empty">{{ res-empty }}</div>
+		{% endif %}
+	</div>
+{% else %}
+	{% capture loc-signin %}
+	<a href="/account/login">{{ 'wishlist.general.signin_text' | t }}</a>
+	{% endcapture %}
+	{% capture loc-createaccount %}
+	<a href="/account/register">{{ 'wishlist.general.createaccount_text' | t }}</a>
+	{% endcapture %}
+	<center>
+		<p>{{ 'wishlist.general.login_message_html' | t: signin: loc-signin, createaccount: loc-createaccount }}</p>
+	</center>
+	<br><br>
+{% endif %}

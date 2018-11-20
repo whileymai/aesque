@@ -1,0 +1,126 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if section.blocks.size > 0 %}
+
+	{% comment %} ### MARGIN ### {% endcomment %}
+	{% assign loc_margin_class = '' %}
+	{% if section.settings.brands-sec-margin == 'demo2'%}
+		{% assign loc_margin_class = ' tt-home__brands-01' %}
+	{% endif %}
+	{% if section.settings.brands-sec-margin == 'custom'%}
+		<style>
+			.tt-home__custom_margin_{{ section.id }} {
+				margin: {{ section.settings.brands-sec-margin-custom }};
+			}
+		</style>
+		{% assign loc_margin_class = ' tt-home__custom_margin_' | append: section.id  %}
+	{% endif %}
+
+
+	{% comment %} ### WIDTH ### {% endcomment %}
+	{% if section.settings.brands-sec-width == 'boxed' %}
+		{% assign loc_container_class = 'container' | append: loc_margin_class %}
+	{% endif %}
+	{% if section.settings.brands-sec-width == 'fullwidth' %}
+		{% assign loc_container_class = 'container-fluid ttg-cont-padding--none' | append: loc_margin_class %}
+	{% endif %}
+
+
+	<div data-section-id="{{ section.id }}" data-section-type="home-brands" class="{{ loc_container_class }}" >
+		{%- assign image_size = '153x' -%}
+		<div class="tt-carousel-brands__wrap">
+			<div class="tt-carousel-brands">
+				{%- for block in section.blocks -%}
+					<a href="{{ block.settings.brands-url }}">
+						<img src="{{ block.settings.brands-image | img_url: image_size }}"
+							 srcset="{{ block.settings.brands-image | img_url: image_size }} 1x, {{ block.settings.brands-image | img_url: image_size, scale: 2 }} 2x"
+							 alt="{{ block.settings.brands-alt }}">
+					</a>
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+{%- endif -%}
+{%- if section.blocks.size == 0 -%}
+	{% include 'no-blocks' %}
+{%- endif -%}
+{% schema %}
+{
+"name": "Retailer slider",
+"max_blocks": 50,
+"settings": [
+{
+"label": "Width",
+"id": "brands-sec-width",
+"type": "select",
+"default": "boxed",
+"options": [
+{
+"value": "boxed",
+"label": "Boxed"
+},
+{
+"value": "fullwidth",
+"label": "Full Width"
+}
+]
+},
+{
+"label": "Margin",
+"id": "brands-sec-margin",
+"type": "select",
+"default": "none",
+"options": [
+{
+"value": "none",
+"label": "None"
+},
+{
+"value": "demo2",
+"label": "Demo2"
+},
+{
+"value": "custom",
+"label": "Custom"
+}
+]
+},
+{
+"label": "Custom Margin",
+"id": "brands-sec-margin-custom",
+"type": "text",
+"default": "10px"
+}
+],
+"blocks": [
+{
+"type": "brand-image",
+"name": "Brand",
+"settings": [
+{
+"label": "URL",
+"id": "brands-url",
+"type": "url",
+"info": "Optional"
+},
+{
+"label": "Image",
+"id": "brands-image",
+"type": "image_picker"
+},
+{
+"label": "Image Alt",
+"id": "brands-alt",
+"type": "text"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Retailers",
+"category": "4) Other"
+}
+]
+}
+{% endschema %}

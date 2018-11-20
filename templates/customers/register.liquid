@@ -1,0 +1,89 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if settings.layout-show_breadcrumbs %}
+  <div class="tt-page__breadcrumbs">
+    {% include 'breadcrumbs' %}
+  </div>
+{% endif %}
+
+{% form 'create_customer' %}
+  <div id="CustomerLoginForm">
+    <div class="tt-page__name tt-page__name--row text-center">
+      <a href="/account/login">{{ 'customer.login.title' | t }}</a>
+      <span>/</span>
+      <h1>{{ 'customer.register.title' | t }}</h1>
+    </div>
+    <div class="tt-login">
+      <div class="tt-form">
+          {% include 'form-get-message' %}
+          <div class="tt-form__form">
+            <label>
+              <div class="row">
+                <div class="col-md-3"><span>{{ 'customer.register.first_name' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="text"
+                         name="customer[first_name]"
+                         id="FirstName"
+                         class="form-control colorize-theme6-bg"
+                         placeholder="{{ 'customer.register.first_name_placeholder' | t }}"
+                         autofocus
+                         {% if form.first_name %}value="{{ form.first_name }}"{% endif %}>
+                </div>
+              </div>
+            </label>
+            <label>
+              <div class="row">
+                <div class="col-md-3"><span>{{ 'customer.register.last_name' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="text"
+                         name="customer[last_name]"
+                         id="LastName"
+                         class="form-control colorize-theme6-bg"
+                         placeholder="{{ 'customer.register.last_name_placeholder' | t }}"
+                         {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
+                </div>
+              </div>
+            </label>
+            <label>
+              <div class="row">
+                <div class="col-md-3"><span class="ttg__required">{{ 'customer.register.email' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="email"
+                         name="customer[email]"
+                         id="Email"
+                         class="form-control colorize-theme6-bg{% if form.errors contains 'email' %} input-error{% endif %}"
+                         placeholder="{{ 'customer.register.email_placeholder' | t }}"
+                         value="{% if form.email %}{{ form.email }}{% endif %}"
+                         spellcheck="false"
+                         autocomplete="off"
+                         required="required">
+                </div>
+              </div>
+            </label>
+            <label>
+              <div class="row">
+                <div class="col-md-3"><span class="ttg__required">{{ 'customer.register.password' | t }}:</span></div>
+                <div class="col-md-9">
+                  <input type="password"
+                         name="customer[password]"
+                         id="CreatePassword"
+                         class="form-control colorize-theme6-bg{% if form.errors contains 'password' %} input-error{% endif %}"
+                         placeholder="{{ 'customer.register.password_placeholder' | t }}"
+                         required="required">
+                </div>
+              </div>
+            </label>
+            <div class="row ttg-mt--40">
+              <div class="col-md-9 offset-md-3">
+                <button type="submit" class="btn">{{ 'customer.register.submit' | t }}</button>
+                <div class="tt-form__back">
+                  <span>or</span>
+                  <a href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endform %}

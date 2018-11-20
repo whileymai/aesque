@@ -1,0 +1,31 @@
+{%- unless collection.image == blank -%}
+<div class="ttg-mt--0">
+	<div class="ttg-image-scale">
+      <a href="{{ collection.url }}"><img alt="Image name" src="{{ collection.image | img_url: '1920x' }}" srcset="{{ collection.image | img_url: '1920x' }}" style="display: inline;" /></a>
+</div>
+{%- endunless -%}
+
+{% comment %}
+                    <a href="{{ collection.url }}" class="tt-listing-page__promobox
+                                {% case this-settings.banner_animate %}
+                                    {%- when 'scale' -%}
+                                        ttg-image-scale
+                                    {%- when 'top' -%}
+                                        ttg-image-translate--top
+                                    {%- when 'bottom' -%}
+                                        ttg-image-translate--bottom
+                                    {%- when 'left' -%}
+                                        ttg-image-translate--left
+                                    {%- when 'right' -%}
+                                        ttg-image-translate--right
+                                {%- endcase -%}
+                            ">
+                        <img src="{{ collection.image | img_url: '1920x' }}"
+							 srcset="{{ collection.image | img_url: '1920x' }} 1x, {{ collection.image | img_url: '3840x', scale: 2 }} 2x"
+							 alt="{{ collection.title }}">
+                        <div class="tt-listing-page__promobox-text">
+                            <h1 {{ res-text-color }}>{{ collection.title }}</h1>
+                            <p {{ res-text-color }}>{{ collection.description }}</p>
+                        </div>
+                    </a>
+{% endcomment %}

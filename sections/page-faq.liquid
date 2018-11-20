@@ -1,0 +1,112 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="tt-layout__section--pdg">
+	{% if settings.layout-show_breadcrumbs %}
+		<div class="tt-page__breadcrumbs">
+			{% include 'breadcrumbs' %}
+		</div>
+	{% endif %}
+	<div class="tt-page__name text-center ttg-cont-padding--none">
+		<h1>{{ page.title }}</h1>
+	</div>
+	{% if section.blocks.size > 0 %}
+
+		{% assign loc-current-caption-id = 0 %}
+		{% assign loc-processed-caption-id = 0 %}
+		{% assign loc-faqblock-open = 0 %}
+
+		{%- for block in section.blocks -%}
+
+
+			{%- comment -%} ### Comment block ### {%- endcomment -%}
+			{%- if block.type == 'faq-caption' -%}
+				{% assign loc-current-caption-id = block.id %}
+				{%- if loc-processed-caption-id != loc-current-caption-id and loc-processed-caption-id != 0 and loc-faqblock-open == 1 -%}
+						</ul>
+					</div>
+					{% assign loc-faqblock-open = 0 %}
+				{%- endif -%}
+				<div class="tt-page__name-sm text-center">
+					<h2 class="colorize-theme-c">{{ block.settings.faq-caption }}</h2>
+				</div>
+			{%- endif -%}
+
+
+
+			{%- comment -%} ### QA block ### {%- endcomment -%}
+			{%- if block.type == 'faq-qa' -%}
+
+				{%- if loc-processed-caption-id != loc-current-caption-id or loc-current-caption-id == 0 -%}
+					<div class="tt-page__cont-small ttg-mt--60 ttg-mb--90">
+						<ul class="tt-list-toggle tt-list-toggle__accordion tt-list-toggle--toogles">
+					{% assign loc-current-caption-id = 'nocaption' %}
+					{% assign loc-faqblock-open = 1 %}
+				{%- endif -%}
+
+					<li class="tt-list-toggle__next">
+						<a href="#">{{ block.settings.faq-question }}</a>
+						<div>
+							{{ block.settings.faq-answer }}
+						</div>
+					</li>
+
+				{% if forloop.last == true %}
+						</ul>
+					</div>
+				{% endif %}
+				{% assign loc-processed-caption-id = loc-current-caption-id %}
+			{%- endif -%}
+		{%- endfor -%}
+	{% else %}
+		<div class="tt-page__name text-center">
+			Nothing found.
+		</div>
+	{% endif %}
+
+</div>
+
+
+{% schema %}
+{
+"name": "FAQ settings",
+"max_blocks": 50,
+"settings": [
+{
+"type": "paragraph",
+"content": "Add content as blocks. Two type of blocks. 1) Question and Answer; 2) Caption. Sort blocks to sort content of page."
+}
+],
+"blocks": [
+{
+"type": "faq-qa",
+"name": "Question and Answer",
+"settings": [
+{
+"label": "Question",
+"id": "faq-question",
+"type": "text",
+"default": "How do I place an order?"
+},
+{
+"label": "Answer",
+"id": "faq-answer",
+"type": "richtext",
+"default": "<p>If you have chosen a favorite sporting goods, then click 'Add to cart', and it will automatically be placed in your shopping cart. You can then continue to select products in our online store, adding to your shopping cart as sporting goods, as needed.If you have already completed the selection of sporting goods, then proceed directly to checkout.</p>"
+}
+]
+},
+{
+"type": "faq-caption",
+"name": "Caption",
+"settings": [
+{
+"label": "Caption",
+"id": "faq-caption",
+"type": "text",
+"default": "Orders"
+}
+]
+}
+]
+}
+{% endschema %}

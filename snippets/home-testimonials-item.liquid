@@ -1,0 +1,28 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign this-settings = block.settings %}
+
+{% assign res-styles_icon = null %}
+{% assign res-styles_caption = null %}
+{% assign res-styles_text = null %}
+{% assign res-styles_author = null %}
+
+{% if this-settings.color_icon_c != blank and this-settings.color_icon_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_icon %} style="color: {{ this-settings.color_icon_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_caption_c != blank and this-settings.color_caption_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_caption %} style="color: {{ this-settings.color_caption_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_text_c != blank and this-settings.color_text_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_text %} style="color: {{ this-settings.color_text_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_author_c != blank and this-settings.color_author_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_author %} style="color: {{ this-settings.color_author_c }};"{% endcapture %}
+{% endif %}
+
+<div class="tt-testimonials__content">
+	<i class="icon-quote-1"{{ res-styles_icon }}></i>
+	<div class="tt-testimonials__title"{{ res-styles_caption }}>{{ block.settings.testimonial-caption }}</div>
+	<p{{ res-styles_text }} data-ssss>{{ block.settings.testimonial-text | remove: '<p>' | remove: '</p>' }}</p>
+	<div class="tt-testimonials__quote"{{ res-styles_author }}>{{ block.settings.testimonial-author }}</div>
+</div>

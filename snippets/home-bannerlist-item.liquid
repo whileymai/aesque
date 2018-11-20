@@ -1,0 +1,78 @@
+{%- comment -%}
+(c) Tonytemplates Ltd,
+https://www.tonytemplates.com/
+support@tonytemplates.com
+{%- endcomment -%}
+{%- assign this-item = home-bannerlist-item -%}
+
+{% assign this-settings = block.settings %}
+
+{% assign res-styles_title = null %}
+{% assign res-styles_list = null %}
+{% assign res-styles_hover_bg = null %}
+
+{% if this-settings.color_title_c != blank and this-settings.color_title_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_title %} style="color: {{ this-settings.color_title_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_list_c != blank and this-settings.color_list_c != 'rgba(0,0,0,0)' %}
+	{% capture res-styles_list %} style="color: {{ this-settings.color_list_c }};"{% endcapture %}
+{% endif %}
+{% if this-settings.color_h_bg != blank and this-settings.color_h_bg != 'rgba(0,0,0,0)' %}
+    {% capture res-styles_hover_bg %} style="background-color: {{ this-settings.color_h_bg }};"{% endcapture %}
+{% endif %}
+
+
+{%- comment -%} ### "set-" variables can be overwritten ### {%- endcomment -%}
+{%- assign res-boxsize = set-boxsize | default: '' -%}
+{%- assign res-image_size = set-image_size | default: '640x' -%}
+
+
+{%- assign res-url = this-item.settings.url | default: '#' -%}
+{%- assign res-image = this-item.settings.image -%}
+{%- assign res-list = this-item.settings.list -%}
+
+
+{%- comment -%} ### res-image-translate ### {%- endcomment -%}
+{%- if this-item.settings.image-hover-animation != blank -%}
+	{%- if this-item.settings.image-hover-animation == 'scale' -%}
+		{%- assign res-image-translate = 'ttg-image-scale' -%}
+	{%- else -%}
+		{%- assign res-image-translate = 'ttg-image-translate--' | append: this-item.settings.image-hover-animation -%}
+	{%- endif -%}
+{%- else -%}
+	{%- assign res-image-translate = '' -%}
+{%- endif -%}
+
+
+<div class="tt-promobox {{ res-boxsize }}
+                   ttg-text-animation-parent
+                   {{ res-image-translate }}
+                   ttg-animation-disable--sm
+                   tt-promobox__hover-disable--sm">
+	<div class="tt-promobox__content">
+		<img src="{{ res-image | img_url: res-image_size }}"
+			 srcset="{{ res-image | img_url: res-image_size }} 1x, {{ res-image | img_url: res-image_size, scale: 2 }} 2x"
+			 alt="{{ res-list }}">
+		{% if linklists[res-list].links != blank %}
+			<div class="tt-promobox__hover
+						tt-promobox__hover--up">
+				<div class="tt-promobox__hover-bg
+							tt-promobox__hover-bg--visible"{{ res-styles_hover_bg }}></div>
+				<div class="tt-promobox__text
+							tt-promobox__point-lg--top
+							tt-promobox__point-lg--left">
+					<a href="{{ res-url }}"{{ res-styles_title }}>{{ res-list | capitalize }}</a>
+					{% if res-list != 'blank' %}
+						<ul>
+							{% for link in linklists[res-list].links %}
+								<li>
+									<a href="{{ link.url }}"{{ res-styles_list }}>{{ link.title }}</a>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</div>

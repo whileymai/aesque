@@ -1,0 +1,8 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="tt-loadmore text-center tt-collection-param" data-tt-property="page" data-collection-replace="paginate">
+  {% if paginate.pages > paginate.current_page %}
+    {% assign paginate_next = paginate.current_page | plus: 1 %}
+  {% endif %}
+  <a href="#{{ paginate_next }}" class="btn{% if paginate_next == blank %} ttg-hidden{% endif %}" data-tt-value="{{ paginate_next }}">{{ 'general.paginate.btn_loadmore' | t }}</a>
+</div>

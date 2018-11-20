@@ -1,0 +1,211 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- assign blog = blogs[section.settings.blog] -%}
+{%- assign posts = blogs[section.settings.blog].articles -%}
+
+{% comment %} ### MARGIN ### {% endcomment %}
+{% assign loc_margin_class = '' %}
+{% if section.settings.blog-sec-margin == 'custom'%}
+	<style>
+		.tt-home__custom_margin_{{ section.id }} {
+			margin: {{ section.settings.blog-sec-margin-custom }};
+		}
+	</style>
+	{% assign loc_margin_class = ' tt-home__custom_margin_' | append: section.id  %}
+{% endif %}
+
+{% comment %} ### WIDTH ### {% endcomment %}
+{% if section.settings.blog-sec-width == 'boxed' %}
+	{% assign loc_container_class = 'container' | append: loc_margin_class %}
+{% endif %}
+{% if section.settings.blog-sec-width == 'fullwidth' %}
+	{% assign loc_container_class = 'container-fluid ttg-cont-padding--none' | append: loc_margin_class %}
+{% endif %}
+
+
+{% comment %} ### BLOG ### {% endcomment %}
+
+
+<div data-section-id="{{ section.id }}" data-section-type="home-blog" class="{{ loc_container_class }}" >
+	<div class="tt-page__section">
+		<div class="tt-page__section-head tt-page__section-head--center tt-page__section-head--arrows tt-layout__section--pdg">
+			<div class="tt-page__title">{{ section.settings.blog-caption }}</div>
+			{% if section.settings.arrows %}
+				<div class="tt-page__arrows tt-page__arrows--in-head">
+					<span class="tt-page__arrows-prev"><i class="icon-left-open-2"></i></span>
+					<span class="tt-page__arrows-next"><i class="icon-right-open-2"></i></span>
+				</div>
+			{% endif %}
+		</div>
+		<div class="tt-home__carousel-blog">
+			<div class="tt-carousel-box tt-carousel-box--section">
+				<div class="tt-carousel-box__slider" data-grid="{{ section.settings.blog-per-row }}">
+					{% for article in posts limit: section.settings.blog-posts-num %}
+						<div class="col-xl-12">
+							<div class="tt-post-grid">
+								<a href="{{ article.url }}" class="tt-post-grid__image ttg-image-translate--left">
+									<img src="{{ article.image.src | img_url: '433x' }}" srcset="{{ article.image.src | img_url: '433x' }} 1x, {{ article.image.src | img_url: '433x', scale: 2 }} 2x" alt="{{ article.title }}">
+								</a>
+								<div class="tt-post-grid__content">
+									<a href="{{ article.url }}" class="tt-post-grid__title">{{ article.title }}</a>
+									<p>{{ article.excerpt }}</p>
+									<div class="tt-post-grid__footer">
+										<div class="tt-post-grid__info">
+											<span>{{ article.user.first_name }}</span> on {{ article.published_at | date: "%B %d, %Y" }}
+											{% if article.tags != blank %}
+												<div class="tt-post-grid__tags">
+													<i class="icon-tag-1"></i>
+													{% for tag in article.tags %}
+														{% if forloop.last == true %}
+															<a href="{{ blog.url }}/tagged/{{ tag }}">{{ tag }}</a>
+														{% else %}
+															<a href="{{ blog.url }}/tagged/{{ tag }}">{{ tag }}</a>,
+														{% endif %}
+													{% endfor %}
+												</div>
+											{% endif %}
+										</div>
+										{% if article.comments_enabled? %}
+											<a href="{{ article.url }}#comments" class="tt-post-grid__comments">
+												<i class="icon-comment-empty"></i><span>{{ article.comments_count }}</span>
+											</a>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+"name": "From the Blog",
+"settings": [
+{
+"type": "text",
+"label": "Caption",
+"default": "From the Blog",
+"id": "blog-caption"
+},
+{
+"type": "blog",
+"label": "Blog",
+"id": "blog"
+},
+{
+"type": "select",
+"label": "Posts per row",
+"id": "blog-per-row",
+"options": [
+{
+"value": "3",
+"label": "3"
+},
+{
+"value": "4",
+"label": "4"
+}
+],
+"default": "4"
+},
+{
+"type": "select",
+"label": "Number of posts",
+"id": "blog-posts-num",
+"options": [
+{
+"value": "3",
+"label": "3"
+},
+{
+"value": "4",
+"label": "4"
+},
+{
+"value": "5",
+"label": "5"
+},
+{
+"value": "6",
+"label": "6"
+},
+{
+"value": "7",
+"label": "7"
+},
+{
+"value": "8",
+"label": "8"
+},
+{
+"value": "9",
+"label": "9"
+},
+{
+"value": "10",
+"label": "10"
+}
+],
+"default": "5"
+},
+{
+"label": "Show arrows",
+"id": "arrows",
+"type": "checkbox",
+"default": true
+},
+{
+"type": "header",
+"content": "Layout options"
+},
+{
+"label": "Width",
+"id": "blog-sec-width",
+"type": "select",
+"default": "boxed",
+"options": [
+{
+"value": "boxed",
+"label": "Boxed"
+},
+{
+"value": "fullwidth",
+"label": "Full Width"
+}
+]
+},
+{
+"label": "Margin",
+"id": "blog-sec-margin",
+"type": "select",
+"default": "none",
+"options": [
+{
+"value": "none",
+"label": "None"
+},
+{
+"value": "custom",
+"label": "Custom"
+}
+]
+},
+{
+"label": "Custom Margin",
+"id": "blog-sec-margin-custom",
+"type": "text",
+"default": "10px"
+}
+],
+"presets": [
+{
+"name": "From the Blog",
+"category": "4) Other"
+}
+]
+}
+
+{% endschema %}

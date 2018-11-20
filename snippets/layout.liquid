@@ -1,0 +1,42 @@
+{%- comment -%}
+{%- endcomment -%}
+<!doctype html>
+<html lang="{{ shop.locale }}" id="theme" class="colorize-classes">
+<head>{{ loc-content_for_head }}</head>
+<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} prdbut" {%- include 'body-get-params' -%}>
+{% if settings.layout_preloader %}
+    <div class="tt-preloader"></div>
+{% endif %}
+{%- if loc-content_for_header -%}
+    <header>
+        {{ loc-content_for_header }}
+    </header>
+{%- endif -%}
+<main>
+    <div class="tt-layout tt-sticky-block__parent{{ res-layout_class }}">
+
+        {{ res-sidebar }}
+
+        {%- if loc-content_for_layout -%}
+            <div class="tt-layout__content">
+                <div class="container">
+                    {{ loc-content_for_layout }}
+                </div>
+            </div>
+        {%- endif -%}
+    </div>
+</main>
+
+{%- if loc-content_for_footer -%}
+    <footer>
+        {{ loc-content_for_footer }}
+    </footer>
+{%- endif -%}
+
+{%- if settings.newsletter_show_popup -%}
+    {%- include 'newsletter-popup' -%}
+{%- endif -%}
+
+{%- include 'footer-js' -%}
+</body>
+</html>

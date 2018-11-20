@@ -1,0 +1,20 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- if settings.wishlist-status -%}
+	{%- if customer -%}
+		{%- assign whishlist_count = 0 -%}
+		{%- for products in customer.metafields.atowishlist -%}
+			{%- assign whishlist_count = forloop.index -%}
+		{%- endfor -%}
+		{%- if whishlist_count > 0 -%}
+			{%- capture wishlistcount -%}<span>{{ whishlist_count }}</span>{%- endcapture -%}
+		{%- endif -%}
+		{%- capture wishlistlink -%}/pages/wishlist{%- endcapture -%}
+	{%- else -%}
+		{%- capture wishlistlink -%}/account/login{%- endcapture -%}
+	{%- endif -%}
+	<a href="{{ wishlistlink }}" class="tt-header__btn tt-header__btn-wishlist" data-count="{{ whishlist_count }}">
+		<i class="fa fa-heart" aria-hidden="true"></i>
+		{{ wishlistcount }}
+	</a>
+{%- endif -%}

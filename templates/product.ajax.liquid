@@ -1,0 +1,34 @@
+{%- comment -%}
+{%- endcomment -%}
+{% layout none %}
+
+{% assign set-layout = 'layout1' %}
+{% assign set-image_size = '486x' %}
+
+{% assign loc-check_buttons_status = settings.qv-check_buttons_status %}
+
+{% assign loc-show_sku = settings.qv-show_sku %}
+{% assign loc-show_availability = settings.qv-show_availability %}
+{% assign loc-show_collections = settings.qv-show_collections %}
+{% assign loc-show_name = settings.qv-show_name %}
+{% assign loc-show_price = settings.qv-show_price %}
+{% assign loc-show_countdown = settings.qv-show_countdown %}
+{% assign loc-show_type = settings.qv-show_type %}
+{% assign loc-show_vendor = settings.qv-show_vendor %}
+{% assign loc-show_barcode = settings.qv-show_barcode %}
+{% assign loc-show_description = settings.qv-show_description %}
+{% assign loc-show_quantity = settings.qv-show_quantity %}
+{% assign loc-show_buttons = settings.qv-show_buttons %}
+{% assign loc-show_cart_btn = settings.qv-show_cart_btn %}
+{% assign loc-show_wishlist_btn = settings.qv-show_wishlist_btn %}
+{% assign loc-show_options = settings.qv-show_options %}
+{% assign loc-show_tags = settings.qv-show_tags %}
+{% assign loc-show_notes = settings.qv-show_notes %}
+{% assign loc-show_viewfull = settings.qv-show_viewfull %}
+{% assign loc-show_gallery_arrows = settings.qv-show_gallery_arrows %}
+{% assign loc-show_gallery_btn_fullscreen = false %}
+{% assign loc-enable_gallery_zoom = settings.qv-enable_gallery_zoom %}
+
+<div class="tt-qv">
+	{% include 'product-page' %}
+</div>

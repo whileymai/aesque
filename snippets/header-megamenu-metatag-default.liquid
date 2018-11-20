@@ -1,0 +1,27 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="TonyM__mm TonyM__mm--simple"
+	 data-tm-w="280"
+	 data-tm-a-h="item-left">
+	<ul class="TonyM__list">
+		{%- for childlink in menus[child_list_handle].links -%}
+			{%- assign second_child_list_handle = childlink.title | handleize -%}
+			{%- if menus[second_child_list_handle].links != blank -%}
+				{%- comment -%} 2 level (second) ######################################################## {%- endcomment -%}
+				<li class="TonyM__dd">
+					<a href="{{ childlink.url }}"{% if childlink.active %} class="TonyM__link--active "{% endif %}>{{ childlink.title | escape }}</a>
+					<ul>
+						{%- for secondchildlink in menus[second_child_list_handle].links -%}
+							{%- assign third_child_list_handle = secondchildlink.title | handleize -%}
+							{%- include 'header-megamenu-metatag-default-level3and4' -%}
+						{%- endfor -%}
+					</ul>
+				</li>
+			{%- else -%}
+				<li>
+					<a href="{{ childlink.url }}"{% if childlink.active %} class="TonyM__link--active"{% endif %}>{{ childlink.title | escape }}</a>
+				</li>
+			{%- endif -%}
+		{%- endfor -%}
+	</ul>
+</div>

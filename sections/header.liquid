@@ -1,0 +1,250 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- case section.settings.type -%}
+  {%- when '1' -%}
+    {%- assign res-class = 'tt-header--build-01 tt-header--style-01' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
+  {%- when '2' -%}
+    {%- assign res-class = 'tt-header--build-02 tt-header--style-02' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
+  {%- when '3' -%}
+    {%- assign res-class = 'tt-header--build-01 tt-header--style-03' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
+  {%- when '4' -%}
+    {%- assign res-class = 'tt-header--build-02 tt-header--style-04' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
+  {%- when '5' -%}
+    {%- assign res-class = 'tt-header--build-03 tt-header--style-05' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
+  {%- when '6' -%}
+    {%- assign res-class = 'tt-header--build-04 tt-header--style-06' -%}
+    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
+{%- endcase -%}
+{%- if settings.color_header_transparent == true and template == 'index' -%}
+  {%- assign res-class = res-class | append: ' tt-header--transparent' -%}
+{%- endif -%}
+<div data-section-id="{{ section.id }}" data-section-type="header">
+  <div class="tt-header {{ res-class }}{% if section.settings.sticky %} tt-header--sticky{% endif %}" data-sticky-effect="{{ section.settings.sticky_effect }}">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'top_line' -%}
+        {%- include 'header-topline' -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {{ res-build }}
+  </div>
+</div>
+{% schema %}
+{
+"name": "Header",
+"settings": [
+{
+"type": "image_picker",
+"id": "logo",
+"label": "Logo image"
+},
+{
+"type": "range",
+"id": "logo_max_width",
+"min": 50,
+"max": 230,
+"step": 10,
+"unit": "px",
+"label": "Custom logo width",
+"default": 130
+},
+{
+"type": "checkbox",
+"id": "logo_animate",
+"label": "Animate logo?",
+"default": true
+},
+{
+"type": "link_list",
+"id": "main_linklist",
+"label": "Menu",
+"default": "main-menu"
+},
+{
+"type": "select",
+"id": "type",
+"label": "Type",
+"default": "1",
+"options": [
+{
+"value": "1",
+"label": "Type #1"
+},
+{
+"value": "2",
+"label": "Type #2"
+},
+{
+"value": "3",
+"label": "Type #3"
+},
+{
+"value": "4",
+"label": "Type #4"
+},
+{
+"value": "5",
+"label": "Type #5"
+},
+{
+"value": "6",
+"label": "Type #6"
+}
+]
+},
+{
+"type": "checkbox",
+"id": "sticky",
+"label": "Enable sticky header?",
+"default": true
+},
+{
+"type": "select",
+"id": "sticky_effect",
+"label": "Sticky effect",
+"default": "1",
+"options": [
+{
+"value": "1",
+"label": "Effect #1"
+},
+{
+"value": "2",
+"label": "Effect #2"
+}
+]
+},
+{
+"type": "checkbox",
+"id": "account_icon",
+"label": "Show account icon?",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "login_form",
+"label": "Show login form?",
+"default": true
+}
+],
+"max_blocks": 1,
+"blocks": [
+{
+"type": "top_line",
+"name": "Top line",
+"settings": [
+{
+"type": "paragraph",
+"content": "### AfterPay ###"
+},
+{
+"label": "Icon code",
+"id": "top-line-icon",
+"type": "text",
+"default": "icon-location",
+"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+},
+{
+"label": "Address",
+"id": "top-line-text",
+"type": "text",
+"default": "Address: Melbourne, VIC"
+},
+{
+"type": "paragraph",
+"content": "### Shipping ###"
+},
+{
+"label": "Icon code",
+"id": "top-line-icon-phone",
+"type": "text",
+"default": "icon-phone",
+"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+},
+{
+"label": "Phone",
+"id": "top-line-text-phone",
+"type": "text",
+"default": "Phone: +61 411 123 123"
+},
+{
+"type": "paragraph",
+"content": "## Location ###"
+},
+{
+"label": "Icon code",
+"id": "top-line-icon-hours",
+"type": "text",
+"default": "icon-clock-2",
+"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+},
+{
+"label": "Hours",
+"id": "top-line-text-hours",
+"type": "text",
+"default": "Hours: 7 Days a week from 10-00 am to 6-00 pm"
+},
+{
+"label": "Show social icons?",
+"id": "top-line-social",
+"type": "checkbox",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_facebook",
+"label": "Facebook",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_google",
+"label": "Google",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_twitter",
+"label": "Twitter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_instagram",
+"label": "Instagram",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_youtube",
+"label": "Youtube",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_pinterest",
+"label": "Pinterest",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_skype",
+"label": "Skype",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_behance",
+"label": "Behance",
+"default": true
+}
+]
+}
+]
+}
+{% endschema %}

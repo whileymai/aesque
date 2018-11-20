@@ -1,0 +1,118 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- comment -%} ### Image animation effect ### {%- endcomment -%}
+{% case section.settings.image_effect %}
+	{% when 'zoomin' %}
+		{% assign loc-image-effect = 'ttg-image-scale' %}
+	{% when 'left' %}
+		{% assign loc-image-effect = 'ttg-image-translate--left' %}
+	{% when 'right' %}
+		{% assign loc-image-effect = 'ttg-image-translate--right' %}
+	{% when 'top' %}
+		{% assign loc-image-effect = 'ttg-image-translate--top' %}
+	{% when 'bottom' %}
+		{% assign loc-image-effect = 'ttg-image-translate--bottom' %}
+	{% else %}
+		{% assign loc-image-effect = '' %}
+{% endcase %}
+
+{% paginate blog.articles by section.settings.posts_per_page %}
+
+	<div class="tt-post-grid__wrap tt-masonry row">
+		{% for article in blog.articles %}
+			<div class="col-xl-4 col-lg-6">
+				<div class="tt-post-grid">
+					{% if article.image %}
+						<a href="{{ article.url }}" class="tt-post-grid__image {{ loc-image-effect }}">
+							<img src="{{ article | img_url: '433x' }}"
+								 srcset="{{ article | img_url: '433x' }} 1x, {{ article | img_url: '433x', scale: 2 }} 2x"
+								 alt="{{ article.title }}">
+						</a>
+					{% endif %}
+					<div class="tt-post-grid__content">
+
+						{%- comment -%} ### TOP tags ### {%- endcomment -%}
+						{% if article.tags.size > 0 and section.settings.tags == 'top' %}
+							{% assign loc-top-tags = 'true' %}
+							{% elsif article.tags.size > 0 and section.settings.tags == 'both' %}
+							{% assign loc-top-tags = 'true' %}
+						{% else %}
+							{% assign loc-top-tags = 'false' %}
+						{% endif %}
+
+						{% if loc-top-tags == 'true' %}
+							<div class="tt-post-grid__category">
+								{% for tag in article.tags %}
+									<a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+								{% endfor %}
+							</div>
+						{% endif %}
+
+						{%- comment -%} ### Title, text ### {%- endcomment -%}
+						<a href="{{ article.url }}" class="tt-post-grid__title">{{ article.title }}</a>
+						{% if article.excerpt.size > 0 %}
+							{{ article.excerpt }}
+						{% else %}
+							<p>
+								{{ article.content | strip_html | truncatewords: 25 }}
+							</p>
+						{% endif %}
+
+						{%- comment -%} ### Bottom tags ### {%- endcomment -%}
+						{% if article.tags.size > 0 and section.settings.tags == 'bottom' %}
+							{% assign loc-bottom-tags = 'true' %}
+							{% elsif article.tags.size > 0 and section.settings.tags == 'both' %}
+							{% assign loc-bottom-tags = 'true' %}
+						{% else %}
+							{% assign loc-bottom-tags = 'false' %}
+						{% endif %}
+
+						{%- if section.settings.author or loc-bottom-tags == 'true' -%}
+							<div class="tt-post-grid__footer">
+								<div class="tt-post-grid__info">
+									{%- comment -%} ### Author ### {%- endcomment -%}
+									{%- if section.settings.author -%}
+										{% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}
+										{{ 'blogs.article.author_on_date_html' | t: author: article.author, date: date }}
+									{%- endif -%}
+
+									{% if loc-bottom-tags == 'true' %}
+										<div class="tt-post-grid__tags">
+											<i class="icon-tag-1"></i>
+											{% for tag in article.tags %}
+												<a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+											{% endfor %}
+										</div>
+									{% endif %}
+								</div>
+
+								{%- comment -%} ### Comments ### {%- endcomment -%}
+								{%- if blog.comments_enabled? and section.settings.comments -%}
+									{%- if section.settings.zero_comments -%}
+										{% assign loc-show-comments = 'true' %}
+										{%- elsif article.comments_count > 0 -%}
+										{% assign loc-show-comments = 'true' %}
+									{%- else -%}
+										{% assign loc-show-comments = 'false' %}
+									{%- endif -%}
+								{%- endif -%}
+
+								{%- if loc-show-comments == 'true' -%}
+									<a href="{{ article.url }}#comments" class="tt-post-grid__comments">
+										<i class="icon-comment-empty"></i><span>{{ article.comments_count }}</span>
+									</a>
+								{%- endif -%}
+							</div>
+						{%- endif -%}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	</div>
+
+	{% if paginate.pages > 1 %}
+		{% include 'bloglist-pagination' %}
+	{% endif %}
+
+{% endpaginate %}

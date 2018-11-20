@@ -1,0 +1,16 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-tags == 'false' %}
+
+	{%- if block.settings.caption -%}
+		<div class="tt-layer-nav__title">{{ block.settings.caption }}</div>
+	{%- endif -%}
+
+	<div class="tt-layer-nav__tags">
+		{% for tag in blog.all_tags %}
+			{{ tag | link_to_tag: tag }}
+		{% endfor %}
+	</div>
+
+	{% assign loc-tags = 'true' %}
+{% endif %}

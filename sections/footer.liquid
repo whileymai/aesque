@@ -1,0 +1,387 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- for block in section.blocks -%}
+	{%- assign footer_block = block.settings -%}
+	{%- case block.type -%}
+	{%- when 'logo' -%}
+	{%- capture logo -%}
+	{%- include 'footer-logo' -%}
+	{%- endcapture -%}
+	{%- when 'info' -%}
+	{%- capture info -%}
+	{%- include 'footer-info' -%}
+	{%- endcapture -%}
+	{%- when 'tape' -%}
+	{%- capture tape -%}
+	{%- include 'footer-tape' -%}
+	{%- endcapture -%}
+	{%- when 'social' -%}
+	{%- capture social -%}
+	{%- include 'footer-social' -%}
+	{%- endcapture -%}
+	{%- when 'subscribe' -%}
+	{%- capture subscribe -%}
+	{%- include 'footer-subscribe' -%}
+	{%- endcapture -%}
+	{%- when 'menu' -%}
+	{%- capture menu -%}
+	{%- include 'footer-menu-links' -%}
+	{%- endcapture -%}
+	{%- when 'menu_02' -%}
+	{%- capture menu_02 -%}
+	{%- include 'footer-menu-links' -%}
+	{%- endcapture -%}
+	{%- when 'menu_03' -%}
+	{%- capture menu_03 -%}
+	{%- include 'footer-menu-links' -%}
+	{%- endcapture -%}
+	{%- endcase -%}
+{%- endfor -%}
+
+{%- assign manu_max = 3 -%}
+
+{%- if menu_quantity > manu_max -%}
+	{%- assign menu_quantity = manu_max -%}
+{%- endif -%}
+
+{%- capture menu -%}
+  {%- include 'footer-menu' -%}
+{%- endcapture -%}
+
+{%- capture copyright -%}
+  {%- include 'footer-copyright' -%}
+{%- endcapture -%}
+
+{%- capture btn_to_top -%}
+  {%- include 'footer-btn-totop' -%}
+{%- endcapture -%}
+
+{%- if section.settings.footer_reverse -%}
+	{%- assign main_class = ' tt-footer__reverse' -%}
+{%- endif -%}
+
+<div data-section-id="{{ section.id }}" data-section-type="footer">
+	{%- case section.settings.type -%}
+	{%- when '1' -%}
+	{%- include 'footer1' -%}
+	{%- when '2' -%}
+	{%- include 'footer2' -%}
+	{%- when '3' -%}
+	{%- include 'footer3' -%}
+	{%- when '4' -%}
+	{%- include 'footer4' -%}
+	{%- when '5' -%}
+	{%- include 'footer5' -%}
+	{%- when '6' -%}
+	{%- include 'footer6' -%}
+	{%- else -%}
+	{%- include 'footer1' -%}
+	{%- endcase -%}
+
+	{%- include 'popups' -%}
+</div>
+
+{% schema %}
+	{
+	"name": "Footer",
+	"settings": [
+	{
+	"type": "select",
+	"id": "type",
+	"label": "Footer type",
+	"default": "1",
+	"options": [
+	{
+	"value": "1",
+	"label": "Footer #1"
+	}
+	]
+	},
+	{
+	"type": "checkbox",
+	"id": "show_copyright",
+	"label": "Show copyright",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_theme",
+	"label": "Show Whiley Mai link",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_totop_desktop",
+	"label": "Show button to top desktop",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "btn_top_limit",
+	"label": "Visibility limit 'back to top'",
+	"info": "Must be a integer",
+	"default": "1000"
+	}
+	],
+	"max_blocks":10,
+	"blocks": [
+	{
+	"name": "Logo",
+	"type": "logo",
+	"settings": [
+	{
+	"type": "image_picker",
+	"id": "logo",
+	"label": "Logo image"
+	}, {
+	"type": "range",
+	"id": "logo_max_width",
+	"min": 50,
+	"max": 230,
+	"step": 10,
+	"unit": "px",
+	"label": "Custom logo width",
+	"default": 130
+	}
+	]
+	},
+	{
+	"name": "Menu",
+	"type": "menu",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "caption_enable",
+	"label": "Show Caption",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "caption",
+	"label": "Caption",
+	"default": "Information"
+	},
+	{
+	"type": "link_list",
+	"id": "type",
+	"label": "Select menu",
+	"default": "footer"
+	}
+	]
+	},
+	{
+	"name": "Menu #2",
+	"type": "menu_02",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "caption_enable",
+	"label": "Show Caption",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "caption",
+	"label": "Caption",
+	"default": "Information"
+	},
+	{
+	"type": "link_list",
+	"id": "type",
+	"label": "Select menu",
+	"default": "footer"
+	}
+	]
+	},
+	{
+	"name": "Menu #3",
+	"type": "menu_03",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "caption_enable",
+	"label": "Show Caption",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "caption",
+	"label": "Caption",
+	"default": "Information"
+	},
+	{
+	"type": "link_list",
+	"id": "type",
+	"label": "Select menu",
+	"default": "footer"
+	}
+	]
+	},
+	{
+	"name": "Information",
+	"type": "info",
+	"settings": [
+	{
+	"type": "richtext",
+	"id": "text_01",
+	"label": "Text #1",
+	"default": "<p>Address: Melbourne, VIC</p>"
+	},
+	{
+	"type": "richtext",
+	"id": "text_02",
+	"label": "Text #2",
+	"default": "<p>Phone: +61 411 123 123</p>"
+	},
+	{
+	"type": "richtext",
+	"id": "text_03",
+	"label": "Text #3",
+	"default": "<p>Hours : 7 Days a week from 10-00 am to 6-00 pm</p>"
+	},
+	{
+	"type": "richtext",
+	"id": "text_04",
+	"label": "Text #4",
+	"default": "<p>E-mail: info@whileymai.com</p>"
+	}
+	]
+	},
+	{
+	"name": "Tape",
+	"type": "tape",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "pay_visa",
+	"label": "Visa",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "pay_discover",
+	"label": "Discover",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "pay_mastercard",
+	"label": "Mastercard",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "pay_amex",
+	"label": "Amex",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "pay_paypal",
+	"label": "Paypal",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "pay_stripe",
+	"label": "Stripe",
+	"default": true
+	}
+	]
+	},
+	{
+	"name": "Social media",
+	"type": "social",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "caption_enable",
+	"label": "Show Caption",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "caption",
+	"label": "Caption",
+	"default": "Follow Us"
+	},
+	{
+	"type": "checkbox",
+	"id": "show_facebook",
+	"label": "Facebook",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_google",
+	"label": "Google",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_twitter",
+	"label": "Twitter",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_instagram",
+	"label": "Instagram",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_youtube",
+	"label": "Youtube",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_pinterest",
+	"label": "Pinterest",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_skype",
+	"label": "Skype",
+	"default": true
+	},
+	{
+	"type": "checkbox",
+	"id": "show_behance",
+	"label": "Behance",
+	"default": true
+	}
+	]
+	},
+	{
+	"name": "Subscribe",
+	"type": "subscribe",
+	"settings": [
+	{
+	"type": "checkbox",
+	"id": "caption_enable",
+	"label": "Show Caption",
+	"default": true
+	},
+	{
+	"type": "text",
+	"id": "caption",
+	"label": "Caption",
+	"default": "Newsletter Signup"
+	},
+	{
+	"type": "richtext",
+	"id": "text_top",
+	"label": "Subscribe title",
+	"default": "<p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a <em><strong>15% discount</strong></em> on the next order after you sign up.</p>"
+	}
+	]
+	}
+	],
+	"presets": [
+
+	]
+	}
+{% endschema %}

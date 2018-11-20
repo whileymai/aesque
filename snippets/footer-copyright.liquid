@@ -1,0 +1,10 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if section.settings.show_copyright %}
+	<div>
+		<span class="tt-footer__copyright">{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}
+		{% if section.settings.show_theme %}
+			<a target="_blank" href="https://whileymai.com/">Site by Whiley Mai</a></span>
+		{% endif %}
+	</div>
+{% endif %}

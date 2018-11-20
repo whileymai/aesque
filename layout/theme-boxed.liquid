@@ -1,0 +1,13 @@
+{%- comment -%}
+{%- endcomment -%}
+
+{%- capture loc-content_for_head -%}
+    {%- include 'head' -%}
+    {{ content_for_header }}
+{%- endcapture -%}
+{%- capture loc-content_for_header -%}{%- section 'header' -%}{%- endcapture -%}
+{%- capture loc-content_for_layout -%}{{ content_for_layout }}{%- endcapture -%}
+{%- assign set-container = 'boxed' -%}
+{%- include 'layout-res-settings' -%}
+{%- capture loc-content_for_footer -%}{%- section 'footer' -%}{%- endcapture -%}
+{%- include 'layout' -%}

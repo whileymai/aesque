@@ -1,0 +1,30 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-categories == 'false' %}
+
+	{%- if block.settings.caption -%}
+		<div class="tt-layer-nav__title">{{ block.settings.caption }}</div>
+	{%- endif -%}
+	<ul class="tt-layer-nav__categories tt-categories tt-categories__single">
+
+		{% assign blog_handles = section.settings.blog-handlers %}
+		{% assign blog_list = blog_handles | split: ','%}
+		{% assign article_list = '' %}
+
+		{% for blog_handle in blog_list %}
+			{% assign blog_handle_handleized = blog_handle | trim | handleize %}
+
+			{% if blog.handle == blog_handle_handleized %}
+				{% assign loc-active = 'class="active"' %}
+			{% else %}
+				{% assign loc-active = '' %}
+			{% endif %}
+
+			{% if blogs[blog_handle_handleized] != blank %}
+				<li {{ loc-active }}><a href="{{ blogs[blog_handle_handleized].url }}">{{ blogs[blog_handle_handleized].title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+
+	{% assign loc-categories = 'true' %}
+{% endif %}

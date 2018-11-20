@@ -1,0 +1,78 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-address.first_name != blank %}
+    <tr>
+        <td>{{ 'customer.addresses.first_name' | t }}:</td>
+        <td>{{ loc-address.first_name }}</td>
+    </tr>
+{% endif %}
+
+{% if loc-address.last_name != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.last_name' | t }}:</td>
+      <td>{{ loc-address.last_name }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.address1 != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.address1' | t }}:</td>
+      <td>{{ loc-address.address1 }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.address2 != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.address2' | t }}:</td>
+      <td>{{ loc-address.address2 }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.company != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.company' | t }}:</td>
+      <td>{{ loc-address.company }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.city != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.city' | t }}:</td>
+      <td>{{ loc-address.city }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.province != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.province' | t }}:</td>
+      <td>{{ loc-address.province }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.province_code != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.province_code' | t }}:</td>
+      <td>{{ loc-address.province_code }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.zip != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.zip' | t }}:</td>
+      <td>{{ loc-address.zip }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.country != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.country' | t }}:</td>
+      <td>{{ loc-address.country }}</td>
+  </tr>
+{% endif %}
+
+{% if loc-address.phone != blank %}
+  <tr>
+      <td>{{ 'customer.addresses.phone' | t }}:</td>
+      <td>{{ loc-address.phone }}</td>
+  </tr>
+{% endif %}

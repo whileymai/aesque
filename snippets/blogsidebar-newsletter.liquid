@@ -1,0 +1,16 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if loc-newsletter == 'false' %}
+	{%- if block.settings.caption -%}
+		<div class="tt-layer-nav__title">{{ block.settings.caption }}</div>
+	{%- endif -%}
+	<div class="tt-layer-nav__newslatter">
+		{%- if block.settings.text != blank -%}
+			{{ block.settings.text }}
+		{%- endif -%}
+		{% assign set-style = settings.color_sidebar_newsletter_type %}
+		{% assign set-view_mobile = true %}
+		{% include 'subscribe' %}
+	</div>
+	{% assign loc-newsletter = 'true' %}
+{% endif %}

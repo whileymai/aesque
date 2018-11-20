@@ -1,0 +1,181 @@
+{%- comment -%}
+{%- endcomment -%}
+<div class="tt-layer-nav" data-section-type="blog-sidebar" data-section-id="{{ section.id }}">
+	{% assign loc-categories = 'false' %}
+	{% assign loc-rposts = 'false' %}
+	{% assign loc-rcomments = 'false' %}
+	{% assign loc-html = 'false' %}
+	{% assign loc-tags = 'false' %}
+	{% assign loc-newsletter = 'false' %}
+	{% assign loc-social = 'false' %}
+
+	{%- for block in section.blocks limit: section.blocks.size -%}
+		{% case block.type %}
+		{% when 'categories' %}
+		{% include 'blogsidebar-categories' %}
+		{% when 'rposts' %}
+		{% include 'blogsidebar-rposts' %}
+		{% when 'rcomments' %}
+		{% include 'blogsidebar-rcomments' %}
+		{% when 'html' %}
+		{% include 'blogsidebar-html' %}
+		{% when 'tags' %}
+		{% include 'blogsidebar-tags' %}
+		{% when 'newsletter' %}
+		{% include 'blogsidebar-newsletter' %}
+		{% when 'social' %}
+		{% include 'blogsidebar-social' %}
+		{% endcase %}
+	{%- endfor -%}
+</div>
+
+
+{% schema %}
+{
+"name": "Blog Sidebar",
+"max_blocks": 7,
+"settings": [
+{
+"label": "Blogs list",
+"id": "blog-handlers",
+"type": "textarea",
+"info": "Add blog handlers you want to show in categories block and in recent posts block. Example: blog, news, promotions",
+"default": "news,blog"
+}
+],
+"blocks": [
+{
+"type": "categories",
+"name": "Categories",
+"settings": [
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "Categories"
+}
+]
+},
+{
+"type": "rposts",
+"name": "Recent posts",
+"settings": [
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "Recent Posts"
+},
+{
+"label": "More link text",
+"id": "more",
+"type": "text",
+"default": "More"
+}
+]
+},
+{
+"type": "html",
+"name": "Custom HTML",
+"settings": [
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "About"
+},
+{
+"label": "HTML code",
+"id": "html",
+"type": "html",
+"default": "<a href=\"#\" class=\"ttg-image-scale\"><img src=\"images/sidebar/sidebar-about.jpg\" alt=\"Image name\"></a><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. <a href=\"#\" class=\"tt-layer-nav__more\">More</a></p>"
+}
+]
+},
+{
+"type": "tags",
+"name": "Tags",
+"settings": [
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "Tags"
+}
+]
+},
+{
+"type": "newsletter",
+"name": "Newsletter signup",
+"settings": [
+{
+"label": "Caption",
+"id": "caption",
+"type": "text",
+"default": "Newsletter Signup"
+},
+{
+"label": "Text",
+"id": "text",
+"type": "richtext",
+"default": "<p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a 15% discount on the next order after you sign up.</p>"
+}
+]
+},
+{
+"name": "Social media",
+"type": "social",
+"settings": [
+{
+"type": "checkbox",
+"id": "show_facebook",
+"label": "Facebook",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_google",
+"label": "Google",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_twitter",
+"label": "Twitter",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_instagram",
+"label": "Instagram",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_youtube",
+"label": "Youtube",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_pinterest",
+"label": "Pinterest",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_skype",
+"label": "Skype",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_behance",
+"label": "Behance",
+"default": true
+}
+]
+}
+]
+}
+{% endschema %}

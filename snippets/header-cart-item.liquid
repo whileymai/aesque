@@ -1,0 +1,48 @@
+{%- comment -%}
+{%- endcomment -%}
+<li class="prdbut__product" data-prdbut-id="{{ cart-item.variant.id }}" data-prdbut-selected="true">
+	<div>
+		<a href="{{cart-item.url}}">
+			<img src="{{ cart-item.image | product_img_url: '104x' }}"
+				 srcset="{{ cart-item.image | product_img_url: '104x' }} 1x, {{ cart-item.image | product_img_url: '208x' }} 2x"
+				 class="colorize-theme2-bd colorize-theme-bd-h"
+				 alt="{{ cart-item.product.title }}">
+		</a>
+	</div>
+	<div>
+		<p>
+			<a href="{{cart-item.url}}" class="colorize-head-c colorize-theme-c-h">{{ cart-item.product.title }}</a>
+			{% if cart-item.product.variants.size > 0 and cart-item.variant.title != 'Default Title' %}
+				<span class="tt-header__cart-color">{{ cart-item.variant.title }}</span>
+			{% endif %}
+			{% assign this-properties_size = cart-item.properties | size %}
+			{% if this-properties_size > 0 %}
+				{% for prop in cart-item.properties %}
+					{% assign first_character_in_key = prop.first | truncate: 1, '' %}
+					{% unless prop.last == blank or first_character_in_key == '_' %}
+						<span class="tt-header__cart-color"><span>{{ prop.first | replace: 'Notes', 'cart.product.notes' | t }}</span> {{ prop.last }}</span>
+					{% endunless %}
+				{% endfor %}
+			{% endif %}
+		</p>
+		<span class="tt-header__cart-price">
+			<span class="tt-header__cart-price-count">{{ cart-item.quantity }}</span>
+			<span>x</span>
+			<span class="tt-header__cart-price-val tt-price">{{ cart-item.price | money }}</span>
+		</span>
+		<div class="tt-counter" data-min="1">
+			<form action="#">
+				<input type="text" class="form-control prdbut__cart-count" value="{{ cart-item.quantity }}">
+			</form>
+          {% comment %}
+			<div class="tt-counter__control">
+				<span class="icon-up-circle" data-direction="next"></span>
+				<span class="icon-down-circle" data-direction="prev"></span>
+			</div>
+          {% endcomment %}
+		</div>
+	</div>
+	<div>
+		<a href="#" class="tt-header__cart-delete prdbut__cart-del" title="{{ 'cart.general.remove' | t }}"><i class="fa fa-times" aria-hidden="true"></i></a>
+	</div>
+</li>

@@ -1,0 +1,47 @@
+<!-- BEGIN:FONTS -->
+{%- if settings.enable_fonts_url -%}
+	{%- assign res-font = settings.fonts_url -%}
+{%- else -%}
+	{%- assign loc-google_fonts_url = 'https://fonts.googleapis.com/css?family=' -%}
+	{%- if settings.font_url != blank -%}
+		{%- assign res-font = res-font | append: settings.font_url -%}
+	{%- endif -%}
+	{%- if settings.font2_url != blank -%}
+		{%- if res-font != blank -%}
+			{%- assign res-font = res-font | append: '|' -%}
+		{%- endif -%}
+		{%- assign res-font = res-font | append: settings.font2_url -%}
+	{%- endif -%}
+	{%- if settings.font3_url != blank -%}
+		{%- if res-font != blank -%}
+			{%- assign res-font = res-font | append: '|' -%}
+		{%- endif -%}
+		{%- assign res-font = res-font | append: settings.font3_url -%}
+	{%- endif -%}
+	{%- assign res-font = res-font | url_encode | prepend: loc-google_fonts_url -%}
+{%- endif -%}
+{%- if  res-font == loc-google_fonts_url -%}
+{%- else -%}
+	{{ res-font | stylesheet_tag }}
+{%- endif -%}
+<meta name="google-site-verification" content="6Zjdb2H2zo6Kz20_ABvedSItGeL34b4ZovOrDemg5OE" />
+<meta name="google-site-verification" content="33FNdUOP-iLazVZrG2N7PsurBfQP7dgMCkYtFnm8t0o" />
+<link rel="stylesheet" href="https://use.typekit.net/rlw1apc.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/4f65b8c324.css">
+<!-- END:FONTS -->
+<!-- BEGIN:STYLES -->
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+{%- if settings.dev_enable_custom_css == true -%}
+	{{ 'custom.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+{%- if shop.metafields.ato-swatch-css.size > 0 -%}
+	<style>
+		{%-  for optioncss in shop.metafields.ato-swatch-css -%}
+		{{ optioncss[1] }}
+		{%-  endfor -%}
+	</style>
+{%- endif -%}
+
+<!-- END:STYLES -->

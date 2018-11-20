@@ -1,0 +1,113 @@
+{%- comment -%}
+{%- endcomment -%}
+<div data-section-id="{{ section.id }}" data-section-type="blog-posts" >
+
+	{%- comment -%} ### BreadCrumbs ### {%- endcomment -%}
+	{%- if section.settings.show_bread -%}
+		<div class="tt-page__breadcrumbs">
+			{% include 'breadcrumbs' %}
+		</div>
+	{%- endif -%}
+
+	{%- comment -%} ### Title ### {%- endcomment -%}
+	{%- if section.settings.show_title -%}
+		<div class="tt-page__name tt-page__name--pdg-off text-left"><h1>{{ blog.title }}</h1></div>
+	{%- endif -%}
+
+	{%- comment -%} ### Post list ### {%- endcomment -%}
+	{% case section.settings.layout %}
+		{% when 'grid' %}
+			{% include 'bloglist-grid' %}
+		{% when 'masonry' %}
+			{% include 'bloglist-masonry' %}
+		{% else %}
+			{% include 'bloglist-list' %}
+	{% endcase %}
+</div>
+
+
+{% schema %}
+{
+"name": "Blog Posts",
+"settings": [
+{
+"type": "text",
+"id": "posts_per_page",
+"label": "Posts per page",
+"default": "5",
+"info": "Integer"
+},
+{
+"type": "select",
+"id": "layout",
+"label": "Select layout",
+"default": "grid",
+"options": [
+{ "value": "grid", "label": "Grid (default)" },
+{ "value": "list", "label": "List" },
+{ "value": "masonry", "label": "Masonry" }
+]
+},
+{
+"type": "checkbox",
+"id": "show_bread",
+"label": "Show breadcrumbs?",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_title",
+"label": "Show title?",
+"default": true
+},
+{
+"type": "header",
+"content": "Post Item"
+},
+{
+"type": "select",
+"id": "tags",
+"label": "Show tags",
+"default": "bottom",
+"options": [
+{ "value": "bottom", "label": "Bottom" },
+{ "value": "top", "label": "Top" },
+{ "value": "both", "label": "Both (top and bottom)" },
+{ "value": "none", "label": "None" }
+]
+},
+{
+"type": "select",
+"id": "image_effect",
+"label": "Background image animation effect",
+"default": "zoomin",
+"options": [
+{ "value": "zoomin", "label": "Zoom In" },
+{ "value": "right", "label": "Move Right" },
+{ "value": "left", "label": "Move Left" },
+{ "value": "top", "label": "Move Top" },
+{ "value": "bottom", "label": "Move Bottom" },
+{ "value": "none", "label": "None" }
+]
+},
+{
+"type": "checkbox",
+"id": "comments",
+"label": "Show comments count?",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "zero_comments",
+"label": "Show zero comments?",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "author",
+"label": "Show author and date?",
+"default": true
+}
+]
+}
+{% endschema %}

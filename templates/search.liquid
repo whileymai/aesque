@@ -1,0 +1,219 @@
+{%- comment -%}
+{%- endcomment -%}
+{% paginate search.results by 10 %}
+
+  {% if settings.layout-show_breadcrumbs %}
+    <div class="tt-page__breadcrumbs" data-collection-replace>
+      {% include 'breadcrumbs' %}
+    </div>
+  {% endif %}
+
+  <div class="tt-page__name tt-page__name--row text-center">
+    <h1>{{ 'general.search.title' | t }}</h1>
+  </div>
+
+  <div class="tt-search-page tt-layout__section--pdg">
+    <div class="tt-search-page__form tt-form">
+      <form action="/search" method="get" role="search" class="text-center">
+        <div class="tt-form__section">
+          <input type="search"
+                 name="q"
+                 id="Search"
+                 class="form-control colorize-theme6-bg"
+                 value="{{ search.terms | escape }}"
+                 placeholder="{{ 'general.search.placeholder' | t }}">
+          <button type="submit" class="btn">{{ 'general.search.submit' | t }}</button>
+        </div>
+      </form>
+    </div>
+
+    {% if search.performed %}
+      <div class="tt-search-page__options">
+        <div class="tt-search-page__info">
+          {% if search.performed %}
+            {% if search.results_count == 0 %}
+              <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+            {% else %}
+              <p>{{ 'general.search.results_for_html' | t: terms: search.terms }}</p>
+            {% endif %}
+          {% endif %}
+        </div>
+        {% if search.results.size > 0 %}
+          <div class="tt-search-page__grid">
+            <div class="tt-vw-opt__grid">
+              <div class="tt-product-btn-vw" data-control=".tt-product-view">
+                <label>
+                  <input type="radio" name="product-btn-vw" data-tt-value="grid" checked>
+                  <i class="icon-th-large"></i>
+                  <i class="icon-check-empty"></i>
+                </label>
+                <label>
+                  <input type="radio" name="product-btn-vw" data-view-class="tt-product-view--list" data-tt-value="list">
+                  <i class="icon-th"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="tt-search-page__products">
+        <div class="tt-product-view row">
+          {% for item in search.results %}
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              {% if item.object_type == 'article' %}
+                {% assign article = item %}
+                <div class="tt-post-grid">
+                  {% if article.image %}
+                    <a href="{{ article.url }}" class="tt-post-grid__image {{ loc-image-effect }}">
+                      <img src="{{ article | img_url: '433x' }}"
+                           srcset="{{ article | img_url: '433x' }} 1x, {{ article | img_url: '433x', scale: 2 }} 2x"
+                           alt="{{ article.title }}">
+                    </a>
+                  {% endif %}
+                  <div class="tt-post-grid__content">
+
+                    {%- comment -%} ### TOP tags ### {%- endcomment -%}
+                    {% if article.tags.size > 0 and section.settings.tags == 'top' %}
+                      {% assign loc-top-tags = 'true' %}
+                      {% elsif article.tags.size > 0 and section.settings.tags == 'both' %}
+                      {% assign loc-top-tags = 'true' %}
+                    {% else %}
+                      {% assign loc-top-tags = 'false' %}
+                    {% endif %}
+
+                    {% if loc-top-tags == 'true' %}
+                      <div class="tt-post-grid__category">
+                        {% for tag in article.tags %}
+                          <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+
+                    {%- comment -%} ### Title, text ### {%- endcomment -%}
+                    <a href="{{ article.url }}" class="tt-post-grid__title">{{ article.title }}</a>
+                    {% if article.excerpt.size > 0 %}
+                      {{ article.excerpt }}
+                    {% else %}
+                      <p>
+                        {{ article.content | strip_html | truncatewords: 25 }}
+                      </p>
+                    {% endif %}
+
+                    {%- comment -%} ### Bottom tags ### {%- endcomment -%}
+                    {% if article.tags.size > 0 and section.settings.tags == 'bottom' %}
+                      {% assign loc-bottom-tags = 'true' %}
+                      {% elsif article.tags.size > 0 and section.settings.tags == 'both' %}
+                      {% assign loc-bottom-tags = 'true' %}
+                    {% else %}
+                      {% assign loc-bottom-tags = 'false' %}
+                    {% endif %}
+
+                    {%- if section.settings.author or loc-bottom-tags == 'true' -%}
+                      <div class="tt-post-grid__footer">
+                        <div class="tt-post-grid__info">
+                          {%- comment -%} ### Author ### {%- endcomment -%}
+                          {%- if section.settings.author -%}
+                            {% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}
+                            {{ 'blogs.article.author_on_date_html' | t: author: article.author, date: date }}
+                          {%- endif -%}
+
+                          {% if loc-bottom-tags == 'true' %}
+                            <div class="tt-post-grid__tags">
+                              <i class="icon-tag-1"></i>
+                              {% for tag in article.tags %}
+                                <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                              {% endfor %}
+                            </div>
+                          {% endif %}
+                        </div>
+
+                        {%- comment -%} ### Comments ### {%- endcomment -%}
+                        {%- if blog.comments_enabled? and section.settings.comments -%}
+                          {%- if section.settings.zero_comments -%}
+                            {% assign loc-show-comments = 'true' %}
+                            {%- elsif article.comments_count > 0 -%}
+                            {% assign loc-show-comments = 'true' %}
+                          {%- else -%}
+                            {% assign loc-show-comments = 'false' %}
+                          {%- endif -%}
+                        {%- endif -%}
+
+                        {%- if loc-show-comments == 'true' -%}
+                          <a href="{{ article.url }}#comments" class="tt-post-grid__comments">
+                            <i class="icon-comment-empty"></i><span>{{ article.comments_count }}</span>
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  </div>
+                </div>
+              {% elsif item.object_type == 'page' %}
+                <div class="tt-post-grid">
+                  <div class="tt-post-grid__content">
+                    <a href="{{ item.url }}" class="tt-post-grid__title">{{ item.title }}</a>
+                    <p>{{ item.content | strip_html | truncatewords: 40 | highlight: search.terms }}</p>
+                  </div>
+                </div>
+              {% else %}
+                {% assign product = item %}
+                {%- assign set-image_size = '480x480' -%}
+                {% include 'product-list' %}
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  {% if paginate.pages > 1 %}
+    {% include 'pagination' %}
+  {% endif %}
+
+{% endpaginate %}
+
+
+
+
+
+
+{% comment %}
+<li>
+  {% if item.featured_image %}
+    <a href="{{ item.url | within: collection }}" title="{{ item.title | escape }}">
+      {{ item.featured_image.src | img_url: '240x240' | img_tag: item.featured_image.alt }}
+    </a>
+  {% endif %}
+
+  <h5>{{ item.title | link_to: item.url }}</h5>
+
+  {% if item.object_type == 'product' %}
+    <p>
+      {% if item.compare_at_price > item.price %}
+        {% if item.price_varies %}
+          {% assign sale_price = item.price | money %}
+          {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+        {% else %}
+          {{ 'products.product.on_sale' | t }}
+          <span itemprop="price">{{ item.price | money }}</span>
+        {% endif %}
+        <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+        <s>{{ item.compare_at_price | money }}</s>
+      {% else %}
+        {% if item.price_varies %}
+          {% assign price = item.price | money %}
+          <span itemprop="price">{{ 'products.product.from_text_html' | t: price: price }}</span>
+        {% else %}
+          <span itemprop="price">{{ item.price | money }}</span>
+        {% endif %}
+      {% endif %}
+      {% unless item.available %}
+      {{ 'products.product.sold_out' | t }}
+      {% endunless %}
+    </p>
+  {% else %}
+    <p>{{ item.content | strip_html | truncatewords: 50 }}</p>
+  {% endif %}
+
+</li>
+{% endcomment %}

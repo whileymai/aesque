@@ -1,0 +1,19 @@
+{%- comment -%}
+{%- endcomment -%}
+{% case section.settings.type %}
+  {% when '2' %}
+	{% assign social_capt_enable = true %}
+  {% when '4' %}
+	{% assign social_capt_enable = true %}
+{% endcase %}
+
+{% if footer_block.caption_enable %}
+	{% if social_capt_enable %}
+		<span class="tt-footer__title">{{ footer_block.caption }}</span>
+	{% endif %}
+{% endif %}
+<div class="tt-footer__social">
+	{% assign set-settings = footer_block %}
+	{% assign set-style = settings.color_footer_social_type %}
+	{% include 'social-links' %}
+</div>

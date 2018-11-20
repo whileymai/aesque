@@ -1,0 +1,22 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if menu_quantity > 0 %}
+<div class="row">
+	{% assign menu_grid = 12 | divided_by: menu_quantity | prepend: 'col-sm-6 col-md-' %}
+	{% if menu %}
+		<div class="{{ menu_grid }}">
+			{{ menu }}
+		</div>
+	{% endif %}
+	{% if menu_02 %}
+		<div class="{{ menu_grid }}">
+			{{ menu_02 }}
+		</div>
+	{% endif %}
+	{% if menu_03 %}
+		<div class="{{ menu_grid }}">
+			{{ menu_03 }}
+		</div>
+	{% endif %}
+</div>
+{% endif %}

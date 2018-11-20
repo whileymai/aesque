@@ -1,0 +1,71 @@
+{%- comment -%}
+{%- endcomment -%}
+{%- assign set-settings = set-settings | default: false -%}
+
+{%- assign loc-show_facebook = set-show_facebook | default: set-settings.show_facebook -%}
+{%- assign loc-show_google = set-show_google | default: set-settings.show_google -%}
+{%- assign loc-show_twitter = set-show_twitter | default: set-settings.show_twitter -%}
+{%- assign loc-show_instagram = set-show_instagram | default: set-settings.show_instagram -%}
+{%- assign loc-show_youtube = set-show_youtube | default: set-settings.show_youtube -%}
+{%- assign loc-show_pinterest = set-show_pinterest | default: set-settings.show_pinterest -%}
+{%- assign loc-show_weibo = set-show_weibo | default: set-settings.show_weibo -%}
+{%- assign loc-show_behance = set-show_behance | default: set-settings.show_behance -%}
+
+<div class="tt-social-icons tt-social-icons--style-0{{ set-style }}">
+    {%- if loc-show_facebook or set-settings == false -%}
+        {%- if settings.social_facebook_link != blank -%}
+            <a href="{{ settings.social_facebook_link }}" class="tt-btn">
+                <i class="icon-facebook"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+    {%- if loc-show_google or set-settings == false -%}
+        {%- if settings.social_google_link != blank -%}
+            <a href="{{ settings.social_google_link }}" class="tt-btn">
+                <i class="icon-gplus"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+    {%- if loc-show_twitter or set-settings == false -%}
+        {%- if settings.social_twitter_link != blank -%}
+            <a href="{{ settings.social_twitter_link }}" class="tt-btn">
+                <i class="icon-twitter"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+    {%- if loc-show_instagram or set-settings == false -%}
+        {%- if settings.social_instagram_link != blank -%}
+            <a href="{{ settings.social_instagram_link }}" class="tt-btn">
+                <i class="icon-instagram-1"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+    {%- if loc-show_youtube or set-settings == false -%}
+        {%- if settings.social_youtube_link != blank -%}
+            <a href="{{ settings.social_youtube_link }}" class="tt-btn">
+                <i class="icon-youtube-play"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+    {%- if loc-show_pinterest or set-settings == false -%}
+        {%- if settings.social_pinterest_link != blank -%}
+            <a href="{{ settings.social_pinterest_link }}" class="tt-btn">
+                <i class="icon-pinterest"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+=        {%- if settings.social_weibo_link != blank -%}
+            <a href="{{ settings.social_weibo_link }}" class="tt-btn">
+                <i class="fa fa-weibo"></i>
+            </a>
+        {%- endif -%}
+=    {%- if loc-show_behance or set-settings == false -%}
+        {%- if settings.social_behance_link != blank -%}
+            <a href="{{ settings.social_behance_link }}" class="tt-btn">
+                <i class="icon-behance"></i>
+            </a>
+        {%- endif -%}
+    {%- endif -%}
+</div>
+
+{%- assign set-settings = null -%}

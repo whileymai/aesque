@@ -1,0 +1,102 @@
+{%- comment -%}
+{%- endcomment -%}
+{% comment %}
+Number of related items per row,
+and number of rows.
+	{% assign number_of_related_products_per_row = section.settings.related_grid_num %}
+	{% assign number_of_rows = section.settings.related_grid_row %}
+{% endcomment %}
+
+
+{% comment %}
+Heading.
+Leave blank if you don't need one.
+	{% assign heading = section.settings.related_title %}
+{% endcomment %}
+
+
+{% comment %}
+Set either or both to true, if you want
+to limit yourself to items with same vendor, and/or type.
+{% endcomment %}
+{% assign same_vendor = false %}
+{% assign same_type = false %}
+
+{% comment %}
+Collections to ignore.
+Never pick related items from those.
+{% endcomment %}
+{% assign exclusions = 'frontpage,all' | split: ',' %}
+
+{% comment %}
+Looking for a relevant collection.
+{% endcomment %}
+{% if product.metafields.c_f['Related Products'] %}
+	{% assign collection = collections[product.metafields.c_f['Related Products']] %}
+{% endif %}
+
+{% assign found_a_collection = false %}
+{% if collection and collection.all_products_count > 1 %}
+	{% unless exclusions contains collection.handle %}
+		{% assign found_a_collection = true %}
+	{% endunless %}
+{% endif %}
+
+{% unless found_a_collection %}
+	{% for c in product.collections %}
+		{% unless exclusions contains c.handle or c.all_products_count < 2 %}
+			{% assign found_a_collection = true %}
+			{% assign collection = c %}
+			{% break %}
+		{% endunless %}
+	{% endfor %}
+{% endunless %}
+
+{% comment %}
+If we have a relevant collection.
+{% endcomment %}
+
+{% if found_a_collection %}
+
+	{% assign loc-counter = 0 %}
+	{% assign current_product = product %}
+	{% assign loc-limit = section.settings.related_products_limit %}
+	{% assign loc-limit = loc-limit | times: 1 %}
+
+	{% capture related_items %}
+		{% for product in collection.products %}
+			{% unless product.handle == current_product.handle %}
+				{% unless same_vendor and current_product.vendor != product.vendor %}
+					{% unless same_type and current_product.type != product.type %}
+						<div class="col-xs-12">
+							{% assign set-image_size = '480x' %}
+							{% include 'product-list' %}
+						</div>
+						{% assign loc-counter = loc-counter | plus: 1 %}
+						{% if loc-counter == loc-limit %}
+							{% break %}
+						{% endif %}
+					{% endunless %}
+				{% endunless %}
+			{% endunless %}
+		{% endfor %}
+	{% endcapture %}
+
+	{% assign related_items = related_items | trim %}
+
+	{% unless related_items == blank %}
+		<div class="tt-product-page__upsell">
+				{% if section.settings.related_products_caption %}
+					<div class="tt-product-page__upsell-title tt-layout__section--pdg">{{ section.settings.related_products_caption }}</div>
+				{% endif %}
+				<div class="tt-carousel-box">
+					<div class="tt-product-view">
+						<div class="tt-carousel-box__slider">
+							{{ related_items }}
+						</div>
+					</div>
+				</div>
+			</div>
+	{% endunless %}
+
+{% endif %}

@@ -1,0 +1,156 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if section.blocks.size > 0 %}
+
+	{% comment %} ### MARGIN ### {% endcomment %}
+	{% assign loc_margin_class = '' %}
+	{% if section.settings.brands-sec-margin == 'demo2'%}
+		{% assign loc_margin_class = ' tt-home__brands-01' %}
+	{% endif %}
+	{% if section.settings.brands-sec-margin == 'custom'%}
+		{% capture res-style_custom_margin %} style="margin: {{ section.settings.brands-sec-margin-custom }};"{% endcapture %}
+	{% endif %}
+
+	{% comment %} ### WIDTH ### {% endcomment %}
+	{% if section.settings.brands-sec-width == 'boxed' %}
+		{% assign loc_container_class = 'container' | append: loc_margin_class %}
+	{% endif %}
+	{% if section.settings.brands-sec-width == 'fullwidth' %}
+		{% assign loc_container_class = 'container-fluid ttg-cont-padding--none' | append: loc_margin_class %}
+	{% endif %}
+
+
+	<div data-section-id="{{ section.id }}" data-section-type="home-testimonials" class="tt-testimonials {{ loc_container_class }}"{{ res-style_custom_margin }}>
+		{% if section.settings.testimonial-image != empty %}
+			<div class="tt-testimonials__bg">
+				<img src="{{ section.settings.testimonial-image | img_url: '1920x' }}" alt="{{ section.settings.testimonial-alt }}">
+			</div>
+		{% endif %}
+		<div class="tt-testimonials__slider">
+			{%- for block in section.blocks -%}
+				{% include 'home-testimonials-item' %}
+			{%- endfor -%}
+		</div>
+
+	</div>
+
+{%- endif -%}
+{%- if section.blocks.size == 0 -%}
+	{% include 'no-blocks' %}
+{%- endif -%}
+{% schema %}
+{
+"name": "Testimonials",
+"max_blocks": 10,
+"settings": [
+{
+"label": "Background image",
+"id": "testimonial-image",
+"type": "image_picker"
+},
+{
+"label": "Image alt",
+"id": "testimonial-alt",
+"type": "text"
+},
+{
+"label": "Width",
+"id": "brands-sec-width",
+"type": "select",
+"default": "boxed",
+"options": [
+{
+"value": "boxed",
+"label": "Boxed"
+},
+{
+"value": "fullwidth",
+"label": "Full width"
+}
+]
+},
+{
+"label": "Margin",
+"id": "brands-sec-margin",
+"type": "select",
+"default": "none",
+"options": [
+{
+"value": "none",
+"label": "None"
+},
+{
+"value": "demo2",
+"label": "Demo2"
+},
+{
+"value": "custom",
+"label": "Custom"
+}
+]
+},
+{
+"label": "Custom margin",
+"id": "brands-sec-margin-custom",
+"type": "text",
+"default": "10px"
+}
+],
+"blocks": [
+{
+"type": "testimonial",
+"name": "Testimonial",
+"settings": [
+{
+"label": "Caption",
+"id": "testimonial-caption",
+"type": "text",
+"default": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit!"
+},
+{
+"label": "Text",
+"id": "testimonial-text",
+"type": "richtext",
+"default": "<p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>"
+},
+{
+"label": "Author",
+"id": "testimonial-author",
+"type": "text",
+"default": "– Anis Anderson"
+},
+{
+"type": "header",
+"content": "Colors"
+},
+{
+"type": "color",
+"id": "color_icon_c",
+"label": "Icon"
+},
+{
+"type": "color",
+"id": "color_caption_c",
+"label": "Caption"
+},
+{
+"type": "color",
+"id": "color_text_c",
+"label": "Text"
+},
+{
+"type": "color",
+"id": "color_author_c",
+"label": "Author"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Testimonials",
+"category": "4) Other"
+}
+]
+}
+{% endschema %}

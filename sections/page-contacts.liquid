@@ -1,0 +1,226 @@
+{%- comment -%}
+{%- endcomment -%}
+{% assign set-message-text = 'contact.form.post_success' | t %}
+
+<div class="tt-page__breadcrumbs">
+	{% include 'breadcrumbs' %}
+</div>
+
+{% if section.settings.content == 'settings' %}
+<div class="tt-page__name text-center">
+	<h1>{{ section.settings.title }}</h1>
+	{{ section.settings.text }}
+</div>
+{%- endif -%}
+
+{% if section.settings.content == 'page' %}
+	<div class="tt-page__name text-center">
+		<h1>{{ page.title }}</h1>
+		<div class="rte">
+			{{ page.content }}
+		</div>
+	</div>
+{%- endif -%}
+
+<div class="tt-contacts">
+	{%- if section.settings.map != blank or section.settings.address != blank -%}
+		{% assign loc-map-size = 6 %}
+		{% assign loc-address-size = 6 %}
+		{%- if section.settings.map != blank and section.settings.address == blank -%}
+			{% assign loc-map-size = 12 %}
+		{%- endif -%}
+		{%- if section.settings.map == blank and section.settings.address != blank -%}
+			{% assign loc-address-size = 12 %}
+		{%- endif -%}
+  
+		<div class="tt-contacts__adress">
+			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
+				{%- if section.settings.map != blank -%}
+				<div class="col-md-{{ loc-map-size }}">
+					<div class="tt-contacts__map">
+						{{ section.settings.map }}
+					</div>
+				</div>
+				{%- endif -%}
+				{%- if section.settings.address != blank -%}
+				<div class="col-md-{{ loc-address-size }}">
+					<div class="tt-contacts__info">
+						<div class="tt-contacts__info_text text-center">
+							{{ section.settings.address }}
+						</div>
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+  
+  		<div class="tt-contacts__adress">
+			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
+				{%- if section.settings.map != blank -%}
+				<div class="col-md-{{ loc-map-size }}">
+					<div class="tt-contacts__map">
+						{{ section.settings.map2 }}
+					</div>
+				</div>
+				{%- endif -%}
+				{%- if section.settings.address != blank -%}
+				<div class="col-md-{{ loc-address-size }}">
+					<div class="tt-contacts__info">
+						<div class="tt-contacts__info_text text-center">
+							{{ section.settings.address2 }}
+						</div>
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+  
+  		<div class="tt-contacts__adress">
+			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
+				{%- if section.settings.map != blank -%}
+				<div class="col-md-{{ loc-map-size }}">
+					<div class="tt-contacts__map">
+						{{ section.settings.map3 }}
+					</div>
+				</div>
+				{%- endif -%}
+				{%- if section.settings.address != blank -%}
+				<div class="col-md-{{ loc-address-size }}">
+					<div class="tt-contacts__info">
+						<div class="tt-contacts__info_text text-center">
+							{{ section.settings.address3 }}
+						</div>
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+  
+    	<div class="tt-contacts__adress">
+			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
+				{%- if section.settings.map != blank -%}
+				<div class="col-md-{{ loc-map-size }}">
+					<div class="tt-contacts__map">
+						{{ section.settings.map4 }}
+					</div>
+				</div>
+				{%- endif -%}
+				{%- if section.settings.address != blank -%}
+				<div class="col-md-{{ loc-address-size }}">
+					<div class="tt-contacts__info">
+						<div class="tt-contacts__info_text text-center">
+							{{ section.settings.address4 }}
+						</div>
+					</div>
+				</div>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+	{%- endif -%}
+
+{% schema %}
+{
+"name": "Contact us settings",
+"settings": [
+{
+"label": "Title and text",
+"id": "content",
+"type": "select",
+"default": "settings",
+"options": [
+{
+"value": "settings",
+"label": "Show from settings"
+},
+{
+"value": "page",
+"label": "Show from page editor"
+},
+{
+"value": "hide",
+"label": "Hide"
+}
+]
+},
+{
+"type": "text",
+"id": "title",
+"label": "Page title",
+"default": "Contacts"
+},
+{
+"type": "richtext",
+"id": "text",
+"label": "Text",
+"default": "<p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>"
+},
+{
+"type": "textarea",
+"id": "map",
+"label": "Map code"
+},
+{
+"type": "richtext",
+"id": "address",
+"label": "Address",
+"default": "<p>555b Chapel Street South Yarra</p><p>Phone: +61 3 9827 6686 </p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:555@a-esque.com'>555@a-esque.com</a></p>"
+},
+{
+"type": "textarea",
+"id": "map2",
+"label": "Map code"
+},
+{
+"type": "richtext",
+"id": "address2",
+"label": "Address",
+"default": "<p>109 Collins Street Melbourne</p><p>Phone: +61 3 9639 7070</p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:109@a-esque.com'>109@a-esque.com</a></p>"
+},
+{
+"type": "textarea",
+"id": "map3",
+"label": "Map code"
+},
+{
+"type": "richtext",
+"id": "address4",
+"label": "Address",
+"default": "<p>109 Collins Street Melbourne</p><p>Phone: +61 3 9639 7070</p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:109@a-esque.com'>109@a-esque.com</a></p>"
+},
+{
+"type": "textarea",
+"id": "map4",
+"label": "Map code"
+},
+{
+"type": "richtext",
+"id": "address3",
+"label": "Address",
+"default": "<p>109 Collins Street Melbourne</p><p>Phone: +61 3 9639 7070</p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:109@a-esque.com'>109@a-esque.com</a></p>"
+},
+{
+"type": "header",
+"content": "Form options"
+},
+{
+"type": "text",
+"id": "form_title",
+"label": "Form title",
+"default": "Get in Touch"
+},
+{
+"type": "text",
+"id": "form_text",
+"label": "Form text",
+"default": "Your email address will not be published. Required fields are marked"
+},
+{
+"type": "checkbox",
+"id": "form_show_phone",
+"label": "Show phone field",
+"default": true
+}
+]
+}
+{% endschema %}

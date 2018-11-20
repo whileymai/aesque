@@ -1,0 +1,31 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if paginate.pages > 1 %}
+  <div class="tt-pagination">
+    {% assign pagenate_from = 1 %}
+    {% if paginate.current_page > 3 %}
+      {% assign pagenate_from = paginate.current_page | minus: 2 %}
+    {% endif %}
+    {% assign pagenate_to = paginate.current_page | plus: 2 %}
+    {% if pagenate_to > paginate.pages %}
+      {% assign pagenate_to = paginate.pages %}
+    {% endif %}
+
+    {% if paginate.previous.is_link %}
+      <a href="{{ paginate.previous.url }}" class="btn tt-pagination__prev">{{ 'general.paginate.btn_prev' | t }}</a>
+    {% endif %}
+    <div class="tt-pagination__numbs">
+      {% for num in (pagenate_from..pagenate_to) limit: paginate.pages %}
+        {% if num == paginate.current_page %}
+          <span>{{ num }}</span>
+        {% else %}
+          <span><a href="?page={{ num }}">{{ num }}</a></span>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if paginate.next.is_link %}
+      <a href="{{ paginate.next.url }}" class="btn tt-pagination__next">{{ 'general.paginate.btn_next' | t }}</a>
+    {% endif %}
+  </div>
+{% endif %}

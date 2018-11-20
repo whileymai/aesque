@@ -1,0 +1,17 @@
+{%- comment -%}
+{%- endcomment -%}
+{% if footer_block.logo != blank %}
+	{% capture res-logo_styles %}style="width: {{ footer_block.logo_max_width }}px;"{% endcapture %}
+{% endif %}
+
+<a href="/" class="tt-logo site-logo{% if footer_block.logo != blank %} site-footer__logo-image{% endif %}">
+	{% if footer_block.logo != blank %}
+		{% capture image_size %}{{ footer_block.logo_max_width }}x{% endcapture %}
+		<img src="{{ footer_block.logo | img_url: image_size }}"
+			 srcset="{{ footer_block.logo | img_url: image_size }} 1x, {{ footer_block.logo | img_url: image_size, scale: 2 }} 2x"
+			 alt="{{ footer_block.logo.alt | default: shop.name }}"
+			 {{ res-logo_styles }}>
+	{% else %}
+		{{ shop.name }}
+	{% endif %}
+</a>
