@@ -2096,19 +2096,19 @@
           "1535679837485": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Building_Tel_Aviv_-_Square_3.jpg",
+              "image": "shopify:\/\/shop_images\/colour_play.jpg",
               "image-hover-animation": "top",
               "url": "https:\/\/a-esque.com\/collections\/colour-burst",
-              "text1": "COLORPLAY CAPSULE",
+              "text1": "COLOur pLAY CAPSULE",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1535679872557": {
