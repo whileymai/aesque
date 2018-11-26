@@ -1951,46 +1951,46 @@
           "1535679103666": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Folder_Serpentine_-_Khaki_-_Square_1.jpg",
+              "image": "shopify:\/\/shop_images\/Petal_Grande_-_Square_7.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/new-work",
-              "text1": "NEW WORK",
+              "url": "https:\/\/a-esque.com\/collections\/all-handbags",
+              "text1": "our bags",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#f7f1f1",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1535679201382": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_all_handler_Birdblue_-_Square_2.jpg",
+              "image": "shopify:\/\/shop_images\/Carry_All_Deluxe.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/metallics",
-              "text1": "METALLIC PIECES",
+              "url": "https:\/\/a-esque.com\/collections\/new-work",
+              "text1": "new work",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1535679248430": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Building_Tel_Aviv_-_Square_3.jpg",
+              "image": "shopify:\/\/shop_images\/Griza_Pink.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/colour-burst",
-              "text1": "Colourplay",
+              "url": "https:\/\/a-esque.com\/collections\/applique",
+              "text1": "Applique cats capsule",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2019,6 +2019,7 @@
       },
       "1535679348539": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1535679389602": {
             "type": "banner",
@@ -2095,10 +2096,10 @@
           "1535679837485": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Grande_-_Square_7.jpg",
+              "image": "shopify:\/\/shop_images\/Building_Tel_Aviv_-_Square_3.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/products\/petal-grande-noir-navy-leather",
-              "text1": "bag of the moment",
+              "url": "https:\/\/a-esque.com\/collections\/colour-burst",
+              "text1": "COLORPLAY CAPSULE",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2113,11 +2114,11 @@
           "1535679872557": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Homepage_-_Square_8.jpg",
+              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/pages\/our-story",
-              "text1": "",
-              "text1-position": "v-center h-center",
+              "url": "https:\/\/a-esque.com\/pages\/store-directory",
+              "text1": "Store",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
@@ -2131,15 +2132,15 @@
           "1535679910066": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Mantion_bag_-_Square_9.jpg",
+              "image": "shopify:\/\/shop_images\/quote_3.0_6521db55-4113-4c86-b62e-86efd8d1d7df.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/applique",
-              "text1": "New applique capsule",
+              "url": "https:\/\/a-esque.com\/pages\/our-story",
+              "text1": "about us",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
