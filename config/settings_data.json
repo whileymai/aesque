@@ -1969,7 +1969,7 @@
           "1535679201382": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_All_Deluxe.jpg",
+              "image": "shopify:\/\/shop_images\/Petal_Pack_Bluebird_Claire_web.jpg",
               "image-hover-animation": "top",
               "url": "https:\/\/a-esque.com\/collections\/new-work",
               "text1": "new work",
@@ -1987,10 +1987,10 @@
           "1535679248430": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Griza_Pink.jpg",
+              "image": "shopify:\/\/shop_images\/Carry_All_Deluxe.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/applique",
-              "text1": "Applique cats capsule",
+              "url": "",
+              "text1": "Carry All",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2096,10 +2096,10 @@
           "1535679837485": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/colour_play.jpg",
+              "image": "shopify:\/\/shop_images\/rumpleteaser_web_2.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/colour-burst",
-              "text1": "COLOur pLAY CAPSULE",
+              "url": "",
+              "text1": "Applique Cats Capsule",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2114,10 +2114,10 @@
           "1535679872557": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
+              "image": "shopify:\/\/shop_images\/rumpleteaser_web_2_clear.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/pages\/store-directory",
-              "text1": "Store",
+              "url": "",
+              "text1": "Foldover",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2132,10 +2132,10 @@
           "1535679910066": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/quote_3.0_6521db55-4113-4c86-b62e-86efd8d1d7df.jpg",
+              "image": "shopify:\/\/shop_images\/case_black_web.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/pages\/our-story",
-              "text1": "about us",
+              "url": "",
+              "text1": "Mini Cases",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
