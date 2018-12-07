@@ -1694,24 +1694,6 @@
       "1535500016318": {
         "type": "home-banners",
         "blocks": {
-          "1537531301567": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bag_straps_web_2.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/bag-strap-1",
-              "text1": "Bag Straps",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#030303",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1535680111401": {
             "type": "banner",
             "settings": {
@@ -1747,12 +1729,30 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1537531301567": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/quote_1.jpg",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#030303",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
-          "1537531301567",
           "1535680111401",
-          "1537570299256"
+          "1537570299256",
+          "1537531301567"
         ],
         "settings": {
           "width": "boxed",
@@ -1986,15 +1986,15 @@
           "1535679248430": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_All_Deluxe.jpg",
+              "image": "shopify:\/\/shop_images\/Foldover_OK.jpg",
               "image-hover-animation": "top",
-              "url": "",
-              "text1": "Carry All",
+              "url": "shopify:\/\/collections\/foldover-deluxe",
+              "text1": "Foldover",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#fffcfc",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2097,7 +2097,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/rumpleteaser_web_2.jpg",
               "image-hover-animation": "top",
-              "url": "",
+              "url": "shopify:\/\/collections\/applique",
               "text1": "Applique",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2113,15 +2113,15 @@
           "1535679872557": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/rumpleteaser_web_2_clear.jpg",
+              "image": "shopify:\/\/shop_images\/case_black_web.jpg",
               "image-hover-animation": "top",
-              "url": "",
-              "text1": "Foldover",
+              "url": "shopify:\/\/collections\/cases",
+              "text1": "Mini Cases",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2131,10 +2131,10 @@
           "1535679910066": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/case_black_web.jpg",
+              "image": "shopify:\/\/shop_images\/bag_straps_web_2.jpg",
               "image-hover-animation": "top",
-              "url": "",
-              "text1": "Mini Cases",
+              "url": "shopify:\/\/collections\/bag-strap-1",
+              "text1": "Bag Straps",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
