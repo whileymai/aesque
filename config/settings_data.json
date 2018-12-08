@@ -1878,7 +1878,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/petal_section_ok.jpg",
-              "image-hover-animation": "right",
+              "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/petal-family",
               "text1": "Petal",
               "text1-position": "bottom h-center",
@@ -1896,7 +1896,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/basket_ok.jpg",
-              "image-hover-animation": "right",
+              "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/basket",
               "text1": "Basket",
               "text1-position": "bottom h-center",
@@ -1914,7 +1914,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/carry_all_ok_2.jpg",
-              "image-hover-animation": "right",
+              "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/carry-all",
               "text1": "Carry All",
               "text1-position": "bottom h-center",
@@ -1985,10 +1985,10 @@
           "1535679248430": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Foldover_OK.jpg",
+              "image": "shopify:\/\/shop_images\/Griza_white.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/foldover-deluxe",
-              "text1": "Foldover",
+              "url": "shopify:\/\/collections\/applique",
+              "text1": "Appliqué",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2094,10 +2094,10 @@
           "1535679837485": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Griza_white.jpg",
+              "image": "shopify:\/\/shop_images\/Foldover_OK.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/applique",
-              "text1": "Applique",
+              "url": "shopify:\/\/collections\/foldover-deluxe",
+              "text1": "foldover deluxe",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2133,7 +2133,7 @@
               "image": "shopify:\/\/shop_images\/straps.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/bag-strap-1",
-              "text1": "Bag Straps",
+              "text1": "Bag Strap",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2147,8 +2147,8 @@
           }
         },
         "block_order": [
-          "1535679837485",
           "1535679872557",
+          "1535679837485",
           "1535679910066"
         ],
         "settings": {
@@ -2169,12 +2169,12 @@
       "1528867899857",
       "1527483237404",
       "1535679088113",
+      "1535676167959",
       "1535679348539",
       "1535679823899",
       "1535667203117",
       "1535500016318",
       "1535667541393",
-      "1535676167959",
       "1529624487823",
       "1528451077082",
       "1528781242787",
