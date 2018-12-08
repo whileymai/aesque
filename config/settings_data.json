@@ -1873,15 +1873,14 @@
       },
       "1535676167959": {
         "type": "home-banners",
-        "disabled": true,
         "blocks": {
           "1535676226988": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0002_home_bag_festival_face_2.jpg",
+              "image": "shopify:\/\/shop_images\/petal_section_ok.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/home-bag",
-              "text1": "home bag",
+              "url": "shopify:\/\/collections\/petal-family",
+              "text1": "Petal",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -1896,15 +1895,15 @@
           "1535676280423": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_basket_midi_2.jpg",
+              "image": "shopify:\/\/shop_images\/basket_ok.jpg",
               "image-hover-animation": "right",
               "url": "shopify:\/\/collections\/basket",
-              "text1": "basket midi",
+              "text1": "Basket",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -1914,10 +1913,10 @@
           "1535676183703": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page__0013_box_miniature.jpg",
+              "image": "shopify:\/\/shop_images\/carry_all_ok_2.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/box-miniature",
-              "text1": "Box miniature",
+              "url": "shopify:\/\/collections\/carry-all",
+              "text1": "Carry All",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
