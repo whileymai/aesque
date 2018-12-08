@@ -1985,7 +1985,7 @@
           "1535679248430": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Griza_white.jpg",
+              "image": "shopify:\/\/shop_images\/griza_white_Marble.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/applique",
               "text1": "Appliqué",
@@ -2091,6 +2091,24 @@
       "1535679823899": {
         "type": "home-banners",
         "blocks": {
+          "1535679872557": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shameless.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/cases",
+              "text1": "Mini Cases",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
           "1535679837485": {
             "type": "banner",
             "settings": {
@@ -2107,24 +2125,6 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": "#ffffff"
-            }
-          },
-          "1535679872557": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Image_5.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/cases",
-              "text1": "Mini Cases",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
             }
           },
           "1535679910066": {
