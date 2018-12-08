@@ -1733,7 +1733,7 @@
           "1537531301567": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/quote_1.jpg",
+              "image": "shopify:\/\/shop_images\/quote_3.0.jpg",
               "image-hover-animation": "",
               "url": "",
               "text1": "",
@@ -1951,7 +1951,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Image_1.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags",
+              "url": "shopify:\/\/collections\/all-handbags",
               "text1": "our bags",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -1969,7 +1969,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Images_2.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/new-work",
+              "url": "shopify:\/\/collections\/new-work",
               "text1": "new work",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -1993,7 +1993,7 @@
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#fffcfc",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
