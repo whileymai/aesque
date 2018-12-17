@@ -551,7 +551,6 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1525169089338": {
             "type": "revslide_video",
@@ -1272,11 +1271,30 @@
               "color_quantity_h_c": "",
               "color_h_bg": "#000000"
             }
+          },
+          "1545005337283": {
+            "type": "banner",
+            "settings": {
+              "image": "",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "Title 1",
+              "text1-position": "top left",
+              "text2": "28",
+              "text2-p2": "products",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
           "1527482723786",
-          "1535526506293"
+          "1535526506293",
+          "1545005337283"
         ],
         "settings": {
           "width": "boxed",
@@ -1881,10 +1899,10 @@
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/petal-family",
               "text1": "Petal",
-              "text1-position": "bottom h-center",
+              "text1-position": "top h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
+              "text2-position": "top h-center",
               "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -1899,11 +1917,11 @@
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/basket",
               "text1": "Basket",
-              "text1-position": "bottom h-center",
+              "text1-position": "top h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
+              "text2-position": "top h-center",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -1917,10 +1935,10 @@
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/carry-all",
               "text1": "Carry All",
-              "text1-position": "bottom h-center",
+              "text1-position": "top h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
+              "text2-position": "top h-center",
               "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -1956,10 +1974,10 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
+              "color_title_h_c": "#000000",
+              "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "",
               "color_h_bg": "#ffffff"
             }
@@ -1974,41 +1992,22 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": "#ffffff"
             }
-          },
-          "1535679248430": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/griza_white_Marble.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/applique",
-              "text1": "Appliqué",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
           }
         },
         "block_order": [
           "1535679103666",
-          "1535679201382",
-          "1535679248430"
+          "1535679201382"
         ],
         "settings": {
-          "width": "boxed",
-          "inrow": "3",
+          "width": "fullwidth",
+          "inrow": "2",
           "margin": "custom",
           "margin-custom": "20px auto",
           "padding": "custom",
@@ -2127,29 +2126,29 @@
               "color_h_bg": "#ffffff"
             }
           },
-          "1535679910066": {
+          "1545006454972": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/straps.jpg",
+              "image": "shopify:\/\/shop_images\/griza_white_Marble.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/bag-strap-1",
-              "text1": "Bag Strap",
+              "url": "",
+              "text1": "APPLIQUE",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           }
         },
         "block_order": [
           "1535679872557",
           "1535679837485",
-          "1535679910066"
+          "1545006454972"
         ],
         "settings": {
           "width": "boxed",
