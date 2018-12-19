@@ -551,6 +551,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1525169089338": {
             "type": "revslide_video",
@@ -1722,7 +1723,7 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#fffefe",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -1740,7 +1741,7 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2100,7 +2101,7 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2118,7 +2119,7 @@
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
