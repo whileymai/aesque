@@ -2132,7 +2132,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/griza_white_Marble.jpg",
               "image-hover-animation": "top",
-              "url": "",
+              "url": "shopify:\/\/collections\/applique",
               "text1": "APPLIQUE",
               "text1-position": "bottom h-center",
               "text2": "",
