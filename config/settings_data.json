@@ -1968,7 +1968,7 @@
           "1535679103666": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Image_1.jpg",
+              "image": "shopify:\/\/shop_images\/CNY_HERO_IMAGE.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/all-handbags",
               "text1": "our bags",
@@ -1986,10 +1986,10 @@
           "1535679201382": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Claire_Wearing_Petal_Pack.jpg",
+              "image": "shopify:\/\/shop_images\/CNY_HERO_IMAGE_2.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/most-popular-2018",
-              "text1": "Most Popular | 2018",
+              "url": "https:\/\/a-esque.com\/collections\/new-work-1-2019",
+              "text1": "NEW WORK",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
