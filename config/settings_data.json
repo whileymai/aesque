@@ -1774,7 +1774,7 @@
           "1537531301567"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "inrow": "3",
           "margin": "custom",
           "margin-custom": "20px auto",
@@ -1892,6 +1892,7 @@
       },
       "1535676167959": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1535676226988": {
             "type": "banner",
@@ -1968,7 +1969,7 @@
           "1535679103666": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CNY_HERO_IMAGE.jpg",
+              "image": "shopify:\/\/shop_images\/Mina_Retouched_-_Basket_Wearing_f9f3c355-ba7a-4dc3-b1ee-5112b8bce10b.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/all-handbags",
               "text1": "our bags",
@@ -1980,7 +1981,7 @@
               "color_title_h_c": "#000000",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1535679201382": {
@@ -2007,7 +2008,7 @@
           "1535679201382"
         ],
         "settings": {
-          "width": "fullwidth",
+          "width": "boxed",
           "inrow": "2",
           "margin": "custom",
           "margin-custom": "20px auto",
@@ -2160,6 +2161,97 @@
           "padding": "custom",
           "padding-custom": "20px"
         }
+      },
+      "1548292090863": {
+        "type": "home-banners",
+        "blocks": {
+          "1548292253073": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/petal_p_no_border.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/petal-family",
+              "text1": "PETAL PATTERN",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1548301507375": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WEB_BANNER_1.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/most-popular-2018",
+              "text1": "DAY BAG",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1548292110992": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Shameless_stud_Serpentine_no_border.jpg",
+              "image-hover-animation": "top",
+              "url": "https:\/\/a-esque.com\/collections\/occasion-bags",
+              "text1": "OCCASION PIECE",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1548292306227": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_pack_Balck_and_white_no_border.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "BELT BAG",
+              "text1-position": "v-center h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1548292253073",
+          "1548301507375",
+          "1548292110992",
+          "1548292306227"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20PX"
+        }
       }
     },
     "content_for_index": [
@@ -2170,6 +2262,7 @@
       "1528867899857",
       "1527483237404",
       "1535679088113",
+      "1548292090863",
       "1535676167959",
       "1535679348539",
       "1535679823899",
