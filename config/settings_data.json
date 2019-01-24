@@ -2090,6 +2090,7 @@
       },
       "1535679823899": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1535679872557": {
             "type": "banner",
