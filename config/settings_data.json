@@ -2116,7 +2116,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/WEB_BANNER_1.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/most-popular-2018",
+              "url": "https:\/\/a-esque.com\/collections\/signature-pieces",
               "text1": "DAY BAG",
               "text1-position": "v-center h-center",
               "text2": "",
