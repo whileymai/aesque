@@ -1710,78 +1710,6 @@
           "sec-prd-type": "afterimage"
         }
       },
-      "1535500016318": {
-        "type": "home-banners",
-        "blocks": {
-          "1535680111401": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_STORE.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/pages\/store-directory",
-              "text1": "STORES",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#fffefe",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1537570299256": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_AMANDABW.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/pages\/our-story",
-              "text1": "Our Story",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1537531301567": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/quote_3.0.jpg",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#030303",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1535680111401",
-          "1537570299256",
-          "1537531301567"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1535667203117": {
         "type": "home-banners",
         "disabled": true,
@@ -2251,6 +2179,59 @@
           "margin-custom": "20px auto",
           "padding": "custom",
           "padding-custom": "20PX"
+        }
+      },
+      "1535500016318": {
+        "type": "home-banners",
+        "blocks": {
+          "1535680111401": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_STORE.jpg",
+              "image-hover-animation": "top",
+              "url": "shopify:\/\/pages\/store-directory",
+              "text1": "STORES",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#fffefe",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1537570299256": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_AMANDABW.jpg",
+              "image-hover-animation": "top",
+              "url": "https:\/\/a-esque.com\/pages\/our-story",
+              "text1": "Our Story",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1535680111401",
+          "1537570299256"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "20px auto",
+          "padding": "custom",
+          "padding-custom": "20px"
         }
       }
     },
