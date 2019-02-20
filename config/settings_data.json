@@ -596,9 +596,41 @@
               "arrow_r_offset_hor": "76",
               "arrow_r_offset_vert": "70"
             }
+          },
+          "1550639703724": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "Text line 1",
+              "text_02": "Text line 2",
+              "text_03": "Text line 3",
+              "text_04": "Button",
+              "info_pos_hor": "left",
+              "info_pos_vert": "center",
+              "info_offset_hor": "76",
+              "info_offset_vert": "0",
+              "info_align": "left",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
           }
         },
         "block_order": [
+          "1550639703724",
           "1525169089338",
           "1526962875038",
           "1526440244024",
@@ -1897,37 +1929,37 @@
           "1535679103666": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Mina_Retouched_-_Basket_Wearing_f9f3c355-ba7a-4dc3-b1ee-5112b8bce10b.jpg",
+              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler_8e882a23-798a-430a-8c04-062037e22e5f.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/all-handbags",
               "text1": "our bags",
-              "text1-position": "bottom h-center",
+              "text1-position": "v-center h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "rgba(0,0,0,0)",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#0c0b0b"
             }
           },
           "1535679201382": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CNY_HERO_IMAGE_2.jpg",
+              "image": "shopify:\/\/shop_images\/edited_IMG_3550.jpg",
               "image-hover-animation": "top",
               "url": "https:\/\/a-esque.com\/collections\/new-work-1-2019",
               "text1": "NEW WORK",
-              "text1-position": "bottom h-center",
+              "text1-position": "v-center h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
+              "text2-position": "top h-center",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#080808"
             }
           }
         },
