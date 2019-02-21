@@ -1929,11 +1929,11 @@
           "1535679103666": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler_8e882a23-798a-430a-8c04-062037e22e5f.jpg",
+              "image": "shopify:\/\/shop_images\/petal_p_no_border.jpg",
               "image-hover-animation": "top",
               "url": "shopify:\/\/collections\/all-handbags",
               "text1": "our bags",
-              "text1-position": "v-center h-center",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "top h-center",
@@ -1941,17 +1941,17 @@
               "color_title_h_c": "rgba(0,0,0,0)",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "",
-              "color_h_bg": "#0c0b0b"
+              "color_h_bg": "#ffffff"
             }
           },
           "1535679201382": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/edited_IMG_3550.jpg",
+              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
               "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/new-work-1-2019",
-              "text1": "NEW WORK",
-              "text1-position": "v-center h-center",
+              "url": "shopify:\/\/pages\/contact-us",
+              "text1": "SERVICE",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "top h-center",
@@ -2122,107 +2122,16 @@
           "padding-custom": "20px"
         }
       },
-      "1548292090863": {
-        "type": "home-banners",
-        "blocks": {
-          "1548292253073": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_p_no_border.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/petal-family",
-              "text1": "PETAL PATTERN",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1548301507375": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/WEB_BANNER_1.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/signature-pieces",
-              "text1": "DAY BAG",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1548292110992": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Shameless_stud_Serpentine_no_border.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/occasion-bags",
-              "text1": "OCCASION PIECE",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1548292306227": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_pack_Balck_and_white_no_border.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "BELT BAG",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1548292253073",
-          "1548301507375",
-          "1548292110992",
-          "1548292306227"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20PX"
-        }
-      },
       "1535500016318": {
         "type": "home-banners",
         "blocks": {
           "1535680111401": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_STORE.jpg",
+              "image": "shopify:\/\/shop_images\/Petal_pack_Balck_and_white_no_border.jpg",
               "image-hover-animation": "top",
-              "url": "shopify:\/\/pages\/store-directory",
-              "text1": "STORES",
+              "url": "https:\/\/a-esque.com\/collections\/belt-bag",
+              "text1": "",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -2275,7 +2184,6 @@
       "1528867899857",
       "1527483237404",
       "1535679088113",
-      "1548292090863",
       "1535676167959",
       "1535679348539",
       "1535679823899",
