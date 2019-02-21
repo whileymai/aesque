@@ -553,6 +553,37 @@
         "type": "revolution-slider",
         "disabled": true,
         "blocks": {
+          "1550639703724": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "Text line 1",
+              "text_02": "Text line 2",
+              "text_03": "Text line 3",
+              "text_04": "Button",
+              "info_pos_hor": "left",
+              "info_pos_vert": "center",
+              "info_offset_hor": "76",
+              "info_offset_vert": "0",
+              "info_align": "left",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
           "1525169089338": {
             "type": "revslide_video",
             "settings": {
@@ -595,37 +626,6 @@
               "arrow_r_pos_vert": "bottom",
               "arrow_r_offset_hor": "76",
               "arrow_r_offset_vert": "70"
-            }
-          },
-          "1550639703724": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "Text line 1",
-              "text_02": "Text line 2",
-              "text_03": "Text line 3",
-              "text_04": "Button",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "76",
-              "info_offset_vert": "0",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
             }
           }
         },
