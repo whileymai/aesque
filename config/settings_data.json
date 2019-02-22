@@ -657,7 +657,7 @@
             "type": "tag",
             "settings": {
               "caption": "Style",
-              "list": "Backpack, Belt Bag, Clutch, Crossbody Bag, Top Handle, Shoulder Bag, Tote, Bag Strap, Wallet, Pouch, Bag Charm",
+              "list": "Belt Bag, Clutch, Crossbody Bag, Shoulder Bag, Bag Strap, Wallet, Pouch, Bag Charm",
               "only_single_item": false
             }
           },
