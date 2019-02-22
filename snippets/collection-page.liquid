@@ -21,7 +21,7 @@
 				{% assign collection.sort_by = collection.sort_by %}
 				<select class="form-control">
 					{% assign sort_handles = 'best-selling|price-ascending|price-descending|title-ascending|title-descending|created-descending' | split: '|' %}
-					{% assign sort_titles = 'Favourites|Price, Low To High|Price, High To Low|Product Name, A-Z|Product Name, Z-A|Latest Additions' | split: '|' %}
+					{% assign sort_titles = 'Style|Price, Low To High|Price, High To Low|Product Name, A-Z|Product Name, Z-A|Latest Additions' | split: '|' %}
 					{% for handle in sort_handles %}
 						{% if collection.sort_by == blank and collection.default_sort_by == handle %}
 							<option data-tt-value="{{handle}}" selected>{{ sort_titles[forloop.index0] }}</option>
