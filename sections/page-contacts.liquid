@@ -2,6 +2,9 @@
 {%- endcomment -%}
 {% assign set-message-text = 'contact.form.post_success' | t %}
 
+{% assign loc-image-size = '1920x' %}
+{% assign loc-image-thumb-size = '640x' %}
+
 <div class="tt-page__breadcrumbs">
 	{% include 'breadcrumbs' %}
 </div>
@@ -32,16 +35,15 @@
 		{%- if section.settings.map == blank and section.settings.address != blank -%}
 			{% assign loc-address-size = 12 %}
 		{%- endif -%}
-  
+  		
+  		{%- if section.settings.enable_store_1 -%}
 		<div class="tt-contacts__adress">
 			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
-				{%- if section.settings.map != blank -%}
 				<div class="col-md-{{ loc-map-size }}">
-					<div class="tt-contacts__map">
-						{{ section.settings.map }}
-					</div>
+                    <img src="{{ section.settings.store_image_1 | img_url: loc-image-size }}" alt="img" >
 				</div>
-				{%- endif -%}
+              
+              
 				{%- if section.settings.address != blank -%}
 				<div class="col-md-{{ loc-address-size }}">
 					<div class="tt-contacts__info">
@@ -53,7 +55,9 @@
 				{%- endif -%}
 			</div>
 		</div>
-  
+       	{% endif %}
+
+    	{%- if section.settings.enable_store_2 -%}
   		<div class="tt-contacts__adress">
 			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
 				{%- if section.settings.map != blank -%}
@@ -74,7 +78,9 @@
 				{%- endif -%}
 			</div>
 		</div>
-  
+        {%- endif -%}
+
+      	{%- if section.settings.enable_store_3 -%}
   		<div class="tt-contacts__adress">
 			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
 				{%- if section.settings.map != blank -%}
@@ -95,7 +101,9 @@
 				{%- endif -%}
 			</div>
 		</div>
-  
+        {%- endif -%}
+
+        {%- if section.settings.enable_store_4 -%}
     	<div class="tt-contacts__adress">
 			<div class="row ttg-grid-padding--none tt-layout__section--pdg-off">
 				{%- if section.settings.map != blank -%}
@@ -117,11 +125,13 @@
 			</div>
 		</div>
 	</div>
+    {%- endif -%}
+
 	{%- endif -%}
 
 {% schema %}
 {
-"name": "Contact us settings",
+"name": "Store Listings",
 "settings": [
 {
 "label": "Title and text",
@@ -156,9 +166,19 @@
 "default": "<p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>"
 },
 {
-"type": "textarea",
-"id": "map",
-"label": "Map code"
+"type": "header",
+"content": "Enable Store 1"
+},
+{
+"default": true,
+"id": "enable_store_1",
+"label": "Enable Store 1",
+"type": "checkbox"
+},
+{
+"label": "Image",
+"id": "store_image_1",
+"type": "image_picker"
 },
 {
 "type": "richtext",
@@ -168,8 +188,14 @@
 },
 {
 "type": "textarea",
-"id": "map2",
+"id": "map",
 "label": "Map code"
+},
+{
+"default": true,
+"id": "enable_store_2",
+"label": "Enable Store 2",
+"type": "checkbox"
 },
 {
 "type": "richtext",
@@ -178,9 +204,20 @@
 "default": "<p>109 Collins Street Melbourne</p><p>Phone: +61 3 9639 7070</p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:109@a-esque.com'>109@a-esque.com</a></p>"
 },
 {
+"label": "URL",
+"id": "url",
+"type": "url"
+},
+{
 "type": "textarea",
-"id": "map3",
+"id": "map2",
 "label": "Map code"
+},
+{
+"default": true,
+"id": "enable_store_3",
+"label": "Enable Store 3",
+"type": "checkbox"
 },
 {
 "type": "richtext",
@@ -190,14 +227,25 @@
 },
 {
 "type": "textarea",
-"id": "map4",
+"id": "map3",
 "label": "Map code"
+},
+{
+"default": true,
+"id": "enable_store_4",
+"label": "Enable Store 4",
+"type": "checkbox"
 },
 {
 "type": "richtext",
 "id": "address3",
 "label": "Address",
 "default": "<p>109 Collins Street Melbourne</p><p>Phone: +61 3 9639 7070</p><p>Hours: Mon to Fri 10am-6pm; Sat 10am-5pm</p><p>E-mail: <a href='mailto:109@a-esque.com'>109@a-esque.com</a></p>"
+},
+{
+"type": "textarea",
+"id": "map4",
+"label": "Map code"
 },
 {
 "type": "header",
