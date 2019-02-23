@@ -1266,7 +1266,7 @@
       "page-contacts2": {
         "type": "page-contacts2",
         "settings": {
-          "content": "settings",
+          "content": "page",
           "title": "contact us",
           "text": ""
         }
