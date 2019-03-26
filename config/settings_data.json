@@ -551,61 +551,36 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Adjusted_Claire_Basket02_Carryallhandler.jpg",
-              "style": "1",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1671_06882c49-85a2-4b5a-843c-b72990137f95.jpg",
+              "style": "off",
               "info_state": true,
               "url": "",
               "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "Text line 1",
-              "text_02": "Text line 2",
-              "text_03": "Text line 3",
-              "text_04": "Button",
-              "info_pos_hor": "left",
+              "button_icon": "",
+              "text_01": "NEW COLLECTION COMING SOON",
+              "text_02": "",
+              "text_03": "",
+              "text_04": "",
+              "info_pos_hor": "center",
               "info_pos_vert": "center",
               "info_offset_hor": "76",
               "info_offset_vert": "0",
-              "info_align": "left",
+              "info_align": "center",
               "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
+              "info_parallaxlevel": "1",
+              "color_text_01_c": "#ffffff",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "7",
+              "color_btn_style": "3",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
               "custom_param_slide": "",
               "custom_param_img": "",
               "custom_param_info": ""
-            }
-          },
-          "1525169089338": {
-            "type": "revslide_video",
-            "settings": {
-              "type": "mp4",
-              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/AEsque_Fashion_Films_Set1_CC_4_Converted.mov?17716627736587664134",
-              "video_link_url": ""
-            }
-          },
-          "1526962875038": {
-            "type": "revslide_video",
-            "settings": {
-              "type": "mp4",
-              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/121012_Making_DVD_Converted.mov?6466980097752237472",
-              "video_link_url": ""
-            }
-          },
-          "1526440244024": {
-            "type": "revslide_video",
-            "settings": {
-              "type": "mp4",
-              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/2945\/2349\/files\/AEsque_Fashion_Films_Set2_CC_ProResHQ_9_Converted.mov?8164776417022403560",
-              "video_link_url": ""
             }
           },
           "1526602663882": {
@@ -631,9 +606,6 @@
         },
         "block_order": [
           "1550639703724",
-          "1525169089338",
-          "1526962875038",
-          "1526440244024",
           "1526602663882"
         ],
         "settings": {
