@@ -50,7 +50,7 @@
 
         {% if set-prd-build-page %}
             <div class="prdbut__title">
-                <span class="ttg__required">{{ option.name }}</span>
+                <span class="ttg__required">{{ option.name | truncatewords: 1 }}</span>
             </div>
         {% endif %}
 

@@ -685,6 +685,9 @@ textarea.form-control,select.form-control {
     max-height: 100% !important;
 }
 
+.prdbut__options--page .prdbut__option {
+    margin-bottom: 15px !important;
+}
 
 @media only screen and (max-width: 411px) {
 #theme .tt-footer__pay-tape {
