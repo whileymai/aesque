@@ -2,7 +2,7 @@
 {%- endcomment -%}
 <div>
 	<a href="/cart" class="tt-header__btn tt-header__btn-cart">
-		<i class="">{{ 'cart.product.cart' | t }}</i>
+		<i class="fal fa-shopping-bag"></i>
 		<span id="tt-cart-count"{% if cart.item_count < 1 %} class="ttg-hidden"{% endif %}>{{ cart.item_count }}</span>
 	</a>
 	<div class="tt-header__cart" data-t-notes="{{ 'cart.product.notes' | t }}">
