@@ -358,6 +358,7 @@
       "label_new": "New",
       "label_hot": "Hot",
       "label_instock": "In Stock",
+      "label_color": "Leather Colour",
       "label_percent": "{{ percent }}%",
       "sku": "SKU:",
       "availability": "SHIPS IN - ",
