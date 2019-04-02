@@ -176,3 +176,24 @@ theme.InstagramSection=function(){function t(t){this.$container=$(t);this.$conta
  * (c) Tonytemplates Ltd, https://www.tonytemplates.com/support@tonytemplates.com
  */
 theme.TestimonialsSection=function(){function t(t){this.$container=$(t);this.$container.attr("data-section-id");this.settings={},this.namespace=".testimonials",this.onLoad()}return t.prototype=$.extend({},t.prototype,{onLoad:function(){Mogo.testimonials.section.init(this.$container)},onUnload:function(){this.$container.off(this.namespace),Mogo.testimonials.section.destroy(this.$container)}}),t}(),$(function(){var t=new slate.Sections;t.register("header",theme.HeaderSection),t.register("product",theme.ProductSection),t.register("footer",theme.FooterSection),t.register("revolution-slider",theme.RevSliderSection),t.register("scroll-slider",theme.ScrollSliderSection),t.register("sidebar",theme.CollectionSection),t.register("home-brands",theme.BrandSection),t.register("home-products-col",theme.CarouselBoxSection),t.register("home-blog",theme.CarouselBoxSection),t.register("home-instagram",theme.InstagramSection),t.register("home-testimonials",theme.TestimonialsSection),slate.a11y.pageLinkFocus($(window.location.hash)),$(".in-page-link").on("click",function(t){slate.a11y.pageLinkFocus($(t.currentTarget.hash))}),slate.rte.wrapTable(),slate.rte.iframeReset(),slate.cart.cookiesEnabled()&&(document.documentElement.className=document.documentElement.className.replace("supports-no-cookies","supports-cookies"));for(var e in window.Mogo)"function"==typeof window.Mogo[e]?window.Mogo[e]():window.Mogo[e].init&&"function"==typeof window.Mogo[e].init&&window.Mogo[e].init();$(window).trigger("mogo.load")});
+
+
+
+$.fn.ashCordian = function() {
+  
+  var container = $(this);
+
+  container.find('header').click(function() {
+    if($(this).siblings('section').css('display') == 'block'){
+       container.find('section').slideUp(150);
+    } else {
+      container.find('section').slideUp(150);
+       $(this).siblings('section').slideDown(150);
+    }
+  });
+};
+
+
+$('#accord1').ashCordian();
+
+$('#accord2').ashCordian();
