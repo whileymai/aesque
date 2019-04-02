@@ -697,7 +697,9 @@ textarea.form-control,select.form-control {
   display: block;
   margin: 0;
   text-transform: uppercase;
-  padding: 1em;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #fff;
   border-bottom:1px solid #000;
   cursor: pointer;
