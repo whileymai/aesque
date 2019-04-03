@@ -138,7 +138,7 @@ set-image_size
                     <div class="ttg-text-animation--emersion">
                         <span class="shopify-product-reviews-badge" data-id="{{ loc-prd-id }}"></span>
                     </div>
-                {%- endif -%}
+                {%- endif -%} 
 
                 {%- if set-view != 'short' -%}
                     {%- if loc-show_addtocart or loc-show_whishlist or loc-show_quickview -%}
@@ -146,13 +146,13 @@ set-image_size
                             <div class="tt-product__buttons{% if settings.prd-btns_design == '2' %} tt-product__buttons--design-2{% endif %}">
                                 {%- if loc-show_addtocart and loc-available -%}
                                     {% if settings.prd-btns_design == '1' %}
-                                        <a href="{{ loc-url }}" target="_blank" class="tt-btn colorize-btn5 tt-product__buttons_cart{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                            <i class="icon-bag"></i>
+                                        <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
+                                            <span>{{ 'products.product.add_to_cart' | t }}</span>
                                         </a>
                                     {% elsif settings.prd-btns_design == '2' %}
                                         <div>
-                                            <a href="{{ loc-url }}" target="_blank" class="tt-product__buttons_cart tt-btn tt-btn--cart colorize-btn9 prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                                <i class="icon-bag"></i>
+                                            <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
+                                               	<span>{{ 'products.product.add_to_cart' | t }}</span>
                                                 <span class="tt-product__buttons_cart_added">{{ 'products.product.add_to_cart_added' | t }}</span>
                                             </a>
                                         </div>

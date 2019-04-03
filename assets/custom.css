@@ -284,6 +284,10 @@ textarea.form-control,select.form-control {
     display: inline-flex;
 }
 
+.tt-product-view:not(.tt-product-view--list) .tt-product__buttons--design-2 .btn {
+    height: 34px !important;
+}
+
 .tt-login a {
    	font-weight: 300 !important;
 }
