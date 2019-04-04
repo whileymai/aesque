@@ -3103,6 +3103,28 @@
           "padding": "custom",
           "padding-custom": "10px 10px 10px 10px"
         }
+      },
+      "buy-with-LE473WS": {
+        "type": "buy-with-LE473WS",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Featured Items",
+          "prd-top-left": "space-box-hip-bag-white-leather-cross-body-bag",
+          "prd-top-right": "",
+          "prd-bottom-left": "",
+          "prd-bottom-right": ""
+        }
+      },
+      "buy-with-LE473CM": {
+        "type": "buy-with-LE473CM",
+        "settings": {
+          "enable_buy_with": false,
+          "featured-text": "Featured Items",
+          "prd-top-left": "",
+          "prd-top-right": "",
+          "prd-bottom-left": "",
+          "prd-bottom-right": ""
+        }
       }
     },
     "content_for_index": [
