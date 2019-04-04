@@ -765,3 +765,9 @@ textarea.form-control,select.form-control {
         display: none;
     }
 }
+
+@media (min-width: 320px)
+.col-sm-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}

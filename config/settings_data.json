@@ -3109,6 +3109,7 @@
         "settings": {
           "enable_buy_with": true,
           "featured-text": "Featured Items",
+          "sku-id": "000000",
           "prd-top-left": "space-box-hip-bag-white-leather-cross-body-bag",
           "prd-top-right": "",
           "prd-bottom-left": "",
@@ -3118,12 +3119,12 @@
       "buy-with-LE473CM": {
         "type": "buy-with-LE473CM",
         "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Featured Items",
-          "prd-top-left": "",
-          "prd-top-right": "",
-          "prd-bottom-left": "",
-          "prd-bottom-right": ""
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "basket-midi-navy-leather-shoulder-bag",
+          "prd-top-right": "basket-navy-leather-shoulder-bag",
+          "prd-bottom-left": "basket-black-leather-shoulder-bag",
+          "prd-bottom-right": "basket-midi-navy-leather-shoulder-bag"
         }
       }
     },
