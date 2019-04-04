@@ -98,13 +98,13 @@
   },
   "cart": {
     "general": {
-      "title": "Shopping Cart",
+      "title": "Shopping Bag",
       "remove": "Remove",
       "note": "Anything we should know?",
       "note_additional": "Add special instructions for your order...",
       "subtotal": "Subtotal",
       "shipping_at_checkout": "Shipping & taxes calculated at checkout",
-      "update": "Update Cart",
+      "update": "Update Bag",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
@@ -113,10 +113,10 @@
       "savings": "You're saving",
       "popup_all": "View all products ({{count}})",
       "popup_subtotal": "Subtotal:",
-      "popup_view": "View Cart",
+      "popup_view": "View Bag",
       "continue_shopping": "Continue Shopping",
-      "popup_msg": "Added to Cart",
-      "cart_total": "Cart Total"
+      "popup_msg": "Added to Bag",
+      "cart_total": "Bag Total"
     },
     "label": {
       "product": "Product",
@@ -303,7 +303,7 @@
   },
   "layout": {
     "cart": {
-      "title": "Cart",
+      "title": "Shopping Bag",
       "items_count": {
         "one": "item",
         "other": "items"
@@ -352,7 +352,7 @@
       "on_sale_from_html": "On Sale from {{ price }}",
       "from_text_html": "From {{ price }}",
       "quantity": "Quantity",
-      "add_to_cart": "Add to Cart",
+      "add_to_cart": "Add to Bag",
       "add_to_cart_disabled": "Out of Stock",
       "add_to_cart_added": "Added",
       "label_new": "New",
