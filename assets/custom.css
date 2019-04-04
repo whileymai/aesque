@@ -366,12 +366,7 @@ textarea.form-control,select.form-control {
   	font-weight: 300 !important;
 }
 
-.tt-header__btn-menu>i, span { 
-  	font-style: normal !important;
-  	text-transform: uppercase;
-    font-size: 13px !important;
-  	font-weight: 300 !important;
-}
+
 
 .tt-counter.tt-counter__inner input {
     font-weight: 300 !important;

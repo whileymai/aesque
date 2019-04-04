@@ -93,14 +93,6 @@
 	</div>
 {% endif %}
 
-
-{% comment %} ###  description {% endcomment %}
-{% if loc-show_description %}
-    <div class="tt-product-head__more-detailed rte">
-        {{ loc-description }}
-    </div>
-{% endif %}
-
 <form action="/cart/add.js" method="post">
     {% comment %} ### Options ### {% endcomment %}
     {% if loc-has_options and loc-show_options %}
@@ -153,6 +145,13 @@
         </div>
     {% endif %}
 </form>
+
+{% comment %} ###  description {% endcomment %}
+{% if loc-show_description %}
+    <div class="tt-product-head__more-detailed rte">
+        {{ loc-description }}
+    </div>
+{% endif %}
 
 	{% if loc-show_custom_text_tab %}
 		<div class="tt-product-head__tags">
