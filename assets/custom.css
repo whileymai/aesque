@@ -168,8 +168,16 @@ textarea.form-control,select.form-control {
   	background-color: transparent !important;
 }
 
-.tt-sr__text div, .tt-sr__text span, .tt-sr__text p {
+.tt-sr__text div {
+  	font-size: 28px !important;
+  	margin-bottom: 8px !important;
   	font-weight: 300 !important;
+  	text-transform: uppercase !important;
+}
+
+.tt-sr__text span, .tt-sr__text p {
+  	font-weight: 300 !important;
+  	margin-bottom: 8px !important;
   	text-transform: uppercase !important;
 }
 
