@@ -299,7 +299,9 @@
 									{% if loc-settings.text_01.size > 0 %}<div{{ res-styles_text_01 }}>{{ loc-settings.text_01 }}</div>{% endif %}
 									{% if loc-settings.text_02.size > 0 %}<span{{ res-styles_text_02 }}>{{ loc-settings.text_02 }}</span>{% endif %}
 									{% if loc-settings.text_03.size > 0 %}<p{{ res-styles_text_03 }}>{{ loc-settings.text_03 }}</p>{% endif %}
+									{% if loc-settings.button_icon.size > 0 %}
 								        <a href="{{ loc-settings.url }}" class="btn colorize-btn7">{{ loc-settings.text_04 }}</a>
+									{% endif %}
 								{% endif %}
 							</div>
 						{% endif %}
@@ -480,11 +482,10 @@
 "label": "Product"
 },
 {
-"label": "Button Icon (icon code)",
+"label": "Button Visibility",
 "id": "button_icon",
 "type": "text",
-"default": "icon-shop24",
-"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
+"default": "true"
 },
 {
 "label": "Line 1 (text)",
