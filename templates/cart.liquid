@@ -28,7 +28,7 @@
 							<div class="tt-cart__product">
 								<div class="row">
 									<div class="col-md-6" data-label="{{ 'customer.order.product' | t }}">
-										<a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="tt-cart__product_del" title="{{ 'cart.general.remove' | t }}"><i class="fa fa-times" aria-hidden="true"></i></a>
+										<a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="tt-cart__product_del" title="{{ 'cart.general.remove' | t }}"><i class="fal fa-times" aria-hidden="true"></i></a>
 										<a href="{{ item.url | within: collections.all }}" class="tt-cart__product_image"><img src="{{ item | img_url: '125x' }}"
 																						srcset="{{ item | img_url: '125x' }} 1x, {{ item | img_url: '250x' }} 2x"
 																						alt="{{ item.title | escape }}"></a>

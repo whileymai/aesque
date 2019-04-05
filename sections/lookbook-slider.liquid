@@ -294,16 +294,12 @@
 									<div{{ res-styles_text_01 }}>{{ this_product.title }}</div>
 									<span class="money"{{ res-styles_text_02 }}>{{ this_product_price[1] }}</span>
 									<p{{ res-styles_text_03 }}>{{ this_product.description | remove: "<p>" | remove: "</p>" | truncate: 60}}</p>
-									{% if loc-settings.button_icon.size > 0 %}
-								        <a href="{{ loc-settings.url }}" class="btn colorize-btn{{ this-settings.color_btn_style }}">{{ loc-settings.text_04 }}</a>
-									{% endif %}
+								        <a href="{{ loc-settings.url }}" class="btn colorize-btn7">{{ loc-settings.text_04 }}</a>
 								{% else %}
 									{% if loc-settings.text_01.size > 0 %}<div{{ res-styles_text_01 }}>{{ loc-settings.text_01 }}</div>{% endif %}
 									{% if loc-settings.text_02.size > 0 %}<span{{ res-styles_text_02 }}>{{ loc-settings.text_02 }}</span>{% endif %}
 									{% if loc-settings.text_03.size > 0 %}<p{{ res-styles_text_03 }}>{{ loc-settings.text_03 }}</p>{% endif %}
-									{% if loc-settings.button_icon.size > 0 %}
-								        <a href="{{ loc-settings.url }}" class="btn colorize-btn{{ this-settings.color_btn_style }}">{{ loc-settings.text_04 }}</a>
-									{% endif %}
+								        <a href="{{ loc-settings.url }}" class="btn colorize-btn7">{{ loc-settings.text_04 }}</a>
 								{% endif %}
 							</div>
 						{% endif %}
