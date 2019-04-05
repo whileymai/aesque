@@ -3108,12 +3108,12 @@
         "type": "buy-with-LE473WS",
         "settings": {
           "enable_buy_with": true,
-          "featured-text": "Featured Items",
+          "featured-text": "Match with",
           "sku-id": "000000",
           "prd-top-left": "space-box-hip-bag-white-leather-cross-body-bag",
-          "prd-top-right": "",
-          "prd-bottom-left": "",
-          "prd-bottom-right": ""
+          "prd-top-right": "purists-wallet-black-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-black-leather",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
       "buy-with-LE473CM": {
@@ -3125,6 +3125,17 @@
           "prd-top-right": "basket-navy-leather-shoulder-bag",
           "prd-bottom-left": "basket-black-leather-shoulder-bag",
           "prd-bottom-right": "basket-midi-navy-leather-shoulder-bag"
+        }
+      },
+      "buy-with-LE473WM": {
+        "type": "buy-with-LE473WM",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match with",
+          "prd-top-left": "slim-box-hip-bag-black-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-black-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-navy-leather",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       }
     },
