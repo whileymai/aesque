@@ -539,9 +539,9 @@ textarea.form-control,select.form-control {
 
 .tt-promobox__text div {
     margin: 0;
-    font-size: 22px !important;
+    font-size: 18px !important;
     line-height: 1.4;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
 }
 

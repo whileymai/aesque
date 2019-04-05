@@ -2,7 +2,7 @@
 {%- endcomment -%}
 {% if menu_quantity > 0 %}
 <div class="row">
-	{% assign menu_grid = 12 | divided_by: menu_quantity | prepend: 'col-sm-6 col-md-' %}
+	{% assign menu_grid = 12 | divided_by: menu_quantity | prepend: 'col-sm-12 col-md-' %}
 	{% if menu %}
 		<div class="{{ menu_grid }}">
 			{{ menu }}
