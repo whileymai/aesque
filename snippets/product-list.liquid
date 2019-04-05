@@ -147,12 +147,12 @@ set-image_size
                                 {%- if loc-show_addtocart and loc-available -%}
                                     {% if settings.prd-btns_design == '1' %}
                                         <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                            <span>{{ 'products.product.add_to_cart' | t }}</span>
+                                            <div class="tt-price-2">{{ 'products.product.add_to_cart' | t }}</div>
                                         </a>
                                     {% elsif settings.prd-btns_design == '2' %}
                                         <div>
                                             <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                               	<span>{{ 'products.product.add_to_cart' | t }}</span>
+                                            <div class="tt-price-2">{{ 'products.product.add_to_cart' | t }}</div>
                                                 <span class="tt-product__buttons_cart_added">{{ 'products.product.add_to_cart_added' | t }}</span>
                                             </a>
                                         </div>

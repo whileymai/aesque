@@ -78,6 +78,20 @@ custom CSS styles in this file.
 	}
 }
 
+.tt-price-2 {
+  	font-weight: 300;
+    text-transform: uppercase;
+  	font-size: 15px !important;
+}
+
+@media only screen and (max-width: 400px) {
+.tt-price-2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px !important;
+	}
+}
+
 .TonyM__list a {
    	font-size: 13px;
    	font-weight: 300;
@@ -766,8 +780,8 @@ textarea.form-control,select.form-control {
     }
 }
 
-@media (min-width: 320px)
-.col-sm-3 {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
+@media only screen and (max-width: 1024px) {
+    .tt-product-view:not(.tt-product-view--list) .tt-product__buttons--design-2 .tt-product__buttons_cart {
+        min-width: 0px !important;
+    }
 }

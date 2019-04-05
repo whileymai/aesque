@@ -64,7 +64,7 @@
     "prd-show_lbl_sold_out": false,
     "prd-show_review": false,
     "prd-hide-empty-review": true,
-    "prd-show_btn_addtocart": false,
+    "prd-show_btn_addtocart": true,
     "prd-show_btn_whishlist": false,
     "prd-show_btn_quickview": false,
     "prd-show_options": false,
