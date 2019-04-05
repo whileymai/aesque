@@ -239,13 +239,6 @@
 
 	{%- comment -%}N{%- endcomment -%}
 	{% for tag in product.tags %}
-  	{% if tag == 'LE472W' %}{% if forloop.first %}{% endif %}
-    {% section 'buy-with-LE472W' %} 
-	{% endif %}
-  	{% endfor %}
-
-	{%- comment -%}N{%- endcomment -%}
-	{% for tag in product.tags %}
   	{% if tag == 'LE472N' %}{% if forloop.first %}{% endif %}
     {% section 'buy-with-LE472N' %} 
 	{% endif %}
