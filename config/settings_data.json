@@ -2158,6 +2158,7 @@
       },
       "1554092003794": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1554092489993": {
             "type": "banner",
@@ -2344,7 +2345,6 @@
       },
       "1554247941400": {
         "type": "home-banners",
-        "disabled": true,
         "blocks": {
           "1554247959337": {
             "type": "banner",
