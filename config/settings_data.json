@@ -64,7 +64,7 @@
     "prd-show_lbl_sold_out": false,
     "prd-show_review": false,
     "prd-hide-empty-review": true,
-    "prd-show_btn_addtocart": false,
+    "prd-show_btn_addtocart": true,
     "prd-show_btn_whishlist": false,
     "prd-show_btn_quickview": false,
     "prd-show_options": false,
@@ -3121,10 +3121,10 @@
         "settings": {
           "enable_buy_with": true,
           "featured-text": "Match With",
-          "prd-top-left": "basket-midi-navy-leather-shoulder-bag",
-          "prd-top-right": "basket-navy-leather-shoulder-bag",
-          "prd-bottom-left": "basket-black-leather-shoulder-bag",
-          "prd-bottom-right": "basket-midi-navy-leather-shoulder-bag"
+          "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-black-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-black-leather",
+          "prd-bottom-right": "purists-wallet-50-waterfall-navy"
         }
       },
       "buy-with-LE473WM": {
@@ -3136,6 +3136,138 @@
           "prd-top-right": "purists-wallet-black-leather",
           "prd-bottom-left": "envelope-belt-bag-stack-navy-leather",
           "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE471S": {
+        "type": "buy-with-LE471S",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "slim-box-hip-bag-silver-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-50-black-leather",
+          "prd-bottom-left": "spacestud-wide-strap-black-silver-laminated-nappa-leather",
+          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
+        }
+      },
+      "buy-with-LE471FM": {
+        "type": "buy-with-LE471FM",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-deep-khaki-leather",
+          "prd-bottom-left": "spacestud-wide-strap-emerald-deep-khaki",
+          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
+        }
+      },
+      "buy-with-LE471B": {
+        "type": "buy-with-LE471B",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "slim-box-hip-bag-black-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-black-leather",
+          "prd-bottom-left": "spacestud-wide-strap-black-leather",
+          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+        }
+      },
+      "buy-with-LE474T": {
+        "type": "buy-with-LE474T",
+        "settings": {
+          "enable_buy_with": false,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-burgundy-leather",
+          "prd-top-right": "spacestud-wide-strap-black-leather",
+          "prd-bottom-left": "",
+          "prd-bottom-right": ""
+        }
+      },
+      "buy-with-LE471CM": {
+        "type": "buy-with-LE471CM",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-burgundy-leather",
+          "prd-bottom-left": "spacestud-wide-strap-black-leather",
+          "prd-bottom-right": "rainbow-long-strap-concrete"
+        }
+      },
+      "buy-with-LE470S": {
+        "type": "buy-with-LE470S",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-black-leather",
+          "prd-top-right": "silver-noir-lip-leather-clutch",
+          "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
+          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
+        }
+      },
+      "buy-with-LE473FM": {
+        "type": "buy-with-LE473FM",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
+          "prd-top-right": "purists-wallet-deep-khaki-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-deep-khaki-leather",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE470W": {
+        "type": "buy-with-LE470W",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-50-burgundy-leather",
+          "prd-top-right": "rouge-lip-leather-clutch",
+          "prd-bottom-left": "spacestud-short-strap-black-crimson-khaki",
+          "prd-bottom-right": "rainbow-long-strap-black-crimson-khaki"
+        }
+      },
+      "buy-with-LE470B": {
+        "type": "buy-with-LE470B",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-black-leather",
+          "prd-top-right": "black-powdered-lip-leather-clutch",
+          "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
+          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+        }
+      },
+      "buy-with-LE470K": {
+        "type": "buy-with-LE470K",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-deep-khaki-leather",
+          "prd-top-right": "emerald-lip-leather-clutch",
+          "prd-bottom-left": "spacestud-short-strap-khaki-powdered-leather",
+          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
+        }
+      },
+      "buy-with-LE469S": {
+        "type": "buy-with-LE469S",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-50-black-leather",
+          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
+          "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
+          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
+        }
+      },
+      "buy-with-LE469W": {
+        "type": "buy-with-LE469W",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-50-black-leather",
+          "prd-top-right": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
+          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
         }
       }
     },

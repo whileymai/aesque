@@ -43,6 +43,13 @@
 
 	{%- comment -%}Y{%- endcomment -%}
 	{% for tag in product.tags %}
+  	{% if tag == 'LE471B' %}{% if forloop.first %}{% endif %}
+    {% section 'buy-with-LE471B' %} 
+	{% endif %}
+  	{% endfor %}
+
+	{%- comment -%}Y{%- endcomment -%}
+	{% for tag in product.tags %}
   	{% if tag == 'LE471CM' %}{% if forloop.first %}{% endif %}
     {% section 'buy-with-LE471CM' %} 
 	{% endif %}
