@@ -3174,12 +3174,12 @@
       "buy-with-LE474T": {
         "type": "buy-with-LE474T",
         "settings": {
-          "enable_buy_with": false,
+          "enable_buy_with": true,
           "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-burgundy-leather",
-          "prd-top-right": "spacestud-wide-strap-black-leather",
-          "prd-bottom-left": "",
-          "prd-bottom-right": ""
+          "prd-top-left": "card-case-powdered-nappa-leather",
+          "prd-top-right": "card-case-emerald-nappa-leather",
+          "prd-bottom-left": "sandy-lip-nappa-leather-card-case",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
       "buy-with-LE471CM": {
@@ -3268,6 +3268,138 @@
           "prd-top-right": "powdered-lip-nappa-leather-card-case",
           "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
           "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+        }
+      },
+      "buy-with-LE469B": {
+        "type": "buy-with-LE469B",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-50-black-leather",
+          "prd-top-right": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
+          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+        }
+      },
+      "buy-with-LE469K": {
+        "type": "buy-with-LE469K",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "purists-wallet-50-black-leather",
+          "prd-top-right": "emerald-lip-nappa-leather-purse",
+          "prd-bottom-left": "spacestud-short-strap-khaki-powdered-leather",
+          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
+        }
+      },
+      "buy-with-LE474S": {
+        "type": "buy-with-LE474S",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-black-silver-leather",
+          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
+          "prd-bottom-left": "purists-wallet-50-navy-leather",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE474B": {
+        "type": "buy-with-LE474B",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-black-silver-leather",
+          "prd-top-right": "card-case-colour-mix",
+          "prd-bottom-left": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE474W": {
+        "type": "buy-with-LE474W",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-burgundy-nappa-leather",
+          "prd-top-right": "rouge-lip-nappa-leather-purse",
+          "prd-bottom-left": "card-case-burgundy-nappa-leather",
+          "prd-bottom-right": "purists-wallet-50-burgundy-leather"
+        }
+      },
+      "buy-with-LE474K": {
+        "type": "buy-with-LE474K",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-emerald-nappa-leather",
+          "prd-top-right": "card-case-powdered-nappa-leather",
+          "prd-bottom-left": "emerald-lip-nappa-leather-purse",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE475S": {
+        "type": "buy-with-LE475S",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-black-silver-leather",
+          "prd-top-right": "card-case-burgundy-nappa-leather",
+          "prd-bottom-left": "silver-noir-nappa-leather-card-case-purse",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE475C": {
+        "type": "buy-with-LE475C",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-powdered-nappa-leather",
+          "prd-top-right": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-left": "sandy-lip-nappa-leather-card-case",
+          "prd-bottom-right": "purists-wallet-50-waterfall-navy"
+        }
+      },
+      "buy-with-LE475E": {
+        "type": "buy-with-LE475E",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-emerald-nappa-leather",
+          "prd-top-right": "card-case-colour-mix",
+          "prd-bottom-left": "emerald-lip-nappa-leather-purse",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE475B": {
+        "type": "buy-with-LE475B",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-black-silver-leather",
+          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
+          "prd-bottom-left": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-right": "purists-wallet-50-black-leather"
+        }
+      },
+      "buy-with-LE479W": {
+        "type": "buy-with-LE479W",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-black-silver-leather",
+          "prd-top-right": "powdered-lip-nappa-leather-card-case",
+          "prd-bottom-left": "purists-wallet-50-black-leather",
+          "prd-bottom-right": "purists-wallet-50-navy-leather"
+        }
+      },
+      "buy-with-LE478W": {
+        "type": "buy-with-LE478W",
+        "settings": {
+          "enable_buy_with": true,
+          "featured-text": "Match With",
+          "prd-top-left": "card-case-powdered-nappa-leather",
+          "prd-top-right": "card-case-burgundy-nappa-leather",
+          "prd-bottom-left": "card-case-emerald-nappa-leather",
+          "prd-bottom-right": "card-case-black-silver-leather"
         }
       }
     },
