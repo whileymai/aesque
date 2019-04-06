@@ -630,7 +630,7 @@
             "type": "tag",
             "settings": {
               "caption": "Style",
-              "list": "Belt Bag, Clutch, Crossbody Bag, Shoulder Bag, Bag Strap, Wallet, Pouch, Bag Charm",
+              "list": "Belt Bag, Clutch, Crossbody Bag, Shoulder Bag, Wallet, Bag Strap",
               "only_single_item": false
             }
           },
@@ -671,16 +671,6 @@
               "image": ""
             }
           },
-          "1525839769675": {
-            "type": "color_item",
-            "settings": {
-              "name": "Noir Navy",
-              "picker_bg": "#ffffff",
-              "picker_bd": "#e0e0e0",
-              "picker_arrow": "#2d2d2d",
-              "image": ""
-            }
-          },
           "1525839835842": {
             "type": "color_item",
             "settings": {
@@ -716,7 +706,6 @@
           "1511777960336",
           "1511777932583",
           "1528100017051",
-          "1525839769675",
           "1525839835842",
           "1526278388966",
           "1526277322351"
