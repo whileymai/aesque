@@ -958,7 +958,7 @@
           "show_wishlist_btn": false,
           "show_options": true,
           "show_vendor": false,
-          "show_afterpay": false,
+          "show_afterpay": true,
           "show_type": false,
           "show_barcode": false,
           "show_tags": false,
