@@ -123,7 +123,7 @@
       "price": "Price",
       "quantity": "Quantity",
       "total": "Total",
-      "discounted_price": "Discounted price",
+      "discounted_price": "Your Client # price",
       "original_price": "Original price"
     },
     "product": {
@@ -251,7 +251,7 @@
       "payment_status": "Payment Status",
       "shipping_address": "Shipping Address",
       "fulfillment_status": "Fulfillment Status",
-      "discount": "Discount",
+      "discount": "Client #",
       "shipping": "Shipping",
       "tax": "Tax",
       "product": "Product",
@@ -403,11 +403,29 @@
         "subscription_checkbox_label": "Sign up for A-ESQUE news"
       },
       "order_summary": {
-        "free_shipping_discount_label": "Complimentary Shipping"
+        "free_shipping_discount_label": "Complimentary Shipping",
+        "discount_label": "Client #",
+        "discount_placeholder": "Client #",
+        "gift_card_and_discount_title": "Client #",
+        "gift_card_and_discount_label": "Client #",
+        "gift_card_and_discount_placeholder": "Client #",
+        "show_discount_form_link_label": "Have a Client # - enter here",
+        "discount_title": "Client #",
+        "remove_discount_label": "Remove Client #",
+        "apply_discount_button_label": "Enter",
+        "discount_has_been_applied": "Client # has been entered",
+        "discount_has_been_removed": "Client # has been removed"
+      },
+      "payment": {
+        "discount_button_action_label": "Enter Client #",
+        "apply_gift_card_button_label": "Enter"
       }
     },
     "page_titles": {
       "search": "SEARCH"
+    },
+    "errors": {
+      "discount_disabled": "This Client # has been disabled"
     }
   }
 }
