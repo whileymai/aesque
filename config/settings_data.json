@@ -2525,13 +2525,13 @@
           "1554329122058": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8194_Cropped_1920x_35b3b982-5e59-4e80-a98d-66d05a7aa590.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-450.jpg",
               "style": "3",
               "info_state": true,
-              "url": "",
+              "url": "shopify:\/\/products\/slim-box-hip-bag-black-leather-cross-body-bag",
               "product_id": "",
               "button_icon": "",
-              "text_01": "A\/W & S\/S APRIL 2019  COLLECTION",
+              "text_01": "MAY 2019",
               "text_02": "",
               "text_03": "",
               "text_04": "VIEW",
@@ -2542,7 +2542,7 @@
               "info_align": "center",
               "info_width": "700",
               "info_parallaxlevel": "0",
-              "color_text_01_c": "#000000",
+              "color_text_01_c": "#ffffff",
               "color_text_02_c": "#000000",
               "color_text_03_c": "#000000",
               "color_btn_style": "1",
@@ -2618,10 +2618,10 @@
           "1554329653307": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8212_1920x_f6bc9ad0-08d3-4877-bd2b-298d61a52b8d.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1617_2.jpg",
               "style": "3",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags",
+              "url": "shopify:\/\/products\/envelope-belt-bag-stack-black-leather",
               "product_id": "",
               "button_icon": "TRUE",
               "text_01": "",
@@ -2650,8 +2650,8 @@
         "block_order": [
           "1554329122058",
           "1554329502613",
-          "1554329593592",
-          "1554329653307"
+          "1554329653307",
+          "1554329593592"
         ],
         "settings": {
           "layout": "custom",
@@ -2667,10 +2667,10 @@
           "1554329140238": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_64a23524-5469-4bfa-8e8b-2af11531f382.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-660.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
-              "text1": "BARREL-ESQUE PATCH POCKET",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-black-leather-bag",
+              "text1": "BARREL-ESQUE PATCH",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2685,10 +2685,10 @@
           "1554329131293": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1569_73e2f2c6-7f88-4286-8c00-8fa8799c5791.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_97083868-2714-4380-b8f6-a58f73609631.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/envelope-belt-bag-stack-deep-khaki-leather",
-              "text1": "ENVELOPE STACK",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
+              "text1": "",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2703,9 +2703,9 @@
           "1554329944870": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1716_Cropped_70d12392-4556-494d-99dc-bdbfe56ac114.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-995_copy.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/barrel-esque-midi-black-leather-shoulder-bag",
+              "url": "shopify:\/\/products\/barrel-esque-mini-deep-khaki-leather-shoulder-bag",
               "text1": "BARREL-ESQUE MIDI",
               "text1-position": "bottom left",
               "text2": "",
@@ -2721,15 +2721,15 @@
           "1554329969475": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1748_Cropped_f6b13f82-9d0c-4987-bbd0-1803ded5b73e.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-030_7caf879e-4ff9-453d-b7c2-ffc9262af598.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/barrel-esque-midi-black-leather-shoulder-bag",
-              "text1": "",
+              "url": "shopify:\/\/products\/slim-space-case-black-leather-cross-body-bag",
+              "text1": "SPACE CASE",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom left",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2739,10 +2739,10 @@
           "1554330040224": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-770_6f2fa11c-9a7f-430b-938e-b71d021ed96a.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-593_copy.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/hobo-cross-white-suede-leather-shoulder-bag",
-              "text1": "HOBO CROSS",
+              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
+              "text1": "BARREL-ESQUE MIDI",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2757,10 +2757,10 @@
           "1554330061722": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product-Shoot-1795.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-752.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-space-case-nano-white-leather-clutch-bag?variant=14098495701053",
-              "text1": "SPACE CASE NANO",
+              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
+              "text1": "",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2775,10 +2775,10 @@
           "1554330131511": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-867_Retouched.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-659.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/barrel-esque-mini-black-leather-shoulder-bag",
-              "text1": "BARREL-ESQUE MINI",
+              "url": "shopify:\/\/products\/slim-space-case-nano-white-leather-clutch-bag",
+              "text1": "SPACE CASE NANO",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2793,10 +2793,10 @@
           "1554330110001": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1787_Cropped.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-770_78b30ead-245e-4483-829e-d58c30122d14.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-space-case-black-leather-cross-body-bag?variant=14092606373949",
-              "text1": "SPACE CASE",
+              "url": "shopify:\/\/products\/hobo-cross-white-suede-leather-shoulder-bag",
+              "text1": "HOBO CROSS",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2811,15 +2811,15 @@
           "1554330178931": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product-Shoot-683.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-352.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/hobo-cross-fern-leather-shoulder-bag",
-              "text1": "",
+              "url": "shopify:\/\/products\/space-box-hip-bag-black",
+              "text1": "SPACE BOX",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom left",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2829,10 +2829,10 @@
           "1554330205438": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product-Shoot-566.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-430.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/products\/hobo-cross-fern-leather-shoulder-bag",
-              "text1": "HOBO CROSS",
+              "url": "shopify:\/\/collections\/slim-box",
+              "text1": "SLIM BOX",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2847,10 +2847,10 @@
           "1554330247547": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1159_Cropped.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1617_2_copy.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/barrel-esque-mini-black-leather-shoulder-bag?variant=14092605063229",
-              "text1": "BARREL-ESQUE MINI",
+              "url": "shopify:\/\/products\/envelope-belt-bag-stack-black-leather",
+              "text1": "ENVELOPE BELT",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2865,15 +2865,15 @@
           "1554330269934": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product-Shoot-1153.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-683.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/barrel-esque-mini-deep-khaki-leather-shoulder-bag?variant=14092604997693",
-              "text1": "",
-              "text1-position": "top left",
+              "url": "shopify:\/\/products\/hobo-cross-fern-leather-shoulder-bag",
+              "text1": "HOBO CROSS",
+              "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom left",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2883,15 +2883,15 @@
           "1554330321421": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-298_Cropped.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1143.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-box-tote-mini-black-cross-body-bag?variant=14092606308413",
-              "text1": "",
+              "url": "shopify:\/\/products\/space-box-hip-bag-white-leather-cross-body-bag",
+              "text1": "SPACE BOX",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom left",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2901,10 +2901,10 @@
           "1554330365918": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-302.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-554_copy.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/space-box-hip-bag-white-leather-cross-body-bag?variant=14101498626109",
-              "text1": "SLIM BOX TOTE MINI",
+              "url": "shopify:\/\/products\/slim-space-case-nano-white-leather-clutch-bag",
+              "text1": "SPACE CASE NANO",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2919,10 +2919,10 @@
           "1554330414319": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1146_Cropped_3ac5ef42-7d05-4744-a052-de30be62e88b.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-300_0c7513b8-ab2b-4833-9fe8-efedc54a1aa4.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/8qbyyg080s3tvs26-2429452349.shopifypreview.com\/products_preview?preview_key=8679db98de11531ac175abae9301dce4",
-              "text1": "SPACE BOX HIP BAG",
+              "url": "shopify:\/\/products\/slim-space-case-nano-black-leather-clutch-bag",
+              "text1": "",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -2937,118 +2937,10 @@
           "1554330435019": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-368_19a1e0b2-c33d-479e-994c-bb1b53013fbc.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-317.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/envelope-belt-bag-stack-navy-leather?variant=14092605718589",
-              "text1": "ENVELOPE STACK",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554330485013": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-438_cropped.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/hobo-cross-concrete-leather-shoulder-bag?variant=14092605816893",
+              "url": "shopify:\/\/products\/slim-space-case-nano-laminated-silver-nappa-leather-clutch-bag",
               "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554330508203": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product-Shoot-454.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/hobo-cross-concrete-leather-shoulder-bag?variant=14092605816893",
-              "text1": "HOBO CROSS",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554330552000": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8169_Cropped.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-box-tote-mini-champagne-cross-body-bag?variant=14092606242877",
-              "text1": "SLIM BOX TOTE MINI",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554330572850": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-252_Cropped.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-box-tote-mini-champagne-cross-body-bag?variant=14092606242877",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554330609027": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-231_Cropped_7911000b-4db4-41c5-bdb6-349653348759.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-box-hip-bag-deep-khaki-leather-cross-body-bag?variant=14092606079037",
-              "text1": "SLIM BOX HIP BAG",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554330640647": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-232.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/barrel-esque-mini-deep-khaki-leather-shoulder-bag?variant=14092604997693",
-              "text1": "BARREL-ESQUE MINI",
               "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
@@ -3077,16 +2969,10 @@
           "1554330321421",
           "1554330365918",
           "1554330414319",
-          "1554330435019",
-          "1554330485013",
-          "1554330508203",
-          "1554330552000",
-          "1554330572850",
-          "1554330609027",
-          "1554330640647"
+          "1554330435019"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "inrow": "2",
           "margin": "custom",
           "margin-custom": "10px auto",
@@ -3488,8 +3374,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-030.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/space-case",
-              "text1": "Space Cases",
+              "url": "shopify:\/\/collections\/new-collection-april-2019",
+              "text1": "NEW COLLECTION",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3506,8 +3392,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-1763_copy.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
-              "text1": "Barrel-esque Midi",
+              "url": "shopify:\/\/pages\/collection-2019",
+              "text1": "LOOKBOOK",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3524,8 +3410,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/barrel-esque",
-              "text1": "Barrel-esque Patch",
+              "url": "shopify:\/\/collections",
+              "text1": "SIGNATURE",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3542,8 +3428,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-168_copy.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/barrel-esque-mini-black-leather-shoulder-bag",
-              "text1": "Barrel-esque Mini",
+              "url": "shopify:\/\/collections\/small-leather-goods",
+              "text1": "SMALL LEATHER GOODS",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3560,8 +3446,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/bag-strap-1",
-              "text1": "STRAPS",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "OUR STORY",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
