@@ -2531,7 +2531,7 @@
               "url": "shopify:\/\/products\/slim-box-hip-bag-black-leather-cross-body-bag",
               "product_id": "",
               "button_icon": "",
-              "text_01": "MAY 2019",
+              "text_01": "MAY 2019 LOOKBOOK",
               "text_02": "",
               "text_03": "",
               "text_04": "VIEW",
@@ -2584,37 +2584,6 @@
               "custom_param_info": ""
             }
           },
-          "1554329593592": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-683_1920x_5ae114aa-83a3-4f8b-b6fd-7dd71362f28b.jpg",
-              "style": "3",
-              "info_state": true,
-              "url": "",
-              "product_id": "",
-              "button_icon": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "text_04": "VIEW",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "0",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#000000",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
           "1554329653307": {
             "type": "revslide_image",
             "settings": {
@@ -2645,6 +2614,37 @@
               "custom_param_img": "",
               "custom_param_info": ""
             }
+          },
+          "1554329593592": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-683_1920x_5ae114aa-83a3-4f8b-b6fd-7dd71362f28b.jpg",
+              "style": "3",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "text_04": "VIEW",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "0",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#000000",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
           }
         },
         "block_order": [
@@ -2654,7 +2654,7 @@
           "1554329593592"
         ],
         "settings": {
-          "layout": "custom",
+          "layout": "fullscreen",
           "custom_breakpoints": "1025",
           "custom_heights": "960",
           "timeout": "10",
