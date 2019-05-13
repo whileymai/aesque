@@ -610,7 +610,7 @@
         ],
         "settings": {
           "layout": "custom",
-          "custom_breakpoints": "1025",
+          "custom_breakpoints": "1832",
           "custom_heights": "768",
           "timeout": "60",
           "nav_style": "off"
@@ -3441,7 +3441,7 @@
               "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
               "image-hover-animation": "right",
               "url": "https:\/\/a-esque.com\/pages\/collection-2019",
-              "text1": "DISCOVER LOOKBOOK",
+              "text1": "DISCOVER MAY 2019 LOOKBOOK",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3488,9 +3488,85 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1557716242871": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-639.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/slim-space-case-nano-white-leather-clutch-bag",
+              "text1": "SPACE CASES",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557716263753": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0411.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/petal-02-br-khaki-navy",
+              "text1": "PETAL 02",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557716389969": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0416.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "BASKET 02",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557716477766": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0083_7dd92c1a-4cc1-447f-98a2-9fc1540c0839.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/carry-all-handler-midi-noir-navy",
+              "text1": "CARRY ALL HANDLER MIDI",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
+          "1557716263753",
+          "1557716389969",
+          "1557716242871",
+          "1557716477766",
           "1557712469049",
           "1556775873455",
           "1557712890790",
@@ -3498,7 +3574,7 @@
         ],
         "settings": {
           "width": "fullwidth",
-          "inrow": "2",
+          "inrow": "3",
           "margin": "custom",
           "margin-custom": "10px auto",
           "padding": "custom",
