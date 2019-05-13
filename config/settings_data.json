@@ -198,7 +198,7 @@
     "color_input_f_bg": "#f5f5f5",
     "color_input_f_bd": "#f5f5f5",
     "color_btn_bg": "#ffffff",
-    "color_btn_bd": "#2d2d2d",
+    "color_btn_bd": "rgba(0,0,0,0)",
     "color_btn_c": "#2d2d2d",
     "color_btn_h_bg": "#fafafa",
     "color_btn_h_bd": "#2d2d2d",
@@ -551,26 +551,25 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1671_06882c49-85a2-4b5a-843c-b72990137f95.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_2e1b4b28-f9f8-4ef4-8926-22e20362d7b1.jpg",
               "style": "off",
               "info_state": true,
-              "url": "",
+              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
               "product_id": "",
-              "button_icon": "",
-              "text_01": "",
+              "button_icon": "button",
+              "text_01": "new collection",
               "text_02": "",
               "text_03": "",
-              "text_04": "",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "76",
-              "info_offset_vert": "0",
-              "info_align": "center",
+              "text_04": "Shop",
+              "info_pos_hor": "right",
+              "info_pos_vert": "bottom",
+              "info_offset_hor": "40",
+              "info_offset_vert": "40",
+              "info_align": "right",
               "info_width": "700",
               "info_parallaxlevel": "0",
               "color_text_01_c": "#ffffff",
@@ -611,7 +610,7 @@
         ],
         "settings": {
           "layout": "custom",
-          "custom_breakpoints": "1832",
+          "custom_breakpoints": "1025",
           "custom_heights": "768",
           "timeout": "60",
           "nav_style": "off"
@@ -3366,137 +3365,9 @@
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
-      "1556775863641": {
-        "type": "home-banners",
-        "blocks": {
-          "1556775873455": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-030.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/new-collection-april-2019",
-              "text1": "NEW COLLECTION",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556775984544": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1763_copy.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/pages\/collection-2019",
-              "text1": "LOOKBOOK",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556776160930": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections",
-              "text1": "SIGNATURE",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556776214191": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-168_copy.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/small-leather-goods",
-              "text1": "SMALL LEATHER GOODS",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556776307939": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556776330390": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-120_copy.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/pages\/our-story",
-              "text1": "OUR STORY",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1556775873455",
-          "1556775984544",
-          "1556776160930",
-          "1556776214191",
-          "1556776307939",
-          "1556776330390"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "10px auto",
-          "padding": "custom",
-          "padding-custom": "10px"
-        }
-      },
       "1557709351009": {
         "type": "home-infobox",
+        "disabled": true,
         "blocks": {
           "1557709351009-0": {
             "type": "text-banner",
@@ -3533,7 +3404,7 @@
         ],
         "settings": {
           "text-banner-type": "type1",
-          "text-banner-appearance": "fullwidth",
+          "text-banner-appearance": "demo5",
           "color_icon": "",
           "color_text1": "",
           "color_text2": "",
@@ -3541,6 +3412,97 @@
           "color_border": "",
           "border_bottom": false,
           "border_top": false
+        }
+      },
+      "1556775863641": {
+        "type": "home-banners",
+        "blocks": {
+          "1556775873455": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Grande_KhakiNavy_1000x1000_b76160ce-109d-48cd-9fc2-7ab24eec5e3f.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/signature",
+              "text1": "SIGNATURE PIECES",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557712469049": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/pages\/collection-2019",
+              "text1": "DISCOVER LOOKBOOK",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557712890790": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lip-Cash-Purse_Master_6394ea76-fb1c-447f-8d7c-9be5844ddfb1.gif",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/small-leather-goods",
+              "text1": "SMALL LEATHER GOODS",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557712626854": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/84A0065_1000X1000_copy.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1557712469049",
+          "1556775873455",
+          "1557712890790",
+          "1557712626854"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "10px auto",
+          "padding": "custom",
+          "padding-custom": "10px"
         }
       }
     },
