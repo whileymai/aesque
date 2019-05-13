@@ -3494,6 +3494,54 @@
           "padding": "custom",
           "padding-custom": "10px"
         }
+      },
+      "1557709351009": {
+        "type": "home-infobox",
+        "blocks": {
+          "1557709351009-0": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-phone",
+              "text-banner-url": "",
+              "text-banner-text1": "+61 411 210 518",
+              "text-banner-text2": "<p>Text<\/p>"
+            }
+          },
+          "1557709351009-1": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-box",
+              "text-banner-url": "",
+              "text-banner-text1": "Free Shipping",
+              "text-banner-text2": "<p>A free shipping is available for orders <strong>more than $700.<\/strong><\/p>"
+            }
+          },
+          "1557709351009-2": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-left",
+              "text-banner-url": "",
+              "text-banner-text1": "Returns and Exchanges",
+              "text-banner-text2": "<p>Any goods, that was bought in our online store, can be returned during <strong>30 days<\/strong> since purchase date.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1557709351009-0",
+          "1557709351009-1",
+          "1557709351009-2"
+        ],
+        "settings": {
+          "text-banner-type": "type1",
+          "text-banner-appearance": "fullwidth",
+          "color_icon": "",
+          "color_text1": "",
+          "color_text2": "",
+          "color_background": "",
+          "color_border": "",
+          "border_bottom": false,
+          "border_top": false
+        }
       }
     },
     "content_for_index": [
@@ -3518,7 +3566,8 @@
       "1527482961240",
       "1531272150905",
       "1556775863641",
-      "1526517781866"
+      "1526517781866",
+      "1557709351009"
     ]
   },
   "presets": {
