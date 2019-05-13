@@ -3184,24 +3184,6 @@
         "type": "home-banners",
         "disabled": true,
         "blocks": {
-          "1556775873455": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Grande_KhakiNavy_1000x1000_b76160ce-109d-48cd-9fc2-7ab24eec5e3f.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/signature",
-              "text1": "SIGNATURE PIECES",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1557712469049": {
             "type": "banner",
             "settings": {
@@ -3220,6 +3202,24 @@
               "color_h_bg": ""
             }
           },
+          "1556775873455": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Grande_KhakiNavy_1000x1000_b76160ce-109d-48cd-9fc2-7ab24eec5e3f.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/signature",
+              "text1": "SIGNATURE PIECES",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
           "1557712890790": {
             "type": "banner",
             "settings": {
@@ -3232,24 +3232,6 @@
               "text2-p2": "",
               "text2-position": "v-center h-center",
               "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557712626854": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/84A0065_1000X1000_copy.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/pages\/our-story",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -3322,6 +3304,24 @@
               "text2-p2": "",
               "text2-position": "v-center h-center",
               "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557712626854": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/84A0065_1000X1000_copy.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/pages\/our-story",
+              "text1": "",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -3449,9 +3449,9 @@
               "text_01": "Signature Pieces",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#000000",
               "color_btn_style": "7",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
@@ -3477,12 +3477,12 @@
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/84A0065_copy.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier.jpg",
               "info_state": false,
               "url": "shopify:\/\/pages\/our-story",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "",
+              "button_text": "our story",
               "text_01": "",
               "text_02": "",
               "text_03": "",
