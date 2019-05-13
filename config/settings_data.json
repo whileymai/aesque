@@ -2511,7 +2511,7 @@
         ],
         "settings": {
           "width": "fullwidth",
-          "inrow": "3",
+          "inrow": "2",
           "margin": "custom",
           "margin-custom": "10px auto",
           "padding": "custom",
@@ -3441,7 +3441,7 @@
               "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
               "image-hover-animation": "right",
               "url": "https:\/\/a-esque.com\/pages\/collection-2019",
-              "text1": "DISCOVER MAY 2019 LOOKBOOK",
+              "text1": "DISCOVER THE FULL LOOKBOOK",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3496,7 +3496,7 @@
               "image-hover-animation": "right",
               "url": "shopify:\/\/products\/slim-space-case-nano-white-leather-clutch-bag",
               "text1": "SPACE CASES",
-              "text1-position": "bottom right",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
@@ -3507,54 +3507,54 @@
               "color_h_bg": ""
             }
           },
-          "1557716263753": {
+          "1557719556765": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0411.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/petal-02-br-khaki-navy",
-              "text1": "PETAL 02",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557716389969": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0416.jpg",
+              "image": "shopify:\/\/shop_images\/basket_817cfb29-2fe9-458d-92ef-6155e2cfa251.jpg",
               "image-hover-animation": "right",
               "url": "",
-              "text1": "BASKET 02",
-              "text1-position": "bottom right",
+              "text1": "Basket Collection",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
           },
-          "1557716477766": {
+          "1557721481153": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0083_7dd92c1a-4cc1-447f-98a2-9fc1540c0839.jpg",
+              "image": "shopify:\/\/shop_images\/patch.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/carry-all-handler-midi-noir-navy",
-              "text1": "CARRY ALL HANDLER MIDI",
-              "text1-position": "bottom left",
+              "url": "",
+              "text1": "Barrel-esque Patch",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557723338059": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carryall.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "CARRY ALL HANDLER MIDI",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -3563,18 +3563,18 @@
           }
         },
         "block_order": [
-          "1557716263753",
-          "1557716389969",
-          "1557716242871",
-          "1557716477766",
           "1557712469049",
+          "1557716242871",
           "1556775873455",
+          "1557719556765",
+          "1557721481153",
+          "1557723338059",
           "1557712890790",
           "1557712626854"
         ],
         "settings": {
           "width": "fullwidth",
-          "inrow": "3",
+          "inrow": "2",
           "margin": "custom",
           "margin-custom": "10px auto",
           "padding": "custom",
@@ -3584,9 +3584,10 @@
     },
     "content_for_index": [
       "1504161678752",
-      "1554092003794",
-      "1554247941400",
+      "1556775863641",
       "1532477260206",
+      "1554247941400",
+      "1554092003794",
       "1535679088113",
       "1535500016318",
       "1527482696843",
@@ -3603,7 +3604,6 @@
       "1528781242787",
       "1527482961240",
       "1531272150905",
-      "1556775863641",
       "1526517781866",
       "1557709351009"
     ]
