@@ -551,6 +551,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -1305,60 +1306,6 @@
           "padding-custom": "20px"
         }
       },
-      "1527482961240": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1527482980401": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_5.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/basket",
-              "text1": "BEST BASKET",
-              "text1-position": "v-center right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center right",
-              "color_title_c": "#2d2d2d",
-              "color_title_h_c": "#2d2d2d",
-              "color_info_h_c": "#2d2d2d",
-              "color_quantity_h_c": "#2d2d2d",
-              "color_h_bg": "rgba(0,0,0,0)"
-            }
-          },
-          "1527483088219": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_11.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/face-applique",
-              "text1": "Our Faces",
-              "text1-position": "v-center left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center left",
-              "color_title_c": "#2d2d2d",
-              "color_title_h_c": "#2d2d2d",
-              "color_info_h_c": "#2d2d2d",
-              "color_quantity_h_c": "#2d2d2d",
-              "color_h_bg": "rgba(0,0,0,0)"
-            }
-          }
-        },
-        "block_order": [
-          "1527482980401",
-          "1527483088219"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1527483237404": {
         "type": "home-banners",
         "disabled": true,
@@ -1521,60 +1468,6 @@
           "padding-custom": "20px"
         }
       },
-      "1528781242787": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1528781262835": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180629_Resort_01.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/resort-18-collection",
-              "text1": "SUN TIME",
-              "text1-position": "v-center right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#2d2d2d"
-            }
-          },
-          "1528781385324": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_7.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/portfolio-satchel",
-              "text1": "AT EASE",
-              "text1-position": "v-center left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#2d2d2d"
-            }
-          }
-        },
-        "block_order": [
-          "1528781262835",
-          "1528781385324"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1528867899857": {
         "type": "home-banners",
         "disabled": true,
@@ -1629,60 +1522,6 @@
           "padding-custom": "20px"
         }
       },
-      "1529624487823": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1529624507349": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14_1e7895ae-9444-42ec-99df-6665e1a80cdd.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/petal-pack-metallic-mix-leather-crossbody-belt-bag",
-              "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1529624592500": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_15.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/carry-all-handler-midi-tan-shoulder-bag",
-              "text1": "DYNAMIC DUO",
-              "text1-position": "v-center left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1529624507349",
-          "1529624592500"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1531272150905": {
         "type": "home-products",
         "disabled": true,
@@ -1707,79 +1546,6 @@
           "limit": "16",
           "arrows": true,
           "sec-prd-type": "afterimage"
-        }
-      },
-      "1535667203117": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535667221444": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Mini_0000_black.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/crossbody-bag-1",
-              "text1": "crossbody",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1537527207827": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-09-22_at_10.46.31_am.png",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/foldover",
-              "text1": "clutching",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1537527299829": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_home_bag_s_festical_face.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/face-applique",
-              "text1": "our faces",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1535667221444",
-          "1537527207827",
-          "1537527299829"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
         }
       },
       "1535667541393": {
@@ -3416,6 +3182,7 @@
       },
       "1556775863641": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1556775873455": {
             "type": "banner",
@@ -3564,12 +3331,12 @@
         },
         "block_order": [
           "1557712469049",
-          "1557716242871",
           "1556775873455",
+          "1557712890790",
+          "1557716242871",
           "1557719556765",
           "1557721481153",
           "1557723338059",
-          "1557712890790",
           "1557712626854"
         ],
         "settings": {
@@ -3580,9 +3347,173 @@
           "padding": "custom",
           "padding-custom": "10px"
         }
+      },
+      "1557725870824": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557726071236": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1638_slide.jpg",
+              "info_state": true,
+              "url": "shopify:\/\/pages\/collection-2019",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "Discover",
+              "text_01": "The lookbook",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557726071236"
+        ],
+        "settings": {
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": false,
+          "arrows_enable": false
+        }
+      },
+      "1557727120924": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557727135457": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy_c94f83f4-6349-4892-a515-ac479bb188e0.jpg",
+              "info_state": true,
+              "url": "shopify:\/\/collections",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "SHOP",
+              "text_01": "NEW COLLECTION",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557727135457"
+        ],
+        "settings": {
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
+      },
+      "1557727603087": {
+        "type": "scroll-slider",
+        "settings": {
+          "width": "boxed",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
+      },
+      "1557727700512": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557728037320": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/petal.jpg",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/signature",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "Shop",
+              "text_01": "Signature Pieces",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "#ffffff",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557728037320"
+        ],
+        "settings": {
+          "width": "boxed",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
+      },
+      "1557728384665": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557728548131": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/84A0065_copy.jpg",
+              "info_state": false,
+              "url": "shopify:\/\/pages\/our-story",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557728548131"
+        ],
+        "settings": {
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
       }
     },
     "content_for_index": [
+      "1557727120924",
+      "1557725870824",
+      "1557727603087",
+      "1557727700512",
       "1504161678752",
       "1556775863641",
       "1532477260206",
@@ -3597,13 +3528,10 @@
       "1535676167959",
       "1535679348539",
       "1535679823899",
-      "1535667203117",
       "1535667541393",
-      "1529624487823",
       "1528451077082",
-      "1528781242787",
-      "1527482961240",
       "1531272150905",
+      "1557728384665",
       "1526517781866",
       "1557709351009"
     ]
