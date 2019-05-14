@@ -551,6 +551,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -1404,60 +1405,6 @@
         "block_order": [
           "1528451101413",
           "1528451194759"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1528451333519": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1528451425939": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_9.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/bag-strap-1",
-              "text1": "A STRAPPING BRIGADE",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#2d2d2d"
-            }
-          },
-          "1535526655223": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/wallet",
-              "text1": "INSIDE MATTERS",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          }
-        },
-        "block_order": [
-          "1528451425939",
-          "1535526655223"
         ],
         "settings": {
           "width": "boxed",
@@ -3374,6 +3321,43 @@
           "bullets_enable": true,
           "arrows_enable": true
         }
+      },
+      "1557809992385": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557809997719": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Atelier_de8cf942-7dda-4595-a1f8-8c86f1a26b2b.jpg",
+              "info_state": true,
+              "url": "https:\/\/a-esque.com\/pages\/our-story",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "OUR STORY",
+              "text_01": "MEET THE MAKER",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557809997719"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
       }
     },
     "content_for_index": [
@@ -3391,7 +3375,6 @@
       "1535679088113",
       "1535500016318",
       "1527482696843",
-      "1528451333519",
       "1528867899857",
       "1527483237404",
       "1535676167959",
@@ -3401,7 +3384,8 @@
       "1528451077082",
       "1531272150905",
       "1526517781866",
-      "1557709351009"
+      "1557709351009",
+      "1557809992385"
     ]
   },
   "presets": {
