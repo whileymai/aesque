@@ -556,10 +556,10 @@
           "1550639703724": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_2e1b4b28-f9f8-4ef4-8926-22e20362d7b1.jpg",
+              "image": "",
               "style": "off",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
+              "url": "",
               "product_id": "",
               "button_icon": "button",
               "text_01": "new collection",
@@ -3376,7 +3376,7 @@
           "1557726071236"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "margin": "custom",
           "margin-custom": "10px auto",
           "padding": "none",
@@ -3393,7 +3393,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy_c94f83f4-6349-4892-a515-ac479bb188e0.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections",
+              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
               "button_text": "SHOP",
@@ -3413,7 +3413,7 @@
           "1557727135457"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "margin": "custom",
           "margin-custom": "10px auto",
           "padding": "none",
@@ -3462,7 +3462,7 @@
           "1557728037320"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
@@ -3477,7 +3477,7 @@
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_white_4bfc5353-8620-45c9-973d-7e1dbb2147ed.jpg",
               "info_state": false,
               "url": "shopify:\/\/pages\/our-story",
               "product_id": "",
@@ -3499,8 +3499,8 @@
           "1557728548131"
         ],
         "settings": {
-          "width": "boxed",
-          "margin": "custom",
+          "width": "fullwidth",
+          "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
           "padding-custom": "12px",
@@ -3512,8 +3512,9 @@
     "content_for_index": [
       "1557727120924",
       "1557725870824",
-      "1557727603087",
       "1557727700512",
+      "1557728384665",
+      "1557727603087",
       "1504161678752",
       "1556775863641",
       "1532477260206",
@@ -3531,7 +3532,6 @@
       "1535667541393",
       "1528451077082",
       "1531272150905",
-      "1557728384665",
       "1526517781866",
       "1557709351009"
     ]
