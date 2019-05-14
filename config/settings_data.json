@@ -1216,6 +1216,7 @@
       },
       "1526517781866": {
         "type": "home-instagram",
+        "disabled": true,
         "settings": {
           "insta-tag": "OUR WORLD @AESQUEOFFICIAL",
           "insta-tag-url": "",
@@ -2419,7 +2420,7 @@
           "1554329593592"
         ],
         "settings": {
-          "layout": "fullscreen",
+          "layout": "custom",
           "custom_breakpoints": "1025",
           "custom_heights": "960",
           "timeout": "10",
@@ -3359,14 +3360,14 @@
               "url": "shopify:\/\/pages\/collection-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Discover",
-              "text_01": "The lookbook",
+              "button_text": "SHOP OUR LOOKBOOK",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "7",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3391,19 +3392,19 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy_c94f83f4-6349-4892-a515-ac479bb188e0.jpg",
+              "image": "shopify:\/\/shop_images\/header.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "SHOP",
-              "text_01": "NEW COLLECTION",
+              "button_text": "DISCOVER NEW COLLECTION",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "",
+              "color_text_01_c": "#000000",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "7",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3415,7 +3416,7 @@
         "settings": {
           "width": "fullwidth",
           "margin": "custom",
-          "margin-custom": "10px auto",
+          "margin-custom": "0",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": true,
@@ -3440,19 +3441,19 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/petal.jpg",
+              "image": "shopify:\/\/shop_images\/petal_signature_91dd8c81-0487-4ae5-9741-93053027eaf9.jpg",
               "info_state": true,
               "url": "shopify:\/\/collections\/signature",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Shop",
-              "text_01": "Signature Pieces",
+              "button_text": "EXPLORE Signature",
+              "text_01": "Now in Fresh colours",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#000000",
               "color_text_02_c": "#000000",
-              "color_text_03_c": "#000000",
-              "color_btn_style": "7",
+              "color_text_03_c": "#ffffff",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3467,8 +3468,8 @@
           "margin-custom": "10px auto",
           "padding": "none",
           "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
+          "bullets_enable": false,
+          "arrows_enable": false
         }
       },
       "1557728384665": {
@@ -3477,7 +3478,7 @@
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_white_4bfc5353-8620-45c9-973d-7e1dbb2147ed.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_white_69e3f757-dec4-491e-a7d9-6873d9f61bf8.jpg",
               "info_state": false,
               "url": "shopify:\/\/pages\/our-story",
               "product_id": "",
@@ -3507,13 +3508,51 @@
           "bullets_enable": true,
           "arrows_enable": true
         }
+      },
+      "1557803779631": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1557803788549": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Atelier_WHITE2_c57a8aa2-ef20-45e1-8a83-006f2cbef0a3.jpg",
+              "info_state": false,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1557803788549"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
       }
     },
     "content_for_index": [
       "1557727120924",
-      "1557725870824",
-      "1557727700512",
       "1557728384665",
+      "1557725870824",
+      "1557803779631",
+      "1557727700512",
       "1557727603087",
       "1504161678752",
       "1556775863641",
