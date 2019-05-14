@@ -2244,58 +2244,22 @@
       "lookbook-banners": {
         "type": "lookbook-banners",
         "blocks": {
-          "1554329140238": {
+          "1557807302647": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-660.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-black-leather-bag",
-              "text1": "BARREL-ESQUE PATCH",
-              "text1-position": "bottom right",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1735_copy_06463249-b4b7-4ec8-b49a-cc31f177b252.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
+              "text1": "MAY 2019 LOOKBOOK",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554329131293": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_97083868-2714-4380-b8f6-a58f73609631.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
-              "text1": "BARREL-ESQUE PATCH",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554329944870": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-995_copy.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/barrel-esque-mini-deep-khaki-leather-shoulder-bag",
-              "text1": "BARREL-ESQUE MIDI",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
+              "color_h_bg": ""
             }
           },
           "1554329969475": {
@@ -2323,6 +2287,24 @@
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
               "text1": "BARREL-ESQUE MIDI",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#808080"
+            }
+          },
+          "1554329140238": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-660.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-black-leather-bag",
+              "text1": "BARREL-ESQUE PATCH",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2370,6 +2352,42 @@
               "color_h_bg": "#808080"
             }
           },
+          "1554330414319": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-300_copy.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/slim-space-case-nano-black-leather-clutch-bag",
+              "text1": "",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#808080"
+            }
+          },
+          "1554329944870": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-995_copy.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/barrel-esque-mini-deep-khaki-leather-shoulder-bag",
+              "text1": "BARREL-ESQUE MINI",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#808080"
+            }
+          },
           "1554330205438": {
             "type": "banner",
             "settings": {
@@ -2399,6 +2417,24 @@
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#808080"
+            }
+          },
+          "1554329131293": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_97083868-2714-4380-b8f6-a58f73609631.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
+              "text1": "BARREL-ESQUE PATCH",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2458,42 +2494,6 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": "#808080"
-            }
-          },
-          "1554330414319": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-300_copy.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/slim-space-case-nano-black-leather-clutch-bag",
-              "text1": "",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1557807302647": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-450_6e8a8bc4-84db-4b78-918c-7b59fdc5828b.jpg",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "MAY 2019 LOOKBOOK",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
             }
           }
         },
@@ -3357,6 +3357,164 @@
           "padding-custom": "12px",
           "bullets_enable": true,
           "arrows_enable": true
+        }
+      },
+      "lookbook-slider-may-1": {
+        "type": "lookbook-slider-may-1",
+        "settings": {
+          "layout": "fullscreen",
+          "custom_breakpoints": "",
+          "custom_heights": "",
+          "timeout": "10",
+          "nav_style": "1"
+        }
+      },
+      "lookbook-banners-may-1": {
+        "type": "lookbook-banners-may-1",
+        "blocks": {
+          "1557817600999": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_9917.jpg",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-midi-noir-navy?variant=14176828325949",
+              "text1": "CARRY ALL HANDLER MIDI",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557817608851": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_9902.JPG",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-midi-noir-navy?variant=14176828325949",
+              "text1": "CARRY ALL HANDLER MIDI",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557812793234": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_9574.jpg",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/petal-02-br-khaki-navy?variant=14176818593853",
+              "text1": "PETAL 02",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557817616582": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_9765.JPG",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/basket-rosella-shoulder-bag?variant=7632366305341",
+              "text1": "Basket 02",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557817633812": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0548.JPG",
+              "image-hover-animation": "right",
+              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-black-leather?variant=8832866418749",
+              "text1": "CARRY ALL HANDLER",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557818324197": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_0414_77a83c44-0885-4da5-8f5a-530e54e8ed18.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/basket-navy-leather-shoulder-bag",
+              "text1": "BASKET 02",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557817592358": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_9533.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/petal-02-br-khaki-navy",
+              "text1": "PETAL 02",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1557817600999",
+          "1557817608851",
+          "1557812793234",
+          "1557817616582",
+          "1557817633812",
+          "1557818324197",
+          "1557817592358"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "demo2",
+          "margin-custom": "10px auto",
+          "padding": "custom",
+          "padding-custom": "10PX"
         }
       }
     },
