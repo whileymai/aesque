@@ -1234,133 +1234,6 @@
           "text": ""
         }
       },
-      "1527482696843": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1527482723786": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/all-handbags",
-              "text1": "THE HEART AND <br> SOUL OF A-ESQUE",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#2d2d2d"
-            }
-          },
-          "1535526506293": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_8.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/carry-all-handler",
-              "text1": "BAG OF THE MOMENT",
-              "text1-position": "v-center left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1545005337283": {
-            "type": "banner",
-            "settings": {
-              "image": "",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "Title 1",
-              "text1-position": "top left",
-              "text2": "28",
-              "text2-p2": "products",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1527482723786",
-          "1535526506293",
-          "1545005337283"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1527483237404": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1527483398540": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180608_HOME_PAGE_FA_15_e92febf7-34d4-45c0-99ae-5d02cafa5f1e.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/petal-pure",
-              "text1": "NEW WORK",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#2d2d2d"
-            }
-          },
-          "1527483251607": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_3.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/de-lip-strap-long-navy",
-              "text1": "DE LIP KISS",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#2d2d2d"
-            }
-          }
-        },
-        "block_order": [
-          "1527483398540",
-          "1527483251607"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1528451077082": {
         "type": "home-banners",
         "disabled": true,
@@ -1405,60 +1278,6 @@
         "block_order": [
           "1528451101413",
           "1528451194759"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1528867899857": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1528867928083": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_14.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/wallet",
-              "text1": "INSIDE MATTERS",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1528867994595": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_12.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/for-him",
-              "text1": "'HIM' THINGS",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1528867928083",
-          "1528867994595"
         ],
         "settings": {
           "width": "boxed",
@@ -1520,79 +1339,6 @@
         },
         "block_order": [
           "1535667570570"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1535676167959": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535676226988": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_section_ok.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/petal-family",
-              "text1": "Petal",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1535676280423": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/basket_ok.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/basket",
-              "text1": "Basket",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1535676183703": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_ok_2.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/carry-all",
-              "text1": "Carry All",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          }
-        },
-        "block_order": [
-          "1535676226988",
-          "1535676280423",
-          "1535676183703"
         ],
         "settings": {
           "width": "boxed",
@@ -1720,79 +1466,6 @@
           "1535679389602",
           "1535679423693",
           "1535679361471"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1535679823899": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535679872557": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/shameless.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/cases",
-              "text1": "Mini Cases",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1535679837485": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Foldover_OK.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/foldover-deluxe",
-              "text1": "foldover deluxe",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1545006454972": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/griza_white_Marble.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/applique",
-              "text1": "APPLIQUE",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          }
-        },
-        "block_order": [
-          "1535679872557",
-          "1535679837485",
-          "1545006454972"
         ],
         "settings": {
           "width": "boxed",
@@ -3131,12 +2804,12 @@
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1638_slide.jpg",
+              "image": "shopify:\/\/shop_images\/2.jpg",
               "info_state": true,
-              "url": "shopify:\/\/pages\/collection-2019",
+              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "SHOP OUR LOOKBOOK",
+              "button_text": "April-June 2019 Collection",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3154,7 +2827,7 @@
         ],
         "settings": {
           "width": "fullwidth",
-          "margin": "custom",
+          "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
           "padding-custom": "12px",
@@ -3168,12 +2841,12 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/header.jpg",
+              "image": "shopify:\/\/shop_images\/1.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019",
+              "url": "",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "DISCOVER THE LATEST",
+              "button_text": "COMING SOON",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3191,12 +2864,12 @@
         ],
         "settings": {
           "width": "fullwidth",
-          "margin": "custom",
-          "margin-custom": "0",
+          "margin": "none",
+          "margin-custom": "",
           "padding": "none",
-          "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
+          "padding-custom": "",
+          "bullets_enable": false,
+          "arrows_enable": false
         }
       },
       "1557727603087": {
@@ -3217,13 +2890,13 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/petal_signature_91dd8c81-0487-4ae5-9741-93053027eaf9.jpg",
+              "image": "shopify:\/\/shop_images\/3.jpg",
               "info_state": true,
               "url": "shopify:\/\/collections\/signature",
               "product_id": "",
               "button_icon": "icon-shop24",
               "button_text": "EXPLORE SignatureS",
-              "text_01": "Now in Fresh colours",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#000000",
@@ -3276,13 +2949,13 @@
           "1557728548131"
         ],
         "settings": {
-          "width": "fullwidth",
+          "width": "boxed",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
           "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
+          "bullets_enable": false,
+          "arrows_enable": false
         }
       },
       "1557803779631": {
@@ -3313,7 +2986,7 @@
           "1557803788549"
         ],
         "settings": {
-          "width": "fullwidth",
+          "width": "boxed",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
@@ -3516,14 +3189,91 @@
           "padding": "custom",
           "padding-custom": "10PX"
         }
+      },
+      "1560905503534": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1560905520112": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4.jpg",
+              "info_state": true,
+              "url": "https:\/\/a-esque.com\/pages\/may-2019",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "SIGNATURE STYLE Lookbook",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1560905520112"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
+      },
+      "1560905911373": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1560906002442": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5.jpg",
+              "info_state": true,
+              "url": "https:\/\/a-esque.com\/collections\/new-collection-april-2019\/products\/slim-space-case-nano-black-leather-clutch-bag?variant=14092606472253",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "new colors coming soon",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "#ffffff",
+              "color_text_02_c": "#ffffff",
+              "color_text_03_c": "#ffffff",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1560906002442"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": false,
+          "arrows_enable": false
+        }
       }
     },
     "content_for_index": [
       "1557727120924",
-      "1557728384665",
       "1557725870824",
-      "1557803779631",
+      "1557728384665",
       "1557727700512",
+      "1560905503534",
+      "1560905911373",
+      "1557803779631",
+      "1557809992385",
       "1557727603087",
       "1504161678752",
       "1556775863641",
@@ -3532,18 +3282,12 @@
       "1554092003794",
       "1535679088113",
       "1535500016318",
-      "1527482696843",
-      "1528867899857",
-      "1527483237404",
-      "1535676167959",
       "1535679348539",
-      "1535679823899",
       "1535667541393",
       "1528451077082",
       "1531272150905",
       "1526517781866",
-      "1557709351009",
-      "1557809992385"
+      "1557709351009"
     ]
   },
   "presets": {
