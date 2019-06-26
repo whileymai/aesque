@@ -3263,9 +3263,47 @@
           "bullets_enable": false,
           "arrows_enable": false
         }
+      },
+      "1561525837093": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1561525847466": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_1492.jpg",
+              "info_state": true,
+              "url": "https:\/\/a-esque.com\/collections\/binocular",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "Escape & Reality",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1561525847466"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
       }
     },
     "content_for_index": [
+      "1561525837093",
       "1557727120924",
       "1557725870824",
       "1557728384665",
