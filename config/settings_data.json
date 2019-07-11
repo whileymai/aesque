@@ -2605,6 +2605,7 @@
       },
       "1557803779631": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557803788549": {
             "type": "slide",
@@ -2668,9 +2669,9 @@
           "1557809997719"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": true,
