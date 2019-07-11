@@ -1717,193 +1717,6 @@
           "padding-custom": "10px"
         }
       },
-      "1554247941400": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1554247959337": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-720_635411bc-4a9a-4a52-9e80-185d574fc889.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/hobo-cross",
-              "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554247985078": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_2d52ef2d-0880-458b-96d4-ff64f978a949.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags\/products\/barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag?variant=14092605554749",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248002424": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8194_847d9fe4-d1f8-477a-9ab9-017cccfb0711.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/slim-box",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248305523": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1748_Cropped_e3fb4cae-f300-4fe8-9b6b-b56c1bf75f75.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags\/products\/barrel-esque-midi-black-leather-shoulder-bag?variant=14092605489213",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248358456": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-717_0cb4cc92-327b-4a3e-904e-cc336a39fe9f.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/hobo-cross",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248379448": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1617_b193a01b-e3b0-486a-9aa0-1dbc88de12a9.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/envelope-stack",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248409179": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1679_11c3e187-61e1-43c4-acf3-1eb6c499b3b5.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags\/products\/barrel-esque-midi-black-leather-shoulder-bag?variant=14092605489213",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248439059": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-167_caccfaaf-a9c1-4217-8534-08d103c6c86c.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags\/products\/barrel-esque-mini-black-leather-shoulder-bag?variant=14092605063229",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554248452878": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1128_264a1181-c6a0-42f7-ba0d-961d6b2f7daa.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/all-handbags\/products\/space-box-hip-bag-white-leather-cross-body-bag?variant=14101498626109",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1554247959337",
-          "1554247985078",
-          "1554248002424",
-          "1554248305523",
-          "1554248358456",
-          "1554248379448",
-          "1554248409179",
-          "1554248439059",
-          "1554248452878"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "10px auto",
-          "padding": "custom",
-          "padding-custom": "10px"
-        }
-      },
       "lookbook-slider": {
         "type": "lookbook-slider",
         "settings": {
@@ -2630,193 +2443,25 @@
           "border_top": false
         }
       },
-      "1556775863641": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1557712469049": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1638.jpg",
-              "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/pages\/collection-2019",
-              "text1": "DISCOVER THE FULL LOOKBOOK",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1556775873455": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Grande_KhakiNavy_1000x1000_b76160ce-109d-48cd-9fc2-7ab24eec5e3f.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/signature",
-              "text1": "SIGNATURE PIECES",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557712890790": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Lip-Cash-Purse_Master_6394ea76-fb1c-447f-8d7c-9be5844ddfb1.gif",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/small-leather-goods",
-              "text1": "SMALL LEATHER GOODS",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557716242871": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-639.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/slim-space-case-nano-white-leather-clutch-bag",
-              "text1": "SPACE CASES",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557719556765": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/basket_817cfb29-2fe9-458d-92ef-6155e2cfa251.jpg",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "Basket Collection",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557721481153": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/patch.jpg",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "Barrel-esque Patch",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557723338059": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carryall.jpg",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "CARRY ALL HANDLER MIDI",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557712626854": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/84A0065_1000X1000_copy.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/pages\/our-story",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1557712469049",
-          "1556775873455",
-          "1557712890790",
-          "1557716242871",
-          "1557719556765",
-          "1557721481153",
-          "1557723338059",
-          "1557712626854"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "10px auto",
-          "padding": "custom",
-          "padding-custom": "10px"
-        }
-      },
       "1557725870824": {
         "type": "scroll-slider",
         "blocks": {
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_2205.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/current-collection-2019",
+              "url": "shopify:\/\/collections\/binocular",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Current Collection",
+              "button_text": "EXPLORE BINOCULAR",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2826,9 +2471,9 @@
           "1557726071236"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "4",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": false,
@@ -2841,19 +2486,19 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/1.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-824_b5a46b72-f52c-4384-b24c-a6a67723d8e8.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/new-work",
+              "url": "shopify:\/\/collections\/hobo-cross",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "ESCAPE KIT CAPSULE",
+              "button_text": "Hobo hues",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#000000",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2863,9 +2508,9 @@
           "1557727135457"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
           "padding": "none",
           "padding-custom": "",
           "bullets_enable": false,
@@ -2890,19 +2535,19 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/3.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_3288.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/signature",
+              "url": "https:\/\/a-esque.com\/collections\/all-handbags?constraint=Crossbody-Bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "EXPLORE Signature",
+              "button_text": "CROSS BODY",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#000000",
               "color_text_02_c": "#000000",
               "color_text_03_c": "#ffffff",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2912,9 +2557,9 @@
           "1557728037320"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": false,
@@ -3013,7 +2658,7 @@
               "color_text_01_c": "#000000",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3196,19 +2841,19 @@
           "1560905520112": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/4.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-569.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/pages\/may-2019",
+              "url": "https:\/\/a-esque.com\/collections\/barrel-esque-patch-pocket",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "SIGNATURE STYLE Lookbook",
+              "button_text": "FAVOURITE PIECE",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3218,9 +2863,9 @@
           "1560905520112"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": true,
@@ -3233,19 +2878,19 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/5.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-515_62f25950-fcba-49ea-9bdb-3a70391f66aa.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/space-case-nano",
+              "url": "shopify:\/\/collections\/barrel-esque",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "NEW COLOURS",
+              "button_text": "BARREL-ESQUE",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#ffffff",
               "color_text_02_c": "#ffffff",
               "color_text_03_c": "#ffffff",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3255,9 +2900,9 @@
           "1560906002442"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": false,
@@ -3270,19 +2915,19 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1492.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_3424.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/binocular",
+              "url": "shopify:\/\/products\/barrel-esque-patch-winery",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "BINOCULAR",
-              "text_01": "NEW",
+              "button_text": "Fushia Story",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "1",
+              "color_btn_style": "2",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3292,11 +2937,11 @@
           "1561525847466"
         ],
         "settings": {
-          "width": "fullwidth",
-          "margin": "none",
-          "margin-custom": "10px auto",
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5px auto",
           "padding": "none",
-          "padding-custom": "12px",
+          "padding-custom": "10px",
           "bullets_enable": true,
           "arrows_enable": true
         }
@@ -3306,17 +2951,15 @@
       "1561525837093",
       "1557727120924",
       "1557725870824",
+      "1560905503534",
       "1557728384665",
       "1557727700512",
-      "1560905503534",
       "1560905911373",
       "1557803779631",
       "1557809992385",
       "1557727603087",
       "1504161678752",
-      "1556775863641",
       "1532477260206",
-      "1554247941400",
       "1554092003794",
       "1535679088113",
       "1535500016318",
