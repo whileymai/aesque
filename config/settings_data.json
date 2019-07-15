@@ -2946,6 +2946,335 @@
           "bullets_enable": true,
           "arrows_enable": true
         }
+      },
+      "lookbook-slider-may-2": {
+        "type": "lookbook-slider-may-2",
+        "settings": {
+          "layout": "fullscreen",
+          "custom_breakpoints": "",
+          "custom_heights": "",
+          "timeout": "10",
+          "nav_style": "1"
+        }
+      },
+      "lookbook-banners-may-2": {
+        "type": "lookbook-banners-may-2",
+        "blocks": {
+          "1563166560838": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-303.JPG",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "Barrel-esque Midi",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563166625776": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3532.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/box-miniature-black-clutch-evening-bag",
+              "text1": "box miniature",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563166669034": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3382.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-pure-br-khaki",
+              "text1": "Barrel-esque Pure",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563167757715": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3288_1b0a2201-431c-4fd3-be33-ac226763dd46.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
+              "text1": "Slim box hip bag",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563168138241": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-060_3b792b56-eac7-4813-a079-a2b3fa40aba7.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/binocular-10x3-white",
+              "text1": "Binocular",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563168195303": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-078_f54a9324-c3d3-4169-be5a-d08e018c85a3.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/copy-of-binocular-13x18-br-tan",
+              "text1": "Binocular",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563168358560": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3179_934eccb3-645d-4cbd-a60c-c993bcd62bcc.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/petal-grande-noir-navy-leather",
+              "text1": "Petal Grande",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563168905766": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3171.JPG",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "petal grande",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1563169387009": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-569_a928902f-7dcb-4f46-9d50-2c1c45b41e31.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-patc-jungle",
+              "text1": "Barrel-esque Patch",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1563169397436": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-786.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-fern-leather-shoulder-bag",
+              "text1": "Hobo Cross",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1563169679135": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-835.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
+              "text1": "Hobo Cross",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1563169806965": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-842.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
+              "text1": "Hobo cross",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1563170061089": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3233.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-concrete-leather-shoulder-bag",
+              "text1": "hobo cross",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#110000"
+            }
+          },
+          "1563170107736": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-546.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-bag",
+              "text1": "barrel-esque patch",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1563170280674": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-447.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/copy-of-barrel-esque-mini-ii-navy",
+              "text1": "barrel-esque Mini II",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1563170321892": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-754.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-fern-leather-shoulder-bag",
+              "text1": "hobo cross",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1563166669034",
+          "1563167757715",
+          "1563168138241",
+          "1563168195303",
+          "1563168358560",
+          "1563168905766",
+          "1563169387009",
+          "1563169397436",
+          "1563166560838",
+          "1563166625776",
+          "1563169806965",
+          "1563169679135",
+          "1563170107736",
+          "1563170061089",
+          "1563170280674",
+          "1563170321892"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "inrow": "2",
+          "margin": "custom",
+          "margin-custom": "5",
+          "padding": "custom",
+          "padding-custom": "10px"
+        }
       }
     },
     "content_for_index": [
