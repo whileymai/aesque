@@ -2960,53 +2960,17 @@
       "lookbook-banners-may-2": {
         "type": "lookbook-banners-may-2",
         "blocks": {
-          "1563166560838": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-303.JPG",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "Barrel-esque Midi",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563166625776": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3532.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/box-miniature-black-clutch-evening-bag",
-              "text1": "box miniature",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
           "1563166669034": {
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_3382.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-pure-br-khaki",
-              "text1": "Barrel-esque Pure",
-              "text1-position": "bottom right",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/current-collection-2019",
+              "text1": "July 2019 lookbook",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -3017,14 +2981,14 @@
           "1563167757715": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3288_1b0a2201-431c-4fd3-be33-ac226763dd46.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_32882.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
               "text1": "Slim box hip bag",
-              "text1-position": "bottom right",
+              "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
+              "text2-position": "bottom left",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -3097,11 +3061,11 @@
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#000000",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#080202"
             }
           },
           "1563169387009": {
@@ -3140,22 +3104,40 @@
               "color_h_bg": ""
             }
           },
-          "1563169679135": {
+          "1563166560838": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-835.JPG",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-303.JPG",
               "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
-              "text1": "Hobo Cross",
-              "text1-position": "bottom left",
+              "url": "",
+              "text1": "Barrel-esque Midi",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563166625776": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3532.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/box-miniature-black-clutch-evening-bag",
+              "text1": "box miniature",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
             }
           },
           "1563169806965": {
@@ -3176,6 +3158,42 @@
               "color_h_bg": ""
             }
           },
+          "1563169679135": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-835.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
+              "text1": "Hobo Cross",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1563170107736": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Product_Shoot-546_5651608e-fa35-45de-8b6a-fde4fd5e7f15.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-bag",
+              "text1": "barrel-esque patch",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
           "1563170061089": {
             "type": "banner",
             "settings": {
@@ -3194,24 +3212,6 @@
               "color_h_bg": "#110000"
             }
           },
-          "1563170107736": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-546.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-bag",
-              "text1": "barrel-esque patch",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
           "1563170280674": {
             "type": "banner",
             "settings": {
@@ -3219,10 +3219,10 @@
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/copy-of-barrel-esque-mini-ii-navy",
               "text1": "barrel-esque Mini II",
-              "text1-position": "top left",
+              "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "top left",
+              "text2-position": "bottom left",
               "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -3247,6 +3247,42 @@
               "color_quantity_h_c": "",
               "color_h_bg": "#000000"
             }
+          },
+          "1563170726998": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3478_9038f092-158b-44d2-8df1-1baa708d1d8c.JPG",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/barrel-esque-patch-pocket",
+              "text1": "barrel-esque patch",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1563170660590": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3424_ce10ba54-0660-4f32-ad29-ad0fb8fcb7d6.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/barrel-esque-patch-winery",
+              "text1": "barrel-esque patch",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#000000"
+            }
           }
         },
         "block_order": [
@@ -3265,7 +3301,9 @@
           "1563170107736",
           "1563170061089",
           "1563170280674",
-          "1563170321892"
+          "1563170321892",
+          "1563170726998",
+          "1563170660590"
         ],
         "settings": {
           "width": "fullwidth",
