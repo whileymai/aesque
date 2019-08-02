@@ -2449,12 +2449,12 @@
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2205.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-5153.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/binocular",
+              "url": "https:\/\/a-esque.com\/collections\/signature",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "EXPLORE BINOCULAR",
+              "button_text": "EXPLORE SIGNATURE",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2486,12 +2486,12 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-824_b5a46b72-f52c-4384-b24c-a6a67723d8e8.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-5152.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/hobo-cross",
+              "url": "https:\/\/a-esque.com\/collections\/new_work_2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Hobo hues",
+              "button_text": "NEW WORK",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2531,6 +2531,7 @@
       },
       "1557727700512": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557728037320": {
             "type": "slide",
@@ -2838,6 +2839,7 @@
       },
       "1560905503534": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1560905520112": {
             "type": "slide",
@@ -2875,6 +2877,7 @@
       },
       "1560905911373": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1560906002442": {
             "type": "slide",
@@ -2916,12 +2919,12 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3424.jpg",
+              "image": "shopify:\/\/shop_images\/Product_Shoot-515_e5b22994-70ac-4da4-8e3b-b5908eb59b2d.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/current-collection-2019",
+              "url": "https:\/\/a-esque.com\/collections\/current-collection",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "JULY 2019",
+              "button_text": "August 2019",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3319,8 +3322,8 @@
       "1561525837093",
       "1557727120924",
       "1557725870824",
-      "1560905503534",
       "1557728384665",
+      "1560905503534",
       "1557727700512",
       "1560905911373",
       "1557803779631",
