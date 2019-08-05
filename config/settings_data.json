@@ -2695,15 +2695,15 @@
           "1557817600999": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9917.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_39432.JPG",
               "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-midi-noir-navy?variant=14176828325949",
-              "text1": "CARRY ALL HANDLER MIDI",
-              "text1-position": "bottom right",
+              "url": "shopify:\/\/products\/convertible-home-bag-br-denim",
+              "text1": "AUGUST 2019",
+              "text1-position": "v-center right",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "text2-position": "v-center right",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2713,15 +2713,15 @@
           "1557817608851": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9902.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_4624.JPG",
               "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-midi-noir-navy?variant=14176828325949",
-              "text1": "CARRY ALL HANDLER MIDI",
-              "text1-position": "bottom right",
+              "url": "shopify:\/\/products\/home-bag-large-br-denim",
+              "text1": "Home Bag Large",
+              "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2731,14 +2731,14 @@
           "1557812793234": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9574.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4547.JPG",
               "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/petal-02-br-khaki-navy?variant=14176818593853",
-              "text1": "PETAL 02",
-              "text1-position": "bottom right",
+              "url": "shopify:\/\/products\/cube-tote-br-light-grey",
+              "text1": "CUBE TOTE",
+              "text1-position": "bottom left",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom h-center",
+              "text2-position": "bottom left",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2749,14 +2749,14 @@
           "1557817616582": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9765.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_4525_0ab0a5e0-82bd-4c4f-81d4-bed684af3981.JPG",
               "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/basket-rosella-shoulder-bag?variant=7632366305341",
-              "text1": "Basket 02",
-              "text1-position": "bottom right",
+              "url": "shopify:\/\/products\/petal-grande-rainbow-1",
+              "text1": "PETAL GRANDE",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "bottom right",
+              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2767,10 +2767,28 @@
           "1557817633812": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0548.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_4604_694baf76-88c1-4abd-9e2b-37511754ea6f.JPG",
               "image-hover-animation": "right",
-              "url": "https:\/\/a-esque.com\/collections\/signature\/products\/carry-all-handler-black-leather?variant=8832866418749",
-              "text1": "CARRY ALL HANDLER",
+              "url": "shopify:\/\/products\/petal-pack-br-champagne",
+              "text1": "PETAL PACK",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1557818324197": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4057_2.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/basket-tote-champagne",
+              "text1": "BASKET TOTE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2782,13 +2800,49 @@
               "color_h_bg": ""
             }
           },
-          "1557818324197": {
+          "1557817592358": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_0414_77a83c44-0885-4da5-8f5a-530e54e8ed18.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_3977.JPG",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/basket-navy-leather-shoulder-bag",
-              "text1": "BASKET 02",
+              "url": "shopify:\/\/products\/convertible-home-bag-br-white",
+              "text1": "CONVERTIBLE HOME BAG",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564985992562": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4273.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/mansion-pack-br-white",
+              "text1": "MANSION PACK",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986001269": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4562.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/hobo-cross-br-nude",
+              "text1": "HOBO CROSS",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2800,18 +2854,198 @@
               "color_h_bg": ""
             }
           },
-          "1557817592358": {
+          "1564986010364": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9533.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4597.JPG",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/petal-02-br-khaki-navy",
-              "text1": "PETAL 02",
+              "url": "shopify:\/\/products\/petal-pack-br-noir-navy",
+              "text1": "PETAL PACK",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986018157": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4415.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/home-bag-grande-br-apple",
+              "text1": "HOME BAG GRANDE",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986024949": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4395.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/home-bag-grande-br-fern",
+              "text1": "HOME BAG GRANDE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986031430": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4130.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/barrel-esque-mini-ii-br-rosella",
+              "text1": "BARREL-ESQUE MINI II",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
               "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986041162": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4373_f5eb3585-1206-4cf6-bd3a-853c7665bb7b.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/cube-tote-br-rosella",
+              "text1": "CUBE TOTE",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986074623": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4505_910eeeea-2827-4a62-b578-055513708aad.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/barrel-esque-mini-2-bright-white",
+              "text1": "BARREL-ESQUE MINI II",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986085127": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4002.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/binocular-15x15-br-white",
+              "text1": "BINOCULAR SQUARE",
+              "text1-position": "bottom left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom left",
+              "color_title_c": "#0d0d0d",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986092731": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3960.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/convertible-home-bag-br-orange",
+              "text1": "CONVERTIBLE HOME BAG",
+              "text1-position": "top right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986109330": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4644.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/slim-space-case-nano-sunrise",
+              "text1": "SLIM SPACE CASE NANO",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top left",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986123178": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4350_5030183e-848e-4c2f-8f60-772f304d3867.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/copy-of-binocular-13x18-br-tan",
+              "text1": "BINOCULAR",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1564986128543": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4011.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/copy-of-binocular-13x18-br-tan",
+              "text1": "BINOCULAR",
+              "text1-position": "top right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top right",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2826,13 +3060,26 @@
           "1557817616582",
           "1557817633812",
           "1557818324197",
-          "1557817592358"
+          "1557817592358",
+          "1564985992562",
+          "1564986001269",
+          "1564986010364",
+          "1564986018157",
+          "1564986024949",
+          "1564986031430",
+          "1564986041162",
+          "1564986074623",
+          "1564986085127",
+          "1564986092731",
+          "1564986109330",
+          "1564986123178",
+          "1564986128543"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "inrow": "2",
-          "margin": "demo2",
-          "margin-custom": "10px auto",
+          "margin": "custom",
+          "margin-custom": "10px",
           "padding": "custom",
           "padding-custom": "10PX"
         }
