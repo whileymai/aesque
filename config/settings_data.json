@@ -861,7 +861,7 @@
         ],
         "settings": {
           "masonry": true,
-          "images-per-row": "3"
+          "images-per-row": "4"
         }
       },
       "blog-posts": {
@@ -2966,7 +2966,7 @@
           "1563166669034": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3382.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_3382_7db379f3-b74f-4e7c-accf-e699a6db1b62.JPG",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/current-collection-2019",
               "text1": "July 2019 lookbook",
