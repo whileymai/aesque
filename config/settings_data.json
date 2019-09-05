@@ -3600,9 +3600,47 @@
           "padding": "custom",
           "padding-custom": "10px"
         }
+      },
+      "1567669206372": {
+        "type": "scroll-slider",
+        "blocks": {
+          "1567669225156": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/WHITE_STORY_EDIT.jpg",
+              "info_state": true,
+              "url": "https:\/\/a-esque.com\/collections\/white-story",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "White Story Collaboration",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "1",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1567669225156"
+        ],
+        "settings": {
+          "width": "boxed",
+          "margin": "custom",
+          "margin-custom": "5",
+          "padding": "none",
+          "padding-custom": "12px",
+          "bullets_enable": true,
+          "arrows_enable": true
+        }
       }
     },
     "content_for_index": [
+      "1567669206372",
       "1557727700512",
       "1561525837093",
       "1560905911373",
