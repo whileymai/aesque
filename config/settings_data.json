@@ -2445,24 +2445,23 @@
       },
       "1557725870824": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-5153.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4449.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/signature",
+              "url": "shopify:\/\/collections\/barrel-esque",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "EXPLORE SIGNATURE",
+              "button_text": "Barrel-esque Family",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2487,7 +2486,7 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-5152.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4358.jpg",
               "info_state": true,
               "url": "shopify:\/\/pages\/august-2019-lookbook",
               "product_id": "",
@@ -2499,7 +2498,7 @@
               "color_text_01_c": "#ffffff",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2536,19 +2535,19 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1852.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_4588.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/collections\/current-collection-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "A U G U S T | 2 0 1 9",
+              "button_text": "Current Collection",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#ffffff",
               "color_text_02_c": "#000000",
               "color_text_03_c": "#ffffff",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2648,7 +2647,7 @@
           "1557809997719": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_de8cf942-7dda-4595-a1f8-8c86f1a26b2b.jpg",
+              "image": "shopify:\/\/shop_images\/A-ESQUE_Making_B_W.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/pages\/our-story",
               "product_id": "",
@@ -2657,10 +2656,10 @@
               "text_01": "MEET THE MAKER",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "#000000",
+              "color_text_01_c": "#ffffff",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3124,24 +3123,23 @@
       },
       "1560905503534": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1560905520112": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4410.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_4410_cc93dcdb-5b22-4178-9a88-d9137eb67f04.JPG",
               "info_state": true,
-              "url": "shopify:\/\/products\/home-bag-grande-br-apple",
+              "url": "https:\/\/a-esque.com\/collections\/home-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Home Bag Grande",
+              "button_text": "the Daily Carrier",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3166,19 +3164,19 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1758.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4639.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/new_work_2019",
+              "url": "shopify:\/\/collections\/space-case-nano",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "explore NEW WORK",
+              "button_text": "Evening pieces",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#ffffff",
               "color_text_02_c": "#000000",
               "color_text_03_c": "#ffffff",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3203,19 +3201,19 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-515_e5b22994-70ac-4da4-8e3b-b5908eb59b2d.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4609.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/current-collection-2019",
+              "url": "",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "CURRENT COLLECTION",
+              "button_text": "Explore Signature",
               "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "2",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -3603,6 +3601,7 @@
       },
       "1567669206372": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1567669225156": {
             "type": "slide",
@@ -3640,16 +3639,16 @@
       }
     },
     "content_for_index": [
-      "1567669206372",
       "1557727700512",
+      "1557728384665",
       "1561525837093",
       "1560905911373",
-      "1557727120924",
-      "1557728384665",
-      "1557725870824",
       "1560905503534",
-      "1557803779631",
+      "1557727120924",
+      "1557725870824",
       "1557809992385",
+      "1567669206372",
+      "1557803779631",
       "1557727603087",
       "1504161678752",
       "1532477260206",
