@@ -2535,12 +2535,12 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4588.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6258_5571dbad-3e1a-4f72-93a2-c0d4fc2774c4.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/current-collection-2019",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Current Collection",
+              "button_text": "New Work",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2558,9 +2558,9 @@
         ],
         "settings": {
           "width": "boxed",
-          "margin": "custom",
+          "margin": "none",
           "margin-custom": "5",
-          "padding": "none",
+          "padding": "demo2",
           "padding-custom": "12px",
           "bullets_enable": false,
           "arrows_enable": false
