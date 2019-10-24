@@ -2445,6 +2445,7 @@
       },
       "1557725870824": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557726071236": {
             "type": "slide",
@@ -2486,12 +2487,12 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4358.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6091_copy.jpg",
               "info_state": true,
-              "url": "shopify:\/\/pages\/august-2019-lookbook",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bag-mellow",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "THE ATELIER LOOKBOOK",
+              "button_text": "BAR BAG SOFT MELLOW",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2537,10 +2538,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/New_View_EDM.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/bar-bag",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bag-cloud",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "New Work",
+              "button_text": "Bar Bag Cloud",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2572,7 +2573,7 @@
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_white_81027f60-9246-498f-b22d-7ea3d6bd2d57.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_White_Quote.jpg",
               "info_state": false,
               "url": "shopify:\/\/pages\/our-story",
               "product_id": "",
@@ -3127,12 +3128,12 @@
           "1560905520112": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4410_cc93dcdb-5b22-4178-9a88-d9137eb67f04.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_5944.JPG",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/home-bag",
+              "url": "https:\/\/a-esque.com\/collections\/triangles",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "the Daily Carrier",
+              "button_text": "THE TRIANGLE'S",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3164,12 +3165,12 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4639.jpg",
+              "image": "shopify:\/\/shop_images\/Attache_tan3.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/space-case-nano",
+              "url": "https:\/\/a-esque.com\/collections\/boardroom-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "The Nano",
+              "button_text": "THE BOARDROOM BAG",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3201,18 +3202,18 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4609.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6278.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/signature",
+              "url": "https:\/\/a-esque.com\/collections\/new-collection-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Signature Pieces",
+              "button_text": "NEW COLLECTION NOVEMBER 2019",
               "text_01": "",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "",
+              "color_text_01_c": "#2d2d2d",
               "color_text_02_c": "",
-              "color_text_03_c": "",
+              "color_text_03_c": "#000000",
               "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
@@ -3639,9 +3640,9 @@
       }
     },
     "content_for_index": [
-      "1557727700512",
-      "1557728384665",
       "1561525837093",
+      "1557728384665",
+      "1557727700512",
       "1560905911373",
       "1560905503534",
       "1557727120924",
