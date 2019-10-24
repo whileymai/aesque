@@ -2644,6 +2644,7 @@
       },
       "1557809992385": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557809997719": {
             "type": "slide",
