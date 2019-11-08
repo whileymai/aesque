@@ -2487,12 +2487,12 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_6091_copy.jpg",
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Petite_gold_copy2.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/bar-bag-mellow",
+              "url": "shopify:\/\/collections\/new-collection-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "BAR BAG SOFT MELLOW",
+              "button_text": "new collection",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2532,6 +2532,7 @@
       },
       "1557727700512": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557728037320": {
             "type": "slide",
@@ -3166,7 +3167,7 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Attache_tan3.jpg",
+              "image": "shopify:\/\/shop_images\/Attache_navy2.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/collections\/boardroom-bag",
               "product_id": "",
@@ -3203,12 +3204,12 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_6278.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_5998_a7b8d841-82db-4036-afef-1aa2093c9a6e.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/new-collection-2019",
+              "url": "https:\/\/a-esque.com\/collections\/the-bar-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "NEW COLLECTION NOVEMBER 2019",
+              "button_text": "the bar bag",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3641,12 +3642,12 @@
       }
     },
     "content_for_index": [
+      "1557727120924",
       "1561525837093",
       "1557728384665",
       "1557727700512",
-      "1560905911373",
       "1560905503534",
-      "1557727120924",
+      "1560905911373",
       "1557725870824",
       "1557809992385",
       "1567669206372",
