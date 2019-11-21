@@ -444,31 +444,6 @@
     "sections": {
       "header": {
         "type": "header",
-        "blocks": {
-          "1524987573933": {
-            "type": "top_line",
-            "settings": {
-              "top-line-icon": "",
-              "top-line-text": "on all orders",
-              "top-line-icon-phone": "",
-              "top-line-text-phone": "",
-              "top-line-icon-hours": "",
-              "top-line-text-hours": "",
-              "top-line-social": false,
-              "show_facebook": false,
-              "show_google": false,
-              "show_twitter": false,
-              "show_instagram": false,
-              "show_youtube": false,
-              "show_pinterest": false,
-              "show_skype": false,
-              "show_behance": false
-            }
-          }
-        },
-        "block_order": [
-          "1524987573933"
-        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
           "logo_max_width": 150,
