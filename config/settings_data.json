@@ -2420,17 +2420,16 @@
       },
       "1557725870824": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4449.jpg",
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Cloud_Terracotta.jpg",
               "info_state": true,
-              "url": "shopify:\/\/collections\/barrel-esque",
+              "url": "",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Barrel-esque Family",
+              "button_text": "Party Season",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -2449,8 +2448,8 @@
         "settings": {
           "width": "boxed",
           "margin": "custom",
-          "margin-custom": "4",
-          "padding": "none",
+          "margin-custom": "5",
+          "padding": "demo2",
           "padding-custom": "12px",
           "bullets_enable": false,
           "arrows_enable": false
@@ -2507,17 +2506,16 @@
       },
       "1557727700512": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/New_View_EDM.jpg",
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-809.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/bar-bag-cloud",
+              "url": "shopify:\/\/products\/carry-all-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Bar Bag Cloud",
+              "button_text": "The Statement Play",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3142,12 +3140,12 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Attache_navy2.jpg",
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-799.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/boardroom-bag",
+              "url": "https:\/\/a-esque.com\/collections\/petal-grande",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "THE BOARDROOM BAG",
+              "button_text": "Petal Grande",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3167,7 +3165,7 @@
           "width": "boxed",
           "margin": "custom",
           "margin-custom": "5",
-          "padding": "none",
+          "padding": "demo2",
           "padding-custom": "12px",
           "bullets_enable": false,
           "arrows_enable": false
@@ -3622,9 +3620,9 @@
       "1561525837093",
       "1557728384665",
       "1557727700512",
-      "1560905503534",
       "1560905911373",
       "1557725870824",
+      "1560905503534",
       "1557809992385",
       "1557803779631",
       "1557727603087",
