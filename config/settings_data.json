@@ -1705,40 +1705,40 @@
       "lookbook-banners": {
         "type": "lookbook-banners",
         "blocks": {
-          "1557807302647": {
+          "1574817779835": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-210_0c5617f6-82be-46c3-b03c-6200603700ab.jpg",
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar2_8dd8b47c-7c8f-4233-b06a-bc6cc692b4c7.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-black",
-              "text1": "BLACK",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
+              "url": "",
+              "text1": "PARTY SEASON MOOD",
+              "text1-position": "v-center h-center",
+              "text2": "PHOTOGRAPHED AT THE ATELIER",
+              "text2-p2": "NOVEMBER 2019",
+              "text2-position": "v-center h-center",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
               "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#000000",
-              "color_h_bg": ""
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
             }
           },
-          "1554329969475": {
+          "1574817735663": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-267_cebf6cb5-7cc1-42d1-b24b-236f07563f3b.jpg",
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-318_90649f92-0b13-4a1a-8f97-b56b87a51914.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-elephant",
-              "text1": "ELEPHANT",
+              "url": "shopify:\/\/products\/bar-bag-cloud-br-terracotta",
+              "text1": "BAR BAG CLOUD",
               "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD",
+              "text2": "TERRACOTTA",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
-              "color_info_h_c": "#000000",
-              "color_quantity_h_c": "#000000",
-              "color_h_bg": "#ffffff"
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#000000"
             }
           },
           "1554330061722": {
@@ -1777,22 +1777,40 @@
               "color_h_bg": "#ffffff"
             }
           },
-          "1554330131511": {
+          "1557807302647": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-159.jpg",
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-210_0c5617f6-82be-46c3-b03c-6200603700ab.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-gold-metallic",
-              "text1": "GOLD METALLIC",
+              "url": "shopify:\/\/products\/bar-bag-cloud-br-black",
+              "text1": "BLACK",
               "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD PETITE",
+              "text2": "BAR BAG CLOUD",
               "text2-p2": "",
               "text2-position": "bottom right",
               "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
+              "color_title_h_c": "#000000",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#000000",
+              "color_h_bg": ""
+            }
+          },
+          "1554329969475": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-267_cebf6cb5-7cc1-42d1-b24b-236f07563f3b.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/bar-bag-cloud-br-elephant",
+              "text1": "ELEPHANT",
+              "text1-position": "bottom right",
+              "text2": "BAR BAG CLOUD",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "#000000",
+              "color_info_h_c": "#000000",
+              "color_quantity_h_c": "#000000",
+              "color_h_bg": "#ffffff"
             }
           },
           "1554330110001": {
@@ -1813,22 +1831,22 @@
               "color_h_bg": "#ffffff"
             }
           },
-          "1554330414319": {
+          "1554330131511": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-120.jpg",
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-159.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-black-metallic",
-              "text1": "BLACK METALLIC",
+              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-gold-metallic",
+              "text1": "GOLD METALLIC",
               "text1-position": "bottom right",
               "text2": "BAR BAG CLOUD PETITE",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#808080"
             }
           },
           "1554329944870": {
@@ -1845,6 +1863,24 @@
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#000000"
+            }
+          },
+          "1554330414319": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-120.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-black-metallic",
+              "text1": "BLACK METALLIC",
+              "text1-position": "bottom right",
+              "text2": "BAR BAG CLOUD PETITE",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
               "color_h_bg": "#000000"
             }
@@ -1883,42 +1919,6 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
-            }
-          },
-          "1574817735663": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-318_90649f92-0b13-4a1a-8f97-b56b87a51914.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-terracotta",
-              "text1": "BAR BAG CLOUD",
-              "text1-position": "bottom right",
-              "text2": "TERRACOTTA",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1574817779835": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar2_8dd8b47c-7c8f-4233-b06a-bc6cc692b4c7.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "PARTY SEASON MOOD",
-              "text1-position": "v-center h-center",
-              "text2": "PHOTOGRAPHED AT THE ATELIER",
-              "text2-p2": "NOVEMBER 2019",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
             }
           }
         },
@@ -2386,13 +2386,13 @@
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Cloud_Terracotta.jpg",
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Cloud_Terracotta_6bc6e44e-49f8-40a8-a89b-83ed9abeb632.jpg",
               "info_state": true,
-              "url": "",
+              "url": "https:\/\/a-esque.com\/pages\/november-2019",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Party Season",
-              "text_01": "COMING SOON",
+              "button_text": "OUR PARTY SEASON MOOD",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "",
