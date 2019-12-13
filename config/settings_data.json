@@ -2386,7 +2386,7 @@
           "1557726071236": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Cloud_Terracotta_6bc6e44e-49f8-40a8-a89b-83ed9abeb632.jpg",
+              "image": "shopify:\/\/shop_images\/bar_bag_cloud_terracotta_partylook1.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/pages\/november-2019",
               "product_id": "",
@@ -2423,7 +2423,7 @@
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Petite_gold_copy2.jpg",
+              "image": "shopify:\/\/shop_images\/CARRY_ALL_BAG.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/collections\/current-collection",
               "product_id": "",
@@ -2472,9 +2472,9 @@
           "1557728037320": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-809.jpg",
+              "image": "shopify:\/\/shop_images\/BASKTER_02_PLAY_6590d9b8-87a9-4d23-a09f-33a02d4269c8.jpg",
               "info_state": true,
-              "url": "shopify:\/\/products\/carry-all-bag",
+              "url": "shopify:\/\/collections\/play",
               "product_id": "",
               "button_icon": "icon-shop24",
               "button_text": "The Statement Play",
@@ -2580,12 +2580,11 @@
       },
       "1557809992385": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557809997719": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/A-ESQUE_Making_B_W.jpg",
+              "image": "shopify:\/\/shop_images\/MAKING.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/pages\/our-story",
               "product_id": "",
@@ -3061,6 +3060,7 @@
       },
       "1560905503534": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1560905520112": {
             "type": "slide",
@@ -3102,12 +3102,12 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-799.jpg",
+              "image": "shopify:\/\/shop_images\/CARRY_ALL_HANDLER_DAY_GOLD_1c18c376-4157-4573-81b1-ae7c68e6f66b.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/petal-grande",
+              "url": "shopify:\/\/collections\/new-pieces",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Petal Grande",
+              "button_text": "NEW PIECES",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3139,7 +3139,7 @@
           "1561525847466": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_5998_a7b8d841-82db-4036-afef-1aa2093c9a6e.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6513.jpg",
               "info_state": true,
               "url": "https:\/\/a-esque.com\/collections\/the-bar-bag",
               "product_id": "",
@@ -3579,14 +3579,14 @@
     "content_for_index": [
       "1567669206372",
       "1557727120924",
-      "1561525837093",
       "1557728384665",
-      "1557727700512",
+      "1561525837093",
       "1560905911373",
+      "1557727700512",
       "1557725870824",
-      "1560905503534",
       "1557809992385",
       "1557803779631",
+      "1560905503534",
       "1557727603087",
       "1504161678752",
       "1532477260206",
