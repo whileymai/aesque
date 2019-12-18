@@ -2448,7 +2448,7 @@
           "width": "boxed",
           "margin": "custom",
           "margin-custom": "5",
-          "padding": "none",
+          "padding": "demo2",
           "padding-custom": "",
           "bullets_enable": false,
           "arrows_enable": false
@@ -2609,7 +2609,7 @@
           "width": "boxed",
           "margin": "custom",
           "margin-custom": "5",
-          "padding": "none",
+          "padding": "demo2",
           "padding-custom": "12px",
           "bullets_enable": true,
           "arrows_enable": true
@@ -3102,7 +3102,7 @@
           "1560906002442": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CARRY_ALL_HANDLER_DAY_GOLD_1c18c376-4157-4573-81b1-ae7c68e6f66b.jpg",
+              "image": "shopify:\/\/shop_images\/traingle_m_terracotta.jpg",
               "info_state": true,
               "url": "shopify:\/\/collections\/new-pieces",
               "product_id": "",
@@ -3164,7 +3164,7 @@
           "width": "boxed",
           "margin": "custom",
           "margin-custom": "5px auto",
-          "padding": "none",
+          "padding": "demo2",
           "padding-custom": "10px",
           "bullets_enable": true,
           "arrows_enable": true
