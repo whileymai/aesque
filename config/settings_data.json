@@ -3060,17 +3060,16 @@
       },
       "1560905503534": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1560905520112": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_5944.JPG",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP_0829982d-3ec2-4c9c-b74d-69b10cf51e81.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/triangles",
+              "url": "",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "THE TRIANGLE'S",
+              "button_text": "NEW COMING SOON",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3090,8 +3089,8 @@
           "width": "boxed",
           "margin": "custom",
           "margin-custom": "5",
-          "padding": "none",
-          "padding-custom": "12px",
+          "padding": "demo2",
+          "padding-custom": "10",
           "bullets_enable": true,
           "arrows_enable": true
         }
@@ -3536,48 +3535,10 @@
           "padding": "custom",
           "padding-custom": "10px"
         }
-      },
-      "1567669206372": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1567669225156": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Cloud_Terracotta_ELEPHANT.jpg",
-              "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/white-story",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "Discover December Lookbook",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1567669225156"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "none",
-          "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
-        }
       }
     },
     "content_for_index": [
-      "1567669206372",
+      "1560905503534",
       "1557727120924",
       "1557728384665",
       "1561525837093",
@@ -3586,7 +3547,6 @@
       "1557725870824",
       "1557809992385",
       "1557803779631",
-      "1560905503534",
       "1557727603087",
       "1504161678752",
       "1532477260206",
