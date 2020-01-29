@@ -2419,6 +2419,7 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
@@ -3058,43 +3059,6 @@
           "padding-custom": "10PX"
         }
       },
-      "1560905503534": {
-        "type": "scroll-slider",
-        "blocks": {
-          "1560905520112": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP_0829982d-3ec2-4c9c-b74d-69b10cf51e81.jpg",
-              "info_state": true,
-              "url": "",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "NEW COMING SOON",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1560905520112"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "demo2",
-          "padding-custom": "10",
-          "bullets_enable": true,
-          "arrows_enable": true
-        }
-      },
       "1560905911373": {
         "type": "scroll-slider",
         "blocks": {
@@ -3140,7 +3104,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_6513.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/the-bar-bag",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
               "product_id": "",
               "button_icon": "icon-shop24",
               "button_text": "the bar bag",
@@ -3535,10 +3499,63 @@
           "padding": "custom",
           "padding-custom": "10px"
         }
+      },
+      "1580279992199": {
+        "type": "home-banners",
+        "blocks": {
+          "1580280006071": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP2_b9752cd7-a606-4b6c-858a-b7e289905096.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1580280025101": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_1ac44cc9-fd3c-4303-b054-459f1d3df8f6.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1580280006071",
+          "1580280025101"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "2",
+          "margin": "none",
+          "margin-custom": "10px auto",
+          "padding": "custom",
+          "padding-custom": "12px"
+        }
       }
     },
     "content_for_index": [
-      "1560905503534",
+      "1580279992199",
       "1557727120924",
       "1557728384665",
       "1561525837093",
