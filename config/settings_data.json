@@ -3,7 +3,7 @@
     "layout_rtl": false,
     "layout_smooth_scroll": true,
     "layout_preloader": false,
-    "layout-show_breadcrumbs": true,
+    "layout-show_breadcrumbs": false,
     "layout-container_default": "boxed",
     "layout-container_default_reverse": "our-story | contacts",
     "layout-container_collection": "sidebar_left",
@@ -690,66 +690,6 @@
       },
       "page-gallery": {
         "type": "page-gallery",
-        "blocks": {
-          "1511790936092": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "",
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_23c2e618-2c62-4ab3-8c93-dbf3464126f4.jpg",
-              "image-hover-animation": "right",
-              "caption": "",
-              "text": "",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1580284550571": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "",
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_9ce6cae4-8316-4815-be5e-c1188373c67e.jpg",
-              "image-hover-animation": "right",
-              "caption": "",
-              "text": "",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1580284555794": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "",
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_8857ba4f-4a4a-42a4-a828-734c61ddef75.jpg",
-              "image-hover-animation": "right",
-              "caption": "",
-              "text": "",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1580284628683": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "",
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_878faf45-e22b-4711-9189-aa4ce06bcf77.jpg",
-              "image-hover-animation": "right",
-              "caption": "",
-              "text": "",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1511790936092",
-          "1580284550571",
-          "1580284555794",
-          "1580284628683"
-        ],
         "settings": {
           "masonry": false,
           "images-per-row": "3"
