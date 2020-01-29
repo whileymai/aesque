@@ -694,128 +694,50 @@
           "1511790936092": {
             "type": "gallery-image",
             "settings": {
-              "url": "shopify:\/\/products\/apple-iwatch",
-              "image": "",
+              "url": "",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_23c2e618-2c62-4ab3-8c93-dbf3464126f4.jpg",
               "image-hover-animation": "right",
-              "caption": "Apple iWatch",
-              "text": "Watches, Trackers",
+              "caption": "",
+              "text": "",
               "color_caption_c": "",
               "color_text_c": "",
               "color_h_bg": ""
             }
           },
-          "1511791191865": {
+          "1580284550571": {
             "type": "gallery-image",
             "settings": {
-              "url": "#",
-              "image": "",
+              "url": "",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_9ce6cae4-8316-4815-be5e-c1188373c67e.jpg",
               "image-hover-animation": "right",
-              "caption": "Meizu Tracker",
-              "text": "Watches, Trackers",
+              "caption": "",
+              "text": "",
               "color_caption_c": "",
               "color_text_c": "",
               "color_h_bg": ""
             }
           },
-          "1511791215684": {
+          "1580284555794": {
             "type": "gallery-image",
             "settings": {
-              "url": "#",
-              "image": "",
+              "url": "",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_8857ba4f-4a4a-42a4-a828-734c61ddef75.jpg",
               "image-hover-animation": "right",
-              "caption": "Power banks",
-              "text": "Watches, Trackers, Power",
+              "caption": "",
+              "text": "",
               "color_caption_c": "",
               "color_text_c": "",
               "color_h_bg": ""
             }
           },
-          "1511791230211": {
+          "1580284628683": {
             "type": "gallery-image",
             "settings": {
-              "url": "#",
-              "image": "",
+              "url": "",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_878faf45-e22b-4711-9189-aa4ce06bcf77.jpg",
               "image-hover-animation": "right",
-              "caption": "Headphone",
-              "text": "Watches, Trackers, Audio",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791243059": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791257773": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791269946": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791282322": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791295412": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
-              "color_caption_c": "",
-              "color_text_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1511791306454": {
-            "type": "gallery-image",
-            "settings": {
-              "url": "#",
-              "image": "",
-              "image-hover-animation": "right",
-              "caption": "Duis Aute Irure Dolor",
-              "text": "Watches, Trackers",
+              "caption": "",
+              "text": "",
               "color_caption_c": "",
               "color_text_c": "",
               "color_h_bg": ""
@@ -824,19 +746,13 @@
         },
         "block_order": [
           "1511790936092",
-          "1511791191865",
-          "1511791215684",
-          "1511791230211",
-          "1511791243059",
-          "1511791257773",
-          "1511791269946",
-          "1511791282322",
-          "1511791295412",
-          "1511791306454"
+          "1580284550571",
+          "1580284555794",
+          "1580284628683"
         ],
         "settings": {
-          "masonry": true,
-          "images-per-row": "4"
+          "masonry": false,
+          "images-per-row": "3"
         }
       },
       "blog-posts": {
@@ -2382,6 +2298,7 @@
       },
       "1557725870824": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557726071236": {
             "type": "slide",
@@ -2469,6 +2386,7 @@
       },
       "1557727700512": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557728037320": {
             "type": "slide",
@@ -3061,6 +2979,7 @@
       },
       "1560905911373": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1560906002442": {
             "type": "slide",
@@ -3098,6 +3017,7 @@
       },
       "1561525837093": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1561525847466": {
             "type": "slide",
@@ -3506,37 +3426,37 @@
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP2_b9752cd7-a606-4b6c-858a-b7e289905096.jpg",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP_high_res.jpg",
+              "image-hover-animation": "scale",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
+              "text1": "bar bag evolution",
+              "text1-position": "bottom right",
+              "text2": "01 FEB – 25 MARCH LIVE NOW",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#000000"
             }
           },
           "1580280025101": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_1ac44cc9-fd3c-4303-b054-459f1d3df8f6.jpg",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_3e183a57-502e-4af6-9c9c-102b44ec248a.jpg",
               "image-hover-animation": "right",
               "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
+              "text1": "SHELL & ORB LAUNCH",
+              "text1-position": "bottom right",
+              "text2": "RELEASING 15 FEB",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#000000"
             }
           }
         },
