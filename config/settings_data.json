@@ -2191,6 +2191,7 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
@@ -2278,11 +2279,12 @@
       },
       "1557728384665": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_White_Quote.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_White_Quote_31145efd-1393-41dd-b58d-6eb6863b1dec.jpg",
               "info_state": false,
               "url": "shopify:\/\/pages\/our-story",
               "product_id": "",
@@ -3277,7 +3279,6 @@
       },
       "1580279992199": {
         "type": "home-banners",
-        "disabled": true,
         "blocks": {
           "1580280006071": {
             "type": "banner",
@@ -3285,9 +3286,9 @@
               "image": "shopify:\/\/shop_images\/JAN_2020_HP_high_res.jpg",
               "image-hover-animation": "scale",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "bar bag evolution",
+              "text1": "",
               "text1-position": "bottom right",
-              "text2": "01 FEB – 25 MARCH LIVE NOW",
+              "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
               "color_title_c": "#ffffff",
@@ -3300,13 +3301,13 @@
           "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "Title 1",
+              "image": "shopify:\/\/shop_images\/LIVE_EVENTS2_3432ea37-0fd7-4e1c-8b65-ed043f12a787.jpg",
+              "image-hover-animation": "",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
+              "text1": "",
               "text1-position": "top left",
-              "text2": "28",
-              "text2-p2": "products",
+              "text2": "",
+              "text2-p2": "",
               "text2-position": "v-center h-center",
               "color_title_c": "",
               "color_title_h_c": "",
@@ -3331,9 +3332,9 @@
       }
     },
     "content_for_index": [
+      "1580279992199",
       "1557727120924",
       "1557728384665",
-      "1580279992199",
       "1561525837093",
       "1560905911373",
       "1557727700512",
