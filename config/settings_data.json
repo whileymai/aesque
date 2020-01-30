@@ -600,91 +600,6 @@
       },
       "collection-sidebar": {
         "type": "collection-sidebar",
-        "blocks": {
-          "1525858981235": {
-            "type": "tag",
-            "settings": {
-              "caption": "Style",
-              "list": "Belt Bag, Clutch, Crossbody Bag, Shoulder Bag, Wallet, Bag Strap",
-              "only_single_item": false
-            }
-          },
-          "1511777927767": {
-            "type": "color",
-            "settings": {
-              "caption": "Leather Colour",
-              "only_single_item": false
-            }
-          },
-          "1511777960336": {
-            "type": "color_item",
-            "settings": {
-              "name": "Navy",
-              "picker_bg": "#ffffff",
-              "picker_bd": "#e0e0e0",
-              "picker_arrow": "#2d2d2d",
-              "image": ""
-            }
-          },
-          "1511777932583": {
-            "type": "color_item",
-            "settings": {
-              "name": "Black",
-              "picker_bg": "#ffffff",
-              "picker_bd": "#e0e0e0",
-              "picker_arrow": "#2d2d2d",
-              "image": ""
-            }
-          },
-          "1528100017051": {
-            "type": "color_item",
-            "settings": {
-              "name": "Colour Mix",
-              "picker_bg": "",
-              "picker_bd": "",
-              "picker_arrow": "",
-              "image": ""
-            }
-          },
-          "1525839835842": {
-            "type": "color_item",
-            "settings": {
-              "name": "Metallic",
-              "picker_bg": "#ffffff",
-              "picker_bd": "#e0e0e0",
-              "picker_arrow": "#2d2d2d",
-              "image": ""
-            }
-          },
-          "1526278388966": {
-            "type": "color_item",
-            "settings": {
-              "name": "Neutral",
-              "picker_bg": "#ffffff",
-              "picker_bd": "#e0e0e0",
-              "picker_arrow": "#2d2d2d",
-              "image": ""
-            }
-          },
-          "1526277322351": {
-            "type": "tag",
-            "settings": {
-              "caption": "Size",
-              "list": "Small, Medium, Large",
-              "only_single_item": false
-            }
-          }
-        },
-        "block_order": [
-          "1525858981235",
-          "1511777927767",
-          "1511777960336",
-          "1511777932583",
-          "1528100017051",
-          "1525839835842",
-          "1526278388966",
-          "1526277322351"
-        ],
         "settings": {
         }
       },
@@ -2276,21 +2191,20 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CARRY_ALL_BAG.jpg",
+              "image": "shopify:\/\/shop_images\/JAN_2020_HP_high_res_20fa19f9-855c-4f11-b13f-0dd69c13d820.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/current-collection",
+              "url": "shopify:\/\/collections\/bar-bags",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Current collection",
-              "text_01": "",
+              "button_text": "BAR BAG EVOLUTION",
+              "text_01": "01 FEB - 25 MARCH 2020 LIVE NOW",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "#ffffff",
+              "color_text_01_c": "#000000",
               "color_text_02_c": "",
               "color_text_03_c": "",
               "color_btn_style": "1",
@@ -2439,6 +2353,7 @@
       },
       "1557809992385": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557809997719": {
             "type": "slide",
@@ -3362,6 +3277,7 @@
       },
       "1580279992199": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1580280006071": {
             "type": "banner",
@@ -3381,28 +3297,28 @@
               "color_h_bg": "#000000"
             }
           },
-          "1580280025101": {
+          "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP4_copy_3e183a57-502e-4af6-9c9c-102b44ec248a.jpg",
+              "image": "",
               "image-hover-animation": "right",
               "url": "",
-              "text1": "SHELL & ORB LAUNCH",
-              "text1-position": "bottom right",
-              "text2": "RELEASING 15 FEB",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
+              "text1": "Title 1",
+              "text1-position": "top left",
+              "text2": "28",
+              "text2-p2": "products",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
             }
           }
         },
         "block_order": [
           "1580280006071",
-          "1580280025101"
+          "1580340709198"
         ],
         "settings": {
           "width": "boxed",
@@ -3415,9 +3331,9 @@
       }
     },
     "content_for_index": [
-      "1580279992199",
       "1557727120924",
       "1557728384665",
+      "1580279992199",
       "1561525837093",
       "1560905911373",
       "1557727700512",
