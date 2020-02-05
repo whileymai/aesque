@@ -3283,7 +3283,7 @@
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP_high_res.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_6721_crop_5b619a54-01f9-4679-a6ab-10a725106cde.jpg",
               "image-hover-animation": "scale",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags",
               "text1": "",
@@ -3301,9 +3301,27 @@
           "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LIVE_EVENTS2_e8aebab8-2537-4c7a-b259-da865bba24df.jpg",
+              "image": "shopify:\/\/shop_images\/LIVE_EVENTS2_c2d2a8ee-97cf-427c-ab27-dca3c3e709e4.jpg",
               "image-hover-animation": "",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1580884647593": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Shell_Brown_copy_F.jpg",
+              "image-hover-animation": "scale",
+              "url": "https:\/\/a-esque.com\/collections\/shell-orb-introduction",
               "text1": "",
               "text1-position": "top left",
               "text2": "",
@@ -3318,12 +3336,13 @@
           }
         },
         "block_order": [
+          "1580884647593",
           "1580280006071",
           "1580340709198"
         ],
         "settings": {
           "width": "boxed",
-          "inrow": "2",
+          "inrow": "3",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "custom",
