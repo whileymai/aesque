@@ -2286,7 +2286,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Atelier_White_Quote_31145efd-1393-41dd-b58d-6eb6863b1dec.jpg",
               "info_state": false,
-              "url": "shopify:\/\/pages\/our-story",
+              "url": "shopify:\/\/pages\/brand-notes",
               "product_id": "",
               "button_icon": "icon-shop24",
               "button_text": "our story",
@@ -3280,6 +3280,24 @@
       "1580279992199": {
         "type": "home-banners",
         "blocks": {
+          "1580884647593": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Shell_Brown_copy_F.jpg",
+              "image-hover-animation": "scale",
+              "url": "https:\/\/a-esque.com\/collections\/shell-orb-introduction",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
           "1580280006071": {
             "type": "banner",
             "settings": {
@@ -3301,27 +3319,9 @@
           "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LIVE_EVENTS2_c2d2a8ee-97cf-427c-ab27-dca3c3e709e4.jpg",
+              "image": "shopify:\/\/shop_images\/Quote_Square_Banner.jpg",
               "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1580884647593": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Shell_Brown_copy_F.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/shell-orb-introduction",
+              "url": "https:\/\/a-esque.com\/pages\/brand-notes",
               "text1": "",
               "text1-position": "top left",
               "text2": "",
