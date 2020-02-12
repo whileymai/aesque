@@ -1719,12 +1719,12 @@
       "buy-with-LE473WS": {
         "type": "buy-with-LE473WS",
         "settings": {
-          "enable_buy_with": true,
+          "enable_buy_with": false,
           "featured-text": "Match with",
           "sku-id": "000000",
-          "prd-top-left": "space-box-hip-bag-white-leather-cross-body-bag",
+          "prd-top-left": "",
           "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-black-leather",
+          "prd-bottom-left": "",
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
