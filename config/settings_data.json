@@ -1053,7 +1053,7 @@
         "type": "home-products-slider",
         "disabled": true,
         "settings": {
-          "collection": "all-handbags",
+          "collection": "",
           "header_title_1": "Featured Products",
           "limit": "16",
           "arrows": true,
@@ -2191,18 +2191,17 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/JAN_2020_HP_high_res_20fa19f9-855c-4f11-b13f-0dd69c13d820.jpg",
+              "image": "shopify:\/\/shop_images\/Place-Embedded-Smart-Object_62c9d457-2ddd-4fa3-ba5b-45a8f3ad2dec.gif",
               "info_state": true,
-              "url": "shopify:\/\/collections\/bar-bags",
+              "url": "shopify:\/\/collections\/new",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "BAR BAG EVOLUTION",
-              "text_01": "01 FEB - 25 MARCH 2020 LIVE NOW",
+              "button_text": "28.02.2020",
+              "text_01": "",
               "text_02": "",
               "text_03": "",
               "color_text_01_c": "#000000",
@@ -3279,11 +3278,12 @@
       },
       "1580279992199": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1580884647593": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Shell_Brown_copy_F.jpg",
+              "image": "shopify:\/\/shop_images\/Place-Embedded-Smart-Object.gif",
               "image-hover-animation": "scale",
               "url": "https:\/\/a-esque.com\/collections\/collection",
               "text1": "",
@@ -3351,8 +3351,8 @@
       }
     },
     "content_for_index": [
-      "1580279992199",
       "1557727120924",
+      "1580279992199",
       "1557728384665",
       "1561525837093",
       "1560905911373",
