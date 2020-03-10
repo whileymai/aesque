@@ -2200,7 +2200,7 @@
               "url": "shopify:\/\/collections\/new",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "05.03.2020",
+              "button_text": "10.03.2020",
               "text_01": "",
               "text_02": "",
               "text_03": "",
@@ -3283,29 +3283,29 @@
           "1580884647593": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Place-Embedded-Smart-Object.gif",
+              "image": "shopify:\/\/shop_images\/270220_-619.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/collection",
-              "text1": "",
-              "text1-position": "top left",
+              "url": "",
+              "text1": "NEW",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "color_h_bg": "#ffffff"
             }
           },
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_6721_crop_5b619a54-01f9-4679-a6ab-10a725106cde.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_1602.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "",
-              "text1-position": "bottom right",
+              "url": "",
+              "text1": "CARRY ALL DAY DELUXE",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
@@ -3313,39 +3313,96 @@
               "color_title_h_c": "#ffffff",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Quote_Square_Banner_5453b339-22c3-436a-8ff4-67b67bfbaa80.jpg",
+              "image": "shopify:\/\/shop_images\/Hobo_One_Piece_NUDE_copy2.jpg",
               "image-hover-animation": "",
               "url": "https:\/\/a-esque.com\/pages\/brand-notes",
-              "text1": "",
-              "text1-position": "top left",
+              "text1": "HOBO ONE PIECE",
+              "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
+            }
+          },
+          "1583799833567": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/270220_-642.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "BASKET",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1583799844802": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/270220_-625.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "DAY BAG",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1583799857065": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/270220_-407.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "BAR BAG",
+              "text1-position": "bottom h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": "#ffffff"
             }
           }
         },
         "block_order": [
           "1580884647593",
           "1580280006071",
-          "1580340709198"
+          "1580340709198",
+          "1583799833567",
+          "1583799844802",
+          "1583799857065"
         ],
         "settings": {
           "width": "boxed",
           "inrow": "3",
-          "margin": "none",
-          "margin-custom": "10px auto",
-          "padding": "custom",
+          "margin": "custom",
+          "margin-custom": "50px auto 50px",
+          "padding": "none",
           "padding-custom": "12px"
         }
       }
