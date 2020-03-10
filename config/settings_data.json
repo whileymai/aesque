@@ -2191,6 +2191,7 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
@@ -3278,14 +3279,13 @@
       },
       "1580279992199": {
         "type": "home-banners",
-        "disabled": true,
         "blocks": {
           "1580884647593": {
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/270220_-619.jpg",
               "image-hover-animation": "scale",
-              "url": "",
+              "url": "shopify:\/\/collections\/new",
               "text1": "NEW",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -3295,7 +3295,7 @@
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1580280006071": {
@@ -3303,8 +3303,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_1602.jpg",
               "image-hover-animation": "scale",
-              "url": "",
-              "text1": "CARRY ALL DAY DELUXE",
+              "url": "https:\/\/a-esque.com\/collections\/shoulder-bag-1",
+              "text1": "DAY BAG",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3313,7 +3313,7 @@
               "color_title_h_c": "#ffffff",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1580340709198": {
@@ -3321,7 +3321,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Hobo_One_Piece_NUDE_copy2.jpg",
               "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/pages\/brand-notes",
+              "url": "https:\/\/a-esque.com\/collections\/shoulder-bag-1\/products\/hobo-one-piece-br-nude?variant=31580429385789",
               "text1": "HOBO ONE PIECE",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -3339,7 +3339,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/270220_-642.jpg",
               "image-hover-animation": "right",
-              "url": "",
+              "url": "https:\/\/a-esque.com\/collections\/new\/products\/basket-02-br-play?variant=31580434858045",
               "text1": "BASKET",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -3349,7 +3349,7 @@
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1583799844802": {
@@ -3357,8 +3357,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/270220_-625.jpg",
               "image-hover-animation": "right",
-              "url": "",
-              "text1": "DAY BAG",
+              "url": "https:\/\/a-esque.com\/collections\/new\/products\/carry-all-deluxe-day-br-elephant?variant=31580426240061",
+              "text1": "CARRY ALL DAY DELUXE",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
@@ -3367,7 +3367,7 @@
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1583799857065": {
@@ -3375,7 +3375,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/270220_-407.jpg",
               "image-hover-animation": "right",
-              "url": "",
+              "url": "https:\/\/a-esque.com\/collections\/bar-bags?nopreview",
               "text1": "BAR BAG",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -3385,7 +3385,7 @@
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           }
         },
