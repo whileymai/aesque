@@ -3287,47 +3287,47 @@
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/new",
               "text1": "NEW",
-              "text1-position": "bottom h-center",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1602.jpg",
+              "image": "shopify:\/\/shop_images\/3_95caa9f2-ef0f-42b1-bc9e-65470efa524b.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/shoulder-bag-1",
-              "text1": "DAY BAG",
-              "text1-position": "bottom h-center",
+              "url": "shopify:\/\/collections\/shell",
+              "text1": "SHELL TOTE",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "#ffffff",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1580340709198": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Hobo_One_Piece_NUDE_copy2.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/shoulder-bag-1\/products\/hobo-one-piece-br-nude?variant=31580429385789",
-              "text1": "HOBO ONE PIECE",
-              "text1-position": "bottom h-center",
+              "image": "shopify:\/\/shop_images\/5_7fe3862b-da6d-4a70-9078-7b4a5711d102.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/orb",
+              "text1": "ORB TOTE",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -3337,55 +3337,55 @@
           "1583799833567": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/270220_-642.jpg",
-              "image-hover-animation": "right",
+              "image": "shopify:\/\/shop_images\/270220_-642_8010d877-fb53-4fa5-b56a-5cccf225984e.jpg",
+              "image-hover-animation": "scale",
               "url": "https:\/\/a-esque.com\/collections\/new\/products\/basket-02-br-play?variant=31580434858045",
               "text1": "BASKET",
               "text1-position": "bottom h-center",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "rgba(0,0,0,0)"
             }
           },
           "1583799844802": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/270220_-625.jpg",
+              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_elephant_copy_f21e95a0-c45a-42ed-a6c5-6cdd51bfe8dd.jpg",
               "image-hover-animation": "right",
               "url": "https:\/\/a-esque.com\/collections\/new\/products\/carry-all-deluxe-day-br-elephant?variant=31580426240061",
               "text1": "CARRY ALL DAY DELUXE",
-              "text1-position": "bottom h-center",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "#ffffff"
             }
           },
           "1583799857065": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/270220_-407.jpg",
+              "image": "shopify:\/\/shop_images\/270220_-407_3f51f046-901c-46f6-b236-d103ccfaa7d7.jpg",
               "image-hover-animation": "right",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags?nopreview",
               "text1": "BAR BAG",
-              "text1-position": "bottom h-center",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
+              "color_h_bg": "rgba(0,0,0,0)"
             }
           }
         },
