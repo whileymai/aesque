@@ -2191,6 +2191,7 @@
       },
       "1557727120924": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557727135457": {
             "type": "slide",
@@ -3278,96 +3279,41 @@
       },
       "1580279992199": {
         "type": "home-banners",
-        "disabled": true,
         "blocks": {
           "1580884647593": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/270220_-619.jpg",
+              "image": "shopify:\/\/shop_images\/Petal_Pack_White_wash_wearing_0fe9b903-64ca-4b4f-a506-1fd5bd88dbe5.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/new",
-              "text1": "10.03.2020",
-              "text1-position": "v-center right",
+              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
+              "text1": "",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center right",
+              "text2-position": "bottom right",
               "color_title_c": "#000000",
-              "color_title_h_c": "",
+              "color_title_h_c": "#ffffff",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1583799857065": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/270220_-407_3f51f046-901c-46f6-b236-d103ccfaa7d7.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags?nopreview",
-              "text1": "BAR BAG",
-              "text1-position": "v-center left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "rgba(0,0,0,0)"
-            }
-          },
-          "1583799844802": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_elephant_copy_7d2be690-a60e-4586-aa61-28287c1dd65f.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/new\/products\/carry-all-deluxe-day-br-elephant?variant=31580426240061",
-              "text1": "SHOULDER BAG",
-              "text1-position": "v-center right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1583799833567": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Basket_02_grey_wine_mix_copy22_b106684c-c501-4d06-a003-b1d164ef0fb7.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/familiar",
-              "text1": "FAMILIAR PATTERNS",
-              "text1-position": "v-center right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "rgba(0,0,0,0)"
+              "color_h_bg": "#000000"
             }
           },
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/3_95caa9f2-ef0f-42b1-bc9e-65470efa524b.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4609_ff53cc6e-ce6a-40e7-96dd-1708b19226fe.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/shell-orb-introduction",
-              "text1": "SIMPLE TOTE",
-              "text1-position": "v-center right",
+              "url": "",
+              "text1": "PETAL PACK",
+              "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
-              "text2-position": "v-center right",
+              "text2-position": "bottom right",
               "color_title_c": "#000000",
               "color_title_h_c": "#ffffff",
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
+              "color_h_bg": "#000000"
             }
           },
           "1580340709198": {
@@ -3391,9 +3337,6 @@
         },
         "block_order": [
           "1580884647593",
-          "1583799857065",
-          "1583799844802",
-          "1583799833567",
           "1580280006071",
           "1580340709198"
         ],
@@ -3405,11 +3348,157 @@
           "padding": "custom",
           "padding-custom": "12px"
         }
+      },
+      "1585106722950": {
+        "type": "home-banners",
+        "blocks": {
+          "1585106817158": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Hobo_One_Piece_PLAY_ea86f632-bbce-4b4d-b525-7f44115eb877.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/hobo-one-piece-br-play",
+              "text1": "Hobo One Piece",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585106833950": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bar_bag_mellow_lamb4_3cdb7d45-a1be-4ca6-85e3-fe8390032ee1.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/bar-bag-mellow-br-lamb",
+              "text1": "Bar BAG MELLOW",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585106849206": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_elephant_4d5922df-a225-45a7-ae7f-8e34422eb7a2.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/carry-all-deluxe-day-br-elephant",
+              "text1": "CARRY ALL DAY DELUXE",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1585106817158",
+          "1585106833950",
+          "1585106849206"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "50px auto 50px",
+          "padding": "demo2",
+          "padding-custom": "12px"
+        }
+      },
+      "1585106864597": {
+        "type": "home-banners",
+        "blocks": {
+          "1585106879651": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Pleat_Clutch_khaki_dab04044-f53c-4efe-a5c3-b86830860fd3.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/pleat-clutch-br-khaki",
+              "text1": "Pleat Clutch",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585106894526": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carry_all_bag_play_2_96f65e84-11af-4e30-97c8-b54db4dc820a.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/carry-all-bag-br",
+              "text1": "Carry All Bag Play",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585106998326": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Square_wine2_4ba3c377-4701-4e66-a673-c2a270870648.jpg",
+              "image-hover-animation": "scale",
+              "url": "https:\/\/a-esque.com\/products\/bar-bag-square-br-wine",
+              "text1": "Bar Bag Sqaure",
+              "text1-position": "top h-center",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "top h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1585106879651",
+          "1585106894526",
+          "1585106998326"
+        ],
+        "settings": {
+          "width": "boxed",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "50px auto 50px",
+          "padding": "demo2",
+          "padding-custom": "12px"
+        }
       }
     },
     "content_for_index": [
       "1557727120924",
       "1580279992199",
+      "1585106722950",
+      "1585106864597",
       "1557728384665",
       "1561525837093",
       "1560905911373",
