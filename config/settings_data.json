@@ -2189,44 +2189,6 @@
           "arrows_enable": false
         }
       },
-      "1557727120924": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1557727135457": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/main_444e8855-e106-42cc-8306-387536c4df53.gif",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/new",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "20.03.2020",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1557727135457"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "demo2",
-          "padding-custom": "",
-          "bullets_enable": false,
-          "arrows_enable": false
-        }
-      },
       "1557727603087": {
         "type": "scroll-slider",
         "settings": {
@@ -3303,7 +3265,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4609_ff53cc6e-ce6a-40e7-96dd-1708b19226fe.jpg",
               "image-hover-animation": "scale",
-              "url": "",
+              "url": "shopify:\/\/collections\/petal-pack",
               "text1": "PETAL PACK",
               "text1-position": "bottom right",
               "text2": "",
@@ -3495,7 +3457,6 @@
       }
     },
     "content_for_index": [
-      "1557727120924",
       "1580279992199",
       "1585106722950",
       "1585106864597",
