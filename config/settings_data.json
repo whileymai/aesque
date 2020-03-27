@@ -102,7 +102,7 @@
     "mailchimp_form_action": "https:\/\/a-esque.us6.list-manage.com\/subscribe\/post?u=d936399c61&amp;id=f25f18da25",
     "newsletter_show_popup": false,
     "newsletter_show_once": "true",
-    "newsletter_delay": "10",
+    "newsletter_delay": "5",
     "newsletter_cookies_life": "3",
     "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<span>Subscribe<\/span>\n<\/div><div class=\"tt-newsletter-popup__text-02\"><p>BECOME AN A-ESQUE COLLECTOR<\/p><\/div><p>By signing up, you accept the terms & Privacy Policy.<\/p>",
     "newsletter-show_socials": false,
@@ -3410,7 +3410,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4609_a00a75f4-357c-474f-bf5b-7674a3d6cbd2.jpg",
               "image-hover-animation": "scale",
-              "url": "",
+              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
               "text1": "PETAL PACK",
               "text1-position": "bottom right",
               "text2": "",
