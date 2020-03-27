@@ -2191,6 +2191,7 @@
       },
       "1557727603087": {
         "type": "scroll-slider",
+        "disabled": true,
         "settings": {
           "width": "boxed",
           "margin": "none",
@@ -3283,7 +3284,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_elephant_254b2586-5a81-4d0d-aff4-d671e3f957d4.jpg",
               "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/carry-all-deluxe",
+              "url": "https:\/\/a-esque.com\/collections\/statement-day-bags",
               "text1": "STATEMENT DAY BAGS",
               "text1-position": "top h-center",
               "text2": "",
@@ -3303,7 +3304,7 @@
           "1580340709198"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "inrow": "3",
           "margin": "custom",
           "margin-custom": "50px auto 50px",
@@ -3375,19 +3376,93 @@
           "1585106849206"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "inrow": "3",
           "margin": "custom",
           "margin-custom": "50px auto 50px",
-          "padding": "demo2",
+          "padding": "custom",
+          "padding-custom": "12px"
+        }
+      },
+      "1585269473414": {
+        "type": "home-banners",
+        "blocks": {
+          "1585269484128": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Petal_Pack_White_wash_wearing_926d3efa-83fc-49d8-a385-7575408955da.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
+              "text1": "",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585269526822": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4609_a00a75f4-357c-474f-bf5b-7674a3d6cbd2.jpg",
+              "image-hover-animation": "scale",
+              "url": "",
+              "text1": "PETAL PACK",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585269564692": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1585269484128",
+          "1585269526822",
+          "1585269564692"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "inrow": "3",
+          "margin": "custom",
+          "margin-custom": "50px auto 50px",
+          "padding": "custom",
           "padding-custom": "12px"
         }
       }
     },
     "content_for_index": [
+      "1585269473414",
       "1580279992199",
       "1585106722950",
       "1557728384665",
+      "1535679088113",
       "1561525837093",
       "1560905911373",
       "1557727700512",
@@ -3398,7 +3473,6 @@
       "1504161678752",
       "1532477260206",
       "1554092003794",
-      "1535679088113",
       "1535500016318",
       "1535679348539",
       "1535667541393",
