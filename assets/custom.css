@@ -799,3 +799,9 @@ textarea.form-control,select.form-control {
         width: 30% !important;
     }
 }
+
+@media only screen and (min-width: 1025px) {
+    .tt-header__tape {
+        margin: 0 auto;
+    }
+}

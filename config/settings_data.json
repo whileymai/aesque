@@ -160,8 +160,8 @@
     "color_header_counter_bg": "#fffffa",
     "color_header_counter_c": "#2d2d2d",
     "color_header_search_c": "#2d2d2d",
-    "color_header_tape_bg": "#f5f5f5",
-    "color_header_tape_text_c": "#2d2d2d",
+    "color_header_tape_bg": "#000000",
+    "color_header_tape_text_c": "#ffffff",
     "color_header_tape_icon_c": "",
     "color_header_social_type": "1",
     "color_header_stk_btn_search_c": "",
@@ -444,6 +444,31 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "1585534900313": {
+            "type": "top_line",
+            "settings": {
+              "top-line-icon": "",
+              "top-line-text": "Complimentary Delivery",
+              "top-line-icon-phone": "",
+              "top-line-text-phone": "Pay with Afterpay",
+              "top-line-icon-hours": "",
+              "top-line-text-hours": "Made in Melbourne",
+              "top-line-social": false,
+              "show_facebook": true,
+              "show_google": true,
+              "show_twitter": true,
+              "show_instagram": true,
+              "show_youtube": true,
+              "show_pinterest": true,
+              "show_skype": false,
+              "show_behance": true
+            }
+          }
+        },
+        "block_order": [
+          "1585534900313"
+        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
           "logo_max_width": 150,
@@ -452,8 +477,8 @@
           "type": "5",
           "sticky": false,
           "sticky_effect": "1",
-          "account_icon": false,
-          "login_form": false
+          "account_icon": true,
+          "login_form": true
         }
       },
       "footer": {
