@@ -1,5 +1,4 @@
-{%- comment -%}
-{%- if template contains 'product'or template == 'cart' or template == 'index' or template =="collection" -%}
+{%- if template == 'product' or template == 'cart' or template == 'index' or template contains "collection" -%}
 <div class="tt-header__tape row">
   {%- if section.blocks[0].settings.top-line-text != blank -%}
     <div class="col-lg-4 tt-header__tape-text text-center">
@@ -21,5 +20,4 @@
   {%- endif -%}
 	</div>
 {%- endif -%}
-{%- endcomment -%}
 
