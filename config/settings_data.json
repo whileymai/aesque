@@ -6,7 +6,7 @@
     "layout-show_breadcrumbs": false,
     "layout-container_default": "boxed",
     "layout-container_default_reverse": "our-story | contacts",
-    "layout-container_collection": "sidebar_left",
+    "layout-container_collection": "boxed",
     "layout-container_blog": "boxed",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "layout_optimize_css": false,
