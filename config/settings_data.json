@@ -2086,7 +2086,7 @@
       "buy-with-LE472K": {
         "type": "buy-with-LE472K",
         "settings": {
-          "enable_buy_with": true,
+          "enable_buy_with": false,
           "featured-text": "Match With",
           "prd-top-left": "barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
           "prd-top-right": "emerald-lip-nappa-leather-purse",
@@ -2108,9 +2108,9 @@
       "buy-with-LE472N": {
         "type": "buy-with-LE472N",
         "settings": {
-          "enable_buy_with": true,
+          "enable_buy_with": false,
           "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-concrete-leather-bag",
+          "prd-top-left": "",
           "prd-top-right": "sandy-lip-nappa-leather-card-case",
           "prd-bottom-left": "card-case-powdered-nappa-leather",
           "prd-bottom-right": "purists-wallet-50-navy-leather"
