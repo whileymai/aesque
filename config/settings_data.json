@@ -1822,7 +1822,7 @@
       "buy-with-LE471CM": {
         "type": "buy-with-LE471CM",
         "settings": {
-          "enable_buy_with": true,
+          "enable_buy_with": false,
           "featured-text": "Match With",
           "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
           "prd-top-right": "purists-wallet-burgundy-leather",
