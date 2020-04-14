@@ -3267,14 +3267,15 @@
       },
       "1580279992199": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1580884647593": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_bag_play_2_d1ebcb84-c436-4a61-abd5-23f961adbb14.jpg",
+              "image": "shopify:\/\/shop_images\/bar_bag_sqaure.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/new",
-              "text1": "NEW",
+              "url": "",
+              "text1": "",
               "text1-position": "top h-center",
               "text2": "",
               "text2-p2": "",
@@ -3289,10 +3290,10 @@
           "1580280006071": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bar_bag_mellow_lamb4_58591489-249f-4474-a413-36fe61b2921e.jpg",
+              "image": "",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/bar-bag-mellow",
-              "text1": "BAR BAG",
+              "text1": "",
               "text1-position": "top h-center",
               "text2": "",
               "text2-p2": "",
@@ -3303,34 +3304,15 @@
               "color_quantity_h_c": "#ffffff",
               "color_h_bg": "#000000"
             }
-          },
-          "1580340709198": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_elephant_254b2586-5a81-4d0d-aff4-d671e3f957d4.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/statement-day-bags",
-              "text1": "STATEMENT DAY BAGS",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
           }
         },
         "block_order": [
           "1580884647593",
-          "1580280006071",
-          "1580340709198"
+          "1580280006071"
         ],
         "settings": {
           "width": "fullwidth",
-          "inrow": "3",
+          "inrow": "2",
           "margin": "custom",
           "margin-custom": "50px auto 50px",
           "padding": "custom",
@@ -3339,6 +3321,7 @@
       },
       "1585106722950": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1585106817158": {
             "type": "banner",
@@ -3415,33 +3398,15 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Pack_White_wash_wearing_926d3efa-83fc-49d8-a385-7575408955da.jpg",
+              "image": "shopify:\/\/shop_images\/Clauida_Petal_Pack_White_Wash_e7d0631a-9e75-4019-a1a3-23b23ae4b9b2.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1585269526822": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4609_a00a75f4-357c-474f-bf5b-7674a3d6cbd2.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
-              "text1": "PETAL PACK",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "Belt Bag",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -3465,12 +3430,30 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1586822554645": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bar_bag_mellow_line_up.jpeg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/bar-bag-mellow",
+              "text1": "BAR BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
           "1585269484128",
-          "1585269526822",
-          "1585269564692"
+          "1585269564692",
+          "1586822554645"
         ],
         "settings": {
           "width": "fullwidth",
