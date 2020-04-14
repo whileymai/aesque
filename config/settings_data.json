@@ -3398,7 +3398,7 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Clauida_Petal_Pack_White_Wash_e7d0631a-9e75-4019-a1a3-23b23ae4b9b2.jpg",
+              "image": "shopify:\/\/shop_images\/petal_pack_white_wash_double_cb278aaf-049c-44af-942a-b7ace2137f2c.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
               "text1": "Belt Bag",
@@ -3407,10 +3407,10 @@
               "text2-p2": "",
               "text2-position": "bottom right",
               "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
             }
           },
           "1585269564692": {
