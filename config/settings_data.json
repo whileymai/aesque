@@ -3398,10 +3398,10 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/petal_pack_white_wash_double_cb278aaf-049c-44af-942a-b7ace2137f2c.jpg",
+              "image": "shopify:\/\/shop_images\/petal_pack_white_wash_double2.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "Belt Bag",
+              "text1": "PETAL PACK PIVOT",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -3416,28 +3416,10 @@
           "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1586822554645": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bar_bag_mellow_line_up.jpeg",
+              "image": "shopify:\/\/shop_images\/IMG_8818.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bag-mellow",
-              "text1": "BAR BAG",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "BAR BAGS",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -3448,16 +3430,53 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1586822554645": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Cube_Tote_BW.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "CARRY BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/collection",
+              "text1": "A-ESQUE ATELIER APRIL 2020",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
+          "1586846413855",
           "1585269484128",
-          "1585269564692",
-          "1586822554645"
+          "1586822554645",
+          "1585269564692"
         ],
         "settings": {
           "width": "fullwidth",
-          "inrow": "3",
+          "inrow": "4",
           "margin": "custom",
           "margin-custom": "50px auto 50px",
           "padding": "custom",
