@@ -1,6 +1,6 @@
 {%- comment -%}
+
 {%- endcomment -%}
-{%- if template == 'collection' -%}
 <div class="tt-newsletter-popup" data-active="{{ settings.newsletter_show_popup }}" data-show-once="{{ settings.newsletter_show_once }}" data-delay="{{ settings.newsletter_delay }}" data-cookies-life="{{ settings.newsletter_cookies_life }}">
 	{%- if settings.newsletter_popup_promo_text -%}
 		{{ settings.newsletter_popup_promo_text }}
@@ -27,10 +27,9 @@
 
 	{% unless settings.newsletter_show_once == 'true' %}
 		<label class="tt-newsletter-popup__show_popup tt-checkbox">
-			<input type="checkbox" name="show-newsletter">
+			<input type="checkbox" name="show-nawslatter">
 			<span></span>
 			{{ 'general.subscribe.popup_show_again' | t }}
 		</label>
 	{% endunless %}
 </div>
-{%- endif -%}

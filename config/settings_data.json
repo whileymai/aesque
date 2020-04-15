@@ -101,11 +101,11 @@
     "qv-show_gallery_arrows": true,
     "mailchimp_form_action": "https:\/\/a-esque.us6.list-manage.com\/subscribe\/post?u=d936399c61&amp;id=f25f18da25",
     "newsletter_show_popup": true,
-    "newsletter_show_once": "true",
+    "newsletter_show_once": "false",
     "newsletter_delay": "5",
-    "newsletter_cookies_life": "3",
+    "newsletter_cookies_life": "1",
     "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<span>Subscribe<\/span>\n<\/div><div class=\"tt-newsletter-popup__text-02\"><p>BECOME AN A-ESQUE COLLECTOR<\/p><\/div><p>By signing up, you accept the terms & Privacy Policy.<\/p>",
-    "newsletter-show_socials": false,
+    "newsletter-show_socials": true,
     "newsletter-show_facebook": false,
     "newsletter-show_google": false,
     "newsletter-show_twitter": false,
@@ -3395,6 +3395,24 @@
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/collection",
+              "text1": "A-ESQUE ATELIER APRIL 2020",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
           "1585269484128": {
             "type": "banner",
             "settings": {
@@ -3411,24 +3429,6 @@
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
               "color_h_bg": "#ffffff"
-            }
-          },
-          "1585269564692": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8818.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "BAR BAGS",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
             }
           },
           "1586822554645": {
@@ -3449,18 +3449,18 @@
               "color_h_bg": ""
             }
           },
-          "1586846413855": {
+          "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_8818.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/collection",
-              "text1": "A-ESQUE ATELIER APRIL 2020",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "BAR BAGS",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
