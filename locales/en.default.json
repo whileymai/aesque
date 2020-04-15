@@ -353,7 +353,7 @@
       "from_text_html": "From {{ price }}",
       "quantity": "Quantity",
       "add_to_cart": "Add to Bag",
-      "add_to_cart_disabled": "Out of Stock",
+      "add_to_cart_disabled": "Sold Out",
       "add_to_cart_added": "Added",
       "label_new": "New",
       "label_hot": "Hot",
