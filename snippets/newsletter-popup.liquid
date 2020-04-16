@@ -1,6 +1,4 @@
-{%- comment -%}
-{%- endcomment -%}
-{%- if template == 'collection' -%}
+
 <div class="tt-newsletter-popup" data-active="{{ settings.newsletter_show_popup }}" data-show-once="{{ settings.newsletter_show_once }}" data-delay="{{ settings.newsletter_delay }}" data-cookies-life="{{ settings.newsletter_cookies_life }}">
 	{%- if settings.newsletter_popup_promo_text -%}
 		{{ settings.newsletter_popup_promo_text }}
@@ -21,7 +19,7 @@
 			{% assign set-show_behance = settings.newsletter-show_behance %}
 			{% assign set-settings = true %}
 			{% assign set-style = settings.color_popup_news_social_type %}
-			{% include 'social-links' %}
+			{%- comment -%}{% include 'social-links' %}{%- endcomment -%}
 		</div>
 	{%- endif -%}
 
@@ -33,4 +31,3 @@
 		</label>
 	{% endunless %}
 </div>
-{%- endif -%}
