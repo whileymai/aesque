@@ -383,11 +383,16 @@
     "settings": [
       {
         "type": "paragraph",
-        "content": "info"
+        "content": "About A-ESQUE"
       },
       {
         "type": "header",
         "content": "About Amanda"
+      },
+      {
+        "type": "image_picker",
+        "id": "amanda_bio_image",
+        "label": "Amanda Image"
       },
       {
         "type": "text",

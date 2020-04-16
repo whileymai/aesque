@@ -46,8 +46,10 @@
       	</div>
       {% endcomment %}
       
-      	<div class="col-md-6"><a href="#" class="ttg-image-translate--left ttg-animation-disable--sm"><img
-				data-srcset="https://cdn.shopify.com/s/files/1/0024/2945/2349/files/OUR-STORY_ABR_PORTRAIT_1080.jpg?v=1580341256" alt="Image name"/></a>
+      	<div class="col-md-6">
+          <a href="#" class="ttg-image-translate--left ttg-animation-disable--sm">
+          <img src="{{settings.amanda_bio_image | img_url:'master'}}" alt="{{ settings.about_amanda_title }}"/>
+          </a>
       	</div>
       
 		<div class="col-md-6">

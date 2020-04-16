@@ -145,19 +145,12 @@ set-image_size
                         <div class="ttg-text-animation--emersion">
                             <div class="tt-product__buttons{% if settings.prd-btns_design == '2' %} tt-product__buttons--design-2{% endif %}">
                                 {%- if loc-show_addtocart and loc-available -%}
-                                    {% if settings.prd-btns_design == '1' %}
-                                        <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                            <div class="tt-price-2">{{ 'products.product.add_to_cart' | t }}</div>
-                                        </a>
-                                    {% elsif settings.prd-btns_design == '2' %}
-                                        <div>
-                                            <a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
-                                            <div class="tt-price-2">{{ 'products.product.add_to_cart' | t }}</div>
-                                                <span class="tt-product__buttons_cart_added">{{ 'products.product.add_to_cart_added' | t }}</span>
-                                            </a>
-                                        </div>
-                                    {% endif %}
-                                {%- endif -%}
+                              		<a href="{{ loc-url }}" target="_blank" class="btn tt-product__buttons_cart prdbut__cart-toggle prdbut__btn--process{{ res-btn_card_action }} prdbut__btn--process{%- if loc-available != true -%} prdbut__visible--disabled{%- endif -%}{{ res-cart_active }}" data-prdbut-visible="available">
+                                     <div class="tt-price-2">{{ 'products.product.add_to_cart' | t }}</div>
+                              		</a>
+                                	{%- else -%}
+                					<div><span class="sold-out">{{ 'products.product.sold_out' | t }}</span></div>
+                              	{%- endif -%}
 
                                 {%- if loc-show_whishlist and settings.wishlist-status -%}
                                     <a href="{% if customer %}#{% else %}/account/login{% endif %}"{% unless customer %} target="_blank"{% endunless %} class="tt-btn colorize-btn4 tt-product__buttons_like{% if customer %} prdbut__wsl-toggle prdbut__btn--process{{ res-whishlist_active }}{% endif %}">

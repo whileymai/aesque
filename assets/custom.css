@@ -132,7 +132,17 @@ textarea.form-control,select.form-control {
 
 .tt-product-head__name>* {
   	font-size: 15px;
-  	font-weight: 400;
+  	font-weight: 700;
+  	letter-spacing: 1px;
+}
+
+span.money {
+    font-weight: 700;
+}
+
+span.sold-out {
+    color: red;
+    font-weight: 400;
 }
 
 .tt-product-head__availability {
@@ -385,10 +395,8 @@ textarea.form-control,select.form-control {
   	font-style: normal !important;
   	text-transform: uppercase;
     font-size: 15px !important;
-  	font-weight: 300 !important;
+  	font-weight: 300;
 }
-
-
 
 .tt-counter.tt-counter__inner input {
     font-weight: 300 !important;
