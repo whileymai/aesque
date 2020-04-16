@@ -379,6 +379,31 @@
     ]
   },
   {
+    "name": "About Us Page",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "info"
+      },
+      {
+        "type": "header",
+        "content": "About Amanda"
+      },
+      {
+        "type": "text",
+        "id": "about_amanda_title",
+        "label": "Name",
+        "default": "AMANDA BRISKIN-RETTIG"
+      },
+      {
+        "type": "textarea",
+        "id": "about_amanda_text",
+        "label": "About Amanada",
+        "default": "content"
+      }
+    ]
+  },
+  {
     "name": "Collection page",
     "settings": [
       {
