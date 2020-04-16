@@ -91,7 +91,8 @@ set-image_size
     </div>
     <div class="tt-product__hover"><!-- tt-product__clr-clk-transp -->
         <div class="tt-product__content">
-            {%- if loc-show_collections -%}
+<!--             
+{%- if loc-show_collections -%}
                 <p>
 					<span class="ttg-text-animation--emersion">
 				  {%- for collection in product.collections -%}
@@ -99,7 +100,7 @@ set-image_size
                   {%- endfor -%}
 				</span>
                 </p>
-            {%- endif -%}
+            {%- endif -%} -->
 
             <h3>
 				<span class="ttg-text-animation--emersion tt-header__h3">
@@ -109,7 +110,7 @@ set-image_size
 
             <form action="/cart/add.js" method="post">
                 {%- if set-view != 'short' -%}
-                    {%- if loc-show_description -%}
+                     {%- if loc-show_description -%}
                         <div class="ttg-text-animation--emersion">
                             <div class="tt-product__description">
                                 {{ loc-description | strip_html | truncatewords: 35 }}

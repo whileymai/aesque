@@ -74,7 +74,7 @@
     "prd-show_options_disabled_state": false,
     "prd-check_btns_state": false,
     "prd-btns_action": "toggle",
-    "prd-btns_design": "2",
+    "prd-btns_design": "1",
     "prd-show_btn_addtocart-popup": true,
     "prd-show_collections": true,
     "prd-show_price": true,

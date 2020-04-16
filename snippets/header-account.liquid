@@ -2,7 +2,10 @@
 {%- endcomment -%}
 {% if section.settings.account_icon == true %}
 <div>
-    <a href="#" class="tt-header__btn tt-header__btn-user"><i class="icon-user"></i></a>
+    <a href="#" class="tt-header__btn tt-header__btn-user">
+      <i class="icon-user"></i>
+  	</a>
+  
     <div class="tt-header__user">
         <ul class="tt-list-toggle">
             {%- if shop.customer_accounts_enabled and customer -%}
