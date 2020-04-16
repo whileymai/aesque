@@ -201,7 +201,7 @@
     "color_input_f_bg": "#f5f5f5",
     "color_input_f_bd": "#f5f5f5",
     "color_btn_bg": "#ffffff",
-    "color_btn_bd": "#2d2d2d",
+    "color_btn_bd": "rgba(0,0,0,0)",
     "color_btn_c": "#2d2d2d",
     "color_btn_h_bg": "#fafafa",
     "color_btn_h_bd": "#2d2d2d",

@@ -141,7 +141,7 @@ span.money {
 }
 
 span.sold-out {
-    color: red;
+    color: #888;
     font-weight: 400;
 }
 
