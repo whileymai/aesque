@@ -554,7 +554,6 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -562,13 +561,13 @@
               "image": "shopify:\/\/shop_images\/Atelier_69ad79df-578c-46e1-b035-dfe2e193d0fa.jpg",
               "style": "off",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/pages\/our-story",
+              "url": "shopify:\/\/pages\/brand-notes",
               "product_id": "",
               "button_icon": "button",
-              "text_01": "",
-              "text_02": "Meet the Maker",
+              "text_01": "MADE IN MELBOURNE",
+              "text_02": "SINCE 2012",
               "text_03": "",
-              "text_04": "our story",
+              "text_04": "Brand Notes",
               "info_pos_hor": "center",
               "info_pos_vert": "center",
               "info_offset_hor": "",
@@ -578,7 +577,7 @@
               "info_parallaxlevel": "0",
               "color_text_01_c": "#000000",
               "color_text_02_c": "#000000",
-              "color_text_03_c": "",
+              "color_text_03_c": "#000000",
               "color_btn_style": "3",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
@@ -615,9 +614,9 @@
         "settings": {
           "layout": "custom",
           "custom_breakpoints": "1832",
-          "custom_heights": "768",
-          "timeout": "60",
-          "nav_style": "off"
+          "custom_heights": "700",
+          "timeout": "670",
+          "nav_style": "1"
         }
       },
       "collection-head": {
@@ -3489,6 +3488,7 @@
     },
     "content_for_index": [
       "1585269473414",
+      "1504161678752",
       "1580279992199",
       "1585106722950",
       "1557728384665",
@@ -3500,7 +3500,6 @@
       "1557809992385",
       "1557803779631",
       "1557727603087",
-      "1504161678752",
       "1532477260206",
       "1554092003794",
       "1535500016318",
