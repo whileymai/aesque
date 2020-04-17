@@ -554,6 +554,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -2269,24 +2270,23 @@
       },
       "1557728384665": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557728548131": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_White_Quote_31145efd-1393-41dd-b58d-6eb6863b1dec.jpg",
-              "info_state": false,
-              "url": "shopify:\/\/pages\/brand-notes",
+              "image": "shopify:\/\/shop_images\/Rectangular_Marquee_2a5f226d-df77-4a48-838d-a6fe924a5119.jpg",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/object-box",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "our story",
+              "button_text": "OBJECT BOX",
               "text_01": "",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "",
+              "color_text_01_c": "#000000",
               "color_text_02_c": "",
               "color_text_03_c": "",
-              "color_btn_style": "7",
+              "color_btn_style": "1",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
             }
@@ -2296,10 +2296,10 @@
           "1557728548131"
         ],
         "settings": {
-          "width": "boxed",
-          "margin": "none",
-          "margin-custom": "10px auto",
-          "padding": "none",
+          "width": "fullwidth",
+          "margin": "custom",
+          "margin-custom": "5",
+          "padding": "demo2",
           "padding-custom": "12px",
           "bullets_enable": false,
           "arrows_enable": false
@@ -2345,22 +2345,21 @@
       },
       "1557809992385": {
         "type": "scroll-slider",
-        "disabled": true,
         "blocks": {
           "1557809997719": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/MAKING.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_f865b574-adb7-40eb-9df3-507e8beb38f2.jpg",
               "info_state": true,
-              "url": "https:\/\/a-esque.com\/pages\/our-story",
+              "url": "shopify:\/\/pages\/brand-notes",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "OUR STORY",
-              "text_01": "MEET THE MAKER",
+              "button_text": "BRAND NOTES",
+              "text_01": "MADE IN MELBOURNE, SINCE 2012",
               "text_02": "",
               "text_03": "",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
               "color_text_03_c": "",
               "color_btn_style": "1",
               "custom_content_info_state": false,
@@ -2372,7 +2371,7 @@
           "1557809997719"
         ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "margin": "custom",
           "margin-custom": "5",
           "padding": "demo2",
@@ -3488,16 +3487,16 @@
     },
     "content_for_index": [
       "1585269473414",
+      "1557728384665",
+      "1557809992385",
       "1504161678752",
       "1580279992199",
       "1585106722950",
-      "1557728384665",
       "1535679088113",
       "1561525837093",
       "1560905911373",
       "1557727700512",
       "1557725870824",
-      "1557809992385",
       "1557803779631",
       "1557727603087",
       "1532477260206",
