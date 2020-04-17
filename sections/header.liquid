@@ -24,7 +24,7 @@
   {%- assign res-class = res-class | append: ' tt-header--transparent' -%}
 {%- endif -%}
 <div data-section-id="{{ section.id }}" data-section-type="header">
-  <div class="tt-header {{ res-class }}{% if section.settings.sticky %} tt-header--sticky{% endif %}" data-sticky-effect="{{ section.settings.sticky_effect }}">
+  <div class="navbar tt-header {{ res-class }}{% if section.settings.sticky %} tt-header--sticky{% endif %}" data-sticky-effect="{{ section.settings.sticky_effect }}">
     {%- for block in section.blocks -%}
       {%- if block.type == 'top_line' -%}
         {%- include 'header-topline' -%}
@@ -248,3 +248,32 @@
 ]
 }
 {% endschema %}
+
+<style>
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  	height:200px;
+    background-color: #fff;
+}
+  
+  .tt-listing-page__products {
+    margin-top: 60px;
+}
+  
+@media only screen and (min-width: 1025px) {
+.tt-listing-page__view-options {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    position: relative;
+	}
+}
+  
+@media only screen and (max-width: 1024px) {
+    .tt-header__sidebar {
+        width: 100%;
+        height: 35px !important;
+    }
+  }
+</style>

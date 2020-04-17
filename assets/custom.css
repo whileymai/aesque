@@ -141,9 +141,21 @@ span.money {
 }
 
 span.sold-out {
-    color: #888;
-    font-weight: 400;
+    color: #2d2d2d;
+    font-weight: 300;
+  	padding: 4px 10px;
+    text-transform: uppercase;
+    font-size: 15px !important;
 }
+
+@media only screen and (max-width: 400px) {
+span.sold-out {
+    font-weight: 300;
+  	padding: 4px 10px;
+    text-transform: uppercase;
+    font-size: 12px !important;
+	}
+} 
 
 .tt-product-head__availability {
   	font-weight: 300;
@@ -344,6 +356,7 @@ span.sold-out {
 .tt-page__breadcrumbs {
   	padding-top: 20px !important;
     margin-bottom: 20px !important;
+  	margin-top:190px;
 }
 
 .tt-layer-nav__title {
@@ -415,6 +428,7 @@ span.sold-out {
 }
 
 .tt-product-page .tt-product-head, .tt-product-head+.tt-product-page__tabs {
+  	margin-top:150px;
     margin-bottom: 42px !important;
   }
 
@@ -744,6 +758,13 @@ span.sold-out {
 }
 /* end product accordian */
 
+.tt-logo-header__sticky {
+    position: fixed !important;
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
 .prdbut__options--page .prdbut__option {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
@@ -772,7 +793,6 @@ span.sold-out {
 
 @media only screen and (max-width: 400px) {
 .tt-header__options {
-    height: 5% !important;
     justify-content: center;
    }
 }
@@ -780,7 +800,6 @@ span.sold-out {
 @media only screen and (max-width: 400px) {
     .tt-header__sidebar {
         width: 100%;
-        height: 28px !important;
    }
 }
 
@@ -812,4 +831,37 @@ span.sold-out {
     .tt-header__tape {
         margin: 0 auto;
     }
+}
+
+.tt-layout__content {
+    min-height: 700px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+.tt-header__sidebar {
+    width: 100%;
+    height: 35px !important;
+    top: -20px;
+	}
+}
+
+.tt-header__options {
+    height: 60px !important;
+}
+
+.tt-page__name.text-center.ttg-mt--40 {
+    margin-top: 240px !important;
+}
+
+div#CustomerLoginForm {
+    margin-top: 220px;
+}
+
+.tt-cart {
+    margin-bottom: 100px;
+    margin-top: 220px;
+}
+
+#theme .tt-newsletter.tt-newsletter--style-01 .btn {
+    border-color: #000 !important;
 }

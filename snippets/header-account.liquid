@@ -2,11 +2,11 @@
 {%- endcomment -%}
 {% if section.settings.account_icon == true %}
 <div>
-    <a href="#" class="tt-header__btn tt-header__btn-user">
-      <i class="icon-user"></i>
+    <a href="/account" class="tt-header__btn tt-header__btn-user">
+      <i class="fal fa-user"></i>
   	</a>
   
-    <div class="tt-header__user">
+<!--     <div class="tt-header__user">
         <ul class="tt-list-toggle">
             {%- if shop.customer_accounts_enabled and customer -%}
                 <li><a href="/account">{{ "customer.account.title" | t }}</a></li>{%- endif -%}
@@ -60,6 +60,6 @@
             {%- endif -%}
         </ul>
         {{ res-login-form }}
-    </div>
+    </div> -->
 </div>
 {% endif %}
