@@ -554,7 +554,6 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -1064,6 +1063,7 @@
       },
       "1531272150905": {
         "type": "home-products",
+        "disabled": true,
         "settings": {
           "collection": "resort-18-collection",
           "products_per_row": "4",
@@ -1078,13 +1078,12 @@
       },
       "1532477260206": {
         "type": "home-products-slider",
-        "disabled": true,
         "settings": {
-          "collection": "",
-          "header_title_1": "Featured Products",
-          "limit": "16",
+          "collection": "collection",
+          "header_title_1": "Shop View ALL Here",
+          "limit": "",
           "arrows": true,
-          "sec-prd-type": "afterimage"
+          "sec-prd-type": "desconhover"
         }
       },
       "1535667541393": {
@@ -1301,193 +1300,6 @@
           "margin-custom": "20px auto",
           "padding": "custom",
           "padding-custom": "20px"
-        }
-      },
-      "1554092003794": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1554092489993": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-720_copy_aea029e3-dc22-42d1-88db-3ccd70ef5a6c.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "rgba(0,0,0,0)",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "",
-              "color_h_bg": "rgba(0,0,0,0)"
-            }
-          },
-          "1554094713999": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1637_o_ac916760-0a45-4a61-939a-bf30036aa894.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1554093156607": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8194_COPY_20c0d336-3ff6-494c-818b-e0d08b1b52ae.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554092013460": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1748_O_b72f7f01-5aa3-4166-8034-256a61fb100f.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554094452506": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-717_O_f54cd1a0-0e95-423b-9453-0863b6e944f8.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554096306050": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1617D_a8a801eb-7a28-4235-a45d-2125c28c194b.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554092700209": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1679_O.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554095204606": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-167_O.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1554096477411": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-1128_O.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1554092489993",
-          "1554094713999",
-          "1554093156607",
-          "1554092013460",
-          "1554094452506",
-          "1554096306050",
-          "1554092700209",
-          "1554095204606",
-          "1554096477411"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "3",
-          "margin": "demo2",
-          "margin-custom": "10px auto",
-          "padding": "custom",
-          "padding-custom": "10px"
         }
       },
       "lookbook-slider": {
@@ -2129,54 +1941,6 @@
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
-      "1557709351009": {
-        "type": "home-infobox",
-        "blocks": {
-          "1557709351009-0": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-phone",
-              "text-banner-url": "",
-              "text-banner-text1": "+61 497 399 157 Assistance",
-              "text-banner-text2": ""
-            }
-          },
-          "1557709351009-1": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-box",
-              "text-banner-url": "",
-              "text-banner-text1": "Complimentary Delivery to your door",
-              "text-banner-text2": ""
-            }
-          },
-          "1557709351009-2": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-left",
-              "text-banner-url": "",
-              "text-banner-text1": "Returns and Exchanges Within 30 days",
-              "text-banner-text2": ""
-            }
-          }
-        },
-        "block_order": [
-          "1557709351009-0",
-          "1557709351009-1",
-          "1557709351009-2"
-        ],
-        "settings": {
-          "text-banner-type": "type2",
-          "text-banner-appearance": "demo5",
-          "color_icon": "#2d2d2d",
-          "color_text1": "",
-          "color_text2": "",
-          "color_background": "",
-          "color_border": "",
-          "border_bottom": false,
-          "border_top": false
-        }
-      },
       "1557725870824": {
         "type": "scroll-slider",
         "disabled": true,
@@ -2217,9 +1981,33 @@
       },
       "1557727603087": {
         "type": "scroll-slider",
-        "disabled": true,
+        "blocks": {
+          "1587246070501": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "button_text": "Text line 1",
+              "text_01": "Text line 1",
+              "text_02": "Text line 2",
+              "text_03": "Text line 3",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1587246070501"
+        ],
         "settings": {
-          "width": "boxed",
+          "width": "fullwidth",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
@@ -2306,6 +2094,7 @@
       },
       "1557809992385": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1557809997719": {
             "type": "slide",
@@ -3444,6 +3233,54 @@
           "padding": "custom",
           "padding-custom": "15px"
         }
+      },
+      "1587246631787": {
+        "type": "home-infobox",
+        "blocks": {
+          "1587246631787-0": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-phone",
+              "text-banner-url": "",
+              "text-banner-text1": "+61 497 390 157",
+              "text-banner-text2": ""
+            }
+          },
+          "1587246631787-1": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-box",
+              "text-banner-url": "",
+              "text-banner-text1": "Complimentary Delivery",
+              "text-banner-text2": ""
+            }
+          },
+          "1587246631787-2": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-left",
+              "text-banner-url": "",
+              "text-banner-text1": "Returns and Exchange",
+              "text-banner-text2": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587246631787-0",
+          "1587246631787-1",
+          "1587246631787-2"
+        ],
+        "settings": {
+          "text-banner-type": "type1",
+          "text-banner-appearance": "fullwidth",
+          "color_icon": "",
+          "color_text1": "",
+          "color_text2": "",
+          "color_background": "",
+          "color_border": "",
+          "border_bottom": false,
+          "border_top": false
+        }
       }
     },
     "content_for_index": [
@@ -3460,14 +3297,13 @@
       "1557803779631",
       "1557727603087",
       "1532477260206",
-      "1554092003794",
       "1535500016318",
       "1535679348539",
       "1535667541393",
       "1528451077082",
       "1531272150905",
       "1526517781866",
-      "1557709351009"
+      "1587246631787"
     ]
   },
   "presets": {
