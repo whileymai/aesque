@@ -1007,60 +1007,6 @@
           "text": ""
         }
       },
-      "1528451077082": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1528451101413": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_4.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/tote-bag",
-              "text1": "TOTES TO GO",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#2d2d2d"
-            }
-          },
-          "1528451194759": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/180621_Home_Page_FA_5.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/basket",
-              "text1": "BEST BASKET",
-              "text1-position": "v-center right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center right",
-              "color_title_c": "#2d2d2d",
-              "color_title_h_c": "#2d2d2d",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#2d2d2d"
-            }
-          }
-        },
-        "block_order": [
-          "1528451101413",
-          "1528451194759"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
       "1531272150905": {
         "type": "home-products",
         "disabled": true,
@@ -1115,187 +1061,6 @@
         "settings": {
           "width": "boxed",
           "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1535679088113": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535679103666": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_p_no_border.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/all-handbags",
-              "text1": "our bags",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "rgba(0,0,0,0)",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1535679201382": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/pages\/contact-us",
-              "text1": "SERVICE",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#080808"
-            }
-          }
-        },
-        "block_order": [
-          "1535679103666",
-          "1535679201382"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1535679348539": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535679389602": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Family_-_Square_4.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/petal-family",
-              "text1": "Petal Pattern family",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1535679423693": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Applique_home_bag_-_Square_5.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/collections\/grizabella",
-              "text1": "Grizabella bag",
-              "text1-position": "v-center h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1535679361471": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/A-ESQUE_stores_-_Square_6.jpg",
-              "image-hover-animation": "top",
-              "url": "shopify:\/\/pages\/store-directory",
-              "text1": "Store",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          }
-        },
-        "block_order": [
-          "1535679389602",
-          "1535679423693",
-          "1535679361471"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "1535500016318": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535680111401": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_pack_Balck_and_white_no_border.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/collections\/belt-bag",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#fffefe",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1537570299256": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Home_Page_Template_0000_AMANDABW.jpg",
-              "image-hover-animation": "top",
-              "url": "https:\/\/a-esque.com\/pages\/our-story",
-              "text1": "Our Story",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1535680111401",
-          "1537570299256"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
           "margin": "custom",
           "margin-custom": "20px auto",
           "padding": "custom",
@@ -1941,44 +1706,6 @@
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
-      "1557725870824": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1557726071236": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bar_bag_cloud_terracotta_partylook1.jpg",
-              "info_state": true,
-              "url": "https:\/\/a-esque.com\/pages\/november-2019",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "OUR PARTY SEASON MOOD",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1557726071236"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "demo2",
-          "padding-custom": "12px",
-          "bullets_enable": false,
-          "arrows_enable": false
-        }
-      },
       "1557727603087": {
         "type": "scroll-slider",
         "blocks": {
@@ -1990,10 +1717,10 @@
               "url": "",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "button_text": "Text line 1",
-              "text_01": "Text line 1",
-              "text_02": "Text line 2",
-              "text_03": "Text line 3",
+              "button_text": "",
+              "text_01": "",
+              "text_02": "",
+              "text_03": "",
               "color_text_01_c": "",
               "color_text_02_c": "",
               "color_text_03_c": "",
@@ -2007,51 +1734,13 @@
           "1587246070501"
         ],
         "settings": {
-          "width": "fullwidth",
+          "width": "boxed",
           "margin": "none",
           "margin-custom": "10px auto",
           "padding": "none",
           "padding-custom": "12px",
           "bullets_enable": true,
           "arrows_enable": true
-        }
-      },
-      "1557727700512": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1557728037320": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/BASKTER_02_PLAY_6590d9b8-87a9-4d23-a09f-33a02d4269c8.jpg",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/play",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "The Statement Play",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#ffffff",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1557728037320"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "none",
-          "margin-custom": "5",
-          "padding": "demo2",
-          "padding-custom": "12px",
-          "bullets_enable": false,
-          "arrows_enable": false
         }
       },
       "1557803779631": {
@@ -2573,82 +2262,6 @@
           "padding-custom": "10PX"
         }
       },
-      "1560905911373": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1560906002442": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_All_Bag_Play_copy2.jpg",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/new-pieces",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "NEW PIECES",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#ffffff",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1560906002442"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "demo2",
-          "padding-custom": "12px",
-          "bullets_enable": false,
-          "arrows_enable": false
-        }
-      },
-      "1561525837093": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1561525847466": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_6513.jpg",
-              "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "the bar bag",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "#2d2d2d",
-              "color_text_02_c": "",
-              "color_text_03_c": "#000000",
-              "color_btn_style": "1",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1561525847466"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "custom",
-          "margin-custom": "5px auto",
-          "padding": "demo2",
-          "padding-custom": "10px",
-          "bullets_enable": true,
-          "arrows_enable": true
-        }
-      },
       "lookbook-slider-may-2": {
         "type": "lookbook-slider-may-2",
         "settings": {
@@ -3016,133 +2629,6 @@
           "padding-custom": "10px"
         }
       },
-      "1580279992199": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1580884647593": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/bar_bag_sqaure.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1580280006071": {
-            "type": "banner",
-            "settings": {
-              "image": "",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bag-mellow",
-              "text1": "",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
-            }
-          }
-        },
-        "block_order": [
-          "1580884647593",
-          "1580280006071"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "50px auto 50px",
-          "padding": "custom",
-          "padding-custom": "12px"
-        }
-      },
-      "1585106722950": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1585106817158": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Pleat_Clutch_khaki_ce600caa-b94a-4ea4-98c7-61ef9c0db0bd.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/parlour-x",
-              "text1": "PARLOUR X COLLABORATION",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1585106833950": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/BASKEPT_02_PLAY.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/basket-02-br-play",
-              "text1": "FAMILIAR PATTERNS",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1585106849206": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/PETAL_PACK_WINE.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/petal-pack",
-              "text1": "BELT BAG",
-              "text1-position": "top h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "top h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1585106817158",
-          "1585106833950",
-          "1585106849206"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "50px auto 50px",
-          "padding": "custom",
-          "padding-custom": "12px"
-        }
-      },
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
@@ -3229,7 +2715,7 @@
           "width": "fullwidth",
           "inrow": "4",
           "margin": "custom",
-          "margin-custom": "220px auto 90px",
+          "margin-custom": "220px auto 0px",
           "padding": "custom",
           "padding-custom": "15px"
         }
@@ -3250,7 +2736,7 @@
             "type": "text-banner",
             "settings": {
               "text-banner-icon": "icon-box",
-              "text-banner-url": "",
+              "text-banner-url": "https:\/\/a-esque.com\/pages\/delivery-returns",
               "text-banner-text1": "Complimentary Delivery",
               "text-banner-text2": ""
             }
@@ -3259,7 +2745,7 @@
             "type": "text-banner",
             "settings": {
               "text-banner-icon": "icon-left",
-              "text-banner-url": "",
+              "text-banner-url": "https:\/\/a-esque.com\/pages\/delivery-returns",
               "text-banner-text1": "Returns and Exchange",
               "text-banner-text2": ""
             }
@@ -3272,7 +2758,7 @@
         ],
         "settings": {
           "text-banner-type": "type1",
-          "text-banner-appearance": "fullwidth",
+          "text-banner-appearance": "boxed",
           "color_icon": "",
           "color_text1": "",
           "color_text2": "",
@@ -3287,20 +2773,10 @@
       "1585269473414",
       "1557809992385",
       "1504161678752",
-      "1580279992199",
-      "1585106722950",
-      "1535679088113",
-      "1561525837093",
-      "1560905911373",
-      "1557727700512",
-      "1557725870824",
       "1557803779631",
       "1557727603087",
       "1532477260206",
-      "1535500016318",
-      "1535679348539",
       "1535667541393",
-      "1528451077082",
       "1531272150905",
       "1526517781866",
       "1587246631787"
