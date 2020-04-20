@@ -554,6 +554,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -605,41 +606,9 @@
               "arrow_r_offset_hor": "76",
               "arrow_r_offset_vert": "70"
             }
-          },
-          "1587352766270": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Rectangular_Marquee_2a5f226d-df77-4a48-838d-a6fe924a5119.jpg",
-              "style": "off",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/object-box",
-              "product_id": "object-box-br-beige",
-              "button_icon": "icon-shop24",
-              "text_01": "",
-              "text_02": "OUR OBJECT BOX",
-              "text_03": "",
-              "text_04": "SHOP NOW",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
           }
         },
         "block_order": [
-          "1587352766270",
           "1550639703724",
           "1526602663882"
         ],
@@ -647,7 +616,7 @@
           "layout": "custom",
           "custom_breakpoints": "1832",
           "custom_heights": "700",
-          "timeout": "3",
+          "timeout": "15",
           "nav_style": "2"
         }
       },
@@ -2672,13 +2641,14 @@
           "width": "fullwidth",
           "inrow": "4",
           "margin": "custom",
-          "margin-custom": "220px auto 0px",
+          "margin-custom": "30px 20px",
           "padding": "custom",
-          "padding-custom": "15px"
+          "padding-custom": "12px 12px"
         }
       },
       "1587246631787": {
         "type": "home-infobox",
+        "disabled": true,
         "blocks": {
           "1587246631787-0": {
             "type": "text-banner",
@@ -2734,7 +2704,7 @@
               "text-banner-icon": "",
               "text-banner-url": "",
               "text-banner-text1": "\"I love beautiful things as opposed to things that are a name. I want this to be less about a brand and more about design.\"",
-              "text-banner-text2": "<p><strong>Amanda Briskin-Rettig&nbsp;<\/strong><\/p>\n<p><strong>Founder A-ESQUE<\/strong><\/p>"
+              "text-banner-text2": "<p>Amanda Briskin-Rettig&nbsp;<\/p>\n<p>Founder A-ESQUE<\/p>"
             }
           }
         },
@@ -2742,8 +2712,8 @@
           "1587349683011-0"
         ],
         "settings": {
-          "text-banner-type": "type1",
-          "text-banner-appearance": "boxed",
+          "text-banner-type": "type2",
+          "text-banner-appearance": "demo5",
           "color_icon": "",
           "color_text1": "#1f1f1f",
           "color_text2": "#292929",
@@ -2773,6 +2743,34 @@
           "sec-margin": "none",
           "sec-margin-custom": "10px"
         }
+      },
+      "1587358238672": {
+        "type": "home-infobox",
+        "blocks": {
+          "1587358238672-0": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-right",
+              "text-banner-url": "",
+              "text-banner-text1": "Returns and Exchanges within 30 days for pieces you have not worn or used are welcome. The exception to this is custom order pieces.",
+              "text-banner-text2": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587358238672-0"
+        ],
+        "settings": {
+          "text-banner-type": "type1",
+          "text-banner-appearance": "boxed",
+          "color_icon": "#1a1a1a",
+          "color_text1": "#242424",
+          "color_text2": "",
+          "color_background": "#ffffff",
+          "color_border": "",
+          "border_bottom": false,
+          "border_top": false
+        }
       }
     },
     "content_for_index": [
@@ -2780,13 +2778,14 @@
       "1504161678752",
       "1585269473414",
       "1587349683011",
-      "1557727603087",
       "1532477260206",
+      "1557727603087",
       "1535667541393",
       "1531272150905",
       "1526517781866",
       "1587246631787",
-      "1587352537752"
+      "1587352537752",
+      "1587358238672"
     ]
   },
   "presets": {
