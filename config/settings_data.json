@@ -627,7 +627,7 @@
               "product_id": "",
               "button_icon": "icon-shop24",
               "text_01": "",
-              "text_02": "Did something catch your eye? We can have a quick chat or a longer  consultation Skype, WhatsApp, Facetime, or a call are all options.",
+              "text_02": "Our Consultation Service experience is now available via Skype, WhatsApp, Facetime or a Phone call",
               "text_03": "",
               "text_04": "BOOK HERE",
               "info_pos_hor": "center",
@@ -2685,24 +2685,6 @@
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
-          "1586846413855": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/collection",
-              "text1": "A-ESQUE ATELIER APRIL 2020",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1585269484128": {
             "type": "banner",
             "settings": {
@@ -2721,13 +2703,31 @@
               "color_h_bg": "#ffffff"
             }
           },
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/collection",
+              "text1": "The APRIL 2020 , VIEW ALL",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
           "1586822554645": {
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/Cube_Tote_BW.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "CARRY BAG",
+              "text1": "THE CARRY BAG SELECTION",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2745,7 +2745,7 @@
               "image": "shopify:\/\/shop_images\/IMG_8818.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "BAR BAGS",
+              "text1": "NEW BAR BAGS FOR MOTHERS DAY. ALL HERE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2759,8 +2759,8 @@
           }
         },
         "block_order": [
-          "1586846413855",
           "1585269484128",
+          "1586846413855",
           "1586822554645",
           "1585269564692"
         ],
