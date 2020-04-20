@@ -558,7 +558,7 @@
           "1550639703724": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_69ad79df-578c-46e1-b035-dfe2e193d0fa.jpg",
+              "image": "shopify:\/\/shop_images\/Atelier_002bad48-7674-475d-af24-9c3c8f1736fc.jpg",
               "style": "off",
               "info_state": true,
               "url": "shopify:\/\/pages\/brand-notes",
@@ -1708,6 +1708,7 @@
       },
       "1557727603087": {
         "type": "scroll-slider",
+        "disabled": true,
         "blocks": {
           "1587246070501": {
             "type": "slide",
@@ -1732,44 +1733,6 @@
         },
         "block_order": [
           "1587246070501"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "none",
-          "margin-custom": "10px auto",
-          "padding": "none",
-          "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
-        }
-      },
-      "1557803779631": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1557803788549": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_WHITE2_c57a8aa2-ef20-45e1-8a83-006f2cbef0a3.jpg",
-              "info_state": false,
-              "url": "",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "button_text": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1557803788549"
         ],
         "settings": {
           "width": "boxed",
@@ -1810,7 +1773,7 @@
           "1557809997719"
         ],
         "settings": {
-          "width": "fullwidth",
+          "width": "boxed",
           "margin": "custom",
           "margin-custom": "5",
           "padding": "demo2",
@@ -2767,13 +2730,48 @@
           "border_bottom": false,
           "border_top": false
         }
+      },
+      "1587349683011": {
+        "type": "home-infobox",
+        "blocks": {
+          "1587349683011-0": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "",
+              "text-banner-url": "",
+              "text-banner-text1": "",
+              "text-banner-text2": "<p><strong>\"I love beautiful things as opposed to things are a name. I want this to be less about a brand and more about design.\"<\/strong><\/p>\n<p><\/p>\n<p><strong>Amanda Briskin-Rettig&nbsp;<\/strong><\/p>\n<p><strong>Founder A-ESQUE<\/strong><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1587349683011-0"
+        ],
+        "settings": {
+          "text-banner-type": "type2",
+          "text-banner-appearance": "boxed",
+          "color_icon": "",
+          "color_text1": "#1f1f1f",
+          "color_text2": "#292929",
+          "color_background": "#ffffff",
+          "color_border": "",
+          "border_bottom": false,
+          "border_top": false
+        }
+      },
+      "1587351090663": {
+        "type": "home-spacer",
+        "settings": {
+          "layout-spacer": "200"
+        }
       }
     },
     "content_for_index": [
-      "1585269473414",
-      "1557809992385",
+      "1587351090663",
       "1504161678752",
-      "1557803779631",
+      "1557809992385",
+      "1585269473414",
+      "1587349683011",
       "1557727603087",
       "1532477260206",
       "1535667541393",
