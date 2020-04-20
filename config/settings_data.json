@@ -554,12 +554,104 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
+          "1587362375850": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_OBJECTBOX_7bd3fff5-deba-4f9a-99b5-994314c8addd.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/pages\/contact-us",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "",
+              "text_02": "Did something catch your eye? We can have a quick chat or a longer  consultation Skype, WhatsApp, facetime, or a call are all options.",
+              "text_03": "",
+              "text_04": "BOOK HERE",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "1000",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#000000",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
+          "1587360416465": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hobo_One_piece_play_ea224141-0ea2-47be-8285-7d600219261c.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/carry-bag",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "",
+              "text_02": "soft and comfortable",
+              "text_03": "",
+              "text_04": "CARRY BAG BROWSE",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
+          "1587362099375": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_Shell_tote_elephant.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/products\/shell-tote-br-elephant",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "",
+              "text_02": "experiment & play ?",
+              "text_03": "",
+              "text_04": "See Simple Totes",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
           "1550639703724": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Atelier_002bad48-7674-475d-af24-9c3c8f1736fc.jpg",
+              "image": "shopify:\/\/shop_images\/making_e0e68f78-855f-4ad7-9b96-0ed56a7455b4.jpg",
               "style": "off",
               "info_state": true,
               "url": "shopify:\/\/pages\/brand-notes",
@@ -576,9 +668,9 @@
               "info_align": "center",
               "info_width": "1000",
               "info_parallaxlevel": "0",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#000000",
+              "color_text_01_c": "#ffffff",
+              "color_text_02_c": "#ffffff",
+              "color_text_03_c": "#ffffff",
               "color_btn_style": "3",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
@@ -606,41 +698,12 @@
               "arrow_r_offset_hor": "76",
               "arrow_r_offset_vert": "70"
             }
-          },
-          "1587360416465": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hobo_One_piece_play.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "Carry Bag",
-              "text_02": "",
-              "text_03": "",
-              "text_04": "SHOP NOW",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
           }
         },
         "block_order": [
           "1587360416465",
+          "1587362099375",
+          "1587362375850",
           "1550639703724",
           "1526602663882"
         ],
@@ -648,7 +711,7 @@
           "layout": "custom",
           "custom_breakpoints": "1832",
           "custom_heights": "700",
-          "timeout": "15",
+          "timeout": "3",
           "nav_style": "2"
         }
       },
@@ -2758,7 +2821,7 @@
       "1587351090663": {
         "type": "home-spacer",
         "settings": {
-          "layout-spacer": "200"
+          "layout-spacer": "190"
         }
       },
       "1587352537752": {
