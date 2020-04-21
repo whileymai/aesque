@@ -554,6 +554,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1587360416465": {
             "type": "revslide_image",
@@ -658,9 +659,9 @@
               "product_id": "",
               "button_icon": "icon-shop24",
               "text_01": "",
-              "text_02": "Ogject Boxes made from our leather offcuts.",
+              "text_02": "Object Boxes made from our leather offcuts.",
               "text_03": "",
-              "text_04": "SEE OTHER COLORS",
+              "text_04": "SEE OTHER COLOURS",
               "info_pos_hor": "center",
               "info_pos_vert": "center",
               "info_offset_hor": "",
