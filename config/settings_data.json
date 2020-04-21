@@ -554,7 +554,6 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
-        "disabled": true,
         "blocks": {
           "1587360416465": {
             "type": "revslide_image",
