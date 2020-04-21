@@ -617,6 +617,37 @@
               "custom_param_info": ""
             }
           },
+          "1587367656892": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_bar_bag_mellow.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/bar-bags",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "",
+              "text_02": "New Bar Bags for Mothers Day",
+              "text_03": "",
+              "text_04": "Discover",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
           "1587362375850": {
             "type": "revslide_image",
             "settings": {
@@ -640,37 +671,6 @@
               "color_text_01_c": "#ffffff",
               "color_text_02_c": "#ffffff",
               "color_text_03_c": "#ffffff",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1587367656892": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_OBJECTBOX_51431e51-3dcf-44b1-b294-458e25dbe636.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/object-box",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "",
-              "text_02": "Object Boxes made from our leather offcuts.",
-              "text_03": "",
-              "text_04": "SEE OTHER COLOURS",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "",
               "color_btn_style": "7",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
@@ -734,8 +734,8 @@
         "block_order": [
           "1587360416465",
           "1587362099375",
-          "1587362375850",
           "1587367656892",
+          "1587362375850",
           "1550639703724",
           "1526602663882"
         ],
@@ -2706,7 +2706,7 @@
           "1586846413855": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8789.jpg",
+              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2020-04-21_at_3.03.04_PM_8aed44e0-91bc-4e7e-83cf-13b8a22f9e84.jpeg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/collection",
               "text1": "The APRIL 2020 , VIEW ALL",
@@ -2714,7 +2714,7 @@
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2742,10 +2742,10 @@
           "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8818.jpg",
+              "image": "shopify:\/\/shop_images\/Edit_Type_Layer_b5c23795-057d-4368-a76d-1aca6317f312.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "NEW BAR BAGS FOR MOTHERS DAY. ALL HERE",
+              "url": "shopify:\/\/pages\/contact-us",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
