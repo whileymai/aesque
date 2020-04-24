@@ -651,16 +651,16 @@
           "1587362375850": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/blank_6ef3527f-c421-4c12-b3e2-965977b34b29.jpg",
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_belt_bag_c14b72d8-4fbf-443b-a485-b01a35d3635e.jpg",
               "style": "1",
               "info_state": true,
-              "url": "shopify:\/\/pages\/contact-us",
+              "url": "shopify:\/\/collections\/belt-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
-              "text_01": "",
-              "text_02": "Our Consultation Service experience is now available via Skype, WhatsApp, Facetime or a Phone call",
+              "text_01": "NEW",
+              "text_02": "",
               "text_03": "",
-              "text_04": "BOOK HERE",
+              "text_04": "BELT BAG",
               "info_pos_hor": "center",
               "info_pos_vert": "center",
               "info_offset_hor": "",
@@ -668,8 +668,8 @@
               "info_align": "center",
               "info_width": "900",
               "info_parallaxlevel": "0",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "#ffffff",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
               "color_text_03_c": "#ffffff",
               "color_btn_style": "7",
               "custom_content_info_state": false,
@@ -733,9 +733,9 @@
         },
         "block_order": [
           "1587360416465",
+          "1587362375850",
           "1587362099375",
           "1587367656892",
-          "1587362375850",
           "1550639703724",
           "1526602663882"
         ],
@@ -744,7 +744,7 @@
           "custom_breakpoints": "1832",
           "custom_heights": "600",
           "timeout": "3",
-          "nav_style": "1"
+          "nav_style": "off"
         }
       },
       "collection-head": {
