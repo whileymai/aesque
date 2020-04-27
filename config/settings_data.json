@@ -763,9 +763,9 @@
           }
         },
         "block_order": [
-          "1587360416465",
-          "1587953766069",
           "1587362375850",
+          "1587953766069",
+          "1587360416465",
           "1587949792845",
           "1587367656892",
           "1550639703724",
@@ -775,7 +775,7 @@
           "layout": "custom",
           "custom_breakpoints": "1832",
           "custom_heights": "600",
-          "timeout": "3",
+          "timeout": "2",
           "nav_style": "off"
         }
       },
@@ -2717,42 +2717,6 @@
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
-          "1585269484128": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_pack_white_wash_double_de6be382-b43f-43aa-95e5-ef9539300f00.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "PETAL PACK PIVOT",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1586846413855": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2020-04-21_at_3.03.04_PM_8aed44e0-91bc-4e7e-83cf-13b8a22f9e84.jpeg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/object-box",
-              "text1": "Object Box",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1586822554645": {
             "type": "banner",
             "settings": {
@@ -2771,13 +2735,49 @@
               "color_h_bg": ""
             }
           },
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bar_bag_mellow_beige.jpeg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "BAR BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1585269484128": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/petal_pack_white_wash_double_de6be382-b43f-43aa-95e5-ef9539300f00.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "PETAL PACK PIVOT",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
+            }
+          },
           "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Edit_Type_Layer_b5c23795-057d-4368-a76d-1aca6317f312.jpg",
+              "image": "shopify:\/\/shop_images\/WhatsApp_Image_2020-04-21_at_3.03.04_PM_154b4657-3085-4cd0-88a3-2ddfe37d52c9.jpeg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/pages\/contact-us",
-              "text1": "",
+              "url": "shopify:\/\/collections\/object-box",
+              "text1": "OBJECT BOX",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
