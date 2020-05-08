@@ -555,37 +555,6 @@
       "1504161678752": {
         "type": "revolution-slider",
         "blocks": {
-          "1587953766069": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_petal_pack.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "https:\/\/a-esque.com\/collections\/metallics",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "",
-              "text_02": "Metallic Collection",
-              "text_03": "",
-              "text_04": "Browse",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
           "1587362375850": {
             "type": "revslide_image",
             "settings": {
@@ -763,11 +732,10 @@
           }
         },
         "block_order": [
-          "1587953766069",
+          "1587367656892",
           "1587362375850",
           "1587360416465",
           "1587949792845",
-          "1587367656892",
           "1550639703724",
           "1526602663882"
         ],
