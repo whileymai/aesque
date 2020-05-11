@@ -592,7 +592,7 @@
               "image": "shopify:\/\/shop_images\/Revolution_Slider_PETAL_PACK_copy.jpg",
               "style": "1",
               "info_state": true,
-              "url": "shopify:\/\/products\/petal-pack-br-white-wash",
+              "url": "shopify:\/\/products\/petal-pack-white-wash-crossbody-belt-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
               "text_01": "PETAL PACK",
@@ -1231,7 +1231,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-318_90649f92-0b13-4a1a-8f97-b56b87a51914.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-terracotta",
+              "url": "shopify:\/\/products\/bar-bag-cloud-terracotta-clutch",
               "text1": "BAR BAG CLOUD",
               "text1-position": "bottom right",
               "text2": "TERRACOTTA",
@@ -1267,7 +1267,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-321_2.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-off-white",
+              "url": "shopify:\/\/products\/bar-bag-cloud-off-white-clutch",
               "text1": "",
               "text1-position": "bottom h-center",
               "text2": "BAR BAG CLOUD",
@@ -1339,7 +1339,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-159.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-gold-metallic",
+              "url": "shopify:\/\/products\/bar-bag-cloud-petite-gold-metallic-clutch",
               "text1": "GOLD METALLIC",
               "text1-position": "bottom right",
               "text2": "BAR BAG CLOUD PETITE",
@@ -1467,7 +1467,7 @@
           "featured-text": "Match With",
           "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
           "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-black-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-black-leather-crossbody-belt-bag",
           "prd-bottom-right": "purists-wallet-50-waterfall-navy"
         }
       },
@@ -1478,7 +1478,7 @@
           "featured-text": "Match with",
           "prd-top-left": "slim-box-hip-bag-black-leather-cross-body-bag",
           "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-navy-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-navy-leather-crossbody-belt-bag",
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
@@ -1555,7 +1555,7 @@
           "featured-text": "Match With",
           "prd-top-left": "slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
           "prd-top-right": "purists-wallet-deep-khaki-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-deep-khaki-leather",
+          "prd-bottom-left": "envelope-belt-bag-stack-deep-khaki-leather-crossbody-belt-bag",
           "prd-bottom-right": "purists-wallet-50-black-leather"
         }
       },
@@ -1806,7 +1806,7 @@
         "settings": {
           "enable_buy_with": true,
           "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-black-leather-bag",
+          "prd-top-left": "barrel-esque-patch-pocket-black-leather-shoulder-bag",
           "prd-top-right": "rouge-lip-nappa-leather-purse",
           "prd-bottom-left": "card-case-burgundy-nappa-leather",
           "prd-bottom-right": "purists-wallet-50-burgundy-leather"
@@ -1828,7 +1828,7 @@
         "settings": {
           "enable_buy_with": true,
           "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-black-leather-bag",
+          "prd-top-left": "barrel-esque-patch-pocket-black-leather-shoulder-bag",
           "prd-top-right": "powdered-lip-nappa-leather-card-case",
           "prd-bottom-left": "card-case-colour-mix",
           "prd-bottom-right": "purists-wallet-50-black-leather"
@@ -1844,7 +1844,7 @@
               "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
               "info_state": true,
               "url": "",
-              "product_id": "bar-bag-cloud-petite-canary",
+              "product_id": "bar-bag-cloud-petite-canary-clutch",
               "button_icon": "icon-shop24",
               "button_text": "",
               "text_01": "",
@@ -1908,7 +1908,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4604_78c8c9b4-0174-4c2c-ae8b-d39f82c16f22.JPG",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/petal-pack-br-champagne",
+              "url": "shopify:\/\/products\/petal-pack-champagne-crossbody-belt-bag",
               "text1": "PETAL PACK",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2070,7 +2070,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4525_copy2.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/basket-tote-champagne",
+              "url": "shopify:\/\/products\/basket-tote-champagne-tote-shoulder-bag",
               "text1": "BASKET TOTE",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2088,7 +2088,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4597_b19f6e31-5d2a-45bf-9122-2a1f74ba906b.JPG",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/petal-pack-br-noir-navy",
+              "url": "shopify:\/\/products\/petal-pack-nude-crossbody-belt-bag",
               "text1": "PETAL PACK",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2549,7 +2549,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Product_Shoot-546_5651608e-fa35-45de-8b6a-fde4fd5e7f15.JPG",
               "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-bag",
+              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-shoulder-bag",
               "text1": "barrel-esque patch",
               "text1-position": "bottom left",
               "text2": "",
@@ -2726,7 +2726,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_1328_edit.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/belt-bag-white-wash-black",
+              "url": "shopify:\/\/products\/belt-bag-white-wash-black-crossbody-belt-bag",
               "text1": "BELT BAG MOMENT >",
               "text1-position": "bottom right",
               "text2": "",
