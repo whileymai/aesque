@@ -1231,7 +1231,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-318_90649f92-0b13-4a1a-8f97-b56b87a51914.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-terracotta",
+              "url": "shopify:\/\/products\/bar-bag-cloud-terracotta",
               "text1": "BAR BAG CLOUD",
               "text1-position": "bottom right",
               "text2": "TERRACOTTA",
@@ -1267,7 +1267,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-321_2.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-off-white",
+              "url": "shopify:\/\/products\/bar-bag-cloud-off-white",
               "text1": "",
               "text1-position": "bottom h-center",
               "text2": "BAR BAG CLOUD",
@@ -1303,7 +1303,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-267_cebf6cb5-7cc1-42d1-b24b-236f07563f3b.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-elephant",
+              "url": "shopify:\/\/products\/bar-bag-cloud-elephant",
               "text1": "ELEPHANT",
               "text1-position": "bottom right",
               "text2": "BAR BAG CLOUD",
@@ -1339,7 +1339,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-159.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-gold-metallic",
+              "url": "shopify:\/\/products\/bar-bag-cloud-petite-gold-metallic",
               "text1": "GOLD METALLIC",
               "text1-position": "bottom right",
               "text2": "BAR BAG CLOUD PETITE",
@@ -1844,7 +1844,7 @@
               "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
               "info_state": true,
               "url": "",
-              "product_id": "bar-bag-cloud-petite-br-canary",
+              "product_id": "bar-bag-cloud-petite-canary",
               "button_icon": "icon-shop24",
               "button_text": "",
               "text_01": "",
@@ -1980,7 +1980,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4505_copy.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/mansion-pack-br-white",
+              "url": "shopify:\/\/products\/mansion-pack-white",
               "text1": "MANSION PACK",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2250,7 +2250,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_4331_copy_e0c6cb87-113f-47e1-8165-37613911e9e2.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/basket-midi-br-magnolia-four-tone-nappa",
+              "url": "shopify:\/\/products\/basket-midi-magnolia-four-tone-nappa",
               "text1": "Basket Midi",
               "text1-position": "bottom h-center",
               "text2": "",
@@ -2726,7 +2726,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/IMG_1328_edit.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/belt-bag-br-white-wash-black",
+              "url": "shopify:\/\/products\/belt-bag-white-wash-black",
               "text1": "BELT BAG MOMENT >",
               "text1-position": "bottom right",
               "text2": "",
