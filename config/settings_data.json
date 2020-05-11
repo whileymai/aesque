@@ -5,7 +5,7 @@
     "layout_preloader": false,
     "layout-show_breadcrumbs": false,
     "layout-container_default": "boxed",
-    "layout-container_default_reverse": "our-story | contacts",
+    "layout-container_default_reverse": "our-story | service",
     "layout-container_collection": "boxed",
     "layout-container_blog": "boxed",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
@@ -769,7 +769,7 @@
         "type": "blog-posts",
         "settings": {
           "posts_per_page": "6",
-          "layout": "masonry",
+          "layout": "grid",
           "show_bread": true,
           "show_title": false,
           "tags": "bottom",
@@ -1097,7 +1097,7 @@
         "type": "blog-article",
         "settings": {
           "content_layout": "boxed",
-          "layout": "standart",
+          "layout": "text",
           "show_featured_image": true,
           "show_author": true,
           "show_social_links": true,
