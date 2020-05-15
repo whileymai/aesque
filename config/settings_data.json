@@ -1097,7 +1097,7 @@
         "type": "blog-article",
         "settings": {
           "content_layout": "boxed",
-          "layout": "standart",
+          "layout": "text",
           "show_featured_image": true,
           "show_author": true,
           "show_social_links": true,
