@@ -24,8 +24,8 @@
 					<div class="tt-post-grid">
 						{% if article.image %}
 							<a href="{{ article.url }}" class="tt-post-grid__image">
-								<img src="{{ article | img_url: '433x' }}"
-									 srcset="{{ article | img_url: '1024x' }} 1x, {{ article | img_url: '1024x', scale: 2 }} 2x"
+								<img src="{{ article | img_url: '1024x' }}"
+									 srcset="{{ article | img_url: '1024x' }} 1x, {{ article | img_url: '1024x', scale: 1 }} 1x"
 									 alt="{{ article.title }}">
 							</a>
 						{% endif %}

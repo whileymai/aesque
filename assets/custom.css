@@ -865,3 +865,7 @@ div#CustomerLoginForm {
 #theme .tt-newsletter.tt-newsletter--style-01 .btn {
     border-color: #000 !important;
 }
+
+a.blog {
+    text-decoration: underline;
+}

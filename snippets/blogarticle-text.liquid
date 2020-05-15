@@ -30,7 +30,7 @@ If a comment was just submitted but requires moderation, we have an extra commen
 		{%- if section.settings.show_featured_image -%}
 			{% if article.image %}
 				<div class="tt-post-text">
-					{{ article | img_url: '1024x1024' | img_tag: article.title }}
+					{{ article | img_url: '2048x2048' | img_tag: article.title }}
 				</div>
 			{% endif %}
 		{%- endif -%}

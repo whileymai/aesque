@@ -19,8 +19,8 @@ If a comment was just submitted but requires moderation, we have an extra commen
 	{% include 'breadcrumbs' %}
 </div>
 
-<div class="tt-post-img tt-post-img--layers ttg-image-scale">
-	{{ article | img_url: '1920x' | img_tag: article.title }}
+<div class="tt-post-img tt-post-img--layers">
+	{{ article | img_url: '2048x2048' | img_tag: article.title }}
 	<div class="tt-post-img__text">
 		<h1 class="tt-post-img__title">{{ article.title }}</h1>
 		{% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}

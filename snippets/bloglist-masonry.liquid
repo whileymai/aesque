@@ -23,7 +23,7 @@
 			<div class="col-xl-4 col-lg-6">
 				<div class="tt-post-grid">
 					{% if article.image %}
-						<a href="{{ article.url }}" class="tt-post-grid__image {{ loc-image-effect }}">
+						<a href="{{ article.url }}" class="tt-post-grid__image ">
 							<img src="{{ article | img_url: '433x' }}"
 								 srcset="{{ article | img_url: '433x' }} 1x, {{ article | img_url: '433x', scale: 2 }} 2x"
 								 alt="{{ article.title }}">
