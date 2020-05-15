@@ -19,7 +19,7 @@ If a comment was just submitted but requires moderation, we have an extra commen
 	{% include 'breadcrumbs' %}
 </div>
 <div class="tt-layout__section--pdg-mob">
-	<div class="tt-page__cont-small">
+	<div class="tt-page__cont-small text-center">
 		<div class="tt-post-head">
 			<h1 class="tt-post-head__title">{{ article.title }}</h1>
 			{% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}
@@ -39,7 +39,7 @@ If a comment was just submitted but requires moderation, we have an extra commen
 		{% if section.settings.content_layout == 'fullwidth' %}
 			{{ article.content }}
 		{% elsif section.settings.content_layout == 'boxed' %}
-			<div class="tt-page__cont-small">
+			<div class="tt-page__cont-small text-center">
 				{{ article.content }}
 			</div>
 		{% endif %}
