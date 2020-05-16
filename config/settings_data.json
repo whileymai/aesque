@@ -2574,12 +2574,12 @@
           "1586822554645": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Amanda_Banner.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_1870_277ac74e-8ede-4253-976f-0e16ebaec301.JPG",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "FROM HOME >",
+              "text1": "SHOP THE BELT BAG",
               "text1-position": "bottom right",
-              "text2": "Belt Bag LAUNCH FROM HOME (AMANDA WEARING)",
+              "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
               "color_title_c": "#ffffff",
@@ -2592,10 +2592,10 @@
           "1586846413855": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1863.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_4_07_56_pm.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/parlour-x",
-              "text1": "A CROISSANT SHAPE >",
+              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
+              "text1": "SHOP THE Petal Pack",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2610,10 +2610,10 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1328_edit.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_51_52_pm_42df12a6-62c6-4467-9c38-2b6c38108223.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/belt-bag-white-wash-black-crossbody-belt-bag",
-              "text1": "BELT BAG MOMENT >",
+              "url": "shopify:\/\/collections\/bar-bag-square",
+              "text1": "SHOP THE BAR BAG SQUARE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2631,7 +2631,7 @@
               "image": "shopify:\/\/shop_images\/WhatsApp_Image_2020-04-21_at_3.03.04_PM_154b4657-3085-4cd0-88a3-2ddfe37d52c9.jpeg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/object-box",
-              "text1": "OBJECT BOX AT HOME >",
+              "text1": "SHOP THE OBJECT BOX",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2784,6 +2784,19 @@
           "border_bottom": false,
           "border_top": false
         }
+      },
+      "1589664228880": {
+        "type": "home-blog",
+        "settings": {
+          "blog-caption": "A-EYE | CREATIVE THINKING ARTICLES",
+          "blog": "creativethinking",
+          "blog-per-row": "4",
+          "blog-posts-num": "5",
+          "arrows": true,
+          "blog-sec-width": "boxed",
+          "blog-sec-margin": "none",
+          "blog-sec-margin-custom": "10px"
+        }
       }
     },
     "content_for_index": [
@@ -2791,6 +2804,7 @@
       "1504161678752",
       "1585269473414",
       "1587349683011",
+      "1589664228880",
       "1532477260206",
       "1557727603087",
       "1535667541393",
