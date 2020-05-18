@@ -1927,25 +1927,7 @@
               "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_53_38_pm.jpg",
               "image-hover-animation": "",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557817616582": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_53_04_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-fuchsia-clutch",
-              "text1": "BAR BAG SQUARE",
+              "text1": "BAR BAG SQAURE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -1981,7 +1963,7 @@
               "image": "shopify:\/\/shop_images\/IMG_1870_277ac74e-8ede-4253-976f-0e16ebaec301.JPG",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/belt-bag-elephant-crossbody-belt-bag",
-              "text1": "",
+              "text1": "BELT BAG",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2011,24 +1993,6 @@
               "color_h_bg": ""
             }
           },
-          "1564986092731": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_12_34_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-beige-white-wash-leather-clutch",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1557817608851": {
             "type": "banner",
             "settings": {
@@ -2040,24 +2004,6 @@
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557817600999": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_6-5-20_3_41_21_pm_1_2a3b4897-bce5-4757-ac75-82cc75170bcb.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/pleat-clutch-off-white",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
               "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
@@ -2107,25 +2053,7 @@
               "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_19_52_pm.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/bar-bag-square-rose-metallic-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986031430": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_16_44_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/mellow-grande-gold-metallic-clutch",
-              "text1": "MELLOW GRANDE",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2140,10 +2068,10 @@
           "1564986074623": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_22_04_pm.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_49_47_pm_b5038cc1-c4b8-4434-9559-bb61f657432a.jpg",
               "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-mellow-canary-clutch",
-              "text1": "BAR BAG MELLOW",
+              "url": "shopify:\/\/products\/bar-bag-square-black-nappa-clutch",
+              "text1": "BAR BAG SQUARE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2158,10 +2086,82 @@
           "1564986018157": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_00_50_pm.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_09_37_pm.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/bar-bag-square-bluebird-metallic-clutch",
               "text1": "BAR BAG SQUARE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1589777001330": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_36_50_pm.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/bar-bag-square-noir-navy-leather-clutch",
+              "text1": "BAR BAG SQUARE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1589777363979": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_00_31_pm.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/bar-bag-square-wine-clutch",
+              "text1": "BAR BAG SQUARE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1589777511814": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_3_26_02_pm_a75a991a-fe46-4890-b339-b3afb1820375.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/convertible-petal-pure-midi-wine-leathercrossbody-shoulder-bag",
+              "text1": "CONVERTIBLE PETAL MIDI",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1589777531785": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_3_50_17_pm_8b0210c1-a870-4402-82a3-2ec59eb78a21.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
+              "text1": "PETAL PACK",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2177,20 +2177,20 @@
         "block_order": [
           "1564986001269",
           "1557817633812",
-          "1557812793234",
-          "1557817616582",
-          "1557817592358",
-          "1564985992562",
-          "1564986109330",
-          "1564986092731",
-          "1557817608851",
-          "1557817600999",
-          "1557818324197",
           "1564986010364",
-          "1564986041162",
-          "1564986031430",
           "1564986074623",
-          "1564986018157"
+          "1589777001330",
+          "1589777511814",
+          "1589777531785",
+          "1589777363979",
+          "1564986109330",
+          "1557817592358",
+          "1557812793234",
+          "1564985992562",
+          "1557817608851",
+          "1557818324197",
+          "1564986018157",
+          "1564986041162"
         ],
         "settings": {
           "width": "boxed",
