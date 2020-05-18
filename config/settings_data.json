@@ -1927,7 +1927,7 @@
               "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_53_38_pm.jpg",
               "image-hover-animation": "",
               "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "BAR BAG SQUARE",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -1942,10 +1942,10 @@
           "1557817616582": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_52_43_pm.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_53_04_pm.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/bar-bag-square-fuchsia-clutch",
-              "text1": "",
+              "text1": "BAR BAG SQUARE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2589,24 +2589,6 @@
               "color_h_bg": ""
             }
           },
-          "1586846413855": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_4_07_56_pm.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
-              "text1": "SHOP THE Petal Pack",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1585269484128": {
             "type": "banner",
             "settings": {
@@ -2623,6 +2605,24 @@
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
               "color_h_bg": "#ffffff"
+            }
+          },
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_4_07_56_pm.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
+              "text1": "SHOP THE Petal Pack",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
             }
           },
           "1585269564692": {
