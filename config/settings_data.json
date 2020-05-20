@@ -555,10 +555,72 @@
       "1504161678752": {
         "type": "revolution-slider",
         "blocks": {
+          "1587362375850": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider__Belt_Bag.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/belt-bag",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "Belt Bag",
+              "text_02": "Made from our offcuts",
+              "text_03": "",
+              "text_04": "Inspired by an old school style",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "100",
+              "info_align": "center",
+              "info_width": "900",
+              "info_parallaxlevel": "0",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#ffffff",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
+          "1587360416465": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hayley_copy_copy_copy.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/carry-bag",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "CARRY BAG",
+              "text_02": "HANDMADE AND CRAFTED",
+              "text_03": "",
+              "text_04": "QUALITY AND SIMPLICITY",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
           "1587949792845": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_MELLOW_GRANDE_copy.jpg",
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_MELLOW_GRANDE_copy_19ee9c4f-7950-4769-ba30-340ae9607d7a.jpg",
               "style": "1",
               "info_state": true,
               "url": "shopify:\/\/collections\/bar-bags",
@@ -609,68 +671,6 @@
               "color_text_01_c": "#000000",
               "color_text_02_c": "#000000",
               "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1587360416465": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hobo_One_piece_play_ea224141-0ea2-47be-8285-7d600219261c.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/carry-bag",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "CARRY BAG",
-              "text_02": "HANDMADE AND CRAFTED",
-              "text_03": "",
-              "text_04": "QUALITY AND SIMPLICITY",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1587362375850": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider__Belt_Bag.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/belt-bag",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "Belt Bag",
-              "text_02": "Made from our offcuts",
-              "text_03": "",
-              "text_04": "Inspired by an old school style",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "100",
-              "info_align": "center",
-              "info_width": "900",
-              "info_parallaxlevel": "0",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#ffffff",
               "color_btn_style": "7",
               "custom_content_info_state": false,
               "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
@@ -733,9 +733,9 @@
         },
         "block_order": [
           "1587362375850",
+          "1587360416465",
           "1587949792845",
           "1587367656892",
-          "1587360416465",
           "1550639703724",
           "1526602663882"
         ],
@@ -2642,13 +2642,32 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1589957997779": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hayley_copy_copy.jpg",
+              "image-hover-animation": "right",
+              "url": "",
+              "text1": "Title 1",
+              "text1-position": "top left",
+              "text2": "28",
+              "text2-p2": "products",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
           "1586822554645",
           "1585269484128",
           "1586846413855",
-          "1585269564692"
+          "1585269564692",
+          "1589957997779"
         ],
         "settings": {
           "width": "fullwidth",
