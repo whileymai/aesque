@@ -710,26 +710,6 @@
               "custom_param_info": ""
             }
           },
-          "1526602663882": {
-            "type": "advanced_options",
-            "settings": {
-              "enable_bullets": false,
-              "enable_arrows": true,
-              "nav_dir": "horizontal",
-              "bullets_pos_hor": "right",
-              "bullets_pos_vert": "bottom",
-              "bullets_offset_hor": "200",
-              "bullets_offset_vert": "92",
-              "arrow_l_pos_hor": "left",
-              "arrow_l_pos_vert": "center",
-              "arrow_l_offset_hor": "130",
-              "arrow_l_offset_vert": "70",
-              "arrow_r_pos_hor": "right",
-              "arrow_r_pos_vert": "center",
-              "arrow_r_offset_hor": "76",
-              "arrow_r_offset_vert": "70"
-            }
-          },
           "1589963440162": {
             "type": "revslide_image",
             "settings": {
@@ -759,6 +739,26 @@
               "custom_param_slide": "",
               "custom_param_img": "",
               "custom_param_info": ""
+            }
+          },
+          "1526602663882": {
+            "type": "advanced_options",
+            "settings": {
+              "enable_bullets": false,
+              "enable_arrows": true,
+              "nav_dir": "horizontal",
+              "bullets_pos_hor": "right",
+              "bullets_pos_vert": "bottom",
+              "bullets_offset_hor": "200",
+              "bullets_offset_vert": "92",
+              "arrow_l_pos_hor": "left",
+              "arrow_l_pos_vert": "center",
+              "arrow_l_offset_hor": "130",
+              "arrow_l_offset_vert": "70",
+              "arrow_r_pos_hor": "right",
+              "arrow_r_pos_vert": "center",
+              "arrow_r_offset_hor": "76",
+              "arrow_r_offset_vert": "70"
             }
           }
         },
@@ -1184,6 +1184,7 @@
       },
       "1532477260206": {
         "type": "home-products-slider",
+        "disabled": true,
         "settings": {
           "collection": "collection",
           "header_title_1": "Shop View ALL Here",
