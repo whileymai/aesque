@@ -2868,6 +2868,7 @@
       },
       "1587358238672": {
         "type": "home-infobox",
+        "disabled": true,
         "blocks": {
           "1587358238672-0": {
             "type": "text-banner",
