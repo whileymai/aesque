@@ -2868,20 +2868,29 @@
       },
       "1587358238672": {
         "type": "home-infobox",
-        "disabled": true,
         "blocks": {
           "1587358238672-0": {
             "type": "text-banner",
             "settings": {
               "text-banner-icon": "icon-right",
               "text-banner-url": "",
-              "text-banner-text1": "Returns and Exchanges within 30 days for pieces you have not worn or used are welcome. The exception to this is custom order pieces.",
+              "text-banner-text1": "Returns and Exchanges within 14 days for pieces you have not worn or used are welcome. The exception to this is custom order pieces.",
+              "text-banner-text2": ""
+            }
+          },
+          "1590170854086": {
+            "type": "text-banner",
+            "settings": {
+              "text-banner-icon": "icon-phone",
+              "text-banner-url": "",
+              "text-banner-text1": "+61 411 210 518",
               "text-banner-text2": ""
             }
           }
         },
         "block_order": [
-          "1587358238672-0"
+          "1587358238672-0",
+          "1590170854086"
         ],
         "settings": {
           "text-banner-type": "type1",
@@ -2907,6 +2916,19 @@
           "blog-sec-margin": "none",
           "blog-sec-margin-custom": "10px"
         }
+      },
+      "1590171923206": {
+        "type": "home-blog",
+        "settings": {
+          "blog-caption": "A-EYE | Her Take Articles",
+          "blog": "her-take",
+          "blog-per-row": "4",
+          "blog-posts-num": "5",
+          "arrows": true,
+          "blog-sec-width": "boxed",
+          "blog-sec-margin": "none",
+          "blog-sec-margin-custom": "10px"
+        }
       }
     },
     "content_for_index": [
@@ -2917,12 +2939,13 @@
       "1589664228880",
       "1532477260206",
       "1557727603087",
-      "1535667541393",
-      "1531272150905",
+      "1590171923206",
+      "1587358238672",
+      "1587352537752",
       "1526517781866",
       "1587246631787",
-      "1587352537752",
-      "1587358238672"
+      "1531272150905",
+      "1535667541393"
     ]
   },
   "presets": {
