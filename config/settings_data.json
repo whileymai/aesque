@@ -555,6 +555,68 @@
       "1504161678752": {
         "type": "revolution-slider",
         "blocks": {
+          "1590382174740": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/grocer_bag3_3f464cb3-ecbd-4bcf-a9f8-62c6475ba1f0.jpg",
+              "style": "off",
+              "info_state": true,
+              "url": "shopify:\/\/collections\/pre-order",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "GROCER BAG",
+              "text_02": "Release #1",
+              "text_03": "25-29 MAY",
+              "text_04": "PRE ORDER",
+              "info_pos_hor": "left",
+              "info_pos_vert": "center",
+              "info_offset_hor": "60",
+              "info_offset_vert": "70",
+              "info_align": "left",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#000000",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
+          "1590385542164": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2939_2.jpg",
+              "style": "off",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "NEW",
+              "text_02": "TWO-TONE BAR SQUARE",
+              "text_03": "",
+              "text_04": "SHOP",
+              "info_pos_hor": "center",
+              "info_pos_vert": "center",
+              "info_offset_hor": "0",
+              "info_offset_vert": "60",
+              "info_align": "center",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "#000000",
+              "color_text_02_c": "#000000",
+              "color_text_03_c": "#000000",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
+          },
           "1587949792845": {
             "type": "revslide_image",
             "settings": {
@@ -710,37 +772,6 @@
               "custom_param_info": ""
             }
           },
-          "1589963440162": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_ATELIER_copy_162a89de-75f0-464c-a84e-19aefde59022.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/pages\/contact-us",
-              "product_id": "",
-              "button_icon": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "text_04": "SERVICE",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "76",
-              "info_offset_vert": "0",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
           "1526602663882": {
             "type": "advanced_options",
             "settings": {
@@ -763,17 +794,18 @@
           }
         },
         "block_order": [
+          "1590382174740",
+          "1590385542164",
           "1587949792845",
           "1587362375850",
           "1587360416465",
           "1587367656892",
           "1550639703724",
-          "1589963440162",
           "1526602663882"
         ],
         "settings": {
           "layout": "custom",
-          "custom_breakpoints": "1832",
+          "custom_breakpoints": "1025",
           "custom_heights": "600",
           "timeout": "2",
           "nav_style": "off"
@@ -2643,10 +2675,10 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2939_da0801ed-b3e4-448c-b3b1-fbf115e3d31c.jpg",
+              "image": "shopify:\/\/shop_images\/Grocer_Bag_large_green_WEARING2_60d48b22-64f8-4979-b81a-934f6ea03937.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "SHOP THE BAR BAG",
+              "url": "shopify:\/\/collections\/pre-order",
+              "text1": "GROCER BAG PRE ORDER",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
