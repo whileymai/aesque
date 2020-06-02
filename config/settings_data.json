@@ -589,7 +589,7 @@
           "1590390271951": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider__Bgrocer_bag_copy2.jpg",
+              "image": "shopify:\/\/shop_images\/grocer_bag3_copy2_402138ae-e241-4973-a9b1-ecb065514bff.jpg",
               "style": "off",
               "info_state": true,
               "url": "shopify:\/\/collections\/pre-order",
@@ -682,7 +682,7 @@
           "1587360416465": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_Hayley_copy_copy_copy.jpg",
+              "image": "shopify:\/\/shop_images\/carru_abag.jpg",
               "style": "1",
               "info_state": true,
               "url": "shopify:\/\/collections\/carry-bag",
@@ -692,11 +692,11 @@
               "text_02": "HANDMADE AND CRAFTED",
               "text_03": "",
               "text_04": "QUALITY AND SIMPLICITY",
-              "info_pos_hor": "center",
+              "info_pos_hor": "left",
               "info_pos_vert": "center",
-              "info_offset_hor": "",
+              "info_offset_hor": "60",
               "info_offset_vert": "60",
-              "info_align": "center",
+              "info_align": "left",
               "info_width": "700",
               "info_parallaxlevel": "3",
               "color_text_01_c": "#000000",
@@ -713,7 +713,7 @@
           "1587367656892": {
             "type": "revslide_image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_PETAL_PACK_copy.jpg",
+              "image": "shopify:\/\/shop_images\/PETAL_PACK_REVOLUTION_BAR.jpg",
               "style": "1",
               "info_state": true,
               "url": "shopify:\/\/products\/petal-pack-white-wash-crossbody-belt-bag",
@@ -723,11 +723,11 @@
               "text_02": "THE PIVOT PIECE",
               "text_03": "",
               "text_04": "Our Signature Belt Bag",
-              "info_pos_hor": "center",
+              "info_pos_hor": "left",
               "info_pos_vert": "center",
-              "info_offset_hor": "",
+              "info_offset_hor": "60",
               "info_offset_vert": "60",
-              "info_align": "center",
+              "info_align": "left",
               "info_width": "700",
               "info_parallaxlevel": "0",
               "color_text_01_c": "#000000",
@@ -791,22 +791,54 @@
               "arrow_r_offset_hor": "100",
               "arrow_r_offset_vert": "100"
             }
+          },
+          "1591069650184": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5_6566c84b-a663-4149-a49b-def4c2b161f7.jpg",
+              "style": "1",
+              "info_state": true,
+              "url": "shopify:\/\/blogs\/her-take",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "CREATIVE THINKING ARTICLES",
+              "text_02": "",
+              "text_03": "",
+              "text_04": "INVESTIGATE A-EYE",
+              "info_pos_hor": "left",
+              "info_pos_vert": "center",
+              "info_offset_hor": "70",
+              "info_offset_vert": "70",
+              "info_align": "left",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
           }
         },
         "block_order": [
           "1590463245439",
           "1590390271951",
-          "1587949792845",
           "1587362375850",
-          "1587360416465",
           "1587367656892",
+          "1591069650184",
+          "1587949792845",
+          "1587360416465",
           "1550639703724",
           "1526602663882"
         ],
         "settings": {
           "layout": "custom",
           "custom_breakpoints": "1025",
-          "custom_heights": "600",
+          "custom_heights": "800",
           "timeout": "3",
           "nav_style": "off"
         }
