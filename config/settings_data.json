@@ -107,7 +107,7 @@
     "newsletter_show_once": "true",
     "newsletter_delay": "5",
     "newsletter_cookies_life": "3",
-    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<\/div><div class=\"tt-newsletter-popup__text-02\">\n<p>Join our A-List to acess Exclusive Pre Order opportunities, Pre launch product release news,an insiders view on our brand, and personal insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p>\n<\/div>",
+    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<\/div><div class=\"tt-newsletter-popup__text-02\">\n<p>Join our A-List to access Exclusive Pre Order opportunities, Pre launch product release news, an insiders view on our brand, and personal insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p>\n<\/div>",
     "newsletter-show_socials": false,
     "newsletter-show_facebook": false,
     "newsletter-show_google": false,
@@ -828,10 +828,10 @@
           "1590463245439",
           "1590390271951",
           "1587949792845",
-          "1587362375850",
-          "1591069650184",
           "1587367656892",
+          "1587362375850",
           "1587360416465",
+          "1591069650184",
           "1550639703724",
           "1526602663882"
         ],
@@ -2689,7 +2689,7 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/190520-80.jpg",
+              "image": "shopify:\/\/shop_images\/Coles_Bag_mono_copy_4a9652e4-f3d5-4fc4-bad8-bd0c3e0eb83b.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/pre-order",
               "text1": "GROCER BAG",
@@ -2725,7 +2725,7 @@
           "1590038141817": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/190520-206.jpg",
+              "image": "shopify:\/\/shop_images\/Coles_Bag_Orange_Met_copty_e5b748d1-bf38-48af-80a8-e2049ea86d06.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/collections\/metallics",
               "text1": "SHOP METALLIC",
