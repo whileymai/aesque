@@ -107,7 +107,7 @@
     "newsletter_show_once": "true",
     "newsletter_delay": "5",
     "newsletter_cookies_life": "3",
-    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<span>A-ESQUE CLIENT LIST<\/span>\n\n<\/div><div class=\"tt-newsletter-popup__text-02\">\n<p>Access Exclusive Pre Order opportunities, Pre launch product release news, an insiders view on our brand, brand news and personal insights from Amanda Briskin-Rettig, Founder and Creative Director A-ESQUE.<\/p>\n<\/div>",
+    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<\/div><div class=\"tt-newsletter-popup__text-02\">\n<p>Join our A-List to acess Exclusive Pre Order opportunities, Pre launch product release news,an insiders view on our brand, and personal insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p>\n<\/div>",
     "newsletter-show_socials": false,
     "newsletter-show_facebook": false,
     "newsletter-show_google": false,
