@@ -838,7 +838,7 @@
         "settings": {
           "layout": "custom",
           "custom_breakpoints": "1025",
-          "custom_heights": "800",
+          "custom_heights": "650",
           "timeout": "3",
           "nav_style": "off"
         }
@@ -2743,8 +2743,8 @@
           "1590038163866": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3200.jpg",
-              "image-hover-animation": "",
+              "image": "shopify:\/\/shop_images\/IMG_3200_aa5ac5c5-acda-4423-bcaa-8676967c5874.JPG",
+              "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/green-grocer-bag-tote-shoulder-bag",
               "text1": "GROCER BAG",
               "text1-position": "bottom right",
