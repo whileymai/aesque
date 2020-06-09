@@ -654,7 +654,7 @@
               "image": "shopify:\/\/shop_images\/PETAL_PACK_REVOLUTION_BAR.jpg",
               "style": "1",
               "info_state": true,
-              "url": "shopify:\/\/products\/petal-pack-white-wash-crossbody-belt-bag",
+              "url": "shopify:\/\/products\/petal-pack-noir-navy-leather-crossbody-belt-bag",
               "product_id": "",
               "button_icon": "icon-shop24",
               "text_01": "PETAL PACK",
@@ -2709,7 +2709,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Petal_Pack_NOIR_NAVY_web_copy2_5c1027b7-7aad-4f37-a8c2-99b538e69ea9.jpg",
               "image-hover-animation": "scale",
-              "url": "",
+              "url": "shopify:\/\/collections\/belt-bag",
               "text1": "SHOP THE PETAL PACK",
               "text1-position": "bottom right",
               "text2": "",
