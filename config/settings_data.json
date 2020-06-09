@@ -978,9 +978,9 @@
           "custom_text_tab_content": "<p>TBC<\/p>",
           "custom_html_tab_caption": "HTML",
           "custom_html_tab_content": "Tab's HTML<br> content<br><br> goes here!",
-          "show_related_products": false,
+          "show_related_products": true,
           "related_products_caption": "You may also like",
-          "related_products_limit": "8"
+          "related_products_limit": "4"
         }
       },
       "page-contacts": {
