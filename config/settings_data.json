@@ -1637,12 +1637,12 @@
       "buy-with-LE470S": {
         "type": "buy-with-LE470S",
         "settings": {
-          "enable_buy_with": true,
+          "enable_buy_with": false,
           "featured-text": "Match With",
           "prd-top-left": "purists-wallet-black-leather",
           "prd-top-right": "silver-noir-lip-leather-clutch",
           "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
-          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
+          "prd-bottom-right": ""
         }
       },
       "buy-with-LE473FM": {
@@ -1664,7 +1664,7 @@
           "prd-top-left": "purists-wallet-50-burgundy-leather",
           "prd-top-right": "rouge-lip-leather-clutch",
           "prd-bottom-left": "spacestud-short-strap-black-crimson-khaki",
-          "prd-bottom-right": "rainbow-long-strap-black-crimson-khaki"
+          "prd-bottom-right": "spacestud-wide-strap-burgundy-leather"
         }
       },
       "buy-with-LE470B": {
@@ -1675,7 +1675,7 @@
           "prd-top-left": "purists-wallet-black-leather",
           "prd-top-right": "black-powdered-lip-leather-clutch",
           "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
-          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+          "prd-bottom-right": "spacestud-wide-strap-black-leather"
         }
       },
       "buy-with-LE470K": {
@@ -1697,7 +1697,7 @@
           "prd-top-left": "purists-wallet-50-black-leather",
           "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
           "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
-          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
+          "prd-bottom-right": "rainbow-long-strap"
         }
       },
       "buy-with-LE469W": {
@@ -1708,7 +1708,7 @@
           "prd-top-left": "purists-wallet-50-black-leather",
           "prd-top-right": "powdered-lip-nappa-leather-card-case",
           "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
-          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
+          "prd-bottom-right": "rainbow-long-strap"
         }
       },
       "buy-with-LE469B": {
