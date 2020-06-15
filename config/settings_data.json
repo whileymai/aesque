@@ -2970,6 +2970,7 @@
       },
       "1589664228880": {
         "type": "home-blog",
+        "disabled": true,
         "settings": {
           "blog-caption": "A-EYE | CREATIVE THINKING ARTICLES",
           "blog": "creativethinking",
@@ -2983,6 +2984,7 @@
       },
       "1590171923206": {
         "type": "home-blog",
+        "disabled": true,
         "settings": {
           "blog-caption": "A-EYE | Her Take Articles",
           "blog": "her-take",
