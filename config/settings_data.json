@@ -554,38 +554,8 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
-          "1590463245439": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_grocer_makingcopy_copy.jpg",
-              "style": "off",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/pre-order",
-              "product_id": "",
-              "button_icon": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "text_04": "PRE ORDER",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "60",
-              "info_offset_vert": "50",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "#000000",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
           "1590390271951": {
             "type": "revslide_image",
             "settings": {
@@ -822,23 +792,54 @@
               "arrow_r_offset_hor": "100",
               "arrow_r_offset_vert": "100"
             }
+          },
+          "1592270747068": {
+            "type": "revslide_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_7139-preview.JPG",
+              "style": "1",
+              "info_state": true,
+              "url": "",
+              "product_id": "",
+              "button_icon": "icon-shop24",
+              "text_01": "Text line 1",
+              "text_02": "Text line 2",
+              "text_03": "Text line 3",
+              "text_04": "Button",
+              "info_pos_hor": "left",
+              "info_pos_vert": "center",
+              "info_offset_hor": "76",
+              "info_offset_vert": "0",
+              "info_align": "left",
+              "info_width": "700",
+              "info_parallaxlevel": "3",
+              "color_text_01_c": "",
+              "color_text_02_c": "",
+              "color_text_03_c": "",
+              "color_btn_style": "7",
+              "custom_content_info_state": false,
+              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
+              "custom_param_slide": "",
+              "custom_param_img": "",
+              "custom_param_info": ""
+            }
           }
         },
         "block_order": [
-          "1590463245439",
+          "1550639703724",
+          "1592270747068",
           "1590390271951",
+          "1591069650184",
           "1587949792845",
           "1587367656892",
           "1587362375850",
           "1587360416465",
-          "1591069650184",
-          "1550639703724",
           "1526602663882"
         ],
         "settings": {
           "layout": "custom",
           "custom_breakpoints": "1025",
-          "custom_heights": "650",
+          "custom_heights": "630",
           "timeout": "3",
           "nav_style": "off"
         }
@@ -2671,15 +2672,15 @@
           "1586846413855": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Belt_Bag_elephant_hayley2_27c7c838-b91c-4358-a7c6-c5e23d814cbe.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_7375.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "SHOP THE BELT BAG",
+              "url": "shopify:\/\/collections\/grocer-bag",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
+              "color_title_c": "#000000",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2689,10 +2690,10 @@
           "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Coles_Bag_mono_copy_4a9652e4-f3d5-4fc4-bad8-bd0c3e0eb83b.jpg",
+              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/pre-order",
-              "text1": "SHOP THE GROCER BAG",
+              "url": "shopify:\/\/collections\/most-popular-pieces",
+              "text1": "MOST POPULAR JUNE 2020",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2707,10 +2708,10 @@
           "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Petal_Pack_NOIR_NAVY_web_copy2_5c1027b7-7aad-4f37-a8c2-99b538e69ea9.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_7275-preview.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "SHOP THE PETAL PACK",
+              "url": "shopify:\/\/blogs\/creativethinking",
+              "text1": "INVESTIGATE A-EYE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2725,28 +2726,10 @@
           "1590038141817": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Coles_Bag_Orange_Met_copty_8be11041-3d8e-441a-a842-cd9924c3b004.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/metallics",
-              "text1": "SHOP METALLIC",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038163866": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3200_aa5ac5c5-acda-4423-bcaa-8676967c5874.JPG",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/green-grocer-bag-tote-shoulder-bag",
-              "text1": "GROCER BAG",
+              "url": "shopify:\/\/collections\/metallics",
+              "text1": "METALLICS MOMENT",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2761,10 +2744,10 @@
           "1590038213442": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2594.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "Bar Bag Collection",
+              "image": "shopify:\/\/shop_images\/IMG_9358.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "SHOP THE BELT BAG",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2776,13 +2759,31 @@
               "color_h_bg": ""
             }
           },
-          "1586822554645": {
+          "1592268271137": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2859_2a99aeb7-d172-4eb2-9490-b5207fa5425d.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "SHOP FOR A CARRY BAG",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "CROSS BODY BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1590038163866": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_c54a40a3-7be6-4bc3-b7a4-856103c69472.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
+              "text1": "SHOP THE MONO GROCER BAG ORIGINAL",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2798,9 +2799,9 @@
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/Open.jpg",
-              "image-hover-animation": "",
+              "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/object-box",
-              "text1": "OBJECT BOX",
+              "text1": "SHOP THE OBJECT BOX",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2811,6 +2812,78 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1586822554645": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "SHOP THE CARRY BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1592268422062": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/petal-pack-black-crossbody-belt-bag",
+              "text1": "SHOP THE PETAL PACK",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1592268411501": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_7932-preview.jpg",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1592268534665": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/grocer_makingcopy_copy.jpg",
+              "image-hover-animation": "",
+              "url": "https:\/\/a-esque.com\/blogs\/creativethinking",
+              "text1": "A-EYE INVESTIGATION SHARING AND THINKING IN WORDS AND PICTURES. Artisanal making. Modern pieces",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#444343"
+            }
           }
         },
         "block_order": [
@@ -2818,10 +2891,14 @@
           "1585269484128",
           "1585269564692",
           "1590038141817",
-          "1590038163866",
           "1590038213442",
+          "1592268271137",
+          "1590038163866",
+          "1590040187491",
           "1586822554645",
-          "1590040187491"
+          "1592268422062",
+          "1592268411501",
+          "1592268534665"
         ],
         "settings": {
           "width": "fullwidth",
