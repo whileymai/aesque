@@ -2572,18 +2572,18 @@
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
-          "1586846413855": {
+          "1586822554645": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7375.jpg",
+              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/grocer-bag",
-              "text1": "THE GREEN GROCER",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "SHOP THE CARRY BAG",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
               "text2-position": "bottom right",
-              "color_title_c": "#000000",
+              "color_title_c": "#ffffff",
               "color_title_h_c": "",
               "color_info_h_c": "",
               "color_quantity_h_c": "",
@@ -2597,96 +2597,6 @@
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/petal-pack-black-crossbody-belt-bag",
               "text1": "SHOP THE PETAL PACK",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1592268271137": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "SHOP THE BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1592268411501": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Amanda_Banner_4dbbb09b-5722-4a36-b9a2-4727bd08eca2.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/blogs\/creativethinking\/belt-bag-inspiration",
-              "text1": "Belt Bag Backstory",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1585269484128": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "HANDSFREE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1585269564692": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7275-preview.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/blogs\/creativethinking",
-              "text1": "INVESTIGATE A-EYE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038141817": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "CROSS BODY",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2734,13 +2644,67 @@
               "color_h_bg": ""
             }
           },
-          "1590040187491": {
+          "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Open.jpg",
+              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/object-box",
-              "text1": "SHOP THE OBJECT BOX",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "HANDSFREE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1586846413855": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_7375.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/grocer-bag",
+              "text1": "THE GREEN GROCER",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#000000",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1592268411501": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Amanda_Banner_4dbbb09b-5722-4a36-b9a2-4727bd08eca2.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/blogs\/creativethinking\/belt-bag-inspiration",
+              "text1": "Belt Bag Backstory",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
+            }
+          },
+          "1592268271137": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "SHOP THE BAR BAG SQUARE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2752,13 +2716,49 @@
               "color_h_bg": ""
             }
           },
-          "1586822554645": {
+          "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_7275-preview.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "SHOP THE CARRY BAG",
+              "url": "shopify:\/\/blogs\/creativethinking",
+              "text1": "INVESTIGATE A-EYE",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1590038141817": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "CROSS BODY",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1590040187491": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Open.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/object-box",
+              "text1": "SHOP THE OBJECT BOX",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2790,15 +2790,15 @@
           }
         },
         "block_order": [
-          "1586846413855",
-          "1592268422062",
           "1586822554645",
+          "1592268422062",
           "1590038213442",
-          "1592268271137",
           "1590038163866",
-          "1585269564692",
-          "1592268411501",
+          "1586846413855",
           "1585269484128",
+          "1592268271137",
+          "1592268411501",
+          "1585269564692",
           "1590038141817",
           "1590040187491",
           "1592268534665"
