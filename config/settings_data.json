@@ -454,9 +454,9 @@
               "top-line-icon": "",
               "top-line-text": "+61 497 390 157",
               "top-line-icon-phone": "",
-              "top-line-text-phone": "Complimentary Delivery",
+              "top-line-text-phone": "Made in Melbourne",
               "top-line-icon-hours": "",
-              "top-line-text-hours": "Made in Melbourne",
+              "top-line-text-hours": "Complimentary Delivery",
               "top-line-social": false,
               "show_facebook": true,
               "show_google": true,
@@ -2752,24 +2752,6 @@
               "color_h_bg": ""
             }
           },
-          "1592268411501": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7932-preview.jpg",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
           "1592268534665": {
             "type": "banner",
             "settings": {
@@ -2786,6 +2768,24 @@
               "color_info_h_c": "#ffffff",
               "color_quantity_h_c": "#ffffff",
               "color_h_bg": "#444343"
+            }
+          },
+          "1592268411501": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_7932-preview.jpg",
+              "image-hover-animation": "",
+              "url": "",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
             }
           }
         },
