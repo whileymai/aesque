@@ -497,9 +497,9 @@
           "1525859882368": {
             "type": "subscribe",
             "settings": {
-              "caption_enable": false,
-              "caption": "STAY IN TOUCH",
-              "text_top": ""
+              "caption_enable": true,
+              "caption": "JOIN THE A-LIST",
+              "text_top": "<p>Join the A-List and receive exclusive Pre Order offers and creative insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p>"
             }
           },
           "1503914532278": {
