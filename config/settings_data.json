@@ -516,11 +516,11 @@
               "caption_enable": true,
               "caption": "Follow Us",
               "show_facebook": true,
-              "show_google": true,
-              "show_twitter": true,
+              "show_google": false,
+              "show_twitter": false,
               "show_instagram": true,
-              "show_youtube": true,
-              "show_pinterest": true,
+              "show_youtube": false,
+              "show_pinterest": false,
               "show_skype": false,
               "show_behance": true
             }
