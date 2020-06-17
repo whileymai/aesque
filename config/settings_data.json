@@ -2611,7 +2611,7 @@
           "1590038213442": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9358.jpg",
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
               "text1": "SHOP THE BELT BAG",
@@ -2629,10 +2629,10 @@
           "1590038163866": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_c54a40a3-7be6-4bc3-b7a4-856103c69472.jpg",
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
-              "text1": "SHOP THE MONO GROCER BAG ORIGINAL",
+              "url": "shopify:\/\/collections\/collection",
+              "text1": "VIEW ALL",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2642,24 +2642,6 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
-            }
-          },
-          "1585269484128": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "HANDSFREE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
             }
           },
           "1586846413855": {
@@ -2680,13 +2662,13 @@
               "color_h_bg": ""
             }
           },
-          "1592268411501": {
+          "1585269484128": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Amanda_Banner_4dbbb09b-5722-4a36-b9a2-4727bd08eca2.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/blogs\/creativethinking\/belt-bag-inspiration",
-              "text1": "Belt Bag Backstory",
+              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "HANDSFREE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2714,6 +2696,24 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
+            }
+          },
+          "1592268411501": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Amanda_Banner_4dbbb09b-5722-4a36-b9a2-4727bd08eca2.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/blogs\/creativethinking\/belt-bag-inspiration",
+              "text1": "Belt Bag Backstory",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#ffffff"
             }
           },
           "1585269564692": {
