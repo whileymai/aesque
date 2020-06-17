@@ -2590,6 +2590,24 @@
               "color_h_bg": ""
             }
           },
+          "1590038163866": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
+              "text1": "THE MONO GROCER BAG ORIGINAL",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
           "1592268422062": {
             "type": "banner",
             "settings": {
@@ -2611,28 +2629,10 @@
           "1590038213442": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9358_b907cd3a-afcd-4247-b072-014a42f5fd7f.jpg",
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
               "text1": "SHOP THE BELT BAG",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038163866": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
-              "text1": "THE MONO GROCER BAG ORIGINAL",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2790,11 +2790,11 @@
           }
         },
         "block_order": [
-          "1586822554645",
-          "1592268422062",
           "1590038213442",
           "1590038163866",
+          "1592268422062",
           "1586846413855",
+          "1586822554645",
           "1585269484128",
           "1592268271137",
           "1592268411501",
