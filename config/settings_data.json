@@ -2572,13 +2572,13 @@
       "1585269473414": {
         "type": "home-banners",
         "blocks": {
-          "1586822554645": {
+          "1590038213442": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "SHOP THE CARRY BAG",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "SHOP THE BELT BAG",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2595,8 +2595,26 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
-              "text1": "THE MONO GROCER BAG ORIGINAL",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "SHOP CARRY BAG",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1586822554645": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/products\/carry-all-deluxe-day-beige-tote-shoulder-bag",
+              "text1": "THE CARRY ALL DAY DELUXE",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2615,24 +2633,6 @@
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/petal-pack-black-crossbody-belt-bag",
               "text1": "SHOP THE PETAL PACK",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038213442": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "SHOP THE BELT BAG",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2680,13 +2680,13 @@
               "color_h_bg": "#ffffff"
             }
           },
-          "1592268271137": {
+          "1590038141817": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
+              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "SHOP THE BAR BAG SQUARE",
+              "text1": "CROSS BODY",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2696,6 +2696,24 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
+            }
+          },
+          "1592268534665": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
+              "text1": "SHOP THE MONO GROCER ORIGINAL",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "#ffffff",
+              "color_info_h_c": "#ffffff",
+              "color_quantity_h_c": "#ffffff",
+              "color_h_bg": "#444343"
             }
           },
           "1592268411501": {
@@ -2716,13 +2734,13 @@
               "color_h_bg": "#ffffff"
             }
           },
-          "1585269564692": {
+          "1592268271137": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7275-preview.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/blogs\/creativethinking",
-              "text1": "INVESTIGATE A-EYE",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "MOST POPULAR SMALL BAG RIGHT NOW",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2734,13 +2752,13 @@
               "color_h_bg": ""
             }
           },
-          "1590038141817": {
+          "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_9358_c32558ac-9899-473e-8188-6b39a2d4c881.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "CROSS BODY",
+              "url": "shopify:\/\/products\/belt-bag-elephant",
+              "text1": "MOST POPULAR PIECE RIGHT NOW",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2769,39 +2787,21 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
-          },
-          "1592268534665": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/grocer_makingcopy_copy.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/blogs\/creativethinking",
-              "text1": "A-EYE INVESTIGATION SHARING AND THINKING IN WORDS AND PICTURES. Artisanal making. Modern pieces",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#444343"
-            }
           }
         },
         "block_order": [
           "1590038213442",
           "1590038163866",
+          "1586822554645",
           "1592268422062",
           "1586846413855",
-          "1586822554645",
           "1585269484128",
-          "1592268271137",
-          "1592268411501",
-          "1585269564692",
           "1590038141817",
-          "1590040187491",
-          "1592268534665"
+          "1592268534665",
+          "1592268411501",
+          "1592268271137",
+          "1585269564692",
+          "1590040187491"
         ],
         "settings": {
           "width": "fullwidth",
