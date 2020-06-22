@@ -1117,10 +1117,9 @@
       },
       "1526517781866": {
         "type": "home-instagram",
-        "disabled": true,
         "settings": {
           "insta-tag": "OUR WORLD @AESQUEOFFICIAL",
-          "insta-tag-url": "",
+          "insta-tag-url": "https:\/\/www.instagram.com\/aesqueofficial\/",
           "insta-caption": "",
           "insta-userid": "399582955",
           "insta-clientid": "",
@@ -2895,21 +2894,6 @@
           "layout-spacer": "210"
         }
       },
-      "1587352537752": {
-        "type": "home-products",
-        "disabled": true,
-        "settings": {
-          "collection": "cross-body",
-          "products_per_row": "4",
-          "products_per_row_mobile": "1",
-          "limit": "8",
-          "sec-prd-type": "desconhover",
-          "sec-grid-paddings": "off",
-          "sec-width": "boxed",
-          "sec-margin": "none",
-          "sec-margin-custom": "10px"
-        }
-      },
       "1587358238672": {
         "type": "home-infobox",
         "blocks": {
@@ -2987,7 +2971,6 @@
       "1557727603087",
       "1590171923206",
       "1587358238672",
-      "1587352537752",
       "1526517781866",
       "1587246631787",
       "1531272150905",
