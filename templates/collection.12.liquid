@@ -1,3 +1,8 @@
+{% include 'shogun-products', content: collection %}
+{{collection.metafields.shogun.above}}
 {%- comment -%}
 {%- endcomment -%}
 {% include 'collection-page' current_pagination_limit: '1000' current_view: settings.collection_view %}
+
+{{collection.metafields.shogun.below}}
+
