@@ -873,7 +873,7 @@
           "options_select_type": "atomizer",
           "show_tabs": false,
           "show_description_tab": false,
-          "show_tag_tab": false,
+          "show_tag_tab": true,
           "show_review_tab": false,
           "show_custom_text_tab": false,
           "show_custom_html_tab": false,
