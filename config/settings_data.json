@@ -2681,12 +2681,12 @@
               "color_h_bg": ""
             }
           },
-          "1592268271137": {
+          "1585269564692": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_9358_c32558ac-9899-473e-8188-6b39a2d4c881.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
+              "url": "shopify:\/\/products\/belt-bag-elephant",
               "text1": "",
               "text1-position": "bottom right",
               "text2": "",
@@ -2697,24 +2697,6 @@
               "color_info_h_c": "",
               "color_quantity_h_c": "",
               "color_h_bg": ""
-            }
-          },
-          "1592268534665": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#444343"
             }
           },
           "1590040187491": {
@@ -2723,24 +2705,6 @@
               "image": "shopify:\/\/shop_images\/Open.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/object-box",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1585269564692": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9358_c32558ac-9899-473e-8188-6b39a2d4c881.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/belt-bag-elephant",
               "text1": "",
               "text1-position": "bottom right",
               "text2": "",
@@ -2761,10 +2725,8 @@
           "1592268422062",
           "1586846413855",
           "1590038141817",
-          "1592268271137",
-          "1592268534665",
-          "1590040187491",
-          "1585269564692"
+          "1585269564692",
+          "1590040187491"
         ],
         "settings": {
           "width": "fullwidth",
@@ -2948,7 +2910,7 @@
           "1593584569384": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4110.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4108.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/collections\/the-socialite",
               "text1": "",
@@ -2984,9 +2946,81 @@
           "1593585070451": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Square_elephant_copy_new_wearing.jpg",
+              "image": "shopify:\/\/shop_images\/Bar-Bag-Square_elephant-copy-new-wearing.gif",
               "image-hover-animation": "",
               "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593585192809": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Basket_Tote_sandcopy.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/products\/basket-tote-champagne-tote-shoulder-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593585339791": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_3842.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/belt-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593585614058": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_new_blue4.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593585867012": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/grocer_bag_mono_new_wearing.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/grocer-bag",
               "text1": "",
               "text1-position": "top left",
               "text2": "",
@@ -3004,7 +3038,11 @@
           "1593584459467",
           "1593584569384",
           "1593584973347",
-          "1593585070451"
+          "1593585070451",
+          "1593585192809",
+          "1593585339791",
+          "1593585614058",
+          "1593585867012"
         ],
         "settings": {
           "width": "fullwidth",
@@ -3019,9 +3057,9 @@
     "content_for_index": [
       "1587351090663",
       "1593584435197",
+      "1587349683011",
       "1585269473414",
       "1504161678752",
-      "1587349683011",
       "1589664228880",
       "1532477260206",
       "1557727603087",
