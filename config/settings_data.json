@@ -554,6 +554,7 @@
       },
       "1504161678752": {
         "type": "revolution-slider",
+        "disabled": true,
         "blocks": {
           "1550639703724": {
             "type": "revslide_image",
@@ -2578,7 +2579,7 @@
               "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "SHOP THE BELT BAG",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2596,7 +2597,7 @@
               "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "SHOP CARRY BAG",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2614,7 +2615,7 @@
               "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/carry-all-deluxe-day-beige-tote-shoulder-bag",
-              "text1": "THE CARRY ALL DAY DELUXE",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2632,7 +2633,7 @@
               "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/petal-pack-black-crossbody-belt-bag",
-              "text1": "SHOP THE PETAL PACK",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2650,7 +2651,7 @@
               "image": "shopify:\/\/shop_images\/IMG_7375.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/grocer-bag",
-              "text1": "THE GREEN GROCER",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2662,31 +2663,31 @@
               "color_h_bg": ""
             }
           },
-          "1585269484128": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Dona_-_Inspiration_pictures.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "HANDSFREE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
           "1590038141817": {
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "CROSS BODY",
+              "text1": "",
+              "text1-position": "bottom right",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "bottom right",
+              "color_title_c": "#ffffff",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1592268271137": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
+              "image-hover-animation": "scale",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2704,7 +2705,7 @@
               "image": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
               "image-hover-animation": "",
               "url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
-              "text1": "SHOP THE MONO GROCER ORIGINAL",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2716,31 +2717,13 @@
               "color_h_bg": "#444343"
             }
           },
-          "1592268411501": {
+          "1590040187491": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Amanda_Banner_4dbbb09b-5722-4a36-b9a2-4727bd08eca2.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/blogs\/creativethinking\/belt-bag-inspiration",
-              "text1": "Belt Bag Backstory",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1592268271137": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_2939_141a93d5-a1e9-4dce-a476-1b153aaa20c5.jpg",
+              "image": "shopify:\/\/shop_images\/Open.jpg",
               "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "MOST POPULAR SMALL BAG RIGHT NOW",
+              "url": "shopify:\/\/collections\/object-box",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2758,25 +2741,7 @@
               "image": "shopify:\/\/shop_images\/IMG_9358_c32558ac-9899-473e-8188-6b39a2d4c881.jpg",
               "image-hover-animation": "scale",
               "url": "shopify:\/\/products\/belt-bag-elephant",
-              "text1": "MOST POPULAR PIECE RIGHT NOW",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590040187491": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Open.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/object-box",
-              "text1": "SHOP THE OBJECT BOX",
+              "text1": "",
               "text1-position": "bottom right",
               "text2": "",
               "text2-p2": "",
@@ -2795,13 +2760,11 @@
           "1586822554645",
           "1592268422062",
           "1586846413855",
-          "1585269484128",
           "1590038141817",
-          "1592268534665",
-          "1592268411501",
           "1592268271137",
-          "1585269564692",
-          "1590040187491"
+          "1592268534665",
+          "1590040187491",
+          "1585269564692"
         ],
         "settings": {
           "width": "fullwidth",
@@ -2960,12 +2923,104 @@
           "blog-sec-margin": "none",
           "blog-sec-margin-custom": "10px"
         }
+      },
+      "1593584435197": {
+        "type": "home-banners",
+        "blocks": {
+          "1593584459467": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lunch-Bag-Bluebird4.gif",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/lunch-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593584569384": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4110.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/the-socialite",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593584973347": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Convertible_Crescent_beige_mix_copy.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/cross-body",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593585070451": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bar_Bag_Square_elephant_copy_new_wearing.jpg",
+              "image-hover-animation": "",
+              "url": "shopify:\/\/collections\/bar-bags",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1593584459467",
+          "1593584569384",
+          "1593584973347",
+          "1593585070451"
+        ],
+        "settings": {
+          "width": "fullwidth",
+          "inrow": "4",
+          "margin": "custom",
+          "margin-custom": "30px 20px",
+          "padding": "custom",
+          "padding-custom": "10px 10px"
+        }
       }
     },
     "content_for_index": [
       "1587351090663",
-      "1504161678752",
+      "1593584435197",
       "1585269473414",
+      "1504161678752",
       "1587349683011",
       "1589664228880",
       "1532477260206",
