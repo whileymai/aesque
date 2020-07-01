@@ -2572,6 +2572,7 @@
       },
       "1585269473414": {
         "type": "home-banners",
+        "disabled": true,
         "blocks": {
           "1590038213442": {
             "type": "banner",
@@ -3032,6 +3033,78 @@
               "color_quantity_h_c": "",
               "color_h_bg": ""
             }
+          },
+          "1593628640435": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/products\/carry-all-deluxe-day-elephant-tote-shoulder-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593628691954": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/petal",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593628717696": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/carry-bag",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
+          },
+          "1593628754008": {
+            "type": "banner",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Open.jpg",
+              "image-hover-animation": "right",
+              "url": "shopify:\/\/collections\/object-box",
+              "text1": "",
+              "text1-position": "top left",
+              "text2": "28",
+              "text2-p2": "",
+              "text2-position": "v-center h-center",
+              "color_title_c": "",
+              "color_title_h_c": "",
+              "color_info_h_c": "",
+              "color_quantity_h_c": "",
+              "color_h_bg": ""
+            }
           }
         },
         "block_order": [
@@ -3040,9 +3113,13 @@
           "1593584973347",
           "1593585070451",
           "1593585192809",
-          "1593585339791",
+          "1593628691954",
           "1593585614058",
-          "1593585867012"
+          "1593585867012",
+          "1593628640435",
+          "1593585339791",
+          "1593628717696",
+          "1593628754008"
         ],
         "settings": {
           "width": "fullwidth",
