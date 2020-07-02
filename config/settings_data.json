@@ -2980,12 +2980,12 @@
               "color_h_bg": ""
             }
           },
-          "1593585339791": {
+          "1593628691954": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3842.jpg",
+              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/belt-bag",
+              "url": "shopify:\/\/collections\/petal",
               "text1": "",
               "text1-position": "top left",
               "text2": "",
@@ -3002,7 +3002,7 @@
             "type": "banner",
             "settings": {
               "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_new_blue4.jpg",
-              "image-hover-animation": "",
+              "image-hover-animation": "bottom",
               "url": "shopify:\/\/collections\/carry-bag",
               "text1": "",
               "text1-position": "top left",
@@ -3052,12 +3052,12 @@
               "color_h_bg": ""
             }
           },
-          "1593628691954": {
+          "1593585339791": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
+              "image": "shopify:\/\/shop_images\/IMG_3842.jpg",
               "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/petal",
+              "url": "shopify:\/\/collections\/belt-bag",
               "text1": "",
               "text1-position": "top left",
               "text2": "",
