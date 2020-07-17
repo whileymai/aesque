@@ -1,0 +1,14 @@
+{% capture share_link %}{{ shop.url }}{{ url }}{% endcapture %}
+{% capture share_title %}{{ title | url_param_escape }}{% endcapture %}
+{% if image %}
+	{% capture share_image %}{{ image | img_url: '1024x' }}{% endcapture %}
+{% else %}
+	{% capture share_image %}{{ page_image | img_url : '1024x' }}{% endcapture %}
+{% endif %}
+
+<div class="site-sharing">
+	{{ 'general.share_label' | t }}
+	<a href="//twitter.com/share?text={{ title }}&amp;url={{ title }}" target="_blank"><span class="twitter" aria-hidden="true">{% render 'asset_svg', icon_name: 'twitter_icon' %}</span></a>
+	<a href="//www.facebook.com/sharer.php?u={{ share_link }}" target="_blank"><span class="facebook" aria-hidden="true">{% render 'asset_svg', icon_name: 'facebook_icon' %}</span></a> 
+	<a href="//pinterest.com/pin/create/button/?url={{ share_link }}&amp;media={{ share_image }}&amp;description={{ title }}" target="_blank"><span class="pinterest" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_pinterest' %}</span></a> 
+</div>

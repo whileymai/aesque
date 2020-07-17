@@ -1,0 +1,17 @@
+<a href="#" class="product-item style--{{ settings.product_animation }} {% if per_page == 4 %} lap--box--small-lg {% endif %}">
+
+  <div class="box--product-image on primary">
+  	<span class="onboarding-svg">
+      {{ 'product-X' | replace: 'X', index | placeholder_svg_tag }}
+   </span>
+  </div>
+
+  <div class="caption">
+    <div>
+      <h3><span class="overflowed">Your product's name</span></h3>
+      <span class="price"><span class="overflowed">{{ '99' | money }}</span></span>
+      {% render 'asset_svg', icon_name: 'arrow_icon_long_overflowed' %}
+    </div>
+  </div>
+
+</a>

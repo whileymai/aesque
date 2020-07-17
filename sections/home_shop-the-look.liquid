@@ -1,0 +1,216 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick add-border" data-order="0">
+
+  <div class="site-box box--big lap--box--small-fl box__heading">
+    <div class="site-box-background">
+
+      {% if section.settings.image == blank %}
+
+        <span class="onboarding-svg">{{ 'collection-1' | placeholder_svg_tag }}</span>
+
+      {% else %}
+
+        <img
+          src="{{ section.settings.image | img_url: '960x' }}" alt="{{ section.settings.image.alt | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ section.settings.image | img_url: '600x' }} 480w, {{ section.settings.image | img_url: '860x' }} 720w, {{ section.settings.image | img_url: '1100x' }} 960w, {{ section.settings.image | img_url: '1600x' }} 1440w, {{ section.settings.image | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" 
+        />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ section.settings.image | img_url: '960x' }})"></span></noscript> 
+
+      {% endif %}
+
+    </div>
+  </div>
+
+  <div class="site-box box--big lap--box--bigger box__shop-the-look box--center-align box--column-flow" data-order="1">
+    <div class="site-box-content">
+      <h3 class="title">{{ section.settings.title | escape }}</h3>
+      
+      <div class="product-carousel" data-size="{{ section.blocks.size }}">
+        
+        {% for block in section.blocks %}
+
+          {% assign product = all_products[block.settings.product] %}
+
+          <div class="product-carousel__item" data-product-available="{{ product.available }}">
+
+            {% if product != empty %}
+
+              {% if product.featured_media.aspect_ratio %}
+                {% assign aspect_ratio = product.featured_media.aspect_ratio %}
+              {% else %}
+                {% assign aspect_ratio = 1 %}
+              {% endif %}
+
+              <div class="box--product-image product-carousel__item-image 
+                {% if settings.show_preloader %} show-lazy-preloader {% endif %}" 
+                data-ratio="{{ aspect_ratio }}" style="padding-top: {{ 100 | divided_by: aspect_ratio }}%" >
+                
+                <img
+                  src="{{ product.featured_media | img_url: '960x' }}" alt="{{ product.featured_media.alt | escape }}"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="{{ product.featured_media | img_url: '480x' }} 360w, {{ product.featured_media | img_url: '600x' }} 480w, {{ product.featured_media | img_url: '1100x' }} 960w, {{ product.featured_media | img_url: '1600x' }} 1440w, {{ product.featured_media | img_url: '2100x' }} 1920w"
+                  data-sizes="auto"
+                  class="lazyload"
+                />
+
+                <noscript><span class="ll-fallback" style="background-image:url({{ product.featured_media | img_url: '960x' }})"></span></noscript> 
+
+              </div>
+
+              <div class="product-carousel__item-caption">
+
+                <div>
+                  <h4><span class="overflowed"><a href="{{ product.url }}">{{ product.title }}</a></span></h4>
+                  <span class="price"><span class="overflowed">
+
+                    {% capture price %} {{ product.price | money }} {% endcapture %}
+                      
+                    {% if product.price_varies %} 
+
+                      {% if product.compare_at_price > product.price %}
+                        {{ 'product.on_sale_from_html' | t: price: price }}
+                      {% else %}
+                        {{ 'product.from_text_html' | t: price: price }} 
+                      {% endif %}
+
+                    {% else %}
+                    
+                      {% if product.compare_at_price > product.price %}
+                        {{ price }} <del>{{ product.compare_at_price | money }}</del>
+                      {% else %}
+                        {{ price }}
+                      {% endif %}
+                      
+                    {% endif %}
+              
+                    {% if product.selected_or_first_available_variant.unit_price_measurement %}
+                      <span class="unit-price">
+                        {{ product.selected_or_first_available_variant.unit_price | money }} / 
+                        {% if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 %}
+                          {{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}
+                        {% endif %}
+                        {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+                      </span>
+                    {% endif %}
+
+                  </span></span>
+                </div>
+
+                <div id="add-to-cart-{{ block.id }}" class="product--add-to-cart-form" data-type="{{ settings.cart_action }}">
+
+                  {% form 'product', product %}
+  
+                    <select id="productSelect" name="id" class="styled" style="display: none;">
+                      {% for variant in product.variants %}
+                        {% if variant.available %}
+                          <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                            {{ variant.title | escape }}
+                          </option>
+                        {% else %}
+                          <option disabled="disabled">{{ variant.title | escape }}</option>
+                        {% endif %}
+                      {% endfor %}
+                    </select>
+
+                    <div class="product-variants-holder" style="display:none;">
+                      {% for option in product.options_with_values %}
+                        <div class="product-variant selector-wrapper hidden">
+                          <label for="product-{{ option.name | downcase | strip }}">{{ option.name | escape }}</label>
+                          <select class="product-variants" id="product-{{ option.name | downcase | strip }}">
+                            {% for value in option.values %}
+                              <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value | escape }}</option>
+                            {% endfor %}
+                          </select>
+                        </div>
+                      {% endfor %}
+                    </div>
+
+                    <button type="submit" name="add" class="button color" aria-label="{{ 'product.add_to_cart' | t }}">
+                      {% render 'asset_svg', icon_name: 'cart_icon_plus' %}
+                      <span class="preloader"></span>
+                      <span style="display: none !important;" class="add-to-cart-text"></span>
+                    </button>
+
+                  {% endform %}
+
+                </div>
+
+                <script type="application/json" id="ProductJson-{{ block.id }}" class="product-json">
+                  {{ product | json }}
+                </script>
+
+              </div>
+                
+            {% else %}
+
+             <div class="box--product-image product-carousel__item-image" data-ratio="1" style="padding-top: 100%">
+                <span class="onboarding-svg" style="top: 0">{{ 'product-1' | placeholder_svg_tag }}</span>
+              </div>
+
+              <div class="product-carousel__item-caption">
+                <div>
+                  <h4><span class="overflowed"><a>Product Title</a></span></h4>
+                  <span class="price"><span class="overflowed">{{ 1999 | money }} <del>{{ 2999 | money }}</del></span></span>
+                </div>
+              </div>
+
+            {% endif %}
+          
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "class": "index-section mount-images mount-shop-the-look",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Shop the Look"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
+        ]
+      }
+    ], 
+    "presets": [{
+      "name": "Shop the look",
+      "category": "Product",
+      "blocks": [{
+        "type": "product"
+      },{
+        "type": "product"
+      },{
+        "type": "product"
+      }]
+    }]
+  }
+{% endschema %}

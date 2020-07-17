@@ -1,0 +1,49 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+  <div id="block-{{ section.id }}" class="site-box box--small-fl lap--box--small-fl box__announcement box--typo-big box--center-align box--column-flow" data-order="0">
+
+    {% unless section.settings.ann_link == blank %}
+      <a href="{{ section.settings.ann_link }}">
+    {% endunless %}
+
+     <div class="site-box-content">
+
+        <div class="content">
+                  
+          <p class="title">{{ section.settings.ann_text | escape }}</p>
+
+        </div>
+
+      </div>
+
+    {% unless section.settings.ann_link == blank %}
+      </a>
+    {% endunless %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Heading",
+    "class": "index-section mount-content-row",
+    "settings": [
+      {
+        "type": "text",
+        "id": "ann_text",
+        "label": "Text",
+        "default": "Inform your customers about important news, such as discounts or new offers."
+      },
+      {
+        "type": "url",
+        "id": "ann_link",
+        "label": "Link"
+      }
+    ], 
+    "presets": [{
+      "name": "Heading",
+      "category": "Text"
+    }]
+  }
+{% endschema %}

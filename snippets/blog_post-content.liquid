@@ -1,0 +1,52 @@
+{% capture date_format %} {{ 'general.date_format.month_day_year' | t }} {% endcapture %}
+<a class="blog-item img-right {% if blog_count == 1 %} just-one-article {% endif %}" href="{{ article.url }}" title="{{ article.title }}" {% if article.image %} style="margin-top: -2px;" {% endif %}>
+
+	<div class="content no-image {% if article.image %} dark {% endif %}">
+		<div>
+
+			<div class="header">
+			
+				<h3 class="title">{{ article.title | escape }}</h3>
+				
+				{% if section.settings.meta_enable %}
+
+					<p class="meta">
+
+	          {% capture author %} {{ article.author }} {% endcapture %}
+	          {% capture date %} {{ article.published_at | time_tag: date_format }} {% endcapture %}
+	          {{ 'blogs.article.post_meta_html' | t: author: author, date: date }}
+	          
+						{% if template == 'blog' and blog.comments_enabled? and article.comments_count > 0 %} -  <span>{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}</span> {% endif %}
+
+					</p>
+			
+				{% endif %}
+
+			</div>
+
+			<p class="excerpt">
+				{{ article.excerpt_or_content | strip_html | truncatewords: 28, '...' | escape }}
+			</p>
+
+		</div>
+	</div>
+
+	{% if article.image %}
+	
+		<span class="background" aria-hidden="true">
+
+      <img
+        src="{{ article.image | img_url: '480x540', crop: 'center' }}" alt="{{ article.image.alt }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ article.image | img_url: '480x540', crop: 'center' }} 480w, {{ article.image | img_url: '960x1080', crop: 'center' }} 960w"
+        data-sizes="auto"
+        class="lazyload" 
+      />
+      
+      <noscript><span class="ll-fallback" style="background-image:url({{ article.image | img_url: '480x540', crop: 'center' }})"></span></noscript> 
+
+    </span>
+
+	{% endif %}
+
+</a>

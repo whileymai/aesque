@@ -1,8 +1,132 @@
-{% include 'shogun-products', content: collection %}
-{{collection.metafields.shogun.above}}
-{%- comment -%}
-{%- endcomment -%}
-{% include 'collection-page' current_pagination_limit: settings.pagination_limit current_view: settings.collection_view %}
+{% section 'collection' %}
+{% section 'collection_footer' %}
+{% section 'banner_collection' %}
 
-{{collection.metafields.shogun.below}}
+<script type="text/javascript">
 
+  window.CuberCollectionFilter = {
+    'pathname': document.location.pathname + document.location.search,
+    'sort': ''
+  }
+
+  $(document).on('shopify:section:select', function(e){
+    var $section = $(e.target);
+    if ( $section.hasClass('collection-page') ) {
+      initFilters();
+    }
+  });
+
+  function initFilters() {
+
+    var $filters = jQuery('.filter-by');
+
+    $filters.change(function() {
+      var newTags = [];
+      $filters.each(function() { 
+        if (jQuery(this).val()) {
+          newTags.push(jQuery(this).val());
+        }
+      });
+      if (newTags.length) {
+        var query = newTags.join('+');
+        window.CuberCollectionFilter['pathname'] = $('{{ 'tag' | link_to_tag: 'tag' }}').attr('href').replace('tag', query);
+      } else {
+        {% if collection.handle %}
+          window.CuberCollectionFilter['pathname'] = '{{ routes.collections_url }}/{{ collection.handle }}';
+        {% elsif collection.products.first.type == collection.title %}
+          window.CuberCollectionFilter['pathname'] = '{{ collection.title | url_for_type }}';
+        {% elsif collection.products.first.vendor == collection.title %}
+          window.CuberCollectionFilter['pathname'] = '{{ collection.title | url_for_vendor }}';
+        {% endif %}
+      }
+    });
+
+  }
+  
+  initFilters();
+
+</script>
+
+<script type="text/javascript">
+
+  $(document).on('shopify:section:select', function(e){
+    var $section = $(e.target);
+    if ( $section.hasClass('collection-page') ) {
+      initSort();
+    }
+  });
+
+  function initSort() {
+
+    Shopify.queryParams = {};
+      if (location.search.length) {
+        for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+          aKeyValue = aCouples[i].split('=');
+          if (aKeyValue.length > 1) {
+            Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+          }
+      }
+    }
+
+    $(function() {
+
+      $('#sort-by')
+        .val('{{ collection.sort_by | default: collection.default_sort_by }}')
+        .bind('change', function() {
+          window.CuberCollectionFilter['sort'] = $(this).val();
+        }
+      );
+
+      if ( $('#sort-by').hasClass('styled') ) {
+        $('#sort-by').parent().find('.regular-select-inner').html($('#sort-by option:selected').text())
+      }
+
+    });
+
+  }
+  
+  initSort();
+
+</script>
+
+<script type="text/javascript">
+
+  function initFilterSortApply() {
+    $(function(){
+
+      $('#apply-sort-filter').on('click', function(){
+
+        if ( window.CuberCollectionFilter['sort'] != '' ) {
+          if ( window.CuberCollectionFilter['pathname'].indexOf('sort_by') >= 0 ) {
+            window.CuberCollectionFilter['pathname'] = window.CuberCollectionFilter['pathname'].replace(/sort_by=.+/g, 'sort_by=' + window.CuberCollectionFilter['sort']);
+          } else {
+            window.CuberCollectionFilter['pathname'] = window.CuberCollectionFilter['pathname'] + ( window.CuberCollectionFilter['pathname'].indexOf('?') >= 0 ? '&' : '?' ) + 'sort_by=' + window.CuberCollectionFilter['sort'];
+          }
+          
+        } else {
+          // empty
+        }
+        document.location.href =  window.CuberCollectionFilter['pathname'];
+      });
+
+      $('#clear-sort-filter').on('click', function(){
+        document.location.href = document.location.origin + '{{ routes.collections_url }}/' + $('#section-collection').data('handle');
+      });
+
+    })
+  }
+
+  initFilterSortApply();
+
+</script>
+
+
+<script type="text/javascript">
+  $(window).on('resize', function(){
+    if ( $(window).height() % 2 == 0 ) {
+      $('body').removeClass('odd-screen-height');
+    } else {
+      $('body').addClass('odd-screen-height');
+    }
+  }).trigger('resize');
+</script>

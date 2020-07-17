@@ -1,60 +1,48 @@
-{%- comment -%}
-{%- endcomment -%}
-{% if settings.layout-show_breadcrumbs %}
-  <div class="tt-page__breadcrumbs">
-    {% include 'breadcrumbs' %}
-  </div>
-{% endif %}
+<div class="shopify-section">
 
-<div class="tt-page__name text-center">
-  <h1>{{ 'customer.activate_account.title' | t }}</h1>
-</div>
+  <div id="section-activate" class="site-box-container container--fullscreen box--can-stick">
 
-{% form 'activate_customer_password' %}
-  <div class="tt-login">
-    <div class="tt-login__title">
-      <p>{{ 'customer.activate_account.subtext' | t }}</p>
-    </div>
-    <div class="tt-form">
-      {% include 'form-get-message' %}
-      <div class="tt-form__form">
-        <label>
-          <div class="row">
-            <div class="col-md-3"><span class="ttg__required">{{ 'customer.activate_account.password' | t }}:</span></div>
-            <div class="col-md-9">
-              <input type="password"
-                     name="customer[password]"
-                     id="CustomerPassword"
-                     class="form-control colorize-theme6-bg"
-                     placeholder="{{ 'customer.activate_account.password_placeholder' | t }}"
-                     required="required">
-            </div>
-          </div>
-        </label>
-        <label>
-          <div class="row">
-            <div class="col-md-3"><span class="ttg__required">{{ 'customer.activate_account.password_confirm' | t }}:</span></div>
-            <div class="col-md-9">
-              <input type="password"
-                     name="customer[password_confirmation]"
-                     id="CustomerPasswordConfirmation"
-                     class="form-control colorize-theme6-bg"
-                     placeholder="{{ 'customer.activate_account.password_confirm_placeholder' | t }}"
-                     required="required">
-            </div>
-          </div>
-        </label>
-        <div class="row ttg-mt--40">
-          <div class="col-md-9 offset-md-3">
-            <div class="tt-form__back">
-              <button type="submit" class="btn ttg-mb--20">{{ 'customer.activate_account.submit' | t }}</button>
-              <span class="ttg-mb--20">or</span>
-              <input type="submit" class="btn ttg-mb--20" name="decline" value="{{ 'customer.activate_account.cancel' | t }}">
-            </div>
-          </div>
-        </div>
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--lots-of-text box--center-align box--column-flow box__heading box--add-hr" data-order="0">
+      <div class="site-box-content fix-me-with-margin">
+        <h1 class="title">{{ 'customer.activate_account.title' | t }}</h1>
       </div>
     </div>
-  </div>
-{% endform %}
 
+    <div class="site-box box--big lap--box--bigger box--center-align box--column-flow box__form" data-order="1">
+
+      <div class="site-box-content fix-me-with-margin">
+
+        <div class="simple-grid">
+
+          {% form 'activate_customer_password' %}
+
+            {{ form.errors | default_errors }}
+
+            <p class="grid__item one-whole caption">{{ 'customer.activate_account.subtext' | t }}</p>
+          
+            <div class="grid__item one-whole">
+              <label for="CustomerPassword" class="hidden-label">{{ 'customer.activate_account.password' | t }}</label>
+              <input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full" placeholder="{{ 'customer.activate_account.password' | t }}">
+            </div>
+
+            <div class="grid__item one-whole">
+              <label for="CustomerPasswordConfirmation" class="hidden-label">{{ 'customer.activate_account.password_confirm' | t }}</label>
+              <input type="password" value="" name="customer[password_confirmation]" id="CustomerPasswordConfirmation" class="input-full" placeholder="{{ 'customer.activate_account.password_confirm' | t }}">
+            </div>
+
+            <div class="grid__item one-whole">
+              <input type="submit" class="button" value="{{ 'customer.activate_account.submit' | t }}">
+              <input type="submit" class="button outline dark" name="decline" value="{{ 'customer.activate_account.cancel' | t }}">
+            </div>
+
+          {% endform %}
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

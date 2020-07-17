@@ -1,0 +1,47 @@
+<div class="site-social" aria-label="{{ 'general.social_profiles' | t }}">
+
+	{% if settings.social_twitter != '' %}
+		<a href="{{ settings.social_twitter | escape }}" target="_blank" aria-label="Twitter"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_twitter' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_facebook != '' %}
+		<a href="{{ settings.social_facebook | escape }}" target="_blank" aria-label="Facebook"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_facebook' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_youtube != '' %}
+		<a href="{{ settings.social_youtube | escape }}" target="_blank" aria-label="YouTube"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_youtube' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_vimeo != '' %}
+		<a href="{{ settings.social_vimeo | escape }}" target="_blank" aria-label="Vimeo"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_vimeo' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_pinterest != '' %}
+		<a href="{{ settings.social_pinterest | escape }}" target="_blank" aria-label="Pinterest"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_pinterest' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_tumblr != '' %}
+		<a href="{{ settings.social_tumblr | escape }}" target="_blank" aria-label="Tumblr"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_tumblr' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_instagram != '' %}
+		<a href="{{ settings.social_instagram | escape }}" target="_blank" aria-label="Instagram"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_instagram' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_linkedin != '' %}
+		<a href="{{ settings.social_linkedin | escape }}" target="_blank" aria-label="LinkedIn"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_linkedin' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_flickr != '' %}
+		<a href="{{ settings.social_flickr | escape }}" target="_blank" aria-label="Flickr"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_flickr' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_reddit != '' %}
+		<a href="{{ settings.social_reddit | escape }}" target="_blank" aria-label="Reddit"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_reddit' %}</span></a>
+	{% endif %}
+
+	{% if settings.social_email != '' %}
+		<a href="mailto:{{ settings.social_email | escape }}" target="_blank" aria-label="Email"><span class="icon {{ size }}" aria-hidden="true">{% render 'asset_svg', icon_name: 'social_email' %}</span></a>
+	{% endif %}
+
+</div>

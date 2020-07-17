@@ -1,157 +1,33 @@
-{%- comment -%}
-{%- endcomment -%}
-{% if settings.layout-show_breadcrumbs %}
-	<div class="tt-page__breadcrumbs">
-		{% include 'breadcrumbs' %}
-	</div>
-{% endif %}
+<div class="shopify-section">
 
-{% if cart.item_count > 0 %}
-	<div class="tt-page__name text-center">
-		<h1>{{ 'cart.general.title' | t }}</h1>
-	</div>
+  <div id="section-cart" class="site-box-container container--fullscreen box--can-stick">
 
-	<form action="/cart" method="post" novalidate>
-		<div class="tt-cart tt-layout__section--pdg">
-			<div class="row">
-				<div class="col-lg-8">
-					<div class="tt-cart__caption">
-						<div class="row">
-							<div class="col-md-6"><span>{{ 'cart.label.product' | t }}</span></div>
-							<div class="col-md-2 text-center"><span>{{ 'cart.label.price' | t }}</span></div>
-							<div class="col-md-2 text-center"><span>{{ 'cart.label.quantity' | t }}</span></div>
-							<div class="col-md-2 text-center"><span>{{ 'cart.label.total' | t }}</span></div>
-						</div>
-					</div>
-					<div class="tt-cart__list">
-						{% for item in cart.items %}
-							<div class="tt-cart__product">
-								<div class="row">
-									<div class="col-md-6" data-label="{{ 'customer.order.product' | t }}">
-										<a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="tt-cart__product_del" title="{{ 'cart.general.remove' | t }}"><i class="fal fa-times" aria-hidden="true"></i></a>
-										<a href="{{ item.url | within: collections.all }}" class="tt-cart__product_image"><img src="{{ item | img_url: '125x' }}"
-																						srcset="{{ item | img_url: '125x' }} 1x, {{ item | img_url: '250x' }} 2x"
-																						alt="{{ item.title | escape }}"></a>
-										<div class="tt-cart__product_info">
-											<a href="{{ item.url }}"><p>{{ item.product.title }}</p></a>
-											{% unless item.product.has_only_default_variant %}
-												<p>
-													<span>{{ item.variant.title }}</span>
-												</p>
-											{% endunless %}
-											{% assign this-properties_size = item.properties | size %}
-											{% if this-properties_size > 0 %}
-												{% for prop in item.properties %}
-													{% assign first_character_in_key = prop.first | truncate: 1, '' %}
-													{% unless prop.last == blank or first_character_in_key == '_' %}
-													<p>
-														<span><span>{{ prop.first | replace: 'Notes', 'cart.product.notes' | t }}</span> {{ prop.last }}</span>
-													</p>
-													{% endunless %}
-												{% endfor %}
-											{% endif %}
-										</div>
-									</div>
-									<div class="col-md-2 col-xs-4 text-center" data-label="{{ 'cart.label.price' | t }}">
-										<div class="tt-cart__product_price">
-											<div class="tt-price{% if item.original_line_price != item.line_price %} tt-price--sale{% endif %}">
-												{% if item.original_line_price != item.line_price %}
-													{{ item.original_price | money }}
-													{{ item.price | money }}
-												{% else %}
-													{{ item.price | money }}
-												{% endif %}
-											</div>
-										</div>
-									</div>
-									<div class="col-md-2 col-xs-4 text-center" data-label="{{ 'cart.label.quantity' | t }}">
-										<div class="tt-counter tt-counter__inner" data-min="1">
-											<input type="text"
-												   class="form-control"
-												   name="updates[]"
-												   id="updates_{{ item.key }}"
-												   value="{{ item.quantity }}"
-												   min="0"
-												   aria-label="{{ 'cart.general.item_quantity' | t }}">
-											<div class="tt-counter__control">
-												<span class="icon-up-circle" data-direction="next"></span>
-												<span class="icon-down-circle" data-direction="prev"></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-2 col-xs-4 text-center" data-label="{{ 'cart.label.total' | t }}">
-										<div class="tt-cart__product_price"><span class="tt-price">{{ item.line_price | money }}</span></div>
-									</div>
-								</div>
-							</div>
-						{% endfor %}
-					</div>
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box--add-hr" data-order="0">
+      <div class="site-box-content fix-me-with-margin">
+        <h1 class="title">{{ 'cart.title' | t }}</h1>
+      </div>
+    </div>
 
-					<div class="tt-cart__footer">
-						<div class="row">
-							<div class="col-md-6">
-							</div>
-							<div class="col-md-6 text-right">
-								<button type="submit" name="update" class="btn btn-type--icon colorize-btn2" ><span>{{ 'cart.general.update' | t }}</span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="tt-summary">
-						{% if settings.cart_notes_enable %}
-							<div class="tt-summary--border">
-								<h5 class="ttg-mb--20">{{ 'cart.general.cart_total' | t }}</h5>
-								<p>{{ 'cart.general.note_additional' | t }}</p>
-								<textarea name="note" id="CartSpecialInstructions" class="form-control">{{ cart.note }}</textarea>
-							</div>
-						{% endif %}
+    <div class="site-box box--big lap--box--bigger box--center-align box--column-flow box__cart" data-order="1">
 
-						{% if cart.total_discounts > 0 %}
-							<p>{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}</p>
-						{% endif %}
+      {% if cart.item_count > 0 %}
 
-						<div class="tt-summary__total tt-summary__total--lg">
-							<p>{{ 'cart.general.subtotal' | t }} <span>{{ cart.total_price | money }}</span></p>
-						</div>
+        <div class="site-box-content fix-me-with-margin">
+          {% render 'cart_form', type: 'page', cart: cart %}
+        </div>
 
-						<p>{{ 'cart.general.shipping_at_checkout' | t }}</p>
+      {% else %}
 
-						<button type="submit" name="checkout" class="tt-product-head__cart tt-btn tt-btn--cart colorize-btn6">
-							<span>{{ 'cart.general.checkout' | t }}</span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</form>
-{% else %}
-	<div class="tt-empty">
-		{% comment %}<i class="tt-empty__icon"><img src="{{ 'empty-shopping-cart.svg' | asset_url }}" alt="{{ 'cart.general.title' | t }}"></i>{% endcomment %}
-		<div class="tt-page__name text-center">
-			<h1>{{ 'cart.general.title' | t }}</h1>
-			<p>{{ 'cart.general.empty' | t }}</p>
-		</div>
-		<div class="tt-empty__btn">
-			<a href="/collections/all" class="btn">{{ 'collections.general.no_matches_btn' | t }}</a>
-		</div>
-		{% comment %}
-		Cart no cookies state
-		---------------------
-		Browser cookies are required to use the cart. If cookies aren't enabled in the
-		browser a message is displayed prompting the user to enable them.
-		{% endcomment %}
-		<div class="supports-no-cookies">
-			<p>{{ 'cart.general.cookies_required' | t }}</p>
-		</div>
+        <div class="site-box-content fix-me-with-margin">
+          <p>{{ 'cart.empty' | t }}</p>
+          {{ 'cart.continue_browsing_html' | t }}
+        </div>
 
-	</div>
+      {% endif %}
 
-{% endif %}
+    </div>
 
-<script>
-  fbq('track', 'AddToCart', {
-    value: 10,
-    currency: 'AUD',
-  });
-</script>
+  </div>
+
+</div>
+{% section 'banner_cart' %}

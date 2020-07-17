@@ -1,0 +1,149 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen" data-posts="{{ section.blocks.size | modulo: 2 }}" data-all_posts="{{ section.blocks.size }}">
+  
+  {% if section.blocks.size == 0 %}
+    {% assign size_class = 'box--bigger box--typo-big' %}
+  {% elsif section.blocks.size < 2 %}
+    {% assign size_class = 'box--big box--typo-big' %}
+  {% elsif section.blocks.size < 6 %}
+    {% assign size_class = 'box--small-lg box--typo-small' %}
+  {% else %}
+    {% assign size_class = 'box--small box--typo-small' %}
+  {% endif %}
+
+  <div class="site-box {{ size_class }} lap--box--small-lg palm--box--small-fl box--center-align box--column-flow box__heading" data-order="0">
+
+    <div class="site-box-content ">
+        
+      <h2 class="title">{{ section.settings.title | escape }}</h2>
+      {% unless section.settings.subtitle == blank %}
+        <p>{{ section.settings.subtitle | escape }}</p>
+      {% endunless %}
+
+    </div>
+
+  </div>
+
+  {% for block in section.blocks %}
+
+    {% assign size_class = 'box--small box--typo-small' %}
+    {% assign tsize = forloop.length %}
+    {% assign tindex = forloop.index %}
+
+    {% case tindex %}
+
+      {% when 1 %}
+
+        {% if tsize < 3 %}
+          {% assign size_class = 'box--big box--typo-big' %}
+        {% elsif tsize < 6 %}
+          {% assign size_class = 'box--small-lg box--typo-small' %}
+        {% endif %}
+
+      {% when 2 %}
+
+        {% if tsize == 2 %}
+          {% assign size_class = 'box--small-lg box--typo-small box--fix-at-fifthy' %}
+        {% elsif tsize < 5 or tsize == 6 %}
+          {% assign size_class = 'box--small-lg box--typo-small' %}
+        {% endif %}
+
+      {% when 3 %}
+
+        {% if tsize == 3 %}
+          {% assign size_class = 'box--small-lg box--typo-small' %}
+        {% endif %}
+
+    {% endcase %}
+
+    <div id="block-{{ block.id }}" class="site-box {{ size_class }} lap--box--small-lg box--center-align box--column-flow box__testimonial">
+
+      <div class="site-box-content ">
+
+        <div class="content">
+
+          <blockquote class="blockquote rte">
+            {{ block.settings.content }}
+          </blockquote>
+
+          {% unless block.settings.title == blank %}
+            <p class="cite">{{ block.settings.title | escape }}</p>
+          {% endunless %}
+
+        </div>
+
+        <div class="avatar" aria-hidden="true">
+          {% unless block.settings.avatar == blank %}
+           <img 
+              src="{{ block.settings.avatar | img_url: '70x70', crop: 'center' }}" alt="{{ block.settings.avatar.alt | escape }}"
+              srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-srcset="{{ block.settings.avatar | img_url: '70x70', crop: 'center' }} 70w, {{ block.settings.avatar | img_url: '140x140', crop: 'center' }} 140w"
+              data-sizes="70px" class="lazyload"
+            />
+          {% else %} 
+            {% render 'asset_svg', icon_name: 'icon_avatar' %}
+          {% endunless %}
+        </div>
+
+      </div>
+
+    </div>
+
+  {% endfor %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonials",
+    "class": "index-section mount-testimonials",
+    "max_blocks": 7,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Testimonials"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Share your client's stories"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Quote",
+            "default": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Name",
+            "default": "by Quote Author"
+          },
+          {
+            "type": "image_picker",
+            "id": "avatar",
+            "label": "Avatar"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Testimonials",
+      "category": "Text",
+      "blocks": [{
+        "type": "text"
+      }, {
+        "type": "text"
+      }]
+    }]
+  }
+{% endschema %}

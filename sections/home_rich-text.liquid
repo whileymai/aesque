@@ -1,0 +1,194 @@
+<div class="site-box-container container--fullscreen box--can-stick">
+
+  <div id="block-{{ section.id }}" class="site-box {% if section.blocks.size == 0 %} box--bigger {% else %} box--big {% endif %} lap--box--small-fl box__heading box--typo-big box--center-align box--column-flow" data-order="0" {% if section.settings.title == blank and section.settings.btn_label == blank and section.settings.bg_img == blank %} style="display: none;" {% endif %}>
+
+    <div class="site-box-content">
+
+      <div class="content">
+                
+        <h2 class="title {{ section.settings.bg_style }}">{{ section.settings.title | escape }}</h2>
+
+        {% unless section.settings.btn_label == blank %}
+          <a class="button {{ section.settings.bg_style }} with-icon" {% unless section.settings.btn_url == blank %} href="{{ section.settings.btn_url | escape }}" {% endunless %} title="{{ section.settings.btn_label | escape }}"><span>{{ section.settings.btn_label | escape }}</span> <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+        {% endunless %}
+
+      </div>
+
+    </div>
+
+    {% unless section.settings.bg_img == blank %}  
+
+      <span class="site-box-background with-image {{ section.settings.bg_style }}" aria-hidden="true">
+        
+        <img
+          src="{{ section.settings.bg_img | img_url: '960x' }}" alt="{{ section.settings.title | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ section.settings.bg_img | img_url: '600x' }} 480w, {{ section.settings.bg_img | img_url: '860x' }} 720w, {{ section.settings.bg_img | img_url: '1100x' }} 960w, {{ section.settings.bg_img | img_url: '1440x' }} 1600w, {{ section.settings.bg_img | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" 
+        />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ section.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+      </span> 
+
+
+    {% endunless %}
+
+  </div>
+
+  {% for block in section.blocks %}
+
+    <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--column-flow" data-order="1" {% if section.settings.title == blank and section.settings.btn_label == blank and section.settings.bg_img == blank %} style="width: 100% !important;" {% endif %}>
+
+      <div class="site-box-content">
+
+        {% case block.type %}
+
+          {% when 'text' %}
+              
+            {% unless block.settings.title == blank %}
+              <h3 class="block-heading">{{ block.settings.title | escape }}</h3>
+            {% endunless %}
+            <div class="rte">
+              {{ block.settings.content }}
+            </div>
+
+          {% when 'page' %}
+
+            {% if block.settings.page == blank %}
+              
+              <div class="rte">
+                <p>Select a page to display it's content here.</p>
+              </div>
+
+            {% else %}
+              
+              <h3 class="block-heading">{{ pages[block.settings.page].title | escape }}</h3>
+              <div class="rte">
+                {{ pages[block.settings.page].content }}
+              </div>
+
+            {% endif %}
+
+          {% when 'html' %}
+
+            {% if block.settings.code == blank %}
+
+              <div class="rte">
+                <p>Add some HTML content to this block.</p>
+              </div>
+
+            {% else %}
+
+              <div class="rte">
+                {{ block.settings.code }}
+              </div>
+
+            {% endif %}
+
+        {% endcase %}
+
+      </div>
+
+    </div>
+
+  {% endfor %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "class": "index-section mount-content-row",
+    "max_blocks": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Call to action"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button",
+        "default": "More info"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background image"
+      },
+      {
+        "type": "select",
+        "id": "bg_style",
+        "label": "Text color",
+        "options": [
+          {
+            "value": "light",
+            "label": "Dark"
+          },
+          {
+            "value": "dark",
+            "label": "Light"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Rich text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text",
+            "default": "<p><strong>Insert your own content here!</strong></p><p>Use this area to write about your products, add some store information, or any useful piece of information that you wish to write about.</p>"
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "name": "Page",
+        "settings": [
+          {
+            "type": "page",
+            "id": "page",
+            "label": "Page"
+          }
+        ]
+      },
+      {
+        "type": "html",
+        "name": "Custom HTML",
+        "settings": [
+          {
+            "type": "html",
+            "id": "code",
+            "label": "HTML"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Rich text",
+      "category": "Text",
+      "blocks": [{
+        "type": "text"
+      }]
+    }]
+  }
+{% endschema %}

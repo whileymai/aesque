@@ -1,0 +1,204 @@
+{% assign number_of_comments = article.comments_count %}
+{% capture date_format %} {{ 'general.date_format.month_day_year' | t }} {% endcapture %}
+{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}
+
+<div class="shopify-section">
+
+  <article id="section-blog" class="site-box-container container--fullscreen box--can-stick">
+    
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading" data-order="0">
+
+      <div class="site-box-content less-padding fix-me-with-margin">
+            
+        <h1 class="title {% if article.image %} dark {% endif %}">
+          {{ article.title }}
+        </h1>
+        
+        {% if section.settings.meta_enable %}
+          <ul class="meta no-bullets {% if article.image %} dark {% endif %}">
+            <li class="author"><span>{{ 'blogs.article.author' | t: author: article.author }}</span></li>
+            <li class="date"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | time_tag: date_format }}</time></li>
+            {% if blog.comments_enabled? and article.comments_count > 0 %}<li class="comments"><span>{{ 'blogs.comments.comments_with_count' | t: count: number_of_comments }}</span></li>{% endif %}
+          </ul>
+        {% endif %}
+
+      </div>
+
+      {% if article.image %} 
+
+        <span class="site-box-background with-image" aria-hidden="true">
+
+          <img
+            src="{{ article.image | img_url: '480x540', crop: 'center' }}" alt="{{ article.image.alt }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ article.image | img_url: '480x540', crop: 'center' }} 480w, {{ article.image | img_url: '960x1080', crop: 'center' }} 1080w"
+            data-sizes="auto"
+            class="lazyload" 
+          />
+
+          <noscript><span class="ll-fallback" style="background-image:url({{ article.image | img_url: '960x1080', crop: 'center' }})"></span></noscript> 
+
+        </span> 
+
+      {% endif %}
+
+    </div>
+
+    <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--column-flow scroll-movers-parent" data-order="1">
+
+      <div class="site-box-content fix-me-with-margin">
+        
+        <div class="rte">
+          {{ article.content }}
+        </div>
+
+        {% unless article.tags == blank %}
+          <div class="tags">
+            <span class="title">{{ 'blogs.tags.title' | t }}</span>
+            {% for tag in article.tags %}
+              <span class="tag"><a href="{{ blog.url }}/tagged/{{ tag.handle }}">{{ tag }}</a></span>
+            {% endfor %}
+          </div>
+        {% endunless %}
+
+        {% if section.settings.site_sharing %}
+          {% render 'social_sharing', title: article.title, url: article.url, image: article.image %}
+        {% endif %}
+
+        {% if blog.next_article or blog.previous_article %}
+          <p class="post-navigation">
+            {% if blog.previous_article %}
+              <a class="left" href="{{ blog.previous_article }}"> <span aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smaller' %}</span> {{ 'blogs.article.older_post' | t }} </a>
+            {% endif %}
+            {% if blog.next_article %}
+              <a class="right" href="{{ blog.next_article }}">{{ 'blogs.article.newer_post' | t }} <span aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smaller' %}</span> </a>
+            {% endif %}
+          </p>
+        {% endif %}
+          
+        {% if blog.comments_enabled? %}
+        
+          <div id="comments" class="comments">
+  
+            <h3 class="simple-title">{{ 'blogs.comments.comments_with_count' | t: count: number_of_comments }}</h3>
+            {% capture date_format %} {{ 'general.date_format.month_day_year' | t }} {% endcapture %}
+
+            {% paginate article.comments by 10 %}
+
+              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}
+
+              {% if number_of_comments > 0 %}
+
+                <ul class="comments-list no-bullets">
+
+                  {% for comment in article.comments %}
+
+                    <li id="{{ comment.id }}" class="comment">
+
+                      <div class="rte">
+                        {{ comment.content }}
+                      </div>
+
+                      <span>
+                        {% capture author %}<strong>{{ comment.author }}</strong>{% endcapture %}
+                        {% capture date %}<strong><time datetime="{{ comment.created_at | date: '%Y-%m-%d' }}">{{ comment.created_at | date: date_format }}</time></strong>{% endcapture %}
+                        {{ 'blogs.article.comment_meta_html' | t: author: author, date: date }}
+                      </span>
+
+                    </li>
+
+                  {% endfor %}
+
+                </ul>
+
+                {% if paginate.pages > 1 %}
+                  {% render 'pagination', paginate: paginate %}
+                {% endif %}
+
+              {% else %}
+
+                <p>{{ 'blogs.comments.no_comments' | t }}</p>
+
+              {% endif %}
+
+              <div class="form-vertical">
+              
+                {% form 'new_comment', article %}
+                
+                  <h3 class="simple-title" id="AddCommentTitle">{{ 'blogs.comments.title' | t }}</h3>
+
+                  {{ form.errors | default_errors }}
+
+                  <div class="simple-grid">
+
+                    <div class="grid__item one-half portable--one-whole">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input type="text" name="comment[author]" id="CommentAuthor" class="input-full{% if form.errors contains 'author' %} error{% endif %}" placeholder="{{ 'blogs.comments.name' | t }}" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+
+                    <div class="grid__item one-half portable--one-whole">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input type="email" name="comment[email]" id="CommentEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'blogs.comments.email' | t }}" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+
+                    <div class="grid__item">
+                      <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                      <textarea name="comment[body]" id="CommentBody" class="input-full{% if form.errors contains 'body' %} error{% endif %}" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>
+                    </div>
+
+                    <input type="submit" class="btn" value="{{ 'blogs.comments.submit' | t }}" style="margin-left: 15px; margin-top: -10px;">
+
+                  </div>
+
+                  {% if blog.moderated? %}
+                    <p style="margin-top: 24px; opacity: .66;">{{ 'blogs.comments.moderated' | t }}</p>
+                  {% endif %}
+
+                {% endform %}
+
+              </div>
+
+            </div>
+
+            {% endpaginate %}
+
+          </div>
+        {% endif %}
+
+      </div>
+
+    </div>
+  
+  </article>
+
+</div>
+
+{% schema %}
+	{
+    "name": "Article page",
+    "class": "mount-article mount-images",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "meta_enable",
+        "default": true,
+        "label": "Show author, date and comments"
+      },
+      {
+        "type": "checkbox",
+        "id": "site_sharing",
+        "label": "Enable article sharing"
+      }
+    ]
+   }
+{% endschema %}

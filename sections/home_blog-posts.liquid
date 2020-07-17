@@ -1,0 +1,91 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick">
+
+  <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading" data-order="0">
+
+    <div class="site-box-content ">
+          
+      <h2 class="title">
+        {{ section.settings.title | escape }}
+      </h2>
+
+      {% unless section.settings.btn_label == blank and section.settings.home_blog_select == blank %}
+        <a class="button with-icon" href="{{ blogs[section.settings.home_blog_select].url | escape }}" title="{{ section.settings.btn_label | escape }}"><span>{{ section.settings.btn_label | escape }}</span><span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+      {% endunless %}
+
+    </div>
+
+  </div>
+
+  <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box--no-padding box__blog" data-order="1">
+    <div class="site-box-content">
+      
+      {% assign blog_count = blogs[section.settings.home_blog_select].articles_count | times: 1 %}
+      {% assign per_page = section.settings.home_blog_no | times: 1 %}
+
+      {% if blog_count == 0 %}
+        
+        {% for i in (1..per_page) %}
+          {% render 'blog_post-blank', index: forloop.index | modulo: 6 | plus: 1 %}
+        {% endfor %}
+
+      {% else %}
+        
+        {% for article in blogs[section.settings.home_blog_select].articles limit:per_page %}
+          {% render 'blog_post-content', article: article, blog_count: blog_count %}
+        {% endfor %}
+
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Blog posts",
+    "class": "index-section mount-blog",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Blog"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button",
+        "default": "Read more"
+      },
+      {
+        "type": "checkbox",
+        "id": "meta_enable",
+        "label": "Show author and date"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "blog",
+        "id": "home_blog_select",
+        "label": "Blog"
+      },
+      {
+        "type": "range",
+        "id": "home_blog_no",
+        "label": "Number of posts",
+        "min": 2,
+        "max": 6,
+        "step": 2,
+        "default": 2
+      }
+    ],    
+    "presets": [{
+      "name": "Blog posts",
+      "category": "Blog"
+    }]
+  }
+{% endschema %}

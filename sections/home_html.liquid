@@ -1,0 +1,64 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen" style="display: flex">
+
+  {% if section.blocks.size > 0 %}
+    
+    {% for block in section.blocks %}
+
+      <div id="block-{{ block.id }}" class="rte site-box {% if section.blocks.size == 2 %} box--small-lg {% else %} box--small-fl lap--box--small-fl {% endif %} box--center-align box--column-flow box__custom" data-order="0">
+        {% if block.settings.code != blank %}
+          {{ block.settings.code }}
+        {% else %}
+          <div style='text-align:center;'>Add some HTML content to this block.</div>
+        {% endif %}
+      </div>
+
+    {% endfor %}
+
+  {% endif %}
+ 
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Custom HTML"
+  },
+  "class": "index-section",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "html",
+      "name": {
+        "en": "Custom HTML"
+      },
+      "settings": [
+        {
+          "type": "html",
+          "id": "code",
+          "label": {
+            "en": "HTML"
+          },
+          "default": {
+            "en": "<div style='text-align:center;'><h2>Use HTML to format your text so it can be easily read.</h2>This text can be used to share information about your brand with customers.</div>"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Custom HTML"
+      },
+      "category": {
+        "en": "Advanced layout"
+      },
+      "blocks": [
+        {
+          "type": "html"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

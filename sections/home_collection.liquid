@@ -1,0 +1,154 @@
+{% assign per_page = section.settings.home_collection_no | times: 1 %}
+
+{% assign product_count = collections[section.settings.home_collection_select].products_count | times: 1 %}
+
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen {% if per_page == 4 %} box--can-stick {% endif %} per-{{ per_page }}">
+  
+  {% if per_page == 4 %}
+    {% assign size_class = 'box--big lap--box--small-fl box--typo-big' %}
+  {% else %}
+    {% assign size_class = 'box--small lap--box--small-lg box--typo-small' %}
+  {% endif %}
+
+  {% if per_page != 4 %}
+    <div class="collection__holder odd">
+  {% endif %}
+
+  <div class="site-box {{ size_class }} box--center-align box--column-flow box__heading" data-order="0">
+
+    <div class="site-box-content">
+          
+        <h2 class="title">
+          {{ section.settings.title | escape }}
+        </h2>
+
+        {% if product_count == 0 and per_page == 4 %}
+          <!-- blank -->
+        {% else %}
+
+          {% if per_page == 4 %}
+            <a class="button with-icon" href="{{ collections[section.settings.home_collection_select].url | escape }}">{{ 'general.shop_now' | t }}<span class="icon">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+          {% else %}
+            <p>{{ 'general.shop_now' | t }}</p>
+          {% endif %}
+
+        {% endif %}
+
+    </div>
+
+  </div>
+
+  {% if per_page == 4 %}
+
+    <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box--no-padding box__collection" data-order="1">
+      <div class="site-box-content">
+        
+        {% if product_count == 0 %}
+
+          {% for i in (1..per_page) %}
+            {% render 'collection_product-blank', index: forloop.index | modulo: 6 | plus: 1, per_page: 4 %}
+          {% endfor %}
+
+        {% else %}
+
+          {% for product in collections[section.settings.home_collection_select].products limit:per_page %}
+            {% render 'collection_product-content', product: product, per_page: 4 %}
+          {% endfor %}
+
+        {% endif %}
+
+      </div>
+
+    </div>
+
+  {% else %}
+
+    {% if product_count == 0 %}
+
+      {% assign per_page = per_page | plus: 1 %}
+      {% for i in (1..per_page) %}
+        <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection" data-order="{{ forloop.index }}">
+          <div class="site-box-content">
+            {% render 'collection_product-blank', index: forloop.index | modulo: 6 | plus: 1, per_page: per_page %}
+          </div>
+        </div>
+      {% endfor %}
+
+    {% else %}
+
+      {% for product in collections[section.settings.home_collection_select].products limit:per_page %}
+        <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection" data-order="{{ forloop.index }}">
+          <div class="site-box-content">
+            {% render 'collection_product-content', product: product, per_page: per_page %}
+          </div>
+        </div>
+      {% endfor %}
+
+      {% if product_count > per_page %}
+
+        <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--center-align box--column-flow box__heading">
+          <div class="site-box-content">
+            <span class="title" style="font-weight: bold">
+              <a href="{{ collections[section.settings.home_collection_select].url }}"><span>{{ 'collections.general.want_more' | t }}</span></a>
+            </span>
+          </div>
+        </div>
+
+      {% endif %}
+
+    {% endif %}
+
+  {% endif %}
+
+  {% if per_page != 4 %}
+    </div>
+  {% endif %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Featured collection",
+    "class": "index-section mount-products mount-images",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "collection",
+        "id": "home_collection_select",
+        "label": "Collection"
+      },
+      {
+        "type": "select",
+        "id": "home_collection_no",
+        "label": "Number of products",
+        "options": [
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "10",
+            "label": "10"
+          },
+          {
+            "value": "14",
+            "label": "14"
+          }
+        ]
+      }
+    ],    
+    "presets": [{
+      "name": "Featured collection",
+      "category": "Collection"
+    }]
+  }
+{% endschema %}

@@ -1,0 +1,156 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen add-border">
+
+  {% for block in section.blocks %}
+
+    {% if block.settings.collection == blank or block.settings.collection != blank and collections[block.settings.collection].handle == collection.handle %}
+
+      {% assign size_class = 'box--bigger box--typo-bigger lap--box--small-fl fix-me-with-height' %}
+
+      <{% unless block.settings.button != blank %}a{% else %}div{% endunless %} {% if block.settings.link != blank and block.settings.button == blank %} href="{{ block.settings.link | escape }}" {% endif %} id="block-{{ block.id }}" {{ block.shopify_attributes }} class="site-box box--center-align box--column-flow {{ size_class }} box__image-text box__collection-footer style--{{ block.settings.bg_style }} align--{{ block.settings.txt_align }} button-{{ block.settings.button }}" data-color_txt="{{ block.settings.txt_color }}" data-color_bg="{{ block.settings.bg_color }}">
+
+        <div class="site-box-content">
+
+          <div class="content">
+
+            {% unless block.settings.title == blank %}
+              <h2 class="title {% unless block.settings.button != blank %} add-hr {% endunless %}">{{ block.settings.title | escape }}</h2>
+            {% endunless %}
+
+            {% unless block.settings.caption == blank %}
+              <p class="caption">{{ block.settings.caption | escape }}</p>
+            {% endunless %}
+
+            {% unless block.settings.button == blank %}
+              <a class="button with-icon {{ block.settings.bg_style }}" {% unless block.settings.link == blank %} href="{{ block.settings.link }}" {% endunless %}> {{ block.settings.button | escape }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+            {% endunless %}
+
+          </div>
+
+        </div>
+
+        <span class="site-box-background with-image" aria-hidden="true">
+
+          {% if block.settings.bg_img == blank %}
+
+            {% assign no = forloop.index | modulo:6 | plus:1 %}
+            <span class="onboarding-svg">{{ 'collection-X' | replace: 'X', no | placeholder_svg_tag }}</span>
+
+          {% else %}
+
+            <img
+              src="{{ block.settings.bg_img | img_url: '960x' }}" alt="{{ block.settings.title | escape }}"
+              srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-srcset="{{ block.settings.bg_img | img_url: '600x' }} 480w, {{ block.settings.bg_img | img_url: '860x' }} 720w, {{ block.settings.bg_img | img_url: '1100x' }} 960w, {{ block.settings.bg_img | img_url: '1600x' }} 1440w, {{ block.settings.bg_img | img_url: '2100x' }} 1920w"
+              data-sizes="auto"
+              class="lazyload" 
+            />
+
+            <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+          {% endif %}
+
+          {% unless block.settings.video_url == blank %}
+
+            <div class="site-box-video-background" data-video="{{ block.settings.video_url.id }}" aria-hidden="true" style="display: none">
+              <div id="player-{{ block.id }}" class="player"></div>
+            </div>
+
+          {% endunless %}
+          
+      </span>
+
+      </{% unless block.settings.button != blank %}a{% else %}div{% endunless %}>
+
+    {% endif %}
+
+  {% endfor %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Collection footer",
+    "class": "index-section mount-images mount-video-background mount-custom-footer",
+    "max_blocks": 99,
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Your story"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Text",
+            "default": "Share details about the manufacturing process, featured products, client testimonials, or any extra detail that might be useful for your customers!"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "button",
+            "label": "Button"
+          },
+          {
+            "type": "select",
+            "id": "txt_align",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "Background image"
+          },
+          {
+            "id": "video_url",
+            "type": "video_url",
+            "label": "Background video",
+            "accept": ["youtube", "vimeo"],
+            "info": "Video will be replaced by the background image on mobile devices."
+          },
+          {
+            "type": "color",
+            "id": "txt_color",
+            "label": "Text color",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background overlay",
+            "default": "#ffffff"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Show on a single collection",
+            "info": "By default, this block appears on all collection pages. If you want it to appear on a specific collection, you can select it from here."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

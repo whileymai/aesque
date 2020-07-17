@@ -1,0 +1,78 @@
+<a href="{{ product.url | within: collection }}" class="product-item style--{{ settings.product_animation }} {% if per_page == 4 %} lap--box--small-lg {% endif %}">
+
+  <div class="box--product-image primary">
+
+    <img
+      src="{{ product.featured_media | img_url: '960x' }}" alt="{{ product.featured_media.alt | escape }}"
+      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-srcset="{{ product.featured_media | img_url: '480x' }} 360w, {{ product.featured_media | img_url: '600x' }} 480w, {{ product.featured_media | img_url: '1100x' }} 960w, {{ product.featured_media | img_url: '1600x' }} 1440w, {{ product.featured_media | img_url: '2100x' }} 1920w"
+      data-sizes="auto"
+      class="lazyload"
+    />
+
+    <noscript><span class="ll-fallback" style="background-image:url({{ product.featured_media | img_url: '960x' }})"></span></noscript> 
+
+  </div>
+
+  {% if settings.product_show_secondary and product.images.size >= 2 %}
+    <div class="box--product-image secondary">
+
+      <img
+        src="{{ product.media[1] | img_url: '960x' }}" alt="{{ product.media[1].alt | escape }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ product.media[1] | img_url: '480x' }} 360w, {{ product.media[1] | img_url: '600x' }} 480w, {{ product.media[1] | img_url: '1100x' }} 960w, {{ product.media[1] | img_url: '1600x' }} 1440w, {{ product.media[1] | img_url: '2100x' }} 1920w"
+        data-sizes="auto"
+        class="lazyload" 
+      />
+
+      <noscript><span class="ll-fallback" style="background-image:url({{ product.media[1] | img_url: '960x' }})"></span></noscript> 
+
+    </div>
+  {% endif %}
+
+  <div class="caption {% if settings.show_reviews_badge %} show-review {% endif %}">
+    <div>
+      <h3><span class="overflowed">{{ product.title }}</span></h3>
+      <span class="price"><span class="overflowed">
+
+        {% capture price %} {{ product.price | money }} {% endcapture %}
+          
+        {% if product.price_varies %} 
+
+          {% if product.compare_at_price > product.price %}
+            {{ 'product.on_sale_from_html' | t: price: price }}
+          {% else %}
+            {{ 'product.from_text_html' | t: price: price }} 
+          {% endif %}
+
+        {% else %}
+        
+          {% if product.compare_at_price > product.price %}
+            {{ price }} <del>{{ product.compare_at_price | money }}</del>
+          {% else %}
+            {{ price }}
+          {% endif %}
+          
+        {% endif %}
+  
+        {% if product.selected_or_first_available_variant.unit_price_measurement %}
+          <span class="unit-price">
+            {{ product.selected_or_first_available_variant.unit_price | money }} / 
+            {% if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 %}
+              {{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}
+            {% endif %}
+            {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+          </span>
+        {% endif %}
+
+      </span></span>
+      {% if settings.show_reviews_badge %}
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+      {% endif %}
+      <span aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_long_overflowed' %}</span>
+    </div>
+  </div>
+
+  {% render 'product_badges', product: product %}
+
+</a>

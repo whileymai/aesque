@@ -1,0 +1,11 @@
+{% unless product.available %}
+  <div class="product-badge sold"><span>{{ 'product.sold_out' | t }}</span></div>
+{% else %}
+  {% if product.compare_at_price > product.price %}
+    <div class="product-badge sale"><span>{{ 'product.on_sale' | t }}</span></div>
+	{% elsif product.tags contains 'preorder' %}
+	  <div class="product-badge preorder"><span>{{ 'product.pre_order' | t }}</span></div>
+	{% elsif product.tags contains 'new' %}
+	  <div class="product-badge new"><span>{{ 'product.new' | t }}</span></div>
+	{% endif %}
+{% endunless %}

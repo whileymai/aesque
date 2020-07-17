@@ -1,0 +1,63 @@
+{% if size == 1 %}
+  {% assign size_class = 'box--bigger box--typo-bigger lap--box--small-fl fix-me-with-height' %}
+{% elsif size == 2 and index < 3 %}
+  {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+{% else %}
+  {% if index == 1 %}
+    {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+  {% elsif index == 2 %}
+    {% assign size_class = 'box--small-lg box--typo-big  palm--box--small-fl' %}
+  {% elsif index == 3 and size == 3 %}
+    {% assign size_class = 'box--small-lg box--typo-big palm--box--small-fl' %}
+  {% else %}
+    {% assign size_class = 'box--small box--typo-small lap--box--small-lg palm--box--small-fl' %}
+  {% endif %}
+{% endif %}
+
+<{% unless block.settings.button != blank %}a{% else %}div{% endunless %} {% unless block.settings.link == blank %} href="{{ block.settings.link | escape }}" {% endunless %} id="block-{{ block.id }}" {{ block.shopify_attributes }} class="site-box box--center-align box--column-flow {{ size_class }} box__image-text style--{{ block.settings.bg_style }} align--{{ section.settings.txt_align }} button-{{ block.settings.button }}" data-order="{{ index | minus: 1 }}">
+
+  <div class="site-box-content">
+
+    <div class="content">
+
+      {% unless block.settings.caption == blank %}
+        <p class="caption">{{ block.settings.caption | escape }}</p>
+      {% endunless %}
+
+      {% unless block.settings.title == blank %}
+        <h2 class="title {% unless block.settings.button != blank %} add-hr {% endunless %}">{{ block.settings.title | escape }}</h2>
+      {% endunless %}
+
+      {% unless block.settings.button == blank %}
+        <a class="button with-icon {{ block.settings.bg_style }}" {% unless block.settings.link == blank %} href="{{ block.settings.link }}" {% endunless %}> {{ block.settings.button | escape }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+      {% endunless %}
+
+    </div>
+
+  </div>
+
+  <span class="site-box-background with-image {% if block.settings.caption != blank or block.settings.title != blank or block.settings.button == blank %} no-preloader {% endif %}" aria-hidden="true">
+
+    {% if block.settings.bg_img == blank %}
+
+      {% assign no = index | modulo:6 | plus:1 %}
+      <span class="onboarding-svg">{{ 'collection-X' | replace: 'X', no | placeholder_svg_tag }}</span>
+
+    {% else %}
+
+      <img
+        src="{{ block.settings.bg_img | img_url: '960x' }}" alt="{{ block.settings.title | escape }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ block.settings.bg_img | img_url: '600x' }} 480w, {{ block.settings.bg_img | img_url: '860x' }} 720w, {{ block.settings.bg_img | img_url: '1100x' }} 960w, {{ block.settings.bg_img | img_url: '1600x' }} 1440w, {{ block.settings.bg_img | img_url: '2100x' }} 1920w"
+        data-sizes="auto"
+        class="lazyload" 
+        style="object-position: {{ alignment }}"
+      />
+
+      <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+    {% endif %}
+    
+</span>
+
+</{% unless block.settings.button != blank %}a{% else %}div{% endunless %}>

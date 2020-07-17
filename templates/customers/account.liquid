@@ -1,75 +1,86 @@
-{%- comment -%}
-{%- endcomment -%}
-{% if settings.layout-show_breadcrumbs %}
-  <div class="tt-page__breadcrumbs">
-    {% include 'breadcrumbs' %}
-  </div>
-{% endif %}
+{% capture date_format %} {{ 'general.date_format.month_day_year' | t }} {% endcapture %}
 
-<div class="tt-page__name text-center">
-  <h1>{{ 'customer.account.title' | t }}</h1>
-</div>
+<div class="shopify-section">
 
-<div class="tt-my-account">
-  <div class="tt-my-account__tabs tt-tabs" data-tt-type="vertical">
-    <div class="tt-tabs__head">
-      <div class="tt-tabs__slider">
-        <div class="tt-tabs__btn" data-active="true"><span>{{ 'customer.orders.title' | t }}</span></div>
-        <div class="tt-tabs__btn"><span>{{ 'customer.account.details' | t }}</span></div>
-      </div>
-      <div class="tt-tabs__btn-prev"></div>
-      <div class="tt-tabs__btn-next"></div>
-      <div class="tt-tabs__border"></div>
+  <div id="section-account" class="site-box-container container--fullscreen box--can-stick">
+
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--lots-of-text box--center-align box--column-flow box__heading box--add-hr" data-order="0">
+      <div class="site-box-content fix-me-with-margin">
+        <h1 class="title">{{ 'customer.account.title' | t }}</h1>
+        <p class="rte logout">{{ 'general.navigation.logout' | t | customer_logout_link }}</p>
+      </div> 
     </div>
-    <div class="tt-tabs__body tt-tabs-my-account">
-      <div>
-        <span>{{ 'customer.orders.title' | t }} <i class="icon-down-open"></i></span>
-        <div class="tt-tabs__content">
-          <div class="tt-tabs-my-account__head-edit">
-            <h2>{{ 'customer.orders.title' | t }}</h2>
-          </div>
-          {% if customer.orders.size != 0 %}
-            <div class="tt-tabs-my-account__table">
-              <table class="table">
-                <tr>
-                  <th>{{ 'customer.orders.order_number' | t }}</th>
-                  <th>{{ 'customer.orders.date' | t }}</th>
-                  <th>{{ 'customer.orders.payment_status' | t }}</th>
-                  <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
-                  <th>{{ 'customer.orders.total' | t }}</th>
-                </tr>
-                {% for order in customer.orders %}
-                  <tr class="responsive-table-row">
-                    <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
-                    <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: format: 'month_day_year' }}</td>
-                    <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
-                    <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
-                    <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
-                  </tr>
-                {% endfor %}
-              </table>
-            </div>
-          {% else %}
-            <p>{{ 'customer.orders.none' | t }}</p>
-          {% endif %}
-        </div>
-      </div>
-      <div>
-        <span>{{ 'customer.account.details' | t }} <i class="icon-down-open"></i></span>
-        <div class="tt-tabs__content">
-          <div class="tt-tabs-my-account__head-edit">
-            <h2>{{ 'customer.account.address_title' | t }}</h2>
-            <a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
-          </div>
 
-          <div class="tt-tabs-my-account__table">
-            <table class="table tt-tabs-my-account--table-sm">
-              {% assign loc-address = customer.default_address %}
-              {% include 'account-get-address' %}
-            </table>
-          </div>
+    <div class="site-box box--big lap--box--bigger box--center-align box--column-flow box__text" data-order="1">
+
+      <div class="site-box-content fix-me-with-margin">
+
+        <div class="block">
+
+          <h4 class="simple-title">{{ 'customer.orders.title' | t }}</h4>
+
+          {% paginate customer.orders by 20 %}
+
+            {% if customer.orders.size != 0 %}
+
+              <div class="table-wrap">
+                <table class="order-table o-history">
+
+                  <tbody>
+                    {% for order in customer.orders %}
+                      <tr>
+                        <td>
+                          <span class="label">{{ 'customer.orders.order_number' | t }}</span>
+                          {{ order.name | link_to: order.customer_url }}
+                        </td>
+                        <td>
+                          <span class="label">{{ 'customer.orders.date' | t }}</span>
+                          {{ order.created_at | date: date_format }}
+                        </td>
+                        <td>
+                          <span class="label">{{ 'customer.orders.payment_status' | t }}</span>
+                          {{ order.financial_status_label }}
+                        </td>
+                        <td>
+                          <span class="label">{{ 'customer.orders.fulfillment_status' | t }}</span>
+                          {{ order.fulfillment_status_label }}
+                        </td>
+                        <td>
+                          <span class="label">{{ 'customer.orders.total' | t }}</span>
+                          {{ order.total_price | money }}
+                        </td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+
+            {% else %}
+
+              <p style="opacity: .62">{{ 'customer.orders.none' | t }}</p>
+
+            {% endif %}
+
+            {% if paginate.pages > 1 %}
+              {% render 'pagination', paginate: paginate %}
+            {% endif %}
+
+          {% endpaginate %}
+
         </div>
+
+        <div class="block">
+
+          <h4 class="simple-title">{{ 'customer.account.details' | t }}</h4>
+          <div class="simple-address">{{ customer.default_address | format_address }}</div>
+          <p><a href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+
+        </div>
+
       </div>
+
     </div>
+
   </div>
-</div>
+
+</div><div id="tpb-history-booking"></div>

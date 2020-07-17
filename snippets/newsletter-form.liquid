@@ -1,0 +1,11 @@
+{%- form 'customer' -%}
+  {{ form.errors | default_errors }}
+  {%- if form.posted_successfully? -%}
+    <div class="note form-success">{{ 'general.newsletter.confirmation' | t }}</div>
+  {%- else -%}
+    <div class="input-group">
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input type="email" value="{%- if customer -%}{{ customer.email }}{%- endif -%}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off"><input type="submit" name="commit" id="Subscribe" value="{{ 'general.newsletter.submit' | t }}">
+    </div>
+  {%- endif -%}
+{%- endform -%}

@@ -1,0 +1,134 @@
+<div class="site-box-container container--fullscreen box--can-stick">
+
+  <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box--add-hr {% if image_found %} with-overlay " style="background-image: url({{ src }});" {% else %} " {% endif %} data-order="0">
+
+    <div class="site-box-content less-padding fix-me-with-margin {{ section.settings.map_style }}">
+          
+      <h1 class="title {% if image_found or section.settings.map_style contains 'dark' %} dark {% endif %}">
+        {{ page.title }}
+      </h1>
+
+    </div>
+
+    {% if section.settings.map_enable %}
+
+			<div class="contact-map-holder" data-key="{{ section.settings.map_api | escape }}" aria-hidden="true"><div class="contact-map-object" data-address="{{ section.settings.map_address | escape }}" data-marker="{% if section.settings.map_marker %}{{ section.settings.map_marker | img_url: '240x' }}{% else %}{% if section.settings.map_style == 'light' %}{{ 'img_marker-dark.png' | asset_url }}{% else %}{{ 'img_marker-light.png' | asset_url }}{% endif %}{% endif %}" data-style="{{ section.settings.map_style }}" data-zoom="16"></div></div>
+
+      <div class="contact-map-address-holder hide" data-aria="hidden">
+        <div class="contact-map-address">
+          <p class="rte">{{ section.settings.map_address | escape }}</p>
+          <a target="_blank">{{ 'contact.map.google_maps_link' | t }}</a>
+        </div>
+      </div>
+
+    {% endif %}
+
+  </div>
+
+   <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--column-flow" data-order="1">
+
+    <div class="site-box-content fix-me-with-margin">
+      
+      {% unless page.content == blank %}
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      {% endunless %}
+
+      <div class="form-vertical">
+
+        {% form 'contact' %}
+
+          {% if form.posted_successfully? %}
+            <p class="note form-success">
+              {{ 'contact.form.post_success' | t }}
+            </p>
+          {% endif %}
+
+          {{ form.errors | default_errors }}
+
+          <h3 class="simple-title">{{ 'contact.form.title' | t }}</h3>
+            
+          <div class="simple-grid">
+
+            <div class="grid__item portable--one-whole palm--one-whole">
+              {% assign name_attr = 'contact.form.name' | t | handle %}
+              <label for="ContactFormName" class="hidden-label">{{ 'contact.form.name' | t }}</label>
+              <input type="text" id="ContactFormName" class="input-full" name="contact[name]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+
+            <div class="grid__item one-half portable--one-whole palm--one-whole">
+              <label for="ContactFormEmail" class="hidden-label">{{ 'contact.form.email' | t }}</label>
+              <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            </div>
+
+            <div class="grid__item one-half portable--one-whole palm--one-whole">
+              {% assign name_attr = 'contact.form.phone' | t | handle %}
+              <label for="ContactFormPhone" class="hidden-label">{{ 'contact.form.phone' | t }}</label>
+              <input type="tel" id="ContactFormPhone" class="input-full" name="contact[tel]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+            </div>
+
+            <div class="grid__item">
+              <label for="ContactFormMessage" class="hidden-label">{{ 'contact.form.message' | t }}</label>
+              <textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
+
+            <input type="submit" class="btn right" value="{{ 'contact.form.send' | t }}" style="margin-left: 15px; margin-top: -10px;">
+
+          </div>
+
+        {% endform %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Map",
+    "class": "mount-map",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "map_enable",
+        "label": "Enable map"
+      },
+      {
+        "type": "text",
+        "id": "map_api",
+        "label": "Google Maps API Key",
+        "info": "You'll need to register a [Google Maps API Key](http://shopify-support.krownthemes.com/article/385-generate-an-api-key-for-google-maps) to display the map."
+      },
+      {
+        "type": "text",
+        "id": "map_address",
+        "label": "Address"
+      },
+      {
+        "type": "radio",
+        "id": "map_style",
+        "label": "Style",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "map_marker",
+        "label": "Marker",
+        "info": "240 x 240px transparent .png file"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,3157 +1,2087 @@
 {
   "current": {
-    "layout_rtl": false,
-    "layout_smooth_scroll": true,
-    "layout_preloader": false,
-    "layout-show_breadcrumbs": false,
-    "layout-container_default": "boxed",
-    "layout-container_default_reverse": "our-story | service",
-    "layout-container_collection": "boxed",
-    "layout-container_blog": "boxed",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "layout_optimize_css": false,
-    "font_name": "\"freight-sans-pro\",sans-serif;",
-    "font_url": "",
-    "font2_name": "\"freight-sans-pro\",sans-serif;",
-    "font2_url": "",
-    "font3_name": "\"freight-sans-pro\",sans-serif;",
-    "font3_url": "Assistant:300,400",
-    "enable_fonts_url": false,
-    "fonts_url": "https:\/\/fonts.googleapis.com\/css?family=Muli:300,400,600,700,800%7CMontserrat:300,400,500,600,700%7COpen+Sans",
-    "color_theme": "#ffffff",
-    "color_theme2": "#ffffff",
-    "color_theme3": "#2d2d2d",
-    "color_theme4": "#2d2d2d",
-    "color_theme5": "#808080",
-    "color_theme6": "#f5f5f5",
-    "color_theme7": "#2d2d2d",
-    "color_theme8": "rgba(0,0,0,0)",
-    "color_theme9": "#2d2d2d",
-    "color_theme10": "#2d2d2d",
-    "color_theme11": "#2d2d2d",
-    "color_theme12": "#fc2a2e",
-    "color_theme13": "#53d3eb",
-    "color_theme14": "#fec01a",
-    "color_theme_transparent": "#fffffa",
-    "color_theme_body": "",
-    "color_theme_c": "#2d2d2d",
-    "color_theme_paragraph_c": "#2d2d2d",
-    "color_theme_head_c": "#2d2d2d",
-    "color_theme_link_c": "#2d2d2d",
-    "color_theme_link_act_c": "#2d2d2d",
-    "color_theme_icon_c": "",
-    "color_theme_icon_act_c": "#2d2d2d",
-    "color_theme_success": "",
-    "color_theme_error": "",
-    "amanda_bio_image": "shopify:\/\/shop_images\/OUR-STORY_ABR_PORTRAIT_1080_adbfe54b-e0a0-49e3-b50d-4e67a680b354.jpg",
-    "about_amanda_title": "AMANDA BRISKIN-RETTIG",
-    "about_amanda_text": "An Australian-born designer, author of one of the country’s most successful fashion stories and the formidable creative impetus behind label A-ESQUE. In 1996, Amanda founded accessories giant Mimco, and built the brand into a fashion powerhouse over twelve years prior to its sale in 2007. In 2012 inspired afresh, Briskin-Rettig launched A-ESQUE. The label celebrates a rational approach to design that champions traditional artisan skills, high-quality materials, and a functional aesthetic.",
-    "collection-show_sort_by": true,
-    "collection-show_info": true,
-    "collection-show_length": true,
-    "collection-show_view": true,
-    "collection_pagination_type": "classic",
-    "pagination_limit": "12",
-    "collection_view": "grid",
-    "collection_row_length": "4",
-    "collection_row_length_mobile": "2",
-    "collection_pd_type": "afterimage",
-    "collection_empty_image": "",
-    "collection_empty_image_width": 80,
-    "collection_empty_btn_link": "",
-    "prd-show_lbl_new": true,
-    "prd-show_lbl_hot": true,
-    "prd-show_lbl_sale": true,
-    "prd-show_lbl_sale_percent": true,
-    "prd-show_lbl_instock": false,
-    "prd-show_lbl_sold_out": false,
-    "prd-show_review": false,
-    "prd-hide-empty-review": true,
-    "prd-show_btn_addtocart": true,
-    "prd-show_btn_whishlist": true,
-    "prd-show_btn_quickview": false,
-    "prd-show_options": false,
-    "prd-show_options_disabled_state": false,
-    "prd-check_btns_state": false,
-    "prd-btns_action": "toggle",
-    "prd-btns_design": "1",
-    "prd-show_btn_addtocart-popup": true,
-    "prd-show_collections": true,
-    "prd-show_price": true,
-    "prd-show_description": false,
-    "prd-show_countdown": false,
-    "qv-status": true,
-    "qv-show_sku": false,
-    "qv-show_availability": false,
-    "qv-show_name": true,
-    "qv-show_collections": false,
-    "qv-show_price": true,
-    "qv-show_countdown": false,
-    "qv-show_description": false,
-    "qv-show_quantity": false,
-    "qv-show_buttons": true,
-    "qv-show_cart_btn": true,
-    "qv-show_wishlist_btn": false,
-    "qv-check_buttons_status": true,
-    "qv-show_options": true,
-    "qv-show_vendor": false,
-    "qv-show_type": false,
-    "qv-show_barcode": false,
-    "qv-show_viewfull": true,
-    "qv-show_tags": false,
-    "qv-show_notes": false,
-    "qv-enable_gallery_zoom": true,
-    "qv-show_gallery_arrows": true,
-    "mailchimp_form_action": "https:\/\/a-esque.us6.list-manage.com\/subscribe\/post?u=d936399c61&amp;id=f25f18da25",
-    "newsletter_show_popup": true,
-    "newsletter_show_once": "true",
-    "newsletter_delay": "5",
-    "newsletter_cookies_life": "3",
-    "newsletter_popup_promo_text": "<div class=\"tt-newsletter-popup__text-02\">\n<span>A-ESQUE CLIENT LIST<\/span>\n<\/div><div class=\"tt-newsletter-popup__text-02\"><p>Join the A-List and receive exclusive Pre Order offers and creative insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p><\/div>",
-    "newsletter-show_socials": false,
-    "newsletter-show_facebook": false,
-    "newsletter-show_google": false,
-    "newsletter-show_twitter": false,
-    "newsletter-show_instagram": false,
-    "newsletter-show_youtube": false,
-    "newsletter-show_pinterest": false,
-    "newsletter-show_skype": false,
-    "newsletter-show_behance": false,
-    "social_facebook_link": "https:\/\/www.facebook.com\/aesqueofficial\/",
-    "social_google_link": "",
-    "social_twitter_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/aesqueofficial\/",
-    "social_youtube_link": "",
-    "social_pinterest_link": "",
-    "social_weibo_link": "https:\/\/www.weibo.com\/AESQUE",
-    "social_behance_link": "",
-    "show_multiple_currencies": false,
-    "currency_format": "money_format",
-    "supported_currencies": "AUD NZD",
-    "default_currency": "AUD",
-    "show_multiple_languages": false,
-    "languages": "",
-    "default_language": "English",
-    "wishlist-status": false,
-    "wishlist-empty_image": "",
-    "wishlist-empty_image_width": 180,
-    "open_date": "2017-10-31 00:00:00",
-    "comming_image": "shopify:\/\/shop_images\/about-us-1.jpg",
-    "comming_image_pos": "right",
-    "page_404_media_type": "custom_image",
-    "page404_image": "",
+    "page_bg": "#ffffff",
+    "type_body": "#211f1f",
+    "type_links": "#000000",
+    "typography_headings_new": "helvetica_n3",
+    "typography_menus_new": "helvetica_n4",
+    "typography_body_new": "helvetica_n3",
+    "typography_quote_new": "helvetica_n3",
+    "product_animation": "three regular color--light",
+    "product_show_secondary": true,
+    "thumb_resize": "fill",
+    "show_reviews_badge": false,
+    "favicon": "",
+    "cart_action": "overlay",
+    "cart_additional_buttons": false,
     "cart_notes_enable": true,
-    "visa": "#visa",
-    "discover": "#discover",
-    "mastercard": "#mastercard",
-    "amex": "#amex",
-    "paypal": "#paypal",
-    "stripe": "#stripe",
-    "animation": 0.5,
-    "color_header_bg": "#ffffff",
-    "color_header_bg2": "#ffffff",
-    "color_header_bd": "rgba(0,0,0,0)",
-    "color_header_btn_menu_c": "#2d2d2d",
-    "color_header_btn_search_c": "#2d2d2d",
-    "color_header_btn_search_close_c": "#e0e0e0",
-    "color_header_btn_user_c": "#2d2d2d",
-    "color_header_btn_wishlist_c": "#2d2d2d",
-    "color_header_btn_cart_c": "#2d2d2d",
-    "color_header_btn_settings_c": "#2d2d2d",
-    "color_header_btn_info_c": "#2d2d2d",
-    "color_header_btns_act_m_c": "",
-    "color_header_counter_bg": "#fffffa",
-    "color_header_counter_c": "#2d2d2d",
-    "color_header_search_c": "#2d2d2d",
-    "color_header_tape_bg": "#000000",
-    "color_header_tape_text_c": "#ffffff",
-    "color_header_tape_icon_c": "",
-    "color_header_social_type": "1",
-    "color_header_stk_btn_search_c": "",
-    "color_header_stk_btn_search_close_c": "",
-    "color_header_stk_btn_user_c": "",
-    "color_header_stk_btn_wishlist_c": "",
-    "color_header_stk_btn_cart_c": "",
-    "color_header_stk_btn_settings_c": "",
-    "color_header_stk_counter_bg": "",
-    "color_header_stk_search_c": "",
-    "color_header_transparent": false,
-    "color_header_d_transparent": 20,
-    "color_header_m_transparent": 30,
-    "color_menu_c": "#2d2d2d",
-    "color_menu_h_c": "#808080",
-    "color_menu_act_c": "#2d2d2d",
-    "color_menu_mm_bg": "#fdfdfd",
-    "color_menu_mm_c": "#2d2d2d",
-    "color_menu_mm_h_c": "#808080",
-    "color_menu_title_c": "#2d2d2d",
-    "color_menu_title_h_c": "#2d2d2d",
-    "color_menu_dd_bg": "#f5f5f5",
-    "color_menu_m_bg": "#f5f5f5",
-    "color_menu_m_bd": "",
-    "color_menu_m_c": "#2d2d2d",
-    "color_menu_act_m_bg": "",
-    "color_menu_act_m_c": "#2d2d2d",
-    "color_menu_act_m_c2": "#2d2d2d",
-    "color_menu_curtain_m_bg": "",
-    "color_menu_curtain_m_transparent": 50,
-    "color_input_bg": "#fafafa",
-    "color_input_bd": "#f5f5f5",
-    "color_input_c": "#2d2d2d",
-    "color_input_f_bg": "#f5f5f5",
-    "color_input_f_bd": "#f5f5f5",
-    "color_btn_bg": "#ffffff",
-    "color_btn_bd": "rgba(0,0,0,0)",
-    "color_btn_c": "#2d2d2d",
-    "color_btn_h_bg": "#fafafa",
-    "color_btn_h_bd": "#2d2d2d",
-    "color_btn_h_c": "#2d2d2d",
-    "color_btn_act_bg": "#ffffff",
-    "color_btn_act_bd": "#2d2d2d",
-    "color_btn_act_c": "#2d2d2d",
-    "color_btn2_bg": "#2d2d2d",
-    "color_btn2_bd": "#2d2d2d",
-    "color_btn2_c": "#ffffff",
-    "color_btn2_h_bg": "#808080",
-    "color_btn2_h_bd": "#808080",
-    "color_btn2_h_c": "#ffffff",
-    "color_btn2_act_bg": "",
-    "color_btn2_act_bd": "",
-    "color_btn2_act_c": "#2d2d2d",
-    "color_btn3_bg": "#2d2d2d",
-    "color_btn3_bd": "",
-    "color_btn3_c": "",
-    "color_btn3_h_bg": "",
-    "color_btn3_h_bd": "#2d2d2d",
-    "color_btn3_h_c": "#808080",
-    "color_btn3_act_bg": "",
-    "color_btn3_act_bd": "",
-    "color_btn3_act_c": "#2d2d2d",
-    "color_btn4_bg": "#fffffa",
-    "color_btn4_bd": "#fffffa",
-    "color_btn4_c": "#2d2d2d",
-    "color_btn4_h_bg": "#808080",
-    "color_btn4_h_bd": "#808080",
-    "color_btn4_h_c": "#f5f5f5",
-    "color_btn4_act_bg": "",
-    "color_btn4_act_bd": "",
-    "color_btn4_act_c": "#2d2d2d",
-    "color_btn5_bg": "#fffffa",
-    "color_btn5_bd": "",
-    "color_btn5_c": "#2d2d2d",
-    "color_btn5_h_bg": "#808080",
-    "color_btn5_h_bd": "#8a8f93",
-    "color_btn5_h_c": "#f5f5f5",
-    "color_btn5_act_bg": "",
-    "color_btn5_act_bd": "",
-    "color_btn5_act_c": "#2d2d2d",
-    "color_btn6_bg": "#2d2d2d",
-    "color_btn6_bd": "#2d2d2d",
-    "color_btn6_c": "#ffffff",
-    "color_btn6_h_bg": "#8a8f93",
-    "color_btn6_h_bd": "#808080",
-    "color_btn6_h_c": "#ffffff",
-    "color_btn6_act_bg": "",
-    "color_btn6_act_bd": "",
-    "color_btn6_act_c": "#2d2d2d",
-    "color_btn7_bg": "",
-    "color_btn7_bd": "#ffffff",
-    "color_btn7_c": "#ffffff",
-    "color_btn7_h_bg": "rgba(0,0,0,0)",
-    "color_btn7_h_bd": "",
-    "color_btn7_h_c": "#2d2d2d",
-    "color_btn7_act_bg": "",
-    "color_btn7_act_bd": "",
-    "color_btn7_act_c": "",
-    "color_btn8_bg": "",
-    "color_btn8_bd": "",
-    "color_btn8_c": "#2d2d2d",
-    "color_btn8_h_bg": "rgba(0,0,0,0)",
-    "color_btn8_h_bd": "",
-    "color_btn8_h_c": "#2d2d2d",
-    "color_btn8_act_bg": "",
-    "color_btn8_act_bd": "",
-    "color_btn8_act_c": "",
-    "color_btn9_bg": "",
-    "color_btn9_bd": "",
-    "color_btn9_c": "#2d2d2d",
-    "color_btn9_h_bg": "rgba(0,0,0,0)",
-    "color_btn9_h_bd": "",
-    "color_btn9_h_c": "#2d2d2d",
-    "color_btn9_act_bg": "",
-    "color_btn9_act_bd": "",
-    "color_btn9_act_c": "#2d2d2d",
-    "color_label_c": "#bbbbbb",
-    "color_label_h": "#808080",
-    "color_label_sale": "",
-    "color_label_sale_percent": "",
-    "color_label_new": "",
-    "color_label_hot": "",
-    "color_label_in_stock": "#00aa5b",
-    "color_label_out_stock": "#ed1f1f",
-    "color_social_bg": "",
-    "color_social_bd": "",
-    "color_social_icon_c": "",
-    "color_social_h_bg": "",
-    "color_social_h_bd": "",
-    "color_social_icon_h_c": "",
-    "color_social2_bg": "",
-    "color_social2_bd": "",
-    "color_social2_icon_c": "#2d2d2d",
-    "color_social2_h_bg": "",
-    "color_social2_h_bd": "",
-    "color_social2_icon_h_c": "#808080",
-    "color_social3_bg": "",
-    "color_social3_bd": "#808080",
-    "color_social3_icon_c": "#808080",
-    "color_social3_h_bg": "#808080",
-    "color_social3_h_bd": "",
-    "color_social3_icon_h_c": "",
-    "color_social4_bg": "",
-    "color_social4_bd": "",
-    "color_social4_icon_c": "",
-    "color_social4_h_bg": "",
-    "color_social4_h_bd": "",
-    "color_social4_icon_h_c": "",
-    "color_newsletter_bg": "#000000",
-    "color_newsletter_bd": "#000000",
-    "color_newsletter_c": "",
-    "color_newsletter_f_bg": "",
-    "color_newsletter_f_bd": "#000000",
-    "color_newsletter_btn_bg": "",
-    "color_newsletter_btn_bd": "#000000",
-    "color_newsletter_btn_c": "#371c1c",
-    "color_newsletter_btn_h_bg": "#000000",
-    "color_newsletter_btn_h_bd": "#000000",
-    "color_newsletter_btn_h_c": "#000000",
-    "color_newsletter2_bg": "",
-    "color_newsletter2_bd": "",
-    "color_newsletter2_c": "",
-    "color_newsletter2_f_bg": "",
-    "color_newsletter2_f_bd": "",
-    "color_newsletter2_btn_bg": "",
-    "color_newsletter2_btn_bd": "#000000",
-    "color_newsletter2_btn_c": "",
-    "color_newsletter2_btn_h_bg": "",
-    "color_newsletter2_btn_h_bd": "",
-    "color_newsletter2_btn_h_c": "",
-    "color_newsletter3_bg": "",
-    "color_newsletter3_bd": "",
-    "color_newsletter3_c": "",
-    "color_newsletter3_f_bg": "",
-    "color_newsletter3_f_bd": "",
-    "color_newsletter3_btn_bg": "",
-    "color_newsletter3_btn_bd": "#000000",
-    "color_newsletter3_btn_c": "",
-    "color_newsletter3_btn_h_bg": "",
-    "color_newsletter3_btn_h_bd": "",
-    "color_newsletter3_btn_h_c": "",
-    "color_popup_news_social_type": "3",
-    "color_popup_news_newsletter_type": "2",
-    "color_price_c": "#bbbbbb",
-    "color_price_sale_c": "",
-    "color_promobox_c": "",
-    "color_promobox_hover_c": "#2d2d2d",
-    "color_promobox_hover_c2": "#2d2d2d",
-    "color_promobox_hover_c3": "#2d2d2d",
-    "color_password_newsletter_type": "1",
-    "color_sidebar_social_type": "2",
-    "color_sidebar_newsletter_type": "2",
-    "color_footer_bg": "#fafafa",
-    "color_footer_tape_bg": "#f5f5f5",
-    "color_footer_menu_title_c": "#2d2d2d",
-    "color_footer_menu_c": "#2d2d2d",
-    "color_footer_h_c": "#808080",
-    "color_footer_info_c": "#2d2d2d",
-    "color_footer_info_link_c": "#2d2d2d",
-    "color_footer_newsletter_c": "#2d2d2d",
-    "color_footer_newsletter_c2": "#2d2d2d",
-    "color_footer_copyright_c": "#2d2d2d",
-    "color_footer_copyright_link_c": "#808080",
-    "color_footer_copyright_link_h_c": "#808080",
-    "color_footer_payment_icon_c": "#2d2d2d",
-    "color_footer_payment_icon_h_c": "#808080",
-    "color_footer_btn_up_bg": "#fffffa",
-    "color_footer_btn_up_bd": "#fffffa",
-    "color_footer_btn_up_icon_c": "#2d2d2d",
-    "color_footer_social_type": "2",
-    "color_footer_newsletter_type": "1",
-    "dev_enable_custom_css": true,
-    "dev_enable_custom_js": false,
-    "color_theme_custom": "",
-    "color_theme_custom2": "",
-    "color_theme_custom3": "",
-    "color_theme_custom4": "",
-    "color_theme_custom5": "",
-    "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
+    "show_preloader": true,
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "predictive_search_include_articles": true,
+    "predictive_search_include_pages": true,
+    "social_twitter": "",
+    "social_facebook": "https:\/\/www.facebook.com\/aesqueofficial",
+    "social_google": "",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCVjVi28irqKr6LhH1wCElKA",
+    "social_vimeo": "",
+    "social_pinterest": "",
+    "social_tumblr": "",
+    "social_instagram": "https:\/\/www.instagram.com\/aesqueofficial",
+    "social_linkedin": "",
+    "social_reddit": "",
+    "social_flickr": "",
+    "social_email": "service@a-esque.com",
+    "checkout_header_image": "shopify:\/\/shop_images\/IMG_2939_2_2.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/a-esque-logo-white-new_150x_2x_1.png",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
-    "checkout_heading_font": "Raleway",
-    "checkout_body_font": "Raleway",
-    "checkout_accent_color": "#808080",
-    "checkout_button_color": "#2d2d2d",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
     "checkout_error_color": "#ff6d6d",
-    "social_skype_link": "",
-    "qv-show_desc": true,
-    "qv-show_gallery_btn_zoom": false,
-    "layout_container": "fullwidth",
-    "layout_sidebar": "disable",
-    "layout_sidebar_blog": "left",
-    "type_base_size": "16px",
-    "color_primary": "#000",
-    "color_body_text": "#000",
-    "color_body_text_mogo": "#111111",
-    "color_body_background": "#ffffff",
-    "social_sharing_blog": true,
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
-    "prd-lbl-new": true,
-    "prd-lbl-hot": true,
-    "prd-lbl-sale": true,
-    "prd-lbl-sale-percent": true,
-    "prd-lbl-instock": false,
-    "prd-lbl-sold-out": true,
-    "prd-show-review": true,
-    "prd-show-addtocart": true,
-    "prd-show-whishlist": true,
-    "prd-show-quickview": true,
-    "prd-show-options": true,
-    "prd-show-addtocart-popup": true,
-    "prd-show-collections": false,
-    "prd-show-price": true,
-    "prd-show-desc": true,
-    "prd-show-countdown": true,
-    "qv-show-sku": true,
-    "qv-show-avail": true,
-    "qv-show-countdown": true,
-    "qv-show-description": true,
-    "qv-show-buttons": true,
-    "qv-show-options": true,
-    "qv-show-vendor": true,
-    "qv-show-type": true,
-    "qv-show-barcode": true,
-    "qv-show-viewfull": true,
-    "qv-show-tags": true,
-    "prd-lbl-sale-num": false,
-    "prd-lbl-sale-num-remove": false,
-    "social_snapchat_link": "",
-    "social_tumblr_link": "",
-    "social_vimeo_link": "",
+    "site_sharing": "1",
+    "preloader": "",
+    "product_color": "light",
+    "site_breadcrumb": true,
+    "logo_color": "#000000",
+    "header_bg": "#ffffff",
+    "nav_txt": "#7a8589",
+    "nav_roll": "#000000",
+    "nav_accent": "#6534ff",
+    "footer_bg": "#ffffff",
+    "footer_txt": "#252a2b",
+    "type_headings": "#1d1d1d",
+    "type_additional": "#9d9d9d",
+    "form_back": "#ffffff",
+    "form_border": "#ffffff",
+    "form_label": "#7f7f7f",
+    "button_color": "#b89955",
+    "button_dark": "#1d1d1d",
+    "form_style": "6px",
+    "color_primary": "#747474",
+    "color_secondary": "#bbb",
+    "color_body_bg": "#fff",
+    "color_borders": "#e5e5e5",
+    "color_body_text": "#333333",
+    "color_footer_bg": "#f2f2f2",
+    "color_footer_text": "#636363",
+    "color_footer_social_link": "#bbbbbb",
+    "logo_use_image": false,
+    "logo_max_width": "450",
+    "favicon_enable": false,
+    "footer_social_enable": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "footer_newsletter_enable": true,
+    "newsletter_form_action": "",
+    "cart_vendor_enable": false,
+    "ajax_cart_enable": true,
+    "twittercard_handle": "@",
+    "checkout_use_storefront_logo": false,
     "sections": {
-      "header": {
-        "type": "header",
+      "banner_product": {
+        "type": "banner_product",
+        "settings": {
+          "banner_enable": false,
+          "product": "",
+          "content": "<p>Use this banner to inform customers about special features for your products, or various promotions like free shipping.<\/p>",
+          "bg_color": "#e1e5e9",
+          "txt_color": "#000000"
+        }
+      },
+      "banner_home": {
+        "type": "banner_home",
+        "settings": {
+          "banner_enable": false,
+          "content": "<p><strong>Shop the&nbsp;July the re-release of Signature Patterns, defined by function, simplicity and a subtle aesthetic<\/strong><\/p>",
+          "bg_color": "#f0f0e5",
+          "txt_color": "#211f1f"
+        }
+      },
+      "product_footer": {
+        "type": "product_footer",
         "blocks": {
-          "1585534900313": {
-            "type": "top_line",
+          "1558596727348": {
+            "type": "image",
             "settings": {
-              "top-line-icon": "",
-              "top-line-text": "+61 497 390 157",
-              "top-line-icon-phone": "",
-              "top-line-text-phone": "Made in Melbourne",
-              "top-line-icon-hours": "",
-              "top-line-text-hours": "Complimentary Delivery",
-              "top-line-social": false,
-              "show_facebook": true,
-              "show_google": true,
-              "show_twitter": true,
-              "show_instagram": true,
-              "show_youtube": true,
-              "show_pinterest": true,
-              "show_skype": false,
-              "show_behance": true
+              "title": "Shop with confidence",
+              "caption": "Returns and exchanges within 14 days for pieces you have not worn or used are welcome. The exception to this is custom order pieces.",
+              "link": "",
+              "button": "",
+              "txt_align": "left",
+              "bg_img": "",
+              "video_url": "",
+              "txt_color": "#191919",
+              "bg_color": "rgba(0,0,0,0)",
+              "product": ""
             }
           }
         },
         "block_order": [
-          "1585534900313"
+          "1558596727348"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
-          "logo_max_width": 150,
-          "logo_animate": false,
-          "main_linklist": "main-menu",
-          "type": "5",
-          "sticky": false,
-          "sticky_effect": "2",
-          "account_icon": true,
-          "login_form": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_heading": "Trending Now"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_src": "",
+          "logo_width": 20,
+          "menu_main_select": "main-menu",
+          "menu_style": "classic",
+          "bar_enable": true,
+          "bar_content": "COMPLIMENTARY DELIVERY _ MADE IN MELBOURNE",
+          "bar_link": "",
+          "bar_bgcolor": "#ffffff",
+          "bar_txtcolor": "#211f1f"
+        }
+      },
+      "ad59ef041715": {
+        "type": "home_slideshow",
+        "blocks": {
+          "15580741453dfa96cc-0": {
+            "type": "slide",
+            "settings": {
+              "title": "SINCE 2012",
+              "caption": "Handmade in Melbourne",
+              "subtitle": "A-ESQUE ATELIER",
+              "label": "SHOP",
+              "link": "shopify:\/\/collections\/collection",
+              "bg_img": "shopify:\/\/shop_images\/Photo_14-7-20_3_33_20_pm.jpg",
+              "bg_alignment": "50% 50%"
+            }
+          },
+          "1558074151466": {
+            "type": "slide",
+            "settings": {
+              "title": "NO WASTE",
+              "caption": "We pay homeage to the heritage of craftsmanship",
+              "subtitle": "Practising controlled production, and  feeling over fashion",
+              "label": "SHOP",
+              "link": "shopify:\/\/collections\/carry-bag",
+              "bg_img": "shopify:\/\/shop_images\/Photo_14-7-20_3_35_52_pm.jpg",
+              "bg_alignment": "50% 50%"
+            }
+          },
+          "1594064748957": {
+            "type": "slide",
+            "settings": {
+              "title": "SIGNATURE",
+              "caption": "THE RE-RELEASE",
+              "subtitle": "MOST POPULAR PATTERNS SINCE INCEPTION 2015-2018",
+              "label": "VIEW",
+              "link": "shopify:\/\/collections\/signature",
+              "bg_img": "shopify:\/\/shop_images\/Making_news_featured_1024x_bc888369-4313-4602-ae3b-2e8b9d1b0dde.jpg",
+              "bg_alignment": "50% 50%"
+            }
+          },
+          "1594971196492": {
+            "type": "slide",
+            "settings": {
+              "title": "JULY RELEASE",
+              "caption": "Making for a limited time",
+              "subtitle": "",
+              "label": "Shop",
+              "link": "shopify:\/\/collections\/new",
+              "bg_img": "shopify:\/\/shop_images\/Convertible_Crescent_beige_mix_copy.jpg",
+              "bg_alignment": "50% 50%"
+            }
+          }
+        },
+        "block_order": [
+          "15580741453dfa96cc-0",
+          "1558074151466",
+          "1594064748957",
+          "1594971196492"
+        ],
+        "settings": {
+          "slide_bg": "#ffffff",
+          "slide_text": "#262627"
+        }
+      },
+      "1488444733168": {
+        "type": "home_testimonials",
+        "disabled": true,
+        "blocks": {
+          "1488445674273": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          },
+          "1488450022447": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          },
+          "1489762912942": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          },
+          "1489762929988": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          },
+          "1489762947722": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          },
+          "1489762953932": {
+            "type": "text",
+            "settings": {
+              "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+              "title": "by Quote Author",
+              "avatar": ""
+            }
+          }
+        },
+        "block_order": [
+          "1488445674273",
+          "1488450022447",
+          "1489762912942",
+          "1489762929988",
+          "1489762947722",
+          "1489762953932"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "subtitle": "Share your client's stories"
+        }
+      },
+      "1488465027601": {
+        "type": "home_blog-posts",
+        "disabled": true,
+        "settings": {
+          "title": "A-EYE",
+          "btn_label": "Investigate",
+          "meta_enable": true,
+          "home_blog_select": "her-take",
+          "home_blog_no": 4
+        }
+      },
+      "1488977045013": {
+        "type": "home_collection",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "home_collection_select": "new",
+          "home_collection_no": "6"
+        }
+      },
+      "1545148407550": {
+        "type": "home_collection",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_collection_select": "signature",
+          "home_collection_no": "4"
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
-          "1525860036945": {
-            "type": "logo",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/a-esque-logo-white-new.png",
-              "logo_max_width": 130
-            }
-          },
-          "1525859882368": {
-            "type": "subscribe",
-            "settings": {
-              "caption_enable": true,
-              "caption": "JOIN THE A-LIST",
-              "text_top": "<p>Join the A-List and receive exclusive Pre Order offers and creative insights from Amanda Briskin-Rettig, our Founder and Creative Director.<\/p>"
-            }
-          },
-          "1503914532278": {
-            "type": "menu_02",
-            "settings": {
-              "caption_enable": false,
-              "caption": "SERVICE",
-              "type": "footer-3"
-            }
-          },
-          "1526003957982": {
+          "1489759435614": {
             "type": "social",
             "settings": {
-              "caption_enable": true,
-              "caption": "Follow Us",
-              "show_facebook": true,
-              "show_google": false,
-              "show_twitter": false,
-              "show_instagram": true,
-              "show_youtube": false,
-              "show_pinterest": false,
-              "show_skype": false,
-              "show_behance": true
+              "title": "Social",
+              "caption": "<p><\/p>\n<p>Follow us for access to daily highlights and backstories&nbsp;<\/p>"
             }
           },
-          "1525150772431": {
-            "type": "tape",
+          "1489759167550": {
+            "type": "menu",
             "settings": {
-              "pay_visa": true,
-              "pay_discover": false,
-              "pay_mastercard": true,
-              "pay_amex": true,
-              "pay_paypal": true,
-              "pay_stripe": false
+              "title": "SERVICE DIRECTROY",
+              "footer_menu_select": "footer",
+              "caption": ""
+            }
+          },
+          "1489759116167": {
+            "type": "contact",
+            "settings": {
+              "title": "Client SERVICE",
+              "info": "service@a-esque.com",
+              "link": "",
+              "caption": "<p>Call us for Phone orders and assistance +61 497 390 157<\/p>"
+            }
+          },
+          "1594354488408": {
+            "type": "payment",
+            "settings": {
+              "title": "Checkout Securely with",
+              "caption": "<p>Or Pay Later with AfterPay<\/p>"
             }
           }
         },
         "block_order": [
-          "1525860036945",
-          "1525859882368",
-          "1503914532278",
-          "1526003957982",
-          "1525150772431"
+          "1489759435614",
+          "1489759167550",
+          "1489759116167",
+          "1594354488408"
         ],
         "settings": {
-          "type": "1",
-          "show_copyright": true,
-          "show_theme": true,
-          "show_totop_desktop": true,
-          "btn_top_limit": "1000"
+          "footer_size": "sm",
+          "footer_bg": "#f0f0e5",
+          "footer_txt": "#000000",
+          "show_locale_selector": false,
+          "show_currency_selector": false
         }
       },
-      "1504161678752": {
-        "type": "revolution-slider",
-        "disabled": true,
-        "blocks": {
-          "1550639703724": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/making_e26b59c7-3c20-4aab-89bc-837b386b5cce.jpg",
-              "style": "off",
-              "info_state": true,
-              "url": "shopify:\/\/blogs\/a-eye",
-              "product_id": "",
-              "button_icon": "button",
-              "text_01": "A-EYE",
-              "text_02": "SHARING AND THINKING",
-              "text_03": "IN WORDS AND PICTURES",
-              "text_04": "Artisanal making. Modern pieces",
-              "info_pos_hor": "center",
-              "info_pos_vert": "center",
-              "info_offset_hor": "",
-              "info_offset_vert": "60",
-              "info_align": "center",
-              "info_width": "1000",
-              "info_parallaxlevel": "0",
-              "color_text_01_c": "#ffffff",
-              "color_text_02_c": "#ffffff",
-              "color_text_03_c": "#ffffff",
-              "color_btn_style": "3",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1592270747068": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7139-preview.JPG",
-              "style": "1",
-              "info_state": true,
-              "url": "",
-              "product_id": "",
-              "button_icon": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "text_04": "Button",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "76",
-              "info_offset_vert": "0",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1591069650184": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/5_6566c84b-a663-4149-a49b-def4c2b161f7.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/blogs\/her-take",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "A-EYE",
-              "text_02": "CREATIVE THINKING ARTICLES",
-              "text_03": "",
-              "text_04": "INVESTIGATE A-EYE",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "70",
-              "info_offset_vert": "70",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1587360416465": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carru_abag.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/collections\/carry-bag",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "CARRY BAG",
-              "text_02": "HANDMADE AND CRAFTED",
-              "text_03": "",
-              "text_04": "QUALITY AND SIMPLICITY",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "60",
-              "info_offset_vert": "60",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "#000000",
-              "color_text_02_c": "#000000",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          },
-          "1526602663882": {
-            "type": "advanced_options",
-            "settings": {
-              "enable_bullets": false,
-              "enable_arrows": true,
-              "nav_dir": "horizontal",
-              "bullets_pos_hor": "right",
-              "bullets_pos_vert": "bottom",
-              "bullets_offset_hor": "200",
-              "bullets_offset_vert": "92",
-              "arrow_l_pos_hor": "left",
-              "arrow_l_pos_vert": "center",
-              "arrow_l_offset_hor": "100",
-              "arrow_l_offset_vert": "100",
-              "arrow_r_pos_hor": "right",
-              "arrow_r_pos_vert": "center",
-              "arrow_r_offset_hor": "100",
-              "arrow_r_offset_vert": "100"
-            }
-          },
-          "1592278263051": {
-            "type": "revslide_image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Revolution_Slider_grocer_makingcopy_copy.jpg",
-              "style": "1",
-              "info_state": true,
-              "url": "shopify:\/\/products\/green-grocer-bag-tote-shoulder-bag",
-              "product_id": "",
-              "button_icon": "icon-shop24",
-              "text_01": "HANDMADE",
-              "text_02": "IN MELBOURNE",
-              "text_03": "Since 2012",
-              "text_04": "Discover Newest Pieces",
-              "info_pos_hor": "left",
-              "info_pos_vert": "center",
-              "info_offset_hor": "76",
-              "info_offset_vert": "0",
-              "info_align": "left",
-              "info_width": "700",
-              "info_parallaxlevel": "3",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>",
-              "custom_param_slide": "",
-              "custom_param_img": "",
-              "custom_param_info": ""
-            }
-          }
-        },
-        "block_order": [
-          "1550639703724",
-          "1592270747068",
-          "1591069650184",
-          "1587360416465",
-          "1526602663882",
-          "1592278263051"
-        ],
+      "collection": {
+        "type": "collection",
         "settings": {
-          "layout": "custom",
-          "custom_breakpoints": "1025",
-          "custom_heights": "630",
-          "timeout": "3",
-          "nav_style": "off"
-        }
-      },
-      "collection-head": {
-        "type": "collection-head",
-        "settings": {
-          "show_title_default": true
-        }
-      },
-      "collection-sidebar": {
-        "type": "collection-sidebar",
-        "settings": {
-        }
-      },
-      "page-gallery": {
-        "type": "page-gallery",
-        "settings": {
-          "masonry": false,
-          "images-per-row": "3"
-        }
-      },
-      "blog-posts": {
-        "type": "blog-posts",
-        "settings": {
-          "posts_per_page": "6",
-          "layout": "grid",
-          "show_bread": true,
-          "show_title": false,
-          "tags": "bottom",
-          "image_effect": "none",
-          "comments": true,
-          "zero_comments": false,
-          "author": true
-        }
-      },
-      "blog-sidebar": {
-        "type": "blog-sidebar",
-        "blocks": {
-          "1511791830053": {
-            "type": "categories",
-            "settings": {
-              "caption": "Categories"
-            }
-          },
-          "1511791874085": {
-            "type": "rposts",
-            "settings": {
-              "caption": "Recent Posts",
-              "more": "More"
-            }
-          },
-          "1511791953733": {
-            "type": "html",
-            "settings": {
-              "caption": "About",
-              "html": "<a href=\"#\" class=\"ttg-image-scale\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2235\/6053\/files\/about_02.png?1839104080197079804\" alt=\"Image name\"><\/a><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. <a href=\"#\" class=\"tt-layer-nav__more\">More<\/a><\/p>"
-            }
-          },
-          "1511791934181": {
-            "type": "tags",
-            "settings": {
-              "caption": "Tags"
-            }
-          },
-          "1511791893149": {
-            "type": "newsletter",
-            "settings": {
-              "caption": "Newsletter Signup",
-              "text": "<p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a <strong>15% discount<\/strong> on the next order after you sign up.<\/p>"
-            }
-          },
-          "1511791883213": {
-            "type": "social",
-            "settings": {
-              "show_facebook": true,
-              "show_google": true,
-              "show_twitter": true,
-              "show_instagram": true,
-              "show_youtube": true,
-              "show_pinterest": true,
-              "show_skype": true,
-              "show_behance": true
-            }
-          }
-        },
-        "block_order": [
-          "1511791830053",
-          "1511791874085",
-          "1511791953733",
-          "1511791934181",
-          "1511791893149",
-          "1511791883213"
-        ],
-        "settings": {
-          "blog-handlers": "news, blog, howto"
+          "collection_filtering_enabled": false,
+          "collection_filtering_type": "by-groups",
+          "collection_per": 23,
+          "enable_collection_gallery": true,
+          "collection_navigation": true
         }
       },
       "product": {
         "type": "product",
         "settings": {
-          "layout": "layout1",
-          "show_sku": false,
-          "show_availability": false,
-          "show_name": true,
-          "show_collections": false,
-          "show_review_badge": false,
-          "show_price": true,
-          "show_lbl_sale_percent_countdown": true,
-          "show_description": true,
-          "show_quantity": false,
-          "show_buttons": true,
-          "show_cart_btn": true,
-          "show_wishlist_btn": false,
-          "show_options": true,
-          "show_vendor": false,
-          "show_afterpay": true,
-          "show_type": false,
-          "show_barcode": false,
-          "show_tags": false,
-          "show_notes": true,
-          "show_share_buttons": false,
-          "check_buttons_status": true,
-          "enable_gallery_zoom": true,
-          "show_gallery_arrows": true,
-          "show_gallery_btn_fullscreen": false,
-          "enable_sticky": false,
-          "options_select_type": "atomizer",
-          "show_tabs": false,
-          "show_description_tab": false,
-          "show_tag_tab": false,
-          "show_review_tab": false,
-          "show_custom_text_tab": false,
-          "show_custom_html_tab": false,
-          "show_custom_product_tabs": false,
-          "custom_text_tab_caption": "Title",
-          "custom_text_tab_content": "<p>TBC<\/p>",
-          "custom_html_tab_caption": "HTML",
-          "custom_html_tab_content": "Tab's HTML<br> content<br><br> goes here!",
-          "show_related_products": true,
-          "related_products_caption": "You may also like",
-          "related_products_limit": "4"
+          "product_vendor_enabled": false,
+          "variants_style": "minimal",
+          "show_quantities": false,
+          "hide_variants": true,
+          "quantity_selector": false,
+          "enable_payment_button": true,
+          "show_tax_info": false,
+          "site_sharing": false,
+          "gallery_style": "scroll",
+          "show_gallery_progress": true,
+          "gallery_resize": "fit",
+          "gallery_zoom": true,
+          "enable_video_looping": false,
+          "enable_product_gallery": true,
+          "show_reviews": false,
+          "show_reviews_badge": false,
+          "tabs_style": "toggles"
         }
       },
-      "page-contacts": {
-        "type": "page-contacts",
-        "settings": {
-          "content": "settings",
-          "title": "Salon Flagship",
-          "text": "<p><\/p>\n<p><\/p>",
-          "enable_store_1": true,
-          "store_image_1": "shopify:\/\/shop_images\/IMG_2405.jpg",
-          "address": "<p><strong>FLAGSHIP STORE - MELBOURNE<\/strong><\/p>\n<p>109 Collins Street, Melbourne, VIC 3000<\/p>\n<p>+61 497 390 157 &nbsp; &nbsp;Service@a-esque.com<\/p>\n<p><\/p>\n<p>Mon to Fri | 10am-6pm&nbsp; &nbsp; &nbsp;Sat | 10am-5pm&nbsp; &nbsp; &nbsp;Sun | Closed<\/p>\n<p><\/p>",
-          "map": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJI_m-JchC1moR6L34pn4gR9M&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
-          "enable_store_2": false,
-          "address2": "<p>SOUTH YARRA<\/p>\n<p>555b Chapel Street,&nbsp;South Yarra, VIC, 3141<\/p>\n<p>Open by Appointment Only<\/p>",
-          "url": "",
-          "map2": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJuTKpx4JC1moR3WI-xOTxSOs&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
-          "enable_store_3": false,
-          "address4": "<p>DAVID JONES - SYDNEY<\/p>\n<p>86 -108 Castlereagh Street, Sydney, NSW 2000<\/p>\n<p><\/p>",
-          "map3": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJPfCchrVC1moRil-pWyYJyJ8&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
-          "enable_store_4": false,
-          "address3": "<p>DAVID JONES - MELBOURNE<\/p>\n<p>310 Bourke St, Melbourne VIC 3000<\/p>",
-          "map4": "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJhYAK3j-uEmsRADFnvNDzMrc&key=AIzaSyCCaP4rvQSRis2rMSAOtRt8uKd--LnzEv4\" allowfullscreen=\"\"><\/iframe>",
-          "form_title": "Get in Touch",
-          "form_text": "Your email address will not be published. Required fields are marked",
-          "form_show_phone": true
-        }
-      },
-      "page-faq": {
-        "type": "page-faq",
+      "1490617026526": {
+        "type": "home_rich-text",
+        "disabled": true,
         "blocks": {
-          "1511862399762": {
-            "type": "faq-caption",
+          "1490617155008": {
+            "type": "text",
             "settings": {
-              "faq-caption": "Section #1"
-            }
-          },
-          "1511862306665": {
-            "type": "faq-qa",
-            "settings": {
-              "faq-question": "What is an FAQ Page?",
-              "faq-answer": "<p>An FAQ page is a webpage dedicated to listing and succinctly answering&nbsp;<em>frequently asked questions<\/em>&nbsp;from website visitors.<\/p>\n<p>FAQ pages have been around since&nbsp;before the modern commercial Web.<\/p>\n<p>They originated on Usenet groups both as a navigational tool and as stand-alone curated content. Ecommerce websites adopted the format, especially since online buyers could not physically examine products or talk to a sales rep.<\/p>\n<p>Unfortunately, FAQ pages have also been used for miscellaneous catch-all content pages or as band-aids for bad user experience.<\/p>"
-            }
-          },
-          "1511862334267": {
-            "type": "faq-qa",
-            "settings": {
-              "faq-question": "Should I Have an FAQ Page?",
-              "faq-answer": "<p>Ideally, your website would answer all customer questions as they crop up. The best user experience anticipates and solves problems before the user has to solve the issue themselves.<\/p>\n<p>That said,&nbsp;FAQ pages are a known-page for users. It can be a nice reassurance for customers &mdash; there if they need it, but hopefully they don&rsquo;t have to actually use it.<\/p>"
-            }
-          },
-          "1511862356459": {
-            "type": "faq-qa",
-            "settings": {
-              "faq-question": "So what makes a good FAQ page?",
-              "faq-answer": "<p>Like most marketing questions &ndash; it depends. You have to break the problems down into components and solve each issue for&nbsp;<em>your website<\/em>.<\/p>"
-            }
-          },
-          "1511862417970": {
-            "type": "faq-caption",
-            "settings": {
-              "faq-caption": "Section #2"
-            }
-          },
-          "1511862427658": {
-            "type": "faq-qa",
-            "settings": {
-              "faq-question": "How do I place an order?",
-              "faq-answer": "<p>If you have chosen a favorite sporting goods, then click 'Add to cart', and it will automatically be placed in your shopping cart. You can then continue to select products in our online store, adding to your shopping cart as sporting goods, as needed.If you have already completed the selection of sporting goods, then proceed directly to checkout.<\/p>"
+              "title": "July Re-Release",
+              "content": "<p><strong>View for July the re-release of Signature Patterns, defined by function, simplicity and a subtle aesthetic<\/strong><\/p>\n<p><\/p>"
             }
           }
         },
         "block_order": [
-          "1511862399762",
-          "1511862306665",
-          "1511862334267",
-          "1511862356459",
-          "1511862417970",
-          "1511862427658"
+          "1490617155008"
         ],
         "settings": {
+          "title": "NEW WORK",
+          "btn_label": "DISCOVER",
+          "btn_url": "shopify:\/\/collections\/new",
+          "bg_img": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
+          "bg_style": "light"
+        }
+      },
+      "1490870689650": {
+        "type": "home_image-text",
+        "disabled": true,
+        "blocks": {
+          "1490870701198": {
+            "type": "image",
+            "settings": {
+              "title": "BAR BAG SQUARE",
+              "caption": "",
+              "link": "shopify:\/\/collections\/bar-bags",
+              "button": "",
+              "bg_img": "shopify:\/\/shop_images\/Bar_Bag_Square_elephant_copy_new_wearing.jpg",
+              "bg_alignment": "50% 50%",
+              "bg_style": "dark"
+            }
+          },
+          "1490870757991": {
+            "type": "image",
+            "settings": {
+              "title": "BELT BAG",
+              "caption": "",
+              "link": "shopify:\/\/collections\/belt-bag",
+              "button": "",
+              "bg_img": "shopify:\/\/shop_images\/IMG_3842.jpg",
+              "bg_alignment": "50% 50%",
+              "bg_style": "dark"
+            }
+          }
+        },
+        "block_order": [
+          "1490870701198",
+          "1490870757991"
+        ],
+        "settings": {
+          "txt_align": "center"
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "map_enable": false,
+          "map_api": "",
+          "map_address": "",
+          "map_style": "light",
+          "map_marker": ""
+        }
+      },
+      "blog": {
+        "type": "blog",
+        "settings": {
+          "meta_enable": true,
+          "tags_enable": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "popup_enable": true,
+          "newsletter_auto": 20,
+          "newsletter_frequent": "week",
+          "title": "A-LIST",
+          "content": "<p>Join our A-LIST to receive Pre-Order opportunities and creative insights from our founder and Creative Director Amanda Briskin-Rettig<\/p>",
+          "newsletter_enable": true,
+          "bg": "shopify:\/\/shop_images\/IMG_7932-preview.jpg",
+          "link": ""
+        }
+      },
+      "article": {
+        "type": "article",
+        "settings": {
+          "meta_enable": true,
+          "site_sharing": true
+        }
+      },
+      "5852fea28ec1": {
+        "type": "home_heading",
+        "disabled": true,
+        "settings": {
+          "ann_text": "Inform your customers about important news, such as discounts or new offers.",
+          "ann_link": ""
+        }
+      },
+      "1520253693172": {
+        "type": "home_newsletter",
+        "settings": {
+          "title": "A-LIST PRE-ORDERS",
+          "subtitle_new": "<p>JOIN FOR EXCLUSIVE PRE-ORDERS AND CREATIVE INSIGHTS FROM OUR FOUNDER AND CREATIVE DIRECTOR AMANDA BRISKIN-RETTIG<\/p>"
+        }
+      },
+      "db762b9283bf": {
+        "type": "home_video-background",
+        "disabled": true,
+        "settings": {
+          "heading": "Video title",
+          "caption": "Share your brand's story",
+          "button": "",
+          "link": "",
+          "txt_align": "center",
+          "bg_style": "dark",
+          "video_url": "https:\/\/youtu.be\/DeV869lBQb8",
+          "bg_img": ""
+        }
+      },
+      "banner_collection": {
+        "type": "banner_collection",
+        "settings": {
+          "banner_enable": true,
+          "collection": "",
+          "content": "<p>Please select carefully as our pieces are made to last. Call +61 497 389 157, email service@a-esque.com or DM @aesqueofficial for assistance<\/p>\n<p><\/p>\n<p>Hand Made in Melbourne, Since 2012<\/p>",
+          "bg_color": "#9a8a8a",
+          "txt_color": "#2d2929"
+        }
+      },
+      "collection_footer": {
+        "type": "collection_footer",
+        "settings": {
+        }
+      },
+      "landing_banner": {
+        "type": "landing_banner",
+        "settings": {
+          "banner_enable": true,
+          "banner_caption": "A short introductory line",
+          "banner_title": "Landing Page",
+          "banner_details": "",
+          "banner_txt_style": "dark",
+          "banner_txt_align": "center",
+          "banner_background": "",
+          "banner_color": "rgba(0,0,0,0)",
+          "countdown_enable": true,
+          "countdown_year": 2019,
+          "countdown_month": 12,
+          "countdown_day": 31,
+          "countdown_hour": 24,
+          "countdown_zone": "0"
+        }
+      },
+      "landing_content": {
+        "type": "landing_content",
+        "blocks": {
+          "1559026987517": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "collection_per": 16
+            }
+          },
+          "1559027221817": {
+            "type": "separator",
+            "settings": {
+              "title": "Promotion",
+              "text": "<p>Inform your customers about important your discounts and new offers.<\/p>"
+            }
+          },
+          "1559032090485": {
+            "type": "image",
+            "settings": {
+              "width": "100",
+              "height": "100",
+              "title": "Image with text",
+              "caption": "Share your latest products, collections or promotions!",
+              "link": "",
+              "button": "Explore",
+              "bg_style": "light",
+              "txt_align": "center",
+              "bg_img": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559026987517",
+          "1559027221817",
+          "1559032090485"
+        ],
+        "settings": {
+        }
+      },
+      "banner_landing": {
+        "type": "banner_landing",
+        "settings": {
+          "banner_enable": false,
+          "content": "<p>Use this banner to greet your customers and inform them about new collections, sales or shipping policies.<\/p>",
+          "bg_color": "#141618",
+          "txt_color": "#ffffff"
         }
       },
       "list-collections": {
         "type": "list-collections",
         "blocks": {
-          "1513084354153": {
-            "type": "setting",
+          "1594344792390": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "lunch-bag"
             }
           },
-          "1513173718481": {
-            "type": "setting",
+          "1594344810419": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "cross-body"
             }
           },
-          "1513173735169": {
-            "type": "setting",
+          "1594784675185": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "carry-bag"
             }
           },
-          "1513173754598": {
-            "type": "setting",
+          "1594784686658": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "the-socialite"
             }
           },
-          "1513173769936": {
-            "type": "setting",
+          "1594784704622": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "belt-bag"
             }
           },
-          "1513173900379": {
-            "type": "setting",
+          "1594784786498": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "lunch-bag"
             }
           },
-          "1513173925191": {
-            "type": "setting",
+          "1594784814418": {
+            "type": "collection",
             "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1513173938128": {
-            "type": "setting",
-            "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1513173954140": {
-            "type": "setting",
-            "settings": {
-              "for_collection": "",
-              "image": "",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
+              "collection": "bar-bags"
             }
           }
         },
         "block_order": [
-          "1513084354153",
-          "1513173718481",
-          "1513173735169",
-          "1513173754598",
-          "1513173769936",
-          "1513173900379",
-          "1513173925191",
-          "1513173938128",
-          "1513173954140"
+          "1594344792390",
+          "1594344810419",
+          "1594784675185",
+          "1594784686658",
+          "1594784704622",
+          "1594784786498",
+          "1594784814418"
         ],
         "settings": {
+          "display_type": "selected",
+          "sort": "alphabetical"
         }
       },
-      "blog-article": {
-        "type": "blog-article",
+      "banner_cart": {
+        "type": "banner_cart",
         "settings": {
-          "content_layout": "boxed",
-          "layout": "text",
-          "show_featured_image": true,
-          "show_author": true,
-          "show_social_links": true,
-          "show_addthis": false
-        }
-      },
-      "home-buy-with": {
-        "type": "home-buy-with",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Buy With",
-          "prd-top-left": "basket-midi-navy-leather-shoulder-bag",
-          "prd-top-right": "",
-          "prd-bottom-left": "",
-          "prd-bottom-right": ""
-        }
-      },
-      "1526517781866": {
-        "type": "home-instagram",
-        "disabled": true,
-        "settings": {
-          "insta-tag": "OUR WORLD @AESQUEOFFICIAL",
-          "insta-tag-url": "https:\/\/www.instagram.com\/aesqueofficial\/",
-          "insta-caption": "",
-          "insta-userid": "399582955",
-          "insta-clientid": "",
-          "insta-token": "399582955.1677ed0.50c7b470215244448b83fc4cad34df18"
-        }
-      },
-      "page-contacts2": {
-        "type": "page-contacts2",
-        "settings": {
-          "content": "page",
-          "title": "contact us",
-          "text": ""
-        }
-      },
-      "1531272150905": {
-        "type": "home-products",
-        "disabled": true,
-        "settings": {
-          "collection": "resort-18-collection",
-          "products_per_row": "4",
-          "products_per_row_mobile": "1",
-          "limit": "4",
-          "sec-prd-type": "afterimage",
-          "sec-grid-paddings": "off",
-          "sec-width": "boxed",
-          "sec-margin": "none",
-          "sec-margin-custom": "10px"
-        }
-      },
-      "1532477260206": {
-        "type": "home-products-slider",
-        "disabled": true,
-        "settings": {
-          "collection": "collection",
-          "header_title_1": "Shop View ALL Here",
-          "limit": "",
-          "arrows": true,
-          "sec-prd-type": "desconhover"
-        }
-      },
-      "1535667541393": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1535667570570": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/colour-board-test-play-3.0.gif",
-              "image-hover-animation": "right",
-              "url": "",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          }
-        },
-        "block_order": [
-          "1535667570570"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "3",
-          "margin": "custom",
-          "margin-custom": "20px auto",
-          "padding": "custom",
-          "padding-custom": "20px"
-        }
-      },
-      "lookbook-slider": {
-        "type": "lookbook-slider",
-        "settings": {
-          "layout": "custom",
-          "custom_breakpoints": "768",
-          "custom_heights": "960",
-          "timeout": "10",
-          "nav_style": "3"
-        }
-      },
-      "lookbook-banners": {
-        "type": "lookbook-banners",
-        "blocks": {
-          "1574817779835": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar2_8dd8b47c-7c8f-4233-b06a-bc6cc692b4c7.jpg",
-              "image-hover-animation": "scale",
-              "url": "",
-              "text1": "PARTY SEASON MOOD",
-              "text1-position": "v-center h-center",
-              "text2": "PHOTOGRAPHED AT THE ATELIER",
-              "text2-p2": "NOVEMBER 2019",
-              "text2-position": "v-center h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1574817735663": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-318_90649f92-0b13-4a1a-8f97-b56b87a51914.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-terracotta-clutch",
-              "text1": "BAR BAG CLOUD",
-              "text1-position": "bottom right",
-              "text2": "TERRACOTTA",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1554330061722": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-247.JPG",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/barrel-esque-midi-black-leather-shoulder-bag",
-              "text1": "OFF WHITE",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554329140238": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-321_2.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-off-white-clutch",
-              "text1": "",
-              "text1-position": "bottom h-center",
-              "text2": "BAR BAG CLOUD",
-              "text2-p2": "OFF WHITE",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1557807302647": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-210_0c5617f6-82be-46c3-b03c-6200603700ab.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-br-black",
-              "text1": "BLACK",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#000000",
-              "color_h_bg": ""
-            }
-          },
-          "1554329969475": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-267_cebf6cb5-7cc1-42d1-b24b-236f07563f3b.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-elephant",
-              "text1": "ELEPHANT",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
-              "color_info_h_c": "#000000",
-              "color_quantity_h_c": "#000000",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1554330110001": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar3_copy.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-nude-metallic",
-              "text1": "BAR BAG CLOUD PETITE",
-              "text1-position": "bottom h-center",
-              "text2": "ROSE METALLIC",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#000000",
-              "color_title_h_c": "#000000",
-              "color_info_h_c": "#000000",
-              "color_quantity_h_c": "#000000",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1554330131511": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-159.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-gold-metallic-clutch",
-              "text1": "GOLD METALLIC",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD PETITE",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#808080"
-            }
-          },
-          "1554329944870": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-332.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-black-metallic",
-              "text1": "BLACK METALLIC",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD PETITE",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1554330414319": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/211119_WS_JEMIMAH_MINA-120.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/bar-bag-cloud-petite-br-black-metallic",
-              "text1": "BLACK METALLIC",
-              "text1-position": "bottom right",
-              "text2": "BAR BAG CLOUD PETITE",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "#ffffff",
-              "color_info_h_c": "#ffffff",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1554329131293": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar3_3afda481-7b29-426f-80ca-cb585ce7b310.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/the-bar-bag?constraint=Small",
-              "text1": "Midnight metallic",
-              "text1-position": "bottom h-center",
-              "text2": "BAR BAG CLOUD PETITE",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "#ffffff",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1554330269934": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar_Bag_Polar3_copy_d1059999-8c45-4807-9928-e673f9fc623a.jpg",
-              "image-hover-animation": "scale",
-              "url": "https:\/\/a-esque.com\/collections\/the-bar-bag",
-              "text1": "THE BAR BAG",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1574817779835",
-          "1574817735663",
-          "1554330061722",
-          "1554329140238",
-          "1557807302647",
-          "1554329969475",
-          "1554330110001",
-          "1554330131511",
-          "1554329944870",
-          "1554330414319",
-          "1554329131293",
-          "1554330269934"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "10px auto",
-          "padding": "custom",
-          "padding-custom": "10px 10px 10px 10px"
-        }
-      },
-      "buy-with-LE473WS": {
-        "type": "buy-with-LE473WS",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Match with",
-          "sku-id": "000000",
-          "prd-top-left": "",
-          "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE473CM": {
-        "type": "buy-with-LE473CM",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-black-leather-crossbody-belt-bag",
-          "prd-bottom-right": "purists-wallet-50-waterfall-navy"
-        }
-      },
-      "buy-with-LE473WM": {
-        "type": "buy-with-LE473WM",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match with",
-          "prd-top-left": "slim-box-hip-bag-black-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-navy-leather-crossbody-belt-bag",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE471S": {
-        "type": "buy-with-LE471S",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-silver-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-50-black-leather",
-          "prd-bottom-left": "spacestud-wide-strap-black-silver-laminated-nappa-leather",
-          "prd-bottom-right": "rainbow-long-strap-silver-metallic"
-        }
-      },
-      "buy-with-LE471FM": {
-        "type": "buy-with-LE471FM",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-deep-khaki-leather",
-          "prd-bottom-left": "spacestud-wide-strap-emerald-deep-khaki",
-          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
-        }
-      },
-      "buy-with-LE471B": {
-        "type": "buy-with-LE471B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-black-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-black-leather",
-          "prd-bottom-left": "spacestud-wide-strap-black-leather",
-          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
-        }
-      },
-      "buy-with-LE474T": {
-        "type": "buy-with-LE474T",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-powdered-nappa-leather",
-          "prd-top-right": "card-case-emerald-nappa-leather",
-          "prd-bottom-left": "sandy-lip-nappa-leather-card-case",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE471CM": {
-        "type": "buy-with-LE471CM",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-tan-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-burgundy-leather",
-          "prd-bottom-left": "spacestud-wide-strap-black-leather",
-          "prd-bottom-right": "rainbow-long-strap-concrete"
-        }
-      },
-      "buy-with-LE470S": {
-        "type": "buy-with-LE470S",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-black-leather",
-          "prd-top-right": "silver-noir-lip-leather-clutch",
-          "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
-          "prd-bottom-right": ""
-        }
-      },
-      "buy-with-LE473FM": {
-        "type": "buy-with-LE473FM",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
-          "prd-top-right": "purists-wallet-deep-khaki-leather",
-          "prd-bottom-left": "envelope-belt-bag-stack-deep-khaki-leather-crossbody-belt-bag",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE470W": {
-        "type": "buy-with-LE470W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-50-burgundy-leather",
-          "prd-top-right": "rouge-lip-leather-clutch",
-          "prd-bottom-left": "spacestud-short-strap-black-crimson-khaki",
-          "prd-bottom-right": "spacestud-wide-strap-burgundy-leather"
-        }
-      },
-      "buy-with-LE470B": {
-        "type": "buy-with-LE470B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "social-socialite",
-          "prd-top-right": "elephant-socialite",
-          "prd-bottom-left": "carry-all-deluxe-day-beige-tote-shoulder-bag",
-          "prd-bottom-right": "bar-bag-square-canary-clutch"
-        }
-      },
-      "buy-with-LE470K": {
-        "type": "buy-with-LE470K",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-deep-khaki-leather",
-          "prd-top-right": "emerald-lip-leather-clutch",
-          "prd-bottom-left": "spacestud-short-strap-khaki-powdered-leather",
-          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
-        }
-      },
-      "buy-with-LE469S": {
-        "type": "buy-with-LE469S",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-50-black-leather",
-          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
-          "prd-bottom-left": "spacestud-short-strap-silver-metallic-leather",
-          "prd-bottom-right": "rainbow-long-strap"
-        }
-      },
-      "buy-with-LE469W": {
-        "type": "buy-with-LE469W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-50-black-leather",
-          "prd-top-right": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
-          "prd-bottom-right": "rainbow-long-strap"
-        }
-      },
-      "buy-with-LE469B": {
-        "type": "buy-with-LE469B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-50-black-leather",
-          "prd-top-right": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-left": "spacestud-short-strap-black-powdered-white",
-          "prd-bottom-right": "rainbow-long-strap-black-champagne-white"
-        }
-      },
-      "buy-with-LE469K": {
-        "type": "buy-with-LE469K",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "purists-wallet-50-black-leather",
-          "prd-top-right": "emerald-lip-nappa-leather-purse",
-          "prd-bottom-left": "spacestud-short-strap-khaki-powdered-leather",
-          "prd-bottom-right": "rainbow-long-strap-khaki-champagne"
-        }
-      },
-      "buy-with-LE474S": {
-        "type": "buy-with-LE474S",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-black-silver-leather",
-          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
-          "prd-bottom-left": "purists-wallet-50-navy-leather",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE474B": {
-        "type": "buy-with-LE474B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-black-silver-leather",
-          "prd-top-right": "card-case-colour-mix",
-          "prd-bottom-left": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE474W": {
-        "type": "buy-with-LE474W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-burgundy-nappa-leather",
-          "prd-top-right": "rouge-lip-nappa-leather-purse",
-          "prd-bottom-left": "card-case-burgundy-nappa-leather",
-          "prd-bottom-right": "purists-wallet-50-burgundy-leather"
-        }
-      },
-      "buy-with-LE474K": {
-        "type": "buy-with-LE474K",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-emerald-nappa-leather",
-          "prd-top-right": "card-case-powdered-nappa-leather",
-          "prd-bottom-left": "emerald-lip-nappa-leather-purse",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE475S": {
-        "type": "buy-with-LE475S",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-black-silver-leather",
-          "prd-top-right": "card-case-burgundy-nappa-leather",
-          "prd-bottom-left": "silver-noir-nappa-leather-card-case-purse",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE475C": {
-        "type": "buy-with-LE475C",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-powdered-nappa-leather",
-          "prd-top-right": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-left": "sandy-lip-nappa-leather-card-case",
-          "prd-bottom-right": "purists-wallet-50-waterfall-navy"
-        }
-      },
-      "buy-with-LE475E": {
-        "type": "buy-with-LE475E",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-emerald-nappa-leather",
-          "prd-top-right": "card-case-colour-mix",
-          "prd-bottom-left": "emerald-lip-nappa-leather-purse",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE475B": {
-        "type": "buy-with-LE475B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-black-silver-leather",
-          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
-          "prd-bottom-left": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE479W": {
-        "type": "buy-with-LE479W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-black-silver-leather",
-          "prd-top-right": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-left": "purists-wallet-50-black-leather",
-          "prd-bottom-right": "purists-wallet-50-navy-leather"
-        }
-      },
-      "buy-with-LE478W": {
-        "type": "buy-with-LE478W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-powdered-nappa-leather",
-          "prd-top-right": "card-case-burgundy-nappa-leather",
-          "prd-bottom-left": "card-case-emerald-nappa-leather",
-          "prd-bottom-right": "card-case-black-silver-leather"
-        }
-      },
-      "buy-with-LE478S": {
-        "type": "buy-with-LE478S",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-powdered-nappa-leather",
-          "prd-top-right": "card-case-burgundy-nappa-leather",
-          "prd-bottom-left": "card-case-emerald-nappa-leather",
-          "prd-bottom-right": "card-case-black-silver-leather"
-        }
-      },
-      "buy-with-LE478B": {
-        "type": "buy-with-LE478B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "card-case-powdered-nappa-leather",
-          "prd-top-right": "card-case-burgundy-nappa-leather",
-          "prd-bottom-left": "card-case-emerald-nappa-leather",
-          "prd-bottom-right": "card-case-black-silver-leather"
-        }
-      },
-      "buy-with-LE477B": {
-        "type": "buy-with-LE477B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "powdered-lip-nappa-leather-card-case",
-          "prd-top-right": "rouge-lip-nappa-leather-purse",
-          "prd-bottom-left": "card-case-black-silver-leather",
-          "prd-bottom-right": "card-case-burgundy-nappa-leather"
-        }
-      },
-      "buy-with-LE477W": {
-        "type": "buy-with-LE477W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "sandy-lip-nappa-leather-card-case",
-          "prd-top-right": "silver-noir-nappa-leather-card-case-purse",
-          "prd-bottom-left": "card-case-black-silver-leather",
-          "prd-bottom-right": "card-case-powdered-nappa-leather"
-        }
-      },
-      "buy-with-LE472K": {
-        "type": "buy-with-LE472K",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-deep-khaki-leather-shoulder-bag",
-          "prd-top-right": "emerald-lip-nappa-leather-purse",
-          "prd-bottom-left": "card-case-emerald-nappa-leather",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "buy-with-LE472W": {
-        "type": "buy-with-LE472W",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-black-leather-shoulder-bag",
-          "prd-top-right": "rouge-lip-nappa-leather-purse",
-          "prd-bottom-left": "card-case-burgundy-nappa-leather",
-          "prd-bottom-right": "purists-wallet-50-burgundy-leather"
-        }
-      },
-      "buy-with-LE472N": {
-        "type": "buy-with-LE472N",
-        "settings": {
-          "enable_buy_with": false,
-          "featured-text": "Match With",
-          "prd-top-left": "",
-          "prd-top-right": "sandy-lip-nappa-leather-card-case",
-          "prd-bottom-left": "card-case-powdered-nappa-leather",
-          "prd-bottom-right": "purists-wallet-50-navy-leather"
-        }
-      },
-      "buy-with-LE472B": {
-        "type": "buy-with-LE472B",
-        "settings": {
-          "enable_buy_with": true,
-          "featured-text": "Match With",
-          "prd-top-left": "barrel-esque-patch-pocket-black-leather-shoulder-bag",
-          "prd-top-right": "powdered-lip-nappa-leather-card-case",
-          "prd-bottom-left": "card-case-colour-mix",
-          "prd-bottom-right": "purists-wallet-50-black-leather"
-        }
-      },
-      "1557727603087": {
-        "type": "scroll-slider",
-        "disabled": true,
-        "blocks": {
-          "1587246070501": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Quote_Square_Banner_d09fac5c-273b-46de-84b4-9b47305672f1.jpg",
-              "info_state": true,
-              "url": "",
-              "product_id": "bar-bag-cloud-petite-canary-clutch",
-              "button_icon": "icon-shop24",
-              "button_text": "",
-              "text_01": "",
-              "text_02": "",
-              "text_03": "",
-              "color_text_01_c": "",
-              "color_text_02_c": "",
-              "color_text_03_c": "",
-              "color_btn_style": "7",
-              "custom_content_info_state": false,
-              "custom_content_info": "<div class=\"tt-sr__design-white\">Text line 1<\/div><span class=\"tt-sr__design-white\">Text line 2<\/span><p class=\"tt-sr__design-white\">Text line 3<\/p><a href=\"#\" class=\"tt-btn tt-btn--hover-effect tt-btn--big tt-btn--design-white\"><i class=\"icon-shop24\"><\/i><\/a>"
-            }
-          }
-        },
-        "block_order": [
-          "1587246070501"
-        ],
-        "settings": {
-          "width": "boxed",
-          "margin": "none",
-          "margin-custom": "10px auto",
-          "padding": "none",
-          "padding-custom": "12px",
-          "bullets_enable": true,
-          "arrows_enable": true
-        }
-      },
-      "lookbook-slider-may-1": {
-        "type": "lookbook-slider-may-1",
-        "settings": {
-          "layout": "custom",
-          "custom_breakpoints": "",
-          "custom_heights": "",
-          "timeout": "10",
-          "nav_style": "1"
-        }
-      },
-      "lookbook-banners-may-1": {
-        "type": "lookbook-banners-may-1",
-        "blocks": {
-          "1564986001269": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_51_52_pm_42df12a6-62c6-4467-9c38-2b6c38108223.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags\/products\/bar-bag-square-wine-clutch?variant=31628158206013",
-              "text1": "MAY 2020",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557817633812": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_4_07_56_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
-              "text1": "PETAL PACK",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986010364": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_36_36_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-serpentine-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986074623": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_49_47_pm_b5038cc1-c4b8-4434-9559-bb61f657432a.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-black-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1589777001330": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_36_50_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-noir-navy-leather-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1589777511814": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_3_26_02_pm_a75a991a-fe46-4890-b339-b3afb1820375.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/convertible-petal-pure-midi-wine-leathercrossbody-shoulder-bag",
-              "text1": "CONVERTIBLE PETAL MIDI",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1589777531785": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_3_50_17_pm_8b0210c1-a870-4402-82a3-2ec59eb78a21.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/petal-pack-wine-crossbody-belt-bag",
-              "text1": "PETAL PACK",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1589777363979": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_00_31_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-wine-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986109330": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_14_22_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-beige-white-wash-leather-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557817592358": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1866_489f5c35-a32e-4000-9251-85e4926dc7d5.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/belt-bag-white-wash-beige-crossbody-belt-bag",
-              "text1": "BELT BAG",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557812793234": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_53_38_pm.jpg",
-              "image-hover-animation": "",
-              "url": "https:\/\/a-esque.com\/collections\/bar-bags",
-              "text1": "BAR BAG SQAURE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564985992562": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1870_277ac74e-8ede-4253-976f-0e16ebaec301.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/belt-bag-elephant",
-              "text1": "BELT BAG",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557817608851": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_6-5-20_2_25_51_pm_1.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/pleat-clutch-navy",
-              "text1": "PLEAT CLUTCH",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1557818324197": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_18_04_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/convertible-petal-pure-midi-deep-khakicrossbody-shoulder-bag",
-              "text1": "CONVERTIBLE PETAL MIDI",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986018157": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_09_37_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-bluebird-metallic-clutch",
-              "text1": "BAR BAG SQUARE",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1564986041162": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_2_19_52_pm.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/bar-bag-square-rose-metallic-clutch",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1564986001269",
-          "1557817633812",
-          "1564986010364",
-          "1564986074623",
-          "1589777001330",
-          "1589777511814",
-          "1589777531785",
-          "1589777363979",
-          "1564986109330",
-          "1557817592358",
-          "1557812793234",
-          "1564985992562",
-          "1557817608851",
-          "1557818324197",
-          "1564986018157",
-          "1564986041162"
-        ],
-        "settings": {
-          "width": "boxed",
-          "inrow": "2",
-          "margin": "demo2",
-          "margin-custom": "10px",
-          "padding": "custom",
-          "padding-custom": "10PX"
-        }
-      },
-      "lookbook-slider-may-2": {
-        "type": "lookbook-slider-may-2",
-        "settings": {
-          "layout": "fullscreen",
-          "custom_breakpoints": "",
-          "custom_heights": "",
-          "timeout": "10",
-          "nav_style": "1"
-        }
-      },
-      "lookbook-banners-may-2": {
-        "type": "lookbook-banners-may-2",
-        "blocks": {
-          "1563166669034": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3382_7db379f3-b74f-4e7c-accf-e699a6db1b62.JPG",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/current-collection-2019",
-              "text1": "July 2019 lookbook",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563167757715": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_32882.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/slim-box-hip-bag-deep-khaki-leather-cross-body-bag",
-              "text1": "Slim box hip bag",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563168138241": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-060_3b792b56-eac7-4813-a079-a2b3fa40aba7.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/binocular-10x3-white",
-              "text1": "Binocular",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563168195303": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-078_f54a9324-c3d3-4169-be5a-d08e018c85a3.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/copy-of-binocular-13x18-br-tan",
-              "text1": "Binocular",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563168358560": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3179_934eccb3-645d-4cbd-a60c-c993bcd62bcc.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/petal-grande-noir-navy-leather",
-              "text1": "Petal Grande",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563168905766": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3171.JPG",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "petal grande",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#080202"
-            }
-          },
-          "1563169387009": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-569_a928902f-7dcb-4f46-9d50-2c1c45b41e31.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-patc-jungle",
-              "text1": "Barrel-esque Patch",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1563169397436": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-786.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-fern-leather-shoulder-bag",
-              "text1": "Hobo Cross",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1563166560838": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-303.JPG",
-              "image-hover-animation": "",
-              "url": "",
-              "text1": "Barrel-esque Midi",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563166625776": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3532.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/box-miniature-black-clutch-evening-bag",
-              "text1": "box miniature",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563169806965": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-842.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
-              "text1": "Hobo cross",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1563169679135": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-835.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-waterfall-navy-leather-shoulder-bag",
-              "text1": "Hobo Cross",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1563170107736": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-546_5651608e-fa35-45de-8b6a-fde4fd5e7f15.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-patch-pocket-concrete-leather-shoulder-bag",
-              "text1": "barrel-esque patch",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#ffffff"
-            }
-          },
-          "1563170061089": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3233.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-concrete-leather-shoulder-bag",
-              "text1": "hobo cross",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#110000"
-            }
-          },
-          "1563170280674": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-447.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/copy-of-barrel-esque-mini-ii-navy",
-              "text1": "barrel-esque Mini II",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1563170321892": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Product_Shoot-754.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/hobo-cross-fern-leather-shoulder-bag",
-              "text1": "hobo cross",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563170726998": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3478_9038f092-158b-44d2-8df1-1baa708d1d8c.JPG",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/barrel-esque-patch-pocket",
-              "text1": "barrel-esque patch",
-              "text1-position": "bottom left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom left",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          },
-          "1563170660590": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3424_ce10ba54-0660-4f32-ad29-ad0fb8fcb7d6.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/barrel-esque-patch-winery",
-              "text1": "barrel-esque patch",
-              "text1-position": "bottom h-center",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom h-center",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": "#000000"
-            }
-          }
-        },
-        "block_order": [
-          "1563166669034",
-          "1563167757715",
-          "1563168138241",
-          "1563168195303",
-          "1563168358560",
-          "1563168905766",
-          "1563169387009",
-          "1563169397436",
-          "1563166560838",
-          "1563166625776",
-          "1563169806965",
-          "1563169679135",
-          "1563170107736",
-          "1563170061089",
-          "1563170280674",
-          "1563170321892",
-          "1563170726998",
-          "1563170660590"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "2",
-          "margin": "custom",
-          "margin-custom": "5",
-          "padding": "custom",
-          "padding-custom": "10px"
-        }
-      },
-      "1585269473414": {
-        "type": "home-banners",
-        "disabled": true,
-        "blocks": {
-          "1590038213442": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038163866": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1586822554645": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/carry-all-deluxe-day-beige-tote-shoulder-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1592268422062": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/petal-pack-black-crossbody-belt-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1586846413855": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_7375.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/grocer-bag",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#000000",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590038141817": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_14-5-20_1_28_34_pm.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1585269564692": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_9358_c32558ac-9899-473e-8188-6b39a2d4c881.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/products\/belt-bag-elephant",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1590040187491": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Open.jpg",
-              "image-hover-animation": "scale",
-              "url": "shopify:\/\/collections\/object-box",
-              "text1": "",
-              "text1-position": "bottom right",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "bottom right",
-              "color_title_c": "#ffffff",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1590038213442",
-          "1590038163866",
-          "1586822554645",
-          "1592268422062",
-          "1586846413855",
-          "1590038141817",
-          "1585269564692",
-          "1590040187491"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "4",
-          "margin": "custom",
-          "margin-custom": "30px 20px",
-          "padding": "custom",
-          "padding-custom": "10px 10px"
-        }
-      },
-      "1587246631787": {
-        "type": "home-infobox",
-        "disabled": true,
-        "blocks": {
-          "1587246631787-0": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-phone",
-              "text-banner-url": "",
-              "text-banner-text1": "+61 497 390 157",
-              "text-banner-text2": ""
-            }
-          },
-          "1587246631787-1": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-box",
-              "text-banner-url": "https:\/\/a-esque.com\/pages\/delivery-returns",
-              "text-banner-text1": "Complimentary Delivery",
-              "text-banner-text2": ""
-            }
-          },
-          "1587246631787-2": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-left",
-              "text-banner-url": "https:\/\/a-esque.com\/pages\/delivery-returns",
-              "text-banner-text1": "Returns and Exchange",
-              "text-banner-text2": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587246631787-0",
-          "1587246631787-1",
-          "1587246631787-2"
-        ],
-        "settings": {
-          "text-banner-type": "type1",
-          "text-banner-appearance": "boxed",
-          "color_icon": "",
-          "color_text1": "",
-          "color_text2": "",
-          "color_background": "",
-          "color_border": "",
-          "border_bottom": false,
-          "border_top": false
-        }
-      },
-      "1587349683011": {
-        "type": "home-infobox",
-        "blocks": {
-          "1587349683011-0": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "",
-              "text-banner-url": "",
-              "text-banner-text1": "\"I love beautiful things as opposed to things that are a name. I want this to be less about a brand and more about design.\"",
-              "text-banner-text2": "<p>Amanda Briskin-Rettig&nbsp;<\/p>\n<p>Founder A-ESQUE<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "1587349683011-0"
-        ],
-        "settings": {
-          "text-banner-type": "type2",
-          "text-banner-appearance": "demo5",
-          "color_icon": "",
-          "color_text1": "#1f1f1f",
-          "color_text2": "#292929",
-          "color_background": "#ffffff",
-          "color_border": "",
-          "border_bottom": false,
-          "border_top": false
-        }
-      },
-      "1587351090663": {
-        "type": "home-spacer",
-        "settings": {
-          "layout-spacer": "210"
-        }
-      },
-      "1587358238672": {
-        "type": "home-infobox",
-        "blocks": {
-          "1587358238672-0": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-right",
-              "text-banner-url": "",
-              "text-banner-text1": "Returns and Exchanges within 14 days for pieces you have not worn or used are welcome. The exception to this is custom order pieces.",
-              "text-banner-text2": ""
-            }
-          },
-          "1590170854086": {
-            "type": "text-banner",
-            "settings": {
-              "text-banner-icon": "icon-phone",
-              "text-banner-url": "",
-              "text-banner-text1": "+61 497 390 157",
-              "text-banner-text2": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587358238672-0",
-          "1590170854086"
-        ],
-        "settings": {
-          "text-banner-type": "type1",
-          "text-banner-appearance": "boxed",
-          "color_icon": "#1a1a1a",
-          "color_text1": "#242424",
-          "color_text2": "",
-          "color_background": "#ffffff",
-          "color_border": "",
-          "border_bottom": false,
-          "border_top": false
-        }
-      },
-      "1589664228880": {
-        "type": "home-blog",
-        "disabled": true,
-        "settings": {
-          "blog-caption": "A-EYE | CREATIVE THINKING ARTICLES",
-          "blog": "creativethinking",
-          "blog-per-row": "4",
-          "blog-posts-num": "5",
-          "arrows": true,
-          "blog-sec-width": "boxed",
-          "blog-sec-margin": "none",
-          "blog-sec-margin-custom": "10px"
-        }
-      },
-      "1590171923206": {
-        "type": "home-blog",
-        "disabled": true,
-        "settings": {
-          "blog-caption": "A-EYE | Her Take Articles",
-          "blog": "her-take",
-          "blog-per-row": "4",
-          "blog-posts-num": "5",
-          "arrows": true,
-          "blog-sec-width": "boxed",
-          "blog-sec-margin": "none",
-          "blog-sec-margin-custom": "10px"
-        }
-      },
-      "1593584435197": {
-        "type": "home-banners",
-        "blocks": {
-          "1593584459467": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Lunch-Bag-Bluebird4.gif",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/lunch-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593584569384": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_4108.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/the-socialite",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593584973347": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Convertible_Crescent_beige_mix_copy.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/cross-body",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593585070451": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Bar-Bag-Square_elephant-copy-new-wearing.gif",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/bar-bags",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593585192809": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Basket_Tote_sandcopy.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/products\/basket-tote-champagne-tote-shoulder-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593628691954": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/petal_pack_crimson_dona_0f59de37-2786-4524-abcc-b62b487ef62a.JPG",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/petal",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593585614058": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Carry_all_deluxe_Day_new_blue4.jpg",
-              "image-hover-animation": "bottom",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593585867012": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/grocer_bag_mono_new_wearing.jpg",
-              "image-hover-animation": "",
-              "url": "shopify:\/\/collections\/grocer-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593628640435": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Hayley_double_belt_bag_and_carry_all_day.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/products\/carry-all-deluxe-day-elephant-tote-shoulder-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593585339791": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_3842.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/belt-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593628717696": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/carry_all_day_deluxe2.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/carry-bag",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          },
-          "1593628754008": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Open.jpg",
-              "image-hover-animation": "right",
-              "url": "shopify:\/\/collections\/object-box",
-              "text1": "",
-              "text1-position": "top left",
-              "text2": "28",
-              "text2-p2": "",
-              "text2-position": "v-center h-center",
-              "color_title_c": "",
-              "color_title_h_c": "",
-              "color_info_h_c": "",
-              "color_quantity_h_c": "",
-              "color_h_bg": ""
-            }
-          }
-        },
-        "block_order": [
-          "1593584459467",
-          "1593584569384",
-          "1593584973347",
-          "1593585070451",
-          "1593585192809",
-          "1593628691954",
-          "1593585614058",
-          "1593585867012",
-          "1593628640435",
-          "1593585339791",
-          "1593628717696",
-          "1593628754008"
-        ],
-        "settings": {
-          "width": "fullwidth",
-          "inrow": "4",
-          "margin": "custom",
-          "margin-custom": "30px 20px",
-          "padding": "custom",
-          "padding-custom": "10px 10px"
+          "banner_enable": false,
+          "content": "<p>Use this banner to remind your customers about promotions, sales or shipping policies.<\/p>",
+          "bg_color": "#141618",
+          "txt_color": "#ffffff"
         }
       }
     },
     "content_for_index": [
-      "1587351090663",
-      "1593584435197",
-      "1587349683011",
-      "1585269473414",
-      "1504161678752",
-      "1589664228880",
-      "1532477260206",
-      "1557727603087",
-      "1590171923206",
-      "1587358238672",
-      "1526517781866",
-      "1587246631787",
-      "1531272150905",
-      "1535667541393"
+      "ad59ef041715",
+      "5852fea28ec1",
+      "1490870689650",
+      "1488977045013",
+      "db762b9283bf",
+      "1545148407550",
+      "1490617026526",
+      "1488465027601",
+      "1488444733168",
+      "1520253693172"
     ]
   },
   "presets": {
-    "Default": {
+    "Cuber": {
+      "page_bg": "#ffffff",
+      "type_body": "#252a2b",
+      "type_links": "#5929ff",
+      "typography_headings_new": "montserrat_n7",
+      "typography_menus_new": "montserrat_n5",
+      "typography_body_new": "work_sans_n5",
+      "typography_quote_new": "bitter_i4",
+      "product_animation": "three regular color--light",
+      "product_show_secondary": false,
+      "thumb_resize": "fill",
+      "favicon": "",
+      "cart_action": "overlay",
+      "cart_notes_enable": true,
+      "show_preloader": true,
+      "social_twitter": "#",
+      "social_facebook": "#",
+      "social_google": "",
+      "social_youtube": "",
+      "social_vimeo": "#",
+      "social_pinterest": "#",
+      "social_tumblr": "#",
+      "social_instagram": "",
+      "social_linkedin": "",
+      "social_reddit": "",
+      "social_flickr": "",
+      "social_email": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "site_sharing": "1",
+      "preloader": "",
+      "product_color": "light",
+      "site_breadcrumb": true,
+      "logo_color": "#000000",
+      "header_bg": "#ffffff",
+      "nav_txt": "#7a8589",
+      "nav_roll": "#000000",
+      "nav_accent": "#6534ff",
+      "footer_bg": "#ffffff",
+      "footer_txt": "#252a2b",
+      "type_headings": "#1d1d1d",
+      "type_additional": "#9d9d9d",
+      "form_back": "#ffffff",
+      "form_border": "#ffffff",
+      "form_label": "#7f7f7f",
+      "button_color": "#b89955",
+      "button_dark": "#1d1d1d",
+      "form_style": "6px",
+      "color_primary": "#747474",
+      "color_secondary": "#bbb",
+      "color_body_bg": "#fff",
+      "color_borders": "#e5e5e5",
+      "color_body_text": "#333333",
+      "color_footer_bg": "#f2f2f2",
+      "color_footer_text": "#636363",
+      "color_footer_social_link": "#bbbbbb",
+      "logo_use_image": false,
+      "logo_max_width": "450",
+      "favicon_enable": false,
+      "footer_social_enable": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "footer_newsletter_enable": true,
+      "newsletter_form_action": "",
+      "cart_vendor_enable": false,
+      "ajax_cart_enable": true,
+      "twittercard_handle": "@",
+      "checkout_use_storefront_logo": false,
+      "sections": {
+        "banner_product": {
+          "type": "banner_product",
+          "settings": {
+            "banner_enable": true,
+            "product": "",
+            "content": "<p>Use this banner to inform customers about special features for your products, or various promotions like free shipping.<\/p>",
+            "bg_color": "#e1e5e9",
+            "txt_color": "#000000"
+          }
+        },
+        "banner_home": {
+          "type": "banner_home",
+          "settings": {
+            "banner_enable": true,
+            "content": "<p>Use this banner to greet your customers and inform them about new collections, sales or shipping policies.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        },
+        "product_footer": {
+          "type": "product_footer",
+          "blocks": {
+            "1558596727348": {
+              "type": "image",
+              "settings": {
+                "title": "Your story",
+                "caption": "Share details about the manufacturing process, featured collections, client testimonials, or any extra detail that might be useful for your customers!",
+                "link": "",
+                "button": "",
+                "txt_align": "left",
+                "bg_img": "",
+                "video_url": "",
+                "txt_color": "#191919",
+                "bg_color": "rgba(0,0,0,0)",
+                "product": ""
+              }
+            }
+          },
+          "block_order": [
+            "1558596727348"
+          ],
+          "settings": {
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "product_recommendations_heading": "You may also like"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_src": "",
+            "logo_width": 45,
+            "menu_main_select": "main-menu",
+            "menu_style": "minimal",
+            "bar_enable": true,
+            "bar_content": "Use this bar for a short, important announcement.",
+            "bar_link": "",
+            "bar_bgcolor": "#1c1c1c",
+            "bar_txtcolor": "#d2d2d2"
+          }
+        },
+        "ad59ef041715": {
+          "type": "home_slideshow",
+          "blocks": {
+            "15580741453dfa96cc-0": {
+              "type": "slide",
+              "settings": {
+                "title": "Slide Heading",
+                "caption": "Welcome customers to your store",
+                "subtitle": "Showcase your best products",
+                "link": "",
+                "bg_img": ""
+              }
+            },
+            "1558074151466": {
+              "type": "slide",
+              "settings": {
+                "title": "Slide Heading",
+                "caption": "Welcome customers to your store",
+                "subtitle": "Showcase your best products",
+                "link": "",
+                "bg_img": ""
+              }
+            }
+          },
+          "block_order": [
+            "15580741453dfa96cc-0",
+            "1558074151466"
+          ],
+          "settings": {
+            "slide_bg": "#e2e3e6",
+            "slide_text": "#262627"
+          }
+        },
+        "1488444733168": {
+          "type": "home_testimonials",
+          "blocks": {
+            "1488445674273": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1488450022447": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1489762912942": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1489762929988": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1489762947722": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1489762953932": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            }
+          },
+          "block_order": [
+            "1488445674273",
+            "1488450022447",
+            "1489762912942",
+            "1489762929988",
+            "1489762947722",
+            "1489762953932"
+          ],
+          "settings": {
+            "title": "Testimonials",
+            "subtitle": "Share your client's stories"
+          }
+        },
+        "1488465027601": {
+          "type": "home_blog-posts",
+          "settings": {
+            "title": "Blog",
+            "btn_label": "Read more",
+            "meta_enable": true,
+            "home_blog_select": "",
+            "home_blog_no": 4
+          }
+        },
+        "1488977045013": {
+          "type": "home_collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_collection_select": "",
+            "home_collection_no": "6"
+          }
+        },
+        "1545148407550": {
+          "type": "home_collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_collection_select": "",
+            "home_collection_no": "4"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1489759435614": {
+              "type": "social",
+              "settings": {
+                "title": "Social links",
+                "caption": "<p>Invite customers to follow you on social networks<\/p>"
+              }
+            },
+            "1489759167550": {
+              "type": "menu",
+              "settings": {
+                "title": "Footer menu",
+                "footer_menu_select": "footer",
+                "caption": ""
+              }
+            },
+            "1489759116167": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact information",
+                "info": "email@company.com",
+                "link": "",
+                "caption": "<p>Invite customers to get in touch with you<\/p>"
+              }
+            },
+            "1498557946218": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "1489759435614",
+            "1489759167550",
+            "1489759116167",
+            "1498557946218"
+          ],
+          "settings": {
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collection_filtering_enabled": true,
+            "collection_filtering_type": "by-tags",
+            "collection_per": 23,
+            "enable_collection_gallery": false,
+            "collection_navigation": true
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product_vendor_enabled": true,
+            "variants_style": "minimal",
+            "hide_variants": true,
+            "quantity_selector": true,
+            "enable_payment_button": true,
+            "site_sharing": true,
+            "gallery_style": "scroll",
+            "gallery_resize": "fill",
+            "gallery_zoom": true,
+            "enable_product_gallery": false
+          }
+        },
+        "1490617026526": {
+          "type": "home_rich-text",
+          "blocks": {
+            "1490617155008": {
+              "type": "text",
+              "settings": {
+                "content": "<p><strong>Insert your own content here!<\/strong><\/p><p>Use this area to write about your products, add some store information, or any useful piece of information that you wish to write about.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1490617155008"
+          ],
+          "settings": {
+            "title": "Call to action",
+            "btn_label": "More info",
+            "btn_url": "",
+            "bg_img": "",
+            "bg_style": "light"
+          }
+        },
+        "1490870689650": {
+          "type": "home_image-text",
+          "blocks": {
+            "1490870701198": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1490870757991": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1490870701198",
+            "1490870757991"
+          ],
+          "settings": {
+            "txt_align": "center"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "map_enable": false,
+            "map_api": "",
+            "map_address": "",
+            "map_style": "light",
+            "map_marker": ""
+          }
+        },
+        "blog": {
+          "type": "blog",
+          "settings": {
+            "meta_enable": true,
+            "tags_enable": true
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "newsletter_auto": 10,
+            "newsletter_frequent": "week",
+            "title": "Newsletter",
+            "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href='#'>privacy policy<\/a>.<\/p>",
+            "newsletter_enable": true,
+            "bg": "",
+            "link": ""
+          }
+        },
+        "article": {
+          "type": "article",
+          "settings": {
+            "site_sharing": true
+          }
+        },
+        "5852fea28ec1": {
+          "type": "home_heading",
+          "settings": {
+            "ann_text": "Inform your customers about important news, such as discounts or new offers.",
+            "ann_link": ""
+          }
+        },
+        "1520253693172": {
+          "type": "home_newsletter",
+          "settings": {
+            "title": "Subscribe To Our Newsletter",
+            "subtitle_new": "<p>Stay up to date with our latest offers! <br>Read our <a href='#'>privacy policy<\/a>.<\/p>"
+          }
+        },
+        "db762b9283bf": {
+          "type": "home_video-background",
+          "settings": {
+            "heading": "Video title",
+            "caption": "Share your brand's story",
+            "button": "",
+            "link": "",
+            "txt_align": "center",
+            "bg_style": "dark",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "bg_img": ""
+          }
+        },
+        "banner_collection": {
+          "type": "banner_collection",
+          "settings": {
+            "banner_enable": true,
+            "collection": "",
+            "content": "<p>Use this banner to inform customers about discounts that are available for your products.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        },
+        "collection_footer": {
+          "type": "collection_footer",
+          "settings": {
+          }
+        },
+        "landing_banner": {
+          "type": "landing_banner",
+          "settings": {
+            "banner_enable": true,
+            "banner_caption": "A short introductory line",
+            "banner_title": "Landing Page",
+            "banner_details": "",
+            "banner_txt_style": "dark",
+            "banner_txt_align": "center",
+            "banner_background": "",
+            "banner_color": "rgba(0,0,0,0)",
+            "countdown_enable": true,
+            "countdown_year": 2019,
+            "countdown_month": 12,
+            "countdown_day": 31,
+            "countdown_hour": 24,
+            "countdown_zone": "0"
+          }
+        },
+        "landing_content": {
+          "type": "landing_content",
+          "blocks": {
+            "1559026987517": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "collection_per": 16
+              }
+            },
+            "1559027221817": {
+              "type": "separator",
+              "settings": {
+                "title": "Promotion",
+                "text": "<p>Inform your customers about important your discounts and new offers.<\/p>"
+              }
+            },
+            "1559032090485": {
+              "type": "image",
+              "settings": {
+                "width": "100",
+                "height": "100",
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Explore",
+                "bg_style": "light",
+                "txt_align": "center",
+                "bg_img": ""
+              }
+            }
+          },
+          "block_order": [
+            "1559026987517",
+            "1559027221817",
+            "1559032090485"
+          ],
+          "settings": {
+          }
+        },
+        "banner_landing": {
+          "type": "banner_landing",
+          "settings": {
+            "banner_enable": false,
+            "content": "<p>Use this banner to greet your customers and inform them about new collections, sales or shipping policies.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        }
+      },
       "content_for_index": [
-
+        "ad59ef041715",
+        "5852fea28ec1",
+        "1490870689650",
+        "1488977045013",
+        "db762b9283bf",
+        "1545148407550",
+        "1488465027601",
+        "1488444733168",
+        "1520253693172",
+        "1490617026526"
+      ]
+    },
+    "Looker": {
+      "favicon": "",
+      "cart_action": "overlay",
+      "cart_notes_enable": true,
+      "show_preloader": true,
+      "social_twitter": "#",
+      "social_facebook": "#",
+      "social_google": "#",
+      "social_youtube": "",
+      "social_vimeo": "",
+      "social_pinterest": "#",
+      "social_tumblr": "",
+      "social_instagram": "",
+      "social_linkedin": "",
+      "social_reddit": "",
+      "social_flickr": "",
+      "social_email": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "site_sharing": "1",
+      "preloader": "",
+      "product_color": "light",
+      "site_breadcrumb": true,
+      "logo_color": "#000000",
+      "header_bg": "#ffffff",
+      "nav_txt": "#7a8589",
+      "nav_roll": "#000000",
+      "nav_accent": "#6534ff",
+      "footer_bg": "#ffffff",
+      "footer_txt": "#252a2b",
+      "type_headings": "#1d1d1d",
+      "type_additional": "#9d9d9d",
+      "form_back": "#ffffff",
+      "form_border": "#ffffff",
+      "form_label": "#7f7f7f",
+      "button_color": "#b89955",
+      "button_dark": "#1d1d1d",
+      "form_style": "6px",
+      "color_primary": "#747474",
+      "color_secondary": "#bbb",
+      "color_body_bg": "#fff",
+      "color_borders": "#e5e5e5",
+      "color_body_text": "#333333",
+      "color_footer_bg": "#f2f2f2",
+      "color_footer_text": "#636363",
+      "color_footer_social_link": "#bbbbbb",
+      "logo_use_image": false,
+      "logo_max_width": "450",
+      "favicon_enable": false,
+      "footer_social_enable": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "footer_newsletter_enable": true,
+      "newsletter_form_action": "",
+      "cart_vendor_enable": false,
+      "ajax_cart_enable": true,
+      "twittercard_handle": "@",
+      "checkout_use_storefront_logo": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_src": "",
+            "logo_width": 120,
+            "menu_main_select": "main-menu",
+            "menu_style": "classic",
+            "bar_enable": true,
+            "bar_content": "Use this bar for a short, important announcement.",
+            "bar_link": "",
+            "bar_bgcolor": "#1c1c1c",
+            "bar_txtcolor": "#d2d2d2"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1491990907960": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact information",
+                "info": "email@company.com",
+                "link": "",
+                "caption": "<p>Invite customers to get in touch with you<\/p>"
+              }
+            },
+            "1491990969006": {
+              "type": "menu",
+              "settings": {
+                "title": "Footer menu",
+                "footer_menu_select": "main-menu",
+                "caption": ""
+              }
+            },
+            "1491991241444": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact information",
+                "info": "email@company.com",
+                "link": "",
+                "caption": "<p>Invite customers to get in touch with you<\/p>"
+              }
+            },
+            "1491991011807": {
+              "type": "social",
+              "settings": {
+                "title": "Social links",
+                "caption": "<p>Invite customers to follow you on social networks<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1491990907960",
+            "1491990969006",
+            "1491991241444",
+            "1491991011807"
+          ],
+          "settings": {
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collection_filtering_enabled": true,
+            "collection_filtering_type": "by-tags"
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product_vendor_enabled": true,
+            "variants_style": "minimal",
+            "quantity_selector": true,
+            "enable_payment_button": true,
+            "site_sharing": false,
+            "gallery_style": "scroll",
+            "gallery_resize": "fill",
+            "gallery_zoom": true
+          }
+        },
+        "blog": {
+          "type": "blog",
+          "settings": {
+            "meta_enable": true,
+            "tags_enable": true
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "map_enable": false,
+            "map_api": "",
+            "map_address": "",
+            "map_style": "light",
+            "map_marker": ""
+          }
+        },
+        "1493729188920": {
+          "type": "home_video",
+          "settings": {
+            "caption": "Share your brand's story",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "bg_img": "",
+            "bg_style": "light"
+          }
+        },
+        "1493795694109": {
+          "type": "home_image-text",
+          "blocks": {
+            "1493795707665": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Shop Now",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1493795707665"
+          ],
+          "settings": {
+            "txt_align": "left"
+          }
+        },
+        "1493795835511": {
+          "type": "home_image-text",
+          "blocks": {
+            "1493795841311": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Show Now",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1493795841311"
+          ],
+          "settings": {
+            "txt_align": "left"
+          }
+        },
+        "1493796020747": {
+          "type": "home_image-text",
+          "blocks": {
+            "1493796024682": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Shop Now",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1493796024682"
+          ],
+          "settings": {
+            "txt_align": "left"
+          }
+        },
+        "1493796104511": {
+          "type": "home_image-text",
+          "blocks": {
+            "1493796111307": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Shop Now",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1493796111307"
+          ],
+          "settings": {
+            "txt_align": "left"
+          }
+        },
+        "1493796175070": {
+          "type": "home_collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_collection_select": "",
+            "home_collection_no": "4"
+          }
+        },
+        "1493796277358": {
+          "type": "home_testimonials",
+          "blocks": {
+            "1493796312131": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1493796335324": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1493796444552": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1493796462132": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            },
+            "1493992644266": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+                "title": "by Quote Author",
+                "avatar": ""
+              }
+            }
+          },
+          "block_order": [
+            "1493796312131",
+            "1493796335324",
+            "1493796444552",
+            "1493796462132",
+            "1493992644266"
+          ],
+          "settings": {
+            "title": "Testimonials",
+            "subtitle": "Share your client's stories"
+          }
+        },
+        "1493885386670": {
+          "type": "home_image-text",
+          "blocks": {
+            "1493885392843": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "New Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1493885397348": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "New Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1493885398561": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "New Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1493885400958": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "New Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1493885392843",
+            "1493885397348",
+            "1493885398561",
+            "1493885400958"
+          ],
+          "settings": {
+            "txt_align": "left"
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "newsletter_auto": 10,
+            "newsletter_frequent": "day",
+            "title": "Newsletter",
+            "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href='#'>privacy policy<\/a>.<\/p>",
+            "newsletter_enable": false,
+            "bg": "",
+            "link": ""
+          }
+        },
+        "article": {
+          "type": "article",
+          "settings": {
+            "meta_enable": true,
+            "site_sharing": true
+          }
+        },
+        "banner_home": {
+          "type": "banner_home",
+          "settings": {
+            "banner_enable": true,
+            "content": "<p>Use this banner to greet your customers and inform them about new collections, sales or shipping policies.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        },
+        "collection_footer": {
+          "type": "collection_footer",
+          "settings": {
+          }
+        },
+        "banner_collection": {
+          "type": "banner_collection",
+          "settings": {
+            "banner_enable": false,
+            "collection": "",
+            "content": "<p>Use this banner to inform customers about discounts that are available for your products.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "product_recommendations_heading": "You may also like"
+          }
+        },
+        "product_footer": {
+          "type": "product_footer",
+          "blocks": {
+            "1558688930343": {
+              "type": "image",
+              "settings": {
+                "title": "Your story",
+                "caption": "Share details about the manufacturing process, featured collections, client testimonials, or any extra detail that might be useful for your customers!",
+                "link": "",
+                "button": "",
+                "txt_align": "center",
+                "bg_img": "",
+                "video_url": "",
+                "txt_color": "#ffffff",
+                "bg_color": "#000000",
+                "product": ""
+              }
+            }
+          },
+          "block_order": [
+            "1558688930343"
+          ],
+          "settings": {
+          }
+        },
+        "banner_product": {
+          "type": "banner_product",
+          "settings": {
+            "banner_enable": false,
+            "product": "",
+            "content": "<p>Use this banner to inform customers about special features for your products, or various promotions like free shipping.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        },
+        "1559028063151": {
+          "type": "home_heading",
+          "settings": {
+            "ann_text": "Inform your customers about important news, such as discounts or new offers.",
+            "ann_link": ""
+          }
+        },
+        "landing_banner": {
+          "type": "landing_banner",
+          "settings": {
+            "banner_enable": true,
+            "banner_caption": "A short introductory line",
+            "banner_title": "Landing Page",
+            "banner_details": "",
+            "banner_txt_style": "dark",
+            "banner_txt_align": "center",
+            "banner_background": "",
+            "banner_color": "rgba(0,0,0,0)",
+            "countdown_enable": true,
+            "countdown_year": 2019,
+            "countdown_month": 12,
+            "countdown_day": 31,
+            "countdown_hour": 24,
+            "countdown_zone": "0"
+          }
+        },
+        "landing_content": {
+          "type": "landing_content",
+          "blocks": {
+            "1559026987517": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "collection_per": 8
+              }
+            },
+            "1559027221817": {
+              "type": "separator",
+              "settings": {
+                "title": "Promotion",
+                "text": "<p>Inform your customers about important your discounts and new offers.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1559026987517",
+            "1559027221817"
+          ],
+          "settings": {
+          }
+        },
+        "banner_landing": {
+          "type": "banner_landing",
+          "settings": {
+            "banner_enable": false,
+            "content": "<p>Use this banner to greet your customers and inform them about new collections, sales or shipping policies.<\/p>",
+            "bg_color": "#141618",
+            "txt_color": "#ffffff"
+          }
+        }
+      },
+      "content_for_index": [
+        "1493795694109",
+        "1493795835511",
+        "1493796020747",
+        "1493796104511",
+        "1493796175070",
+        "1493885386670",
+        "1493796277358",
+        "1493729188920",
+        "1559028063151"
+      ]
+    },
+    "Jagger": {
+      "page_bg": "#dfe3ec",
+      "type_body": "#2d3636",
+      "type_links": "#fa0e39",
+      "typography_headings_new": "quicksand_n7",
+      "typography_menus_new": "montserrat_n5",
+      "typography_body_new": "work_sans_n5",
+      "typography_quote_new": "libre_baskerville_i4",
+      "product_animation": "three regular color--light",
+      "product_show_secondary": false,
+      "thumb_resize": "fill",
+      "favicon": "",
+      "cart_action": "overlay",
+      "cart_notes_enable": true,
+      "social_twitter": "",
+      "social_facebook": "",
+      "social_google": "",
+      "social_youtube": "",
+      "social_vimeo": "",
+      "social_pinterest": "",
+      "social_tumblr": "",
+      "social_instagram": "",
+      "social_linkedin": "",
+      "social_reddit": "",
+      "social_flickr": "",
+      "social_email": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "site_sharing": true,
+      "preloader": "",
+      "ajax_cart_enable": true,
+      "color_body_bg": "#fff",
+      "color_body_text": "#333333",
+      "color_borders": "#e5e5e5",
+      "color_footer_bg": "#f2f2f2",
+      "color_footer_social_link": "#bbbbbb",
+      "color_footer_text": "#636363",
+      "color_primary": "#747474",
+      "color_secondary": "#bbb",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_social_enable": true,
+      "logo_use_image": false,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_src": "",
+            "logo_width": 90,
+            "menu_main_select": "main-menu",
+            "menu_style": "classic"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1493808000226": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact information",
+                "info": "email@company.com",
+                "link": "",
+                "caption": "<p>Invite customers to get in touch with you<\/p>"
+              }
+            },
+            "1493808042627": {
+              "type": "menu",
+              "settings": {
+                "title": "Footer menu",
+                "footer_menu_select": "footer",
+                "caption": ""
+              }
+            },
+            "1493808053903": {
+              "type": "social",
+              "settings": {
+                "title": "Social links",
+                "caption": "<p>Invite customers to follow you on social networks<\/p>"
+              }
+            },
+            "1493808073928": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "1493808000226",
+            "1493808042627",
+            "1493808053903",
+            "1493808073928"
+          ],
+          "settings": {
+          }
+        },
+        "1493800065622": {
+          "type": "home_collection",
+          "settings": {
+            "title": "Featured collection",
+            "home_collection_select": "",
+            "home_collection_no": "14"
+          }
+        },
+        "5bb852fea28ec1": {
+          "type": "home_heading",
+          "settings": {
+            "ann_text": "Inform your customers about important news, such as discounts or new offers.",
+            "ann_link": ""
+          }
+        },
+        "abd59ef041715": {
+          "type": "home_slideshow",
+          "blocks": {
+            "b15580741453dfa96cc-0": {
+              "type": "slide",
+              "settings": {
+                "title": "Slide Heading",
+                "caption": "Welcome customers to your store",
+                "subtitle": "Showcase your best products",
+                "link": "",
+                "bg_img": ""
+              }
+            },
+            "b1558074151466": {
+              "type": "slide",
+              "settings": {
+                "title": "Slide Heading",
+                "caption": "Welcome customers to your store",
+                "subtitle": "Showcase your best products",
+                "link": "",
+                "bg_img": ""
+              }
+            }
+          },
+          "block_order": [
+            "b15580741453dfa96cc-0",
+            "b1558074151466"
+          ],
+          "settings": {
+            "slide_bg": "#e2e3e6",
+            "slide_text": "#262627"
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "newsletter_auto": 10,
+            "newsletter_frequent": "day",
+            "title": "Newsletter",
+            "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href='#'>privacy policy<\/a>.<\/p>",
+            "newsletter_enable": true,
+            "bg": "",
+            "link": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "collection_filtering_enabled": false,
+            "collection_filtering_type": "by-tags"
+          }
+        },
+        "1495180468231": {
+          "type": "home_image-text",
+          "blocks": {
+            "1495191195792": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1495188261222": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1495188263621": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            },
+            "1495180468231-0": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1495191195792",
+            "1495188261222",
+            "1495188263621",
+            "1495180468231-0"
+          ],
+          "settings": {
+            "txt_align": "center"
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product_vendor_enabled": true,
+            "variants_style": "minimal",
+            "quantity_selector": true,
+            "enable_payment_button": true,
+            "site_sharing": true,
+            "gallery_style": "slider",
+            "gallery_resize": "fill",
+            "gallery_zoom": true
+          }
+        },
+        "1498474240884": {
+          "type": "home_image-text",
+          "blocks": {
+            "1498474240884-0": {
+              "type": "image",
+              "settings": {
+                "title": "Image with text",
+                "caption": "Share your latest products, collections or promotions!",
+                "link": "",
+                "button": "Shop Now",
+                "bg_img": "",
+                "bg_style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "1498474240884-0"
+          ],
+          "settings": {
+            "txt_align": "center"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "map_enable": false,
+            "map_api": "",
+            "map_address": "",
+            "map_style": "light",
+            "map_marker": ""
+          }
+        },
+        "1520254824984": {
+          "type": "home_product",
+          "settings": {
+            "featured_product": "",
+            "product_vendor_enabled": false,
+            "variants_style": "minimal",
+            "hide_variants": true,
+            "quantity_selector": true,
+            "enable_payment_button": true,
+            "gallery_style": "scroll",
+            "gallery_resize": "fill"
+          }
+        }
+      },
+      "content_for_index": [
+        "abd59ef041715",
+        "1493800065622",
+        "1495180468231",
+        "5bb852fea28ec1",
+        "1520254824984",
+        "1498474240884"
       ]
     }
   }

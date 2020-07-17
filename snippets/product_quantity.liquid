@@ -1,0 +1,21 @@
+{% if section.settings.quantity_selector and section.settings.enable_payment_button %}
+
+  <div class="quantity-selector-holder">
+
+    <button class="qty-button qty-minus">
+      <svg version="1.0" class="svg minus" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve"><rect y="4" width="10" height="2"/></svg>
+    </button>
+
+    <input type="number" name="quantity" value="1" min="1" class="quantity-selector" aria-label="{{ 'product.quantity' | t }}">
+
+    <button class="qty-button qty-plus">
+      <svg version="1.0" class="svg minus" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve"><rect y="4" width="10" height="2"/><rect y="4" width="10" height="2" style="transform: rotate(-90deg);transform-origin: center;"/></svg>
+    </button>
+
+  </div>
+
+{% elsif section.settings.quantity_selector %}
+
+  <input type="number" name="quantity" value="1" min="1" max="999" class="quantity-selector" aria-label="{{ 'product.quantity' | t }}">
+  
+{% endif %}

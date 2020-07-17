@@ -1,0 +1,60 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+  {% form 'customer' %}
+
+    <div class="site-box box--small-fl box--typo-big box--center-align box--column-flow box--no-padding box__newsletter">
+      <div class="site-box-content">
+
+      {% unless section.settings.title == blank %}
+        <h3 class="title">{{ section.settings.title | escape }}</h3>
+      {% endunless %}
+
+      {% unless section.settings.subtitle_new == blank %}
+        <h4 class="subtitle rte">{{ section.settings.subtitle_new }}</h4>
+      {% endunless %}
+
+        {{ form.errors | default_errors }}
+
+        {% if form.posted_successfully? %}
+
+          <div class="note form-success">{{ 'general.newsletter.confirmation' | t }}</div>
+
+        {% else %}
+
+          <div class="input-group">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off"><input type="submit" name="commit" id="Subscribe" value="{{ 'general.newsletter.submit' | t }}">
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+
+  {% endform %}
+      
+</div>
+
+{% schema %}
+  {
+    "name": "Newsletter",
+    "class": "index-section mount-newsletter",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Subscribe To Our Newsletter"
+      },
+      {
+        "type": "richtext",
+        "id": "subtitle_new",
+        "label": "Subheading",
+        "default": "<p>Stay up to date with our latest offers! <br>Read our <a href='#'>privacy policy</a>.</p>"
+      }
+    ],
+    "presets": [{
+      "name": "Newsletter",
+      "category": "Promotional"
+    }]
+  }
+{% endschema %}

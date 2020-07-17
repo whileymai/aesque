@@ -1,0 +1,98 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+  <div class="site-box box--bigger box--typo-bigger lap--box--small-fl box--center-align box--column-flow box__video box__image-text button-true style--{{ section.settings.bg_style }} align--center">
+
+    <div class="site-box-content">
+
+      <div class="content">
+
+        {% unless section.settings.caption == blank %}
+          <p class="caption">{{ section.settings.caption | escape }}</p>
+        {% endunless %}
+
+        {% unless section.settings.heading == blank %}
+          <h2 class="title">{{ section.settings.heading | escape }}</h2>
+        {% endunless %}
+
+        {% unless section.settings.video_url == blank %}
+          <a class="video-lightbox popup-{{ section.settings.video_url.type }}" href="{{ section.settings.video_url }}" aria-label="{{ 'general.play_video' | t }}" title="{{ 'general.play_video' | t }}">
+            <span aria-hidden="true">{% render 'asset_svg', icon_name: 'icon_video_play' %}</span>
+          </a>
+        {% endunless %}
+
+      </div>
+
+    </div>
+
+    {% unless section.settings.bg_img == blank %}
+
+      <span class="site-box-background with-image" aria-hidden="true">
+        
+        <img
+          src="{{ section.settings.bg_img | img_url: '960x' }}" alt="{{ section.settings.heading | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ section.settings.bg_img | img_url: '600x' }} 480w, {{ section.settings.bg_img | img_url: '860x' }} 720w, {{ section.settings.bg_img | img_url: '1100x' }} 960w, {{ section.settings.bg_img | img_url: '1600x' }} 1440w, {{ section.settings.bg_img | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ section.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+      </span> 
+
+    {% endunless %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Video Popup",
+    "class": "index-section mount-video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Video title"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Share your brand's story"
+      },
+      {
+        "id": "video_url",
+        "type": "video_url",
+        "label": "Video URL",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background image"
+      },
+      {
+        "type": "select",
+        "id": "bg_style",
+        "label": "Text color",
+        "options": [
+          {
+            "value": "light",
+            "label": "Dark"
+          },
+          {
+            "value": "dark",
+            "label": "Light"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Video Popup",
+      "category": "Video"
+    }]
+  }
+{% endschema %}

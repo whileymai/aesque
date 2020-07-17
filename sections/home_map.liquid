@@ -1,0 +1,130 @@
+{% assign display_map = false %}
+{% assign onboarding = false %}
+{% assign bg_image = section.settings.bg_img %}
+
+{% if section.settings.map_api == blank and bg_image == blank %}
+  {% assign onboarding = true %}
+{% endif %}
+{% if section.settings.map_api != blank and section.settings.map_address %}
+  {% assign display_map = true %}
+{% endif %}
+
+<div class="site-box-container container--fullscreen">
+
+  <div class="site-box box--bigger box--typo-big box--center-align box--column-flow box__heading box__map">
+  
+    {% if display_map %}
+
+			<div class="contact-map-holder" data-key="{{ section.settings.map_api | escape }}" aria-hidden="true"><div class="contact-map-object" data-address="{{ section.settings.map_address | escape }}" data-marker="{% if section.settings.map_marker %}{{ section.settings.map_marker | img_url: '240x' }}{% else %}{% if section.settings.map_style == 'light' %}{{ 'img_marker-dark.png' | asset_url }}{% else %}{{ 'img_marker-light.png' | asset_url }}{% endif %}{% endif %}" data-style="{{ section.settings.map_style }}" data-zoom="16"></div></div>
+
+      <div class="contact-map-address-holder hide" data-aria="hidden">
+        <div class="contact-map-address">
+          <p class="rte">{{ section.settings.map_address | escape }}</p>
+          <a target="_blank">{{ 'contact.map.google_maps_link' | t }}</a>
+        </div>
+      </div>
+
+    {% else %}
+
+      <span class="site-box-background" aria-hidden="true">
+        {% if onboarding %}
+          <span class="onboarding-svg">{{ 'lifestyle-1' | placeholder_svg_tag }}</span>
+        {% else %}
+
+          <img
+            src="{{ bg_image | img_url: '960x' }}" alt="{{ section.settings.title | escape }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ bg_image | img_url: '1100x' }} 960w, {{ bg_image | img_url: '1600x' }} 1440w, {{ bg_image | img_url: '2100x' }} 1920w"
+            data-sizes="auto"
+            class="lazyload" />
+
+            <noscript><span class="ll-fallback" style="background-image:url({{ bg_image | img_url: '960x' }})"></span></noscript> 
+
+        {% endif %}
+      </span> 
+
+    {% endif %}
+
+    <div class="map-info">
+
+      {% unless section.settings.title == blank %}
+        <h4 class="title">{{ section.settings.title | escape }}</h4>
+      {% endunless %}
+
+      {% unless section.settings.content == blank %}
+        <div class="rte">{{ section.settings.content }}</div>
+      {% endunless %}
+
+    </div>
+
+  </div>
+  
+</div>
+
+{% schema %}
+  {
+    "name": "Map",
+    "class": "mount-map",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Our store"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Address and hours",
+        "default": "<p>123 Fake St.<br>Cluj-Napoca, Romania</p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 4pm<br>Sunday, CLOSED</p>"
+      },
+      {
+        "type": "text",
+        "id": "map_address",
+        "label": "Map address",
+        "default": "Cluj-Napoca, Romania"
+      },
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "text",
+        "id": "map_api",
+        "label": "Google Maps API Key",
+        "info": "You'll need to register a [Google Maps API Key](http://shopify-support.krownthemes.com/article/385-generate-an-api-key-for-google-maps) to display the map."
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Image",
+        "info": "Displayed if the map isn't loaded"
+      },
+      {
+        "type": "radio",
+        "id": "map_style",
+        "label": "Map style",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "map_marker",
+        "label": "Map custom pin",
+        "info": "240 x 240px transparent .png file"
+      }
+    ],
+    "presets": [{
+      "name": "Map",
+      "category": "Store information"
+    }]
+  }
+{% endschema %}

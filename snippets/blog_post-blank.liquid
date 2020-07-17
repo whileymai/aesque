@@ -1,0 +1,27 @@
+<a class="blog-item img-right" href="" style="margin-top: -2px;">
+
+	<div class="content">
+
+		<div>
+
+			<div class="header">
+			
+				<h3 class="title">Your article's title</h3>
+				
+				{% if section.settings.meta_enable %}
+					<p class="meta">by Author on 12 May 2017<br />0 Comments</p>
+				{% endif %}
+
+			</div>
+
+		</div>
+
+	</div>
+
+  <span class="background">
+  	<span class="onboarding-svg">
+      {{ 'collection-X' | replace: 'X', index | placeholder_svg_tag }}</span>
+    </span>
+  </span>
+
+</a>

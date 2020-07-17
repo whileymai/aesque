@@ -1,0 +1,118 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+  {%- assign index_at_loop = 0 -%}
+  {%- assign page_at_loop = 1 -%}
+  {%- assign size_at_loop = section.blocks.size | at_most: 4 -%}
+  {%- assign full_loop = section.blocks.size | divided_by: 4 | floor | plus: 1 -%}
+  {%- assign half_loop = section.blocks.size | modulo: 4 -%}
+
+  {% for block in section.blocks %}
+
+    {% assign index_at_loop = index_at_loop | plus: 1 %}
+    
+    {% render 'gallery_item', block: block, index_at_loop: index_at_loop, page_at_loop: page_at_loop, size_at_loop: size_at_loop %}
+    
+    {% if index_at_loop == 4 %}
+      {% assign index_at_loop = 0 %}
+      {% assign page_at_loop = page_at_loop | plus: 1 %}
+      {% if page_at_loop == full_loop %}
+        {% assign size_at_loop = half_loop %}
+      {% endif %}
+      <span class="clearfix"></span>
+    {% endif %}
+
+  {% endfor %}
+
+</div>
+
+{% schema %}
+{
+  "name": "Gallery",
+  "class": "index-section",
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "id": "alignment",
+          "type": "select",
+          "options": [
+            {
+              "value": "0% 0%",
+              "label": "Left top"
+            },
+            {
+              "value": "50% 0%",
+              "label": "Center top"
+            },
+            {
+              "value": "100% 0%",
+              "label": "Right top"
+            },
+            {
+              "value": "0% 50%",
+              "label": "Left middle"
+            },
+            {
+              "value": "50% 50%",
+              "label": "Center middle"
+            },
+            {
+              "value": "100% 50%",
+              "label": "Right middle"
+            },
+            {
+              "value": "0% 100%",
+              "label": "Left bottom"
+            },
+            {
+              "value": "50% 100%",
+              "label": "Center bottom"
+            },
+            {
+              "value": "100% 100%",
+              "label": "Right bottom"
+            }
+          ],
+          "default": "50% 50%",
+          "label": "Image alignment"
+        },
+        {
+          "id": "link",
+          "type": "url",
+          "label": "Link",
+          "info": "Optional"
+        },
+        {
+          "id": "caption",
+          "type": "text",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery",
+      "category": "Image",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

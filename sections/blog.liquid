@@ -1,0 +1,96 @@
+<div class="site-box-container container--fullscreen box--can-stick">
+
+  <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading {% unless section.settings.tags_enable %} box--add-hr {% endunless %}" data-order="0">
+
+    <div class="site-box-content fix-me-with-margin">
+          
+      <h1 class="title">
+        {{ blog.title }}
+      </h1>
+
+      {% if section.settings.tags_enable %}
+
+        <div class="meta tags">
+          <a href="{{ blog.url }}"{% if current_tags == blank %} class="active"{% endif %}>{{ 'blogs.tags.all' | t }}</a>
+          {% for tag in blog.all_tags %}
+            {% if current_tags contains tag %}
+              <a href="{{ blog.url }}/tagged/{{ tag.handle }}" class="active">{{ tag | capitalize }}</a>
+            {% else %}
+              <a href="{{ blog.url }}/tagged/{{ tag.handle }}">{{ tag | capitalize }}</a>
+              {% endif %}
+          {% endfor %}
+        </div>
+  
+      {% endif %}
+
+    </div>
+
+  </div>
+
+  <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box--no-padding box__blog scroll-movers-parent" data-order="1">
+    <div class="site-box-content">
+      
+      {% if blog.articles.size == 0 %}
+        
+        <div class="post onboard">
+            <p>{{ 'blogs.general.no_articles' | t }}</p>
+        </div>
+
+      {% else %}
+
+        {% paginate blog.articles by 10 %}
+
+          {% for article in blog.articles %}
+            {% render 'blog_post-content', article: article, blog_count: blog.articles.size %}
+          {% endfor %}
+
+          {% if paginate.pages > 1 %}
+
+            <div class="blog-item paginate {% if paginate.previous.is_link and paginate.next.is_link %} double {% endif %}">
+    
+              {% if paginate.previous.is_link %}
+                <a class="left" href="{{ paginate.previous.url }}" title="{{ 'general.paginate.previous_page' | t }}" aria-label="{{ 'general.paginate.previous_page' | t }}"> 
+                  <span aria-hidden="true" class="icon">{% render 'asset_svg', icon_name: 'arrow_icon_smaller' %}</span>
+                </a>
+              {% endif %}
+
+              {% if paginate.next.is_link %}
+                <a class="right" href="{{ paginate.next.url }}" title="{{ 'general.paginate.next_page' | t }}" aria-label="{{ 'general.paginate.next_page' | t }}">
+                  <span aria-hidden="true" class="icon">{% render 'asset_svg', icon_name: 'arrow_icon_smaller' %}</span>
+                </a>
+              {% endif %}
+
+            </div>
+
+          {% endif %}
+
+        {% endpaginate %}
+
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Blog",
+    "class": "mount-blog",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "meta_enable",
+        "default": true,
+        "label": "Show author, date and comments"
+      },
+      {
+        "type": "checkbox",
+        "id": "tags_enable",
+        "default": true,
+        "label": "Enable tag filtering"
+      }
+    ]
+  }
+{% endschema %}

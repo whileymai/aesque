@@ -1,0 +1,100 @@
+{% assign menu = linklists[current_menu] %}
+{% capture menu_size %} {{ menu.links | size }} {% endcapture %}
+
+<ul class="{{ current_menu }} link-list size-{{ menu_size | lstrip | rstrip }}">
+
+  {% if section.blocks.size > 0 %}
+
+		{% assign submenu_active = false %}
+		{% for block in section.blocks %}
+			{% if collection.url == collections[block.settings.collection_select].url %}
+				{% assign submenu_active = true %}
+			{% endif %}
+		{% endfor %}
+	
+    <li class="has-submenu collections-menu">
+			<a {% if link.active or submenu_active %} class="active" {% endif %} href="{{ routes.all_products_collection_url }}">
+				<span>{{ 'collections.general.all_collections' | t }}</span>
+				<span class="icon-go go-next go-down">{% render 'asset_svg', icon_name: 'arrow_icon_long' %}</span>
+			</a>
+      <ul class="submenu" aria-expanded="false">
+        {% for block in section.blocks %}
+          <li {{ block.shopify_attributes }}>
+            <a {% if collection.url == collections[block.settings.collection_select].url %} class="active" {% endif %} href="{{ collections[block.settings.collection_select].url }}"><span>{{ collections[block.settings.collection_select].title | escape }}</span></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+  {% endif %}
+
+	{% for link in menu.links %}
+
+		<li {% if link.links != blank %} class="has-submenu" aria-haspopup="true" data-size="{{ link.links | size }}" {% endif %}>
+
+			<a {% if link.active or link.child_active %} class="active" {% endif %} href="{{ link.url }}">
+
+				<span>{{ link.title | escape }}</span>
+
+				{% if link.links != blank %}
+					<span class="icon-go go-next go-down hide show-in-sidebar" style="left: auto;">{% render 'asset_svg', icon_name: 'arrow_icon_long' %}</span>
+					<span class="icon-go go-next go-down hide show-in-classic">{% render 'asset_svg', icon_name: 'arrow_icon_long' %}</span>
+				{% endif %}
+
+			</a>
+
+			{% if link.links != blank %}
+
+				<ul class="submenu" aria-expanded="false">
+
+					{% for childlink in link.links %}
+
+						<li {% if childlink.links != blank %} class="has-babymenu" aria-haspopup="true" {% endif %}>
+
+							<a {% if childlink.active or childlink.child_active %} class="active" {% endif %} href="{{ childlink.url }}">
+							
+								<span>{{ childlink.title | escape }}</span>
+
+								{% if childlink.links != blank %}
+									<span class="icon-go go-next go-down">{% render 'asset_svg', icon_name: 'arrow_icon_long' %}</span>
+								{% endif %}
+
+							</a>
+
+							{% if childlink.links != blank %}
+
+								<div class="babymenu">
+									<ul aria-expanded="false">
+										{% for babylink in childlink.links %}
+											<li><a {% if babylink.active %} class="active" {% endif %} href="{{ babylink.url }}"><span>{{ babylink.title | escape }}</span></a></li>
+										{% endfor %}
+									</ul>
+								</div>
+
+							{% endif %}
+
+						</li>
+
+					{% endfor %}
+
+				</ul>
+
+			{% endif %}
+
+		</li>
+
+	{% endfor %}
+
+	{% if shop.customer_accounts_enabled %}
+		<li class="login">
+			<a {% if link.active %} class="active"{% endif %} href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+				{% if customer %}
+					<span>{{ 'general.navigation.account' | t }}</span>
+				{% else %}
+					<span>{{ 'general.navigation.login' | t }}</span>
+				{% endif %}
+			</a>
+		</li>
+	{% endif %}
+
+</ul>

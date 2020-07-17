@@ -1,0 +1,70 @@
+{% if collection_count == 1 %}
+  {% assign size_class = 'box--big lap--box--small-fl fix-me-with-height-hard' %}
+{% elsif collection_count == 2 %}
+  {% assign size_class = 'box--small-lg lap--box--small-fl' %}
+{% elsif collection_count == 3 %}
+  {% if index == 1 %}
+    {% assign size_class = 'box--small-lg lap--box--small-fl' %}
+  {% else %}
+    {% assign size_class = 'box--small lap--box--small-lg' %}
+  {% endif %}
+{% else %}
+  {% assign size_class = 'box--small lap--box--small-lg' %}
+{% endif %}
+
+{% if collection == empty %}
+  {% assign section_onboarding = true %}
+  {% capture title_ %} Your collections's name {% endcapture %}
+{% else %}
+  {% assign section_onboarding = false %}
+  {% assign title_ = collection.title %}
+{% endif %}
+
+<div class="site-box {{ size_class }} box--center-align box--no-padding box--column-flow box__collection">
+
+  <div class="site-box-content" style="height: 100%">
+
+    <a {% unless section_onboarding %} href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" {% endunless %} class="product-item style--{{ settings.product_animation }}" style="height: 100%">
+
+      {% if collection.image %}
+        {% assign collection_image = collection.image %}
+      {% elsif collection.products.first != blank %}
+        {% assign collection_image = collection.products.first %}
+      {% endif %}
+
+      <div class="box--product-image primary">
+
+        {% unless section_onboarding %}
+        
+          <img
+            src="{{ collection_image | img_url: '960x' }}" alt="{{ collection_image | escape }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ collection_image | img_url: '480x' }} 360w, {{ collection_image | img_url: '600x' }} 480w, {{ collection_image | img_url: '1100x' }} 960w, {{ collection_image | img_url: '1600x' }} 1440w, {{ collection_image | img_url: '2100x' }} 1920w"
+            data-sizes="auto"
+            class="lazyload"
+          />
+          
+          <noscript><span class="ll-fallback" style="background-image:url({{ collection_image | img_url: '960x' }})"></span></noscript> 
+
+        {% else %}
+
+          {% assign no = forloop.index | modulo:4 | plus:1 %}
+          <span class="onboarding-svg">{{ 'collection-X' | replace: 'X', no | placeholder_svg_tag }}</span>
+
+        {% endunless %}
+
+      </div>
+
+      <div class="caption">
+        <div>
+          <h3><span class="overflowed">{{ title_ }}</span></h3>
+          <span class="price"><span class="overflowed">{{ 'collections.general.view_products' | t }}</span></span>
+          <span aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_long_overflowed' %}</span>
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+
+</div>

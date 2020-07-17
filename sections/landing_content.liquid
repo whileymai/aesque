@@ -1,0 +1,271 @@
+{% for block in section.blocks %}
+
+  {% case block.type %}
+
+    {% when 'collection' %}
+
+    	<div id="block-{{ block.id }}" {{ block.shopify_attributes }} class="mount-products mount-images">
+
+	    	<div class="site-box-container container--fullscreen">
+
+			    <div class="collection__holder odd">
+
+						{% assign product_count = collections[block.settings.collection].products_count | times: 1 %}
+						{% assign per_page = block.settings.collection_per | times: 1 %}
+
+						{% if product_count == 0 %}
+
+				      {% for i in (1..per_page) %}
+				        <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection">
+				          <div class="site-box-content">
+				            {% render 'collection_product-blank', index: forloop.index | modulo:6 | plus:1, per_page: per_page %}
+				          </div>
+				        </div>
+				      {% endfor %}
+
+				    {% else %}
+
+				      {% for product in collections[block.settings.collection].products limit:per_page %}
+				        <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection">
+				          <div class="site-box-content">
+				            {% render 'collection_product-content', product: product, per_page: per_page %}
+				          </div>
+				        </div>
+				      {% endfor %}
+
+				    {% endif %}
+
+				  </div>
+
+			  </div>
+
+		  </div>
+
+		{% when 'separator' %}
+			
+			<div id="block-{{ block.id }}" {{ block.shopify_attributes }} class="mount-content-row">
+			  <div class="site-box-container container--fullscreen">
+   				<div class="site-box box--small-fl lap--box--small-fl box__announcement box--typo-big box--center-align box--column-flow">
+		     	  <div class="site-box-content">
+		          <div class="content">
+		            <p class="title">{{ block.settings.title | escape }}</p>
+		            <div class="rte">{{ block.settings.text }}</div>
+		          </div>
+		        </div>
+					</div>
+		    </div>
+		  </div>
+
+	  {% when 'image' %}
+
+	  	{% if block.settings.width == '100' %}
+	  		{% if block.settings.height == '100' %}
+	  			{% assign size_class = 'box--bigger box--typo-bigger lap--box--small-fl' %}
+	  		{% else %}
+	  			{% assign size_class = 'box--small-fl box--typo-big' %}
+	  		{% endif %}
+	  	{% else %}
+	  		{% if block.settings.height == '100' %}
+	  			{% assign size_class = 'box--big box--typo-big lap--box--small-fl palm--box--small-fl' %}
+	  		{% else %}
+					{% assign size_class = 'box--small-lg box--typo-small palm--box--small-fl' %}
+				{% endif %}
+			{% endif %}
+
+			<{% unless block.settings.button != blank %}a{% else %}div{% endunless %} {% unless block.settings.link == blank %} href="{{ block.settings.link | escape }}" {% endunless %} id="block-{{ block.id }}" {{ block.shopify_attributes }} class="site-box box--center-align box--column-flow {{ size_class }} box__image-text style--{{ block.settings.bg_style }} align--{{ block.settings.txt_align }} button-{{ block.settings.button }}">
+
+			  <div class="site-box-content">
+
+			    <div class="content">
+
+			      {% unless block.settings.caption == blank %}
+			        <p class="caption">{{ block.settings.caption | escape }}</p>
+			      {% endunless %}
+
+			      {% unless block.settings.title == blank %}
+			        <h2 class="title {% unless block.settings.button != blank %} add-hr {% endunless %}">{{ block.settings.title | escape }}</h2>
+			      {% endunless %}
+
+			      {% unless block.settings.button == blank %}
+			        <a class="button with-icon {{ block.settings.bg_style }}" {% unless block.settings.link == blank %} href="{{ block.settings.link }}" {% endunless %}> {{ block.settings.button | escape }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+			      {% endunless %}
+
+			    </div>
+
+			  </div>
+
+			  <span class="site-box-background with-image" aria-hidden="true">
+
+			    {% if block.settings.bg_img == blank %}
+
+			      <span class="onboarding-svg">{{ 'collection-1' | placeholder_svg_tag }}</span>
+
+			    {% else %}
+
+			      <img
+			        src="{{ block.settings.bg_img | img_url: '960x' }}" alt="{{ block.settings.title | escape }}"
+			        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+			        data-srcset="{{ block.settings.bg_img | img_url: '600x' }} 480w, {{ block.settings.bg_img | img_url: '860x' }} 720w, {{ block.settings.bg_img | img_url: '1100x' }} 960w, {{ block.settings.bg_img | img_url: '1600x' }} 1440w, {{ block.settings.bg_img | img_url: '2100x' }} 1920w"
+			        data-sizes="auto"
+			        class="lazyload" 
+			      />
+
+			      <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+			    {% endif %}
+			    
+				</span>
+
+			</{% unless block.settings.button != blank %}a{% else %}div{% endunless %}>
+
+  {% endcase %}
+
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Landing page content",
+    "class": "landing-page-content clearfix",
+    "settings": [
+    
+    ],
+    "blocks": [
+    	{
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+		      {
+		        "type": "collection",
+		        "id": "collection",
+		        "label": "Collection"
+		      },
+		      {
+		        "type": "range",
+		        "id": "collection_per",
+		        "label": "Number of products",
+		        "min": 4,
+		        "max": 40,
+		        "default": 8,
+		        "step": 4
+		      }
+        ]
+      },
+    	{
+        "type": "image",
+        "name": "Image with text",
+        "settings": [
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "100",
+                "label": "100%"
+              },
+              {
+                "value": "50",
+                "label": "50%"
+              }
+            ]
+          },         
+          {
+            "type": "select",
+            "id": "height",
+            "label": "Height",
+            "options": [
+              {
+                "value": "100",
+                "label": "100%"
+              },
+              {
+                "value": "50",
+                "label": "50%"
+              }
+            ]
+          },     
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Image with text"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Text",
+            "default": "Share your latest products, collections or promotions!"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "button",
+            "label": "Button"
+          },
+          {
+            "type": "select",
+            "id": "bg_style",
+            "label": "Text color",
+            "options": [
+              {
+                "value": "light",
+                "label": "Light"
+              },
+              {
+                "value": "dark",
+                "label": "Dark"
+              }
+            ]
+          },
+          {
+		        "type": "select",
+		        "id": "txt_align",
+		        "label": "Text alignment",
+		        "options": [
+		          {
+		            "value": "left",
+		            "label": "Left"
+		          },
+		          {
+		            "value": "center",
+		            "label": "Center"
+		          },
+		          {
+		            "value": "right",
+		            "label": "Right"
+		          }
+		        ],
+		        "default": "center"
+		      },
+          {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "Background image"
+          }
+        ]
+      },
+    	{
+        "type": "separator",
+        "name": "Text separator",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Promotion"
+          },
+		      {
+		        "type": "richtext",
+		        "id": "text",
+		        "label": "Content",
+		        "default": "<p>Inform your customers about important your discounts and new offers.</p>"
+		      }
+        ]
+      }
+    ]
+  }
+{% endschema %}

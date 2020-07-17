@@ -1,0 +1,214 @@
+{% if section.settings.banner_enable %}
+
+  <div id="{{ section.id }}" class="site-box box__landing-banner box__image-text box--typo-bigger style--{{ section.settings.banner_txt_style }} align--{{ section.settings.banner_txt_align }}">
+    
+    <div class="site-box-content">
+
+      <div class="content">
+
+        {% unless section.settings.banner_caption == blank %}
+          <p class="caption">{{ section.settings.banner_caption | escape }}</p>
+        {% endunless %}
+
+        {% unless section.settings.banner_title == blank %}
+          <h1 class="title">{{ section.settings.banner_title | escape }}</h1>
+        {% endunless %}
+
+        {% unless section.settings.banner_details == blank %}
+          <p class="details">{{ section.settings.banner_details | escape }}</p>
+        {% endunless %}
+
+      </div>
+
+    </div>
+
+    <span class="site-box-background with-image" aria-hidden="true">
+
+      {% unless section.settings.banner_background == blank %}
+
+        <img
+          src="{{ section.settings.banner_background | img_url: '960x' }}" alt="{{ section.settings.banner_title | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ section.settings.banner_background | img_url: '600x' }} 480w, {{ section.settings.banner_background | img_url: '860x' }} 720w, {{ section.settings.banner_background | img_url: '1100x' }} 960w, {{ section.settings.banner_background | img_url: '1600x' }} 1440w, {{ section.settings.banner_background | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" 
+        />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ section.settings.banner_background | img_url: '960x' }})"></span></noscript> 
+
+      {% endunless %}
+      
+    </span>
+
+    {% if section.settings.countdown_enable %}
+      <div class="countdown hide" data-date="{{ section.settings.countdown_year }},{{ section.settings.countdown_month }},{{ section.settings.countdown_day }},{{ section.settings.countdown_hour }}" data-timezone="{{ section.settings.countdown_zone }}" aria-hidden="true">
+        <span class="helper">{{ 'general.time_left' | t }}</span><span class="time"><span class="days"></span><span class="separator">:</span><span class="hours"></span><span class="separator">:</span><span class="minutes"></span><span class="separator">:</span><span class="seconds" /></span>
+      </div>
+    {% endif %}
+
+  </div>
+
+{% endif %}
+
+<style type="text/css">
+  .site-box.box__landing-banner .site-box-background.with-image:after {
+    background-color: {{ section.settings.banner_color }};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Landing page banner",
+    "class": "mount-landing-banner clearfix",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "banner_enable",
+        "label": "Enable banner",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "banner_caption",
+        "label": "Caption",
+        "default": "A short introductory line"
+      },
+      {
+        "type": "text",
+        "id": "banner_title",
+        "label": "Title",
+        "default": "Landing Page"
+      },
+      {
+        "type": "text",
+        "id": "banner_details",
+        "label": "Details",
+        "default": "More details about this landing page"
+      },
+      {
+        "type": "radio",
+        "id": "banner_txt_style",
+        "label": "Text color",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "banner_txt_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner_background",
+        "label": "Background image"
+      },
+      {
+        "type": "color",
+        "id": "banner_color",
+        "label": "Background overlay",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Countdown"
+      },
+      {
+        "type": "checkbox",
+        "id": "countdown_enable",
+        "label": "Show countdown clock"
+      },
+      {
+        "type": "range",
+        "id": "countdown_year",
+        "label": "End year",
+        "min": 2019,
+        "max": 2029,
+        "default": 2019,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "countdown_month",
+        "label": "End month",
+        "min": 1,
+        "max": 12,
+        "default": 1,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "countdown_day",
+        "label": "End day",
+        "min": 1,
+        "max": 31,
+        "default": 1,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "countdown_hour",
+        "label": "End hour",
+        "min": 0,
+        "max": 24,
+        "default": 0,
+        "step": 1
+      },
+      {
+        "type": "select",
+        "id": "countdown_zone",
+        "label": "Timezone",
+        "options": [
+          { "value": "-12", "label": "GTM -12:00" },
+          { "value": "-11", "label": "GTM -11:00" },
+          { "value": "-10", "label": "GTM -10:00" },
+          { "value": "-9", "label": "GTM -9:00" },
+          { "value": "-8", "label": "GTM -8:00" },
+          { "value": "-7", "label": "GTM -7:00" },
+          { "value": "-6", "label": "GTM -6:00" },
+          { "value": "-5", "label": "GTM -5:00" },
+          { "value": "-4", "label": "GTM -4:00" },
+          { "value": "-3", "label": "GTM -3:00" },
+          { "value": "-2", "label": "GTM -2:00" },
+          { "value": "-1", "label": "GTM -1:00" },
+          { "value": "0", "label": "GTM" },
+          { "value": "1", "label": "GTM +1:00" },
+          { "value": "2", "label": "GTM +2:00" },
+          { "value": "3", "label": "GTM +3:00" },
+          { "value": "4", "label": "GTM +4:00" },
+          { "value": "5", "label": "GTM +5:00" },
+          { "value": "6", "label": "GTM +6:00" },
+          { "value": "7", "label": "GTM +7:00" },
+          { "value": "8", "label": "GTM +8:00" },
+          { "value": "9", "label": "GTM +9:00" },
+          { "value": "10", "label": "GTM +10:00" },
+          { "value": "11", "label": "GTM +11:00" },
+          { "value": "12", "label": "GTM +12:00" }
+        ],
+        "default": "0"
+      }
+    ]
+  }
+{% endschema %}

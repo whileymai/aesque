@@ -1,0 +1,71 @@
+{% if currency_selector or locale_selector %}
+
+  <div class="footer-content site-box-content" style="z-index: 99">
+
+    {%- form 'localization', class: 'localization-form' -%}
+
+      {%- if locale_selector -%}
+        <div class="localization-form__item">
+
+          <h2 class="hidden" id="lang-heading">
+            {{ 'general.navigation.language_dropdown_label' | t }}
+          </h2>
+
+          <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" />
+
+          <div class="regular-select-cover" aria-expanded="false" aria-controls="lang-list">
+
+            <span class="regular-select-inner" aria-describedby="lang-heading">
+              {{ form.current_locale.endonym_name }}
+            </span>
+
+            <ul id="lang-list" class="regular-select-content" >
+              {%- for locale in form.available_locales -%}
+                <li class="regular-select-item {% if locale.iso_code == form.current_locale.iso_code %}regular-select-item--selected{% endif %}">
+                  <button type="submit" name="locale_code" lang="{{ locale.iso_code }}" value="{{ locale.iso_code }}" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}>{{ locale.endonym_name }}</button>
+                </li>
+              {%- endfor -%}
+            </ul>
+            
+            <svg class="svg symbol symbol--arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill-rule="evenodd" d="M13.828 14.414l4-4L16.414 9l-4 4-4-4L7 10.414l5.414 5.414 1.414-1.414z" fill="#000"></path></svg>
+
+          </div>
+
+        </div>
+      {%- endif -%} 
+
+      {%- if currency_selector -%}
+        <div class="localization-form__item" style="min-width: 96px">
+
+          <h2 class="hidden" id="currency-heading">
+            {{ 'general.navigation.currency_dropdown_label' | t }}
+          </h2>
+
+          <input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" />
+
+          <div class="regular-select-cover" aria-expanded="false" aria-controls="currency-list" >
+
+            <span class="regular-select-inner" aria-describedby="currency-heading">
+              {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
+            </span>
+            <ul id="currency-list" class="regular-select-content">
+              {% for currency in form.available_currencies %}
+                <li class="regular-select-item {% if currency.iso_code == form.current_currency.iso_code %}regular-select-item--selected{% endif %}">
+                  <button type="submit" name="currency_code" value="{{ currency.iso_code }}" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}>
+                    {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
+                  </button>
+                </li>
+              {%- endfor -%}
+            </ul>
+
+            <svg class="svg symbol symbol--arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill-rule="evenodd" d="M13.828 14.414l4-4L16.414 9l-4 4-4-4L7 10.414l5.414 5.414 1.414-1.414z" fill="#000"></path></svg>
+
+          </div>
+        </div>
+      {%- endif -%}
+
+    {%- endform -%}
+
+  </div>
+
+{% endif %}

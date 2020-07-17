@@ -1,0 +1,90 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen add-border">
+
+  <div class="site-box box--small-fl box__heading box--typo-big box--center-align box--column-flow box--add-hr">
+    <div class="site-box-content">
+      <div class="content">
+        <h2 class="title">{{ section.settings.title | escape }}</h2>
+      </div>
+    </div>
+  </div>
+
+  {% for block in section.blocks %}
+    {% render 'collection_collection-list', collection: collections[block.settings.b_collection], size: section.blocks.size, index: forloop: index %}
+  {% endfor %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Collection list",
+    "class": "index-section mount-images mount-collectionlist",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collections"
+      },
+      {
+        "type": "select",
+        "id": "txt_align",
+        "label": "Align block text",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+		      {
+		        "type": "collection",
+		        "id": "b_collection",
+		        "label": "Collection"
+		      },
+          {
+            "type": "select",
+            "id": "bg_style",
+            "label": "Text color",
+            "options": [
+              {
+                "value": "light",
+                "label": "Dark"
+              },
+              {
+                "value": "dark",
+                "label": "Light"
+              }
+            ]
+          }
+        ]
+      }
+    ], 
+    "presets": [{
+      "name": "Collection list",
+      "category": "Collection",
+      "blocks": [{
+        "type": "collection"
+      },{
+        "type": "collection"
+      },{
+        "type": "collection"
+      }]
+    }]
+  }
+{% endschema %}

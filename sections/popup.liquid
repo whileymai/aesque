@@ -1,0 +1,110 @@
+<div class="popup-content {% if section.settings.title == blank and section.settings.content == blank %} no-content {% endif %} {% if section.settings.bg == blank %} no-image {% endif %}" data-show="{{ section.settings.newsletter_auto }}" data-freq="{{ section.settings.newsletter_frequent }}" data-enable="{{ section.settings.popup_enable }}">
+
+  {% if section.settings.bg %}
+
+    <a class="popup-image" {% unless section.settings.link == blank %} href="{{ section.settings.link }}" target="_self" {% endunless %} aria-hidden="true">
+      <div style="background-image: url({{ section.settings.bg | img_url: '960x1200', crop: 'center' }})"></div>
+    </a>
+    
+  {% endif %}
+
+  {% if section.settings.title != blank or section.settings.content != blank %}
+
+    <div class="popup-text">
+
+      {% if section.settings.title %}
+        <h4 class="popup-title">{{ section.settings.title }}</h4>
+      {% endif %}
+
+      {% if section.settings.title %}
+        <div class="rte">{{ section.settings.content }}</div>
+      {% endif %}
+
+      {% if section.settings.newsletter_enable %}
+        {% render 'newsletter-form' %}
+      {% endif %}
+
+    </div>
+
+  {% endif %}
+
+  <button class="site-close-handle" aria-label="{{ 'general.navigation.close_popup' | t }}">
+    <span class="hamburger-menu active" aria-hidden="true"><span class="bar animate"></span></span>
+  </button>
+
+</div>
+
+<div class="popup-background"></div>
+
+{% schema %}
+  {
+    "name": "Popup",
+    "class": "mount-popup",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "popup_enable",
+        "label": "Enable popup",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "newsletter_auto",
+        "label": "Show popup after",
+        "min": 10,
+        "max": 60,
+        "step": 10,
+        "unit": "sec",
+        "default": 10
+      },
+      {
+        "type": "select",
+        "id": "newsletter_frequent",
+        "label": "Popup frequency",
+        "options": [
+          {
+            "value": "day",
+            "label": "Show each day"
+          },
+          {
+            "value": "week",
+            "label": "Show each week"
+          },
+          {
+            "value": "once",
+            "label": "Show only once"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Newsletter"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.</p><p>Read our <a href='#'>privacy policy</a>.</p>"
+      },
+      {
+        "type": "checkbox",
+        "id": "newsletter_enable",
+        "label": "Show newsletter",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "bg",
+        "label": "Image",
+        "info": "960 x 1200px .jpg recommended"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Image link"
+      }
+    ]
+  }
+{% endschema %}

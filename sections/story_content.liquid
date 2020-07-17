@@ -1,0 +1,329 @@
+{% for block in section.blocks %}
+
+  <div id="shopify-section-{{ block.id }}" class="shopify-section index-section mount-content-row" data-type="{{ block.type }}" {{ block.shopify_attributes }}>
+
+    <div class="site-box-container container--fullscreen box--can-stick">
+
+      {% case block.type %}
+
+        {% when 'text' %}
+        
+          <div class="site-box box--big lap--box--small-fl box__heading box--typo-big box--center-align box--column-flow" data-order="0">
+
+            <span class="site-box-background" aria-hidden="true">
+
+              {% unless block.settings.image == blank %}  
+                <img
+                  src="{{ block.settings.image | img_url: '960x' }}" alt="{{ block.settings.image.alt | escape }}"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="{{ block.settings.image | img_url: '600x' }} 480w, {{ block.settings.image | img_url: '860x' }} 720w, {{ block.settings.image | img_url: '1100x' }} 960w, {{ block.settings.image | img_url: '1440x' }} 1600w, {{ block.settings.image | img_url: '2100x' }} 1920w"
+                  data-sizes="auto"
+                  class="lazyload" 
+                />
+                <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.image | img_url: '960x' }})"></span></noscript> 
+              {% else %}
+                <span class="onboarding-svg">{{ 'image' | replace: 'X', no | placeholder_svg_tag }}</span>
+              {% endunless %}
+
+            </span> 
+
+          </div>
+
+          <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--column-flow" data-order="1">
+
+            <div class="site-box-content">
+
+              {% unless block.settings.title == blank %}
+                <h3 class="block-heading">{{ block.settings.title | escape }}</h3>
+              {% endunless %}
+              <div class="rte">
+                {{ block.settings.content }}
+              </div>
+
+              {% unless block.settings.btn_label == blank %}
+                <a class="button with-icon" {% unless block.settings.btn_url == blank %} href="{{ block.settings.btn_url | escape }}" {% endunless %} title="{{ block.settings.btn_label | escape }}"><span>{{ block.settings.btn_label | escape }}</span> <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+              {% endunless %}
+
+            </div>
+
+          </div>
+
+        {% when 'video' %}
+
+          <div class="site-box box--typo-bigger box--center-align box--column-flow box__video-background box__image-text button-true style--{{ block.settings.bg_style }} align--{{ block.settings.txt_align }}">
+
+            <div class="site-box-content">
+
+              <div class="content">
+
+                {% unless block.settings.caption == blank %}
+                  <p class="caption">{{ block.settings.caption | escape }}</p>
+                {% endunless %}
+
+                {% unless block.settings.heading == blank %}
+                  <h2 class="title">{{ block.settings.heading | escape }}</h2>
+                {% endunless %}
+
+                {% unless block.settings.button == blank %}
+                  <a class="button with-icon {{ block.settings.bg_style }}" {% unless block.settings.link == blank %} href="{{ block.settings.link }}" {% endunless %}> {{ block.settings.button | escape }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+                {% endunless %}
+
+              </div>
+
+            </div>
+
+            {% unless block.settings.bg_img == blank %}
+
+              <span class="site-box-background with-image" aria-hidden="true">
+                
+                <img
+                  src="{{ block.settings.bg_img | img_url: '960x' }}" alt="{{ block.settings.bg_img.alt | escape }}"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="{{ block.settings.bg_img | img_url: '600x' }} 480w, {{ block.settings.bg_img | img_url: '860x' }} 720w, {{ block.settings.bg_img | img_url: '1100x' }} 960w, {{ block.settings.bg_img | img_url: '1600x' }} 1440w, {{ block.settings.bg_img | img_url: '2100x' }} 1920w"
+                  data-sizes="auto"
+                  class="lazyload" />
+
+                <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+              </span> 
+
+            {% endunless %}
+
+            {% unless block.settings.video_url == blank %}
+
+              <div class="site-box-video-background" data-video="{{ block.settings.video_url.id }}" aria-hidden="true" style="display: none">
+                <div id="player-{{ block.id }}" class="player"></div>
+              </div>
+
+            {% endunless %}
+
+          </div>
+
+          {% when 'image' %}
+
+            <div class="site-box site-box box--center-align box--column-flow box--typo-big box__image-text style--{{ block.settings.bg_style }} align--{{ block.settings.txt_align }}" style="min-height: {{ block.settings.image_height }}">
+
+              <div class="site-box-content">
+                <div class="content">
+                  {% unless block.settings.title == blank %}
+                    <h2 class="title">{{ block.settings.title | escape }}</h2>
+                  {% endunless %}
+                </div>
+              </div>
+
+              <span class="site-box-background {% if block.settings.title != blank %} with-image no-lazy-preloader {% endif %}" aria-hidden="true">
+
+                {% unless block.settings.image == blank %}  
+                  <img
+                    src="{{ block.settings.image | img_url: '960x' }}" alt="{{ block.settings.image.alt | escape }}"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="{{ block.settings.image | img_url: '600x' }} 480w, {{ block.settings.image | img_url: '860x' }} 720w, {{ block.settings.image | img_url: '1100x' }} 960w, {{ block.settings.image | img_url: '1440x' }} 1600w, {{ block.settings.image | img_url: '2100x' }} 1920w"
+                    data-sizes="auto"
+                    class="lazyload" 
+                  />
+                  <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.image | img_url: '960x' }})"></span></noscript> 
+                {% else %}
+                  <span class="onboarding-svg">{{ 'image' | replace: 'X', no | placeholder_svg_tag }}</span>
+                {% endunless %}
+
+              </span> 
+
+            </div>
+
+      {% endcase %}
+
+    </div>
+
+  </div>
+
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Story page content",
+    "class": "index-section mount-content-row mount-video-background",
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text with image",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text",
+            "default": "<p><strong>Insert your own content here!</strong></p><p>Use this area to write about your products, add some store information, or any useful piece of information that you wish to write about.</p>"
+          },
+          {
+            "type": "text",
+            "id": "btn_label",
+            "label": "Button",
+            "default": "More info"
+          },
+          {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Background image"
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "name": "Video with text overlay",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Video with text"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "Share your brand's story"
+          },
+          {
+            "type": "text",
+            "id": "button",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Button link"
+          },
+          {
+            "type": "select",
+            "id": "txt_align",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "select",
+            "id": "bg_style",
+            "label": "Text color",
+            "options": [
+              {
+                "value": "light",
+                "label": "Dark"
+              },
+              {
+                "value": "dark",
+                "label": "Light"
+              }
+            ]
+          },
+          {
+            "id": "video_url",
+            "type": "video_url",
+            "label": "Video URL",
+            "accept": ["youtube"],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "Background image",
+            "info": "Shows on mobile devices, where autoplay is not available."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, 
+          {
+            "type": "select",
+            "id": "image_height",
+            "label": "Image height",
+            "options": [
+              {
+                "value": "50vh",
+                "label": "Medium"
+              },
+              {
+                "value": "75vh",
+                "label": "Large"
+              },
+              {
+                "value": "100vh",
+                "label": "Full"
+              }
+            ],
+            "default": "50vh"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "select",
+            "id": "txt_align",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "select",
+            "id": "bg_style",
+            "label": "Text color",
+            "options": [
+              {
+                "value": "light",
+                "label": "Dark"
+              },
+              {
+                "value": "dark",
+                "label": "Light"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

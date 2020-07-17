@@ -1,0 +1,26 @@
+ <div class="card-background" {% if section.settings.gift_card_bg %} style="background-image:url({{ section.settings.gift_card_bg | img_url: '1480x' }})" {% endif %}>
+
+  {% assign formatted_initial_value = gift_card.initial_value | money_without_trailing_zeros: gift_card.currency %}
+  {% assign formatted_initial_value_stripped = formatted_initial_value | strip_html %}
+
+  <h3 class="card-value" {% if gift_card.balance != gift_card.initial_value %} style="display: none;" {% endif %}>{{ formatted_initial_value }}</h3>
+
+  {% if gift_card.balance != gift_card.initial_value %}
+  <h5 class="card-left">{{ gift_card.balance | money }} {{ 'gift_cart.balance_left' | t }}</h5>
+  {% endif %}
+
+</div>
+{% schema %}
+  {
+    "name": "Gift card",
+    "class": "gift_card",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "gift_card_bg",
+        "label": "Header background",
+        "info": "1480 x 380px image file"
+      }
+    ]
+  }
+{% endschema %}

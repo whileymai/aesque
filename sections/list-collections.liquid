@@ -1,149 +1,203 @@
-{%- comment -%}
-{%- endcomment -%}
-<div class="container-fluid ttg-cont-padding--none" data-section-id="{{ section.id }}" data-section-type="list-collections">
-  <div class="row ttg-grid-padding--none">
-    {% assign res-collections_styles = null %}
+{% assign collection_count = 0 %}
+{% assign isEmpty = true %}
 
-    {% for collection in collections %}
-      {% assign this-image = null %}
-      {% assign res-styles_title = null %}
-      {% assign res-styles_hover_title = null %}
-      {% assign res-styles_hover_info = null %}
-      {% assign res-styles_hover_quantity = null %}
-      {% assign res-styles_hover_bg = null %}
+{% if section.settings.display_type == 'all' %}
+  {% case section.settings.sort %}
+    {% when 'products_high' or 'products_low' %}
+      {% assign list_collections = collections | sort: 'all_products_count' %}
+    {% when 'date' or 'date_reversed' %}
+      {% assign list_collections = collections | sort: 'published_at' %}
+    {% else %}
+      {% assign list_collections = collections %}
+  {% endcase %}
+  {% for collection in list_collections %}
+    {% unless collection.handle == 'frontpage' %}
+      {% assign collection_count = collection_count | plus: 1 %}
+    {% endunless %}
+  {% endfor %}
+{% else %}
+  {% assign collection_count = section.blocks.size %}
+{% endif %}
 
-      {% unless collection.handle == 'frontpage' %}
-        {% for block in section.blocks %}
-          {% assign this-settings = block.settings %}
-          {% if this-settings.for_collection == collection.handle %}
-            {% if this-settings.color_title_c != blank and this-settings.color_title_c != 'rgba(0,0,0,0)' %}
-              {% capture res-styles_title %} style="color: {{ this-settings.color_title_c }};"{% endcapture %}
-            {% endif %}
-            {% if this-settings.color_title_h_c != blank and this-settings.color_title_h_c != 'rgba(0,0,0,0)' %}
-              {% capture res-styles_hover_title %} style="color: {{ this-settings.color_title_h_c }};"{% endcapture %}
-            {% endif %}
-            {% if this-settings.color_info_h_c != blank and this-settings.color_info_h_c != 'rgba(0,0,0,0)' %}
-              {% capture res-styles_hover_info %} style="color: {{ this-settings.color_info_h_c }};"{% endcapture %}
-            {% endif %}
-            {% if this-settings.color_quantity_h_c != blank and this-settings.color_quantity_h_c != 'rgba(0,0,0,0)' %}
-              {% capture res-styles_hover_quantity %} style="color: {{ this-settings.color_quantity_h_c }};"{% endcapture %}
-            {% endif %}
-            {% if this-settings.color_h_bg != blank and this-settings.color_h_bg != 'rgba(0,0,0,0)' %}
-              {% capture res-styles_hover_bg %} style="background-color: {{ this-settings.color_h_bg }};"{% endcapture %}
-            {% endif %}
+{% if collection_count > 0 %}
+  {% assign isEmpty = false %}
+{% endif %}
 
-            {% assign this-image = this-settings.image %}
-          {% endif %}
-        {% endfor %}
+  <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box--add-hr {% if collection__count == 1 %} fix-me-with-height-hard {% endif %}" data-order="0">
 
-        {% assign this-image_animation = 'ttg-image-translate--top|ttg-image-translate--left|ttg-image-translate--bottom|ttg-image-translate--right|ttg-image-scale' | split:'|' %}
-        {% assign res-image_animation_max = this-image_animation.size | minus: 1 %}
-        {% if this-animation_index == blank or this-animation_index >= res-image_animation_max %}
-          {% assign this-animation_index = 0 %}
-        {% else %}
-          {% assign this-animation_index = this-animation_index | plus: 1 %}
-        {% endif %}
+    <div class="site-box-content fix-me-with-margin">
+          
+      <h1 class="title">{{ 'collections.general.all_collections' | t }}</h1>
 
-        <div class="col-md-4 col-lg-4 col-xl-3">
-          <a href="{{ collection.url }}"
-             title="{{ 'collections.general.link_title' | t: title: title }}"
-             class="tt-promobox
-                       tt-promobox__size-square
-                       ttg-text-animation-parent
-                       ttg-animation-disable--md
-                       tt-promobox__hover-disable--md
-                       {{ this-image_animation[this-animation_index] }}
-                       tt-promobox__collection-{{ collection.handle }}"
-             data-ttg-event="link-dbclick">
-            <div class="tt-promobox__content">
-              {% if this-image != blank %}
-                {{ this-image | img_url: '600x600' | img_tag: collection.title }}
-              {% elsif collection.image != blank %}
-                {{ collection | img_url: '600x600' | img_tag: collection.title }}
-              {% elsif collection.products.first != blank %}
-                {{ collection.products.first | img_url: '600x600' | img_tag: collection.title }}
-              {% else %}
-                {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
-              {% endif %}
-              <div class="tt-promobox__text"
-                   data-resp-md="md"
-                   data-resp-sm="md"
-                   data-resp-xs="sm">
-                <div{{ res-styles_title }}>{{ collection.title }}</div>
-              </div>
-              <div class="tt-promobox__hover
-                        tt-promobox__hover--fade">
-                <div class="tt-promobox__hover-bg"{{ res-styles_hover_bg }}></div>
-                <div class="tt-promobox__text tt-promobox__point-lg--center">
-                  <div class="ttg-text-animation--emersion">
-                    <span{{ res-styles_hover_title }}>{{ collection.title }}</span>
-                  </div>
-                  <p class="ttg-text-animation--emersion">
-                    <span{{ res-styles_hover_info }}><span{{ res-styles_hover_quantity }}>{{ collection.products_count }}</span> {{ 'list_collections.product.count' | t }}</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endunless %}
-    {% endfor %}
+    </div>
+
   </div>
-</div>
 
+  {% if section.settings.display_type == 'all' %}
 
+    {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
 
+      {% if isEmpty %}
+
+        <div class="site-box box--big box--center-align box--no-padding box--column-flow">
+          <p>{{ 'collections.general.no_collections' | t }}</p>
+        </div>
+
+      {% else %}
+
+        <div class="collection__holder">
+          {% for collection in list_collections %}
+            {% assign collection_handle = collection.handle %}
+            {% if collection_handle == 'frontpage' %}
+              {% continue %}
+            {% endif %}
+              {% render 'collection_collection-content', collection: collection, collection_count: collection_count, index: forloop.index %}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+
+    {% else %}
+
+      {% if isEmpty %}
+
+        <div class="site-box box--big box--center-align box--no-padding box--column-flow">
+          <p>{{ 'collections.general.no_collections' | t }}</p>
+        </div>
+
+      {% else %}
+
+        <div class="collection__holder">
+        {% for collection in list_collections reversed %}
+            {% assign collection_handle = collection.handle %}
+            {% if collection_handle == 'frontpage' %}
+              {% continue %}
+            {% endif %}
+              {% render 'collection_collection-content', collection: collection, collection_count: collection_count, index: forloop.index %}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+
+    {% endif %}
+
+  {% else %}
+
+    {% if section.blocks == empty %}
+
+    {% else %}
+      <div class="collection__holder">
+        {% for block in section.blocks %}
+          {% assign collection = collections[block.settings.collection] %}
+          {% assign collection_handle = collection.handle %}
+          {% render 'collection_collection-content', collection: collection, collection_count: collection_count, index: forloop.index %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  {% endif %}
 
 {% schema %}
 {
-"name": "List Collections",
-"blocks": [
-{
-"type":"setting",
-"name":"Setting collection",
-"settings": [
-{
-"type": "collection",
-"id": "for_collection",
-"label": "For a collection"
-},
-{
-"type": "image_picker",
-"id": "image",
-"label": "Image"
-},
-{
-"type": "header",
-"content": "Colors"
-},
-{
-"type": "color",
-"id": "color_title_c",
-"label": "Text title"
-},
-{
-"type": "color",
-"id": "color_title_h_c",
-"label": "Hover text title"
-},
-{
-"type": "color",
-"id": "color_info_h_c",
-"label": "Hover text info"
-},
-{
-"type": "color",
-"id": "color_quantity_h_c",
-"label": "Hover text quantity"
-},
-{
-"type": "color",
-"id": "color_h_bg",
-"label": "Hover background"
-}
-]
-}
-]
+  "name": {
+    "en": "Collections list"
+  },
+  "class": "site-box-container container--fullscreen",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": {
+        "en": "All of your collections are listed by default. To customize your list, choose 'Selected' and add collections."
+      }
+    },
+    {
+      "type": "radio",
+      "id": "display_type",
+      "label": {
+        "en": "Select collections to show"
+      },
+      "default": "all",
+      "options": [
+        {
+          "value": "all",
+          "label": {
+            "en": "All"
+          }
+        },
+        {
+          "value": "selected",
+          "label": {
+            "en": "Selected"
+          }
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sort",
+      "label": {
+        "en": "Sort collections by:"
+      },
+      "info": {
+        "en": "Sorting only applies when 'All' is selected"
+      },
+      "default": "alphabetical",
+      "options": [
+        {
+          "value": "products_high",
+          "label": {
+            "en": "Product count, high to low"
+          }
+        },
+        {
+          "value": "products_low",
+          "label": {
+            "en": "Product count, low to high"
+          }
+        },
+        {
+          "value": "alphabetical",
+          "label": {
+            "en": "Alphabetically, A-Z"
+          }
+        },
+        {
+          "value": "alphabetical_reversed",
+          "label": {
+            "en": "Alphabetically, Z-A"
+          }
+        },
+        {
+          "value": "date",
+          "label": {
+            "en": "Date, old to new"
+          }
+        },
+        {
+          "value": "date_reversed",
+          "label": {
+            "en": "Date, new to old"
+          }
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": {
+        "en": "Collection"
+      },
+      "settings": [
+        {
+          "label": {
+            "en": "Collection"
+          },
+          "id": "collection",
+          "type": "collection"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

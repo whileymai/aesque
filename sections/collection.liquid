@@ -1,0 +1,296 @@
+{% assign section_settings_image_style = section.settings.image_style %}
+{% if collection.handle == null or collection.handle == 'all' %}
+  {% assign section_settings_image_style = 'no-show' %}
+{% endif %}
+
+{% assign collection_description = collection.description %}
+
+{% if section.settings.enable_collection_gallery %}
+
+  <style type="text/css">.extract-images img { display: none; }</style>
+
+  {% assign img_tag = '<' | append: 'img' %}
+  {% assign images_found = 0 %}
+
+  {% if collection.description contains img_tag %}
+
+    {% assign images = collection.description | split: 'src="' %}
+    {% assign images_in_context = '' | split : '' %}
+    {% for image in images %}
+      {% unless forloop.first %}
+
+        {% assign src = image | split: '"' | first | remove: 'https:' | remove: 'http:' %}
+
+        {% assign img_sizes = "_pico,_icon,_thumb,_small,_compact,_medium,_large,_grande,_100x100,_160x160,_240x240,_480x480,_640x640,_1024x1024,_2048x2048" | split: "," %}
+
+         {% assign src_cleaned = src %}
+          {% for size in img_sizes %}
+            {% if src contains size %}
+              {% assign src_cleaned = src | replace: size, '' %}
+            {% endif %}
+          {% endfor %}
+
+        {% assign img_path = src_cleaned | split: "/" %}
+        {% assign img_name = img_path | last | split: "?" %}
+        {% assign my_img = img_name | first | file_img_url: '10x' %}
+
+        {% assign collection_description = collection_description | replace: src, my_img %}
+
+        {% assign images_found = images_found | plus: 1 %}
+
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+
+{% endif %}
+
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen" data-handle="{{ collection.handle }}">
+
+  {% if section.settings.enable_collection_gallery and collection.image == blank and images_found > 0 %}
+
+    <div class="site-box box--bigger lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box__heading--description box--add-hr box--special" data-order="0">
+
+      <div class="site-box-content">
+            
+        <h1 class="title">{{ collection.title }}</h1>
+
+        {% unless collection_description == blank %}
+          <div class="rte extract-images"><div>{{ collection_description }}</div></div>
+        {% endunless %}
+
+      </div>
+
+    </div>
+
+  {% else %}
+
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box--add-hr {% if collection.image %} fix-me-with-height-hard {% endif %}" data-order="0" data-product-resize="{{ settings.thumb_resize }}" data-size="{{ collection.products.size }}">
+
+      <div class="site-box-content {% if collection.image %} lap--dark {% endif %}">
+            
+        <h1 class="title {% if collection.image %} lap--dark {% endif %}">
+          {{ collection.title }}
+        </h1>
+
+        {% unless collection_description == blank %}
+          <div class="rte extract-images {% if collection.image %} lap--dark {% endif %}"><div>{{ collection_description }}</div></div>
+        {% endunless %}
+
+      </div>
+
+      {% if collection.image %} 
+
+        <span class="site-box-background with-image hide lap--show" aria-hidden="true">
+
+          <img
+            src="{{ collection.image | img_url: '960x' }}" alt="{{ collection.image.alt | escape }}"
+            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ collection.image | img_url: '600x' }} 480w, {{ collection.image | img_url: '860x' }} 720w, {{ collection.image | img_url: '1100x' }} 960w, {{ collection.image | img_url: '1600x' }} 1440w, {{ collection.image | img_url: '2100x' }} 1920w"
+            data-sizes="auto"
+            class="lazyload" 
+          />
+
+          <noscript><span class="ll-fallback" style="background-image:url({{ collection.image | img_url: '960x' }}, crop: 'center' }})"></span></noscript> 
+
+        </span> 
+
+      {% endif %}
+
+    </div>
+
+  {% endif %}
+
+  {% if collection.image %} 
+
+    <div class="site-box box--big lap--hide box--typo-big box--center-align box--column-flow box--no-padding fix-me-with-height box__collection_image" data-order="0" aria-hidden="true">
+
+      <span class="site-box-background">
+        
+        <img
+          src="{{ collection.image | img_url: '960x' }}" alt="{{ collection.image.alt | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ collection.image | img_url: '600x' }} 480w, {{ collection.image | img_url: '860x' }} 720w, {{ collection.image | img_url: '1100x' }} 960w, {{ collection.image | img_url: '1600x' }} 1440w, {{ collection.image | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ collection.image | img_url: '960x' }})"></span></noscript> 
+
+      </span>
+
+    </div>
+
+  {% endif %}
+
+  {% if section.settings.enable_collection_gallery %}
+    <div id="collection-gallery-split" class="site-box-container container--fullscreen add-border"></div>
+  {% endif %}
+
+  <div class="collection__holder {% if collection.image or section.settings.enable_collection_gallery and images_found > 0 %} odd {% endif %}">
+
+    {% assign collection_no = 0 %}
+
+  	{% paginate collection.products by section.settings.collection_per %}
+
+  		{% for product in collection.products %}
+
+        {% assign collection_no = collection_no | plus: 1 %}
+
+  	    <div class="site-box box--small box--typo-small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection" data-order="{{ forloop.index }}">
+          <div class="site-box-content">
+            {% render 'collection_product-content', product: product %}
+          </div>
+        </div>
+
+     	{% else %}
+
+        <div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow" data-order="1">
+          <div class="site-box-content">
+            <div class="onboard" style="padding: 0 30px;">
+              <p>{{ 'collections.general.no_matches' | t }}</p>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+  		{% if paginate.pages > 1 and paginate.next %}
+        <div class="site-box box--small lap--box--small-lg box--center-align box--no-padding box--column-flow box__paginate">
+          <div class="site-box-content">
+            <a class="block-fade" href="{{ paginate.next.url }}" title="{{ paginate.next_page }}" aria-label="{{ paginate.next_page }}"> 
+              <span aria-hidden="true">{% render 'asset_svg', icon_name: 'plus_icon' %}</span>
+            </a>
+          </div>
+        </div>
+  		{% endif %}
+
+  	{% endpaginate %}
+
+  </div>
+
+</div>
+
+{% if section.settings.collection_navigation %}
+
+  {% assign capture_collection = false %}
+  {% assign next_collection = '' %}
+  
+  {% for collection_nav in collections %}
+    {% unless collection_nav.handle == 'frontpage' %}
+      {% if capture_collection and next_collection == '' %} 
+        {% assign next_collection = collection_nav %}
+      {% elsif collection_nav.handle == collection.handle %} 
+        {% if forloop.last == true %}
+          {% for collection_nav_second in collections %}
+            {% unless collection_nav_second.handle == 'frontpage' %}
+              {% if next_collection == '' %}
+                {% assign next_collection = collection_nav_second %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        {% else %}
+          {% assign capture_collection = true %}
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  
+  {% if next_collection != '' %}
+
+    <a href="{{ next_collection.url }}" class="site-box-container container--fullscreen">
+      <div class="site-box box--small-fl box--typo-big box__heading box__next-collection box--center-align box--add-hr add-border-top">
+        <div class="site-box-content">
+          <p class="caption">{{ 'collections.general.next' | t }}</p>
+          <span class="title">{{ next_collection.title | escape }}</span>
+        </div>
+      </div>
+    </a>
+
+  {% endif %}
+
+{% endif %}
+
+<style type="text/css">
+  {% unless section.settings.collection_filtering_enabled %}
+    #site-filter-handle {
+      display: none !important;
+    }
+  {% endunless %}
+  {% if section.settings.collection_filtering_type contains 'tags' %}
+    .filter-by-groups {
+      display: none !important;
+    }
+  {% else %}
+    .filter-by-tags {
+      display: none !important;
+    }
+  {% endif %}
+
+</style>
+
+{% schema %}
+  {
+    "name": "Collection page",
+    "class": "mount-products mount-images mount-gallery",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "collection_filtering_enabled",
+        "label": "Show filtering options"
+      },
+      {
+        "type": "select",
+        "id": "collection_filtering_type",
+        "label": "Filtering type",
+        "options": [
+          {
+            "value": "by-tags",
+            "label": "Filter by tags"
+          },
+          {
+            "value": "by-groups",
+            "label": "Filter by groups"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "collection_per",
+        "label": "Products per page",
+        "min": 11,
+        "max": 47,
+        "default": 23,
+        "step": 4
+      },
+      {
+        "type": "header",
+        "content": "Collection gallery"
+      },
+      {
+        "type": "paragraph",
+        "content": "Automatically create a gallery based on the images uploaded in your collection's description."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_collection_gallery",
+        "label": "Enable collection gallery",
+        "info": "[Learn more about this feature](https://shopify-support.krownthemes.com/article/453-automated-galleries)",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Collection navigation"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_navigation",
+        "label": "Show link to next collection"
+      }
+    ]
+  }
+{% endschema %}
+
+<script type="text/javascript">
+  {% if section.settings.collection_filtering_type contains 'groups' %}
+    jQuery('.filter-by-tags').remove();
+  {% endif %}
+</script>

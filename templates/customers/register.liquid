@@ -1,89 +1,59 @@
-{%- comment -%}
-{%- endcomment -%}
-{% if settings.layout-show_breadcrumbs %}
-  <div class="tt-page__breadcrumbs">
-    {% include 'breadcrumbs' %}
-  </div>
-{% endif %}
+<div class="shopify-section">
 
-{% form 'create_customer' %}
-  <div id="CustomerLoginForm">
-    <div class="tt-page__name tt-page__name--row text-center">
-      <a href="/account/login">{{ 'customer.login.title' | t }}</a>
-      <span>/</span>
-      <h1>{{ 'customer.register.title' | t }}</h1>
+  <div id="section-register" class="site-box-container container--fullscreen box--can-stick">
+
+    <div class="site-box box--big lap--box--small-fl box--typo-big box--lots-of-text box--center-align box--column-flow box__heading box--add-hr" data-order="0">
+      <div class="site-box-content fix-me-with-margin">
+        <h1 class="title">{{ 'customer.register.title' | t }}</h1>
+      </div>
     </div>
-    <div class="tt-login">
-      <div class="tt-form">
-          {% include 'form-get-message' %}
-          <div class="tt-form__form">
-            <label>
-              <div class="row">
-                <div class="col-md-3"><span>{{ 'customer.register.first_name' | t }}:</span></div>
-                <div class="col-md-9">
-                  <input type="text"
-                         name="customer[first_name]"
-                         id="FirstName"
-                         class="form-control colorize-theme6-bg"
-                         placeholder="{{ 'customer.register.first_name_placeholder' | t }}"
-                         autofocus
-                         {% if form.first_name %}value="{{ form.first_name }}"{% endif %}>
-                </div>
-              </div>
-            </label>
-            <label>
-              <div class="row">
-                <div class="col-md-3"><span>{{ 'customer.register.last_name' | t }}:</span></div>
-                <div class="col-md-9">
-                  <input type="text"
-                         name="customer[last_name]"
-                         id="LastName"
-                         class="form-control colorize-theme6-bg"
-                         placeholder="{{ 'customer.register.last_name_placeholder' | t }}"
-                         {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
-                </div>
-              </div>
-            </label>
-            <label>
-              <div class="row">
-                <div class="col-md-3"><span class="ttg__required">{{ 'customer.register.email' | t }}:</span></div>
-                <div class="col-md-9">
-                  <input type="email"
-                         name="customer[email]"
-                         id="Email"
-                         class="form-control colorize-theme6-bg{% if form.errors contains 'email' %} input-error{% endif %}"
-                         placeholder="{{ 'customer.register.email_placeholder' | t }}"
-                         value="{% if form.email %}{{ form.email }}{% endif %}"
-                         spellcheck="false"
-                         autocomplete="off"
-                         required="required">
-                </div>
-              </div>
-            </label>
-            <label>
-              <div class="row">
-                <div class="col-md-3"><span class="ttg__required">{{ 'customer.register.password' | t }}:</span></div>
-                <div class="col-md-9">
-                  <input type="password"
-                         name="customer[password]"
-                         id="CreatePassword"
-                         class="form-control colorize-theme6-bg{% if form.errors contains 'password' %} input-error{% endif %}"
-                         placeholder="{{ 'customer.register.password_placeholder' | t }}"
-                         required="required">
-                </div>
-              </div>
-            </label>
-            <div class="row ttg-mt--40">
-              <div class="col-md-9 offset-md-3">
-                <button type="submit" class="btn">{{ 'customer.register.submit' | t }}</button>
-                <div class="tt-form__back">
-                  <span>or</span>
-                  <a href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>
-                </div>
-              </div>
+
+    <div class="site-box box--big lap--box--bigger box--center-align box--column-flow box__form" data-order="1">
+
+      <div class="site-box-content fix-me-with-margin">
+
+        <div class="simple-grid">
+
+          {% form 'create_customer' %}
+
+            {{ form.errors | default_errors }}
+
+            <div class="grid__item one-half">
+              <label for="FirstName" class="hidden-label">{{ 'customer.register.first_name' | t }}</label>
+              <input type="text" name="customer[first_name]" id="FirstName" class="input-full" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
             </div>
-          </div>
+
+            <div class="grid__item one-half">
+              <label for="LastName" class="hidden-label">{{ 'customer.register.last_name' | t }}</label>
+              <input type="text" name="customer[last_name]" id="LastName" class="input-full" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+            </div>
+
+            <div class="grid__item one-whole">
+              <label for="Email" class="hidden-label">{{ 'customer.register.email' | t }}</label>
+              <input type="email" name="customer[email]" id="Email" class="input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
+            </div>
+
+            <div class="grid__item one-whole">
+              <label for="CreatePassword" class="hidden-label">{{ 'customer.register.password' | t }}</label>
+              <input type="password" name="customer[password]" id="CreatePassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
+            </div>
+
+            <div class="grid__item one-whole">
+              <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full">
+            </div>
+
+            <div class="grid__item one-whole push-a-bit">
+              <a href="{{ routes.root_url }}">{% render 'asset_svg', icon_name: 'arrow_icon_smaller' %} {{ 'customer.register.cancel' | t }}</a>
+            </div>
+
+          {% endform %}
+
         </div>
+
+      </div>
+
     </div>
+
   </div>
-{% endform %}
+
+</div>

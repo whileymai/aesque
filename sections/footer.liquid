@@ -1,387 +1,379 @@
-{%- comment -%}
-{%- endcomment -%}
-{%- for block in section.blocks -%}
-	{%- assign footer_block = block.settings -%}
-	{%- case block.type -%}
-	{%- when 'logo' -%}
-	{%- capture logo -%}
-	{%- include 'footer-logo' -%}
-	{%- endcapture -%}
-	{%- when 'info' -%}
-	{%- capture info -%}
-	{%- include 'footer-info' -%}
-	{%- endcapture -%}
-	{%- when 'tape' -%}
-	{%- capture tape -%}
-	{%- include 'footer-tape' -%}
-	{%- endcapture -%}
-	{%- when 'social' -%}
-	{%- capture social -%}
-	{%- include 'footer-social' -%}
-	{%- endcapture -%}
-	{%- when 'subscribe' -%}
-	{%- capture subscribe -%}
-	{%- include 'footer-subscribe' -%}
-	{%- endcapture -%}
-	{%- when 'menu' -%}
-	{%- capture menu -%}
-	{%- include 'footer-menu-links' -%}
-	{%- endcapture -%}
-	{%- when 'menu_02' -%}
-	{%- capture menu_02 -%}
-	{%- include 'footer-menu-links' -%}
-	{%- endcapture -%}
-	{%- when 'menu_03' -%}
-	{%- capture menu_03 -%}
-	{%- include 'footer-menu-links' -%}
-	{%- endcapture -%}
-	{%- endcase -%}
-{%- endfor -%}
+{%- capture footer_blocks -%}
 
-{%- assign manu_max = 3 -%}
+  {%- for block in section.blocks -%}
 
-{%- if menu_quantity > manu_max -%}
-	{%- assign menu_quantity = manu_max -%}
-{%- endif -%}
+    {%- if section.blocks.size >= 3 -%}
+      {%- if forloop.index == 1 or forloop.index == 3 -%}
+        <div class="site-box footer-box box--big lap--box--bigger box--top-align box--column-flow box__footer">
+      {%- endif -%}
+    {%- endif -%}
+    
+    {%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
+      {%- assign currency_selector = true -%}
+    {%- endif -%}
 
-{%- capture menu -%}
-  {%- include 'footer-menu' -%}
+    {%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}
+      {%- assign locale_selector = true -%}
+    {%- endif -%}
+
+    {%- if forloop.first -%}
+
+      {%- if currency_selector or locale_selector -%}
+        {% render 'footer_content-localization', currency_selector: currency_selector, locale_selector: locale_selector %}
+      {%- endif -%}
+
+    {%- endif -%}
+
+    <div class="footer-content site-box-content" {{ block.shopify_attributes }}>
+
+      {%- unless block.settings.title == blank -%}
+        <h4>{{ block.settings.title | escape }}</h4>
+      {%- endunless -%}
+
+      {%- case block.type -%}
+        {%- when 'contact' -%}
+
+          {%- unless block.settings.link == blank -%}
+            <a href="{{ block.settings.link | escape }}" class="block-fade">
+          {%- endunless -%}
+            <span class="info">{{ block.settings.info | escape }}</span>
+          {%- unless block.settings.link == blank -%}
+            </a>
+          {%- endunless -%}
+
+        {%- when 'menu' -%}
+
+          <ul class="footer-links">
+            {%- for link in linklists[block.settings.footer_menu_select].links -%}
+              <li><a class="footer-link" href="{{ link.url }}">{{ link.title | escape }}</a></li>
+            {%- endfor -%}
+          </ul>
+
+        {%- when 'newsletter' -%}
+
+          {% render 'newsletter-form' %}
+
+        {%- when 'payment' -%}
+          {%- render 'payment-icons' -%}
+
+        {%- when 'social' -%}
+          {%- render 'social-icons', size: 'large' -%}
+
+      {%- endcase -%}
+
+      {%- unless block.settings.caption == blank -%}
+        <div class="caption rte">{{ block.settings.caption }}</div>
+      {%- endunless -%}
+
+    </div>
+
+    {%- if section.blocks.size >= 3 -%}
+
+      {%- if forloop.index == 2 or forloop.last == true -%}
+        {%- if forloop.index == 2 -%} 
+          <p class="site-copyright to-bottom-content lap--hide">
+            {{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} 
+            {{ shop.name | link_to: routes.root_url }}
+          </p>
+        {%- else -%}
+          <p class="site-copyright to-bottom-content">
+            <span class="hide lap--show">
+              {{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} 
+              {{ shop.name | link_to: routes.root_url }}
+            </span>
+            <span>{{ powered_by_link }}</span>
+          </p>
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if forloop.index == 2 or forloop.index == 5 or forloop.index == 4 and forloop.last == true  -%}
+        </div>
+      {%- endif -%}
+
+    {%- endif -%}
+
+  {%- endfor -%}
+
 {%- endcapture -%}
 
-{%- capture copyright -%}
-  {%- include 'footer-copyright' -%}
-{%- endcapture -%}
+<div id="site-footer" class="site-footer site-box-container container--fullscreen site-footer-size--{{ section.settings.footer_size }}">
 
-{%- capture btn_to_top -%}
-  {%- include 'footer-btn-totop' -%}
-{%- endcapture -%}
+  {%- if section.blocks.size < 3 -%}
 
-{%- if section.settings.footer_reverse -%}
-	{%- assign main_class = ' tt-footer__reverse' -%}
-{%- endif -%}
+    <div class="site-box footer-box box--bigger lap--box--bigger box--top-align box--column-flow box__footer">
 
-<div data-section-id="{{ section.id }}" data-section-type="footer">
-	{%- case section.settings.type -%}
-	{%- when '1' -%}
-	{%- include 'footer1' -%}
-	{%- when '2' -%}
-	{%- include 'footer2' -%}
-	{%- when '3' -%}
-	{%- include 'footer3' -%}
-	{%- when '4' -%}
-	{%- include 'footer4' -%}
-	{%- when '5' -%}
-	{%- include 'footer5' -%}
-	{%- when '6' -%}
-	{%- include 'footer6' -%}
-	{%- else -%}
-	{%- include 'footer1' -%}
-	{%- endcase -%}
+      {{ footer_blocks }}
 
-	{%- include 'popups' -%}
+      <p class="site-copyright to-bottom-content">
+        <span>{{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} 
+          {{ shop.name | link_to: routes.root_url }}
+        </span>
+        <span>{{ powered_by_link }}</span>
+      </p>
+
+    </div>
+
+  {%- else -%}
+    
+    {{ footer_blocks }}
+
+  {%- endif -%}
+
 </div>
 
-{% schema %}
-	{
-	"name": "Footer",
-	"settings": [
-	{
-	"type": "select",
-	"id": "type",
-	"label": "Footer type",
-	"default": "1",
-	"options": [
-	{
-	"value": "1",
-	"label": "Footer #1"
-	}
-	]
-	},
-	{
-	"type": "checkbox",
-	"id": "show_copyright",
-	"label": "Show copyright",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_theme",
-	"label": "Show Whiley Mai link",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_totop_desktop",
-	"label": "Show button to top desktop",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "btn_top_limit",
-	"label": "Visibility limit 'back to top'",
-	"info": "Must be a integer",
-	"default": "1000"
-	}
-	],
-	"max_blocks":10,
-	"blocks": [
-	{
-	"name": "Logo",
-	"type": "logo",
-	"settings": [
-	{
-	"type": "image_picker",
-	"id": "logo",
-	"label": "Logo image"
-	}, {
-	"type": "range",
-	"id": "logo_max_width",
-	"min": 50,
-	"max": 230,
-	"step": 10,
-	"unit": "px",
-	"label": "Custom logo width",
-	"default": 130
-	}
-	]
-	},
-	{
-	"name": "Menu",
-	"type": "menu",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "caption_enable",
-	"label": "Show Caption",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "caption",
-	"label": "Caption",
-	"default": "Information"
-	},
-	{
-	"type": "link_list",
-	"id": "type",
-	"label": "Select menu",
-	"default": "footer"
-	}
-	]
-	},
-	{
-	"name": "Menu #2",
-	"type": "menu_02",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "caption_enable",
-	"label": "Show Caption",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "caption",
-	"label": "Caption",
-	"default": "Information"
-	},
-	{
-	"type": "link_list",
-	"id": "type",
-	"label": "Select menu",
-	"default": "footer"
-	}
-	]
-	},
-	{
-	"name": "Menu #3",
-	"type": "menu_03",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "caption_enable",
-	"label": "Show Caption",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "caption",
-	"label": "Caption",
-	"default": "Information"
-	},
-	{
-	"type": "link_list",
-	"id": "type",
-	"label": "Select menu",
-	"default": "footer"
-	}
-	]
-	},
-	{
-	"name": "Information",
-	"type": "info",
-	"settings": [
-	{
-	"type": "richtext",
-	"id": "text_01",
-	"label": "Text #1",
-	"default": "<p>Address: Melbourne, VIC</p>"
-	},
-	{
-	"type": "richtext",
-	"id": "text_02",
-	"label": "Text #2",
-	"default": "<p>Phone: +61 411 123 123</p>"
-	},
-	{
-	"type": "richtext",
-	"id": "text_03",
-	"label": "Text #3",
-	"default": "<p>Hours : 7 Days a week from 10-00 am to 6-00 pm</p>"
-	},
-	{
-	"type": "richtext",
-	"id": "text_04",
-	"label": "Text #4",
-	"default": "<p>E-mail: info@whileymai.com</p>"
-	}
-	]
-	},
-	{
-	"name": "Tape",
-	"type": "tape",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "pay_visa",
-	"label": "Visa",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "pay_discover",
-	"label": "Discover",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "pay_mastercard",
-	"label": "Mastercard",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "pay_amex",
-	"label": "Amex",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "pay_paypal",
-	"label": "Paypal",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "pay_stripe",
-	"label": "Stripe",
-	"default": true
-	}
-	]
-	},
-	{
-	"name": "Social media",
-	"type": "social",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "caption_enable",
-	"label": "Show Caption",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "caption",
-	"label": "Caption",
-	"default": "Follow Us"
-	},
-	{
-	"type": "checkbox",
-	"id": "show_facebook",
-	"label": "Facebook",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_google",
-	"label": "Google",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_twitter",
-	"label": "Twitter",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_instagram",
-	"label": "Instagram",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_youtube",
-	"label": "Youtube",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_pinterest",
-	"label": "Pinterest",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_skype",
-	"label": "Skype",
-	"default": true
-	},
-	{
-	"type": "checkbox",
-	"id": "show_behance",
-	"label": "Behance",
-	"default": true
-	}
-	]
-	},
-	{
-	"name": "Subscribe",
-	"type": "subscribe",
-	"settings": [
-	{
-	"type": "checkbox",
-	"id": "caption_enable",
-	"label": "Show Caption",
-	"default": true
-	},
-	{
-	"type": "text",
-	"id": "caption",
-	"label": "Caption",
-	"default": "Newsletter Signup"
-	},
-	{
-	"type": "richtext",
-	"id": "text_top",
-	"label": "Subscribe title",
-	"default": "<p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a <em><strong>15% discount</strong></em> on the next order after you sign up.</p>"
-	}
-	]
-	}
-	],
-	"presets": [
+{%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
+  {%- assign currency_selector = true -%}
+{%- endif -%}
 
-	]
-	}
+{%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}
+  {%- assign locale_selector = true -%}
+{%- endif -%}
+
+{%- assign footer_bg = section.settings.footer_bg -%}
+{%- assign footer_txt = section.settings.footer_txt -%}
+{%- style -%}
+  , .site-footer {
+    background: {{ footer_bg }} !important;
+  }
+  .site-footer, .site-footer .site-box {
+    background: {{ footer_bg }} !important;
+    color: {{ footer_txt }};
+  }
+  .site-footer .site-box {
+    border-right: 1px solid {{ footer_txt | color_modify: 'alpha', 0.08 }} !important;
+  }
+  .site-footer a {
+    color: {{ footer_txt }};
+  }
+  .site-footer a:hover, .site-footer a.hover {
+    color: {{ settings.type_links }};
+  }
+  .site-footer input[type="submit"] {
+    background: {{ footer_txt | color_modify: 'alpha', 0.12 }};
+    color: {{ footer_txt }};
+  }
+  .site-footer input:not([type="submit"]) {
+    background: {{ footer_txt | color_modify: 'alpha', 0.06 }} !important;
+    color: {{ footer_txt }} !important;
+  }
+  .site-footer input:not([type="submit"]):focus {
+    background: {{ footer_txt | color_modify: 'alpha', 0.10 }} !important;
+  }
+
+  {%- if currency_selector or locale_selector -%}
+    .box__footer .regular-select-cover {
+      color: {{ footer_txt }};
+      background: {{ footer_bg }};
+      border: 2px solid {{ footer_txt | color_modify: 'alpha', 0.08 }};
+    }
+    .box__footer .regular-select-cover:hover,
+    .box__footer .regular-select-cover.content-opened {
+      border: 2px solid {{ footer_txt | color_modify: 'alpha', 0.16 }};
+    }
+    .box__footer .regular-select-cover path {
+      fill: {{ footer_txt | color_modify: 'alpha', 0.46 }};
+    }
+    .box__footer .regular-select-inner,
+    .box__footer .regular-select-item button {
+      color: {{ footer_txt }};
+    }  
+    .box__footer .regular-select-content {
+      background: {{ footer_bg }};
+      border-color: {{ footer_txt | color_modify: 'alpha', 0.08 }};
+    }
+    .box__footer .regular-select-cover:hover .regular-select-content,
+    .box__footer .regular-select-cover.content-opened .regular-select-content {
+      border-color: {{ footer_txt | color_modify: 'alpha', 0.16 }};
+    }
+    .box__footer .regular-select-cover.content-opened.invert .regular-select-content {
+      border-top: 2px solid {{ footer_txt | color_modify: 'alpha', 0.16 }};
+    }
+    .no-touchevents .box__footer .regular-select-item:hover {
+      background: {{ footer_bg | color_lighten: 4 }};
+    }
+    .box__footer .regular-select-item.regular-select-item--selected {
+      background: {{ footer_bg | color_lighten: 8 }};
+    }
+    .box__footer .regular-select-cover.content-opened:not(.invert) .regular-select-item:first-child {
+      border-top: 2px solid {{ footer_txt | color_modify: 'alpha', 0.16 }};
+    }
+  {%- endif -%}
+
+  .site-footer input::placeholder { color: {{ footer_txt | color_modify: 'alpha', 0.66 }}; }
+  .site-footer input::-ms-input-placeholder { color: {{ footer_txt | color_modify: 'alpha', 0.66 }}; }
+  .site-footer input::-webkit-input-placeholder { color: {{ footer_txt | color_modify: 'alpha', 0.66 }}; } 
+
+{%- endstyle -%}
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "mount-footer",
+    "max_blocks": 5,
+     "settings": [
+      {
+        "type": "select",
+        "id": "footer_size",
+        "label": "Size",
+        "options": [
+          {
+            "value": "lg",
+            "label": "Large"
+          },
+          {
+            "value": "sm",
+            "label": "Small"
+          }
+        ],
+        "default": "lg"
+      },
+      {
+        "type": "color",
+        "id": "footer_bg",
+        "label": "Background",
+        "default": "#313739"
+      },
+      {
+        "type": "color",
+        "id": "footer_txt",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Language Selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_locale_selector",
+        "label": "Show language selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Currency Selector",
+        "info": "To add a currency, go to your [currency settings.](/admin/settings/payments)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_currency_selector",
+        "label": "Show currency selector",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "contact",
+        "name": "Contact information",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Contact information"
+          },
+          {
+            "type": "text",
+            "id": "info",
+            "label": "Information",
+            "default": "email@shopify.com"
+          },
+          {
+            "type": "text",
+            "id": "link",
+            "label": "Information link",
+            "info": "Optional"
+          },
+          {
+            "type": "richtext",
+            "id": "caption",
+            "label": "Caption",
+            "default": "<p>Invite customers to get in touch with you</p>"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "name": "Menu",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Footer menu"
+          },
+          {
+            "type": "link_list",
+            "id": "footer_menu_select",
+            "label": "Menu",
+            "default": "footer",
+            "info": "This menu won't show dropdown items"
+          },
+          {
+            "type": "richtext",
+            "id": "caption",
+            "label": "Caption"
+          }
+        ]
+      },
+      {
+        "type": "social",
+        "name": "Social links",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Social links"
+          },
+          {
+            "type": "richtext",
+            "id": "caption",
+            "label": "Caption",
+            "default": "<p>Invite customers to follow you on social networks</p>"
+          }
+        ]
+      },
+      {
+        "type": "newsletter",
+        "name": "Newsletter",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "info": "Subscribers will be added to your \"accepts marketing\" [customer list.](/admin/customers?query=&accepts_marketing=1)",
+            "default": "Newsletter"
+          },
+          {
+            "type": "richtext",
+            "id": "caption",
+            "label": "Caption",
+            "default": "<p>Invite customers to join your newsletter.<br/>Link to your <a href='#'>privacy policy</a>.</p>"
+          }
+        ]
+      },
+      {
+        "type": "payment",
+        "name": "Supported payment methods",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Supported payment methods"
+          },
+          {
+            "type": "richtext",
+            "id": "caption",
+            "label": "Caption"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}

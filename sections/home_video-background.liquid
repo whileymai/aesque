@@ -1,0 +1,135 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+  <div class="site-box box--typo-bigger box--center-align box--column-flow box__video-background box__image-text button-true style--{{ section.settings.bg_style }} align--{{ section.settings.txt_align }}">
+
+    <div class="site-box-content">
+
+      <div class="content">
+
+        {% unless section.settings.caption == blank %}
+          <p class="caption">{{ section.settings.caption | escape }}</p>
+        {% endunless %}
+
+        {% unless section.settings.heading == blank %}
+          <h2 class="title">{{ section.settings.heading | escape }}</h2>
+        {% endunless %}
+
+        {% unless section.settings.button == blank %}
+          <a class="button with-icon {{ section.settings.bg_style }}" {% unless section.settings.link == blank %} href="{{ section.settings.link }}" {% endunless %}> {{ section.settings.button | escape }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+        {% endunless %}
+
+      </div>
+
+    </div>
+
+    {% unless section.settings.bg_img == blank %}
+
+      <span class="site-box-background with-image" aria-hidden="true">
+        
+        <img
+          src="{{ section.settings.bg_img | img_url: '960x' }}" alt="{{ section.settings.heading | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ section.settings.bg_img | img_url: '600x' }} 480w, {{ section.settings.bg_img | img_url: '860x' }} 720w, {{ section.settings.bg_img | img_url: '1100x' }} 960w, {{ section.settings.bg_img | img_url: '1600x' }} 1440w, {{ section.settings.bg_img | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload" />
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ section.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+      </span> 
+
+    {% endunless %}
+
+    {% unless section.settings.video_url == blank %}
+
+      <div class="site-box-video-background" data-video="{{ section.settings.video_url.id }}" aria-hidden="true" style="display: none">
+        <div id="player-{{ section.id }}" class="player"></div>
+      </div>
+
+    {% endunless %}
+
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Background video",
+    "class": "index-section mount-video-background",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Video title"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Share your brand's story"
+      },
+      {
+        "type": "text",
+        "id": "button",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Button link"
+      },
+      {
+        "type": "select",
+        "id": "txt_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "select",
+        "id": "bg_style",
+        "label": "Text color",
+        "options": [
+          {
+            "value": "light",
+            "label": "Dark"
+          },
+          {
+            "value": "dark",
+            "label": "Light"
+          }
+        ]
+      },
+      {
+        "id": "video_url",
+        "type": "video_url",
+        "label": "Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background image",
+        "info": "Shows on mobile devices, where autoplay is not available."
+      }
+    ],
+    "presets": [{
+      "name": "Video Background",
+      "category": "Video"
+    }]
+  }
+{% endschema %}

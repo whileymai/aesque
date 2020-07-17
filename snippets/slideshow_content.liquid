@@ -1,0 +1,61 @@
+<div id="block-{{ block.id }}" {{ block.shopify_attributes }} class="slideshow-item">
+
+	<div class="site-box box--big box--center-align box--column-flow box__slideshow-item">
+		
+		<div class="site-box-content fix-me-with-margin">
+
+      {% unless block.settings.caption == blank %}
+        <p class="caption">{{ block.settings.caption | escape }}</p>
+      {% endunless %}
+
+      <h3 class="title">{{ block.settings.title | escape }}</h3>
+      
+      {% unless block.settings.subtitle == blank %}
+        <p class="subtitle">{{ block.settings.subtitle | escape }}</p>
+      {% endunless %}
+
+      {% unless block.settings.label == blank %}
+        <a class="button with-icon {{ block.settings.bg_style }}" href="{{ block.settings.link | escape }}">{{ block.settings.label | escape }} <span class="icon">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+      {% endunless %}
+      
+		</div>
+
+  	<div class="site-box-background-container">
+
+  		<div {% if block.settings.bg_img == blank %} class="obs" {% endif %}> 
+
+        <span class="site-box-background with-image" aria-hidden="true">
+
+          {% if block.settings.bg_img == blank %}
+
+            {% assign no = forloop.index | modulo:2 | plus:1 %}
+            <span class="onboarding-svg">{{ 'lifestyle-X' | replace: 'X', no | placeholder_svg_tag }}</span>
+
+          {% else %}
+         
+            <img
+              src="{{ block.settings.bg_img | img_url: '960x' }}" alt="{{ block.settings.title | escape }}"
+              srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-srcset="{{ block.settings.bg_img | img_url: '720x' }} 480w, {{ block.settings.bg_img | img_url: '1024x' }} 720w, {{ block.settings.bg_img | img_url: '1280x' }} 960w, {{ block.settings.bg_img | img_url: '1760x' }} 1440w, {{ block.settings.bg_img | img_url: '2140x' }} 1920w"
+              data-sizes="auto"
+              class="lazyload" 
+              style="object-position: {{ alignment }}"
+            />
+
+            <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.bg_img | img_url: '960x' }})"></span></noscript> 
+
+          {% endif %}
+
+          {% if size == 1 %}
+            <span class="site-box-black-overlay"></span>
+          {% endif %}
+
+        </span>
+
+  		</div>
+
+  	</div>
+
+	</div>
+
+</div>

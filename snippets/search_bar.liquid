@@ -1,0 +1,12 @@
+<form action="{{ routes.search_url }}" method="get" class="input-group search-bar {{ type }}" role="search" autocomplete="off">
+  <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  {% if settings.predictive_search_enabled %}
+  	<input type="hidden" name="options[prefix]" value="last" />
+  {% endif %}
+  <input type="hidden" name="type" value="product{% if settings.predictive_search_include_articles %},article{% endif %}{%if settings.predictive_search_include_pages %},page{% endif %}" />
+  <span class="input-group-btn">
+    <button type="submit" class="btn icon-fallback-text" aria-label="{{ 'general.search.submit' | t }}">
+      <span class="icon icon-search" aria-hidden="true">{% render 'asset_svg', icon_name: 'search_icon' %}</span>
+    </button>
+  </span>
+</form>

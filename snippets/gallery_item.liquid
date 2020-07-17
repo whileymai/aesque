@@ -1,0 +1,50 @@
+{% if size_at_loop == 1 %}
+  {% assign size_class = 'box--bigger box--typo-bigger lap--box--small-fl fix-me-with-height' %}
+{% elsif size_at_loop == 2 and index_at_loop < 3 %}
+  {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+{% else %}
+  {% if index_at_loop == 1 %}
+    {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+  {% elsif index_at_loop == 2 %}
+    {% assign size_class = 'box--small-lg box--typo-big  palm--box--small-fl' %}
+  {% elsif index_at_loop == 3 and size_at_loop == 3 %}
+    {% assign size_class = 'box--small-lg box--typo-big palm--box--small-fl' %}
+  {% else %}
+    {% assign size_class = 'box--small box--typo-small lap--box--small-lg palm--box--small-fl' %}
+  {% endif %}
+{% endif %}
+
+<div class="site-box box--center-align box--column-flow {{ size_class }} box__image-text box__gallery align--{{ alignment }} button-false" {{ block.shopify_attributes }}>
+
+  {% unless block.settings.link == blank %}
+    <a href="{{ block.settings.link }}">
+  {% endunless %}
+
+    <div class="site-box-background">
+      {% unless block.settings.image == blank %}
+
+        <img
+          src="{{ block.settings.image | img_url: '960x' }}" alt="{{ block.settings.image.alt | escape }}"
+          srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          data-srcset="{{ block.value | img_url: '480x' }} 360w, {{ block.settings.image | img_url: '600x' }} 480w, {{ block.settings.image | img_url: '1100x' }} 960w, {{ block.settings.image | img_url: '1600x' }} 1440w, {{ block.settings.image | img_url: '2100x' }} 1920w"
+          data-sizes="auto"
+          class="lazyload"
+          style="object-position: {{ block.settings.alignment }}"
+        />
+
+        {% unless block.settings.caption == blank %}
+          <span class="caption">{{ block.settings.caption | escape }}</span>
+        {% endunless %}
+
+        <noscript><span class="ll-fallback" style="background-image:url({{ block.settings.image | img_url: '960x' }})"></span></noscript> 
+
+      {% else %}
+        <span class="onboarding-svg">{{ 'image' | placeholder_svg_tag }}</span>
+      {% endunless %}
+    </div>
+
+  {% unless block.settings.link == blank %}
+    </a>
+  {% endunless %}
+
+</div>

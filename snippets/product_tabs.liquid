@@ -1,0 +1,38 @@
+{% if blocks.size > 0 %}
+
+  <div class="krown-tabs" data-design="{{ style }}">
+    
+    <div class="titles">
+      {% for block in blocks %}
+        <h5 class="krown-tab-title" {{ block.shopify_attributes }}>
+          {{ block.settings.title | escape }}
+          {% if style == 'toggles' %}
+            <span class="minus"><svg version="1.0" class="svg minus" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve"><rect y="4" width="10" height="2"/></svg></span>
+            <span class="plus"><svg version="1.0" class="svg minus" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve"><rect y="4" width="10" height="2"/><rect y="4" width="10" height="2" style="transform: rotate(-90deg);transform-origin: center;"/></svg></span>
+          {% endif %}
+        </h5>
+      {% endfor %}
+    </div>
+
+    <div class="contents">
+      {% for block in blocks %}
+        <div class="tab">
+          {{ block.settings.body }}
+          {% unless block.settings.image == blank %}
+            <figure class="show-lazy-preloader" style="padding-top: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%">
+              <img
+                src="{{ block.settings.image | img_url: '960x' }}" alt="{{ block.settings.image.alt | escape }}"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="{{ block.settings.image | img_url: '600x' }} 480w, {{ block.settings.image | img_url: '860x' }} 720w, {{ block.settings.image | img_url: '1100x' }} 960w"
+                data-sizes="auto"
+                class="lazyload dont-extract" 
+              />
+            </figure>
+          {% endunless %}
+        </div>  
+      {% endfor %}
+    </div>
+
+  </div>
+  
+{% endif %}

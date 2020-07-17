@@ -1,0 +1,54 @@
+<div class="box__banner style--box" style="background-color: {{ section.settings.bg_color }}; color: {{ section.settings.txt_color }}" data-show="{{ section.settings.banner_enable }}" data-product="{{ all_products[section.settings.product].handle }}">
+
+  <div class="content">{{ section.settings.content }}</div>
+
+  <div class="close" aria-label="{{ 'general.navigation.close_popup' | t }}">
+    <span aria-hidden="true">{% render 'asset_svg', icon_name: 'close_icon' %}</span>
+  </div>
+
+</div>
+
+<style type="text/css">
+  .close polygon {
+    fill: {{ section.settings.txt_color }};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Promotional banner",
+    "class": "mount-banner",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "banner_enable",
+        "label": "Show banner",
+        "default": false
+      },
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Show on a single product",
+        "info": "By default, this banner appears on all product pages. If you want it to appear on a specific product, you can select it from here."
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Use this banner to inform customers about special features for your products, or various promotions like free shipping.</p>"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#141618"
+      },
+      {
+        "type": "color",
+        "id": "txt_color",
+        "label": "Text color",
+        "default": "#ffffff"
+      }
+    ]
+  }
+{% endschema %}

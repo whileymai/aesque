@@ -1,279 +1,380 @@
-{%- comment -%}
-{%- endcomment -%}
-{%- case section.settings.type -%}
-  {%- when '1' -%}
-    {%- assign res-class = 'tt-header--build-01 tt-header--style-01' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
-  {%- when '2' -%}
-    {%- assign res-class = 'tt-header--build-02 tt-header--style-02' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
-  {%- when '3' -%}
-    {%- assign res-class = 'tt-header--build-01 tt-header--style-03' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
-  {%- when '4' -%}
-    {%- assign res-class = 'tt-header--build-02 tt-header--style-04' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
-  {%- when '5' -%}
-    {%- assign res-class = 'tt-header--build-03 tt-header--style-05' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-2' -%}{%- endcapture -%}
-  {%- when '6' -%}
-    {%- assign res-class = 'tt-header--build-04 tt-header--style-06' -%}
-    {%- capture res-build -%}{%- include 'header-get-build-1' -%}{%- endcapture -%}
-{%- endcase -%}
-{%- if settings.color_header_transparent == true and template == 'index' -%}
-  {%- assign res-class = res-class | append: ' tt-header--transparent' -%}
-{%- endif -%}
-<div data-section-id="{{ section.id }}" data-section-type="header">
-  <div class="navbar tt-header {{ res-class }}{% if section.settings.sticky %} tt-header--sticky{% endif %}" data-sticky-effect="{{ section.settings.sticky_effect }}">
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'top_line' -%}
-        {%- include 'header-topline' -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-    {{ res-build }}
-  </div>
-</div>
-{% schema %}
-{
-"name": "Header",
-"settings": [
-{
-"type": "image_picker",
-"id": "logo",
-"label": "Logo image"
-},
-{
-"type": "range",
-"id": "logo_max_width",
-"min": 50,
-"max": 230,
-"step": 10,
-"unit": "px",
-"label": "Custom logo width",
-"default": 130
-},
-{
-"type": "checkbox",
-"id": "logo_animate",
-"label": "Animate logo?",
-"default": true
-},
-{
-"type": "link_list",
-"id": "main_linklist",
-"label": "Menu",
-"default": "main-menu"
-},
-{
-"type": "select",
-"id": "type",
-"label": "Type",
-"default": "1",
-"options": [
-{
-"value": "1",
-"label": "Type #1"
-},
-{
-"value": "2",
-"label": "Type #2"
-},
-{
-"value": "3",
-"label": "Type #3"
-},
-{
-"value": "4",
-"label": "Type #4"
-},
-{
-"value": "5",
-"label": "Type #5"
-},
-{
-"value": "6",
-"label": "Type #6"
-}
-]
-},
-{
-"type": "checkbox",
-"id": "sticky",
-"label": "Enable sticky header?",
-"default": true
-},
-{
-"type": "select",
-"id": "sticky_effect",
-"label": "Sticky effect",
-"default": "1",
-"options": [
-{
-"value": "1",
-"label": "Effect #1"
-},
-{
-"value": "2",
-"label": "Effect #2"
-}
-]
-},
-{
-"type": "checkbox",
-"id": "account_icon",
-"label": "Show account icon?",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "login_form",
-"label": "Show login form?",
-"default": true
-}
-],
-"max_blocks": 1,
-"blocks": [
-{
-"type": "top_line",
-"name": "Top line",
-"settings": [
-{
-"type": "paragraph",
-"content": "### AfterPay ###"
-},
-{
-"label": "Icon code",
-"id": "top-line-icon",
-"type": "text",
-"default": "icon-location",
-"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
-},
-{
-"label": "Address",
-"id": "top-line-text",
-"type": "text",
-"default": "Address: Melbourne, VIC"
-},
-{
-"type": "paragraph",
-"content": "### Shipping ###"
-},
-{
-"label": "Icon code",
-"id": "top-line-icon-phone",
-"type": "text",
-"default": "icon-phone",
-"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
-},
-{
-"label": "Phone",
-"id": "top-line-text-phone",
-"type": "text",
-"default": "Phone: +61 411 123 123"
-},
-{
-"type": "paragraph",
-"content": "## Location ###"
-},
-{
-"label": "Icon code",
-"id": "top-line-icon-hours",
-"type": "text",
-"default": "icon-clock-2",
-"info": "[All Icons](http:\/\/ocean.tonytemplates.com\/desc\/mogo-shopify\/demo-icon\/demo.html)"
-},
-{
-"label": "Hours",
-"id": "top-line-text-hours",
-"type": "text",
-"default": "Hours: 7 Days a week from 10-00 am to 6-00 pm"
-},
-{
-"label": "Show social icons?",
-"id": "top-line-social",
-"type": "checkbox",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_facebook",
-"label": "Facebook",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_google",
-"label": "Google",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_twitter",
-"label": "Twitter",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_instagram",
-"label": "Instagram",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_youtube",
-"label": "Youtube",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_pinterest",
-"label": "Pinterest",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_skype",
-"label": "Skype",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "show_behance",
-"label": "Behance",
-"default": true
-}
-]
-}
-]
-}
-{% endschema %}
+<header id="site-header" class="site-header desktop-view--{{ section.settings.menu_style }} header-scroll">
 
-<style>
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  	height:200px;
-    background-color: #fff;
-}
+  <!-- logo -->
   
-  .tt-listing-page__products {
-    margin-top: 60px;
-}
+  {% if template == 'index' %}
+    <h1 class="logo">
+  {% else %}
+    <span class="logo">
+  {% endif %}
+
+    {% if section.settings.logo_src %}
+
+      <a class="logo-img" href="{{ routes.root_url }}">
+        <img src="{{ section.settings.logo_src | img_url: 'master' }}" alt="{{ shop.name | escape }}" style="max-width: {{ section.settings.logo_width | escape }}px;" />
+      </a>
+
+    {% else %}
+
+      <a class="logo-txt" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
+
+    {% endif %}
+
+  {% if template == 'index' %}
+    </h1>
+  {% else %}
+    </span>
+  {% endif %}
+
+  <!-- menu -->
+
+  <div id="site-nav--desktop" class="site-nav style--classic">
+
+    <div class="site-nav-container portable--hide">
+      <nav class="primary-menu">{% render 'header_nav-menu', current_menu: section.settings.menu_main_select %}</nav>
+    </div>
+
+    {% if template.name == 'collection' %}
+
+      <button id="site-filter-handle" class="site-filter-handle" aria-label="{{ 'general.navigation.open_filters' | t }}">
+        <span class="filter-menu" aria-hidden="true">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </span>
+      </button>
+
+    {% endif %}
+
+    <span id="site-search-handle" class="site-search-handle" aria-label="{{ 'general.navigation.open_search' | t }}" title="{{ 'general.navigation.open_search' | t }}">
+
+      <a href="{{ routes.search_url }}">
+        <span class="search-menu" aria-hidden="true">
+          {% render 'asset_svg', icon_name: 'search_icon' %}
+        </span>
+      </a>
+
+    </span>
+
+    <span id="site-cart-handle" class="site-cart-handle {{ settings.cart_action }}" aria-label="{{ 'general.navigation.open_cart' | t }}" title="{{ 'general.navigation.open_cart' | t }}">
+    
+        <a href="{{ routes.cart_url }}">
+          <span class="cart-menu" aria-hidden="true">
+            {% render 'asset_svg', icon_name: 'cart_icon' %}
+            <span class="count-holder"><span class="count">{{ cart.item_count }}</span></span>
+          </span>
+        </a>
   
-@media only screen and (min-width: 1025px) {
-.tt-listing-page__view-options {
-    margin-top: 200px;
-    margin-bottom: 40px;
-    position: relative;
-	}
-}
+    </span>
+
+    <button id="site-menu-handle" class="site-menu-handle hide portable--show" aria-label="{{ 'general.navigation.open_menu' | t }}" title="{{ 'general.navigation.open_menu' | t }}">
+      <span class="hamburger-menu" aria-hidden="true"><span class="bar"></span></span>
+    </button>
+
+  </div>
+
+  {% if section.settings.bar_enable %}
+
+    {% if section.settings.bar_link != blank %}
+      <a href="{{ section.settings.bar_link }}" class="box__banner style--bar">
+    {% else %}
+      <div class="box__banner style--bar">
+    {% endif %}
+
+      <div class="content">{{ section.settings.bar_content }}</div>
+
+    {% if section.settings.bar_link != blank %}
+      </a>
+    {% else %}
+      </div>
+    {% endif %}
+
+    <style>
+      .site-header {
+        margin-top: 34px;
+      }
+      .site-header .box__banner {
+        background-color: {{ section.settings.bar_bgcolor }};
+        color: {{ section.settings.bar_txtcolor }} !important;
+      }
+    </style>
+
+  {% endif %}
+
+</header>
+
+<div id="site-nav--mobile" class="site-nav style--sidebar">
+
+  <!-- navigation -->
+
+  <div id="site-navigation" class="site-nav-container">
+
+    <div class="site-nav-container-last">
+
+      <p class="title">{{ 'sidebar.menu' | t }}</p>
+
+      <div class="top">
+
+        <nav class="primary-menu">{% render 'header_nav-menu', current_menu: section.settings.menu_main_select %}</nav>
+
+      </div>
+
+      <div class="to-bottom-content">
+
+        {% render 'social-icons', size: 'regular' %}
+
+        <div class="site-copyright">
+          <p class="copy">{{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name | escape }}</a></p>
+          <p class="powered">{{ powered_by_link }}</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- filters -->
+
+  {% if template.name == 'collection' %}
+
+    <div id="site-filters" class="site-nav-container" tabindex="-1">
+
+      <div class="site-nav-container-last">
+
+        <p class="title">{{ 'sidebar.collection_filters.title' | t }}</p>
+        <p class="subtitle">{{ 'sidebar.collection_filters.items_count' | t: count: collection.products.size, collection: collection.title }}</p> 
+
+        <div class="top">
+
+          <div class="option filter-by-tags">
+            <label for="filter-by">{{ 'collections.filtering.title' | t }}</label>
+            <select name="filter-by" class="filter-by">
+                <option value="">{{ 'collections.filtering.all' | t }}</option>
+                {% for tag in collection.all_tags %}
+                  {% if current_tags contains tag %}
+                    <option value="{{ tag | handle }}" selected>{{ tag }}</option>
+                  {% else %}
+                    <option value="{{ tag | handle }}">{{ tag }}</option>
+                  {% endif %}
+                {% endfor %}
+            </select>
+          </div>
+
+          {% if collection.all_tags.size > 0 %}
+
+            <div class="option filter-by-groups">
+
+              <label for="filter-by">{{ 'collections.filtering.title' | t }}</label>
+
+              {% assign categories = '' %}
+
+              {% for tag in collection.all_tags %}
+                {% if tag contains '_' %}
+                  {% capture categories %}{% unless categories == blank  %}{{ categories }}|{% endunless %}{{ tag | split: '_' | first }}{% endcapture %}
+                {% endif %}
+              {% endfor %}
+              {% assign cat_array = categories | split: '|' | uniq %}
+
+              {% for cat_item in cat_array %}
+
+                <div class="option-children">
+
+                  <select name="filter-by" class="filter-by" data-label="{{ cat_item }}">
+
+                    <option value="" class="default">--</option>
+
+                    {% for tag in collection.all_tags %}
+
+                      {% assign cat = tag | split: '_' | first %} 
+
+                      {% if cat != tag and cat_item == cat %}
+
+                        {% if current_tags contains tag %}
+                          <option class="advanced-filter active-filter" data-group="{{ cat_item }}" value="{{ tag | handle }}" selected>{{ tag | remove_first: cat_item | remove_first: '_' | link_to_remove_tag: tag }}</option>
+                        {% else %}
+                          <option class="advanced-filter" data-group="{{ cat_item }}" value="{{ tag | handle }}">{{ tag | remove_first: cat_item | remove_first: '_' | link_to_add_tag: tag }}</option>
+                        {% endif %}
+
+                      {% endif %}
+
+                    {% endfor %}
+
+                  </select>
+
+                </div>
+
+              {% endfor %}
+
+            </div>
+
+          {% endif %}
+
+          <div class="option">
+            <label for="sort-by">{{ 'collections.sorting.title' | t }}</label>
+            <select name="sort-by" id="sort-by">
+              <option value="manual">{{ 'collections.sorting.featured' | t }}</option>
+              <option value="best-selling">{{ 'collections.sorting.best_selling' | t }}</option>
+              <option value="title-ascending">{{ 'collections.sorting.az' | t }}</option>
+              <option value="title-descending">{{ 'collections.sorting.za' | t }}</option>
+              <option value="price-ascending">{{ 'collections.sorting.price_ascending' | t }}</option>
+              <option value="price-descending">{{ 'collections.sorting.price_descending' | t }}</option>
+              <option value="created-descending">{{ 'collections.sorting.date_descending' | t }}</option>
+              <option value="created-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
+            </select>
+          </div>
+
+          <button id="apply-sort-filter" class="button" style="margin-right: 10px;">{{ 'sidebar.collection_filters.submit' | t }}</button>
+
+          <button id="clear-sort-filter" class="button">{{ 'sidebar.collection_filters.clear' | t }}</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  {% endif %}
+
+  <!-- search -->
+
+  <div id="site-search" class="site-nav-container" tabindex="-1">
+
+    <div class="site-nav-container-last">
+
+      <p class="title">{{ 'sidebar.search' | t }}</p>
+
+      {% render 'search_bar', type: 'ajax' %}
+
+      <div class="top">
+        <div id="search-results" class="search-results predictive-search {% if settings.predictive_search_enable == false %} false-predictive {% endif %}"></div>
+      </div>
+
+      <div id="site-search-footer"></div>
+
+    </div>
+
+  </div>
+
+  <!-- cart -->
   
-@media only screen and (max-width: 1024px) {
-    .tt-header__sidebar {
-        width: 100%;
-        height: 35px !important;
-    }
+  <div id="site-cart" class="site-nav-container" tabindex="-1">
+
+    <div class="site-nav-container-last">
+
+      <div class="site-cart-heading">
+
+        <p class="title">{{ 'sidebar.cart.title' | t }}</p>
+        
+        <p class="subtitle" data-added-singular="{{ 'sidebar.cart.added_items_count.one' | t }}" data-added-plural="{{ 'sidebar.cart.added_items_count.other' | t }}">{{ 'sidebar.cart.items_count' | t: count: cart.item_count }}</p> 
+
+      </div>
+
+      <div class="top">
+
+        {% include 'cart_form' with 'sidebar' %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- close button -->
+
+  <button id="site-close-handle" class="site-close-handle" aria-label="{{ 'general.navigation.close_sidebar' | t }}" title="{{ 'general.navigation.close_sidebar' | t }}">
+    <span class="hamburger-menu active" aria-hidden="true"><span class="bar animate"></span></span>
+  </button>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "class": "mount-header",
+    "max_blocks": 6,
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo_src",
+        "label": "Logo image"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "label": "Logo image width",
+        "unit": "px",
+        "min": 20,
+        "max": 400,
+        "step": 5,
+        "default": 100
+      },
+      {
+        "type": "link_list",
+        "id": "menu_main_select",
+        "label": "Menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "select",
+        "id": "menu_style",
+        "label": "Desktop menu style",
+        "options": [
+          {
+            "value": "classic",
+            "label": "Classic"
+          },
+          {
+            "value": "minimal",
+            "label": "Minimal"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Announcement bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "bar_enable",
+        "label": "Show bar",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bar_content",
+        "label": "Content",
+        "default": "Use this bar for a short, important announcement.",
+        "info": "Max 50 characters"
+      },
+      {  
+        "type": "url",
+        "id": "bar_link",
+        "label": "Link"
+      },
+      {
+        "type": "color",
+        "id": "bar_bgcolor",
+        "label": "Background color",
+        "default": "#D23232"
+      },
+      {
+        "type": "color",
+        "id": "bar_txtcolor",
+        "label": "Text color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection_select",
+            "label": "Collection"
+          }
+        ]
+      }
+    ]
   }
-</style>
+{% endschema %}

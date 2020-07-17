@@ -1,0 +1,378 @@
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick product--section"  data-collection="{{ collection.handle }}" data-gallery-size="{{ product.images.size }}" data-id="{{ product.id }}" data-hide-variants="false" data-product-available="{{ product.available }}">
+
+	<div class="site-box box--big lap--box--bigger box--typo-big box--no-padding box__product-gallery {{ section.settings.gallery_style }}" data-lap="box--bigger" data-order="0" data-images="{{ product.images.size }}" data-show-progress="{{ section.settings.show_gallery_progress }}" data-images-aspect="{{ section.settings.gallery_resize }}">
+
+    <div class="site-box-content" data-video-looping="{{ section.settings.enable_video_looping }}" data-size="{{ product.media.size }}">
+
+      {% if product.media.size == 0 %}  
+   
+        <div class="gallery-item" data-product-media-type="image">
+          <span class="onboarding-svg">{{ 'product-1' | placeholder_svg_tag }}</span>
+        </div>
+
+      {% else %}
+
+        {% for media in product.media %}
+          {% render 'product_media', media: media, enable_zoom: section.settings.gallery_zoom, index: forloop.index0 %}
+        {% endfor %}
+
+      {% endif %}
+
+      {% assign first_3d_model = product.media | where: "media_type", "model" | first %}
+
+      {% if first_3d_model %}
+        <button
+          aria-label="{{ 'product.view_in_space_label' | t }}"
+          class="product__view-in-space"
+          data-shopify-xr
+          data-shopify-first-model3d-id="{{ first_3d_model.id }}"
+          data-shopify-model3d-id="{{ first_3d_model.id }}"
+          data-shopify-title="{{ product.title | escape }}"
+          data-shopify-xr-hidden
+        >{% render 'asset_svg', icon_name: 'model_button' %}
+          <span class='product__view-in-space-text'>{{ 'product.view_in_space' | t }}</span>
+        </button>
+      {% endif %}
+
+		</div>
+    
+	</div>
+  
+  <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box__product-content"  data-lap="box--bigger" data-order="1">
+
+    <div class="site-box-content fix-me-with-margin">
+      
+      <h1 class="product-title">{{ product.title | escape }}</h1>
+
+      {% assign current_variant = product.selected_or_first_available_variant %}
+      <span class="variant-sku hide">{{ current_variant.sku | escape }}</span>
+
+      {% if section.settings.product_vendor_enabled %}
+        {% capture vendor %} {{ product.vendor | link_to_vendor }} {% endcapture %}
+        <p class="product-vendor">{{ 'product.vendor_html' | t: vendor: vendor }}</p>
+      {% endif %}
+      
+      <div class="price-reviews">
+
+        <span class="price">
+
+          <div style="display: inline-block;">
+
+            <span class="product-price">{{ product.price | money }}</span>
+            <span class="info compare-price">
+              {% if product.compare_at_price > product.price %}
+                {{ product.compare_at_price | money }}
+              {% endif %}
+            </span>
+
+            {% if variant.unit_price_measurement %}
+              <span class="unit-price">
+                {{ variant.unit_price | money }} / 
+                {% if variant.unit_price_measurement.reference_value != 1 %}
+                  {{ variant.unit_price_measurement.reference_value }}
+                {% endif %}
+                {{ variant.unit_price_measurement.reference_unit }}
+              </span>
+            {% endif %}
+
+          </div>
+
+        </span>
+
+        {% if section.settings.show_reviews_badge %}
+          <a class="review" href="#shopify-product-reviews">
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+          </a>
+        {% endif %}
+
+      </div>
+
+      <div class="offers">
+
+       {% assign variant = product.selected_or_first_available_variant %}
+
+
+        <div id="add-to-cart-{{ section.id }}" class="product--add-to-cart-form style--{{ section.settings.variants_style }}" data-type="{{ settings.cart_action }}">
+
+          {% form 'product', product %}
+
+            <div class="product-variants-holder" {% if product.has_only_default_variant %} style="display:none;" {% endif %}>
+
+              {% for option in product.options_with_values %}
+                <div class="product-variant selector-wrapper hidden">
+                  <label for="product-{{ option.name | downcase | strip }}">{{ option.name | escape }}</label>
+                  <select class="product-variants" id="product-{{ option.name | downcase | strip }}">
+                    {% for value in option.values %}
+                      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value | escape }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              {% endfor %}
+
+            </div>
+          
+             <select id="productSelect" name="id" class="styled" style="display: none;">
+              {% for variant in product.variants %}
+                {% if variant.available %}
+                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                    {{ variant.title | escape }}
+                  </option>
+                {% else %}
+                  <option disabled="disabled">{{ variant.title | escape }}</option>
+                {% endif %}
+              {% endfor %}
+            </select>
+
+            <div class="cart-functions payment-button--false">
+
+              {% render 'product_quantity' %}
+
+              <button type="submit" name="add" class="button color"><span class="add-to-cart-text" data-text="{{ 'product.pre_order' | t }}">{{ 'product.pre_order' | t }}</span></button>
+
+              {% if section.settings.preorder_text != blank %}
+                <span style="display: block !important; padding-left: 15px; opacity: .66; margin-top: 30px; width: 100%;">{{ section.settings.preorder_text | escape }}</span>
+              {% endif %}
+
+            </div>
+
+          {% endform %}
+
+        </div>
+
+      </div>
+      
+      <div class="rte extract-images">
+
+        {% if section.settings.enable_product_gallery %}
+        
+          <style type="text/css">.extract-images img:not(.dont-extract) { display: none; }</style>
+        
+          {% assign img_tag = '<' | append: 'img' %}
+
+          {% assign product_description = product.description %}
+
+          {% if product.description contains img_tag %}
+            {% assign images = product.description | split: 'src="' %}
+            {% assign images_in_context = '' | split : '' %}
+            {% for image in images %}
+              {% unless forloop.first %}
+
+                {% assign src = image | split: '"' | first | remove: 'https:' | remove: 'http:' %}
+
+                {% assign img_sizes = "_pico,_icon,_thumb,_small,_compact,_medium,_large,_grande,_1024x1024,_2048x2048" | split: "," %}
+
+                 {% assign src_cleaned = src %}
+                  {% for size in img_sizes %}
+                    {% if src contains size %}
+                      {% assign src_cleaned = src | replace: size, '' %}
+                    {% endif %}
+                  {% endfor %}
+
+                {% assign img_path = src_cleaned | split: "/" %}
+                {% assign img_name = img_path | last | split: "?" %}
+                {% assign my_img = img_name | first | file_img_url: '10x' %}
+
+                {% assign product_description = product_description | replace: src, my_img %}
+
+              {% endunless %}
+            {% endfor %}
+          {% endif %}
+
+          {{ product_description }}
+
+        {% else %}
+          {{ product.description }}
+        {% endif %}
+
+        {% render 'product_tabs', blocks: section.blocks, style: section.settings.tabs_style %}
+
+        {% if section.settings.site_sharing %}
+          {% render 'social_sharing', title: product.title, url: product.url, image: product.featured_media %}
+        {% endif %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% if section.settings.enable_product_gallery %}
+  <div id="product-gallery-split" class="site-box-container container--fullscreen add-border"></div>
+{% endif %}
+
+{% if section.settings.show_reviews %}
+  <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+{% endif %}
+
+{% unless product.empty == empty %}
+  <script type="application/json" id="ProductJson-{{ section.id }}" class="product-json">
+    {{ product | json }}
+  </script>
+  <script type="application/json" id="ModelJson-{{ section.id }}" class="model-json">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+{% endunless %}
+
+<style type="text/css">
+  .spr-reviews[style="display: none"]:after {
+    content: "{{ 'product.no_reviews' | t }}";
+  }
+</style>
+
+{% schema %}
+	{
+    "name": "Pre order product page",
+    "class": "mount-product mount-images mount-gallery",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "product_vendor_enabled",
+        "label": "Show vendor",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "variants_style",
+        "label": "Variants style",
+        "options": [
+          {
+            "value": "minimal",
+            "label": "Minimal"
+          },
+          {
+            "value": "classic",
+            "label": "Classic"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "quantity_selector",
+        "label": "Show quantity selector",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "preorder_text",
+        "label": "Pre order info",
+        "default": "This product is out of stock, but you can still order it."
+      },
+      {
+        "type": "checkbox",
+        "id": "site_sharing",
+        "label": "Enable product sharing",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Media",
+        "info": "Learn more about [media type](https://help.shopify.com/en/manual/products/product-media)"
+      },
+      {
+        "type": "select",
+        "id": "gallery_style",
+        "label": "Gallery style",
+        "options": [
+          {
+            "value": "scroll",
+            "label": "Scroll"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "scroll",
+        "info": "Defaults to slider for mobile devices"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_gallery_progress",
+        "label": "Show progress indicator",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "gallery_resize",
+        "label": "Gallery image aspect",
+        "options": [
+          {
+            "value": "fill",
+            "label": "Cropped"
+          },
+          {
+            "value": "fit",
+            "label": "Natural"
+          }
+        ],
+        "info": "Only images can be cropped to fill the screen, as other types of media will always have a natural size."
+      },
+      {
+        "type": "checkbox",
+        "id": "gallery_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_video_looping",
+        "label": "Enable video looping",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Product gallery"
+      },
+      {
+        "type": "paragraph",
+        "content": "Automatically create a gallery based on the images uploaded in your product's description."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_gallery",
+        "label": "Enable product gallery",
+        "info": "[Learn more about this feature](https://shopify-support.krownthemes.com/article/453-automated-galleries)",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Product reviews",
+        "info": "You need to install [Shopify's free Product Reviews app](https://apps.shopify.com/product-reviews) before enabling this option."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_reviews",
+        "label": "Show reviews",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_reviews_badge",
+        "label": "Show reviews badge",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Product tabs"
+      },
+      {
+        "type": "select",
+        "id": "tabs_style",
+        "label": "Tabs style",
+        "options": [
+          {
+            "value": "tabs",
+            "label": "Tabs"
+          },
+          {
+            "value": "toggles",
+            "label": "Toggles"
+          }
+        ],
+        "default": "tabs"
+      }
+    ]
+   }
+{% endschema %}

@@ -1,9 +1,52 @@
-{%- comment -%}
-{%- endcomment -%}
-<div class="tt-page__name text-center ttg-mt--40">
-<h1>{{ page.title }}</h1>
+<div class="shopify-section">
+	
+	<article id="section-page" class="site-box-container container--fullscreen box--can-stick">
+
+		{% assign check_for_image = page.content | slice: 0, 10 %}
+		{% assign image_found = false %}
+		{% if check_for_image contains '<img' %}    
+			{% assign src = page.content | split: 'src="' %}
+	    {% assign src = src[1] | split: '"' | first %}
+	    {% assign image_found = true %}
+		{% endif %}
+
+		<div class="site-box box--big lap--box--small-fl box--typo-big box--center-align box--column-flow box__heading box--add-hr" data-order="0">
+
+		 	<div class="site-box-content less-padding fix-me-with-margin {% if image_found %} dark {% endif %}">
+            
+        <h1 class="title {% if image_found %} dark {% endif %}">
+          {{ page.title }}
+        </h1>
+
+      </div>
+
+      {% if image_found %} 
+      	<span class="site-box-background with-image" style="background-image: url({{ src }});" aria-hidden="true"></span> {% endif %}
+
+		</div>
+
+    <div class="site-box box--big lap--box--bigger box__text box--typo-big box--center-align box--column-flow" data-order="1">
+
+      <div class="site-box-content fix-me-with-margin">
+        
+        <div class="rte">
+          {{ page.content }}
+        </div>
+
+			</div>
+
+		</div>
+
+	</article>
+
 </div>
 
-<div class="tt-layout__section--pdg tt-page__cont-small rte ttg-mb--40">
-  <p class="tt-page__name">{{ page.content }}</p>
-</div>
+{% if image_found %}
+
+	<style type="text/css">
+		.rte *:first-child img {
+			display: none;
+		}
+	</style>
+
+{% endif %}

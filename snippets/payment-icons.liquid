@@ -1,0 +1,7 @@
+{% if shop.enabled_payment_types != empty %}
+	<div class="site-payment" aria-label="{{ 'general.payment_methods' | t }}">
+		{% for type in shop.enabled_payment_types %}
+			{{ type | payment_type_svg_tag: class:'payment-icon' }}
+		{% endfor %}
+	</div>
+{% endif %}

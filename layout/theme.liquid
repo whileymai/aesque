@@ -1,11 +1,148 @@
-{%- comment -%}
-{%- endcomment -%}
-{%- capture loc-content_for_head -%}
-    {%- include 'head' -%}
-    {{ content_for_header }}
-{%- endcapture -%}
-{%- capture loc-content_for_header -%}{%- section 'header' -%}{%- endcapture -%}
-{%- capture loc-content_for_layout -%}{{ content_for_layout }}{%- endcapture -%}
-{%- include 'layout-res-settings' -%}
-{%- capture loc-content_for_footer -%}{%- section 'footer' -%}{%- endcapture -%}
-{%- include 'layout' -%}
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+  {% if settings.favicon %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+  {% endif %}
+ 
+  {% capture seo_title %}
+    {% if template contains 'search' %}
+      {{ search.terms | replace: '*', '' | split: ' AND ' | last }} - {{ shop.name | escape }}
+    {% else %}
+      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name | escape }}{% endunless %}
+    {% endif %}
+  {% endcapture %}
+
+  <title>{{ seo_title }}</title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  {% render 'social_meta' %}
+  {% render 'microdata_schema' %}
+
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <link rel="preload" as="style" href="{{ 'css_main.scss.css' | asset_url }}">
+  <link rel="preconnect" href="//fonts.shopifycdn.com">
+
+  {{ 'css_main.scss.css' | asset_url | stylesheet_tag }}
+
+  {{ content_for_header }}
+  {% include 'tipo.booking.script' %}
+  
+  {{ '//code.jquery.com/jquery-3.4.1.min.js' | script_tag }}
+
+  {% if template == 'customers/addresses' %}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+    <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer></script>
+  {% endif %}
+
+  <noscript>
+    {{ 'css_noscript.scss.css' | asset_url | stylesheet_tag }}
+  </noscript>
+  
+</head>
+
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template.name }} template-{{ template | replace: '.', ' ' | handle }}">
+
+  {% section 'header' %}
+
+  <main class="wrapper main-content" id="main" role="main">
+
+    {{ content_for_layout }}
+  
+    {% section 'footer' %}
+
+  </main>
+
+  <div id="site-overlay" class="site-overlay"></div>
+
+  {{ 'js_plugins.min.js' | asset_url | script_tag }}
+
+  {% capture jQuery_arrow_down %} {% render "asset_svg", icon_name: "arrow_icon" %} {% endcapture %}
+  {% capture jQuery_arrow_right %} {% render "asset_svg", icon_name: "arrow_icon_smallest" %} {% endcapture %}
+  {% capture jQuery_icon_heart %} {% render "asset_svg", icon_name: "heart_icon" %} {% endcapture %}
+  {% capture jQuery_icon_twitter %} {% render "asset_svg", icon_name: "twitter_icon" %} {% endcapture %}
+  {% capture jQuery_icon_instagram %} {% render "asset_svg", icon_name: "social_instagram" %} {% endcapture %}
+  {% capture jQuery_icon_zoom %} {% render "asset_svg", icon_name: "zoom_out_icon" %} {% endcapture %}
+
+  <script type="text/javascript">
+    jQuery.themeAssets = {
+      arrowDown: '{{ jQuery_arrow_down | lstrip | rstrip }}',
+      arrowRight: '{{ jQuery_arrow_right | lstrip | rstrip }}',
+      iconHeart: '{{ jQuery_icon_heart | lstrip | rstrip }}',
+      iconTwitter: '{{ jQuery_icon_twitter | lstrip | rstrip }}',
+      iconInstagram: '{{ jQuery_icon_instagram | lstrip | rstrip }}',
+      iconZoom: '{{ jQuery_icon_zoom | lstrip | rstrip }}'
+    };
+    jQuery.themeCartSettings = '{{ settings.cart_action }}';
+  </script>
+
+  <script type="text/javascript">
+
+    window.shop_money_format = "{{ shop.money_format }}";
+
+    window.product_words_add_to_cart_button = "{{ 'product.add_to_cart' | t }}";
+    window.product_words_sold_out_variant = "{{ 'product.inventory.sold_out_variant' | t }}";
+    window.product_words_unavailable_variant = "{{ 'product.inventory.unavailable_variant' | t }}";
+    window.product_words_one_product = "{{ 'product.inventory.one_product' | t }}";
+    window.product_words_few_products = "{{ 'product.inventory.few_products' | t }}";
+    window.product_words_no_products = "{{ 'product.inventory.no_products' | t }}";
+    window.product_words_preorder = "{{ 'product.inventory.preoder' | t }}";
+    window.product_words_vendor = "{{ 'product.vendor_html' | t }}";
+
+    window.show_preloader = "{{ settings.show_preloader }}";
+
+    window.search_url = "{{ routes.search_url }}";
+    window.predictive_search_enabled = "{{ settings.predictive_search_enabled }}";
+    window.predictive_search_show_vendor = "{{ settings.predictive_search_show_vendor }}";
+    window.predictive_search_show_price = "{{ settings.predictive_search_show_price }}";
+    window.predictive_search_limit = "{{ settings.predictive_search_limit }}";
+    window.predictive_search_include_articles = "{{ settings.predictive_search_include_articles }}";
+    window.predictive_search_include_pages = "{{ settings.predictive_search_include_pages }}";
+    window.search_words_collection_results_title = "{{ 'general.search.collection_results_title' | t }}";
+    window.search_words_page_results_title = "{{ 'general.search.page_results_title' | t }}";
+    window.search_words_article_results_title = "{{ 'general.search.article_results_title' | t }}";
+    window.search_words_search_for_html = '{{ 'general.search.search_for_html' | t }}';
+    window.search_placeholder_image = '{{ 'product-1' | placeholder_svg_tag }}';
+
+    {% if settings.predictive_search_enabled %} 
+      window.month_names = ["{{ 'general.date_format.month_names.January' | t }}", "{{ 'general.date_format.month_names.February' | t }}", "{{ 'general.date_format.month_names.March' | t }}", "{{ 'general.date_format.month_names.April' | t }}", "{{ 'general.date_format.month_names.May' | t }}", "{{ 'general.date_format.month_names.June' | t }}", "{{ 'general.date_format.month_names.July' | t }}", "{{ 'general.date_format.month_names.August' | t }}", "{{ 'general.date_format.month_names.September' | t }}", "{{ 'general.date_format.month_names.October' | t }}", "{{ 'general.date_format.month_names.November' | t }}", "{{ 'general.date_format.month_names.December' | t }}"];
+    {% endif %}
+
+    if ( ! jQuery.parseJSON($('#shopify-features').text()).predictiveSearch ) {
+      window.predictive_search_enabled = "false";
+    }
+
+  </script>
+
+  {{ 'js_main.min.js' | asset_url | script_tag }}  
+
+  {% section 'popup' %}
+  
+  {% if settings.thumb_resize == 'fit' %}
+    <style type="text/css">
+      .box__collection .box--product-image {
+        width: 84%;
+        height: 84%;
+        margin: 8%;
+      }
+      .box__collection .box--product-image img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: contain !important;
+        font-family: "object-fit: contain" !important;
+      }
+    </style>
+  {% endif %}
+  
+</body>
+</html>

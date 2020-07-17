@@ -1,0 +1,155 @@
+{% if section.blocks.size > 0 %}
+
+  <div id="section-{{ section.id }}" class="site-box-container container--fullscreen">
+
+    <div class="site-box box--bigger box--center-align box--column-flow box--no-padding box__slideshow-split back-to-normal {% if section.blocks.size == 1 %} one-image {% endif %}">
+      <div class="site-box-content {% if section.blocks.size > 1 %} responsive-flickity {% else %} responsive-nonflickity {% endif %}">
+        {% for block in section.blocks %}
+          {% render 'slideshow_content', block: block, size: section.blocks.size, alignment: block.settings.bg_alignment %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+  <style type="text/css">
+  
+    @media  screen and (min-width: 768px), screen and (min-width: 1024px) and (orientation: landscape) {
+
+      .shopify-section .site-box.box__slideshow-split .slideshow-item .site-box {
+        background: {{ section.settings.slide_bg }};
+        color: {{ section.settings.slide_text }};
+      }
+      .shopify-section .site-box.box__slideshow-split .slideshow-item .site-box .button {
+        background: {{ section.settings.slide_text }} !important;
+        color: {{ section.settings.slide_bg }} !important;
+      }
+      .shopify-section .site-box.box__slideshow-split .slideshow-item .site-box .button svg path {
+        fill: {{ section.settings.slide_bg }} !important;
+      }
+      .shopify-section .site-box.box__slideshow-split .slider-meta {
+        color: {{ section.settings.slide_text }};
+      }
+      .shopify-section .site-box.box__slideshow-split .slider-meta svg path {
+        fill: {{ section.settings.slide_text }} !important;
+      }
+
+    }
+  
+  </style>
+
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Split screen slider",
+    "class": "mount-slideshow mount-images",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "color",
+        "id": "slide_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_text",
+        "label": "Text",
+        "default": "#252a2b"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Slide Heading"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "Welcome customers to your store"
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subheading",
+            "default": "Showcase your best products"
+          },
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Button link"
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "Image"
+          },
+          {
+            "id": "bg_alignment",
+            "type": "select",
+            "options": [
+              {
+                "value": "0% 0%",
+                "label": "Top left"
+              },
+              {
+                "value": "50% 0%",
+                "label": "Top center"
+              },
+              {
+                "value": "100% 0%",
+                "label": "Top right"
+              },
+              {
+                "value": "0% 50%",
+                "label": "Middle left"
+              },
+              {
+                "value": "50% 50%",
+                "label": "Middle center"
+              },
+              {
+                "value": "100% 50%",
+                "label": "Middle right"
+              },
+              {
+                "value": "0% 100%",
+                "label": "Bottom left"
+              },
+              {
+                "value": "50% 100%",
+                "label": "Bottom center"
+              },
+              {
+                "value": "100% 100%",
+                "label": "Bottom right"
+              }
+            ],
+            "default": "50% 50%",
+            "label": "Image position"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Split screen slider",
+      "category": "Image",
+      "blocks": [{
+        "type": "slide"
+      }]
+    }]
+  }
+{% endschema %}

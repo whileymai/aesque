@@ -1,0 +1,296 @@
+{% assign product = all_products[section.settings.featured_product] %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+{% if product == empty %}
+  {% assign section_onboarding = true %}
+  {% capture vendor_ %} Vendor name {% endcapture %}
+  {% capture title_ %} Your product's name {% endcapture %}
+  {% assign compare_at_price = 2999 %}
+  {% assign price = 1999 %}
+  {% assign gallery_size = 1 %}
+{% else %}
+  {% assign section_onboarding = false %}
+  {% assign vendor_ = product.vendor %}
+  {% assign title_ = product.title %}
+  {% assign compare_at_price = current_variant.compare_at_price %}
+  {% assign price = current_variant.price %}
+  {% assign gallery_size = product.images.size %}
+{% endif %} 
+
+<div id="section-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick onboarding-{{ section_onboarding }} product--section" data-gallery-size="{{ gallery_size }}" data-id="{{ product.id }}" data-hide-variants="{{ section.settings.hide_variants }}" data-product-available="{{ product.available }}">
+
+	<div class="site-box box--big lap--box--bigger box--typo-big box--no-padding box__product-gallery {{ section.settings.gallery_style }}" data-lap="box--bigger" data-order="0" data-images="{{ product.media.size }}" data-show-progress="false" data-images-aspect="{{ section.settings.gallery_resize }}">
+
+    <div class="site-box-content" data-video-looping="{{ section.settings.enable_video_looping }}" data-size="{{ product.media.size }}">
+
+      {% if product.media.size == 0 %} 
+   
+        <div class="gallery-item" data-product-media-type="image">
+          <span class="onboarding-svg">{{ 'product-1' | placeholder_svg_tag }}</span>
+        </div>
+
+      {% else %}
+
+        {% for media in product.media %}
+          {% render 'product_media', media: media, enable_zoom: section.settings.gallery_zoom, index: forloop.index0 %}
+        {% endfor %}
+
+      {% endif %}
+    
+      {% assign first_3d_model = product.media | where: "media_type", "model" | first %}
+
+      {% if first_3d_model %}
+        <button
+          aria-label="{{ 'product.view_in_space_label' | t }}"
+          class="product__view-in-space"
+          data-shopify-xr
+          data-shopify-first-model3d-id="{{ first_3d_model.id }}"
+          data-shopify-model3d-id="{{ first_3d_model.id }}"
+          data-shopify-title="{{ product.title | escape }}"
+          data-shopify-xr-hidden
+        >{% render 'asset_svg', icon_name: 'model_button' %}
+          <span class='product__view-in-space-text'>{{ 'product.view_in_space' | t }}</span>
+        </button>
+      {% endif %}
+
+		</div>
+
+	</div>
+  
+  <div class="site-box box--big lap--box--bigger box--typo-big box--center-align box--column-flow box__product-content"  data-lap="box--bigger" data-order="1">
+
+    <div class="site-box-content fix-me-with-margin">
+      
+      <h3 class="product-title">{{  title_ | escape }}</h3>
+
+      {% if section.settings.product_vendor_enabled %}
+        {% capture vendor %} {{ vendor_ | link_to_vendor }} {% endcapture %}
+        <p class="product-vendor">{{ 'product.vendor_html' | t: vendor: vendor }}</p>
+      {% endif %}
+
+      {% assign variant = product.selected_or_first_available_variant %}
+
+
+      <div class="price-reviews">
+
+        <span class="price">
+
+          {% render 'product_badges', product: product %}
+
+          <div style="display: inline-block;">
+
+            <span class="product-price">{{ price | money }}</span>
+            {% if compare_at_price > price %}
+              <span class="info compare-price">{{ compare_at_price | money }}</span>
+            {% endif %}
+
+            {% if variant.unit_price_measurement %}
+              <span class="unit-price">
+                {{ variant.unit_price | money }} / 
+                {% if variant.unit_price_measurement.reference_value != 1 %}
+                  {{ variant.unit_price_measurement.reference_value }}
+                {% endif %}
+                {{ variant.unit_price_measurement.reference_unit }}
+              </span>
+            {% endif %}
+
+          </div>
+
+        </span>
+
+      </div>
+
+      <div class="offers">
+
+        {% if section_onboarding %}
+
+          <div class="cart-functions">
+            <input type="number" name="quantity" value="1" min="1" class="quantity-selector" aria-label="Quantity" style="display: none;">
+            <button type="submit" name="add" class="button color disabled" disabled=""><span id="addToCartText">Sold out</span></button>
+          </div>
+
+        {% else %}
+
+          <div id="add-to-cart-{{ section.id }}" class="product--add-to-cart-form style--{{ section.settings.variants_style }}" data-type="{{ settings.cart_action }}">
+
+            {% form 'product', product %}
+
+              <div class="product-variants-holder" {% if product.has_only_default_variant %} style="display:none;" {% endif %}>
+
+                {% for option in product.options_with_values %}
+                  <div class="product-variant selector-wrapper hidden">
+                    <label for="product-{{ option.name | downcase | strip }}">{{ option.name | escape }}</label>
+                    <select class="product-variants" id="product-{{ option.name | downcase | strip }}">
+                      {% for value in option.values %}
+                        <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value | escape }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endfor %}
+
+              </div>
+
+               <select id="productSelect" name="id" class="styled" style="display: none;">
+                {% for variant in product.variants %}
+                  {% if variant.available %}
+                    <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                      {{ variant.title | escape }}
+                    </option>
+                  {% else %}
+                    <option disabled="disabled">{{ variant.title | escape }}</option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+
+              <div class="cart-functions payment-button--{{ section.settings.enable_payment_button }}">
+  
+                {% render 'product_quantity' %}
+
+                <button type="submit" name="add" class="button color"><span class="add-to-cart-text">{{ 'product.add_to_cart' | t }}</span></button>
+
+                {% if section.settings.enable_payment_button %}
+                  {{ form | payment_button }}
+                {% endif %}
+
+                <span class="variant-quantity"></span>
+
+              </div>
+
+            {% endform %}
+
+          </div>
+
+        {% endif %}
+
+      </div>
+      
+      {% unless section_onboarding %}
+        <div class="rte">
+          {{ product.description }}
+        </div>
+      {% endunless %}
+
+    </div>
+
+  </div>
+
+</div>
+
+{% unless product.empty == empty %}
+  <script type="application/json" id="ProductJson-{{ section.id }}" class="product-json">
+    {{ product | json }}
+  </script>
+  <script type="application/json" id="ModelJson-{{ section.id }}" class="model-json">
+    {{ product.media | where: 'media_type', 'model' | json }}
+  </script>
+{% endunless %}
+
+{% schema %}
+	{
+    "name": "Featured product",
+    "class": "mount-product mount-featured-product mount-images",
+    "settings": [
+      {
+        "type": "product",
+        "id": "featured_product",
+        "label": "Product"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_vendor_enabled",
+        "label": "Show vendor",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "variants_style",
+        "label": "Variants style",
+        "options": [
+          {
+            "value": "minimal",
+            "label": "Minimal"
+          },
+          {
+            "value": "classic",
+            "label": "Classic"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_variants",
+        "label": "Hide out of stock variants",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "quantity_selector",
+        "label": "Show quantity selector",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_payment_button",
+        "label": "Show dynamic checkout button",
+        "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Media",
+        "info": "Learn more about [media type](https://help.shopify.com/en/manual/products/product-media)"
+      },
+      {
+        "type": "select",
+        "id": "gallery_style",
+        "label": "Gallery style",
+        "options": [
+          {
+            "value": "scroll",
+            "label": "Scroll"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "scroll",
+        "info": "Defaults to slider for mobile devices"
+      },
+      {
+        "type": "select",
+        "id": "gallery_resize",
+        "label": "Gallery image aspect",
+        "options": [
+          {
+            "value": "fill",
+            "label": "Cropped"
+          },
+          {
+            "value": "fit",
+            "label": "Natural"
+          }
+        ],
+        "info": "Only images can be cropped to fill the screen, as other types of media will always have a natural size."
+      },
+      {
+        "type": "checkbox",
+        "id": "gallery_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_video_looping",
+        "label": "Enable video looping",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured product",
+        "category": "Product"
+      }
+    ]
+   }
+{% endschema %}

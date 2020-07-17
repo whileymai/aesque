@@ -1,0 +1,80 @@
+{% if section.settings.show_product_recommendations %}
+
+  <div class="product-recommendations" data-product-id="{{ product.id }}" data-limit="5">
+
+    {% if recommendations.products_count > 0 %}
+  
+      <div id="section-related-products">
+
+        <div class="site-box box--big lap--box--small-fl palm--box--small-lg box--typo-big box--center-align box--column-flow box__heading box--add-hr active">
+          <div class="site-box-content">
+            <h4 class="title">{{ section.settings.product_recommendations_heading | escape }}</h4>
+          </div>
+        </div> 
+
+        {% for product in recommendations.products %}
+          
+          <div class="site-box box--small lap--box--small-lg box--center-align box--no-padding box--column-flow box__collection active">
+            <div class="site-box-content">
+              {% render 'collection_product-content', product: product, per_page: 6 %}
+            </div>
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+{% endif %}
+
+<script type="text/javascript">
+  var productRecommendationsSection = document.querySelector(".product-recommendations");
+  if (productRecommendationsSection != null) {
+    var productId = productRecommendationsSection.dataset.productId;
+    var limit = productRecommendationsSection.dataset.limit;
+    var requestUrl = "{{ routes.product_recommendations_url }}?section_id=product-recommendations&limit="+limit+"&product_id="+productId;
+    var request = new XMLHttpRequest();
+    request.open("GET", requestUrl);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 300) {
+        var container = document.createElement("div");
+        container.innerHTML = request.response;
+        productRecommendationsSection.parentElement.innerHTML = container.querySelector('.product-recommendations').innerHTML;
+        $('html.no-touchevents #shopify-section-product-recommendations a[href]').each(function(){
+          window.animateSiteOff($(this));
+        });
+      }
+    };
+    request.send();
+  }                                                     
+</script>
+
+{% if check_collections == 0 %}
+  <style type="text/css">
+    #section-related-products { display: none; }
+  </style>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product recommendations",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_product_recommendations",
+        "label": "Show dynamic recommendations",
+        "info": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_recommendations_heading",
+        "label": "Heading",
+        "default": "You may also like"
+      }
+    ]
+  }
+{% endschema %}

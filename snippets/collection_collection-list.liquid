@@ -1,0 +1,68 @@
+{% if collection == empty %}
+  {% assign c_title = 'Collection title' %}
+  {% assign c_link = '' %}
+{% else %}
+  {% assign c_title = collection.title %}
+  {% assign c_link = collection.url %}
+{% endif %}
+
+{% if size == 1 %}
+  {% assign size_class = 'box--bigger box--typo-bigger lap--box--small-fl fix-me-with-height' %}
+{% elsif size == 2 and index < 3 %}
+  {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+{% else %}
+  {% if index == 1 %}
+    {% assign size_class = 'box--big box--typo-big lap--box--small-lg palm--box--small-fl' %}
+  {% elsif index == 2 %}
+    {% assign size_class = 'box--small-lg box--typo-big  palm--box--small-fl' %}
+  {% elsif index == 3 and size == 3 %}
+    {% assign size_class = 'box--small-lg box--typo-big palm--box--small-fl' %}
+  {% else %}
+    {% assign size_class = 'box--small box--typo-small lap--box--small-lg palm--box--small-fl' %}
+  {% endif %}
+{% endif %}
+
+<div id="block-{{ block.id }}" {{ block.shopify_attributes }} class="site-box box--center-align box--column-flow {{ size_class }} box__image-text style--{{ block.settings.bg_style }} align--{{ section.settings.txt_align }} button-true" data-order="{{ index | minus: 1 }}">
+
+  <div class="site-box-content">
+
+    <div class="content">
+
+      <h2 class="title">{{ c_title | escape }}</h2>
+
+      <a class="button with-icon {{ block.settings.bg_style }}" href="{{ c_link }}"> {{ 'general.shop_now' | t }} <span class="icon" aria-hidden="true">{% render 'asset_svg', icon_name: 'arrow_icon_smallest' %}</span></a>
+
+    </div>
+
+  </div>
+
+  <span class="site-box-background with-image" aria-hidden="true">
+
+    {% if collection == empty %}
+
+      {% assign no = index | modulo:6 | plus:1 %}
+      <span class="onboarding-svg">{{ 'collection-X' | replace: 'X', no | placeholder_svg_tag }}</span>
+
+    {% else %}
+
+      {% if collection.image %}
+        {% assign collection_image = collection.image %}
+      {% elsif collection.products.first != blank %}
+        {% assign collection_image = collection.products.first %}
+      {% endif %}
+
+      <img
+        src="{{ collection_image | img_url: '960x' }}" alt="{{ collection_image | escape }}"
+        srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-srcset="{{ collection_image | img_url: '480x' }} 360w, {{ collection_image | img_url: '600x' }} 480w, {{ collection_image | img_url: '1100x' }} 960w, {{ collection_image | img_url: '1600x' }} 1440w, {{ collection_image | img_url: '2100x' }} 1920w"
+        data-sizes="auto"
+        class="lazyload"
+      />
+
+      <noscript><span class="ll-fallback" style="background-image:url({{ collection_image | img_url: '960x' }})"></span></noscript> 
+
+    {% endif %}
+
+  </span>
+
+</div>

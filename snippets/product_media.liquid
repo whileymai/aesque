@@ -1,0 +1,51 @@
+<div 
+  id="FeaturedMedia-{{ section.id }}-{{ media.id }}" 
+  class="box--product-image gallery-item {% if settings.show_preloader %} show-lazy-preloader {% endif %}"
+  data-product-media-type="{{ media.media_type }}"
+  data-product-single-media-wrapper
+  data-media-id="{{ media.id }}"
+  tabindex="0"
+  data-index="{{ index }}"
+  {% if media.media_type == 'external_video' %} data-video-id="{{ media.external_id }}" {% endif %}
+  {% if media.media_type == 'image' and enable_zoom %} data-image-zoom {% endif %}
+  {% if media.media_type == 'image' %} data-ratio="{{ media.aspect_ratio }}" style="padding-top: {{ 100 | divided_by: media.aspect_ratio }}%" {% endif %}
+>
+
+  {% if media.media_type == 'image' %}
+
+    <img 
+      src="{{ media | img_url: '960x' }}" alt="{{ media.alt | escape }}"
+      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-srcset="{{ media | img_url: '600x' }} 480w, {{ media | img_url: '900x' }} 720w, {{ media | img_url: '1100x' }} 960w, {{ media | img_url: '1600x' }} 1440w, {{ media | img_url: '2100x' }} 1920w"
+      data-sizes="auto"
+      class="lazyload" 
+    />
+
+    {% if enable_zoom %}
+      <div class="product-zoom product-zoom-in" aria-label="{{ 'product.zoom_product_image.zoom_in' | t }}" title="{{ 'product.zoom_product_image.zoom_in' | t }}" data-master="{{ media | img_url: 'master' }}">
+        <span class="zoom-in" aria-hidden="true">{% render 'asset_svg', icon_name: 'zoom_in_icon' %}</span>
+      </div>
+    {% endif %}
+
+  {% else %}
+
+    <div class="box--product-media" {% unless media.aspect_ratio > 0 %} data-ratio="1" style="padding-top: 100%" {% else %} data-ratio="{{ media.aspect_ratio }}" style="padding-top: {{ 100 | divided_by: media.aspect_ratio }}%" {% endunless %}>
+
+      {% case media.media_type %}
+        {% when 'video' %}
+          {{ media | video_tag: class: 'media-video', image_size: '1680x' }}
+        {% when 'external_video' %}
+          {{ media | external_video_tag }}
+        {% when 'model' %}
+          {{ media | model_viewer_tag: image_size: '1600x', reveal: 'interaction', toggleable: true, data-model-id: media.id }}
+        {% else %}
+          {{ media | media_tag }}
+      {% endcase %}
+
+    </div>
+  
+  {% endif %}
+
+  <noscript><span class="ll-fallback" style="background-image:url({{ media.preview_image | img_url: '960x' }})"></span></noscript> 
+
+</div>

@@ -1,0 +1,622 @@
+<script type="text/javascript">
+  window.moneyFormat = '{{ shop.money_format }}';
+  var tpbAppUrl = 'https://booking.tipo.io';
+  // var tpbAppUrl = 'http://localhost/bookingdevUpdate/public';
+  var tpbShopId = '7865';
+  var tpbShopPlan = 'BETA';
+  var tpbUrlShop = 'aesque.myshopify.com';
+  var tpbDomainShop = '{{ shop.domain }}';
+  var tpbProductId = '{{ product.id }}';
+  var tpbCustomer = {
+      id: '{{ customer.id }}',
+      email:'{{ customer.email }}',
+      first_name:'{{ customer.first_name }}',
+      last_name:'{{ customer.last_name }}',
+  };
+  var tpbCustomerId = 0;
+  {% if customer %}  var tpbCustomerId = {{ customer.id }};
+  {% endif %}  
+  var tpbProduct = {{ product | json }};
+  var tpbVariantId = false;
+
+    var tpbSettings = {"general":{"hide_add_to_cart":"1","hide_buy_now":"1","redirect_url":null,"allow_bring_more":false,"confirm_to":"checkout","time_format":"24h","multipleEmployees":"1","multipleLocations":"1","formatDate":"YYYY-MM-DD","formatDateServe":"Y-m-d","formatDateTime":"YYYY-MM-DD HH:mm","formatTime":"HH:mm","weekStart":0,"available_time":{"work_hours":[{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"MonDay"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Tuesday"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Wednesday"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Thursday"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Friday"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Saturday"},{"periods":[{"startTime":"08:00","endTime":"16:00"}],"day":"Sunday"}],"days_off":[],"special_days":[]}},"booking":{"font":"Arial","primary_color":"#9F89E8","cancel_button":"#fff","text_color":"#6370A7","calender_background_color":"#2b3360","calender_text_color":"#ffffff","day_off_color":"#a3a3a3","time_slot_color":"#414c89","time_slot_color_hover":"#313d88","selected_time_slot_color":"#ffd153","background_color_calendar":"#2b3360","background_image":"preset4.jpg","selected_day_color":"#9f89e8","time_slot_color_selected":"#ffd153"},"translation":{"time_slot_no_available":"This slot is no longer available","languageDatepicker":"en-US","please_select":"Please select Training","training":"Training","trainer":"Trainer","bringing_anyone":"Bringing anyone with you?","num_of_additional":"Number of Additional People","date_and_time":"Pick date & time","continue":"Continue","total_price":"Total Price","confirm":"Confirm","cancel":"Cancel","thank_you":"Thank you! Your booking is completed","date":"Date","time":"Time","location":"Location","first_name":"First name","last_name":"Last name","phone":"Phone","email":"Email","address":"Address","address_2":"Address 2","status":"Status","country":"Country","quantity":"Quantity","product":"Training","product_placeholder":"Select your training","variant":"Variant","variant_placeholder":"Select your variant","location_placeholder":"Select your location","employee":"Trainer","employee_placeholder":"Select your trainer","back":"Back","payment":"Payment","datetime":"Date Time","duration":"Duration","you_can_only_bring":"You can only bring {number} people","not_available":"Selected training is currently not available.","is_required":"This field is required.","price":"Price","customDatePickerDays":"Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday","customDatePickerDaysShort":"Sun, Mon, Tue, Wed, Thu, Fri, Sat","customDatePickerDaysMin":"Su, Mo, Tu, We, Th, Fr, Sa","customDatePickerMonths":"January, February, March, April, May, June, July, August, September, October, November, December","customDatePickerMonthsShort":"Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec","full_name":"Fullname","no_employee":"No trainer","no_location":"No location","export_file_isc":"Export to file isc","confirm_free_booking_successfully":"Thank for your booking . We'll get back to you shortly.","confirm_free_booking_unsuccessfully":"Whoops, looks like something went wrong.","duration_unit":"minutes"},"free_form":{"first_name":{"enable":true,"label":"First name","required":true},"last_name":{"enable":true,"label":"Last name","required":true},"email":{"label":"Email","required":true}},"languageDatepicker":{"days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"daysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"daysMin":["Su","Mo","Tu","We","Th","Fr","Sa"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}
+  var checkPageProduct = false;
+  {% if template contains "product" %}
+  checkPageProduct = true;
+  {% endif %}
+
+    var tpbBackground = 'https://booking.tipo.io/storage/background-image/preset4.jpg';
+  
+  var tpbTimeZoneShop = 'Australia/Melbourne';
+  var tpbTimeZoneServer = 'UTC';
+
+  var tpbConfigs = {
+    products : [],
+    locations : [{"id":9591,"name":"Default location","employee_ids":[13678]},{"id":9592,"name":"Default location","employee_ids":[13679]}],
+    employees : [{"id":13678,"first_name":"Any","last_name":"Trainer"},{"id":13679,"first_name":"Any","last_name":"Trainer"}]
+  }
+</script>
+
+{{ "tipo.booking.scss.css" | asset_url | stylesheet_tag }}<script src='{{ 'tipo.booking.js' | asset_url }}' ></script>
+
+{% raw %}
+  <script type="template/html" id="tpb-template_history-booking">
+    <div class="tpb-header"><p>Booking History</p></div>
+    <div class="tpb-list-history">
+        <div class="tpb-sub-scroll">
+            <p>< - - - - - ></p>
+        </div>
+        <div class="tpb-table-scroll">
+            <table class="tpb-table">
+                <thead class="tpb-table_thead">
+                <tr>
+                    {% if settings.general.multipleEmployees == '1' %}
+                    <th class="tpb-column-scroll tpb-table_th-trainer" width="22%">{{settings.translation.employee}}
+                    </th>
+                    {% endif %}
+                    {% if settings.general.multipleLocations == '1' %}
+                    <th class="tpb-table_th-location" width="20%">{{settings.translation.location}}</th>
+                    {% endif %}
+                    <th class="tpb-table_th-services" width="20%">{{settings.translation.product}}</th>
+                    <th class="tpb-table_th-time" width="12%">{{settings.translation.time}}</th>
+                    <th class="tpb-table_th-payment" width="11%">{{settings.translation.payment}}</th>
+                    <th class="tpb-table_th-status" width="10%">{{settings.translation.status}}</th>
+                    <th class="tpb-table_th-view" width="5%"></th>
+                </tr>
+                </thead>
+                <tbody class="tpb-table_tbody">
+                {% for booking in bookings %}
+                <tr>
+                    {% if settings.general.multipleEmployees == '1' %}
+                    <td class="tpb-column-scroll">
+                        <div class="tpb-table_trainer">
+                            <div class="tpb-table_avatar">
+                                <img src={{ booking.employee.avatar }} alt="">
+                            </div>
+                            <div class="tpb-table_title">
+                                <span class="tpb-context-table">{{ booking.employee.first_name }} {{ booking.employee.last_name}}</span>
+                                <p class="tpb-table-sub">{{ booking.employee.email }}</p>
+                            </div>
+                        </div>
+                    </td>
+                    {% endif %}
+                    {% if settings.general.multipleLocations == '1' %}
+                    <td><span class="tpb-context-table">{{ booking.location.name }}</span></td>
+                    {% endif %}
+                    <td><span class="tpb-context-table">{{ booking.service.title }}</span></td>
+                    <td>
+              <span class="tpb-context-table tpb-context-table_time">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path
+                      d="M10.25,2.375c-4.212,0-7.625,3.413-7.625,7.625s3.413,7.625,7.625,7.625s7.625-3.413,7.625-7.625S14.462,2.375,10.25,2.375M10.651,16.811v-0.403c0-0.221-0.181-0.401-0.401-0.401s-0.401,0.181-0.401,0.401v0.403c-3.443-0.201-6.208-2.966-6.409-6.409h0.404c0.22,0,0.401-0.181,0.401-0.401S4.063,9.599,3.843,9.599H3.439C3.64,6.155,6.405,3.391,9.849,3.19v0.403c0,0.22,0.181,0.401,0.401,0.401s0.401-0.181,0.401-0.401V3.19c3.443,0.201,6.208,2.965,6.409,6.409h-0.404c-0.22,0-0.4,0.181-0.4,0.401s0.181,0.401,0.4,0.401h0.404C16.859,13.845,14.095,16.609,10.651,16.811 M12.662,12.412c-0.156,0.156-0.409,0.159-0.568,0l-2.127-2.129C9.986,10.302,9.849,10.192,9.849,10V5.184c0-0.221,0.181-0.401,0.401-0.401s0.401,0.181,0.401,0.401v4.651l2.011,2.008C12.818,12.001,12.818,12.256,12.662,12.412"></path>
+                </svg>
+                {{ booking.time_start }}
+              </span>
+                        <div class='tooltip'>
+                            {{ booking.range_date_time }}
+                        </div>
+                    </td>
+                    <td><p class="tpb-context-table">{{ booking.price | format_money : window.moneyFormat }}</p></td>
+                    <td class="tpb-table_status"><span class="tpb-context-table tpb-context-table_status">{{ booking.status }}</span>
+                    </td>
+                    <td class="tpb-table_action">
+              <span class="tpb-context-table">
+                  <div class="tpb-wrapper-btnView">
+                      <button class="tpb-btnView" data-index={{ forloop.index0 }}>
+                      <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                            d="M10,6.978c-1.666,0-3.022,1.356-3.022,3.022S8.334,13.022,10,13.022s3.022-1.356,3.022-3.022S11.666,6.978,10,6.978M10,12.267c-1.25,0-2.267-1.017-2.267-2.267c0-1.25,1.016-2.267,2.267-2.267c1.251,0,2.267,1.016,2.267,2.267C12.267,11.25,11.251,12.267,10,12.267 M18.391,9.733l-1.624-1.639C14.966,6.279,12.563,5.278,10,5.278S5.034,6.279,3.234,8.094L1.609,9.733c-0.146,0.147-0.146,0.386,0,0.533l1.625,1.639c1.8,1.815,4.203,2.816,6.766,2.816s4.966-1.001,6.767-2.816l1.624-1.639C18.536,10.119,18.536,9.881,18.391,9.733 M16.229,11.373c-1.656,1.672-3.868,2.594-6.229,2.594s-4.573-0.922-6.23-2.594L2.41,10l1.36-1.374C5.427,6.955,7.639,6.033,10,6.033s4.573,0.922,6.229,2.593L17.59,10L16.229,11.373z"></path>
+                      </svg>
+                    </button>
+                  </div>
+              </span>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="tpb-wrapper-btnExport">
+            <button class="tpb-btnExport" >
+                <div class="tpb-btnExport-title">
+                    <svg class="svg-icon" height="453pt" viewBox="0 -28 453.99791 453" width="453pt" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m345.375 3.410156c-2.863281-2.847656-7.160156-3.695312-10.890625-2.144531s-6.164063 5.195313-6.164063 9.234375v53.359375c-54.011718 2.148437-81.058593 24.539063-85.191406 28.261719-27.25 22.363281-45.855468 53.527344-52.613281 88.121094-3.378906 16.714843-3.984375 33.871093-1.785156 50.78125l.007812.058593c.019531.148438.042969.300781.066407.449219l2.125 12.214844c.714843 4.113281 3.914062 7.351562 8.019531 8.117187 4.109375.765625 8.257812-1.105469 10.40625-4.6875l6.367187-10.613281c19.5625-32.527344 43.941406-54.089844 72.46875-64.085938 12.867188-4.550781 26.5-6.546874 40.128906-5.882812v55.265625c0 4.046875 2.441407 7.699219 6.183594 9.242187 3.746094 1.546876 8.050782.679688 10.90625-2.191406l105.675782-106.210937c3.894531-3.914063 3.878906-10.246094-.035157-14.140625zm2.949219 194.214844v-40.027344c0-4.90625-3.5625-9.089844-8.410157-9.871094-8.554687-1.378906-31.371093-3.570312-58.335937 5.878907-28.765625 10.078125-53.652344 29.910156-74.148437 59.050781-.058594-9.574219.847656-19.132812 2.707031-28.527344 6.078125-30.730468 21.515625-56.542968 45.878906-76.710937.214844-.175781.417969-.359375.617187-.554688.699219-.648437 26.097657-23.578125 81.609376-23.164062h.074218c5.523438 0 10.003906-4.480469 10.007813-10.003907v-39.136718l81.535156 81.125zm0 0"/><path d="m417.351562 294.953125c-5.519531 0-10 4.476563-10 10v42.261719c-.015624 16.5625-13.4375 29.980468-30 30h-327.351562c-16.5625-.019532-29.980469-13.4375-30-30v-238.242188c.019531-16.5625 13.4375-29.980468 30-30h69.160156c5.523438 0 10-4.476562 10-10 0-5.523437-4.476562-10-10-10h-69.160156c-27.601562.03125-49.96875 22.398438-50 50v238.242188c.03125 27.601562 22.398438 49.96875 50 50h327.351562c27.601563-.03125 49.96875-22.398438 50-50v-42.261719c0-5.523437-4.476562-10-10-10zm0 0"/>
+                    </svg>
+                    <span class="tpb-btnExport-title_text">{% if settings.translation.export_file_isc %}{{settings.translation.export_file_isc}}{% else %}Export to file isc{% endif %}</span>
+                </div>
+
+            </button>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <a href="//apps.shopify.com/partners/tipo" rel="nofollow" attribute target="_blank">Made by <span
+            class="company">Tipo Appointment Booking</span></a>
+    </div>
+</script>
+<script type="template/html" id="tpb-modal-control">
+    <div id="tpb-modal" class="tpb-modal">
+
+        <!-- Modal content -->
+        <div class="tpb-modal-content">
+            <span class="tpb-close">&times;</span>
+            <div class="tpb-content"></div>
+        </div>
+
+    </div>
+</script>
+<script type="template/html" id="tpb-modal-detail">
+    <div class="confirm">
+        <div class="product-info">
+            <div class="thumb"><img src="{{featured_image}}"/></div>
+            <div class="title">{{product_title}}</div>
+        </div>
+        <div class="booking-info">
+            {% if settings.general.multipleEmployees == '1' %}
+            <div class="employee">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g id="Group_141" data-name="Group 141" transform="translate(-236.8 -236.8)">
+                            <path id="Path_1029" data-name="Path 1029"
+                                  d="M236.8,243.8a7,7,0,1,0,7-7A7.009,7.009,0,0,0,236.8,243.8Zm2.926,4.795a19.261,19.261,0,0,1,2.182-1.275.457.457,0,0,0,.258-.413v-.879a.351.351,0,0,0-.049-.178,2.993,2.993,0,0,1-.364-1.074.348.348,0,0,0-.253-.284,1.907,1.907,0,0,1-.255-.626,1.58,1.58,0,0,1-.089-.583.352.352,0,0,0,.33-.468,2,2,0,0,1-.049-1.2,2.324,2.324,0,0,1,.626-1.091,3,3,0,0,1,.591-.488l.012-.009a2.207,2.207,0,0,1,.554-.284h0a1.763,1.763,0,0,1,.5-.092,2.063,2.063,0,0,1,1.263.267,1.508,1.508,0,0,1,.571.517.354.354,0,0,0,.287.189.534.534,0,0,1,.3.213c.167.221.4.795.115,2.182a.35.35,0,0,0,.187.385,1.426,1.426,0,0,1-.084.608,2.192,2.192,0,0,1-.227.583.37.37,0,0,0-.183.023.355.355,0,0,0-.21.261,3.233,3.233,0,0,1-.267.862.354.354,0,0,0-.034.152v1.016a.454.454,0,0,0,.258.414,19.3,19.3,0,0,1,2.182,1.275,6.274,6.274,0,0,1-8.151-.006ZM243.8,237.5a6.293,6.293,0,0,1,4.6,10.6,20.091,20.091,0,0,0-2.257-1.341v-.786a3.679,3.679,0,0,0,.23-.681c.281-.106.479-.433.666-1.091.169-.6.155-1.022-.046-1.263a3.241,3.241,0,0,0-.284-2.527,1.224,1.224,0,0,0-.615-.448,2.252,2.252,0,0,0-.752-.654,2.748,2.748,0,0,0-1.66-.359,2.472,2.472,0,0,0-.677.129h0a2.923,2.923,0,0,0-.721.367,3.931,3.931,0,0,0-.718.592,2.976,2.976,0,0,0-.8,1.407,2.68,2.68,0,0,0-.031,1.252.526.526,0,0,0-.106.1c-.207.25-.224.649-.052,1.261a1.96,1.96,0,0,0,.522,1.013,3.692,3.692,0,0,0,.371,1.051v.637a20.276,20.276,0,0,0-2.257,1.341,6.291,6.291,0,0,1,4.594-10.6Z"
+                                  fill="#6370a7"/>
+                        </g>
+                    </svg>
+                    {{settings.translation.employee}}
+                </label>
+                <div class="value">{{employee}}</div>
+            </div>
+            {% endif %}
+            <div class="date">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Union_1" data-name="Union 1"
+                              d="M-4292.616-1014H-4306v-14h14v14Zm0-.616v-9.108h-12.768v9.108Zm0-9.723v-3.047h-12.768v3.047Zm-3.466,7.86v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Zm-4.66.615v-2.252h2.252v2.252Zm.616-.615h1.021v-1.021h-1.021Zm-4.661.615v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Zm7.474-2.733v-2.252h2.252v2.252Zm.615-.615h1.02v-1.021h-1.02Zm-4.66.615v-2.252h2.252v2.252Zm.616-.615h1.02v-1.021h-1.02Zm-4.661.615v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Z"
+                              transform="translate(4306 1028)" fill="#6370a7"/>
+                    </svg>
+                    {{settings.translation.date}}
+                </label>
+                <div class="value">{{date}}</div>
+            </div>
+            <div class="time">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g id="Group_150" data-name="Group 150" transform="translate(-179.48 -179.48)">
+                            <g id="Group_147" data-name="Group 147">
+                                <g id="Group_146" data-name="Group 146">
+                                    <path id="Path_1033" data-name="Path 1033"
+                                          d="M186.48,179.48a7,7,0,1,0,7,7A7,7,0,0,0,186.48,179.48Zm.3,13.384v-1.231a.3.3,0,1,0-.6,0v1.231a6.4,6.4,0,0,1-6.084-6.084h1.231a.3.3,0,0,0,0-.6H180.1a6.4,6.4,0,0,1,6.084-6.084v1.231a.3.3,0,0,0,.6,0V180.1a6.4,6.4,0,0,1,6.084,6.084h-1.231a.3.3,0,1,0,0,.6h1.234A6.4,6.4,0,0,1,186.78,192.864Z"
+                                          fill="#6370a7"/>
+                                </g>
+                            </g>
+                            <g id="Group_149" data-name="Group 149">
+                                <g id="Group_148" data-name="Group 148">
+                                    <path id="Path_1034" data-name="Path 1034"
+                                          d="M189.648,189.273l-2.868-2.916v-3.03a.3.3,0,0,0-.6,0v3.153a.3.3,0,0,0,.087.21l2.952,3a.3.3,0,1,0,.429-.42Z"
+                                          fill="#6370a7"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    {{settings.translation.time}}
+                </label>
+                <div class="value">{{duration}}</div>
+            </div>
+            {% if settings.general.multipleLocations == '1' %}
+            <div class="location">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
+                        <g id="Group_153" data-name="Group 153" transform="translate(-358.104 -220.4)">
+                            <g id="Group_143" data-name="Group 143">
+                                <path id="Path_1030" data-name="Path 1030"
+                                      d="M364.1,223.19a2.933,2.933,0,1,0,3.1,2.93A3.023,3.023,0,0,0,364.1,223.19Zm0,5.155a2.229,2.229,0,1,1,2.36-2.225A2.3,2.3,0,0,1,364.1,228.345Z"
+                                      fill="#6370a7"/>
+                                <path id="Path_1031" data-name="Path 1031"
+                                      d="M364.1,220.4c-.069,0-.142,0-.212,0a5.868,5.868,0,0,0-5.756,5.1,5.425,5.425,0,0,0,.079,1.612,1.617,1.617,0,0,0,.043.189,5.21,5.21,0,0,0,.4,1.112,15.808,15.808,0,0,0,4.9,5.8.9.9,0,0,0,1.1,0,15.828,15.828,0,0,0,4.9-5.786,5.338,5.338,0,0,0,.4-1.12c.018-.068.03-.126.04-.18a5.369,5.369,0,0,0,.109-1.074A5.851,5.851,0,0,0,364.1,220.4Zm5.157,6.608c0,.005-.009.054-.03.143a4.96,4.96,0,0,1-.358.994,15.113,15.113,0,0,1-4.69,5.528.125.125,0,0,1-.076.025.135.135,0,0,1-.076-.025,15.146,15.146,0,0,1-4.7-5.54,4.73,4.73,0,0,1-.355-.985c-.019-.075-.028-.12-.031-.135l0-.017a4.784,4.784,0,0,1-.07-1.423,5.277,5.277,0,0,1,10.482.484A4.844,4.844,0,0,1,369.256,227.008Z"
+                                      fill="#6370a7"/>
+                            </g>
+                        </g>
+                    </svg>
+                    {{settings.translation.location}}
+                </label>
+                <div class="value">{{location}}</div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="extra-fields">
+            {% for field in extraFieldSets %}
+            <div class="element">
+                <label class="" for="{{ field.label }}">{{ field.label }}</label>
+                <p>{{field.value}}</p>
+            </div>
+
+            {% endfor %}
+        </div>
+        <div class="subtotal">
+            <div class="g-row bring">
+                <div class="label">{{settings.translation.quantity}}</div>
+                <div class="value">{{qty}}</div>
+            </div>
+            <div class="g-row price">
+                <div class="label" data-price="{{total_price}}">{{settings.translation.total_price}}</div>
+                <div class="value" data-qty="{{qty}}" data-total="{{total_price}}">{{ total_price | format_money :
+                    window.moneyFormat }}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="template/html" id="tpb-booking-form">
+    <div class="tpb-box-wrapper">
+        <div class="tpb-box">
+            <div class="spinner">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <form class="tpb-form" novalidate>
+                <div class="content" data-step="1">
+                    <input type="hidden" class="timeSlots" value=""/>
+                    <input type="hidden" class="shopId" name="shopId" value="{{tpbShopId}}"/>
+                    <input type="hidden" class="duration" name="duration" value=""
+                           data-label="{{settings.translation.duration}}"/>
+                    <input type="hidden" class="datetime" name="datetime" value=""
+                           data-label="{{settings.translation.datetime}}"/>
+                    <textarea class="hidden extraFieldSets" style="display:none;"></textarea>
+                    <div class="step1">
+                        <div class="inner-step">
+                            <h5>{{settings.translation.please_select}}</h5>
+                            <div class="tpb-form-control product visible">
+                                <label for="product">{{settings.translation.product}}</label>
+                                {% if isProductPage %}
+                                <input type="hidden" id="tpb-productId-input" data-handle="{{currentProducts.handle}}"
+                                       name="productId" data-label="{{settings.translation.product}}"
+                                       value="{{currentProducts.id}}"/>
+                                <input type="text" id="tpb-productTitle-input" name="productTitle"
+                                       value="{{currentProducts.title}}" readonly/>
+                                {% else %}
+                                <select class="slim-select tpb-select-product"
+                                        placeholder="{{settings.translation.product_placeholder}}" name="productId"
+                                        data-label="{{settings.translation.product}}">
+                                    <option data-placeholder="true"></option>
+                                    {% for product in products %}
+                                    <option value="{{product.id}}" data-handle="{{product.handle}}">{{product.title}}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                                {% endif %}
+                            </div>
+                            <div class="tpb-form-control variant">
+                                <div class="tpb-form-control-option tpb-option-1">
+                                    <label for="option-1" class="tpb-label-option1"/>
+                                    <select class="slim-select tpb-select-option tpb-select-option-1"
+                                            placeholder="{{settings.translation.variant_placeholder}}" name="option1"
+                                            data-label="option1">
+                                        <option data-placeholder="true"/>
+                                    </select>
+                                </div>
+                                <div class="tpb-form-control-option tpb-option-2">
+                                    <label for="option-2" class="tpb-label-option2"/>
+                                    <select class="slim-select tpb-select-option tpb-select-option-2"
+                                            placeholder="{{settings.translation.variant_placeholder}}" name="option2"
+                                            data-label="option2">
+                                        <option data-placeholder="true"/>
+                                    </select>
+                                </div>
+                                <div class="tpb-form-control-option tpb-option-3">
+                                    <label for="option-3" class="tpb-label-option3"/>
+                                    <select class="slim-select tpb-select-option tpb-select-option-3  "
+                                            placeholder="{{settings.translation.variant_placeholder}}" name="option3"
+                                            data-label="option3">
+                                        <option data-placeholder="true"/>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="tpb-form-control location {% if settings.general.multipleLocations == '0' %}tbp-hidden{% endif %}">
+                                <label>{{settings.translation.location}}</label>
+                                <select class="slim-select tpb-select-location"
+                                        placeholder="{{settings.translation.location_placeholder}}" name="locationId"
+                                        data-label="{{settings.translation.location}}">
+                                    <option data-placeholder="true"></option>
+                                    {% for product in products %}
+                                    <option value="{{product.id}}">{{product.title}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="tpb-form-control employee {% if settings.general.multipleEmployees == '0' %}tbp-hidden{% endif %}">
+                                <label for="product">{{settings.translation.employee}}</label>
+                                <select class="slim-select tpb-select-employee"
+                                        placeholder="{{settings.translation.employee_placeholder}}" name="employeeId"
+                                        data-label="{{settings.translation.employee}}">
+                                    <option data-placeholder="true"></option>
+                                    {% for product in products %}
+                                    <option value="{{product.id}}">{{product.title}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            {% if settings.general.allow_bring_more == true %}
+                            <div class="tpb-form-control visible">
+                                <label class="inline" for="bring_qty">
+                                    <span>{{settings.translation.bringing_anyone}}</span>
+                                    <label class="switch">
+                                        <input type="checkbox" class="bringToggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </label>
+                            </div>
+                            <div class="tpb-form-control bringQty">
+                                <label for="product">{{settings.translation.num_of_additional}}</label>
+                                <input class="bringQty-input" type="number" id="bring_qty" name="bring_qty"
+                                       data-label="{{settings.translation.num_of_additional}}" value=0 min="1"/>
+                                <p id="tpb-message-bring_qty"></p>
+                            </div>
+                            {% endif %}
+                            <div class="tpb-form-control price" {% if tpbProduct.is_free == 0 %} style="display:none;" {% endif %}>
+                                <p>{{settings.translation.price}}: <span class="tpb-text-price"/></p>
+                            </div>
+                            <div class="tpb-form-control booking-note">
+                                <p></p>
+                            </div>
+                            <div class="action">
+                                <button disabled type="button" class="continue-button c1">
+                                    {{settings.translation.continue}}
+                                </button>
+                            </div>
+                            <div class="tpb-message_not-available">
+                                <div class="content">{{settings.translation.not_available}}</div>
+                                <div class="dismiss">
+                                    <svg viewBox="0 0 20 20" class="" focusable="false" aria-hidden="true">
+                                        <path
+                                            d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step2">
+                        <div class="inner-step">
+                            <input type="hidden" name="date" class="date" data-label="{{settings.translation.date}}"/>
+                            <div class="tpb-datepicker"></div>
+                            <div class="timezone-note" >
+                            	<div class="timezone-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe-americas" class="svg-inline--fa fa-globe-americas fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"></path></svg></div>
+                                <div class="timezone-text">{{tpbTimeZoneShop}}<span class="currentTime"></span></div>
+  							</div>
+                            <div class="tpb-timepicker">
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button type="button" class="back-button c2">{{settings.translation.back}}</button>
+                            <button disabled type="button" class="continue-button c2">
+                                {{settings.translation.continue}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="step3">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="copyright">
+            <a href="//apps.shopify.com/partners/tipo" rel="nofollow" attribute target="_blank">Made by <span
+                class="company">Tipo Appointment Booking</span></a>
+        </div>
+    </div>
+</script>
+<script type="template/html" id="tpb-confirm-form">
+    <div class="confirm">
+        <div class="product-info">
+            <div class="thumb"><img src="{{featured_image}}"/></div>
+            <div class="title">{{product_title}}</div>
+        </div>
+        <div class="booking-info">
+            {% if settings.general.multipleEmployees == '1' %}
+            <div class="employee">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g id="Group_141" data-name="Group 141" transform="translate(-236.8 -236.8)">
+                            <path id="Path_1029" data-name="Path 1029"
+                                  d="M236.8,243.8a7,7,0,1,0,7-7A7.009,7.009,0,0,0,236.8,243.8Zm2.926,4.795a19.261,19.261,0,0,1,2.182-1.275.457.457,0,0,0,.258-.413v-.879a.351.351,0,0,0-.049-.178,2.993,2.993,0,0,1-.364-1.074.348.348,0,0,0-.253-.284,1.907,1.907,0,0,1-.255-.626,1.58,1.58,0,0,1-.089-.583.352.352,0,0,0,.33-.468,2,2,0,0,1-.049-1.2,2.324,2.324,0,0,1,.626-1.091,3,3,0,0,1,.591-.488l.012-.009a2.207,2.207,0,0,1,.554-.284h0a1.763,1.763,0,0,1,.5-.092,2.063,2.063,0,0,1,1.263.267,1.508,1.508,0,0,1,.571.517.354.354,0,0,0,.287.189.534.534,0,0,1,.3.213c.167.221.4.795.115,2.182a.35.35,0,0,0,.187.385,1.426,1.426,0,0,1-.084.608,2.192,2.192,0,0,1-.227.583.37.37,0,0,0-.183.023.355.355,0,0,0-.21.261,3.233,3.233,0,0,1-.267.862.354.354,0,0,0-.034.152v1.016a.454.454,0,0,0,.258.414,19.3,19.3,0,0,1,2.182,1.275,6.274,6.274,0,0,1-8.151-.006ZM243.8,237.5a6.293,6.293,0,0,1,4.6,10.6,20.091,20.091,0,0,0-2.257-1.341v-.786a3.679,3.679,0,0,0,.23-.681c.281-.106.479-.433.666-1.091.169-.6.155-1.022-.046-1.263a3.241,3.241,0,0,0-.284-2.527,1.224,1.224,0,0,0-.615-.448,2.252,2.252,0,0,0-.752-.654,2.748,2.748,0,0,0-1.66-.359,2.472,2.472,0,0,0-.677.129h0a2.923,2.923,0,0,0-.721.367,3.931,3.931,0,0,0-.718.592,2.976,2.976,0,0,0-.8,1.407,2.68,2.68,0,0,0-.031,1.252.526.526,0,0,0-.106.1c-.207.25-.224.649-.052,1.261a1.96,1.96,0,0,0,.522,1.013,3.692,3.692,0,0,0,.371,1.051v.637a20.276,20.276,0,0,0-2.257,1.341,6.291,6.291,0,0,1,4.594-10.6Z"
+                                  fill="#6370a7"/>
+                        </g>
+                    </svg>
+                    {{settings.translation.employee}}
+                </label>
+                <div class="value">{{employee}}</div>
+            </div>
+            {% endif %}
+            <div class="date">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Union_1" data-name="Union 1"
+                              d="M-4292.616-1014H-4306v-14h14v14Zm0-.616v-9.108h-12.768v9.108Zm0-9.723v-3.047h-12.768v3.047Zm-3.466,7.86v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Zm-4.66.615v-2.252h2.252v2.252Zm.616-.615h1.021v-1.021h-1.021Zm-4.661.615v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Zm7.474-2.733v-2.252h2.252v2.252Zm.615-.615h1.02v-1.021h-1.02Zm-4.66.615v-2.252h2.252v2.252Zm.616-.615h1.02v-1.021h-1.02Zm-4.661.615v-2.252h2.253v2.252Zm.616-.615h1.02v-1.021h-1.02Z"
+                              transform="translate(4306 1028)" fill="#6370a7"/>
+                    </svg>
+                    {{settings.translation.datetime}}
+                </label>
+                <div class="value">{{datetime}}</div>
+            </div>
+            <div class="time">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <g id="Group_150" data-name="Group 150" transform="translate(-179.48 -179.48)">
+                            <g id="Group_147" data-name="Group 147">
+                                <g id="Group_146" data-name="Group 146">
+                                    <path id="Path_1033" data-name="Path 1033"
+                                          d="M186.48,179.48a7,7,0,1,0,7,7A7,7,0,0,0,186.48,179.48Zm.3,13.384v-1.231a.3.3,0,1,0-.6,0v1.231a6.4,6.4,0,0,1-6.084-6.084h1.231a.3.3,0,0,0,0-.6H180.1a6.4,6.4,0,0,1,6.084-6.084v1.231a.3.3,0,0,0,.6,0V180.1a6.4,6.4,0,0,1,6.084,6.084h-1.231a.3.3,0,1,0,0,.6h1.234A6.4,6.4,0,0,1,186.78,192.864Z"
+                                          fill="#6370a7"/>
+                                </g>
+                            </g>
+                            <g id="Group_149" data-name="Group 149">
+                                <g id="Group_148" data-name="Group 148">
+                                    <path id="Path_1034" data-name="Path 1034"
+                                          d="M189.648,189.273l-2.868-2.916v-3.03a.3.3,0,0,0-.6,0v3.153a.3.3,0,0,0,.087.21l2.952,3a.3.3,0,1,0,.429-.42Z"
+                                          fill="#6370a7"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    {{settings.translation.duration}}
+                </label>
+                <div class="value">{{duration}} {{settings.translation.duration_unit}}</div>
+            </div>
+            {% if settings.general.multipleLocations == '1' %}
+            <div class="location">
+                <label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
+                        <g id="Group_153" data-name="Group 153" transform="translate(-358.104 -220.4)">
+                            <g id="Group_143" data-name="Group 143">
+                                <path id="Path_1030" data-name="Path 1030"
+                                      d="M364.1,223.19a2.933,2.933,0,1,0,3.1,2.93A3.023,3.023,0,0,0,364.1,223.19Zm0,5.155a2.229,2.229,0,1,1,2.36-2.225A2.3,2.3,0,0,1,364.1,228.345Z"
+                                      fill="#6370a7"/>
+                                <path id="Path_1031" data-name="Path 1031"
+                                      d="M364.1,220.4c-.069,0-.142,0-.212,0a5.868,5.868,0,0,0-5.756,5.1,5.425,5.425,0,0,0,.079,1.612,1.617,1.617,0,0,0,.043.189,5.21,5.21,0,0,0,.4,1.112,15.808,15.808,0,0,0,4.9,5.8.9.9,0,0,0,1.1,0,15.828,15.828,0,0,0,4.9-5.786,5.338,5.338,0,0,0,.4-1.12c.018-.068.03-.126.04-.18a5.369,5.369,0,0,0,.109-1.074A5.851,5.851,0,0,0,364.1,220.4Zm5.157,6.608c0,.005-.009.054-.03.143a4.96,4.96,0,0,1-.358.994,15.113,15.113,0,0,1-4.69,5.528.125.125,0,0,1-.076.025.135.135,0,0,1-.076-.025,15.146,15.146,0,0,1-4.7-5.54,4.73,4.73,0,0,1-.355-.985c-.019-.075-.028-.12-.031-.135l0-.017a4.784,4.784,0,0,1-.07-1.423,5.277,5.277,0,0,1,10.482.484A4.844,4.844,0,0,1,369.256,227.008Z"
+                                      fill="#6370a7"/>
+                            </g>
+                        </g>
+                    </svg>
+                    {{settings.translation.location}}
+                </label>
+                <div class="value">{{location}}</div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="extra-fields">
+
+            {% if tpbService.is_free != 0 %}
+
+            {% if settings.free_form.first_name.enable %}
+              <div class="element">
+                  <label class="" for="first_name">{{ settings.free_form.first_name.label }} {% if settings.free_form.first_name.required == true %}<span
+                      class="required-mark">*</span>{% endif %}</label>
+
+                  <input id="first_name" type="text" class="{% if settings.free_form.first_name.required == true %}required{% endif %}" name="first_name" data-label="{{ settings.free_form.first_name.label }}" placeholder="{{ settings.free_form.first_name.placeholder }}" value="{{ customer.first_name }}" />
+                  <p class="error-message" style="display: none; color: red">{{settings.translation.is_required}}</p>
+              </div>
+            {% endif %}
+            {% if settings.free_form.last_name.enable %}
+              <div class="element">
+                  <label class="" for="last_name">{{ settings.free_form.last_name.label }} {% if settings.free_form.last_name.required == true %}<span
+                      class="required-mark">*</span>{% endif %}</label>
+
+                  <input id="last_name" type="text" class="{% if settings.free_form.last_name.required == true %}required{% endif %}" name="last_name" data-label="{{ settings.free_form.last_name.label }}" placeholder="{{ settings.free_form.last_name.placeholder }}"  value="{{ customer.last_name }}"/>
+                  <p class="error-message" style="display: none; color: red">{{settings.translation.is_required}}</p>
+              </div>
+            {% endif %}
+
+            <div class="element">
+                <label class="" for="email">{{ settings.free_form.email.label }} {% if settings.free_form.email.required == true %}<span
+                    class="required-mark">*</span>{% endif %}</label>
+
+                <input id="email" type="text" class="{% if settings.free_form.email.required == true %}required{% endif %}" name="email" data-label="{{ settings.free_form.email.label }}" placeholder="{{ settings.free_form.email.placeholder }}"  value="{{ customer.email }}"/>
+                <p class="error-message" style="display: none; color: red">{{settings.translation.is_required}}</p>
+            </div>
+
+            {% endif %}
+
+            {% for field in extraFieldSets %}
+            {% assign required = '' %}
+            {% if field.required==true %}
+            {% assign required = 'required' %}
+            {% endif %}
+            {% assign index = field | getIndex : extraFieldSets %}
+            <div class="element">
+                <label class="" for="{{ field.label }}">{{ field.label }} {% if field.required==true %}<span
+                    class="required-mark">*</span>{% endif %}</label>
+                {% if field.type == "singleLineText" %}
+                <input id="{{ field.label }}" type="text" class="{{ required }}" name="form[{{index}}]"
+                       data-label="{{ field.label }}"/>
+                {% endif %}
+                {% if field.type == "multipleLineText" %}
+                <textarea id="{{ field.label }}" class="{{ required }}" name="form[{{index}}]" rows="4"
+                          style="resize: vertical;" data-label="{{ field.label }}"></textarea>
+                {% endif %}
+                {% if field.type == "checkBox" %}
+                <div class="tpb-checkbox-group">
+                    {% for option in field.options %}
+                    {% assign indexOption = option | getIndex : field.options %}
+                    <div class="tpb-checkbox">
+                        <input type="checkbox" data-label="{{ field.label }}" id="form[{{index}}]_{{indexOption}}"
+                               name="form[{{index}}][]" class="inp-box {{ required }}" value="{{option}}"
+                               style="display:none">
+                        <label for="form[{{index}}]_{{indexOption}}" class="ctx">
+                                      <span>
+                                        <svg width="12px" height="10px">
+                                          <use xlink:href="#check">
+                                            <symbol id="check" viewBox="0 0 12 10">
+                                              <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                            </symbol>
+                                          </use>
+                                        </svg>
+                                      </span>
+                            <span>{{option}}</span>
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if field.type == "dropDown" %}
+                <select class="tpb-form-control-select {{ required }}" name="form[{{index}}]"
+                        data-label="{{ field.label }}" placeholder="Choose...">
+                    <option data-placeholder=true></option>
+                    {% for option in field.options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
+                {% if field.type == "multipleSelect" %}
+                <select class="tpb-form-control-select tpb-form-control-multiple-select {{ required }}" name="form[{{index}}]"
+                        data-label="{{ field.label }}" placeholder="Choose..." multiple>
+                    <option data-placeholder=true></option>
+                    {% for option in field.options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
+                {% if field.type == "radiobutton" %}
+                <div class="tpb-radio-group">
+                    {% for option in field.options %}
+                    <div class="tpb-radio-group_item">
+                        <input type="radio" value="{{ option }}" class="{{ required }}" id="form[{{index}}][{{option}}]"
+                               name="form[{{index}}]" data-label="{{ field.label }}"/>
+                        <label for="form[{{index}}][{{option}}]">{{option}}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <p class="error-message" style="display: none; color: red">{{settings.translation.is_required}}</p>
+            </div>
+
+            {% endfor %}
+        </div>
+        <div class="subtotal">
+            <div class="g-row bring">
+                <div class="label">{{settings.translation.quantity}}</div>
+                <div class="value">{{qty}}</div>
+            </div>
+            {% if tpbService.is_free == 0 %}
+            <div class="g-row price ">
+                <div class="label" data-price="{{product_price}}">{{settings.translation.total_price}}</div>
+                {% assign total = product_price | multipleWith : qty %}
+                <div class="value" data-qty="{{qty}}" data-total="{{total}}">{{ total | format_money : window.moneyFormat }}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="action fullwidth">
+            <button type="button" class="back-button">{{settings.translation.back}}</button>
+            <button type="submit" class="confirm-button">{{settings.translation.confirm}}</button>
+        </div>
+    </div>
+    <div class="success_message_when_free_booking">
+
+    </div>
+</script>
+
+{% endraw %}
