@@ -2,7 +2,7 @@
   "current": {
     "page_bg": "#ffffff",
     "type_body": "#211f1f",
-    "type_links": "#000000",
+    "type_links": "#9a8a8a",
     "typography_headings_new": "helvetica_n3",
     "typography_menus_new": "helvetica_n4",
     "typography_body_new": "helvetica_n3",
@@ -353,7 +353,7 @@
         ],
         "settings": {
           "footer_size": "sm",
-          "footer_bg": "#f0f0e5",
+          "footer_bg": "#f3f3f3",
           "footer_txt": "#000000",
           "show_locale_selector": false,
           "show_currency_selector": false
