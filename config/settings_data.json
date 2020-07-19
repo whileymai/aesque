@@ -364,9 +364,9 @@
         "settings": {
           "collection_filtering_enabled": false,
           "collection_filtering_type": "by-groups",
-          "collection_per": 23,
+          "collection_per": 47,
           "enable_collection_gallery": true,
-          "collection_navigation": true
+          "collection_navigation": false
         }
       },
       "product": {
