@@ -134,7 +134,7 @@
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
-          "show_product_recommendations": true,
+          "show_product_recommendations": false,
           "product_recommendations_heading": "Trending Now"
         }
       },
@@ -323,7 +323,7 @@
           "1489759167550": {
             "type": "menu",
             "settings": {
-              "title": "SERVICE DIRECTROY",
+              "title": "SERVICE DIRECTORY",
               "footer_menu_select": "footer",
               "caption": ""
             }
