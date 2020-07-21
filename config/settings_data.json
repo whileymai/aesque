@@ -11,7 +11,7 @@
     "product_show_secondary": true,
     "thumb_resize": "fill",
     "show_reviews_badge": false,
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/A.png",
     "cart_action": "overlay",
     "cart_additional_buttons": false,
     "cart_notes_enable": true,
