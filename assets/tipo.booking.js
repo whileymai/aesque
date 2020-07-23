@@ -247,84 +247,71 @@ var tpBooking = function ($) {
     modules.appendBookingFormOnProductPage = function (form) {
         var bookingFormTemplate = $('#tpb-booking-form').length ? $('#tpb-booking-form').html() : "";
         tpbVariantId = getSelectedVariant(form) ? getSelectedVariant(form) : getFirstAvailableVariant(tpbProduct);
-        console.log(tpbProduct)
-        $.ajax({
-            url: tpbAppUrl + '/booking_api/services?shop=' + tpbUrlShop,
-            type: 'GET',
-            success: function success(data) {
-                if (data.success) {
-                    var products = data.products.map(function (product) {
-                        product.title = product.title.replace(/"/g, "&quot;");
-                        return product;
-                    });
-                    tpbProductsApi = data.productsApi;
-                    tpbProducts = products;
-                    tpbTimeZoneServer = data.timeZoneServer;
-                    tpbTimeZoneShop = data.timeZoneShop;
-                    tpbProductsApi.map(function (product) {
-                        if (product.id == tpbProduct.id) {
-                            tpbInventoryPolicy = product.variants[0].inventory_policy;
-                            tpbInventoryQuantity = product.variants[0].inventory_quantity;
-                            tpbInventoryManagement = product.variants[0].inventory_management;
-                        }
-                    });
-                    var is_enable = false;
-                    var isProductPage = true;
-                    var currentProducts;
 
-                    if (products.length) {
-                        for (var i = 0; i < products.length; i++) {
-                            if (products[i].id == tpbProduct.id) {
-                                is_enable = true;
-                                currentProducts = products[i];
-                            }
-                        }
+        var products = tpbConfigs.products.map(function (product) {
+            product.title = product.title.replace(/"/g, "&quot;");
+            return product;
+        });
+        tpbProductsApi = tpbProduct;
+        tpbProducts = products;
+        tpbTimeZoneServer = tpbTimeZoneServer;
+        tpbTimeZoneShop = tpbTimeZoneShop;
 
-                        if (is_enable) {
-                            tpbProduct = tpbConfigs.products.find(x => x.id == tpbProduct.id);
-                            tpb_engine.parseAndRender(bookingFormTemplate, {
-                                products: products,
-                                currentProducts: currentProducts,
-                                tpbShopId: tpbShopId,
-                                settings: tpbSettings,
-                                isProductPage: isProductPage,
-                                tpbProduct : tpbProduct,
-                                tpbTimeZoneShop : tpbTimeZoneShop
-                            }).then(function (bookingFormHTML) {
-                                $(form).after($('<div class="tpb-booking-form product"></div>').html(bookingFormHTML));
-                                bindEvent(true, '.tpb-booking-form.product');
+      	tpbInventoryPolicy = tpbProductsApi.variants[0].inventory_policy;
+        tpbInventoryQuantity = tpbProductsApi.variants[0].inventory_quantity;
+        tpbInventoryManagement = tpbProductsApi.variants[0].inventory_management;
 
-                                if (tpbShopPlan == 'FREE' || tpbShopPlan == 'BASIC') {
-                                    $('.tpb-booking-form .copyright').show();
-                                }
-                            });
-                        }
-
-                        if (tpbSettings.general.hide_add_to_cart == 2 && is_enable) {
-                            $.each($('form[action*="cart"]').find('button[type="submit"],.tpb-atc-wrapper,input[type="submit"]'), function () {
-                                $(this).parent().css('display', 'none');
-                            });
-                        }
-
-                        if (tpbSettings.general.hide_add_to_cart == 1) {
-                            $.each($('form[action*="cart"]').find('button[type="submit"],.tpb-atc-wrapper,input[type="submit"]'), function () {
-                                $(this).parent().css('display', 'none');
-                            });
-                        }
-
-                        if ($('.shopify-payment-button').length) {
-                            if (tpbSettings.general.hide_buy_now == 2 && is_enable) {
-                                $('.shopify-payment-button').hide();
-                            }
-
-                            if (tpbSettings.general.hide_buy_now == 1) {
-                                $('.shopify-payment-button').hide();
-                            }
-                        }
-                    }
+        var is_enable = false;
+        var isProductPage = true;
+        var currentProducts;
+        if (products.length) {
+            for (var i = 0; i < products.length; i++) {
+                if (products[i].id == tpbProduct.id) {
+                    is_enable = true;
+                    currentProducts = products[i];
                 }
             }
-        });
+            if (is_enable) {
+                tpb_engine.parseAndRender(bookingFormTemplate, {
+                    products: products,
+                    currentProducts: currentProducts,
+                    tpbShopId: tpbShopId,
+                    settings: tpbSettings,
+                    isProductPage: isProductPage,
+                    tpbProduct : tpbConfigs.products.find(x => x.id == tpbProduct.id),
+                    tpbTimeZoneShop : tpbTimeZoneShop
+                }).then(function (bookingFormHTML) {
+                    $(form).after($('<div class="tpb-booking-form product"></div>').html(bookingFormHTML));
+                    bindEvent(true, '.tpb-booking-form.product');
+                    if (tpbShopPlan == 'FREE' || tpbShopPlan == 'BASIC') {
+                        $('.tpb-booking-form .copyright').show();
+                    }
+                });
+            }
+
+            if (tpbSettings.general.hide_add_to_cart == 2 && is_enable) {
+                $.each($('form[action*="cart"]').find('button[type="submit"],.tpb-atc-wrapper,input[type="submit"]'), function () {
+                    $(this).parent().css('display', 'none');
+                });
+            }
+
+            if (tpbSettings.general.hide_add_to_cart == 1) {
+                $.each($('form[action*="cart"]').find('button[type="submit"],.tpb-atc-wrapper,input[type="submit"]'), function () {
+                    $(this).parent().css('display', 'none');
+                });
+            }
+
+            if ($('.shopify-payment-button').length) {
+                if (tpbSettings.general.hide_buy_now == 2 && is_enable) {
+                    $('.shopify-payment-button').hide();
+                }
+
+                if (tpbSettings.general.hide_buy_now == 1) {
+                    $('.shopify-payment-button').hide();
+                }
+            }
+        }
+
     };
 
     var bindEvent = function bindEvent(isProductPage, self) {
@@ -391,7 +378,7 @@ var tpBooking = function ($) {
                 var classInput = '';
                 var classDiv = 'radiobtn';
 
-                
+
                 var isCurrentDay = tpbMoment(date).isSame((new Date((tpbMoment.tz(new Date(),tpbTimeZoneShop).format("YYYY-MM-DD HH:mm:ss")))).setHours(0,0,0,0))
                 var isPast = false
                 if(isCurrentDay){
@@ -407,7 +394,7 @@ var tpBooking = function ($) {
                     classInput = 'ip-radio-disabled';
                     classDiv += ' disabled';
                 }
-                
+
 
                 html += "<div class=\"" + classDiv + "\">\n                      <input class=\"" + classInput + "\" type=\"radio\" id=\"" + timeFrom + "\" name=\"time\" value=\"" + timeFrom + "\" data-label=\"Time\" />\n                      <label class=\"" + classLabel + "\" for=\"" + timeFrom + "\">" + timeFrom + " - " + timeTo + "</label>\n <div class=\"tooltip\">\n " + tpbSettings.translation.time_slot_no_available + "</div>\n                 </div>";
             }
@@ -434,23 +421,18 @@ var tpBooking = function ($) {
         });
 
         if (isProductPage) {
-            var rqLocations = $.getJSON(tpbAppUrl + '/booking_api/locations?productId=' + $('#tpb-productId-input').val());
-            var rqProducts = $.getJSON('/products/' + $('#tpb-productId-input').data('handle') + '.js');
-            $.when(rqLocations, rqProducts).done(function (responseLocations, responseProducts) {
-                // Location Select
-                responseLocations = responseLocations[0];
-                responseProducts = responseProducts[0];
+            // Location Select
+                tpbProduct_ = tpbConfigs.products.find(x => x.id == $('#tpb-productId-input').val());
+                var responseLocations = tpbConfigs.locations.filter(x => tpbProduct_.location_ids.includes(x.id));
+                var responseProducts = tpbProduct;
                 modules.product = responseProducts;
                 modules.variant = responseProducts.variants[0];
-                tpbProduct = tpbConfigs.products.find(x => x.id == modules.product.id);
                 tpbVariantId = modules.variant.id
-                tpbProductsApi.map(function (product) {
-                    if (product.id == modules.product.id) {
-                        tpbInventoryPolicy = product.variants[0].inventory_policy;
-                        tpbInventoryQuantity = product.variants[0].inventory_quantity;
-                        tpbInventoryManagement = product.variants[0].inventory_management;
-                    }
-                });
+
+                tpbInventoryPolicy = tpbProduct.variants[0].inventory_policy;
+                tpbInventoryQuantity = tpbProduct.variants[0].inventory_quantity;
+                tpbInventoryManagement = tpbProduct.variants[0].inventory_management;
+
                 var locations = [{
                     'placeholder': true,
                     'text': $(self).find('select.tpb-select-location').attr('placeholder')
@@ -523,8 +505,7 @@ var tpBooking = function ($) {
                     }
                 } // Variant select
 
-
-                var options = responseProducts.options;
+                var options = tpbProduct.options;
                 if(options.length > 0) {
                     $(self).find('label.tpb-label-option1').html(options[0].name);
                     $(self).find('div.tpb-option-1').show();
@@ -581,14 +562,13 @@ var tpBooking = function ($) {
                 }
                 tpbAvailable = responseProducts.variants[0].available;
                 tpbPriceProduct = responseProducts.variants[0].price;
-                if (tpbPriceProduct !== null && tpbProduct.is_free == 0) {
+                if (tpbPriceProduct !== null && tpbProduct_.is_free == 0) {
                     $(self).find('.tpb-form-control.price').show();
                     $(self).find('.tpb-text-price').html(Shopify.formatMoney(tpbPriceProduct, window.moneyFormat));
                 }else{
                     $(self).find('.tpb-form-control.price').hide();
                 }
                 modules.checkDisabled(this);
-            });
         } else {
             var messageBringQty = tpbSettings.translation.you_can_only_bring.replace('{number}', tpbCapacity);
             $('#tpb-message-bring_qty').html(messageBringQty);
@@ -613,23 +593,21 @@ var tpBooking = function ($) {
                 $('.tpb-timepicker').css('display', 'none');
                 $('input[name="time"]').attr('checked', false);
             }
-            var rqLocations = $.getJSON(tpbAppUrl + '/booking_api/locations?productId=' + $(this).val());
-            var rqProducts = $.getJSON('/products/' + $(this).find(':selected').data('handle') + '.js');
-          	var rqProductApi = $.getJSON(tpbAppUrl + '/booking_api/productApi/'+tpbShopId+'/' + $(this).val());
-            var selectProduct = this;
+          	var selectProduct = this;
+          	var rqProducts = $.getJSON('/products/' + $(this).find(':selected').data('handle') + '.js');
+            var rqProductApi = $.getJSON(tpbAppUrl + '/booking_api/productApi/'+tpbShopId+'/' + $(this).val());
             $.when(rqProducts,rqProductApi).done(function (responseProducts,responseProductApi) {
-                tpbProduct = tpbConfigs.products.find(x => x.id == $(selectProduct).val())
-                console.log(tpbProduct)
+                tpbProduct_ = tpbConfigs.products.find(x => x.id == $(selectProduct).val())
                 tpbProductApi = responseProductApi[0].productApi;
+                tpbProduct = tpbProductApi
                 // Location Select
                 var tpbProductFront = responseProducts[0];
-
                 var responseLocations = tpbConfigs.locations.filter( location => {
-                    return tpbProduct.location_ids.indexOf(location.id) !== -1
+                    return tpbProduct_.location_ids.indexOf(location.id) !== -1
                 });
 
                 // Append note
-                $(self).find('.booking-note').html(tpbProduct.note).show()
+                $(self).find('.booking-note').html(tpbProduct_.note).show()
 
                 modules.product = tpbProductFront;
                 modules.variant = tpbProductFront.variants[0];
@@ -695,7 +673,7 @@ var tpBooking = function ($) {
                 }
                 var messageBringQty = tpbSettings.translation.you_can_only_bring.replace('{number}', tpbCapacity);
                 $('#tpb-message-bring_qty').html(messageBringQty);
-              	$("#bring_qty").attr('max',tpbCapacity)
+                $("#bring_qty").attr('max',tpbCapacity)
 
                 if (tpbCapacity == 0) {
                     $('.tpb-box').find('.bringToggle').closest('.visible').css('display', 'none');
@@ -720,7 +698,7 @@ var tpBooking = function ($) {
                     if(options[0].values.length == 1 && options[0].values[0] == 'Default Title'){
 
                     }else{
-                    	$(self).find('div.tpb-option-1').show()
+                        $(self).find('div.tpb-option-1').show()
                     }
                     var option1 = [];
                     for (var i = 0; i < options[0].values.length; i++) {
@@ -776,14 +754,16 @@ var tpBooking = function ($) {
                 tpbVariantId = tpbProductFront.variants[0].id
                 tpbAvailable = tpbProductFront.variants[0].available
                 tpbPriceProduct = tpbProductFront.variants[0].price
-                if (tpbPriceProduct !== null && tpbProduct.is_free == 0) {
+                if (tpbPriceProduct !== null && tpbProduct_.is_free == 0) {
                     $(self).find('.tpb-form-control.price').show();
                     $(self).find('.tpb-text-price').html(Shopify.formatMoney(tpbPriceProduct, window.moneyFormat));
                 }else{
                     $(self).find('.tpb-form-control.price').hide();
                 }
                 modules.checkDisabled(selectProduct);
-            });
+            })
+
+
         });
 
 
@@ -805,17 +785,16 @@ var tpBooking = function ($) {
                     index = index_v;
                 }
             });
-            if (tpbPriceProduct !== null && tpbProduct.is_free == 0 ) {
+            if (tpbPriceProduct !== null && tpbProduct_.is_free == 0 ) {
                 $(self).closest('.inner-step').find('.tpb-form-control.price').show();
                 $(self).closest('.inner-step').find('.tpb-text-price').html(Shopify.formatMoney(tpbPriceProduct, window.moneyFormat));
             }else{
                 $(self).find('.tpb-form-control.price').hide();
             }
-
             if( typeof tpbProductApi !== 'undefined'){
             	tpbInventoryPolicy = tpbProductApi.variants[index].inventory_policy;
                 tpbInventoryQuantity = tpbProductApi.variants[index].inventory_quantity;
-                tpbInventoryManagement = tpbProductApi.variants[index].inventory_management; 
+                tpbInventoryManagement = tpbProductApi.variants[index].inventory_management;
             }
 
             tpbAvailable = modules.product.variants[index].available;
@@ -1479,47 +1458,46 @@ var tpBooking = function ($) {
     };
 
     modules.getSelectEmployee = function (self, locatonId) {
-        $('select.tpb-select-employee').val(tpbSettings.translation.employee_placeholder);
-        $.getJSON(tpbAppUrl + '/booking_api/employees?locationId=' + locatonId + '&productId=' + modules.product.id, function (response) {
-            var employees = [{
-                'placeholder': true,
-                'text': response.length > 0 ? $(self).find('select.tpb-select-employee').attr('placeholder') : tpbSettings.translation.no_employee
-            }];
+      var location = tpbConfigs.locations.find(x => x.id == locatonId)
+      var response = tpbConfigs.employees.filter(x => location.employee_ids.includes(x.id))
+      var employees = [{
+          'placeholder': true,
+          'text': response.length > 0 ? $(self).find('select.tpb-select-employee').attr('placeholder') : tpbSettings.translation.no_employee
+      }];
 
-            for (var i = 0; i < response.length; i++) {
-                employees.push({
-                    text: response[i].first_name + ' ' + response[i].last_name.replace(/"/g, "&quot;"),
-                    id: response[i].id,
-                    value: response[i].id
-                });
-            }
+      for (var i = 0; i < response.length; i++) {
+          employees.push({
+              text: response[i].first_name + ' ' + response[i].last_name.replace(/"/g, "&quot;"),
+              id: response[i].id,
+              value: response[i].id
+          });
+      }
 
-            new SlimSelect({
-                select: $(self).find('select.tpb-select-employee').length ? $(self).find('select.tpb-select-employee')[0] : null,
-                data: employees
-            });
-            $(self).find('div.tpb-select-employee')[0].style.display = '';
+      new SlimSelect({
+          select: $(self).find('select.tpb-select-employee').length ? $(self).find('select.tpb-select-employee')[0] : null,
+          data: employees
+      });
+      $(self).find('div.tpb-select-employee')[0].style.display = '';
 
-            if (employees.length == 2) {
-                $(self).find('select.tpb-select-employee').find('option[value=' + employees[1].id + ']').prop('selected', true);
-                $('select.tpb-select-employee').closest('.tpb-form-control').css('display', 'none');
-                if (tpbStep == 2) {
-                    $(self).closest('.tpb-booking-form').find('.spinner').addClass('loading');
-                    getSlots($(self).closest('.tpb-booking-form'), function () {
-                        $(self).closest('.tpb-booking-form').find('.spinner').removeClass('loading');
-                        $('.tpb-booking-form').find('.step2').removeClass('tpb-disabled');
-                    });
-                }
-            } else {
-                $('select.tpb-select-employee').closest('.tpb-form-control').css('display', 'block');
-                $(self).find('div.tpb-select-employee').show();
-                if (tpbStep == 2) {
-                    $('.tpb-booking-form').find('.step2').addClass('tpb-disabled');
-                }
-            }
+      if (employees.length == 2) {
+          $(self).find('select.tpb-select-employee').find('option[value=' + employees[1].id + ']').prop('selected', true);
+          $('select.tpb-select-employee').closest('.tpb-form-control').css('display', 'none');
+          if (tpbStep == 2) {
+              $(self).closest('.tpb-booking-form').find('.spinner').addClass('loading');
+              getSlots($(self).closest('.tpb-booking-form'), function () {
+                  $(self).closest('.tpb-booking-form').find('.spinner').removeClass('loading');
+                  $('.tpb-booking-form').find('.step2').removeClass('tpb-disabled');
+              });
+          }
+      } else {
+          $('select.tpb-select-employee').closest('.tpb-form-control').css('display', 'block');
+          $(self).find('div.tpb-select-employee').show();
+          if (tpbStep == 2) {
+              $('.tpb-booking-form').find('.step2').addClass('tpb-disabled');
+          }
+      }
 
-            modules.checkDisabled($(self).find('.tpb-select-employee'));
-        });
+      modules.checkDisabled($(self).find('.tpb-select-employee'));
     };
 
     modules.convertDataPageCart = function () {
@@ -1573,12 +1551,12 @@ $(document).ready(function () {
     setInterval(function(){
         if($('.timezone-note .currentTime').length){
             var time = tpbMoment.tz(new Date(),tpbTimeZoneShop).format('LTS')
-            
+
             var hours = Number(time.match(/^(\d+)/)[1]);
             var minutes = Number(time.match(/:(\d+)/)[1]);
-            
+
             var AMPM = time.match(/\s(.*)$/)[1];
-            
+
             var sTime = ''
             if(tpbSettings.general.time_format == '24h'){
                 if(AMPM == "PM" && hours<12) hours = hours+12;
