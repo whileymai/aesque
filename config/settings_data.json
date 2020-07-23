@@ -171,7 +171,7 @@
             "type": "slide",
             "settings": {
               "title": "THE LUNCH BAG",
-              "caption": "We pay homeage to the heritage of craftsmanship",
+              "caption": "We pay homage to the heritage of craftsmanship",
               "subtitle": "Practising controlled production, and  feeling over fashion",
               "label": "ORDER HERE",
               "link": "shopify:\/\/collections\/lunch-bag",
@@ -615,12 +615,6 @@
               "collection": "cross-body"
             }
           },
-          "1594784675185": {
-            "type": "collection",
-            "settings": {
-              "collection": "carry-bag"
-            }
-          },
           "1594784686658": {
             "type": "collection",
             "settings": {
@@ -637,6 +631,12 @@
             "type": "collection",
             "settings": {
               "collection": "lunch-bag"
+            }
+          },
+          "1594784675185": {
+            "type": "collection",
+            "settings": {
+              "collection": "carry-bag"
             }
           },
           "1594784814418": {

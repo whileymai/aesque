@@ -1,0 +1,6 @@
+{% capture url %}
+            https://widget.coattend.com/calendar?template=true{% if customer %}&customer_id={{customer.id}}{% endif %}&shop={{shop.permanent_domain}}
+            {% endcapture %}
+            <div id="coattend-iframe-cnt" style="padding: 20px 10px">
+                <iframe id="coattend-iframe" width="100%" height="600px" src="{{url | strip}}" frameborder="0" allowfullscreen></iframe>
+            </div>

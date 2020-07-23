@@ -1,0 +1,54 @@
+{% comment %} Added by SolverCircle for Timify App {% endcomment %}
+
+<script type="text/javascript">
+  	var tmy_page = '{{ template }}';
+    var tmy_product_page_button_position = "after"; //after or before
+  	var tmy_product_page_button_position_selector = ""; // set css class or id
+  	var tmy_add_to_cart_button_selector = '';
+  	var tmy_variant_selector = "";
+  	
+    //config variable
+  	var tmy_hide_add_to_cart_button = true;
+  	var tmy_variant_timeout_value = "1000"; // 1 sec = 1000
+  	var tmy_out_of_stock_msg = "This combination variant out of stock try with diffrent combination.";
+</script>
+
+
+{% if template == 'product' %}
+  	{% if product.metafields.SCTMYSettings.tmy_is_enabled %}	
+		<input type="hidden" id="tmy_apointment_status" value="{{product.id}}" />
+  	{% endif %}
+	
+	{% if shop.metafields.SCTMYSettings.TMY_App_Settings_Data %}
+		<div id="sc_tmy_settings" style="display:none;">{{shop.metafields.SCTMYSettings.TMY_App_Settings_Data}}</div>
+	{% endif %}
+
+	<script type="text/javascript">
+      tmy_product_object= 
+        { 
+          "id":{{ product.id | json }},
+          "published_at":"{{ product.published_at | date: "%F"}}",
+          "price":{{ product.price | json }}, {% if product.compare_at_price%}
+          "compare_at_price":{{ product.compare_at_price | json }}, {% endif %}
+          "handle":{{ product.handle | json }},
+          "variants": 
+          [ 
+            {% for variant in product.variants %} 
+              {
+                "id": {{ variant.id }},
+                "price": {{ variant.price }} {% if variant.compare_at_price%},
+                "compare_at_price": {{ variant.compare_at_price }} {% endif %} {% if variant.inventory_quantity%},
+                "inventory_quantity": {{ variant.inventory_quantity }} {% endif %} {% if variant.inventory_management and variant.inventory_management != blank%},
+                "inventory_management": "{{ variant.inventory_management }}" {% endif %} {% if variant.sku and variant.sku != blank%},
+                "sku": "{{ variant.sku }}" {% endif %} 
+              }
+              {% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ],
+          collections: [ {% for collection in product.collections %} {{ collection.id }}{% unless forloop.last %},{% endunless %} {% endfor %} ] 
+        }
+   </script>
+
+{% endif %}
+
+<script src="{{ 'tmy_scloader.js' | asset_url }}" defer="defer"></script>
