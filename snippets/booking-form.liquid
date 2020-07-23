@@ -1,0 +1,92 @@
+{% comment %}
+BookThatApp 'Form 3 - Date and Time'
+{% endcomment %}
+
+{% if product.metafields.bookthatapp.config %}
+
+{% assign product_in_cart = false %}
+{% for item in cart.items %}
+  {% if item.product.handle == product.handle %}
+    {% assign product_in_cart = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="booking-form" data-product-id={{ product.id }}>
+{% if product_in_cart %}
+    <p id="booking-guard-{{ product.handle }}"><a href="/cart">View Booking</a>.</p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        $('#booking-guard-{{ product.handle }}').closest('form[action^="/cart/add"]').find('input:submit, button:submit, .hide-if-in-cart').hide();
+      });
+    </script>
+{% else %}
+  {% comment %}
+  <div class="bta-resource-picker"></div>
+  {% endcomment %}
+
+  <div>
+    {% capture attribute %}booking-start{% endcapture %}
+    <label for="{{ attribute }}-{{ product.handle }}">Date:</label>
+    <input id="{{ attribute }}-{{ product.handle }}" type="text" name="properties[Date]"
+           class="datepicker bta required bta-load-enable bta-dp-start" disabled="disabled"
+           data-handle="{{ product.handle }}" data-variant="{{ product.selected_or_first_available_variant.id }}"
+           data-bta-product-config="{{ product.metafields.bookthatapp.config }}"
+           data-time="" data-bta-time-bound="false"
+           placeholder="Select date..." />
+  </div>
+
+  <div>
+    {% capture attribute %}booking-time{% endcapture %}
+    <label for="{{ attribute }}-{{ product.handle }}">Time:</label>
+    <select id="{{ attribute }}-{{ product.handle }}" name="properties[Time]"
+            class="bta-opening-hours bta-load-enable" disabled="disabled"
+            data-datepicker="booking-start-{{ product.handle }}"
+            data-prompt="Select time..." data-bta-display-range="true" >
+      <option class="loading">Loading...</option>
+    </select>
+    <span class="bta-no-slots-available" style="display: none;">No times available</span>
+  </div>
+
+  <div class="bta-booking-fields"></div>
+
+  <div class="bta-validation-messages" style="display:none">
+    <p class="bta-validation-date-missing">Please select a date</p>
+  </div>
+{% endif %}
+</div>
+
+<script>
+  window.addEventListener("pageshow", function(evt){
+    var sessionKey = "Product-{{ product.handle }}-added";
+    if (evt.persisted || (performance.navigation.type == 2) || sessionStorage.getItem(sessionKey)) {
+      // reload the product page if user click the back button
+      sessionStorage.removeItem(sessionKey);
+      window.location.reload();
+    };
+  }, false);
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    {% unless bta_configured %}
+    var forms = document.forms;
+    for (var x = 0; x < forms.length; x++) {
+      if (forms[x].action.indexOf('/cart/add') > -1) {
+        forms[x].addEventListener("submit", function (event) {
+          // prevent form submit until bta has finished loading
+          if (!this.classList.contains("bta-active")) {
+            event.preventDefault();
+          }
+        }, true);
+      }
+    }
+
+    var bta = {
+      productId: {{ product.id }}
+    }
+
+    {% assign bta_configured = true %}
+    {% endunless %}
+  });
+</script>
+{% endif %}

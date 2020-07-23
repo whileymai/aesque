@@ -1,0 +1,47 @@
+{% comment %}
+BookThatApp Widget Loader
+== Version: 1.1 ==
+{% endcomment %}
+
+<script src="/apps/bookthatapp/sdk/v1/js/bta-in-shopify.min.js" defer></script>
+
+<script>
+    var productConfig = {};
+    var productMetafields = '{{ product.metafields.bookthatapp.config }}';
+    if (productMetafields != '') {
+      productConfig = JSON.parse('{"' + decodeURI(productMetafields).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+    }
+    if (productConfig.widget_id) {
+      // hide classic booking form if widget id present in product metafields
+      document.querySelectorAll('.booking-form').forEach(function(form) {
+        form.style.display = 'none';
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof BookThatApp === 'undefined') {
+        return; // uninstalled
+      }
+
+      window.BtaConfig = JSON.parse('{{ shop.metafields.bookthatapp.config }}' || '{}')
+      window.BtaSdk = BookThatApp.init('{{ shop.metafields.bookthatapp.api_token }}')
+
+      var productConfig = {};
+      var productMetafields = '{{ product.metafields.bookthatapp.config }}';
+      if (productMetafields != '') {
+        productConfig = JSON.parse('{"' + decodeURI(productMetafields).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+      }
+
+      BtaWidgetLoader.render({
+        account: '{{ shop.permanent_domain | split: '.' | first }}',
+        appInstalled: true,
+        externalId: '{{ product.id }}',
+        widgetId: productConfig.widget_id,
+        cart: {{ cart | json }},
+        shopConfig: BtaConfig,
+        onSubmit: function(reservation) {
+          BtaConvertReservationToCart.addToCart(reservation, BtaConfig)
+        }
+      });
+    })
+</script>
