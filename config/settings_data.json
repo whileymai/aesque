@@ -520,7 +520,7 @@
       "banner_collection": {
         "type": "banner_collection",
         "settings": {
-          "banner_enable": true,
+          "banner_enable": false,
           "collection": "",
           "content": "<p>Please select carefully as our pieces are made to last. Call +61 497 389 157, email service@a-esque.com or DM @aesqueofficial for assistance<\/p>\n<p><\/p>\n<p>Hand Made in Melbourne, Since 2012<\/p>",
           "bg_color": "#9a8a8a",
