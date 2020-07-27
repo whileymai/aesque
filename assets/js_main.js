@@ -1149,7 +1149,8 @@ window.blockStickyHeader = false;
 								varDOM = '<ul class="color-' + color + '" data-option="option' + (j+1) + '">';
 
 						$(this).find('.product-variants option').each(function(){
-							varDOM += '<li' + ( $(this).is(':selected') ? ' class="active"' : '' ) + ' tabindex="0" data-text="' +encodeURIComponent($(this).val()) + '"><span' + ( color ? ' style="background-color: ' + $(this).val().split(' ').pop() + '"' : '' ) + '>' + $(this).val() + '</span></li>'; 
+							var variant_handle = $(this).val().toLowerCase().replace(/ /g,'_');
+varDOM += '<li' + ( $(this).is(':selected') ? ' class="active"' : '' ) + ' tabindex="0" data-text="' + $(this).val() + '"><span' + ( color ? ' style="background-image:url( ' + window.shopifyThemeAssetsFolder.replace('blank', variant_handle) + ')"' : '' ) + '>' + $(this).val() + '</span></li>';
 						});
 
 						varDOM += '</ul>';

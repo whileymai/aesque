@@ -13,7 +13,7 @@
     "show_reviews_badge": false,
     "favicon": "shopify:\/\/shop_images\/A.png",
     "cart_action": "overlay",
-    "cart_additional_buttons": false,
+    "cart_additional_buttons": true,
     "cart_notes_enable": true,
     "show_preloader": true,
     "predictive_search_enabled": true,
