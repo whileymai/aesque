@@ -10126,4 +10126,22 @@ a.box__banner {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}ul.color-true li:before {
+    content: attr(data-text);
+    position: absolute;
+    font-size: 20px;
+    color: black !important;
+    text-indent: 0;
+    left: 0;
+    z-index: 999;
+    width: 300px;
+    top: 32px;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+ul.color-true li:hover:before {
+    opacity: 1;
 }
