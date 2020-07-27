@@ -283,10 +283,9 @@
       },
       "1488465027601": {
         "type": "home_blog-posts",
-        "disabled": true,
         "settings": {
-          "title": "A-EYE",
-          "btn_label": "Investigate",
+          "title": "Insights in words and pictures",
+          "btn_label": "Investigate A-EYE",
           "meta_enable": true,
           "home_blog_select": "her-take",
           "home_blog_no": 4
@@ -397,8 +396,8 @@
           "1490617155008": {
             "type": "text",
             "settings": {
-              "title": "SIGNATURE RE-RELEASE",
-              "content": "<p><strong>Signature Patterns, defined by function, simplicity and a subtle aesthetic<\/strong><\/p>\n<p><\/p>"
+              "title": "MADE TO ORDER",
+              "content": "<p>Your Grocer of choice<\/p>\n<p><\/p>"
             }
           }
         },
@@ -408,7 +407,7 @@
         "settings": {
           "title": "GROCER BAG ORIGINAL",
           "btn_label": "DISCOVER",
-          "btn_url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
+          "btn_url": "shopify:\/\/collections\/grocer-bag",
           "bg_img": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
           "bg_style": "light"
         }
@@ -443,11 +442,11 @@
           "1595879001821": {
             "type": "image",
             "settings": {
-              "title": "A MELLOW MOMENT",
-              "caption": "BAG BAG MELLOW",
+              "title": "THE SOCIALITE",
+              "caption": "WILL GO ANYWHERE",
               "link": "shopify:\/\/products\/bar-bag-mellow-elephant-clutch",
               "button": "SHOP",
-              "bg_img": "shopify:\/\/shop_images\/IMG_4701.jpg",
+              "bg_img": "shopify:\/\/shop_images\/Photo_14-7-20_3_33_20_pm.jpg",
               "bg_alignment": "50% 50%",
               "bg_style": "dark"
             }
