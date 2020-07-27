@@ -393,13 +393,12 @@
       },
       "1490617026526": {
         "type": "home_rich-text",
-        "disabled": true,
         "blocks": {
           "1490617155008": {
             "type": "text",
             "settings": {
-              "title": "July Re-Release",
-              "content": "<p><strong>View for July the re-release of Signature Patterns, defined by function, simplicity and a subtle aesthetic<\/strong><\/p>\n<p><\/p>"
+              "title": "SIGNATURE RE-RELEASE",
+              "content": "<p><strong>Signature Patterns, defined by function, simplicity and a subtle aesthetic<\/strong><\/p>\n<p><\/p>"
             }
           }
         },
@@ -407,25 +406,24 @@
           "1490617155008"
         ],
         "settings": {
-          "title": "NEW WORK",
+          "title": "GROCER BAG ORIGINAL",
           "btn_label": "DISCOVER",
-          "btn_url": "shopify:\/\/collections\/new",
+          "btn_url": "shopify:\/\/products\/mono-grocer-original-bag-tote-shoulder-bag",
           "bg_img": "shopify:\/\/shop_images\/Photo_6-5-20_4_25_27_pm_f7d4413e-5bcb-4fe9-8234-bb297b068aae.jpg",
           "bg_style": "light"
         }
       },
       "1490870689650": {
         "type": "home_image-text",
-        "disabled": true,
         "blocks": {
           "1490870701198": {
             "type": "image",
             "settings": {
-              "title": "BAR BAG SQUARE",
-              "caption": "",
+              "title": "BAR BAG",
+              "caption": "REDEFINING THE EVERYDAY BAG",
               "link": "shopify:\/\/collections\/bar-bags",
-              "button": "",
-              "bg_img": "shopify:\/\/shop_images\/Bar_Bag_Square_elephant_copy_new_wearing.jpg",
+              "button": "shop",
+              "bg_img": "shopify:\/\/shop_images\/IMG_4703.jpg",
               "bg_alignment": "50% 50%",
               "bg_style": "dark"
             }
@@ -434,10 +432,22 @@
             "type": "image",
             "settings": {
               "title": "BELT BAG",
-              "caption": "",
+              "caption": "INSPIRED BY AN OLD SCHOOL BELT BAG",
               "link": "shopify:\/\/collections\/belt-bag",
-              "button": "",
+              "button": "SHOP",
               "bg_img": "shopify:\/\/shop_images\/IMG_3842.jpg",
+              "bg_alignment": "50% 50%",
+              "bg_style": "dark"
+            }
+          },
+          "1595879001821": {
+            "type": "image",
+            "settings": {
+              "title": "A MELLOW MOMENT",
+              "caption": "BAG BAG MELLOW",
+              "link": "shopify:\/\/products\/bar-bag-mellow-elephant-clutch",
+              "button": "SHOP",
+              "bg_img": "shopify:\/\/shop_images\/IMG_4701.jpg",
               "bg_alignment": "50% 50%",
               "bg_style": "dark"
             }
@@ -445,7 +455,8 @@
         },
         "block_order": [
           "1490870701198",
-          "1490870757991"
+          "1490870757991",
+          "1595879001821"
         ],
         "settings": {
           "txt_align": "center"
